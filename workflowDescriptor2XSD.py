@@ -47,10 +47,12 @@ workflowDescriptor.close()
 print("Conversion in XSD")
 
 def generateSimpleObject(nombre, name, typeName):
-    if typeName=="String" or typeName=="string":
+    if typeName.lower()=="string":
         typeName="xs:string"
-    elif typeName=="Integer" or typeName=="integer" :
-        typeName="xs:string"
+    elif typeName.lower()=="integer" :
+        typeName="xs:integer"
+    elif typeName.lower()=="float" :
+        typeName="xs:float"  
     else:
         typeName="irdbb:"+typeName
     xsdString = '\t\t\t\t<xs:element name="'+name.replace(" ","")+'" type="'+typeName

@@ -68,8 +68,6 @@ Segmentation Method
 SPECTsensitivityCalculation
 {
  1-Integer-CalibrationCoefficient
- 1-Integer-Pre-adminMeasuredActivity
- 1-Integer-Post-adminMeasuredActivity
 }
 
 SPECTrecoveryCurveCalculation
@@ -109,10 +107,7 @@ planarImageSegmentation
 planarSensitivityCalculation
 {
  1-ROIdescriptor-ROI
- 1-Integer-Net planarSourceActivity
  1-Integer-CalibrationCoefficient
- 1-Integer-PreAdminMeasuredActivity
- 1-Integer-PostAdminMeasuredActivity
 }
 
 setting
