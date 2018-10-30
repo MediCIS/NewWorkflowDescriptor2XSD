@@ -9,7 +9,7 @@ Created on Fri Sep 14 15:55:40 2018
 import sys
 
 path = sys.argv[1]
-#path = "/Users/marinebrenet/Documents/calibrationWorkflow.txt"
+#path = "/Users/marinebrenet/Documents/workflowDescriptor2XSD/calibrationWorkflow.txt"
 
 dico = {}
 dicoClean = {}
@@ -69,6 +69,19 @@ def generateSimpleObject(nombre, name, typeName):
         xsdString = xsdString +'"/>'
     return xsdString
 
+def generateElementRestricted(string, typeName):   
+    nameElement = string.split(":")[0]
+    listValues = string.split(":")[1]
+    xsd = '\t\t<xs:element name="'+nameElement+'">\n'
+    xsd += '\t\t\t<xs:simpleType>\n'
+    xsd += '\t\t\t\t<xs:restriction base="'+typeName+'">\n'
+    for value in listValues.split("/"):
+        xsd += '\t\t\t\t\t<xs:enumeration value="'+value+'"/>\n'
+    xsd += '\t\t\t\t</xs:restriction>\n'
+    xsd += '\t\t\t</xs:simpleType>\n'
+    xsd += '\t\t</xs:element>\n'
+    return xsd
+
 def generateComplexObject(name, sousObj):
     xsdString='\n\t<xs:element name="'+name.replace("\n","").replace(" ","")+'">'
     xsdString=xsdString +"\n"+"\t\t<xs:complexType>"+"\n"+ "\t\t\t<xs:sequence>"+"\n"
@@ -109,7 +122,10 @@ for key in dico:
                 nombre=line.split("-")[0]
                 listeTypes.append(typeName)
                 if name != "" and name.replace("\n","").replace(" ","") != "":
-                    sousObjets+=generateSimpleObject(nombre, name, typeName)+"\n"
+                    if ":" in name and "/" in name:
+                        sousObjets+=generateElementRestricted(name, typeName)
+                    else:
+                        sousObjets+=generateSimpleObject(nombre, name, typeName)+"\n"
         if key != "" and key.replace("\n","").replace(" ","") != "":
             if key in listeTypes:
                 xmlContent+=generateComplexType(key,sousObjets)

@@ -35,7 +35,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="CTacqForCTnumberCalibrationCurve">
 		<xs:sequence>
-				<xs:element name="DensityPhantom" type="xs:string"/>
+				<xs:element name="DensityPhantom" type="xs:integer"/>
 				<xs:element name="AcquisitionSettingsCT" type="irdbb:setting"/>
 				<xs:element name="CTimage" type="irdbb:CTImageAcquisitionDescriptorType"/>
 		</xs:sequence>
@@ -69,7 +69,14 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="CTsegmentation">
 		<xs:sequence>
-				<xs:element name="SegmentationMethod" type="xs:string"/>
+		<xs:element name="SegmentationMethod">
+			<xs:simpleType>
+				<xs:restriction base="String">
+					<xs:enumeration value="meth1"/>
+					<xs:enumeration value="meth2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
 				<xs:element name="CTVOI" type="irdbb:VOIDescriptorType"/>
 				<xs:element name="SPECTVOI" type="irdbb:VOIDescriptorType"/>
 		</xs:sequence>
@@ -87,9 +94,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="SPECTsensitivityCalculation">
 		<xs:sequence>
-				<xs:element name="CalibrationCoefficient" type="xs:string"/>
-				<xs:element name="Pre" type="xs:string"/>
-				<xs:element name="Post" type="xs:string"/>
+				<xs:element name="CalibrationCoefficient" type="xs:integer"/>
 		</xs:sequence>
 	</xs:complexType>
 
@@ -142,10 +147,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="ROI" type="irdbb:ROIdescriptor"/>
-				<xs:element name="NetplanarSourceActivity" type="xs:string"/>
-				<xs:element name="CalibrationCoefficient" type="xs:string"/>
-				<xs:element name="PreAdminMeasuredActivity" type="xs:string"/>
-				<xs:element name="PostAdminMeasuredActivity" type="xs:string"/>
+				<xs:element name="CalibrationCoefficient" type="xs:integer"/>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -153,7 +155,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="setting">
 		<xs:sequence>
 				<xs:element name="name" type="xs:string"/>
-				<xs:element name="value" type="xs:string"/>
+				<xs:element name="value" type="xs:integer"/>
 		</xs:sequence>
 	</xs:complexType>
 
@@ -178,7 +180,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="complexUnknown">
 		<xs:sequence>
 				<xs:element name="Text" type="xs:string"/>
-				<xs:element name="nombre" type="xs:string"/>
+				<xs:element name="nombre" type="xs:integer"/>
 		</xs:sequence>
 	</xs:complexType>
 </xs:schema>

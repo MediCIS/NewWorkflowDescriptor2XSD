@@ -53,7 +53,7 @@ SPECTreconstruction
 
 CTsegmentation
 {
- 1-String-SegmentationMethod
+ 1-String-SegmentationMethod:meth1/meth2
  1-VOIDescriptorType-CTVOI
  1-VOIDescriptorType-SPECTVOI
 }
