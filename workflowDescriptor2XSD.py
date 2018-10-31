@@ -156,10 +156,15 @@ for key in dico:
                 xmlContent+=generateComplexType(key,sousObjets)
             else:
                 xmlContent+=generateComplexObject(key,sousObjets)
-        
-print("XSD file : "+path.replace(".txt", ".xsd"))
 
-fileXSD = open(path.replace(".txt", ".xsd"), "w")
+if len(sys.argv) < 2:
+    pathXSD = path.replace("txt", "xsd")
+else:
+    pathXSD = sys.argv[2].replace("txt", "xsd")
+
+print("XSD file : "+pathXSD)
+
+fileXSD = open(pathXSD, "w")
 
 fileXSD.write(generateXSD(xmlContent))
 

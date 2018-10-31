@@ -77,8 +77,8 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:element>
-				<xs:element name="CTVOI" type="irdbb:VOIDescriptorType"/>
-				<xs:element name="SPECTVOI" type="irdbb:VOIDescriptorType"/>
+				<xs:element name="CTVOI" type="irdbb:VOI"/>
+				<xs:element name="SPECTVOI" type="irdbb:VOI"/>
 		</xs:sequence>
 	</xs:complexType>
 
@@ -165,9 +165,12 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:complexType name="VOIDescriptorType">
+	<xs:complexType name="VOI">
 		<xs:sequence>
-				<xs:element name="Name" type="xs:string"/>
+				<xs:element name="VOIIdentifier" type="xs:string"/>
+				<xs:element name="OrganOrTissue" type="xs:string"/>
+				<xs:element name="DICOMVOIContainer" type="irdbb:DICOMData" minOccurs="0" />
+				<xs:element name="NonDICOMVOIContainer" type="irdbb:NonDICOMData" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 

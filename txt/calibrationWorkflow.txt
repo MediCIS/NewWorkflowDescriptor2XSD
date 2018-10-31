@@ -54,8 +54,8 @@ SPECTreconstruction
 CTsegmentation
 {
  1-String-SegmentationMethod:meth1/meth2
- 1-VOIDescriptorType-CTVOI
- 1-VOIDescriptorType-SPECTVOI
+ 1-VOI-CTVOI
+ 1-VOI-SPECTVOI
 }
 
 Segmentation Method
@@ -125,10 +125,13 @@ ROIdescriptor
 
 
 
-
-VOIDescriptorType
+VOI
 {
- 1-String-Name
+ 1-string-VOIIdentifier
+ 1-string-OrganOrTissue
+// to be provided as a closed list of possible values
+ 0,1-DICOMData-DICOMVOIContainer
+ 0,1-NonDICOMData-NonDICOMVOIContainer
 }
 
 
