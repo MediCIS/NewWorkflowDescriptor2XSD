@@ -53,6 +53,31 @@ def generateSimpleObject(nombre, name, typeName):
         typeName="xs:integer"
     elif typeName.lower()=="float" :
         typeName="xs:float"  
+    elif typeName.lower()=="decimal" :
+        typeName="xs:decimal"     
+    elif typeName.lower()=="double" :
+        typeName="xs:double" 
+        
+    elif typeName.lower()=="duration" :
+        typeName="xs:duration"
+    elif typeName.lower()=="dateTime" :
+        typeName="xs:dateTime"
+    elif typeName.lower()=="time" :
+        typeName="xs:time"
+    elif typeName.lower()=="date" :
+        typeName="xs:date"   
+    
+    elif typeName.lower()=="gYearMonth" :
+        typeName="xs:gYearMonth"     
+    elif typeName.lower()=="gYear" :
+        typeName="xs:gYear" 
+    elif typeName.lower()=="gMonthDay" :
+        typeName="xs:gMonthDay"
+    elif typeName.lower()=="gDay" :
+        typeName="xs:gDay"
+    elif typeName.lower()=="gMonth" :
+        typeName="xs:gMonth"  
+    
     else:
         typeName="irdbb:"+typeName
     xsdString = '\t\t\t\t<xs:element name="'+name.replace(" ","")+'" type="'+typeName
