@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.10.31 à 05:12:10 PM CET 
+// Généré le : 2018.10.31 à 05:12:11 PM CET 
 //
 
 
@@ -17,22 +17,20 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour AbsorbedDoseCalculation complex type.
+ * <p>Classe Java pour DoseRateCurveFitVOITimeIntegration complex type.
  * 
  * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
- * &lt;complexType name="AbsorbedDoseCalculation">
+ * &lt;complexType name="DoseRateCurveFitVOITimeIntegration">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
  *         &lt;element name="VOIIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
- *         &lt;element name="DICOMSeriesUIDCTReconResampledOnCommonReferenceUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
- *         &lt;element name="DICOMSeriesUIDNMTomoReconResampledOnCommonReferenceUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
- *         &lt;element name="AbsorbedDoseCalculationMethodUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
+ *         &lt;element name="PKAssessmentMethodUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="MeanAbsorbedDoseInVOIProduced" type="{https://www.irdbb-medirad.com}MeanAbsorbedDoseInVOI" maxOccurs="unbounded"/>
- *         &lt;element name="VoxelAbsorbedDoseMapProduced" type="{https://www.irdbb-medirad.com}NonDICOMData" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -42,31 +40,25 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "AbsorbedDoseCalculation", propOrder = {
+@XmlType(name = "DoseRateCurveFitVOITimeIntegration", propOrder = {
     "processExecutionContext",
     "voiIdentifierUsed",
-    "dicomSeriesUIDCTReconResampledOnCommonReferenceUsed",
-    "dicomSeriesUIDNMTomoReconResampledOnCommonReferenceUsed",
-    "absorbedDoseCalculationMethodUsed",
-    "meanAbsorbedDoseInVOIProduced",
-    "voxelAbsorbedDoseMapProduced"
+    "timePointIdentifierUsed",
+    "pkAssessmentMethodUsed",
+    "meanAbsorbedDoseInVOIProduced"
 })
-public class AbsorbedDoseCalculation {
+public class DoseRateCurveFitVOITimeIntegration {
 
     @XmlElement(name = "ProcessExecutionContext", required = true)
     protected ProcessExecutionContext processExecutionContext;
     @XmlElement(name = "VOIIdentifierUsed", required = true)
     protected List<String> voiIdentifierUsed;
-    @XmlElement(name = "DICOMSeriesUIDCTReconResampledOnCommonReferenceUsed", required = true)
-    protected List<String> dicomSeriesUIDCTReconResampledOnCommonReferenceUsed;
-    @XmlElement(name = "DICOMSeriesUIDNMTomoReconResampledOnCommonReferenceUsed", required = true)
-    protected List<String> dicomSeriesUIDNMTomoReconResampledOnCommonReferenceUsed;
-    @XmlElement(name = "AbsorbedDoseCalculationMethodUsed", required = true)
-    protected String absorbedDoseCalculationMethodUsed;
+    @XmlElement(name = "TimePointIdentifierUsed", required = true)
+    protected List<String> timePointIdentifierUsed;
+    @XmlElement(name = "PKAssessmentMethodUsed", required = true)
+    protected String pkAssessmentMethodUsed;
     @XmlElement(name = "MeanAbsorbedDoseInVOIProduced", required = true)
     protected List<MeanAbsorbedDoseInVOI> meanAbsorbedDoseInVOIProduced;
-    @XmlElement(name = "VoxelAbsorbedDoseMapProduced")
-    protected List<NonDICOMData> voxelAbsorbedDoseMapProduced;
 
     /**
      * Obtient la valeur de la propriété processExecutionContext.
@@ -122,18 +114,18 @@ public class AbsorbedDoseCalculation {
     }
 
     /**
-     * Gets the value of the dicomSeriesUIDCTReconResampledOnCommonReferenceUsed property.
+     * Gets the value of the timePointIdentifierUsed property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the dicomSeriesUIDCTReconResampledOnCommonReferenceUsed property.
+     * This is why there is not a <CODE>set</CODE> method for the timePointIdentifierUsed property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getDICOMSeriesUIDCTReconResampledOnCommonReferenceUsed().add(newItem);
+     *    getTimePointIdentifierUsed().add(newItem);
      * </pre>
      * 
      * 
@@ -143,64 +135,35 @@ public class AbsorbedDoseCalculation {
      * 
      * 
      */
-    public List<String> getDICOMSeriesUIDCTReconResampledOnCommonReferenceUsed() {
-        if (dicomSeriesUIDCTReconResampledOnCommonReferenceUsed == null) {
-            dicomSeriesUIDCTReconResampledOnCommonReferenceUsed = new ArrayList<String>();
+    public List<String> getTimePointIdentifierUsed() {
+        if (timePointIdentifierUsed == null) {
+            timePointIdentifierUsed = new ArrayList<String>();
         }
-        return this.dicomSeriesUIDCTReconResampledOnCommonReferenceUsed;
+        return this.timePointIdentifierUsed;
     }
 
     /**
-     * Gets the value of the dicomSeriesUIDNMTomoReconResampledOnCommonReferenceUsed property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the dicomSeriesUIDNMTomoReconResampledOnCommonReferenceUsed property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getDICOMSeriesUIDNMTomoReconResampledOnCommonReferenceUsed().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getDICOMSeriesUIDNMTomoReconResampledOnCommonReferenceUsed() {
-        if (dicomSeriesUIDNMTomoReconResampledOnCommonReferenceUsed == null) {
-            dicomSeriesUIDNMTomoReconResampledOnCommonReferenceUsed = new ArrayList<String>();
-        }
-        return this.dicomSeriesUIDNMTomoReconResampledOnCommonReferenceUsed;
-    }
-
-    /**
-     * Obtient la valeur de la propriété absorbedDoseCalculationMethodUsed.
+     * Obtient la valeur de la propriété pkAssessmentMethodUsed.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getAbsorbedDoseCalculationMethodUsed() {
-        return absorbedDoseCalculationMethodUsed;
+    public String getPKAssessmentMethodUsed() {
+        return pkAssessmentMethodUsed;
     }
 
     /**
-     * Définit la valeur de la propriété absorbedDoseCalculationMethodUsed.
+     * Définit la valeur de la propriété pkAssessmentMethodUsed.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setAbsorbedDoseCalculationMethodUsed(String value) {
-        this.absorbedDoseCalculationMethodUsed = value;
+    public void setPKAssessmentMethodUsed(String value) {
+        this.pkAssessmentMethodUsed = value;
     }
 
     /**
@@ -230,35 +193,6 @@ public class AbsorbedDoseCalculation {
             meanAbsorbedDoseInVOIProduced = new ArrayList<MeanAbsorbedDoseInVOI>();
         }
         return this.meanAbsorbedDoseInVOIProduced;
-    }
-
-    /**
-     * Gets the value of the voxelAbsorbedDoseMapProduced property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the voxelAbsorbedDoseMapProduced property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getVoxelAbsorbedDoseMapProduced().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link NonDICOMData }
-     * 
-     * 
-     */
-    public List<NonDICOMData> getVoxelAbsorbedDoseMapProduced() {
-        if (voxelAbsorbedDoseMapProduced == null) {
-            voxelAbsorbedDoseMapProduced = new ArrayList<NonDICOMData>();
-        }
-        return this.voxelAbsorbedDoseMapProduced;
     }
 
 }

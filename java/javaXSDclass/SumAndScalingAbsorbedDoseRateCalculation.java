@@ -17,21 +17,21 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour VOIActivityDetermination complex type.
+ * <p>Classe Java pour SumAndScalingAbsorbedDoseRateCalculation complex type.
  * 
  * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
- * &lt;complexType name="VOIActivityDetermination">
+ * &lt;complexType name="SumAndScalingAbsorbedDoseRateCalculation">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
  *         &lt;element name="VOIIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
  *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="CalibrationFactorUsed" type="{https://www.irdbb-medirad.com}CalibrationFactor"/>
- *         &lt;element name="SPECTRecoveryCoefficientCurveUsed" type="{https://www.irdbb-medirad.com}SPECTRecoveryCoefficientCurve"/>
- *         &lt;element name="DataActivityPerVOIAtTimePointProduced" type="{https://www.irdbb-medirad.com}DataActivityPerVOIAtTimePoint" maxOccurs="unbounded"/>
+ *         &lt;element name="VOIUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
+ *         &lt;element name="ThreeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="AbsorbedDoseRatePerVOIAtTimePointProduced" type="{https://www.irdbb-medirad.com}AbsorbedDoseRatePerVOIAtTimePoint" maxOccurs="unbounded"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -41,15 +41,15 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "VOIActivityDetermination", propOrder = {
+@XmlType(name = "SumAndScalingAbsorbedDoseRateCalculation", propOrder = {
     "processExecutionContext",
     "voiIdentifierUsed",
     "timePointIdentifierUsed",
-    "calibrationFactorUsed",
-    "spectRecoveryCoefficientCurveUsed",
-    "dataActivityPerVOIAtTimePointProduced"
+    "voiUsed",
+    "threeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed",
+    "absorbedDoseRatePerVOIAtTimePointProduced"
 })
-public class VOIActivityDetermination {
+public class SumAndScalingAbsorbedDoseRateCalculation {
 
     @XmlElement(name = "ProcessExecutionContext", required = true)
     protected ProcessExecutionContext processExecutionContext;
@@ -57,12 +57,12 @@ public class VOIActivityDetermination {
     protected List<String> voiIdentifierUsed;
     @XmlElement(name = "TimePointIdentifierUsed", required = true)
     protected String timePointIdentifierUsed;
-    @XmlElement(name = "CalibrationFactorUsed", required = true)
-    protected CalibrationFactor calibrationFactorUsed;
-    @XmlElement(name = "SPECTRecoveryCoefficientCurveUsed", required = true)
-    protected SPECTRecoveryCoefficientCurve spectRecoveryCoefficientCurveUsed;
-    @XmlElement(name = "DataActivityPerVOIAtTimePointProduced", required = true)
-    protected List<DataActivityPerVOIAtTimePoint> dataActivityPerVOIAtTimePointProduced;
+    @XmlElement(name = "VOIUsed", required = true)
+    protected List<String> voiUsed;
+    @XmlElement(name = "ThreeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed", required = true)
+    protected String threeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed;
+    @XmlElement(name = "AbsorbedDoseRatePerVOIAtTimePointProduced", required = true)
+    protected List<AbsorbedDoseRatePerVOIAtTimePoint> absorbedDoseRatePerVOIAtTimePointProduced;
 
     /**
      * Obtient la valeur de la propriété processExecutionContext.
@@ -142,80 +142,85 @@ public class VOIActivityDetermination {
     }
 
     /**
-     * Obtient la valeur de la propriété calibrationFactorUsed.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CalibrationFactor }
-     *     
-     */
-    public CalibrationFactor getCalibrationFactorUsed() {
-        return calibrationFactorUsed;
-    }
-
-    /**
-     * Définit la valeur de la propriété calibrationFactorUsed.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CalibrationFactor }
-     *     
-     */
-    public void setCalibrationFactorUsed(CalibrationFactor value) {
-        this.calibrationFactorUsed = value;
-    }
-
-    /**
-     * Obtient la valeur de la propriété spectRecoveryCoefficientCurveUsed.
-     * 
-     * @return
-     *     possible object is
-     *     {@link SPECTRecoveryCoefficientCurve }
-     *     
-     */
-    public SPECTRecoveryCoefficientCurve getSPECTRecoveryCoefficientCurveUsed() {
-        return spectRecoveryCoefficientCurveUsed;
-    }
-
-    /**
-     * Définit la valeur de la propriété spectRecoveryCoefficientCurveUsed.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link SPECTRecoveryCoefficientCurve }
-     *     
-     */
-    public void setSPECTRecoveryCoefficientCurveUsed(SPECTRecoveryCoefficientCurve value) {
-        this.spectRecoveryCoefficientCurveUsed = value;
-    }
-
-    /**
-     * Gets the value of the dataActivityPerVOIAtTimePointProduced property.
+     * Gets the value of the voiUsed property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the dataActivityPerVOIAtTimePointProduced property.
+     * This is why there is not a <CODE>set</CODE> method for the voiUsed property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getDataActivityPerVOIAtTimePointProduced().add(newItem);
+     *    getVOIUsed().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link DataActivityPerVOIAtTimePoint }
+     * {@link String }
      * 
      * 
      */
-    public List<DataActivityPerVOIAtTimePoint> getDataActivityPerVOIAtTimePointProduced() {
-        if (dataActivityPerVOIAtTimePointProduced == null) {
-            dataActivityPerVOIAtTimePointProduced = new ArrayList<DataActivityPerVOIAtTimePoint>();
+    public List<String> getVOIUsed() {
+        if (voiUsed == null) {
+            voiUsed = new ArrayList<String>();
         }
-        return this.dataActivityPerVOIAtTimePointProduced;
+        return this.voiUsed;
+    }
+
+    /**
+     * Obtient la valeur de la propriété threeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getThreeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed() {
+        return threeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed;
+    }
+
+    /**
+     * Définit la valeur de la propriété threeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setThreeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed(String value) {
+        this.threeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed = value;
+    }
+
+    /**
+     * Gets the value of the absorbedDoseRatePerVOIAtTimePointProduced property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the absorbedDoseRatePerVOIAtTimePointProduced property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getAbsorbedDoseRatePerVOIAtTimePointProduced().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link AbsorbedDoseRatePerVOIAtTimePoint }
+     * 
+     * 
+     */
+    public List<AbsorbedDoseRatePerVOIAtTimePoint> getAbsorbedDoseRatePerVOIAtTimePointProduced() {
+        if (absorbedDoseRatePerVOIAtTimePointProduced == null) {
+            absorbedDoseRatePerVOIAtTimePointProduced = new ArrayList<AbsorbedDoseRatePerVOIAtTimePoint>();
+        }
+        return this.absorbedDoseRatePerVOIAtTimePointProduced;
     }
 
 }

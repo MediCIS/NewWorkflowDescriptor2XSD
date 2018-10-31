@@ -15,17 +15,17 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour CountsPerVOIAtTimePoint complex type.
+ * <p>Classe Java pour AbsorbedDoseRatePerVOIAtTimePoint complex type.
  * 
  * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
- * &lt;complexType name="CountsPerVOIAtTimePoint">
+ * &lt;complexType name="AbsorbedDoseRatePerVOIAtTimePoint">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="CountsValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
- *         &lt;element name="CountsUnit" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="AbsorbedDoseRateValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
+ *         &lt;element name="AbsorbedDoseRateUnit" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="VOIIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="TimePointIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
@@ -37,61 +37,61 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "CountsPerVOIAtTimePoint", propOrder = {
-    "countsValue",
-    "countsUnit",
+@XmlType(name = "AbsorbedDoseRatePerVOIAtTimePoint", propOrder = {
+    "absorbedDoseRateValue",
+    "absorbedDoseRateUnit",
     "voiIdentifier",
     "timePointIdentifier"
 })
-public class CountsPerVOIAtTimePoint {
+public class AbsorbedDoseRatePerVOIAtTimePoint {
 
-    @XmlElement(name = "CountsValue")
-    protected float countsValue;
-    @XmlElement(name = "CountsUnit", required = true)
-    protected String countsUnit;
+    @XmlElement(name = "AbsorbedDoseRateValue")
+    protected float absorbedDoseRateValue;
+    @XmlElement(name = "AbsorbedDoseRateUnit", required = true)
+    protected String absorbedDoseRateUnit;
     @XmlElement(name = "VOIIdentifier", required = true)
     protected String voiIdentifier;
     @XmlElement(name = "TimePointIdentifier", required = true)
     protected String timePointIdentifier;
 
     /**
-     * Obtient la valeur de la propriété countsValue.
+     * Obtient la valeur de la propriété absorbedDoseRateValue.
      * 
      */
-    public float getCountsValue() {
-        return countsValue;
+    public float getAbsorbedDoseRateValue() {
+        return absorbedDoseRateValue;
     }
 
     /**
-     * Définit la valeur de la propriété countsValue.
+     * Définit la valeur de la propriété absorbedDoseRateValue.
      * 
      */
-    public void setCountsValue(float value) {
-        this.countsValue = value;
+    public void setAbsorbedDoseRateValue(float value) {
+        this.absorbedDoseRateValue = value;
     }
 
     /**
-     * Obtient la valeur de la propriété countsUnit.
+     * Obtient la valeur de la propriété absorbedDoseRateUnit.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getCountsUnit() {
-        return countsUnit;
+    public String getAbsorbedDoseRateUnit() {
+        return absorbedDoseRateUnit;
     }
 
     /**
-     * Définit la valeur de la propriété countsUnit.
+     * Définit la valeur de la propriété absorbedDoseRateUnit.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setCountsUnit(String value) {
-        this.countsUnit = value;
+    public void setAbsorbedDoseRateUnit(String value) {
+        this.absorbedDoseRateUnit = value;
     }
 
     /**

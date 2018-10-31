@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.10.31 à 05:12:10 PM CET 
+// Généré le : 2018.10.31 à 05:12:11 PM CET 
 //
 
 
@@ -31,10 +31,8 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="PatientName" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="ClinicalResearchStudyId" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="SPECTDataAcquisitionAndProcessing" type="{https://www.irdbb-medirad.com}SPECTDataAcquisitionAndProcessing" maxOccurs="unbounded"/>
- *         &lt;element name="RegistrationVOISegmentationAndPropagation" type="{https://www.irdbb-medirad.com}RegistrationVOISegmentationAndPropagation"/>
- *         &lt;element name="VOIActivityDetermination" type="{https://www.irdbb-medirad.com}VOIActivityDetermination" maxOccurs="unbounded"/>
- *         &lt;element name="TimeActivityCurveFit" type="{https://www.irdbb-medirad.com}TimeActivityCurveFit" maxOccurs="unbounded"/>
- *         &lt;element name="AbsorbedDoseCalculation" type="{https://www.irdbb-medirad.com}AbsorbedDoseCalculation"/>
+ *         &lt;element name="VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation" type="{https://www.irdbb-medirad.com}VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation" maxOccurs="unbounded"/>
+ *         &lt;element name="DoseRateCurveFitVOITimeIntegration" type="{https://www.irdbb-medirad.com}DoseRateCurveFitVOITimeIntegration"/>
  *         &lt;element name="RadioBiologicalCalculation" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculation"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -50,14 +48,12 @@ import javax.xml.bind.annotation.XmlType;
     "patientName",
     "clinicalResearchStudyId",
     "spectDataAcquisitionAndProcessing",
-    "registrationVOISegmentationAndPropagation",
-    "voiActivityDetermination",
-    "timeActivityCurveFit",
-    "absorbedDoseCalculation",
+    "voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation",
+    "doseRateCurveFitVOITimeIntegration",
     "radioBiologicalCalculation"
 })
-@XmlRootElement(name = "ThreeDimDosimetrySlide1workflow")
-public class ThreeDimDosimetrySlide1Workflow {
+@XmlRootElement(name = "ThreeDimDosimetrySlide2workflow")
+public class ThreeDimDosimetrySlide2Workflow {
 
     @XmlElement(name = "PatientId", required = true)
     protected String patientId;
@@ -67,14 +63,10 @@ public class ThreeDimDosimetrySlide1Workflow {
     protected String clinicalResearchStudyId;
     @XmlElement(name = "SPECTDataAcquisitionAndProcessing", required = true)
     protected List<SPECTDataAcquisitionAndProcessing> spectDataAcquisitionAndProcessing;
-    @XmlElement(name = "RegistrationVOISegmentationAndPropagation", required = true)
-    protected RegistrationVOISegmentationAndPropagation registrationVOISegmentationAndPropagation;
-    @XmlElement(name = "VOIActivityDetermination", required = true)
-    protected List<VOIActivityDetermination> voiActivityDetermination;
-    @XmlElement(name = "TimeActivityCurveFit", required = true)
-    protected List<TimeActivityCurveFit> timeActivityCurveFit;
-    @XmlElement(name = "AbsorbedDoseCalculation", required = true)
-    protected AbsorbedDoseCalculation absorbedDoseCalculation;
+    @XmlElement(name = "VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation", required = true)
+    protected List<VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation> voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation;
+    @XmlElement(name = "DoseRateCurveFitVOITimeIntegration", required = true)
+    protected DoseRateCurveFitVOITimeIntegration doseRateCurveFitVOITimeIntegration;
     @XmlElement(name = "RadioBiologicalCalculation", required = true)
     protected RadioBiologicalCalculation radioBiologicalCalculation;
 
@@ -180,109 +172,56 @@ public class ThreeDimDosimetrySlide1Workflow {
     }
 
     /**
-     * Obtient la valeur de la propriété registrationVOISegmentationAndPropagation.
-     * 
-     * @return
-     *     possible object is
-     *     {@link RegistrationVOISegmentationAndPropagation }
-     *     
-     */
-    public RegistrationVOISegmentationAndPropagation getRegistrationVOISegmentationAndPropagation() {
-        return registrationVOISegmentationAndPropagation;
-    }
-
-    /**
-     * Définit la valeur de la propriété registrationVOISegmentationAndPropagation.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link RegistrationVOISegmentationAndPropagation }
-     *     
-     */
-    public void setRegistrationVOISegmentationAndPropagation(RegistrationVOISegmentationAndPropagation value) {
-        this.registrationVOISegmentationAndPropagation = value;
-    }
-
-    /**
-     * Gets the value of the voiActivityDetermination property.
+     * Gets the value of the voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the voiActivityDetermination property.
+     * This is why there is not a <CODE>set</CODE> method for the voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getVOIActivityDetermination().add(newItem);
+     *    getVOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link VOIActivityDetermination }
+     * {@link VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation }
      * 
      * 
      */
-    public List<VOIActivityDetermination> getVOIActivityDetermination() {
-        if (voiActivityDetermination == null) {
-            voiActivityDetermination = new ArrayList<VOIActivityDetermination>();
+    public List<VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation> getVOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation() {
+        if (voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation == null) {
+            voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation = new ArrayList<VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation>();
         }
-        return this.voiActivityDetermination;
+        return this.voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation;
     }
 
     /**
-     * Gets the value of the timeActivityCurveFit property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the timeActivityCurveFit property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getTimeActivityCurveFit().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link TimeActivityCurveFit }
-     * 
-     * 
-     */
-    public List<TimeActivityCurveFit> getTimeActivityCurveFit() {
-        if (timeActivityCurveFit == null) {
-            timeActivityCurveFit = new ArrayList<TimeActivityCurveFit>();
-        }
-        return this.timeActivityCurveFit;
-    }
-
-    /**
-     * Obtient la valeur de la propriété absorbedDoseCalculation.
+     * Obtient la valeur de la propriété doseRateCurveFitVOITimeIntegration.
      * 
      * @return
      *     possible object is
-     *     {@link AbsorbedDoseCalculation }
+     *     {@link DoseRateCurveFitVOITimeIntegration }
      *     
      */
-    public AbsorbedDoseCalculation getAbsorbedDoseCalculation() {
-        return absorbedDoseCalculation;
+    public DoseRateCurveFitVOITimeIntegration getDoseRateCurveFitVOITimeIntegration() {
+        return doseRateCurveFitVOITimeIntegration;
     }
 
     /**
-     * Définit la valeur de la propriété absorbedDoseCalculation.
+     * Définit la valeur de la propriété doseRateCurveFitVOITimeIntegration.
      * 
      * @param value
      *     allowed object is
-     *     {@link AbsorbedDoseCalculation }
+     *     {@link DoseRateCurveFitVOITimeIntegration }
      *     
      */
-    public void setAbsorbedDoseCalculation(AbsorbedDoseCalculation value) {
-        this.absorbedDoseCalculation = value;
+    public void setDoseRateCurveFitVOITimeIntegration(DoseRateCurveFitVOITimeIntegration value) {
+        this.doseRateCurveFitVOITimeIntegration = value;
     }
 
     /**

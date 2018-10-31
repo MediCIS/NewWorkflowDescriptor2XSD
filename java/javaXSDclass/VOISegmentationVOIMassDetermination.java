@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.10.31 à 05:12:10 PM CET 
+// Généré le : 2018.10.31 à 05:12:11 PM CET 
 //
 
 
@@ -17,23 +17,24 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour RegistrationVOISegmentationAndPropagation complex type.
+ * <p>Classe Java pour VOISegmentationVOIMassDetermination complex type.
  * 
  * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
- * &lt;complexType name="RegistrationVOISegmentationAndPropagation">
+ * &lt;complexType name="VOISegmentationVOIMassDetermination">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
- *         &lt;element name="DICOMSeriesUIDNMTomoReconUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
- *         &lt;element name="DICOMSeriesUIDCTReconUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
- *         &lt;element name="ImageProcessingMethodMethodUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="DICOMSeriesUIDNMTomoReconUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="DICOMSeriesUIDCTReconUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="VOISegmentationMethodUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="CountsPerVOIAtTimePointProduced" type="{https://www.irdbb-medirad.com}CountsPerVOIAtTimePoint" maxOccurs="unbounded"/>
  *         &lt;element name="VOIProduced" type="{https://www.irdbb-medirad.com}VOI" maxOccurs="unbounded"/>
- *         &lt;element name="CTReconResampledOnCommonReferenceProduced" type="{https://www.irdbb-medirad.com}DICOMData" maxOccurs="unbounded"/>
- *         &lt;element name="NMTomoReconResampledOnCommonReferenceProduced" type="{https://www.irdbb-medirad.com}DICOMData" maxOccurs="unbounded"/>
+ *         &lt;element name="CTReconResampledOnNMReferenceProduced" type="{https://www.irdbb-medirad.com}DICOMData" maxOccurs="unbounded"/>
+ *         &lt;element name="MassPerVOIAtTimePointProduced" type="{https://www.irdbb-medirad.com}MassPerVOIAtTimePoint" maxOccurs="unbounded"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -43,34 +44,37 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "RegistrationVOISegmentationAndPropagation", propOrder = {
+@XmlType(name = "VOISegmentationVOIMassDetermination", propOrder = {
     "processExecutionContext",
+    "timePointIdentifierUsed",
     "dicomSeriesUIDNMTomoReconUsed",
     "dicomSeriesUIDCTReconUsed",
-    "imageProcessingMethodMethodUsed",
+    "voiSegmentationMethodUsed",
     "countsPerVOIAtTimePointProduced",
     "voiProduced",
-    "ctReconResampledOnCommonReferenceProduced",
-    "nmTomoReconResampledOnCommonReferenceProduced"
+    "ctReconResampledOnNMReferenceProduced",
+    "massPerVOIAtTimePointProduced"
 })
-public class RegistrationVOISegmentationAndPropagation {
+public class VOISegmentationVOIMassDetermination {
 
     @XmlElement(name = "ProcessExecutionContext", required = true)
     protected ProcessExecutionContext processExecutionContext;
+    @XmlElement(name = "TimePointIdentifierUsed", required = true)
+    protected String timePointIdentifierUsed;
     @XmlElement(name = "DICOMSeriesUIDNMTomoReconUsed", required = true)
-    protected List<String> dicomSeriesUIDNMTomoReconUsed;
+    protected String dicomSeriesUIDNMTomoReconUsed;
     @XmlElement(name = "DICOMSeriesUIDCTReconUsed", required = true)
-    protected List<String> dicomSeriesUIDCTReconUsed;
-    @XmlElement(name = "ImageProcessingMethodMethodUsed", required = true)
-    protected String imageProcessingMethodMethodUsed;
+    protected String dicomSeriesUIDCTReconUsed;
+    @XmlElement(name = "VOISegmentationMethodUsed", required = true)
+    protected String voiSegmentationMethodUsed;
     @XmlElement(name = "CountsPerVOIAtTimePointProduced", required = true)
     protected List<CountsPerVOIAtTimePoint> countsPerVOIAtTimePointProduced;
     @XmlElement(name = "VOIProduced", required = true)
     protected List<VOI> voiProduced;
-    @XmlElement(name = "CTReconResampledOnCommonReferenceProduced", required = true)
-    protected List<DICOMData> ctReconResampledOnCommonReferenceProduced;
-    @XmlElement(name = "NMTomoReconResampledOnCommonReferenceProduced", required = true)
-    protected List<DICOMData> nmTomoReconResampledOnCommonReferenceProduced;
+    @XmlElement(name = "CTReconResampledOnNMReferenceProduced", required = true)
+    protected List<DICOMData> ctReconResampledOnNMReferenceProduced;
+    @XmlElement(name = "MassPerVOIAtTimePointProduced", required = true)
+    protected List<MassPerVOIAtTimePoint> massPerVOIAtTimePointProduced;
 
     /**
      * Obtient la valeur de la propriété processExecutionContext.
@@ -97,85 +101,99 @@ public class RegistrationVOISegmentationAndPropagation {
     }
 
     /**
-     * Gets the value of the dicomSeriesUIDNMTomoReconUsed property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the dicomSeriesUIDNMTomoReconUsed property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getDICOMSeriesUIDNMTomoReconUsed().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getDICOMSeriesUIDNMTomoReconUsed() {
-        if (dicomSeriesUIDNMTomoReconUsed == null) {
-            dicomSeriesUIDNMTomoReconUsed = new ArrayList<String>();
-        }
-        return this.dicomSeriesUIDNMTomoReconUsed;
-    }
-
-    /**
-     * Gets the value of the dicomSeriesUIDCTReconUsed property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the dicomSeriesUIDCTReconUsed property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getDICOMSeriesUIDCTReconUsed().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getDICOMSeriesUIDCTReconUsed() {
-        if (dicomSeriesUIDCTReconUsed == null) {
-            dicomSeriesUIDCTReconUsed = new ArrayList<String>();
-        }
-        return this.dicomSeriesUIDCTReconUsed;
-    }
-
-    /**
-     * Obtient la valeur de la propriété imageProcessingMethodMethodUsed.
+     * Obtient la valeur de la propriété timePointIdentifierUsed.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getImageProcessingMethodMethodUsed() {
-        return imageProcessingMethodMethodUsed;
+    public String getTimePointIdentifierUsed() {
+        return timePointIdentifierUsed;
     }
 
     /**
-     * Définit la valeur de la propriété imageProcessingMethodMethodUsed.
+     * Définit la valeur de la propriété timePointIdentifierUsed.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setImageProcessingMethodMethodUsed(String value) {
-        this.imageProcessingMethodMethodUsed = value;
+    public void setTimePointIdentifierUsed(String value) {
+        this.timePointIdentifierUsed = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété dicomSeriesUIDNMTomoReconUsed.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getDICOMSeriesUIDNMTomoReconUsed() {
+        return dicomSeriesUIDNMTomoReconUsed;
+    }
+
+    /**
+     * Définit la valeur de la propriété dicomSeriesUIDNMTomoReconUsed.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setDICOMSeriesUIDNMTomoReconUsed(String value) {
+        this.dicomSeriesUIDNMTomoReconUsed = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété dicomSeriesUIDCTReconUsed.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getDICOMSeriesUIDCTReconUsed() {
+        return dicomSeriesUIDCTReconUsed;
+    }
+
+    /**
+     * Définit la valeur de la propriété dicomSeriesUIDCTReconUsed.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setDICOMSeriesUIDCTReconUsed(String value) {
+        this.dicomSeriesUIDCTReconUsed = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété voiSegmentationMethodUsed.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getVOISegmentationMethodUsed() {
+        return voiSegmentationMethodUsed;
+    }
+
+    /**
+     * Définit la valeur de la propriété voiSegmentationMethodUsed.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setVOISegmentationMethodUsed(String value) {
+        this.voiSegmentationMethodUsed = value;
     }
 
     /**
@@ -237,18 +255,18 @@ public class RegistrationVOISegmentationAndPropagation {
     }
 
     /**
-     * Gets the value of the ctReconResampledOnCommonReferenceProduced property.
+     * Gets the value of the ctReconResampledOnNMReferenceProduced property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the ctReconResampledOnCommonReferenceProduced property.
+     * This is why there is not a <CODE>set</CODE> method for the ctReconResampledOnNMReferenceProduced property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getCTReconResampledOnCommonReferenceProduced().add(newItem);
+     *    getCTReconResampledOnNMReferenceProduced().add(newItem);
      * </pre>
      * 
      * 
@@ -258,40 +276,40 @@ public class RegistrationVOISegmentationAndPropagation {
      * 
      * 
      */
-    public List<DICOMData> getCTReconResampledOnCommonReferenceProduced() {
-        if (ctReconResampledOnCommonReferenceProduced == null) {
-            ctReconResampledOnCommonReferenceProduced = new ArrayList<DICOMData>();
+    public List<DICOMData> getCTReconResampledOnNMReferenceProduced() {
+        if (ctReconResampledOnNMReferenceProduced == null) {
+            ctReconResampledOnNMReferenceProduced = new ArrayList<DICOMData>();
         }
-        return this.ctReconResampledOnCommonReferenceProduced;
+        return this.ctReconResampledOnNMReferenceProduced;
     }
 
     /**
-     * Gets the value of the nmTomoReconResampledOnCommonReferenceProduced property.
+     * Gets the value of the massPerVOIAtTimePointProduced property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the nmTomoReconResampledOnCommonReferenceProduced property.
+     * This is why there is not a <CODE>set</CODE> method for the massPerVOIAtTimePointProduced property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getNMTomoReconResampledOnCommonReferenceProduced().add(newItem);
+     *    getMassPerVOIAtTimePointProduced().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link DICOMData }
+     * {@link MassPerVOIAtTimePoint }
      * 
      * 
      */
-    public List<DICOMData> getNMTomoReconResampledOnCommonReferenceProduced() {
-        if (nmTomoReconResampledOnCommonReferenceProduced == null) {
-            nmTomoReconResampledOnCommonReferenceProduced = new ArrayList<DICOMData>();
+    public List<MassPerVOIAtTimePoint> getMassPerVOIAtTimePointProduced() {
+        if (massPerVOIAtTimePointProduced == null) {
+            massPerVOIAtTimePointProduced = new ArrayList<MassPerVOIAtTimePoint>();
         }
-        return this.nmTomoReconResampledOnCommonReferenceProduced;
+        return this.massPerVOIAtTimePointProduced;
     }
 
 }

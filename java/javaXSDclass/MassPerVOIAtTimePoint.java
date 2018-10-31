@@ -15,17 +15,17 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour MeanAbsorbedDoseInVOI complex type.
+ * <p>Classe Java pour MassPerVOIAtTimePoint complex type.
  * 
  * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
- * &lt;complexType name="MeanAbsorbedDoseInVOI">
+ * &lt;complexType name="MassPerVOIAtTimePoint">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="MeanAbsorbedDoseInVOIValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
- *         &lt;element name="MeanAbsorbedDoseInVOIUnit" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="MassValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
+ *         &lt;element name="MassUnit" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="VOIIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -36,58 +36,58 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "MeanAbsorbedDoseInVOI", propOrder = {
-    "meanAbsorbedDoseInVOIValue",
-    "meanAbsorbedDoseInVOIUnit",
+@XmlType(name = "MassPerVOIAtTimePoint", propOrder = {
+    "massValue",
+    "massUnit",
     "voiIdentifier"
 })
-public class MeanAbsorbedDoseInVOI {
+public class MassPerVOIAtTimePoint {
 
-    @XmlElement(name = "MeanAbsorbedDoseInVOIValue")
-    protected float meanAbsorbedDoseInVOIValue;
-    @XmlElement(name = "MeanAbsorbedDoseInVOIUnit", required = true)
-    protected String meanAbsorbedDoseInVOIUnit;
+    @XmlElement(name = "MassValue")
+    protected float massValue;
+    @XmlElement(name = "MassUnit", required = true)
+    protected String massUnit;
     @XmlElement(name = "VOIIdentifier", required = true)
     protected String voiIdentifier;
 
     /**
-     * Obtient la valeur de la propriété meanAbsorbedDoseInVOIValue.
+     * Obtient la valeur de la propriété massValue.
      * 
      */
-    public float getMeanAbsorbedDoseInVOIValue() {
-        return meanAbsorbedDoseInVOIValue;
+    public float getMassValue() {
+        return massValue;
     }
 
     /**
-     * Définit la valeur de la propriété meanAbsorbedDoseInVOIValue.
+     * Définit la valeur de la propriété massValue.
      * 
      */
-    public void setMeanAbsorbedDoseInVOIValue(float value) {
-        this.meanAbsorbedDoseInVOIValue = value;
+    public void setMassValue(float value) {
+        this.massValue = value;
     }
 
     /**
-     * Obtient la valeur de la propriété meanAbsorbedDoseInVOIUnit.
+     * Obtient la valeur de la propriété massUnit.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getMeanAbsorbedDoseInVOIUnit() {
-        return meanAbsorbedDoseInVOIUnit;
+    public String getMassUnit() {
+        return massUnit;
     }
 
     /**
-     * Définit la valeur de la propriété meanAbsorbedDoseInVOIUnit.
+     * Définit la valeur de la propriété massUnit.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setMeanAbsorbedDoseInVOIUnit(String value) {
-        this.meanAbsorbedDoseInVOIUnit = value;
+    public void setMassUnit(String value) {
+        this.massUnit = value;
     }
 
     /**
