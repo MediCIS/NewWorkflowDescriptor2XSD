@@ -2,16 +2,13 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.10.31 à 05:12:11 PM CET 
+// Généré le : 2018.11.02 à 11:16:14 AM CET 
 //
 
 
 package javaXSDclass;
 
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.annotation.XmlElementDecl;
 import javax.xml.bind.annotation.XmlRegistry;
-import javax.xml.namespace.QName;
 
 
 /**
@@ -31,12 +28,6 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _EnergyDepositionRateCalculationTimePointIdentifierUsed_QNAME = new QName("https://www.irdbb-medirad.com", "TimePointIdentifierUsed");
-    private final static QName _EnergyDepositionRateCalculationDICOMData_QNAME = new QName("https://www.irdbb-medirad.com", "DICOMData");
-    private final static QName _EnergyDepositionRateCalculationThreeDimEnergyDepositionRateMatrixAtTimePointProduced_QNAME = new QName("https://www.irdbb-medirad.com", "ThreeDimEnergyDepositionRateMatrixAtTimePointProduced");
-    private final static QName _EnergyDepositionRateCalculationVOIIdentifierUsed_QNAME = new QName("https://www.irdbb-medirad.com", "VOIIdentifierUsed");
-    private final static QName _EnergyDepositionRateCalculationVOIUsed_QNAME = new QName("https://www.irdbb-medirad.com", "VOIUsed");
-    private final static QName _EnergyDepositionRateCalculationProcessExecutionContext_QNAME = new QName("https://www.irdbb-medirad.com", "ProcessExecutionContext");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: javaXSDclass
@@ -46,107 +37,75 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link AdministeredActivity }
+     * Create an instance of {@link CalibrationWorkflow }
      * 
      */
-    public AdministeredActivity createAdministeredActivity() {
-        return new AdministeredActivity();
+    public CalibrationWorkflow createCalibrationWorkflow() {
+        return new CalibrationWorkflow();
     }
 
     /**
-     * Create an instance of {@link ThreeDimDosimetrySlide2Workflow }
+     * Create an instance of {@link SPECTCTCalibrationWorkflow }
      * 
      */
-    public ThreeDimDosimetrySlide2Workflow createThreeDimDosimetrySlide2Workflow() {
-        return new ThreeDimDosimetrySlide2Workflow();
+    public SPECTCTCalibrationWorkflow createSPECTCTCalibrationWorkflow() {
+        return new SPECTCTCalibrationWorkflow();
     }
 
     /**
-     * Create an instance of {@link SPECTDataAcquisitionAndProcessing }
+     * Create an instance of {@link PlanarCalibrationWorkflow }
      * 
      */
-    public SPECTDataAcquisitionAndProcessing createSPECTDataAcquisitionAndProcessing() {
-        return new SPECTDataAcquisitionAndProcessing();
+    public PlanarCalibrationWorkflow createPlanarCalibrationWorkflow() {
+        return new PlanarCalibrationWorkflow();
     }
 
     /**
-     * Create an instance of {@link VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation }
+     * Create an instance of {@link CTAcqForCTNumberCalibrationCurve }
      * 
      */
-    public VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation createVOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation() {
-        return new VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation();
+    public CTAcqForCTNumberCalibrationCurve createCTAcqForCTNumberCalibrationCurve() {
+        return new CTAcqForCTNumberCalibrationCurve();
     }
 
     /**
-     * Create an instance of {@link DoseRateCurveFitVOITimeIntegration }
+     * Create an instance of {@link ROIInSPECT }
      * 
      */
-    public DoseRateCurveFitVOITimeIntegration createDoseRateCurveFitVOITimeIntegration() {
-        return new DoseRateCurveFitVOITimeIntegration();
+    public ROIInSPECT createROIInSPECT() {
+        return new ROIInSPECT();
     }
 
     /**
-     * Create an instance of {@link RadioBiologicalCalculation }
+     * Create an instance of {@link NMPhantom }
      * 
      */
-    public RadioBiologicalCalculation createRadioBiologicalCalculation() {
-        return new RadioBiologicalCalculation();
+    public NMPhantom createNMPhantom() {
+        return new NMPhantom();
     }
 
     /**
-     * Create an instance of {@link TimePointDescription }
+     * Create an instance of {@link SPECTRecoveryCurveCalculation }
      * 
      */
-    public TimePointDescription createTimePointDescription() {
-        return new TimePointDescription();
+    public SPECTRecoveryCurveCalculation createSPECTRecoveryCurveCalculation() {
+        return new SPECTRecoveryCurveCalculation();
     }
 
     /**
-     * Create an instance of {@link SPECTRecoveryCoefficientCurve }
+     * Create an instance of {@link CTNumberCalibrationWorkfow }
      * 
      */
-    public SPECTRecoveryCoefficientCurve createSPECTRecoveryCoefficientCurve() {
-        return new SPECTRecoveryCoefficientCurve();
+    public CTNumberCalibrationWorkfow createCTNumberCalibrationWorkfow() {
+        return new CTNumberCalibrationWorkfow();
     }
 
     /**
-     * Create an instance of {@link CountsPerVOIAtTimePoint }
+     * Create an instance of {@link HotInsert }
      * 
      */
-    public CountsPerVOIAtTimePoint createCountsPerVOIAtTimePoint() {
-        return new CountsPerVOIAtTimePoint();
-    }
-
-    /**
-     * Create an instance of {@link VOISegmentationVOIMassDetermination }
-     * 
-     */
-    public VOISegmentationVOIMassDetermination createVOISegmentationVOIMassDetermination() {
-        return new VOISegmentationVOIMassDetermination();
-    }
-
-    /**
-     * Create an instance of {@link EnergyDepositionRateCalculation }
-     * 
-     */
-    public EnergyDepositionRateCalculation createEnergyDepositionRateCalculation() {
-        return new EnergyDepositionRateCalculation();
-    }
-
-    /**
-     * Create an instance of {@link AbsorbedDoseRatePerVOIAtTimePoint }
-     * 
-     */
-    public AbsorbedDoseRatePerVOIAtTimePoint createAbsorbedDoseRatePerVOIAtTimePoint() {
-        return new AbsorbedDoseRatePerVOIAtTimePoint();
-    }
-
-    /**
-     * Create an instance of {@link CalibrationFactor }
-     * 
-     */
-    public CalibrationFactor createCalibrationFactor() {
-        return new CalibrationFactor();
+    public HotInsert createHotInsert() {
+        return new HotInsert();
     }
 
     /**
@@ -174,43 +133,27 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link VOI }
+     * Create an instance of {@link PlanarImageSegmentation }
      * 
      */
-    public VOI createVOI() {
-        return new VOI();
+    public PlanarImageSegmentation createPlanarImageSegmentation() {
+        return new PlanarImageSegmentation();
     }
 
     /**
-     * Create an instance of {@link VOIActivityDetermination }
+     * Create an instance of {@link DensityPhantom }
      * 
      */
-    public VOIActivityDetermination createVOIActivityDetermination() {
-        return new VOIActivityDetermination();
+    public DensityPhantom createDensityPhantom() {
+        return new DensityPhantom();
     }
 
     /**
-     * Create an instance of {@link MassPerVOIAtTimePoint }
+     * Create an instance of {@link CalibrationCoefficient }
      * 
      */
-    public MassPerVOIAtTimePoint createMassPerVOIAtTimePoint() {
-        return new MassPerVOIAtTimePoint();
-    }
-
-    /**
-     * Create an instance of {@link DataActivityPerVOIAtTimePoint }
-     * 
-     */
-    public DataActivityPerVOIAtTimePoint createDataActivityPerVOIAtTimePoint() {
-        return new DataActivityPerVOIAtTimePoint();
-    }
-
-    /**
-     * Create an instance of {@link SumAndScalingAbsorbedDoseRateCalculation }
-     * 
-     */
-    public SumAndScalingAbsorbedDoseRateCalculation createSumAndScalingAbsorbedDoseRateCalculation() {
-        return new SumAndScalingAbsorbedDoseRateCalculation();
+    public CalibrationCoefficient createCalibrationCoefficient() {
+        return new CalibrationCoefficient();
     }
 
     /**
@@ -222,11 +165,99 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link MeanAbsorbedDoseInVOI }
+     * Create an instance of {@link CTNumberCalibrationCurve }
      * 
      */
-    public MeanAbsorbedDoseInVOI createMeanAbsorbedDoseInVOI() {
-        return new MeanAbsorbedDoseInVOI();
+    public CTNumberCalibrationCurve createCTNumberCalibrationCurve() {
+        return new CTNumberCalibrationCurve();
+    }
+
+    /**
+     * Create an instance of {@link PlanarSensitivityCalculation }
+     * 
+     */
+    public PlanarSensitivityCalculation createPlanarSensitivityCalculation() {
+        return new PlanarSensitivityCalculation();
+    }
+
+    /**
+     * Create an instance of {@link SPECTRecoveryCoefficientCurve }
+     * 
+     */
+    public SPECTRecoveryCoefficientCurve createSPECTRecoveryCoefficientCurve() {
+        return new SPECTRecoveryCoefficientCurve();
+    }
+
+    /**
+     * Create an instance of {@link CTSegmentation }
+     * 
+     */
+    public CTSegmentation createCTSegmentation() {
+        return new CTSegmentation();
+    }
+
+    /**
+     * Create an instance of {@link PlanarAcquisition }
+     * 
+     */
+    public PlanarAcquisition createPlanarAcquisition() {
+        return new PlanarAcquisition();
+    }
+
+    /**
+     * Create an instance of {@link VOIInCT }
+     * 
+     */
+    public VOIInCT createVOIInCT() {
+        return new VOIInCT();
+    }
+
+    /**
+     * Create an instance of {@link Tank }
+     * 
+     */
+    public Tank createTank() {
+        return new Tank();
+    }
+
+    /**
+     * Create an instance of {@link CalculationOfCTNumberCalibrationCurve }
+     * 
+     */
+    public CalculationOfCTNumberCalibrationCurve createCalculationOfCTNumberCalibrationCurve() {
+        return new CalculationOfCTNumberCalibrationCurve();
+    }
+
+    /**
+     * Create an instance of {@link ColdInsert }
+     * 
+     */
+    public ColdInsert createColdInsert() {
+        return new ColdInsert();
+    }
+
+    /**
+     * Create an instance of {@link SPECTSensitivityCalculation }
+     * 
+     */
+    public SPECTSensitivityCalculation createSPECTSensitivityCalculation() {
+        return new SPECTSensitivityCalculation();
+    }
+
+    /**
+     * Create an instance of {@link VOIInSPECT }
+     * 
+     */
+    public VOIInSPECT createVOIInSPECT() {
+        return new VOIInSPECT();
+    }
+
+    /**
+     * Create an instance of {@link PlanarImageCorrections }
+     * 
+     */
+    public PlanarImageCorrections createPlanarImageCorrections() {
+        return new PlanarImageCorrections();
     }
 
     /**
@@ -235,60 +266,6 @@ public class ObjectFactory {
      */
     public SPECTAcqCTAcqAndReconstruction createSPECTAcqCTAcqAndReconstruction() {
         return new SPECTAcqCTAcqAndReconstruction();
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "TimePointIdentifierUsed", scope = EnergyDepositionRateCalculation.class)
-    public JAXBElement<String> createEnergyDepositionRateCalculationTimePointIdentifierUsed(String value) {
-        return new JAXBElement<String>(_EnergyDepositionRateCalculationTimePointIdentifierUsed_QNAME, String.class, EnergyDepositionRateCalculation.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "DICOMData", scope = EnergyDepositionRateCalculation.class)
-    public JAXBElement<String> createEnergyDepositionRateCalculationDICOMData(String value) {
-        return new JAXBElement<String>(_EnergyDepositionRateCalculationDICOMData_QNAME, String.class, EnergyDepositionRateCalculation.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link NonDICOMData }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "ThreeDimEnergyDepositionRateMatrixAtTimePointProduced", scope = EnergyDepositionRateCalculation.class)
-    public JAXBElement<NonDICOMData> createEnergyDepositionRateCalculationThreeDimEnergyDepositionRateMatrixAtTimePointProduced(NonDICOMData value) {
-        return new JAXBElement<NonDICOMData>(_EnergyDepositionRateCalculationThreeDimEnergyDepositionRateMatrixAtTimePointProduced_QNAME, NonDICOMData.class, EnergyDepositionRateCalculation.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "VOIIdentifierUsed", scope = EnergyDepositionRateCalculation.class)
-    public JAXBElement<String> createEnergyDepositionRateCalculationVOIIdentifierUsed(String value) {
-        return new JAXBElement<String>(_EnergyDepositionRateCalculationVOIIdentifierUsed_QNAME, String.class, EnergyDepositionRateCalculation.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "VOIUsed", scope = EnergyDepositionRateCalculation.class)
-    public JAXBElement<String> createEnergyDepositionRateCalculationVOIUsed(String value) {
-        return new JAXBElement<String>(_EnergyDepositionRateCalculationVOIUsed_QNAME, String.class, EnergyDepositionRateCalculation.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ProcessExecutionContext }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "ProcessExecutionContext", scope = EnergyDepositionRateCalculation.class)
-    public JAXBElement<ProcessExecutionContext> createEnergyDepositionRateCalculationProcessExecutionContext(ProcessExecutionContext value) {
-        return new JAXBElement<ProcessExecutionContext>(_EnergyDepositionRateCalculationProcessExecutionContext_QNAME, ProcessExecutionContext.class, EnergyDepositionRateCalculation.class, value);
     }
 
 }

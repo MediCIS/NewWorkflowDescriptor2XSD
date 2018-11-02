@@ -67,7 +67,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				<xs:element name="TimePointIdentifierUsed" type="xs:string"/>
 				<xs:element name="DICOMSeriesUIDNMStaticCorrectedUsed" type="xs:string"/>
 				<xs:element name="SegmentationMethodUsed" type="xs:string"/>
-				<xs:element name="CountsPerROIProduced" type="irdbb:CountsPerROI" maxOccurs="unbounded" />
+				<xs:element name="CountsPerROIAtTimePointProduced" type="irdbb:CountsPerROIAtTimePoint" maxOccurs="unbounded" />
 				<xs:element name="ROIProduced" type="irdbb:ROI" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
@@ -78,7 +78,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				<xs:element name="TimePointIdentifierUsed" type="xs:string"/>
 				<xs:element name="DICOMSeriesUIDNMStaticCorrectedUsed" type="xs:string"/>
 				<xs:element name="SegmentationMethodUsed" type="xs:string"/>
-				<xs:element name="CountsPerROIProduced" type="irdbb:CountsPerROI" maxOccurs="unbounded" />
+				<xs:element name="CountsPerROIAtTimePointProduced" type="irdbb:CountsPerROIAtTimePoint" maxOccurs="unbounded" />
 				<xs:element name="ROIProduced" type="irdbb:ROI" maxOccurs="unbounded" />
 				<xs:element name="NMStaticCorrectedResampledOnCommonReferenceProduced" type="irdbb:DICOMData"/>
 		</xs:sequence>
@@ -90,7 +90,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				<xs:element name="TimePointIdentifierUsed" type="xs:string"/>
 				<xs:element name="ROIIdentifierUsed" type="xs:string" maxOccurs="unbounded" />
 				<xs:element name="PlanarCalibrationFactorUsed" type="irdbb:PlanarCalibrationFactor"/>
-				<xs:element name="DataActivityPerROIProduced" type="irdbb:DataActivityPerROI" maxOccurs="unbounded" />
+				<xs:element name="DataActivityPerROIAtTimePointProduced" type="irdbb:DataActivityPerROIAtTimePoint" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 
@@ -167,11 +167,12 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:complexType name="CountsPerROI">
+	<xs:complexType name="CountsPerROIAtTimePoint">
 		<xs:sequence>
 				<xs:element name="CountsValue" type="xs:float"/>
 				<xs:element name="CountsUnit" type="xs:string"/>
 				<xs:element name="ROIIdentifier" type="xs:string"/>
+				<xs:element name="TimePointIdentifier" type="xs:string"/>
 		</xs:sequence>
 	</xs:complexType>
 
@@ -191,11 +192,12 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:complexType name="DataActivityPerROI">
+	<xs:complexType name="DataActivityPerROIAtTimePoint">
 		<xs:sequence>
 				<xs:element name="DataActivityValue" type="xs:float"/>
 				<xs:element name="DataActivityUnit" type="xs:string"/>
 				<xs:element name="ROIIdentifier" type="xs:string"/>
+				<xs:element name="TimePointIdentifier" type="xs:string"/>
 		</xs:sequence>
 	</xs:complexType>
 

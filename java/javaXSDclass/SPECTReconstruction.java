@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.10.31 à 05:12:11 PM CET 
+// Généré le : 2018.11.02 à 11:16:14 AM CET 
 //
 
 
@@ -25,11 +25,10 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
- *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="DICOMSeriesUIDNMTomoUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="DICOMSeriesUIDCTReconUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="ReconstructionMethodAndCorrectionsUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="CalibrationFactorUsed" type="{https://www.irdbb-medirad.com}CalibrationFactor"/>
+ *         &lt;element name="CTNumberCalibrationCurveUsed" type="{https://www.irdbb-medirad.com}CTNumberCalibrationCurve"/>
  *         &lt;element name="NMTomoReconProduced" type="{https://www.irdbb-medirad.com}DICOMData"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -42,27 +41,24 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "SPECTReconstruction", propOrder = {
     "processExecutionContext",
-    "timePointIdentifierUsed",
     "dicomSeriesUIDNMTomoUsed",
     "dicomSeriesUIDCTReconUsed",
     "reconstructionMethodAndCorrectionsUsed",
-    "calibrationFactorUsed",
+    "ctNumberCalibrationCurveUsed",
     "nmTomoReconProduced"
 })
 public class SPECTReconstruction {
 
     @XmlElement(name = "ProcessExecutionContext", required = true)
     protected ProcessExecutionContext processExecutionContext;
-    @XmlElement(name = "TimePointIdentifierUsed", required = true)
-    protected String timePointIdentifierUsed;
     @XmlElement(name = "DICOMSeriesUIDNMTomoUsed", required = true)
     protected String dicomSeriesUIDNMTomoUsed;
     @XmlElement(name = "DICOMSeriesUIDCTReconUsed", required = true)
     protected String dicomSeriesUIDCTReconUsed;
     @XmlElement(name = "ReconstructionMethodAndCorrectionsUsed", required = true)
     protected String reconstructionMethodAndCorrectionsUsed;
-    @XmlElement(name = "CalibrationFactorUsed", required = true)
-    protected CalibrationFactor calibrationFactorUsed;
+    @XmlElement(name = "CTNumberCalibrationCurveUsed", required = true)
+    protected CTNumberCalibrationCurve ctNumberCalibrationCurveUsed;
     @XmlElement(name = "NMTomoReconProduced", required = true)
     protected DICOMData nmTomoReconProduced;
 
@@ -88,30 +84,6 @@ public class SPECTReconstruction {
      */
     public void setProcessExecutionContext(ProcessExecutionContext value) {
         this.processExecutionContext = value;
-    }
-
-    /**
-     * Obtient la valeur de la propriété timePointIdentifierUsed.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTimePointIdentifierUsed() {
-        return timePointIdentifierUsed;
-    }
-
-    /**
-     * Définit la valeur de la propriété timePointIdentifierUsed.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTimePointIdentifierUsed(String value) {
-        this.timePointIdentifierUsed = value;
     }
 
     /**
@@ -187,27 +159,27 @@ public class SPECTReconstruction {
     }
 
     /**
-     * Obtient la valeur de la propriété calibrationFactorUsed.
+     * Obtient la valeur de la propriété ctNumberCalibrationCurveUsed.
      * 
      * @return
      *     possible object is
-     *     {@link CalibrationFactor }
+     *     {@link CTNumberCalibrationCurve }
      *     
      */
-    public CalibrationFactor getCalibrationFactorUsed() {
-        return calibrationFactorUsed;
+    public CTNumberCalibrationCurve getCTNumberCalibrationCurveUsed() {
+        return ctNumberCalibrationCurveUsed;
     }
 
     /**
-     * Définit la valeur de la propriété calibrationFactorUsed.
+     * Définit la valeur de la propriété ctNumberCalibrationCurveUsed.
      * 
      * @param value
      *     allowed object is
-     *     {@link CalibrationFactor }
+     *     {@link CTNumberCalibrationCurve }
      *     
      */
-    public void setCalibrationFactorUsed(CalibrationFactor value) {
-        this.calibrationFactorUsed = value;
+    public void setCTNumberCalibrationCurveUsed(CTNumberCalibrationCurve value) {
+        this.ctNumberCalibrationCurveUsed = value;
     }
 
     /**

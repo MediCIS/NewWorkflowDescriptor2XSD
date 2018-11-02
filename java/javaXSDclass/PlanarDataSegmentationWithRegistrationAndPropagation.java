@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.10.31 à 05:12:10 PM CET 
+// Généré le : 2018.11.02 à 11:16:14 AM CET 
 //
 
 
@@ -30,7 +30,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="DICOMSeriesUIDNMStaticCorrectedUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="SegmentationMethodUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="CountsPerROIProduced" type="{https://www.irdbb-medirad.com}CountsPerROI" maxOccurs="unbounded"/>
+ *         &lt;element name="CountsPerROIAtTimePointProduced" type="{https://www.irdbb-medirad.com}CountsPerROIAtTimePoint" maxOccurs="unbounded"/>
  *         &lt;element name="ROIProduced" type="{https://www.irdbb-medirad.com}ROI" maxOccurs="unbounded"/>
  *         &lt;element name="NMStaticCorrectedResampledOnCommonReferenceProduced" type="{https://www.irdbb-medirad.com}DICOMData"/>
  *       &lt;/sequence>
@@ -47,7 +47,7 @@ import javax.xml.bind.annotation.XmlType;
     "timePointIdentifierUsed",
     "dicomSeriesUIDNMStaticCorrectedUsed",
     "segmentationMethodUsed",
-    "countsPerROIProduced",
+    "countsPerROIAtTimePointProduced",
     "roiProduced",
     "nmStaticCorrectedResampledOnCommonReferenceProduced"
 })
@@ -61,8 +61,8 @@ public class PlanarDataSegmentationWithRegistrationAndPropagation {
     protected String dicomSeriesUIDNMStaticCorrectedUsed;
     @XmlElement(name = "SegmentationMethodUsed", required = true)
     protected String segmentationMethodUsed;
-    @XmlElement(name = "CountsPerROIProduced", required = true)
-    protected List<CountsPerROI> countsPerROIProduced;
+    @XmlElement(name = "CountsPerROIAtTimePointProduced", required = true)
+    protected List<CountsPerROIAtTimePoint> countsPerROIAtTimePointProduced;
     @XmlElement(name = "ROIProduced", required = true)
     protected List<ROI> roiProduced;
     @XmlElement(name = "NMStaticCorrectedResampledOnCommonReferenceProduced", required = true)
@@ -165,32 +165,32 @@ public class PlanarDataSegmentationWithRegistrationAndPropagation {
     }
 
     /**
-     * Gets the value of the countsPerROIProduced property.
+     * Gets the value of the countsPerROIAtTimePointProduced property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the countsPerROIProduced property.
+     * This is why there is not a <CODE>set</CODE> method for the countsPerROIAtTimePointProduced property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getCountsPerROIProduced().add(newItem);
+     *    getCountsPerROIAtTimePointProduced().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link CountsPerROI }
+     * {@link CountsPerROIAtTimePoint }
      * 
      * 
      */
-    public List<CountsPerROI> getCountsPerROIProduced() {
-        if (countsPerROIProduced == null) {
-            countsPerROIProduced = new ArrayList<CountsPerROI>();
+    public List<CountsPerROIAtTimePoint> getCountsPerROIAtTimePointProduced() {
+        if (countsPerROIAtTimePointProduced == null) {
+            countsPerROIAtTimePointProduced = new ArrayList<CountsPerROIAtTimePoint>();
         }
-        return this.countsPerROIProduced;
+        return this.countsPerROIAtTimePointProduced;
     }
 
     /**

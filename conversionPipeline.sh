@@ -17,5 +17,5 @@ cd ../xsd
 
 for i in *.xsd
 do
-xjc -p javaXSDclass -d $mainPath/java $i
+xjc -p javaXSDclass -d $mainPath/java -quiet $i
 done

@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.10.31 à 05:12:10 PM CET 
+// Généré le : 2018.11.02 à 11:16:14 AM CET 
 //
 
 
@@ -30,7 +30,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="ROIIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
  *         &lt;element name="PlanarCalibrationFactorUsed" type="{https://www.irdbb-medirad.com}PlanarCalibrationFactor"/>
- *         &lt;element name="DataActivityPerROIProduced" type="{https://www.irdbb-medirad.com}DataActivityPerROI" maxOccurs="unbounded"/>
+ *         &lt;element name="DataActivityPerROIAtTimePointProduced" type="{https://www.irdbb-medirad.com}DataActivityPerROIAtTimePoint" maxOccurs="unbounded"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -45,7 +45,7 @@ import javax.xml.bind.annotation.XmlType;
     "timePointIdentifierUsed",
     "roiIdentifierUsed",
     "planarCalibrationFactorUsed",
-    "dataActivityPerROIProduced"
+    "dataActivityPerROIAtTimePointProduced"
 })
 public class ROIPlanarActivityDetermination {
 
@@ -57,8 +57,8 @@ public class ROIPlanarActivityDetermination {
     protected List<String> roiIdentifierUsed;
     @XmlElement(name = "PlanarCalibrationFactorUsed", required = true)
     protected PlanarCalibrationFactor planarCalibrationFactorUsed;
-    @XmlElement(name = "DataActivityPerROIProduced", required = true)
-    protected List<DataActivityPerROI> dataActivityPerROIProduced;
+    @XmlElement(name = "DataActivityPerROIAtTimePointProduced", required = true)
+    protected List<DataActivityPerROIAtTimePoint> dataActivityPerROIAtTimePointProduced;
 
     /**
      * Obtient la valeur de la propriété processExecutionContext.
@@ -162,32 +162,32 @@ public class ROIPlanarActivityDetermination {
     }
 
     /**
-     * Gets the value of the dataActivityPerROIProduced property.
+     * Gets the value of the dataActivityPerROIAtTimePointProduced property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the dataActivityPerROIProduced property.
+     * This is why there is not a <CODE>set</CODE> method for the dataActivityPerROIAtTimePointProduced property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getDataActivityPerROIProduced().add(newItem);
+     *    getDataActivityPerROIAtTimePointProduced().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link DataActivityPerROI }
+     * {@link DataActivityPerROIAtTimePoint }
      * 
      * 
      */
-    public List<DataActivityPerROI> getDataActivityPerROIProduced() {
-        if (dataActivityPerROIProduced == null) {
-            dataActivityPerROIProduced = new ArrayList<DataActivityPerROI>();
+    public List<DataActivityPerROIAtTimePoint> getDataActivityPerROIAtTimePointProduced() {
+        if (dataActivityPerROIAtTimePointProduced == null) {
+            dataActivityPerROIAtTimePointProduced = new ArrayList<DataActivityPerROIAtTimePoint>();
         }
-        return this.dataActivityPerROIProduced;
+        return this.dataActivityPerROIAtTimePointProduced;
     }
 
 }
