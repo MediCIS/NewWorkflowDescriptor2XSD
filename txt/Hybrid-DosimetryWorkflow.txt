@@ -1,14 +1,15 @@
 
 //Descriptions of Workflows
 //-------------------------
-TwoDimDosimetryworkflow
+HybridDosimetryworkflow
 {
  1-string-PatientId
  1-string-PatientName
  1-string-ClinicalResearchStudyId
  1,n-PlanarDataAcquisitionAndProcessing-PlanarDataAcquisitionAndProcessing
- 0,1-TwoDimDosimetryViaAbsorbedDoseRateCalculation-TwoDimDosimetryViaAbsorbedDoseRateCalculation
- 0,1-TwoDimDosimetryViaTimeActivityCurveFit-TwoDimDosimetryViaTimeActivityCurveFit
+ 1-SPECTDataAcquisitionAndProcessing-SPECTDataAcquisitionAndProcessing
+ 0,1-HybridDosimetryViaAbsorbedDoseRateCalculation-HybridDosimetryViaAbsorbedDoseRateCalculation
+ 0,1-HybridDosimetryViaTimeActivityCurveFit-HybridDosimetryViaTimeActivityCurveFit
  1-RadioBiologicalCalculation-RadioBiologicalCalculation
 }
 
@@ -21,17 +22,29 @@ PlanarDataAcquisitionAndProcessing
  1-ROIPlanarActivityDetermination-ROIPlanarActivityDetermination
 }
 
-TwoDimDosimetryViaAbsorbedDoseRateCalculation
+SPECTDataAcquisitionAndProcessing
 {
- 1-AbsorbedDoseRateCalculation-AbsorbedDoseRateCalculation
- 1-TimeAbsorbedDoseCurveFit-TimeAbsorbedDoseCurveFit
+ 1-SPECTAcqCTAcqAndReconstruction-SPECTAcqCTAcqAndReconstruction
+ 1-SPECTReconstruction-SPECTReconstruction
+ 1-RegistrationVOISegmentation-RegistrationVOISegmentation
+ 1-VOIActivityDetermination-VOIActivityDetermination
 }
 
-TwoDimDosimetryViaTimeActivityCurveFit
+HybridDosimetryViaAbsorbedDoseRateCalculation
 {
+ 1-EnergyDepositionRateCalculation-EnergyDepositionRateCalculation
+ 1-SumAndScalingEnergyDepositionRate-SumAndScalingEnergyDepositionRate
+ 1-AbsorbedDoseRateCalculation-AbsorbedDoseRateCalculation
+ 1-TimeAbsorbedDoseRateCurveFit-TimeAbsorbedDoseRateCurveFit
+}
+
+HybridDosimetryViaTimeActivityCurveFit
+{
+ 1-ActivityScaling-ActivityScaling
  1-TimeActivityCurveFit-TimeActivityCurveFit
  1-AbsorbedDoseCalculation-AbsorbedDoseCalculation
 }
+
 //Descriptions of Individual boxes
 //-------------------------
 
@@ -86,30 +99,115 @@ ROIPlanarActivityDetermination
  1,n-DataActivityPerROIAtTimePoint-DataActivityPerROIAtTimePointProduced
 }
 
-AbsorbedDoseRateCalculation
+SPECTAcqCTAcqAndReconstruction
+{
+ 1-TimePointDescription-TimePointDescription
+ 1-DICOMData-NMTomoProduced
+// it is not needed to detail input that will be retrieved from DICOM metadata
+ 1-DICOMData-CTReconProduced
+// it is not needed to detail input that will be retrieved from DICOM metadata
+}
+
+SPECTReconstruction
 {
  1-ProcessExecutionContext-ProcessExecutionContext
  1-string-TimePointIdentifierUsed
- 1,n-string-ROIIdentifierUsed
-// Corresponding Data activity per ROI need to be retrieved
- 1-AdministeredActivity-PreAdministeredActivityUsed
- 1-AdministeredActivity-PostAdministeredActivityUsed
- 1-string-OrganSValueUsed
- 1-string-ReferenceOrganMassUsed
- 1,n-PatientOrganMass-PatientOrganMassUsed
- 1,n-MeanAbsorbedDoseRateInROI-MeanAbsorbedDoseRateInROIProduced
+ 1-string-DICOMSeriesUIDNMTomoUsed
+ 1-string-DICOMSeriesUIDCTReconUsed
+ 1-string-ReconstructionMethodAndCorrectionsUsed
+// to be replaced by structured items
+ 1-CalibrationFactor-CalibrationFactorUsed
+ 1-DICOMData-NMTomoReconProduced
 }
 
-TimeAbsorbedDoseCurveFit
+RegistrationVOISegmentation
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1,n-string-ROIIdentifierUsed
+ 1-string-TimePointIdentifierUsed
+ 1-string-DICOMSeriesUIDNMTomoReconUsed
+ 1-string-DICOMSeriesUIDCTReconUsed
+ 1-string-RegistrationAndSegmentationMethodMethodUsed
+// to be replaced by structured items
+ 1,n-CountsPerVOIAtTimePoint-CountsPerVOIAtTimePointProduced
+ 1,n-VOI-VOIInSPECTProduced
+// Is it in DICOM or nonDICOM ?
+ 1-DICOMData-CTReconResampledOnSPECTProduced
+}
+
+VOIActivityDetermination
+{
+ 1-ProcessExecutionContext-ProcessExecutionContext
+ 1,n-string-VOIIdentifierUsed
+ 1-string-TimePointIdentifierUsed
+// Corresponding Counts per VOI at this TimePoint need to be retrieved
+ 1-string-DICOMSeriesUIDNMTomoReconUsed
+ 1-CalibrationFactor-CalibrationFactorUsed
+// how to refer to a value obtained in a calibration workflow?
+ 1-SPECTRecoveryCoefficientCurve-SPECTRecoveryCoefficientCurveUsed
+// how to refer to a SPECT Recovery Coefficient Curve obtained in a calibration workflow?
+ 1,n-DataActivityPerVOIAtTimePoint-DataActivityPerVOIAtTimePointProduced
+ 1-NonDICOMData-VoxelDataActivityAtTimePoint
+}
+
+EnergyDepositionRateCalculation
+{
+ 1-ProcessExecutionContext-ProcessExecutionContext
+ 1-string-VoxelDataActivityAtTimePointIdentifier
+ 1-string-DICOMSeriesUIDCTReconResampledOnSPECTUsed
+ 1-NonDICOMData-ThreeDimEnergyDepositionRateMatrixAtTimePointProduced
+}
+
+
+SumAndScalingEnergyDepositionRate
+{
+// to be clarified if all TimePoints are processed in one single execution of this box ?
+ 1-ProcessExecutionContext-ProcessExecutionContext
  1,n-string-TimePointIdentifierUsed
-// Corresponding Mean Absorbed DoseRate per ROI need to be retrieved
+ 1,n-string-ROIIdentifierUsed
+// Corresponding Data Activity per ROI at this TimePoint need to be retrieved
+ 1,n-string-VOIIdentifierUsed
+// Corresponding Data Activity per VOI at corresponding unique TimePoint need to be retrieved
+ 1-string-VOIInSPECTIdentifierUsed
+// Is it in DICOM or nonDICOM ?
+ 1,n-EnergyDepositionRatePerVOIAtTimePoint-EnergyDepositionRatePerVOIAtTimePointProduced
+}
+
+AbsorbedDoseRateCalculation
+{
+// to be clarified if all TimePoints are processed in one single execution of this box ?
+ 1-ProcessExecutionContext-ProcessExecutionContext
+ 1-string-TimePointIdentifierUsed
+ 1,n-string-VOIIdentifierUsed
+// Corresponding Energy Deposition Rate per VOI at this TimePoint need to be retrieved
+ 1-AdministeredActivity-PreAdministeredActivityUsed
+ 1-AdministeredActivity-PostAdministeredActivityUsed
+ 0,n-PatientOrganMass-PatientOrganMassUsed
+ 1,n-MeanAbsorbedDoseRateInVOI-MeanAbsorbedDoseRateInVOIProduced
+}
+
+TimeAbsorbedDoseRateCurveFit
+{
+ 1-ProcessExecutionContext-ProcessExecutionContext
+ 1,n-string-VOIIdentifierUsed
+ 1,n-string-TimePointIdentifierUsed
+// Corresponding Mean Absorbed Dose Rate per VOI need to be retrieved
  1-string-PKAssessmentMethodUsed
 // to be provided as a closed list of possible values
- 1,n-MeanAbsorbedDoseInROI-MeanAbsorbedDoseInROIProduced
+ 1,n-MeanAbsorbedDoseInVOI-MeanAbsorbedDoseInVOIProduced
 }
+
+
+ActivityScaling
+{
+ 1-ProcessExecutionContext-ProcessExecutionContext
+ 1,n-string-TimePointIdentifierUsed
+ 1,n-string-VOIIdentifierUsed
+// Corresponding Data Activity per VOI need to be retrieved
+ 1,n-string-ROIIdentifierUsed
+// Corresponding Data Activity per ROI need to be retrieved
+ 1,n-DataActivityPerROIAtTimePoint-DataActivityPerROIAtTimePoint
+}
+
 
 TimeActivityCurveFit
 {
@@ -133,7 +231,7 @@ AbsorbedDoseCalculation
 // Corresponding Time Integrated Activity per ROI need to be retrieved
  1-string-OrganSValueUsed
  0,n-PatientOrganMass-PatientOrganMassUsed
- 1,n-MeanAbsorbedDoseInROI-MeanAbsorbedDoseInROIProduced
+ 1,n-MeanAbsorbedDoseInVOI-MeanAbsorbedDoseInVOIProduced
 }
 
 RadioBiologicalCalculation
@@ -177,6 +275,24 @@ CountsPerROIAtTimePoint
  1-string-TimePointIdentifier
 }
 
+CountsPerVOIAtTimePoint
+{
+ 1-float-CountsValue
+ 1-string-CountsUnit
+// to be provided as a closed list of possible values
+ 1-string-VOIIdentifier
+ 1-string-TimePointIdentifier
+}
+
+VOI
+{
+ 1-string-VOIIdentifier
+ 1-string-OrganOrTissue
+// to be provided as a closed list of possible values
+ 0,1-DICOMData-DICOMVOIContainer
+ 0,1-NonDICOMData-NonDICOMVOIContainer
+}
+
 ROI
 {
  1-string-ROIIdentifier
@@ -193,12 +309,43 @@ PlanarCalibrationFactor
  1-string-PlanarCalibrationFactorUnit
 }
 
+CalibrationFactor
+{
+// how to refer to a value obtained in a calibration workflow?
+ 1-float-CalibrationFactorValue
+ 1-string-CalibrationFactorUnit
+}
+
+SPECTRecoveryCoefficientCurve
+{
+// how to represent this curve obtained in a calibration workflow?
+ 1-string-SPECTRecoveryCoefficientCurve
+}
+
 DataActivityPerROIAtTimePoint
 {
  1-float-DataActivityValue
  1-string-DataActivityUnit
 // to be provided as a closed list of possible values
  1-string-ROIIdentifier
+ 1-string-TimePointIdentifier
+}
+
+DataActivityPerVOIAtTimePoint
+{
+ 1-float-DataActivityValue
+ 1-string-DataActivityUnit
+// to be provided as a closed list of possible values
+ 1-string-VOIIdentifier
+ 1-string-TimePointIdentifier
+}
+
+EnergyDepositionRatePerVOIAtTimePoint
+{
+ 1-float-EnergyDepositionRateValue
+ 1-string-EnergyDepositionRateUnit
+// to be provided as a closed list of possible values
+ 1-string-VOIIdentifier
  1-string-TimePointIdentifier
 }
 
@@ -216,23 +363,23 @@ PatientOrganMass
  1-float-PatientOrganMassValue
  1-string-PatientOrganMassUnit
 // to be provided as a closed list of possible values
- 1-string-ROIIdentifier
+ 1-string-VOIIdentifier
 }
 
-MeanAbsorbedDoseRateInROI
+MeanAbsorbedDoseRateInVOI
 {
- 1-float-MeanAbsorbedDoseRateInROIValue
- 1-string-MeanAbsorbedDoseRateInROIUnit
+ 1-float-MeanAbsorbedDoseRateInVOIValue
+ 1-string-MeanAbsorbedDoseRateInVOIUnit
 // to be provided as a closed list of possible values
- 1-string-ROIIdentifier
+ 1-string-VOIIdentifier
 }
 
-MeanAbsorbedDoseInROI
+MeanAbsorbedDoseInVOI
 {
- 1-float-MeanAbsorbedDoseInROIValue
- 1-string-MeanAbsorbedDoseInROIUnit
+ 1-float-MeanAbsorbedDoseInVOIValue
+ 1-string-MeanAbsorbedDoseInVOIUnit
 // to be provided as a closed list of possible values
- 1-string-ROIIdentifier
+ 1-string-VOIIdentifier
 }
 
 TimeIntegratedActivityCoefficientPerROI
