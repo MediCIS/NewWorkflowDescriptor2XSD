@@ -2,15 +2,19 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.02 à 11:16:14 AM CET 
+// Généré le : 2018.11.07 à 02:11:03 PM CET 
 //
 
 
 package javaXSDclass;
 
+import java.util.ArrayList;
+import java.util.List;
+import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementRef;
+import javax.xml.bind.annotation.XmlElementRefs;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -25,8 +29,11 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
- *         &lt;element name="VoxelDataActivityAtTimePointIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="DICOMSeriesUIDCTReconResampledOnSPECTUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="VOIIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
+ *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="VOIUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
+ *         &lt;element name="DICOMData" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="DICOMData" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="ThreeDimEnergyDepositionRateMatrixAtTimePointProduced" type="{https://www.irdbb-medirad.com}NonDICOMData"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -38,116 +45,62 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "EnergyDepositionRateCalculation", propOrder = {
-    "processExecutionContext",
-    "voxelDataActivityAtTimePointIdentifier",
-    "dicomSeriesUIDCTReconResampledOnSPECTUsed",
-    "threeDimEnergyDepositionRateMatrixAtTimePointProduced"
+    "content"
 })
 public class EnergyDepositionRateCalculation {
 
-    @XmlElement(name = "ProcessExecutionContext", required = true)
-    protected ProcessExecutionContext processExecutionContext;
-    @XmlElement(name = "VoxelDataActivityAtTimePointIdentifier", required = true)
-    protected String voxelDataActivityAtTimePointIdentifier;
-    @XmlElement(name = "DICOMSeriesUIDCTReconResampledOnSPECTUsed", required = true)
-    protected String dicomSeriesUIDCTReconResampledOnSPECTUsed;
-    @XmlElement(name = "ThreeDimEnergyDepositionRateMatrixAtTimePointProduced", required = true)
-    protected NonDICOMData threeDimEnergyDepositionRateMatrixAtTimePointProduced;
+    @XmlElementRefs({
+        @XmlElementRef(name = "VOIIdentifierUsed", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "VOIUsed", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "ThreeDimEnergyDepositionRateMatrixAtTimePointProduced", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "ProcessExecutionContext", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "DICOMData", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "TimePointIdentifierUsed", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false)
+    })
+    protected List<JAXBElement<?>> content;
 
     /**
-     * Obtient la valeur de la propriété processExecutionContext.
+     * Obtient le reste du modèle de contenu. 
      * 
-     * @return
-     *     possible object is
-     *     {@link ProcessExecutionContext }
-     *     
-     */
-    public ProcessExecutionContext getProcessExecutionContext() {
-        return processExecutionContext;
-    }
-
-    /**
-     * Définit la valeur de la propriété processExecutionContext.
+     * <p>
+     * Vous obtenez la propriété "catch-all" pour la raison suivante : 
+     * Le nom de champ "DICOMData" est utilisé par deux parties différentes d'un schéma. Reportez-vous à : 
+     * ligne 755 sur file:/Users/marinebrenet/Documents/workflowDescriptor2XSD/xsd/nonDicomFileSetDescriptor.xsd
+     * ligne 754 sur file:/Users/marinebrenet/Documents/workflowDescriptor2XSD/xsd/nonDicomFileSetDescriptor.xsd
+     * <p>
+     * Pour vous débarrasser de cette propriété, appliquez une personnalisation de propriété à l'une 
+     * des deux déclarations suivantes afin de modifier leurs noms : 
+     * Gets the value of the content property.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ProcessExecutionContext }
-     *     
-     */
-    public void setProcessExecutionContext(ProcessExecutionContext value) {
-        this.processExecutionContext = value;
-    }
-
-    /**
-     * Obtient la valeur de la propriété voxelDataActivityAtTimePointIdentifier.
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the content property.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getVoxelDataActivityAtTimePointIdentifier() {
-        return voxelDataActivityAtTimePointIdentifier;
-    }
-
-    /**
-     * Définit la valeur de la propriété voxelDataActivityAtTimePointIdentifier.
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getContent().add(newItem);
+     * </pre>
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setVoxelDataActivityAtTimePointIdentifier(String value) {
-        this.voxelDataActivityAtTimePointIdentifier = value;
-    }
-
-    /**
-     * Obtient la valeur de la propriété dicomSeriesUIDCTReconResampledOnSPECTUsed.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDICOMSeriesUIDCTReconResampledOnSPECTUsed() {
-        return dicomSeriesUIDCTReconResampledOnSPECTUsed;
-    }
-
-    /**
-     * Définit la valeur de la propriété dicomSeriesUIDCTReconResampledOnSPECTUsed.
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link JAXBElement }{@code <}{@link ProcessExecutionContext }{@code >}
+     * {@link JAXBElement }{@code <}{@link String }{@code >}
+     * {@link JAXBElement }{@code <}{@link String }{@code >}
+     * {@link JAXBElement }{@code <}{@link String }{@code >}
+     * {@link JAXBElement }{@code <}{@link String }{@code >}
+     * {@link JAXBElement }{@code <}{@link NonDICOMData }{@code >}
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDICOMSeriesUIDCTReconResampledOnSPECTUsed(String value) {
-        this.dicomSeriesUIDCTReconResampledOnSPECTUsed = value;
-    }
-
-    /**
-     * Obtient la valeur de la propriété threeDimEnergyDepositionRateMatrixAtTimePointProduced.
      * 
-     * @return
-     *     possible object is
-     *     {@link NonDICOMData }
-     *     
      */
-    public NonDICOMData getThreeDimEnergyDepositionRateMatrixAtTimePointProduced() {
-        return threeDimEnergyDepositionRateMatrixAtTimePointProduced;
-    }
-
-    /**
-     * Définit la valeur de la propriété threeDimEnergyDepositionRateMatrixAtTimePointProduced.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link NonDICOMData }
-     *     
-     */
-    public void setThreeDimEnergyDepositionRateMatrixAtTimePointProduced(NonDICOMData value) {
-        this.threeDimEnergyDepositionRateMatrixAtTimePointProduced = value;
+    public List<JAXBElement<?>> getContent() {
+        if (content == null) {
+            content = new ArrayList<JAXBElement<?>>();
+        }
+        return this.content;
     }
 
 }

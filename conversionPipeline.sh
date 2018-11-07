@@ -6,14 +6,11 @@
 # 1 Conversion txt to xsd
 mainPath=/Users/marinebrenet/Documents/workflowDescriptor2XSD
 
-cd $mainPath/txt
+cd $mainPath
 
-for i in *.txt
-do
-../workflowDescriptor2XSD.py "$i" $mainPath/xsd/$i
-done
+./workflowDescriptor2NonDicomXSD.py
 
-cd ../xsd
+cd xsd
 
 for i in *.xsd
 do

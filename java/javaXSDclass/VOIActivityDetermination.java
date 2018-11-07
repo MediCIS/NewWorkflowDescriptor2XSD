@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.02 à 11:16:14 AM CET 
+// Généré le : 2018.11.07 à 02:11:03 PM CET 
 //
 
 
@@ -29,11 +29,9 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
  *         &lt;element name="VOIIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
  *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="DICOMSeriesUIDNMTomoReconUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="CalibrationFactorUsed" type="{https://www.irdbb-medirad.com}CalibrationFactor"/>
  *         &lt;element name="SPECTRecoveryCoefficientCurveUsed" type="{https://www.irdbb-medirad.com}SPECTRecoveryCoefficientCurve"/>
  *         &lt;element name="DataActivityPerVOIAtTimePointProduced" type="{https://www.irdbb-medirad.com}DataActivityPerVOIAtTimePoint" maxOccurs="unbounded"/>
- *         &lt;element name="VoxelDataActivityAtTimePoint" type="{https://www.irdbb-medirad.com}NonDICOMData"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -47,11 +45,9 @@ import javax.xml.bind.annotation.XmlType;
     "processExecutionContext",
     "voiIdentifierUsed",
     "timePointIdentifierUsed",
-    "dicomSeriesUIDNMTomoReconUsed",
     "calibrationFactorUsed",
     "spectRecoveryCoefficientCurveUsed",
-    "dataActivityPerVOIAtTimePointProduced",
-    "voxelDataActivityAtTimePoint"
+    "dataActivityPerVOIAtTimePointProduced"
 })
 public class VOIActivityDetermination {
 
@@ -61,16 +57,12 @@ public class VOIActivityDetermination {
     protected List<String> voiIdentifierUsed;
     @XmlElement(name = "TimePointIdentifierUsed", required = true)
     protected String timePointIdentifierUsed;
-    @XmlElement(name = "DICOMSeriesUIDNMTomoReconUsed", required = true)
-    protected String dicomSeriesUIDNMTomoReconUsed;
     @XmlElement(name = "CalibrationFactorUsed", required = true)
     protected CalibrationFactor calibrationFactorUsed;
     @XmlElement(name = "SPECTRecoveryCoefficientCurveUsed", required = true)
     protected SPECTRecoveryCoefficientCurve spectRecoveryCoefficientCurveUsed;
     @XmlElement(name = "DataActivityPerVOIAtTimePointProduced", required = true)
     protected List<DataActivityPerVOIAtTimePoint> dataActivityPerVOIAtTimePointProduced;
-    @XmlElement(name = "VoxelDataActivityAtTimePoint", required = true)
-    protected NonDICOMData voxelDataActivityAtTimePoint;
 
     /**
      * Obtient la valeur de la propriété processExecutionContext.
@@ -150,30 +142,6 @@ public class VOIActivityDetermination {
     }
 
     /**
-     * Obtient la valeur de la propriété dicomSeriesUIDNMTomoReconUsed.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDICOMSeriesUIDNMTomoReconUsed() {
-        return dicomSeriesUIDNMTomoReconUsed;
-    }
-
-    /**
-     * Définit la valeur de la propriété dicomSeriesUIDNMTomoReconUsed.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDICOMSeriesUIDNMTomoReconUsed(String value) {
-        this.dicomSeriesUIDNMTomoReconUsed = value;
-    }
-
-    /**
      * Obtient la valeur de la propriété calibrationFactorUsed.
      * 
      * @return
@@ -248,30 +216,6 @@ public class VOIActivityDetermination {
             dataActivityPerVOIAtTimePointProduced = new ArrayList<DataActivityPerVOIAtTimePoint>();
         }
         return this.dataActivityPerVOIAtTimePointProduced;
-    }
-
-    /**
-     * Obtient la valeur de la propriété voxelDataActivityAtTimePoint.
-     * 
-     * @return
-     *     possible object is
-     *     {@link NonDICOMData }
-     *     
-     */
-    public NonDICOMData getVoxelDataActivityAtTimePoint() {
-        return voxelDataActivityAtTimePoint;
-    }
-
-    /**
-     * Définit la valeur de la propriété voxelDataActivityAtTimePoint.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link NonDICOMData }
-     *     
-     */
-    public void setVoxelDataActivityAtTimePoint(NonDICOMData value) {
-        this.voxelDataActivityAtTimePoint = value;
     }
 
 }

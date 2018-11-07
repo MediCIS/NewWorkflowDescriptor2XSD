@@ -7,16 +7,16 @@ Created on Fri Sep 14 15:55:40 2018
 """
 import os
 
-dico = {}
-dicoClean = {}
-contentList=[]
+directory = "/Users/marinebrenet/Documents/workflowDescriptor2XSD/txt/"
+pathXSD = "xsd/nonDicomFileSetDescriptor.xsd"
 
+dico = {}
+contentList=[]
 
 def readFile(path):
     inside=False
     key=""
     content=""
-
     print("Read the Text File : "+path)
     workflowDescriptor = open(path, "r")
     
@@ -41,10 +41,6 @@ def readFile(path):
     
     workflowDescriptor.close()
     
-
-
-directory = "/Users/marinebrenet/Documents/workflowDescriptor2XSD/txt/"
-
 for file in os.listdir(directory):
     filename = os.fsdecode(file)
     if filename.endswith(".txt") : 
@@ -106,12 +102,7 @@ def generateSimpleObject(nombre, name, typeName):
     return xsdString
 
 def generateElementRestricted(string, typeName):   
-    print("generateElementRestricted")
-    print("typeName : "+typeName)
-
     nameElement = string.split(":")[0]
-    print("nameElement : "+nameElement)
-
     listValues = string.split(":")[1]
     xsd =  '\t\t<xs:element name="'+nameElement+'">\n'
     xsd += '\t\t\t<xs:simpleType>\n'
@@ -151,7 +142,6 @@ def generateComplexType(name, sousObj):
     xsdString += "\t</xs:complexType>"+"\n"
     return xsdString
 
-
 def generateXSD(elements, types):
     XSD = '<?xml version="1.0"?>'+"\n"
     XSD+= '<xs:schema'+"\n"
@@ -160,7 +150,6 @@ def generateXSD(elements, types):
     XSD+= 'attributeFormDefault="unqualified"'+"\n"
     XSD+= 'xmlns:xs="http://www.w3.org/2001/XMLSchema"'+"\n"
     XSD+= 'xmlns:irdbb="https://www.irdbb-medirad.com">'+"\n"
-    
     XSD+= '\t<xs:element name="NonDicomFileSetDescriptor">'+"\n"
     XSD+= '\t\t<xs:complexType>'+"\n"
     XSD+= '\t\t\t<xs:sequence>'+"\n"
@@ -173,22 +162,18 @@ def generateXSD(elements, types):
     XSD+= '\t\t\t\t\t</xs:complexType>'+"\n"
     XSD+= '\t\t\t\t</xs:element>'+"\n"
     XSD+= '\t\t\t<xs:element name="PatientId" type="xs:string"/>'+"\n"
-    
     XSD+=elements
-    
     XSD+='\t\t\t</xs:sequence>'+"\n"
     XSD+='\t\t</xs:complexType>'+"\n"
     XSD+='\t</xs:element>'+"\n"
-    
     XSD+=types    
-    
     XSD+='</xs:schema>'
     return XSD
 
 xmlElements = ""
 xmlTypes = ""
-listeTypes=[]
-listeTypes.append("DataActivityPerVOIAtTimePoint")
+listeTypes=["DataActivityPerVOIAtTimePoint", "MeanAbsorbedDoseRateInROI", "VOIInCT", "VOIInSPECT", 
+            "TimeIntegratedActivityCoefficientPerROI", "TimeIntegratedActivityPerROI"]
 
 for key in dico:
     if len(key)>1:
@@ -216,13 +201,10 @@ for key in dico:
             else:
                 xmlElements+=generateComplexObject(key,sousObjets)
 
-pathXSD = "xsd/nondicomFileSetDescriptorTest.xsd"
-
 print("XSD file : "+pathXSD)
 
 fileXSD = open(pathXSD, "w")
-
 fileXSD.write(generateXSD(xmlElements, xmlTypes))
-
 fileXSD.close()
+
 print("Converted")
