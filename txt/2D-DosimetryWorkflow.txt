@@ -262,5 +262,8 @@ DICOMData
 
 NonDICOMData
 {
- 1-string-FileName
+ 1-String-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map
+ 1-String-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo-DICOM ImpactMC
+ 1,n-String-NonDICOMDataFileName
+ 1-String-FHIRId
 }

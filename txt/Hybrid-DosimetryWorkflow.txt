@@ -134,20 +134,7 @@ RegistrationVOISegmentation
  1-DICOMData-CTReconResampledOnSPECTProduced
 }
 
-VOIActivityDetermination
-{
- 1-ProcessExecutionContext-ProcessExecutionContext
- 1,n-string-VOIIdentifierUsed
- 1-string-TimePointIdentifierUsed
-// Corresponding Counts per VOI at this TimePoint need to be retrieved
- 1-string-DICOMSeriesUIDNMTomoReconUsed
- 1-CalibrationFactor-CalibrationFactorUsed
-// how to refer to a value obtained in a calibration workflow?
- 1-SPECTRecoveryCoefficientCurve-SPECTRecoveryCoefficientCurveUsed
-// how to refer to a SPECT Recovery Coefficient Curve obtained in a calibration workflow?
- 1,n-DataActivityPerVOIAtTimePoint-DataActivityPerVOIAtTimePointProduced
- 1-NonDICOMData-VoxelDataActivityAtTimePoint
-}
+
 
 EnergyDepositionRateCalculation
 {
@@ -287,8 +274,7 @@ CountsPerVOIAtTimePoint
 VOI
 {
  1-string-VOIIdentifier
- 1-string-OrganOrTissue
-// to be provided as a closed list of possible values
+ 1-string:bone/breast/esophagus/heart/lungs/skin-OrganOrTissue
  0,1-DICOMData-DICOMVOIContainer
  0,1-NonDICOMData-NonDICOMVOIContainer
 }
@@ -409,5 +395,8 @@ DICOMData
 
 NonDICOMData
 {
- 1-string-FileName
+ 1-String-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map
+ 1-String-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo-DICOM ImpactMC
+ 1,n-String-NonDICOMDataFileName
+ 1-String-FHIRId
 }
