@@ -257,7 +257,7 @@ TimeIntegratedActivityPerROI
 DICOMData
 {
  1-string-DICOMStudyUID
- 1-string-DICOMDICOMSeriesUID
+ 1-string-DICOMSeriesUID
 }
 
 NonDICOMData

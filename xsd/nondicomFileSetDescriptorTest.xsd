@@ -375,7 +375,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="DICOMData">
 		<xs:sequence>
 				<xs:element name="DICOMStudyUID" type="xs:string"/>
-				<xs:element name="DICOMDICOMSeriesUID" type="xs:string"/>
+				<xs:element name="DICOMSeriesUID" type="xs:string"/>
 		</xs:sequence>
 	</xs:complexType>
 
