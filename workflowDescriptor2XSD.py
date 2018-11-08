@@ -5,11 +5,10 @@ Created on Fri Sep 14 15:55:40 2018
 
 @author: marinebrenet
 """
-
 import sys
 
 path = sys.argv[1]
-#path = "/Users/marinebrenet/Documents/workflowDescriptor2XSD/calibrationWorkflow.txt"
+#path = "/Users/marinebrenet/Documents/workflowDescriptor2XSD/txt/calibrationWorkflow.txt"
 
 dico = {}
 dicoClean = {}
@@ -18,15 +17,14 @@ inside=False
 key=""
 content=""
 
-# Read the file
 print("Read the Text File : "+path)
 workflowDescriptor = open(path, "r")
 
 for line in workflowDescriptor:
     if not "==" in line and not "//" in line and not "#" in line and line != "" :
-        if "{" in line:
+        if "{" in line or "[" in line :
             inside=True
-        if "}" in line: 
+        if "}" in line  or "]" in line :
             content=content+line
             inside=False
         if inside:
@@ -46,7 +44,7 @@ workflowDescriptor.close()
 # Transform in XSD
 print("Conversion in XSD")
 
-def generateSimpleObject(nombre, name, typeName):
+def convertType(typeName):
     if typeName.lower()=="string":
         typeName="xs:string"
     elif typeName.lower()=="integer" :
@@ -57,7 +55,6 @@ def generateSimpleObject(nombre, name, typeName):
         typeName="xs:decimal"     
     elif typeName.lower()=="double" :
         typeName="xs:double" 
-        
     elif typeName.lower()=="duration" :
         typeName="xs:duration"
     elif typeName.lower()=="dateTime" :
@@ -66,7 +63,6 @@ def generateSimpleObject(nombre, name, typeName):
         typeName="xs:time"
     elif typeName.lower()=="date" :
         typeName="xs:date"   
-    
     elif typeName.lower()=="gYearMonth" :
         typeName="xs:gYearMonth"     
     elif typeName.lower()=="gYear" :
@@ -77,10 +73,12 @@ def generateSimpleObject(nombre, name, typeName):
         typeName="xs:gDay"
     elif typeName.lower()=="gMonth" :
         typeName="xs:gMonth"  
-    
     else:
         typeName="irdbb:"+typeName
-    xsdString = '\t\t\t\t<xs:element name="'+name.replace(" ","")+'" type="'+typeName
+    return typeName
+
+def generateSimpleObject(nombre, name, typeName):
+    xsdString = '\t\t\t\t<xs:element name="'+name.replace(" ","")+'" type="'+convertType(typeName)
     nombre=nombre.replace(" ","")
     if nombre=="1" :
         xsdString = xsdString +'"/>'
@@ -91,15 +89,15 @@ def generateSimpleObject(nombre, name, typeName):
     elif nombre=="0,n" or nombre=="0,m":
         xsdString = xsdString +'" minOccurs="0" maxOccurs="unbounded" />'
     else:
-        xsdString = xsdString +'"/>'
+        xsdString = xsdString +'" minOccurs="0" />'
     return xsdString
 
 def generateElementRestricted(string, typeName):   
     nameElement = string.split(":")[0]
     listValues = string.split(":")[1]
-    xsd = '\t\t<xs:element name="'+nameElement+'">\n'
+    xsd =  '\t\t<xs:element name="'+nameElement+'">\n'
     xsd += '\t\t\t<xs:simpleType>\n'
-    xsd += '\t\t\t\t<xs:restriction base="'+typeName+'">\n'
+    xsd += '\t\t\t\t<xs:restriction base="'+convertType(typeName)+'">\n'
     for value in listValues.split("/"):
         xsd += '\t\t\t\t\t<xs:enumeration value="'+value+'"/>\n'
     xsd += '\t\t\t\t</xs:restriction>\n'
@@ -108,40 +106,76 @@ def generateElementRestricted(string, typeName):
     return xsd
 
 def generateComplexObject(name, sousObj):
-    xsdString='\n\t<xs:element name="'+name.replace("\n","").replace(" ","")+'">'
-    xsdString=xsdString +"\n"+"\t\t<xs:complexType>"+"\n"+ "\t\t\t<xs:sequence>"+"\n"
-    xsdString=xsdString+sousObj
-    xsdString=xsdString+"\t\t\t</xs:sequence>\n"+"\t\t</xs:complexType>\n"+"\t</xs:element>"+"\n"
+    xsdString =  '\n\t<xs:element name="'+name.replace("\n","").replace(" ","")+'" minOccurs="0" maxOccurs="unbounded">'+"\n"
+    xsdString += "\t\t<xs:complexType>"+"\n"
+    if choice==True:
+        xsdString += "\t\t\t<xs:choice>"+"\n"
+        xsdString += sousObj
+        xsdString += "\t\t\t</xs:choice>"+"\n"
+    else:
+        xsdString += "\t\t\t<xs:sequence>"+"\n"
+        xsdString += sousObj
+        xsdString += "\t\t\t</xs:sequence>"+"\n"
+    xsdString += "\t\t</xs:complexType>\n"
+    xsdString += "\t</xs:element>"+"\n"
     return xsdString
 
 def generateComplexType(name, sousObj):
-    xsdString='\n\t<xs:complexType name="'+name.replace("\n","").replace(" ","")+'">'
-    xsdString=xsdString +"\n"+"\t\t<xs:sequence>"+"\n"
-    xsdString=xsdString+sousObj
-    xsdString=xsdString+"\t\t</xs:sequence>\n"+"\t</xs:complexType>"+"\n"
+    xsdString='\n\t<xs:complexType name="'+name.replace("\n","").replace(" ","")+'">'+"\n"
+    if choice==True:
+        xsdString += "\t\t<xs:choice>"+"\n"
+        xsdString += sousObj
+        xsdString += "\t\t</xs:choice>"+"\n"
+    else:
+        xsdString += "\t\t<xs:sequence>"+"\n"
+        xsdString += sousObj
+        xsdString += "\t\t</xs:sequence>"+"\n"
+    xsdString += "\t</xs:complexType>"+"\n"
     return xsdString
 
-def generateXSD(content):
+def generateXSD(elements, types):
     XSD = '<?xml version="1.0"?>'+"\n"
-    XSD+='<xs:schema'+"\n"
-    XSD+='targetNamespace="https://www.irdbb-medirad.com"'+"\n"
-    XSD+='elementFormDefault="qualified"'+"\n"
-    XSD+='attributeFormDefault="unqualified"'+"\n"
-    XSD+='xmlns:xs="http://www.w3.org/2001/XMLSchema"'+"\n"
-    XSD+='xmlns:irdbb="https://www.irdbb-medirad.com">'+"\n"
-    XSD+=content
+    XSD+= '<xs:schema'+"\n"
+    XSD+= 'targetNamespace="https://www.irdbb-medirad.com"'+"\n"
+    XSD+= 'elementFormDefault="qualified"'+"\n"
+    XSD+= 'attributeFormDefault="unqualified"'+"\n"
+    XSD+= 'xmlns:xs="http://www.w3.org/2001/XMLSchema"'+"\n"
+    XSD+= 'xmlns:irdbb="https://www.irdbb-medirad.com">'+"\n"
+    XSD+= '\t<xs:element name="NonDicomFileSetDescriptor">'+"\n"
+    XSD+= '\t\t<xs:complexType>'+"\n"
+    XSD+= '\t\t\t<xs:sequence>'+"\n"
+    XSD+= '\t\t\t\t<xs:element name="ReferencedClinicalResearchStudy">'+"\n"
+    XSD+= '\t\t\t\t\t<xs:complexType>'+"\n"
+    XSD+= '\t\t\t\t\t\t<xs:sequence>'+"\n"
+    XSD+= '\t\t\t\t\t\t\t<xs:element name="ClinicalResearchStudyID" type="xs:string"/>'+"\n"
+    XSD+= '\t\t\t\t\t\t\t<xs:element name="ClinicalResearchStudyTitle" type="xs:string"/>'+"\n"
+    XSD+= '\t\t\t\t\t\t</xs:sequence>'+"\n"
+    XSD+= '\t\t\t\t\t</xs:complexType>'+"\n"
+    XSD+= '\t\t\t\t</xs:element>'+"\n"
+    XSD+= '\t\t\t<xs:element name="PatientId" type="xs:string"/>'+"\n"
+    XSD+=elements
+    XSD+='\t\t\t</xs:sequence>'+"\n"
+    XSD+='\t\t</xs:complexType>'+"\n"
+    XSD+='\t</xs:element>'+"\n"
+    XSD+=types    
     XSD+='</xs:schema>'
     return XSD
 
-xmlContent = ""
-listeTypes=[]
-    
+xmlElements = ""
+xmlTypes = ""
+listeTypes=["DataActivityPerVOIAtTimePoint", "MeanAbsorbedDoseRateInROI", "VOIInCT", "VOIInSPECT", 
+            "TimeIntegratedActivityCoefficientPerROI", "TimeIntegratedActivityPerROI"]
+
 for key in dico:
     if len(key)>1:
         content = dico[key]
+        if "[" == content[0]:
+            choice=True
+        else:
+            choice=False
         sousObjets = ""
-        for line in content.split("\n"):
-            if not "{" in line and not "}" in line and " " in line:
+        for line in content.split("\n"):   
+            if not "{" in line and not "}" in line and not "[" in line and not "]" in line and " " in line:
                 typeName=line.split("-")[1]
                 name=line.split("-")[2]
                 nombre=line.split("-")[0]
@@ -151,22 +185,22 @@ for key in dico:
                         sousObjets+=generateElementRestricted(name, typeName)
                     else:
                         sousObjets+=generateSimpleObject(nombre, name, typeName)+"\n"
+        
         if key != "" and key.replace("\n","").replace(" ","") != "":
             if key in listeTypes:
-                xmlContent+=generateComplexType(key,sousObjets)
+                xmlTypes+=generateComplexType(key,sousObjets)
             else:
-                xmlContent+=generateComplexObject(key,sousObjets)
+                xmlElements+=generateComplexObject(key,sousObjets)
 
 if len(sys.argv) < 2:
     pathXSD = path.replace("txt", "xsd")
 else:
-    pathXSD = sys.argv[2].replace("txt", "xsd")
+    pathXSD = sys.argv[2].replace(".txt", ".xsd")
 
 print("XSD file : "+pathXSD)
 
 fileXSD = open(pathXSD, "w")
-
-fileXSD.write(generateXSD(xmlContent))
-
+fileXSD.write(generateXSD(xmlElements, xmlTypes))
 fileXSD.close()
+
 print("Converted")
