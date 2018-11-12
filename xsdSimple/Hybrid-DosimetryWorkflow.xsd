@@ -28,7 +28,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				<xs:element name="SPECTDataAcquisitionAndProcessing" type="irdbb:SPECTDataAcquisitionAndProcessing"/>
 				<xs:element name="HybridDosimetryViaAbsorbedDoseRateCalculation" type="irdbb:HybridDosimetryViaAbsorbedDoseRateCalculation" minOccurs="0" />
 				<xs:element name="HybridDosimetryViaTimeActivityCurveFit" type="irdbb:HybridDosimetryViaTimeActivityCurveFit" minOccurs="0" />
-				<xs:element name="RadioBiologicalCalculation" type="irdbb:RadioBiologicalCalculation"/>
+				<xs:element name="RadioBiologicalCalculation" type="irdbb:RadioBiologicalCalculation" minOccurs="0" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -50,7 +50,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				<xs:element name="PlanarDataCorrections" type="irdbb:PlanarDataCorrections"/>
 				<xs:element name="PlanarDataSegmentationWithoutRegistration" type="irdbb:PlanarDataSegmentationWithoutRegistration" minOccurs="0" />
 				<xs:element name="PlanarDataSegmentationWithRegistrationAndPropagation" type="irdbb:PlanarDataSegmentationWithRegistrationAndPropagation" minOccurs="0" />
-				<xs:element name="ROIPlanarActivityDetermination" type="irdbb:ROIPlanarActivityDetermination"/>
+				<xs:element name="ROIPlanarActivityDetermination" type="irdbb:ROIPlanarActivityDetermination" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 
@@ -83,6 +83,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="PlanarDataAcquisition">
 		<xs:sequence>
 				<xs:element name="TimePointDescription" type="irdbb:TimePointDescription"/>
+				<xs:element name="NMRelevantCalibrationReference" type="irdbb:NMRelevantCalibrationReference"/>
 				<xs:element name="NMStaticProduced" type="irdbb:DICOMData"/>
 		</xs:sequence>
 	</xs:complexType>
@@ -100,8 +101,8 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="PlanarDataSegmentationWithoutRegistration">
 		<xs:sequence>
 				<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
-				<xs:element name="TimePointIdentifierUsed" type="xs:string"/>
-				<xs:element name="DICOMSeriesUIDNMStaticCorrectedUsed" type="xs:string"/>
+				<xs:element name="TimePointIdentifierUsed" type="xs:string" maxOccurs="unbounded" />
+				<xs:element name="DICOMSeriesUIDNMStaticCorrectedUsed" type="xs:string" maxOccurs="unbounded" />
 				<xs:element name="SegmentationMethodUsed" type="xs:string"/>
 				<xs:element name="CountsPerROIAtTimePointProduced" type="irdbb:CountsPerROIAtTimePoint" maxOccurs="unbounded" />
 				<xs:element name="ROIProduced" type="irdbb:ROI" maxOccurs="unbounded" />
@@ -111,21 +112,22 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="PlanarDataSegmentationWithRegistrationAndPropagation">
 		<xs:sequence>
 				<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
-				<xs:element name="TimePointIdentifierUsed" type="xs:string"/>
-				<xs:element name="DICOMSeriesUIDNMStaticCorrectedUsed" type="xs:string"/>
+				<xs:element name="TimePointIdentifierUsed" type="xs:string" maxOccurs="unbounded" />
+				<xs:element name="DICOMSeriesUIDNMStaticCorrectedUsed" type="xs:string" maxOccurs="unbounded" />
+				<xs:element name="ROIIdentifierUsed" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
 				<xs:element name="SegmentationMethodUsed" type="xs:string"/>
 				<xs:element name="CountsPerROIAtTimePointProduced" type="irdbb:CountsPerROIAtTimePoint" maxOccurs="unbounded" />
 				<xs:element name="ROIProduced" type="irdbb:ROI" maxOccurs="unbounded" />
-				<xs:element name="NMStaticCorrectedResampledOnCommonReferenceProduced" type="irdbb:DICOMData"/>
+				<xs:element name="NMStaticCorrectedResampledOnCommonReferenceProduced" type="irdbb:DICOMData" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 
 	<xs:complexType name="ROIPlanarActivityDetermination">
 		<xs:sequence>
 				<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
-				<xs:element name="TimePointIdentifierUsed" type="xs:string"/>
+				<xs:element name="TimePointIdentifierUsed" type="xs:string" maxOccurs="unbounded" />
 				<xs:element name="ROIIdentifierUsed" type="xs:string" maxOccurs="unbounded" />
-				<xs:element name="PlanarCalibrationFactorUsed" type="irdbb:PlanarCalibrationFactor"/>
+				<xs:element name="PlanarCalibrationFactorUsed" type="irdbb:PlanarCalibrationFactor" maxOccurs="unbounded" />
 				<xs:element name="DataActivityPerROIAtTimePointProduced" type="irdbb:DataActivityPerROIAtTimePoint" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
@@ -133,6 +135,8 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="SPECTAcqCTAcqAndReconstruction">
 		<xs:sequence>
 				<xs:element name="TimePointDescription" type="irdbb:TimePointDescription"/>
+				<xs:element name="NMRelevantCalibrationReference" type="irdbb:NMRelevantCalibrationReference"/>
+				<xs:element name="CTRelevantCalibrationReference" type="irdbb:CTRelevantCalibrationReference"/>
 				<xs:element name="NMTomoProduced" type="irdbb:DICOMData"/>
 				<xs:element name="CTReconProduced" type="irdbb:DICOMData"/>
 		</xs:sequence>
@@ -165,6 +169,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="EnergyDepositionRateCalculation">
 		<xs:sequence>
+				<xs:element name="TimePointIdentifierUsed" type="xs:string"/>
 				<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
 				<xs:element name="VoxelDataActivityAtTimePointIdentifier" type="xs:string"/>
 				<xs:element name="DICOMSeriesUIDCTReconResampledOnSPECTUsed" type="xs:string"/>
@@ -261,6 +266,30 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 				<xs:element name="DateTimeProcessStarted" type="xs:string"/>
 				<xs:element name="PerformingInstitution" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="CTRelevantCalibrationReference">
+		<xs:sequence>
+				<xs:element name="ReferenceCalibrationDate" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="NMRelevantCalibrationReference">
+		<xs:sequence>
+				<xs:element name="ReferenceCalibrationDate" type="xs:string"/>
+		<xs:element name="Isotope">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="radium223"/>
+					<xs:enumeration value="iodine131"/>
+					<xs:enumeration value="lutetium177"/>
+					<xs:enumeration value="yttrium90"/>
+					<xs:enumeration value="radium223"/>
+					<xs:enumeration value="rhenium188"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
 		</xs:sequence>
 	</xs:complexType>
 

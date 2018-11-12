@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.09 à 05:15:34 PM CET 
+// Généré le : 2018.11.12 à 05:36:08 PM CET 
 //
 
 
@@ -27,9 +27,9 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
- *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
  *         &lt;element name="ROIIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
- *         &lt;element name="PlanarCalibrationFactorUsed" type="{https://www.irdbb-medirad.com}PlanarCalibrationFactor"/>
+ *         &lt;element name="PlanarCalibrationFactorUsed" type="{https://www.irdbb-medirad.com}PlanarCalibrationFactor" maxOccurs="unbounded"/>
  *         &lt;element name="DataActivityPerROIAtTimePointProduced" type="{https://www.irdbb-medirad.com}DataActivityPerROIAtTimePoint" maxOccurs="unbounded"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -52,11 +52,11 @@ public class ROIPlanarActivityDetermination {
     @XmlElement(name = "ProcessExecutionContext", required = true)
     protected ProcessExecutionContext processExecutionContext;
     @XmlElement(name = "TimePointIdentifierUsed", required = true)
-    protected String timePointIdentifierUsed;
+    protected List<String> timePointIdentifierUsed;
     @XmlElement(name = "ROIIdentifierUsed", required = true)
     protected List<String> roiIdentifierUsed;
     @XmlElement(name = "PlanarCalibrationFactorUsed", required = true)
-    protected PlanarCalibrationFactor planarCalibrationFactorUsed;
+    protected List<PlanarCalibrationFactor> planarCalibrationFactorUsed;
     @XmlElement(name = "DataActivityPerROIAtTimePointProduced", required = true)
     protected List<DataActivityPerROIAtTimePoint> dataActivityPerROIAtTimePointProduced;
 
@@ -85,27 +85,32 @@ public class ROIPlanarActivityDetermination {
     }
 
     /**
-     * Obtient la valeur de la propriété timePointIdentifierUsed.
+     * Gets the value of the timePointIdentifierUsed property.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTimePointIdentifierUsed() {
-        return timePointIdentifierUsed;
-    }
-
-    /**
-     * Définit la valeur de la propriété timePointIdentifierUsed.
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the timePointIdentifierUsed property.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getTimePointIdentifierUsed().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link String }
+     * 
+     * 
      */
-    public void setTimePointIdentifierUsed(String value) {
-        this.timePointIdentifierUsed = value;
+    public List<String> getTimePointIdentifierUsed() {
+        if (timePointIdentifierUsed == null) {
+            timePointIdentifierUsed = new ArrayList<String>();
+        }
+        return this.timePointIdentifierUsed;
     }
 
     /**
@@ -138,27 +143,32 @@ public class ROIPlanarActivityDetermination {
     }
 
     /**
-     * Obtient la valeur de la propriété planarCalibrationFactorUsed.
+     * Gets the value of the planarCalibrationFactorUsed property.
      * 
-     * @return
-     *     possible object is
-     *     {@link PlanarCalibrationFactor }
-     *     
-     */
-    public PlanarCalibrationFactor getPlanarCalibrationFactorUsed() {
-        return planarCalibrationFactorUsed;
-    }
-
-    /**
-     * Définit la valeur de la propriété planarCalibrationFactorUsed.
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the planarCalibrationFactorUsed property.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link PlanarCalibrationFactor }
-     *     
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getPlanarCalibrationFactorUsed().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link PlanarCalibrationFactor }
+     * 
+     * 
      */
-    public void setPlanarCalibrationFactorUsed(PlanarCalibrationFactor value) {
-        this.planarCalibrationFactorUsed = value;
+    public List<PlanarCalibrationFactor> getPlanarCalibrationFactorUsed() {
+        if (planarCalibrationFactorUsed == null) {
+            planarCalibrationFactorUsed = new ArrayList<PlanarCalibrationFactor>();
+        }
+        return this.planarCalibrationFactorUsed;
     }
 
     /**

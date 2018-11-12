@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.09 à 05:15:34 PM CET 
+// Généré le : 2018.11.12 à 05:36:08 PM CET 
 //
 
 
@@ -33,6 +33,18 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="PostAdminBackgroundActivityUnit" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="PostAdminBackgroundActivityTimestamp" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="TankIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="Isotope">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;enumeration value="radium223"/>
+ *               &lt;enumeration value="iodine131"/>
+ *               &lt;enumeration value="lutetium177"/>
+ *               &lt;enumeration value="yttrium90"/>
+ *               &lt;enumeration value="radium223"/>
+ *               &lt;enumeration value="rhenium188"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -51,7 +63,8 @@ import javax.xml.bind.annotation.XmlType;
     "postAdminBackgroundActivityValue",
     "postAdminBackgroundActivityUnit",
     "postAdminBackgroundActivityTimestamp",
-    "tankIdentifier"
+    "tankIdentifier",
+    "isotope"
 })
 public class Tank {
 
@@ -73,6 +86,8 @@ public class Tank {
     protected String postAdminBackgroundActivityTimestamp;
     @XmlElement(name = "TankIdentifier", required = true)
     protected String tankIdentifier;
+    @XmlElement(name = "Isotope", required = true)
+    protected String isotope;
 
     /**
      * Obtient la valeur de la propriété volumeValue.
@@ -264,6 +279,30 @@ public class Tank {
      */
     public void setTankIdentifier(String value) {
         this.tankIdentifier = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété isotope.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getIsotope() {
+        return isotope;
+    }
+
+    /**
+     * Définit la valeur de la propriété isotope.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setIsotope(String value) {
+        this.isotope = value;
     }
 
 }

@@ -10,7 +10,7 @@ HybridDosimetryworkflow
  1-SPECTDataAcquisitionAndProcessing-SPECTDataAcquisitionAndProcessing
  0,1-HybridDosimetryViaAbsorbedDoseRateCalculation-HybridDosimetryViaAbsorbedDoseRateCalculation
  0,1-HybridDosimetryViaTimeActivityCurveFit-HybridDosimetryViaTimeActivityCurveFit
- 1-RadioBiologicalCalculation-RadioBiologicalCalculation
+ 0,1-RadioBiologicalCalculation-RadioBiologicalCalculation
 }
 
 PlanarDataAcquisitionAndProcessing
@@ -19,7 +19,7 @@ PlanarDataAcquisitionAndProcessing
  1-PlanarDataCorrections-PlanarDataCorrections
  0,1-PlanarDataSegmentationWithoutRegistration-PlanarDataSegmentationWithoutRegistration
  0,1-PlanarDataSegmentationWithRegistrationAndPropagation-PlanarDataSegmentationWithRegistrationAndPropagation
- 1-ROIPlanarActivityDetermination-ROIPlanarActivityDetermination
+ 0,1-ROIPlanarActivityDetermination-ROIPlanarActivityDetermination
 }
 
 SPECTDataAcquisitionAndProcessing
@@ -51,6 +51,7 @@ HybridDosimetryViaTimeActivityCurveFit
 PlanarDataAcquisition
 {
  1-TimePointDescription-TimePointDescription
+ 1-NMRelevantCalibrationReference-NMRelevantCalibrationReference
  1-DICOMData-NMStaticProduced
 // it is not needed to detail input that will be retrieved from DICOM metadata
 }
@@ -68,8 +69,8 @@ PlanarDataCorrections
 PlanarDataSegmentationWithoutRegistration
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1-string-TimePointIdentifierUsed
- 1-string-DICOMSeriesUIDNMStaticCorrectedUsed
+ 1,n-string-TimePointIdentifierUsed
+ 1,n-string-DICOMSeriesUIDNMStaticCorrectedUsed
  1-string-SegmentationMethodUsed
 // to be replaced by structured items
  1,n-CountsPerROIAtTimePoint-CountsPerROIAtTimePointProduced
@@ -79,22 +80,23 @@ PlanarDataSegmentationWithoutRegistration
 PlanarDataSegmentationWithRegistrationAndPropagation
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1-string-TimePointIdentifierUsed
- 1-string-DICOMSeriesUIDNMStaticCorrectedUsed
+ 1,n-string-TimePointIdentifierUsed
+ 1,n-string-DICOMSeriesUIDNMStaticCorrectedUsed
+ 0,n-string-ROIIdentifierUsed
  1-string-SegmentationMethodUsed
 // to be replaced by structured items
  1,n-CountsPerROIAtTimePoint-CountsPerROIAtTimePointProduced
  1,n-ROI-ROIProduced
- 1-DICOMData-NMStaticCorrectedResampledOnCommonReferenceProduced
+ 1,n-DICOMData-NMStaticCorrectedResampledOnCommonReferenceProduced
 }
 
 ROIPlanarActivityDetermination
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1-string-TimePointIdentifierUsed
+ 1,n-string-TimePointIdentifierUsed
  1,n-string-ROIIdentifierUsed
 // Corresponding Counts need to be retrieved
- 1-PlanarCalibrationFactor-PlanarCalibrationFactorUsed
+ 1,n-PlanarCalibrationFactor-PlanarCalibrationFactorUsed
 // how to refer to a value obtained in a calibration workflow?
  1,n-DataActivityPerROIAtTimePoint-DataActivityPerROIAtTimePointProduced
 }
@@ -102,6 +104,8 @@ ROIPlanarActivityDetermination
 SPECTAcqCTAcqAndReconstruction
 {
  1-TimePointDescription-TimePointDescription
+ 1-NMRelevantCalibrationReference-NMRelevantCalibrationReference
+ 1-CTRelevantCalibrationReference-CTRelevantCalibrationReference
  1-DICOMData-NMTomoProduced
 // it is not needed to detail input that will be retrieved from DICOM metadata
  1-DICOMData-CTReconProduced
@@ -138,6 +142,7 @@ RegistrationVOISegmentation
 
 EnergyDepositionRateCalculation
 {
+ 1-string-TimePointIdentifierUsed
  1-ProcessExecutionContext-ProcessExecutionContext
  1-string-VoxelDataActivityAtTimePointIdentifier
  1-string-DICOMSeriesUIDCTReconResampledOnSPECTUsed
@@ -182,7 +187,6 @@ TimeAbsorbedDoseRateCurveFit
 // to be provided as a closed list of possible values
  1,n-MeanAbsorbedDoseInVOI-MeanAbsorbedDoseInVOIProduced
 }
-
 
 ActivityScaling
 {
@@ -251,6 +255,17 @@ ProcessExecutionContext
 {
  1-string-DateTimeProcessStarted
  1-string-PerformingInstitution
+}
+
+CTRelevantCalibrationReference
+{
+ 1-string-ReferenceCalibrationDate
+}
+
+NMRelevantCalibrationReference
+{
+ 1-string-ReferenceCalibrationDate
+ 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188
 }
 
 CountsPerROIAtTimePoint

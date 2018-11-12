@@ -9,7 +9,7 @@ ThreeDimDosimetrySlide2workflow
  1,n-SPECTDataAcquisitionAndProcessing-SPECTDataAcquisitionAndProcessing
  1,n-VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation-VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation
  1-DoseRateCurveFitVOITimeIntegration-DoseRateCurveFitVOITimeIntegration
- 1-RadioBiologicalCalculation-RadioBiologicalCalculation
+ 0,1-RadioBiologicalCalculation-RadioBiologicalCalculation
 }
 
 SPECTDataAcquisitionAndProcessing
@@ -32,6 +32,8 @@ VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation
 SPECTAcqCTAcqAndReconstruction
 {
  1-TimePointDescription-TimePointDescription
+ 1-NMRelevantCalibrationReference-NMRelevantCalibrationReference
+ 1-CTRelevantCalibrationReference-CTRelevantCalibrationReference
  1-DICOMData-NMTomoProduced
 // it is not needed to detail input that will be retrieved from DICOM metadata
  1-DICOMData-CTReconProduced
@@ -149,6 +151,16 @@ ProcessExecutionContext
  1-string-PerformingInstitution
 }
 
+CTRelevantCalibrationReference
+{
+ 1-string-ReferenceCalibrationDate
+}
+
+NMRelevantCalibrationReference
+{
+ 1-string-ReferenceCalibrationDate
+ 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188
+}
 
 CountsPerVOIAtTimePoint
 {

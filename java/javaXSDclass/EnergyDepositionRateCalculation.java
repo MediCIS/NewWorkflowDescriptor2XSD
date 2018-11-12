@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.09 à 05:15:34 PM CET 
+// Généré le : 2018.11.12 à 05:36:08 PM CET 
 //
 
 
@@ -50,12 +50,12 @@ import javax.xml.bind.annotation.XmlType;
 public class EnergyDepositionRateCalculation {
 
     @XmlElementRefs({
-        @XmlElementRef(name = "VOIUsed", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "DICOMData", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "TimePointIdentifierUsed", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "VOIIdentifierUsed", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "VOIUsed", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "ThreeDimEnergyDepositionRateMatrixAtTimePointProduced", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "ProcessExecutionContext", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "ThreeDimEnergyDepositionRateMatrixAtTimePointProduced", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false)
+        @XmlElementRef(name = "DICOMData", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "TimePointIdentifierUsed", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false)
     })
     protected List<JAXBElement<?>> content;
 
@@ -65,8 +65,8 @@ public class EnergyDepositionRateCalculation {
      * <p>
      * Vous obtenez la propriété "catch-all" pour la raison suivante : 
      * Le nom de champ "DICOMData" est utilisé par deux parties différentes d'un schéma. Reportez-vous à : 
-     * ligne 827 sur file:/Users/marinebrenet/Documents/workflowDescriptor2XSD/xsd/nonDicomFileSetDescriptor.xsd
-     * ligne 826 sur file:/Users/marinebrenet/Documents/workflowDescriptor2XSD/xsd/nonDicomFileSetDescriptor.xsd
+     * ligne 922 sur file:/Users/marinebrenet/Documents/workflowDescriptor2XSD/xsd/nonDicomFileSetDescriptor.xsd
+     * ligne 921 sur file:/Users/marinebrenet/Documents/workflowDescriptor2XSD/xsd/nonDicomFileSetDescriptor.xsd
      * <p>
      * Pour vous débarrasser de cette propriété, appliquez une personnalisation de propriété à l'une 
      * des deux déclarations suivantes afin de modifier leurs noms : 
@@ -89,9 +89,9 @@ public class EnergyDepositionRateCalculation {
      * Objects of the following type(s) are allowed in the list
      * {@link JAXBElement }{@code <}{@link String }{@code >}
      * {@link JAXBElement }{@code <}{@link String }{@code >}
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
-     * {@link JAXBElement }{@code <}{@link ProcessExecutionContext }{@code >}
      * {@link JAXBElement }{@code <}{@link NonDICOMData }{@code >}
+     * {@link JAXBElement }{@code <}{@link ProcessExecutionContext }{@code >}
+     * {@link JAXBElement }{@code <}{@link String }{@code >}
      * {@link JAXBElement }{@code <}{@link String }{@code >}
      * 
      * 

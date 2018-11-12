@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.09 à 05:15:34 PM CET 
+// Généré le : 2018.11.12 à 05:36:08 PM CET 
 //
 
 
@@ -24,6 +24,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
+ *         &lt;element name="VoxelBasedDistributionOfAbsorbedDoseIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="VoxelBasedDistributionOfAbsorbedDoseCategory">
  *           &lt;simpleType>
  *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
@@ -54,6 +55,7 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "VoxelBasedDistributionOfAbsorbedDoseType", propOrder = {
+    "voxelBasedDistributionOfAbsorbedDoseIdentifier",
     "voxelBasedDistributionOfAbsorbedDoseCategory",
     "absorbedDoseUnit",
     "nonDICOMVoxelBasedAbsorbedDoseDistribution",
@@ -61,6 +63,8 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class VoxelBasedDistributionOfAbsorbedDoseType {
 
+    @XmlElement(name = "VoxelBasedDistributionOfAbsorbedDoseIdentifier", required = true)
+    protected String voxelBasedDistributionOfAbsorbedDoseIdentifier;
     @XmlElement(name = "VoxelBasedDistributionOfAbsorbedDoseCategory", required = true)
     protected String voxelBasedDistributionOfAbsorbedDoseCategory;
     @XmlElement(name = "AbsorbedDoseUnit", required = true)
@@ -69,6 +73,30 @@ public class VoxelBasedDistributionOfAbsorbedDoseType {
     protected NonDICOMData nonDICOMVoxelBasedAbsorbedDoseDistribution;
     @XmlElement(name = "DICOMVoxelBasedAbsorbedDoseDistribution")
     protected DICOMData dicomVoxelBasedAbsorbedDoseDistribution;
+
+    /**
+     * Obtient la valeur de la propriété voxelBasedDistributionOfAbsorbedDoseIdentifier.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getVoxelBasedDistributionOfAbsorbedDoseIdentifier() {
+        return voxelBasedDistributionOfAbsorbedDoseIdentifier;
+    }
+
+    /**
+     * Définit la valeur de la propriété voxelBasedDistributionOfAbsorbedDoseIdentifier.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setVoxelBasedDistributionOfAbsorbedDoseIdentifier(String value) {
+        this.voxelBasedDistributionOfAbsorbedDoseIdentifier = value;
+    }
 
     /**
      * Obtient la valeur de la propriété voxelBasedDistributionOfAbsorbedDoseCategory.

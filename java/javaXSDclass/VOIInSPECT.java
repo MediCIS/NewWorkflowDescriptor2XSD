@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.09 à 05:15:34 PM CET 
+// Généré le : 2018.11.12 à 05:36:08 PM CET 
 //
 
 
@@ -25,6 +25,8 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="VOIIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="CountsInVOIValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
+ *         &lt;element name="CountsInVOIUnit" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="PhantomPartIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="DICOMVOIContainer" type="{https://www.irdbb-medirad.com}DICOMData" minOccurs="0"/>
  *         &lt;element name="NonDICOMVOIContainer" type="{https://www.irdbb-medirad.com}NonDICOMData" minOccurs="0"/>
@@ -39,6 +41,8 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "VOIInSPECT", propOrder = {
     "voiIdentifier",
+    "countsInVOIValue",
+    "countsInVOIUnit",
     "phantomPartIdentifier",
     "dicomvoiContainer",
     "nonDICOMVOIContainer"
@@ -47,6 +51,10 @@ public class VOIInSPECT {
 
     @XmlElement(name = "VOIIdentifier", required = true)
     protected String voiIdentifier;
+    @XmlElement(name = "CountsInVOIValue")
+    protected float countsInVOIValue;
+    @XmlElement(name = "CountsInVOIUnit", required = true)
+    protected String countsInVOIUnit;
     @XmlElement(name = "PhantomPartIdentifier", required = true)
     protected String phantomPartIdentifier;
     @XmlElement(name = "DICOMVOIContainer")
@@ -76,6 +84,46 @@ public class VOIInSPECT {
      */
     public void setVOIIdentifier(String value) {
         this.voiIdentifier = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété countsInVOIValue.
+     * 
+     */
+    public float getCountsInVOIValue() {
+        return countsInVOIValue;
+    }
+
+    /**
+     * Définit la valeur de la propriété countsInVOIValue.
+     * 
+     */
+    public void setCountsInVOIValue(float value) {
+        this.countsInVOIValue = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété countsInVOIUnit.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getCountsInVOIUnit() {
+        return countsInVOIUnit;
+    }
+
+    /**
+     * Définit la valeur de la propriété countsInVOIUnit.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setCountsInVOIUnit(String value) {
+        this.countsInVOIUnit = value;
     }
 
     /**

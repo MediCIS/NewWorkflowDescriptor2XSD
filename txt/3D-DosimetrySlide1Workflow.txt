@@ -11,7 +11,7 @@ ThreeDimDosimetrySlide1workflow
  1,n-VOIActivityDetermination-VOIActivityDetermination
  1,n-TimeActivityCurveFit-TimeActivityCurveFit
  1-AbsorbedDoseCalculation-AbsorbedDoseCalculation
- 1-RadioBiologicalCalculation-RadioBiologicalCalculation
+ 0,1-RadioBiologicalCalculation-RadioBiologicalCalculation
 }
 
 SPECTDataAcquisitionAndProcessing
@@ -26,6 +26,8 @@ SPECTDataAcquisitionAndProcessing
 SPECTAcqCTAcqAndReconstruction
 {
  1-TimePointDescription-TimePointDescription
+ 1-NMRelevantCalibrationReference-NMRelevantCalibrationReference
+ 1-CTRelevantCalibrationReference-CTRelevantCalibrationReference
  1-DICOMData-NMTomoProduced
 // it is not needed to detail input that will be retrieved from DICOM metadata
  1-DICOMData-CTReconProduced
@@ -47,6 +49,7 @@ SPECTReconstruction
 RegistrationVOISegmentationAndPropagation
 {
  1-ProcessExecutionContext-ProcessExecutionContext
+ 1,n-string-TimePointIdentifierUsed
  1,n-string-DICOMSeriesUIDNMTomoReconUsed
  1,n-string-DICOMSeriesUIDCTReconUsed
  1-string-ImageProcessingMethodMethodUsed
@@ -62,7 +65,7 @@ VOIActivityDetermination
  1-ProcessExecutionContext-ProcessExecutionContext
 // to clarify if the same Calibration Factor is used for all timepoints ?
  1,n-string-VOIIdentifierUsed
- 1,n-string-TimePointIdentifierUsed
+ 1-string-TimePointIdentifierUsed
 // Corresponding Counts per VOI at TimePoint need to be retrieved
  1-CalibrationFactor-CalibrationFactorUsed
 // how to refer to a value obtained in a calibration workflow?
@@ -74,9 +77,7 @@ VOIActivityDetermination
 TimeActivityCurveFit
 {
  1-ProcessExecutionContext-ProcessExecutionContext
-// Does this processing focus on one VOI only or on all VOIs ?
  1-string-VOIIdentifierUsed
-// because TimeActivityCurveFit is calculated for one VOI
  1,n-string-TimePointIdentifierUsed
 // Corresponding Activities for this VOI at the different TimePoints need to be retrieved
  1-AdministeredActivity-PreAdministeredActivityUsed
@@ -137,6 +138,16 @@ ProcessExecutionContext
  1-string-PerformingInstitution
 }
 
+CTRelevantCalibrationReference
+{
+ 1-string-ReferenceCalibrationDate
+}
+
+NMRelevantCalibrationReference
+{
+ 1-string-ReferenceCalibrationDate
+ 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188
+}
 
 CountsPerVOIAtTimePoint
 {

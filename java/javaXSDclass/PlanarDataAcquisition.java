@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.09 à 05:15:34 PM CET 
+// Généré le : 2018.11.12 à 05:36:08 PM CET 
 //
 
 
@@ -25,6 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="TimePointDescription" type="{https://www.irdbb-medirad.com}TimePointDescription"/>
+ *         &lt;element name="NMRelevantCalibrationReference" type="{https://www.irdbb-medirad.com}NMRelevantCalibrationReference"/>
  *         &lt;element name="NMStaticProduced" type="{https://www.irdbb-medirad.com}DICOMData"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -37,12 +38,15 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "PlanarDataAcquisition", propOrder = {
     "timePointDescription",
+    "nmRelevantCalibrationReference",
     "nmStaticProduced"
 })
 public class PlanarDataAcquisition {
 
     @XmlElement(name = "TimePointDescription", required = true)
     protected TimePointDescription timePointDescription;
+    @XmlElement(name = "NMRelevantCalibrationReference", required = true)
+    protected NMRelevantCalibrationReference nmRelevantCalibrationReference;
     @XmlElement(name = "NMStaticProduced", required = true)
     protected DICOMData nmStaticProduced;
 
@@ -68,6 +72,30 @@ public class PlanarDataAcquisition {
      */
     public void setTimePointDescription(TimePointDescription value) {
         this.timePointDescription = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété nmRelevantCalibrationReference.
+     * 
+     * @return
+     *     possible object is
+     *     {@link NMRelevantCalibrationReference }
+     *     
+     */
+    public NMRelevantCalibrationReference getNMRelevantCalibrationReference() {
+        return nmRelevantCalibrationReference;
+    }
+
+    /**
+     * Définit la valeur de la propriété nmRelevantCalibrationReference.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link NMRelevantCalibrationReference }
+     *     
+     */
+    public void setNMRelevantCalibrationReference(NMRelevantCalibrationReference value) {
+        this.nmRelevantCalibrationReference = value;
     }
 
     /**

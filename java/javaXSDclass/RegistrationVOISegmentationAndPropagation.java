@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.09 à 05:15:34 PM CET 
+// Généré le : 2018.11.12 à 05:36:08 PM CET 
 //
 
 
@@ -27,6 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
+ *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
  *         &lt;element name="DICOMSeriesUIDNMTomoReconUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
  *         &lt;element name="DICOMSeriesUIDCTReconUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
  *         &lt;element name="ImageProcessingMethodMethodUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
@@ -45,6 +46,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "RegistrationVOISegmentationAndPropagation", propOrder = {
     "processExecutionContext",
+    "timePointIdentifierUsed",
     "dicomSeriesUIDNMTomoReconUsed",
     "dicomSeriesUIDCTReconUsed",
     "imageProcessingMethodMethodUsed",
@@ -57,6 +59,8 @@ public class RegistrationVOISegmentationAndPropagation {
 
     @XmlElement(name = "ProcessExecutionContext", required = true)
     protected ProcessExecutionContext processExecutionContext;
+    @XmlElement(name = "TimePointIdentifierUsed", required = true)
+    protected List<String> timePointIdentifierUsed;
     @XmlElement(name = "DICOMSeriesUIDNMTomoReconUsed", required = true)
     protected List<String> dicomSeriesUIDNMTomoReconUsed;
     @XmlElement(name = "DICOMSeriesUIDCTReconUsed", required = true)
@@ -94,6 +98,35 @@ public class RegistrationVOISegmentationAndPropagation {
      */
     public void setProcessExecutionContext(ProcessExecutionContext value) {
         this.processExecutionContext = value;
+    }
+
+    /**
+     * Gets the value of the timePointIdentifierUsed property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the timePointIdentifierUsed property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getTimePointIdentifierUsed().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link String }
+     * 
+     * 
+     */
+    public List<String> getTimePointIdentifierUsed() {
+        if (timePointIdentifierUsed == null) {
+            timePointIdentifierUsed = new ArrayList<String>();
+        }
+        return this.timePointIdentifierUsed;
     }
 
     /**

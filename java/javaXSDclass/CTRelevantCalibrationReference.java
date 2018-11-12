@@ -15,16 +15,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour NonDICOMData complex type.
+ * <p>Classe Java pour CTRelevantCalibrationReference complex type.
  * 
  * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
- * &lt;complexType name="NonDICOMData">
+ * &lt;complexType name="CTRelevantCalibrationReference">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="FileName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="ReferenceCalibrationDate" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -34,36 +34,36 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "NonDICOMData", propOrder = {
-    "fileName"
+@XmlType(name = "CTRelevantCalibrationReference", propOrder = {
+    "referenceCalibrationDate"
 })
-public class NonDICOMData {
+public class CTRelevantCalibrationReference {
 
-    @XmlElement(name = "FileName", required = true)
-    protected String fileName;
+    @XmlElement(name = "ReferenceCalibrationDate", required = true)
+    protected String referenceCalibrationDate;
 
     /**
-     * Obtient la valeur de la propriété fileName.
+     * Obtient la valeur de la propriété referenceCalibrationDate.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getFileName() {
-        return fileName;
+    public String getReferenceCalibrationDate() {
+        return referenceCalibrationDate;
     }
 
     /**
-     * Définit la valeur de la propriété fileName.
+     * Définit la valeur de la propriété referenceCalibrationDate.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setFileName(String value) {
-        this.fileName = value;
+    public void setReferenceCalibrationDate(String value) {
+        this.referenceCalibrationDate = value;
     }
 
 }

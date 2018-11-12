@@ -27,7 +27,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				<xs:element name="SPECTDataAcquisitionAndProcessing" type="irdbb:SPECTDataAcquisitionAndProcessing" maxOccurs="unbounded" />
 				<xs:element name="VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation" type="irdbb:VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation" maxOccurs="unbounded" />
 				<xs:element name="DoseRateCurveFitVOITimeIntegration" type="irdbb:DoseRateCurveFitVOITimeIntegration"/>
-				<xs:element name="RadioBiologicalCalculation" type="irdbb:RadioBiologicalCalculation"/>
+				<xs:element name="RadioBiologicalCalculation" type="irdbb:RadioBiologicalCalculation" minOccurs="0" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -64,6 +64,8 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="SPECTAcqCTAcqAndReconstruction">
 		<xs:sequence>
 				<xs:element name="TimePointDescription" type="irdbb:TimePointDescription"/>
+				<xs:element name="NMRelevantCalibrationReference" type="irdbb:NMRelevantCalibrationReference"/>
+				<xs:element name="CTRelevantCalibrationReference" type="irdbb:CTRelevantCalibrationReference"/>
 				<xs:element name="NMTomoProduced" type="irdbb:DICOMData"/>
 				<xs:element name="CTReconProduced" type="irdbb:DICOMData"/>
 		</xs:sequence>
@@ -162,6 +164,30 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 				<xs:element name="DateTimeProcessStarted" type="xs:string"/>
 				<xs:element name="PerformingInstitution" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="CTRelevantCalibrationReference">
+		<xs:sequence>
+				<xs:element name="ReferenceCalibrationDate" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="NMRelevantCalibrationReference">
+		<xs:sequence>
+				<xs:element name="ReferenceCalibrationDate" type="xs:string"/>
+		<xs:element name="Isotope">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="radium223"/>
+					<xs:enumeration value="iodine131"/>
+					<xs:enumeration value="lutetium177"/>
+					<xs:enumeration value="yttrium90"/>
+					<xs:enumeration value="radium223"/>
+					<xs:enumeration value="rhenium188"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
 		</xs:sequence>
 	</xs:complexType>
 

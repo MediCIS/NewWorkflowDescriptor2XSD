@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.09 à 05:15:34 PM CET 
+// Généré le : 2018.11.12 à 05:36:08 PM CET 
 //
 
 
@@ -44,10 +44,24 @@ import javax.xml.bind.annotation.XmlType;
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;choice>
+ *                 &lt;sequence>
  *                   &lt;element name="SPECTCTCalibrationWorkflow" type="{https://www.irdbb-medirad.com}SPECTCTCalibrationWorkflow"/>
  *                   &lt;element name="PlanarCalibrationWorkflow" type="{https://www.irdbb-medirad.com}PlanarCalibrationWorkflow"/>
- *                 &lt;/choice>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element name="ElementOfSPECTRecoveryCoefficientCurve" maxOccurs="unbounded" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="RatioMeasuredActivityToTrueActivity" type="{http://www.w3.org/2001/XMLSchema}float"/>
+ *                   &lt;element name="HotInsertVolumeValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
+ *                   &lt;element name="HotInsertVolumeUnit" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *                   &lt;element name="HotInsertIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
  *           &lt;/complexType>
@@ -57,6 +71,9 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
+ *                   &lt;element name="PatientId" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *                   &lt;element name="PatientName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *                   &lt;element name="ClinicalResearchStudyId" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                   &lt;element name="CTSegmentation" type="{https://www.irdbb-medirad.com}CTSegmentation" minOccurs="0"/>
  *                   &lt;element name="SimpleCTMonteCarloDosimetry" type="{https://www.irdbb-medirad.com}SimpleCTMonteCarloDosimetry" maxOccurs="unbounded" minOccurs="0"/>
  *                 &lt;/sequence>
@@ -77,7 +94,7 @@ import javax.xml.bind.annotation.XmlType;
  *                   &lt;element name="VOIActivityDetermination" type="{https://www.irdbb-medirad.com}VOIActivityDetermination" maxOccurs="unbounded"/>
  *                   &lt;element name="TimeActivityCurveFit" type="{https://www.irdbb-medirad.com}TimeActivityCurveFit" maxOccurs="unbounded"/>
  *                   &lt;element name="AbsorbedDoseCalculation" type="{https://www.irdbb-medirad.com}AbsorbedDoseCalculation"/>
- *                   &lt;element name="RadioBiologicalCalculation" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculation"/>
+ *                   &lt;element name="RadioBiologicalCalculation" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculation" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -120,7 +137,7 @@ import javax.xml.bind.annotation.XmlType;
  *                   &lt;element name="PlanarDataAcquisitionAndProcessing" type="{https://www.irdbb-medirad.com}PlanarDataAcquisitionAndProcessing" maxOccurs="unbounded"/>
  *                   &lt;element name="TwoDimDosimetryViaAbsorbedDoseRateCalculation" type="{https://www.irdbb-medirad.com}TwoDimDosimetryViaAbsorbedDoseRateCalculation" minOccurs="0"/>
  *                   &lt;element name="TwoDimDosimetryViaTimeActivityCurveFit" type="{https://www.irdbb-medirad.com}TwoDimDosimetryViaTimeActivityCurveFit" minOccurs="0"/>
- *                   &lt;element name="RadioBiologicalCalculation" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculation"/>
+ *                   &lt;element name="RadioBiologicalCalculation" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculation" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -138,7 +155,7 @@ import javax.xml.bind.annotation.XmlType;
  *                   &lt;element name="SPECTDataAcquisitionAndProcessing" type="{https://www.irdbb-medirad.com}SPECTDataAcquisitionAndProcessing"/>
  *                   &lt;element name="HybridDosimetryViaAbsorbedDoseRateCalculation" type="{https://www.irdbb-medirad.com}HybridDosimetryViaAbsorbedDoseRateCalculation" minOccurs="0"/>
  *                   &lt;element name="HybridDosimetryViaTimeActivityCurveFit" type="{https://www.irdbb-medirad.com}HybridDosimetryViaTimeActivityCurveFit" minOccurs="0"/>
- *                   &lt;element name="RadioBiologicalCalculation" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculation"/>
+ *                   &lt;element name="RadioBiologicalCalculation" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculation" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -173,7 +190,7 @@ import javax.xml.bind.annotation.XmlType;
  *                   &lt;element name="SPECTDataAcquisitionAndProcessing" type="{https://www.irdbb-medirad.com}SPECTDataAcquisitionAndProcessing" maxOccurs="unbounded"/>
  *                   &lt;element name="VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation" type="{https://www.irdbb-medirad.com}VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation" maxOccurs="unbounded"/>
  *                   &lt;element name="DoseRateCurveFitVOITimeIntegration" type="{https://www.irdbb-medirad.com}DoseRateCurveFitVOITimeIntegration"/>
- *                   &lt;element name="RadioBiologicalCalculation" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculation"/>
+ *                   &lt;element name="RadioBiologicalCalculation" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculation" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -192,6 +209,7 @@ import javax.xml.bind.annotation.XmlType;
     "referencedClinicalResearchStudy",
     "patientId",
     "calibrationWorkflow",
+    "elementOfSPECTRecoveryCoefficientCurve",
     "wp2Subtask212WorkflowData",
     "threeDimDosimetrySlide1Workflow",
     "timeIntegratedActivityCoefficientPerVOI",
@@ -210,6 +228,8 @@ public class NonDicomFileSetDescriptor {
     protected String patientId;
     @XmlElement(name = "CalibrationWorkflow")
     protected List<NonDicomFileSetDescriptor.CalibrationWorkflow> calibrationWorkflow;
+    @XmlElement(name = "ElementOfSPECTRecoveryCoefficientCurve")
+    protected List<NonDicomFileSetDescriptor.ElementOfSPECTRecoveryCoefficientCurve> elementOfSPECTRecoveryCoefficientCurve;
     @XmlElement(name = "WP2subtask212WorkflowData")
     protected List<NonDicomFileSetDescriptor.WP2Subtask212WorkflowData> wp2Subtask212WorkflowData;
     @XmlElement(name = "ThreeDimDosimetrySlide1workflow")
@@ -302,6 +322,35 @@ public class NonDicomFileSetDescriptor {
             calibrationWorkflow = new ArrayList<NonDicomFileSetDescriptor.CalibrationWorkflow>();
         }
         return this.calibrationWorkflow;
+    }
+
+    /**
+     * Gets the value of the elementOfSPECTRecoveryCoefficientCurve property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the elementOfSPECTRecoveryCoefficientCurve property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getElementOfSPECTRecoveryCoefficientCurve().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link NonDicomFileSetDescriptor.ElementOfSPECTRecoveryCoefficientCurve }
+     * 
+     * 
+     */
+    public List<NonDicomFileSetDescriptor.ElementOfSPECTRecoveryCoefficientCurve> getElementOfSPECTRecoveryCoefficientCurve() {
+        if (elementOfSPECTRecoveryCoefficientCurve == null) {
+            elementOfSPECTRecoveryCoefficientCurve = new ArrayList<NonDicomFileSetDescriptor.ElementOfSPECTRecoveryCoefficientCurve>();
+        }
+        return this.elementOfSPECTRecoveryCoefficientCurve;
     }
 
     /**
@@ -546,10 +595,10 @@ public class NonDicomFileSetDescriptor {
      * &lt;complexType>
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;choice>
+     *       &lt;sequence>
      *         &lt;element name="SPECTCTCalibrationWorkflow" type="{https://www.irdbb-medirad.com}SPECTCTCalibrationWorkflow"/>
      *         &lt;element name="PlanarCalibrationWorkflow" type="{https://www.irdbb-medirad.com}PlanarCalibrationWorkflow"/>
-     *       &lt;/choice>
+     *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
      * &lt;/complexType>
@@ -564,9 +613,9 @@ public class NonDicomFileSetDescriptor {
     })
     public static class CalibrationWorkflow {
 
-        @XmlElement(name = "SPECTCTCalibrationWorkflow")
+        @XmlElement(name = "SPECTCTCalibrationWorkflow", required = true)
         protected SPECTCTCalibrationWorkflow spectctCalibrationWorkflow;
-        @XmlElement(name = "PlanarCalibrationWorkflow")
+        @XmlElement(name = "PlanarCalibrationWorkflow", required = true)
         protected PlanarCalibrationWorkflow planarCalibrationWorkflow;
 
         /**
@@ -630,6 +679,129 @@ public class NonDicomFileSetDescriptor {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
+     *         &lt;element name="RatioMeasuredActivityToTrueActivity" type="{http://www.w3.org/2001/XMLSchema}float"/>
+     *         &lt;element name="HotInsertVolumeValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
+     *         &lt;element name="HotInsertVolumeUnit" type="{http://www.w3.org/2001/XMLSchema}string"/>
+     *         &lt;element name="HotInsertIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
+     */
+    @XmlAccessorType(XmlAccessType.FIELD)
+    @XmlType(name = "", propOrder = {
+        "ratioMeasuredActivityToTrueActivity",
+        "hotInsertVolumeValue",
+        "hotInsertVolumeUnit",
+        "hotInsertIdentifier"
+    })
+    public static class ElementOfSPECTRecoveryCoefficientCurve {
+
+        @XmlElement(name = "RatioMeasuredActivityToTrueActivity")
+        protected float ratioMeasuredActivityToTrueActivity;
+        @XmlElement(name = "HotInsertVolumeValue")
+        protected float hotInsertVolumeValue;
+        @XmlElement(name = "HotInsertVolumeUnit", required = true)
+        protected String hotInsertVolumeUnit;
+        @XmlElement(name = "HotInsertIdentifier", required = true)
+        protected String hotInsertIdentifier;
+
+        /**
+         * Obtient la valeur de la propriété ratioMeasuredActivityToTrueActivity.
+         * 
+         */
+        public float getRatioMeasuredActivityToTrueActivity() {
+            return ratioMeasuredActivityToTrueActivity;
+        }
+
+        /**
+         * Définit la valeur de la propriété ratioMeasuredActivityToTrueActivity.
+         * 
+         */
+        public void setRatioMeasuredActivityToTrueActivity(float value) {
+            this.ratioMeasuredActivityToTrueActivity = value;
+        }
+
+        /**
+         * Obtient la valeur de la propriété hotInsertVolumeValue.
+         * 
+         */
+        public float getHotInsertVolumeValue() {
+            return hotInsertVolumeValue;
+        }
+
+        /**
+         * Définit la valeur de la propriété hotInsertVolumeValue.
+         * 
+         */
+        public void setHotInsertVolumeValue(float value) {
+            this.hotInsertVolumeValue = value;
+        }
+
+        /**
+         * Obtient la valeur de la propriété hotInsertVolumeUnit.
+         * 
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
+         */
+        public String getHotInsertVolumeUnit() {
+            return hotInsertVolumeUnit;
+        }
+
+        /**
+         * Définit la valeur de la propriété hotInsertVolumeUnit.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
+         */
+        public void setHotInsertVolumeUnit(String value) {
+            this.hotInsertVolumeUnit = value;
+        }
+
+        /**
+         * Obtient la valeur de la propriété hotInsertIdentifier.
+         * 
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
+         */
+        public String getHotInsertIdentifier() {
+            return hotInsertIdentifier;
+        }
+
+        /**
+         * Définit la valeur de la propriété hotInsertIdentifier.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
+         */
+        public void setHotInsertIdentifier(String value) {
+            this.hotInsertIdentifier = value;
+        }
+
+    }
+
+
+    /**
+     * <p>Classe Java pour anonymous complex type.
+     * 
+     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
      *         &lt;element name="PatientId" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *         &lt;element name="PatientName" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *         &lt;element name="ClinicalResearchStudyId" type="{http://www.w3.org/2001/XMLSchema}string"/>
@@ -637,7 +809,7 @@ public class NonDicomFileSetDescriptor {
      *         &lt;element name="SPECTDataAcquisitionAndProcessing" type="{https://www.irdbb-medirad.com}SPECTDataAcquisitionAndProcessing"/>
      *         &lt;element name="HybridDosimetryViaAbsorbedDoseRateCalculation" type="{https://www.irdbb-medirad.com}HybridDosimetryViaAbsorbedDoseRateCalculation" minOccurs="0"/>
      *         &lt;element name="HybridDosimetryViaTimeActivityCurveFit" type="{https://www.irdbb-medirad.com}HybridDosimetryViaTimeActivityCurveFit" minOccurs="0"/>
-     *         &lt;element name="RadioBiologicalCalculation" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculation"/>
+     *         &lt;element name="RadioBiologicalCalculation" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculation" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -673,7 +845,7 @@ public class NonDicomFileSetDescriptor {
         protected HybridDosimetryViaAbsorbedDoseRateCalculation hybridDosimetryViaAbsorbedDoseRateCalculation;
         @XmlElement(name = "HybridDosimetryViaTimeActivityCurveFit")
         protected HybridDosimetryViaTimeActivityCurveFit hybridDosimetryViaTimeActivityCurveFit;
-        @XmlElement(name = "RadioBiologicalCalculation", required = true)
+        @XmlElement(name = "RadioBiologicalCalculation")
         protected RadioBiologicalCalculation radioBiologicalCalculation;
 
         /**
@@ -1238,7 +1410,7 @@ public class NonDicomFileSetDescriptor {
      *         &lt;element name="VOIActivityDetermination" type="{https://www.irdbb-medirad.com}VOIActivityDetermination" maxOccurs="unbounded"/>
      *         &lt;element name="TimeActivityCurveFit" type="{https://www.irdbb-medirad.com}TimeActivityCurveFit" maxOccurs="unbounded"/>
      *         &lt;element name="AbsorbedDoseCalculation" type="{https://www.irdbb-medirad.com}AbsorbedDoseCalculation"/>
-     *         &lt;element name="RadioBiologicalCalculation" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculation"/>
+     *         &lt;element name="RadioBiologicalCalculation" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculation" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -1277,7 +1449,7 @@ public class NonDicomFileSetDescriptor {
         protected List<TimeActivityCurveFit> timeActivityCurveFit;
         @XmlElement(name = "AbsorbedDoseCalculation", required = true)
         protected AbsorbedDoseCalculation absorbedDoseCalculation;
-        @XmlElement(name = "RadioBiologicalCalculation", required = true)
+        @XmlElement(name = "RadioBiologicalCalculation")
         protected RadioBiologicalCalculation radioBiologicalCalculation;
 
         /**
@@ -1530,7 +1702,7 @@ public class NonDicomFileSetDescriptor {
      *         &lt;element name="SPECTDataAcquisitionAndProcessing" type="{https://www.irdbb-medirad.com}SPECTDataAcquisitionAndProcessing" maxOccurs="unbounded"/>
      *         &lt;element name="VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation" type="{https://www.irdbb-medirad.com}VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation" maxOccurs="unbounded"/>
      *         &lt;element name="DoseRateCurveFitVOITimeIntegration" type="{https://www.irdbb-medirad.com}DoseRateCurveFitVOITimeIntegration"/>
-     *         &lt;element name="RadioBiologicalCalculation" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculation"/>
+     *         &lt;element name="RadioBiologicalCalculation" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculation" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -1563,7 +1735,7 @@ public class NonDicomFileSetDescriptor {
         protected List<VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation> voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation;
         @XmlElement(name = "DoseRateCurveFitVOITimeIntegration", required = true)
         protected DoseRateCurveFitVOITimeIntegration doseRateCurveFitVOITimeIntegration;
-        @XmlElement(name = "RadioBiologicalCalculation", required = true)
+        @XmlElement(name = "RadioBiologicalCalculation")
         protected RadioBiologicalCalculation radioBiologicalCalculation;
 
         /**
@@ -1969,7 +2141,7 @@ public class NonDicomFileSetDescriptor {
      *         &lt;element name="PlanarDataAcquisitionAndProcessing" type="{https://www.irdbb-medirad.com}PlanarDataAcquisitionAndProcessing" maxOccurs="unbounded"/>
      *         &lt;element name="TwoDimDosimetryViaAbsorbedDoseRateCalculation" type="{https://www.irdbb-medirad.com}TwoDimDosimetryViaAbsorbedDoseRateCalculation" minOccurs="0"/>
      *         &lt;element name="TwoDimDosimetryViaTimeActivityCurveFit" type="{https://www.irdbb-medirad.com}TwoDimDosimetryViaTimeActivityCurveFit" minOccurs="0"/>
-     *         &lt;element name="RadioBiologicalCalculation" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculation"/>
+     *         &lt;element name="RadioBiologicalCalculation" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculation" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -2002,7 +2174,7 @@ public class NonDicomFileSetDescriptor {
         protected TwoDimDosimetryViaAbsorbedDoseRateCalculation twoDimDosimetryViaAbsorbedDoseRateCalculation;
         @XmlElement(name = "TwoDimDosimetryViaTimeActivityCurveFit")
         protected TwoDimDosimetryViaTimeActivityCurveFit twoDimDosimetryViaTimeActivityCurveFit;
-        @XmlElement(name = "RadioBiologicalCalculation", required = true)
+        @XmlElement(name = "RadioBiologicalCalculation")
         protected RadioBiologicalCalculation radioBiologicalCalculation;
 
         /**
@@ -2191,6 +2363,9 @@ public class NonDicomFileSetDescriptor {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
+     *         &lt;element name="PatientId" type="{http://www.w3.org/2001/XMLSchema}string"/>
+     *         &lt;element name="PatientName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+     *         &lt;element name="ClinicalResearchStudyId" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *         &lt;element name="CTSegmentation" type="{https://www.irdbb-medirad.com}CTSegmentation" minOccurs="0"/>
      *         &lt;element name="SimpleCTMonteCarloDosimetry" type="{https://www.irdbb-medirad.com}SimpleCTMonteCarloDosimetry" maxOccurs="unbounded" minOccurs="0"/>
      *       &lt;/sequence>
@@ -2203,15 +2378,96 @@ public class NonDicomFileSetDescriptor {
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
+        "patientId",
+        "patientName",
+        "clinicalResearchStudyId",
         "ctSegmentation",
         "simpleCTMonteCarloDosimetry"
     })
     public static class WP2Subtask212WorkflowData {
 
+        @XmlElement(name = "PatientId", required = true)
+        protected String patientId;
+        @XmlElement(name = "PatientName", required = true)
+        protected String patientName;
+        @XmlElement(name = "ClinicalResearchStudyId", required = true)
+        protected String clinicalResearchStudyId;
         @XmlElement(name = "CTSegmentation")
         protected CTSegmentation ctSegmentation;
         @XmlElement(name = "SimpleCTMonteCarloDosimetry")
         protected List<SimpleCTMonteCarloDosimetry> simpleCTMonteCarloDosimetry;
+
+        /**
+         * Obtient la valeur de la propriété patientId.
+         * 
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
+         */
+        public String getPatientId() {
+            return patientId;
+        }
+
+        /**
+         * Définit la valeur de la propriété patientId.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
+         */
+        public void setPatientId(String value) {
+            this.patientId = value;
+        }
+
+        /**
+         * Obtient la valeur de la propriété patientName.
+         * 
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
+         */
+        public String getPatientName() {
+            return patientName;
+        }
+
+        /**
+         * Définit la valeur de la propriété patientName.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
+         */
+        public void setPatientName(String value) {
+            this.patientName = value;
+        }
+
+        /**
+         * Obtient la valeur de la propriété clinicalResearchStudyId.
+         * 
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
+         */
+        public String getClinicalResearchStudyId() {
+            return clinicalResearchStudyId;
+        }
+
+        /**
+         * Définit la valeur de la propriété clinicalResearchStudyId.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
+         */
+        public void setClinicalResearchStudyId(String value) {
+            this.clinicalResearchStudyId = value;
+        }
 
         /**
          * Obtient la valeur de la propriété ctSegmentation.

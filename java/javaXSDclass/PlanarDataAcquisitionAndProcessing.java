@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.09 à 05:15:34 PM CET 
+// Généré le : 2018.11.12 à 05:36:08 PM CET 
 //
 
 
@@ -28,7 +28,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="PlanarDataCorrections" type="{https://www.irdbb-medirad.com}PlanarDataCorrections"/>
  *         &lt;element name="PlanarDataSegmentationWithoutRegistration" type="{https://www.irdbb-medirad.com}PlanarDataSegmentationWithoutRegistration" minOccurs="0"/>
  *         &lt;element name="PlanarDataSegmentationWithRegistrationAndPropagation" type="{https://www.irdbb-medirad.com}PlanarDataSegmentationWithRegistrationAndPropagation" minOccurs="0"/>
- *         &lt;element name="ROIPlanarActivityDetermination" type="{https://www.irdbb-medirad.com}ROIPlanarActivityDetermination"/>
+ *         &lt;element name="ROIPlanarActivityDetermination" type="{https://www.irdbb-medirad.com}ROIPlanarActivityDetermination" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -55,7 +55,7 @@ public class PlanarDataAcquisitionAndProcessing {
     protected PlanarDataSegmentationWithoutRegistration planarDataSegmentationWithoutRegistration;
     @XmlElement(name = "PlanarDataSegmentationWithRegistrationAndPropagation")
     protected PlanarDataSegmentationWithRegistrationAndPropagation planarDataSegmentationWithRegistrationAndPropagation;
-    @XmlElement(name = "ROIPlanarActivityDetermination", required = true)
+    @XmlElement(name = "ROIPlanarActivityDetermination")
     protected ROIPlanarActivityDetermination roiPlanarActivityDetermination;
 
     /**

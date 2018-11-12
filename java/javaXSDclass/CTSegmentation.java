@@ -2,12 +2,14 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.09 à 05:15:34 PM CET 
+// Généré le : 2018.11.12 à 05:36:08 PM CET 
 //
 
 
 package javaXSDclass;
 
+import java.util.ArrayList;
+import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -24,11 +26,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="DateTimeProcessStarted" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="PerformingInstitution" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="DICOMImageUsed" type="{https://www.irdbb-medirad.com}DICOMData" minOccurs="0"/>
+ *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
+ *         &lt;element name="DICOMImageUsed" type="{https://www.irdbb-medirad.com}DICOMData"/>
  *         &lt;element name="SegmentationMethodUsed" type="{https://www.irdbb-medirad.com}SegmentationMethodType" minOccurs="0"/>
- *         &lt;element name="VOIDescriptorProduced" type="{https://www.irdbb-medirad.com}VOI"/>
+ *         &lt;element name="VOIDescriptorProduced" type="{https://www.irdbb-medirad.com}VOI" maxOccurs="unbounded"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -39,71 +40,44 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "CTSegmentation", propOrder = {
-    "dateTimeProcessStarted",
-    "performingInstitution",
+    "processExecutionContext",
     "dicomImageUsed",
     "segmentationMethodUsed",
     "voiDescriptorProduced"
 })
 public class CTSegmentation {
 
-    @XmlElement(name = "DateTimeProcessStarted", required = true)
-    protected String dateTimeProcessStarted;
-    @XmlElement(name = "PerformingInstitution", required = true)
-    protected String performingInstitution;
-    @XmlElement(name = "DICOMImageUsed")
+    @XmlElement(name = "ProcessExecutionContext", required = true)
+    protected ProcessExecutionContext processExecutionContext;
+    @XmlElement(name = "DICOMImageUsed", required = true)
     protected DICOMData dicomImageUsed;
     @XmlElement(name = "SegmentationMethodUsed")
     protected SegmentationMethodType segmentationMethodUsed;
     @XmlElement(name = "VOIDescriptorProduced", required = true)
-    protected VOI voiDescriptorProduced;
+    protected List<VOI> voiDescriptorProduced;
 
     /**
-     * Obtient la valeur de la propriété dateTimeProcessStarted.
+     * Obtient la valeur de la propriété processExecutionContext.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link ProcessExecutionContext }
      *     
      */
-    public String getDateTimeProcessStarted() {
-        return dateTimeProcessStarted;
+    public ProcessExecutionContext getProcessExecutionContext() {
+        return processExecutionContext;
     }
 
     /**
-     * Définit la valeur de la propriété dateTimeProcessStarted.
+     * Définit la valeur de la propriété processExecutionContext.
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link ProcessExecutionContext }
      *     
      */
-    public void setDateTimeProcessStarted(String value) {
-        this.dateTimeProcessStarted = value;
-    }
-
-    /**
-     * Obtient la valeur de la propriété performingInstitution.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPerformingInstitution() {
-        return performingInstitution;
-    }
-
-    /**
-     * Définit la valeur de la propriété performingInstitution.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPerformingInstitution(String value) {
-        this.performingInstitution = value;
+    public void setProcessExecutionContext(ProcessExecutionContext value) {
+        this.processExecutionContext = value;
     }
 
     /**
@@ -155,27 +129,32 @@ public class CTSegmentation {
     }
 
     /**
-     * Obtient la valeur de la propriété voiDescriptorProduced.
+     * Gets the value of the voiDescriptorProduced property.
      * 
-     * @return
-     *     possible object is
-     *     {@link VOI }
-     *     
-     */
-    public VOI getVOIDescriptorProduced() {
-        return voiDescriptorProduced;
-    }
-
-    /**
-     * Définit la valeur de la propriété voiDescriptorProduced.
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the voiDescriptorProduced property.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link VOI }
-     *     
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getVOIDescriptorProduced().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link VOI }
+     * 
+     * 
      */
-    public void setVOIDescriptorProduced(VOI value) {
-        this.voiDescriptorProduced = value;
+    public List<VOI> getVOIDescriptorProduced() {
+        if (voiDescriptorProduced == null) {
+            voiDescriptorProduced = new ArrayList<VOI>();
+        }
+        return this.voiDescriptorProduced;
     }
 
 }

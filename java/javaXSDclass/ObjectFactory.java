@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.09 à 05:15:34 PM CET 
+// Généré le : 2018.11.12 à 05:36:08 PM CET 
 //
 
 
@@ -67,6 +67,14 @@ public class ObjectFactory {
      */
     public NonDicomFileSetDescriptor.CalibrationWorkflow createNonDicomFileSetDescriptorCalibrationWorkflow() {
         return new NonDicomFileSetDescriptor.CalibrationWorkflow();
+    }
+
+    /**
+     * Create an instance of {@link NonDicomFileSetDescriptor.ElementOfSPECTRecoveryCoefficientCurve }
+     * 
+     */
+    public NonDicomFileSetDescriptor.ElementOfSPECTRecoveryCoefficientCurve createNonDicomFileSetDescriptorElementOfSPECTRecoveryCoefficientCurve() {
+        return new NonDicomFileSetDescriptor.ElementOfSPECTRecoveryCoefficientCurve();
     }
 
     /**
@@ -174,6 +182,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link NMRelevantCalibrationReference }
+     * 
+     */
+    public NMRelevantCalibrationReference createNMRelevantCalibrationReference() {
+        return new NMRelevantCalibrationReference();
+    }
+
+    /**
      * Create an instance of {@link VoxelBasedDistributionOfAbsorbedDoseType }
      * 
      */
@@ -243,6 +259,14 @@ public class ObjectFactory {
      */
     public ActivityScaling createActivityScaling() {
         return new ActivityScaling();
+    }
+
+    /**
+     * Create an instance of {@link CTRelevantCalibrationReference }
+     * 
+     */
+    public CTRelevantCalibrationReference createCTRelevantCalibrationReference() {
+        return new CTRelevantCalibrationReference();
     }
 
     /**
@@ -363,6 +387,14 @@ public class ObjectFactory {
      */
     public SumAndScalingEnergyDepositionRate createSumAndScalingEnergyDepositionRate() {
         return new SumAndScalingEnergyDepositionRate();
+    }
+
+    /**
+     * Create an instance of {@link ElementOfCTNumberCalibrationCurve }
+     * 
+     */
+    public ElementOfCTNumberCalibrationCurve createElementOfCTNumberCalibrationCurve() {
+        return new ElementOfCTNumberCalibrationCurve();
     }
 
     /**

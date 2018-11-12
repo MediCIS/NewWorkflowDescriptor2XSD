@@ -6,8 +6,10 @@ Created on Fri Sep 14 15:55:40 2018
 @author: marinebrenet
 """
 import os
+import sys
 
-directory = "/Users/marinebrenet/Documents/workflowDescriptor2XSD/txt/"
+#directory = "/Users/marinebrenet/Documents/workflowDescriptor2XSD/txt/"
+directory = sys.argv[1]
 pathXSD = "xsd/nonDicomFileSetDescriptor.xsd"
 
 dico = {}

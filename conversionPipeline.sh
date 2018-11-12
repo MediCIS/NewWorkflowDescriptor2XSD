@@ -3,7 +3,7 @@
 #  Created by Marine Brenet on 31/10/2018.
 
 # 1 Conversion txt to single xsd
-./workflowDescriptor2NonDicomXSD.py
+./workflowDescriptor2NonDicomXSD.py ./txt
 
 # 2 Conversion xsd to javaClass
 cd java
