@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.08 à 11:22:10 AM CET 
+// Généré le : 2018.11.09 à 05:15:34 PM CET 
 //
 
 
@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="DICOMStudyUID" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="DICOMSeriesUID" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="DICOMDICOMSeriesUID" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -37,14 +37,14 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DICOMData", propOrder = {
     "dicomStudyUID",
-    "dicomSeriesUID"
+    "dicomdicomSeriesUID"
 })
 public class DICOMData {
 
     @XmlElement(name = "DICOMStudyUID", required = true)
     protected String dicomStudyUID;
-    @XmlElement(name = "DICOMSeriesUID", required = true)
-    protected String dicomSeriesUID;
+    @XmlElement(name = "DICOMDICOMSeriesUID", required = true)
+    protected String dicomdicomSeriesUID;
 
     /**
      * Obtient la valeur de la propriété dicomStudyUID.
@@ -71,27 +71,27 @@ public class DICOMData {
     }
 
     /**
-     * Obtient la valeur de la propriété dicomSeriesUID.
+     * Obtient la valeur de la propriété dicomdicomSeriesUID.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getDICOMSeriesUID() {
-        return dicomSeriesUID;
+    public String getDICOMDICOMSeriesUID() {
+        return dicomdicomSeriesUID;
     }
 
     /**
-     * Définit la valeur de la propriété dicomSeriesUID.
+     * Définit la valeur de la propriété dicomdicomSeriesUID.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setDICOMSeriesUID(String value) {
-        this.dicomSeriesUID = value;
+    public void setDICOMDICOMSeriesUID(String value) {
+        this.dicomdicomSeriesUID = value;
     }
 
 }

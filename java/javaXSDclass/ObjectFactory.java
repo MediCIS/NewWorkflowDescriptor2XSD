@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.08 à 11:22:10 AM CET 
+// Généré le : 2018.11.09 à 05:15:34 PM CET 
 //
 
 
@@ -37,17 +37,6 @@ public class ObjectFactory {
     private final static QName _EnergyDepositionRateCalculationVOIIdentifierUsed_QNAME = new QName("https://www.irdbb-medirad.com", "VOIIdentifierUsed");
     private final static QName _EnergyDepositionRateCalculationVOIUsed_QNAME = new QName("https://www.irdbb-medirad.com", "VOIUsed");
     private final static QName _EnergyDepositionRateCalculationProcessExecutionContext_QNAME = new QName("https://www.irdbb-medirad.com", "ProcessExecutionContext");
-    private final static QName _NonDicomFileSetDescriptorThreeDimDosimetryWorkflowRegistrationVOISegmentationAndPropagation_QNAME = new QName("https://www.irdbb-medirad.com", "RegistrationVOISegmentationAndPropagation");
-    private final static QName _NonDicomFileSetDescriptorThreeDimDosimetryWorkflowRadioBiologicalCalculation_QNAME = new QName("https://www.irdbb-medirad.com", "RadioBiologicalCalculation");
-    private final static QName _NonDicomFileSetDescriptorThreeDimDosimetryWorkflowPatientId_QNAME = new QName("https://www.irdbb-medirad.com", "PatientId");
-    private final static QName _NonDicomFileSetDescriptorThreeDimDosimetryWorkflowVOIActivityDetermination_QNAME = new QName("https://www.irdbb-medirad.com", "VOIActivityDetermination");
-    private final static QName _NonDicomFileSetDescriptorThreeDimDosimetryWorkflowTimeActivityCurveFit_QNAME = new QName("https://www.irdbb-medirad.com", "TimeActivityCurveFit");
-    private final static QName _NonDicomFileSetDescriptorThreeDimDosimetryWorkflowVOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation_QNAME = new QName("https://www.irdbb-medirad.com", "VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation");
-    private final static QName _NonDicomFileSetDescriptorThreeDimDosimetryWorkflowDoseRateCurveFitVOITimeIntegration_QNAME = new QName("https://www.irdbb-medirad.com", "DoseRateCurveFitVOITimeIntegration");
-    private final static QName _NonDicomFileSetDescriptorThreeDimDosimetryWorkflowPatientName_QNAME = new QName("https://www.irdbb-medirad.com", "PatientName");
-    private final static QName _NonDicomFileSetDescriptorThreeDimDosimetryWorkflowSPECTDataAcquisitionAndProcessing_QNAME = new QName("https://www.irdbb-medirad.com", "SPECTDataAcquisitionAndProcessing");
-    private final static QName _NonDicomFileSetDescriptorThreeDimDosimetryWorkflowAbsorbedDoseCalculation_QNAME = new QName("https://www.irdbb-medirad.com", "AbsorbedDoseCalculation");
-    private final static QName _NonDicomFileSetDescriptorThreeDimDosimetryWorkflowClinicalResearchStudyId_QNAME = new QName("https://www.irdbb-medirad.com", "ClinicalResearchStudyId");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: javaXSDclass
@@ -89,6 +78,30 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link NonDicomFileSetDescriptor.ThreeDimDosimetrySlide1Workflow }
+     * 
+     */
+    public NonDicomFileSetDescriptor.ThreeDimDosimetrySlide1Workflow createNonDicomFileSetDescriptorThreeDimDosimetrySlide1Workflow() {
+        return new NonDicomFileSetDescriptor.ThreeDimDosimetrySlide1Workflow();
+    }
+
+    /**
+     * Create an instance of {@link NonDicomFileSetDescriptor.TimeIntegratedActivityCoefficientPerVOI }
+     * 
+     */
+    public NonDicomFileSetDescriptor.TimeIntegratedActivityCoefficientPerVOI createNonDicomFileSetDescriptorTimeIntegratedActivityCoefficientPerVOI() {
+        return new NonDicomFileSetDescriptor.TimeIntegratedActivityCoefficientPerVOI();
+    }
+
+    /**
+     * Create an instance of {@link NonDicomFileSetDescriptor.TimeIntegratedActivityPerVOI }
+     * 
+     */
+    public NonDicomFileSetDescriptor.TimeIntegratedActivityPerVOI createNonDicomFileSetDescriptorTimeIntegratedActivityPerVOI() {
+        return new NonDicomFileSetDescriptor.TimeIntegratedActivityPerVOI();
+    }
+
+    /**
      * Create an instance of {@link NonDicomFileSetDescriptor.TwoDimDosimetryworkflow }
      * 
      */
@@ -113,11 +126,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow }
+     * Create an instance of {@link NonDicomFileSetDescriptor.ThreeDimDosimetrySlide2Workflow }
      * 
      */
-    public NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow createNonDicomFileSetDescriptorThreeDimDosimetryWorkflow() {
-        return new NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow();
+    public NonDicomFileSetDescriptor.ThreeDimDosimetrySlide2Workflow createNonDicomFileSetDescriptorThreeDimDosimetrySlide2Workflow() {
+        return new NonDicomFileSetDescriptor.ThreeDimDosimetrySlide2Workflow();
     }
 
     /**
@@ -321,19 +334,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DataActivityPerROIAtTimePoint }
-     * 
-     */
-    public DataActivityPerROIAtTimePoint createDataActivityPerROIAtTimePoint() {
-        return new DataActivityPerROIAtTimePoint();
-    }
-
-    /**
      * Create an instance of {@link VOI }
      * 
      */
     public VOI createVOI() {
         return new VOI();
+    }
+
+    /**
+     * Create an instance of {@link DataActivityPerROIAtTimePoint }
+     * 
+     */
+    public DataActivityPerROIAtTimePoint createDataActivityPerROIAtTimePoint() {
+        return new DataActivityPerROIAtTimePoint();
     }
 
     /**
@@ -553,14 +566,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link TimeIntegratedActivityPerVOI }
-     * 
-     */
-    public TimeIntegratedActivityPerVOI createTimeIntegratedActivityPerVOI() {
-        return new TimeIntegratedActivityPerVOI();
-    }
-
-    /**
      * Create an instance of {@link DICOMData }
      * 
      */
@@ -686,14 +691,6 @@ public class ObjectFactory {
      */
     public MeanAbsorbedDoseInROI createMeanAbsorbedDoseInROI() {
         return new MeanAbsorbedDoseInROI();
-    }
-
-    /**
-     * Create an instance of {@link TimeIntegratedActivityCoefficientPerVOI }
-     * 
-     */
-    public TimeIntegratedActivityCoefficientPerVOI createTimeIntegratedActivityCoefficientPerVOI() {
-        return new TimeIntegratedActivityCoefficientPerVOI();
     }
 
     /**
@@ -852,105 +849,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "ProcessExecutionContext", scope = EnergyDepositionRateCalculation.class)
     public JAXBElement<ProcessExecutionContext> createEnergyDepositionRateCalculationProcessExecutionContext(ProcessExecutionContext value) {
         return new JAXBElement<ProcessExecutionContext>(_EnergyDepositionRateCalculationProcessExecutionContext_QNAME, ProcessExecutionContext.class, EnergyDepositionRateCalculation.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link RegistrationVOISegmentationAndPropagation }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "RegistrationVOISegmentationAndPropagation", scope = NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow.class)
-    public JAXBElement<RegistrationVOISegmentationAndPropagation> createNonDicomFileSetDescriptorThreeDimDosimetryWorkflowRegistrationVOISegmentationAndPropagation(RegistrationVOISegmentationAndPropagation value) {
-        return new JAXBElement<RegistrationVOISegmentationAndPropagation>(_NonDicomFileSetDescriptorThreeDimDosimetryWorkflowRegistrationVOISegmentationAndPropagation_QNAME, RegistrationVOISegmentationAndPropagation.class, NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link RadioBiologicalCalculation }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "RadioBiologicalCalculation", scope = NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow.class)
-    public JAXBElement<RadioBiologicalCalculation> createNonDicomFileSetDescriptorThreeDimDosimetryWorkflowRadioBiologicalCalculation(RadioBiologicalCalculation value) {
-        return new JAXBElement<RadioBiologicalCalculation>(_NonDicomFileSetDescriptorThreeDimDosimetryWorkflowRadioBiologicalCalculation_QNAME, RadioBiologicalCalculation.class, NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "PatientId", scope = NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow.class)
-    public JAXBElement<String> createNonDicomFileSetDescriptorThreeDimDosimetryWorkflowPatientId(String value) {
-        return new JAXBElement<String>(_NonDicomFileSetDescriptorThreeDimDosimetryWorkflowPatientId_QNAME, String.class, NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link VOIActivityDetermination }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "VOIActivityDetermination", scope = NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow.class)
-    public JAXBElement<VOIActivityDetermination> createNonDicomFileSetDescriptorThreeDimDosimetryWorkflowVOIActivityDetermination(VOIActivityDetermination value) {
-        return new JAXBElement<VOIActivityDetermination>(_NonDicomFileSetDescriptorThreeDimDosimetryWorkflowVOIActivityDetermination_QNAME, VOIActivityDetermination.class, NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link TimeActivityCurveFit }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "TimeActivityCurveFit", scope = NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow.class)
-    public JAXBElement<TimeActivityCurveFit> createNonDicomFileSetDescriptorThreeDimDosimetryWorkflowTimeActivityCurveFit(TimeActivityCurveFit value) {
-        return new JAXBElement<TimeActivityCurveFit>(_NonDicomFileSetDescriptorThreeDimDosimetryWorkflowTimeActivityCurveFit_QNAME, TimeActivityCurveFit.class, NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation", scope = NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow.class)
-    public JAXBElement<VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation> createNonDicomFileSetDescriptorThreeDimDosimetryWorkflowVOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation(VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation value) {
-        return new JAXBElement<VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation>(_NonDicomFileSetDescriptorThreeDimDosimetryWorkflowVOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation_QNAME, VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation.class, NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DoseRateCurveFitVOITimeIntegration }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "DoseRateCurveFitVOITimeIntegration", scope = NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow.class)
-    public JAXBElement<DoseRateCurveFitVOITimeIntegration> createNonDicomFileSetDescriptorThreeDimDosimetryWorkflowDoseRateCurveFitVOITimeIntegration(DoseRateCurveFitVOITimeIntegration value) {
-        return new JAXBElement<DoseRateCurveFitVOITimeIntegration>(_NonDicomFileSetDescriptorThreeDimDosimetryWorkflowDoseRateCurveFitVOITimeIntegration_QNAME, DoseRateCurveFitVOITimeIntegration.class, NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "PatientName", scope = NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow.class)
-    public JAXBElement<String> createNonDicomFileSetDescriptorThreeDimDosimetryWorkflowPatientName(String value) {
-        return new JAXBElement<String>(_NonDicomFileSetDescriptorThreeDimDosimetryWorkflowPatientName_QNAME, String.class, NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link SPECTDataAcquisitionAndProcessing }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "SPECTDataAcquisitionAndProcessing", scope = NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow.class)
-    public JAXBElement<SPECTDataAcquisitionAndProcessing> createNonDicomFileSetDescriptorThreeDimDosimetryWorkflowSPECTDataAcquisitionAndProcessing(SPECTDataAcquisitionAndProcessing value) {
-        return new JAXBElement<SPECTDataAcquisitionAndProcessing>(_NonDicomFileSetDescriptorThreeDimDosimetryWorkflowSPECTDataAcquisitionAndProcessing_QNAME, SPECTDataAcquisitionAndProcessing.class, NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link AbsorbedDoseCalculation }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "AbsorbedDoseCalculation", scope = NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow.class)
-    public JAXBElement<AbsorbedDoseCalculation> createNonDicomFileSetDescriptorThreeDimDosimetryWorkflowAbsorbedDoseCalculation(AbsorbedDoseCalculation value) {
-        return new JAXBElement<AbsorbedDoseCalculation>(_NonDicomFileSetDescriptorThreeDimDosimetryWorkflowAbsorbedDoseCalculation_QNAME, AbsorbedDoseCalculation.class, NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "ClinicalResearchStudyId", scope = NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow.class)
-    public JAXBElement<String> createNonDicomFileSetDescriptorThreeDimDosimetryWorkflowClinicalResearchStudyId(String value) {
-        return new JAXBElement<String>(_NonDicomFileSetDescriptorThreeDimDosimetryWorkflowClinicalResearchStudyId_QNAME, String.class, NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow.class, value);
     }
 
 }

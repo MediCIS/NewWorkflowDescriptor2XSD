@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.08 à 11:22:10 AM CET 
+// Généré le : 2018.11.09 à 05:15:34 PM CET 
 //
 
 
@@ -10,12 +10,9 @@ package javaXSDclass;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElementRef;
-import javax.xml.bind.annotation.XmlElementRefs;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
@@ -62,6 +59,51 @@ import javax.xml.bind.annotation.XmlType;
  *                 &lt;sequence>
  *                   &lt;element name="CTSegmentation" type="{https://www.irdbb-medirad.com}CTSegmentation" minOccurs="0"/>
  *                   &lt;element name="SimpleCTMonteCarloDosimetry" type="{https://www.irdbb-medirad.com}SimpleCTMonteCarloDosimetry" maxOccurs="unbounded" minOccurs="0"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element name="ThreeDimDosimetrySlide1workflow" maxOccurs="unbounded" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="PatientId" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *                   &lt;element name="PatientName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *                   &lt;element name="ClinicalResearchStudyId" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *                   &lt;element name="SPECTDataAcquisitionAndProcessing" type="{https://www.irdbb-medirad.com}SPECTDataAcquisitionAndProcessing" maxOccurs="unbounded"/>
+ *                   &lt;element name="RegistrationVOISegmentationAndPropagation" type="{https://www.irdbb-medirad.com}RegistrationVOISegmentationAndPropagation"/>
+ *                   &lt;element name="VOIActivityDetermination" type="{https://www.irdbb-medirad.com}VOIActivityDetermination" maxOccurs="unbounded"/>
+ *                   &lt;element name="TimeActivityCurveFit" type="{https://www.irdbb-medirad.com}TimeActivityCurveFit" maxOccurs="unbounded"/>
+ *                   &lt;element name="AbsorbedDoseCalculation" type="{https://www.irdbb-medirad.com}AbsorbedDoseCalculation"/>
+ *                   &lt;element name="RadioBiologicalCalculation" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculation"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element name="TimeIntegratedActivityCoefficientPerVOI" maxOccurs="unbounded" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="TimeIntegratedActivityCoefficientPerVOIValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
+ *                   &lt;element name="TimeIntegratedActivityCoefficientPerVOIUnit" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *                   &lt;element name="VOIIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element name="TimeIntegratedActivityPerVOI" maxOccurs="unbounded" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="TimeIntegratedActivityPerVOIValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
+ *                   &lt;element name="TimeIntegratedActivityPerVOIUnit" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *                   &lt;element name="VOIIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -120,20 +162,11 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;/complexContent>
  *           &lt;/complexType>
  *         &lt;/element>
- *         &lt;element name="ThreeDimDosimetryWorkflow" maxOccurs="unbounded" minOccurs="0">
+ *         &lt;element name="ThreeDimDosimetrySlide2workflow" maxOccurs="unbounded" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element name="PatientId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="PatientName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="ClinicalResearchStudyId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="SPECTDataAcquisitionAndProcessing" type="{https://www.irdbb-medirad.com}SPECTDataAcquisitionAndProcessing" maxOccurs="unbounded"/>
- *                   &lt;element name="RegistrationVOISegmentationAndPropagation" type="{https://www.irdbb-medirad.com}RegistrationVOISegmentationAndPropagation"/>
- *                   &lt;element name="VOIActivityDetermination" type="{https://www.irdbb-medirad.com}VOIActivityDetermination" maxOccurs="unbounded"/>
- *                   &lt;element name="TimeActivityCurveFit" type="{https://www.irdbb-medirad.com}TimeActivityCurveFit" maxOccurs="unbounded"/>
- *                   &lt;element name="AbsorbedDoseCalculation" type="{https://www.irdbb-medirad.com}AbsorbedDoseCalculation"/>
- *                   &lt;element name="RadioBiologicalCalculation" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculation"/>
  *                   &lt;element name="PatientId" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                   &lt;element name="PatientName" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                   &lt;element name="ClinicalResearchStudyId" type="{http://www.w3.org/2001/XMLSchema}string"/>
@@ -160,10 +193,13 @@ import javax.xml.bind.annotation.XmlType;
     "patientId",
     "calibrationWorkflow",
     "wp2Subtask212WorkflowData",
+    "threeDimDosimetrySlide1Workflow",
+    "timeIntegratedActivityCoefficientPerVOI",
+    "timeIntegratedActivityPerVOI",
     "twoDimDosimetryworkflow",
     "hybridDosimetryworkflow",
     "registrationVOISegmentation",
-    "threeDimDosimetryWorkflow"
+    "threeDimDosimetrySlide2Workflow"
 })
 @XmlRootElement(name = "NonDicomFileSetDescriptor")
 public class NonDicomFileSetDescriptor {
@@ -176,14 +212,20 @@ public class NonDicomFileSetDescriptor {
     protected List<NonDicomFileSetDescriptor.CalibrationWorkflow> calibrationWorkflow;
     @XmlElement(name = "WP2subtask212WorkflowData")
     protected List<NonDicomFileSetDescriptor.WP2Subtask212WorkflowData> wp2Subtask212WorkflowData;
+    @XmlElement(name = "ThreeDimDosimetrySlide1workflow")
+    protected List<NonDicomFileSetDescriptor.ThreeDimDosimetrySlide1Workflow> threeDimDosimetrySlide1Workflow;
+    @XmlElement(name = "TimeIntegratedActivityCoefficientPerVOI")
+    protected List<NonDicomFileSetDescriptor.TimeIntegratedActivityCoefficientPerVOI> timeIntegratedActivityCoefficientPerVOI;
+    @XmlElement(name = "TimeIntegratedActivityPerVOI")
+    protected List<NonDicomFileSetDescriptor.TimeIntegratedActivityPerVOI> timeIntegratedActivityPerVOI;
     @XmlElement(name = "TwoDimDosimetryworkflow")
     protected List<NonDicomFileSetDescriptor.TwoDimDosimetryworkflow> twoDimDosimetryworkflow;
     @XmlElement(name = "HybridDosimetryworkflow")
     protected List<NonDicomFileSetDescriptor.HybridDosimetryworkflow> hybridDosimetryworkflow;
     @XmlElement(name = "RegistrationVOISegmentation")
     protected List<NonDicomFileSetDescriptor.RegistrationVOISegmentation> registrationVOISegmentation;
-    @XmlElement(name = "ThreeDimDosimetryWorkflow")
-    protected List<NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow> threeDimDosimetryWorkflow;
+    @XmlElement(name = "ThreeDimDosimetrySlide2workflow")
+    protected List<NonDicomFileSetDescriptor.ThreeDimDosimetrySlide2Workflow> threeDimDosimetrySlide2Workflow;
 
     /**
      * Obtient la valeur de la propriété referencedClinicalResearchStudy.
@@ -292,6 +334,93 @@ public class NonDicomFileSetDescriptor {
     }
 
     /**
+     * Gets the value of the threeDimDosimetrySlide1Workflow property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the threeDimDosimetrySlide1Workflow property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getThreeDimDosimetrySlide1Workflow().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link NonDicomFileSetDescriptor.ThreeDimDosimetrySlide1Workflow }
+     * 
+     * 
+     */
+    public List<NonDicomFileSetDescriptor.ThreeDimDosimetrySlide1Workflow> getThreeDimDosimetrySlide1Workflow() {
+        if (threeDimDosimetrySlide1Workflow == null) {
+            threeDimDosimetrySlide1Workflow = new ArrayList<NonDicomFileSetDescriptor.ThreeDimDosimetrySlide1Workflow>();
+        }
+        return this.threeDimDosimetrySlide1Workflow;
+    }
+
+    /**
+     * Gets the value of the timeIntegratedActivityCoefficientPerVOI property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the timeIntegratedActivityCoefficientPerVOI property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getTimeIntegratedActivityCoefficientPerVOI().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link NonDicomFileSetDescriptor.TimeIntegratedActivityCoefficientPerVOI }
+     * 
+     * 
+     */
+    public List<NonDicomFileSetDescriptor.TimeIntegratedActivityCoefficientPerVOI> getTimeIntegratedActivityCoefficientPerVOI() {
+        if (timeIntegratedActivityCoefficientPerVOI == null) {
+            timeIntegratedActivityCoefficientPerVOI = new ArrayList<NonDicomFileSetDescriptor.TimeIntegratedActivityCoefficientPerVOI>();
+        }
+        return this.timeIntegratedActivityCoefficientPerVOI;
+    }
+
+    /**
+     * Gets the value of the timeIntegratedActivityPerVOI property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the timeIntegratedActivityPerVOI property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getTimeIntegratedActivityPerVOI().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link NonDicomFileSetDescriptor.TimeIntegratedActivityPerVOI }
+     * 
+     * 
+     */
+    public List<NonDicomFileSetDescriptor.TimeIntegratedActivityPerVOI> getTimeIntegratedActivityPerVOI() {
+        if (timeIntegratedActivityPerVOI == null) {
+            timeIntegratedActivityPerVOI = new ArrayList<NonDicomFileSetDescriptor.TimeIntegratedActivityPerVOI>();
+        }
+        return this.timeIntegratedActivityPerVOI;
+    }
+
+    /**
      * Gets the value of the twoDimDosimetryworkflow property.
      * 
      * <p>
@@ -379,32 +508,32 @@ public class NonDicomFileSetDescriptor {
     }
 
     /**
-     * Gets the value of the threeDimDosimetryWorkflow property.
+     * Gets the value of the threeDimDosimetrySlide2Workflow property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the threeDimDosimetryWorkflow property.
+     * This is why there is not a <CODE>set</CODE> method for the threeDimDosimetrySlide2Workflow property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getThreeDimDosimetryWorkflow().add(newItem);
+     *    getThreeDimDosimetrySlide2Workflow().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow }
+     * {@link NonDicomFileSetDescriptor.ThreeDimDosimetrySlide2Workflow }
      * 
      * 
      */
-    public List<NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow> getThreeDimDosimetryWorkflow() {
-        if (threeDimDosimetryWorkflow == null) {
-            threeDimDosimetryWorkflow = new ArrayList<NonDicomFileSetDescriptor.ThreeDimDosimetryWorkflow>();
+    public List<NonDicomFileSetDescriptor.ThreeDimDosimetrySlide2Workflow> getThreeDimDosimetrySlide2Workflow() {
+        if (threeDimDosimetrySlide2Workflow == null) {
+            threeDimDosimetrySlide2Workflow = new ArrayList<NonDicomFileSetDescriptor.ThreeDimDosimetrySlide2Workflow>();
         }
-        return this.threeDimDosimetryWorkflow;
+        return this.threeDimDosimetrySlide2Workflow;
     }
 
 
@@ -1110,6 +1239,291 @@ public class NonDicomFileSetDescriptor {
      *         &lt;element name="TimeActivityCurveFit" type="{https://www.irdbb-medirad.com}TimeActivityCurveFit" maxOccurs="unbounded"/>
      *         &lt;element name="AbsorbedDoseCalculation" type="{https://www.irdbb-medirad.com}AbsorbedDoseCalculation"/>
      *         &lt;element name="RadioBiologicalCalculation" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculation"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
+     */
+    @XmlAccessorType(XmlAccessType.FIELD)
+    @XmlType(name = "", propOrder = {
+        "patientId",
+        "patientName",
+        "clinicalResearchStudyId",
+        "spectDataAcquisitionAndProcessing",
+        "registrationVOISegmentationAndPropagation",
+        "voiActivityDetermination",
+        "timeActivityCurveFit",
+        "absorbedDoseCalculation",
+        "radioBiologicalCalculation"
+    })
+    public static class ThreeDimDosimetrySlide1Workflow {
+
+        @XmlElement(name = "PatientId", required = true)
+        protected String patientId;
+        @XmlElement(name = "PatientName", required = true)
+        protected String patientName;
+        @XmlElement(name = "ClinicalResearchStudyId", required = true)
+        protected String clinicalResearchStudyId;
+        @XmlElement(name = "SPECTDataAcquisitionAndProcessing", required = true)
+        protected List<SPECTDataAcquisitionAndProcessing> spectDataAcquisitionAndProcessing;
+        @XmlElement(name = "RegistrationVOISegmentationAndPropagation", required = true)
+        protected RegistrationVOISegmentationAndPropagation registrationVOISegmentationAndPropagation;
+        @XmlElement(name = "VOIActivityDetermination", required = true)
+        protected List<VOIActivityDetermination> voiActivityDetermination;
+        @XmlElement(name = "TimeActivityCurveFit", required = true)
+        protected List<TimeActivityCurveFit> timeActivityCurveFit;
+        @XmlElement(name = "AbsorbedDoseCalculation", required = true)
+        protected AbsorbedDoseCalculation absorbedDoseCalculation;
+        @XmlElement(name = "RadioBiologicalCalculation", required = true)
+        protected RadioBiologicalCalculation radioBiologicalCalculation;
+
+        /**
+         * Obtient la valeur de la propriété patientId.
+         * 
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
+         */
+        public String getPatientId() {
+            return patientId;
+        }
+
+        /**
+         * Définit la valeur de la propriété patientId.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
+         */
+        public void setPatientId(String value) {
+            this.patientId = value;
+        }
+
+        /**
+         * Obtient la valeur de la propriété patientName.
+         * 
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
+         */
+        public String getPatientName() {
+            return patientName;
+        }
+
+        /**
+         * Définit la valeur de la propriété patientName.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
+         */
+        public void setPatientName(String value) {
+            this.patientName = value;
+        }
+
+        /**
+         * Obtient la valeur de la propriété clinicalResearchStudyId.
+         * 
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
+         */
+        public String getClinicalResearchStudyId() {
+            return clinicalResearchStudyId;
+        }
+
+        /**
+         * Définit la valeur de la propriété clinicalResearchStudyId.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
+         */
+        public void setClinicalResearchStudyId(String value) {
+            this.clinicalResearchStudyId = value;
+        }
+
+        /**
+         * Gets the value of the spectDataAcquisitionAndProcessing property.
+         * 
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the spectDataAcquisitionAndProcessing property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getSPECTDataAcquisitionAndProcessing().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link SPECTDataAcquisitionAndProcessing }
+         * 
+         * 
+         */
+        public List<SPECTDataAcquisitionAndProcessing> getSPECTDataAcquisitionAndProcessing() {
+            if (spectDataAcquisitionAndProcessing == null) {
+                spectDataAcquisitionAndProcessing = new ArrayList<SPECTDataAcquisitionAndProcessing>();
+            }
+            return this.spectDataAcquisitionAndProcessing;
+        }
+
+        /**
+         * Obtient la valeur de la propriété registrationVOISegmentationAndPropagation.
+         * 
+         * @return
+         *     possible object is
+         *     {@link RegistrationVOISegmentationAndPropagation }
+         *     
+         */
+        public RegistrationVOISegmentationAndPropagation getRegistrationVOISegmentationAndPropagation() {
+            return registrationVOISegmentationAndPropagation;
+        }
+
+        /**
+         * Définit la valeur de la propriété registrationVOISegmentationAndPropagation.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link RegistrationVOISegmentationAndPropagation }
+         *     
+         */
+        public void setRegistrationVOISegmentationAndPropagation(RegistrationVOISegmentationAndPropagation value) {
+            this.registrationVOISegmentationAndPropagation = value;
+        }
+
+        /**
+         * Gets the value of the voiActivityDetermination property.
+         * 
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the voiActivityDetermination property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getVOIActivityDetermination().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link VOIActivityDetermination }
+         * 
+         * 
+         */
+        public List<VOIActivityDetermination> getVOIActivityDetermination() {
+            if (voiActivityDetermination == null) {
+                voiActivityDetermination = new ArrayList<VOIActivityDetermination>();
+            }
+            return this.voiActivityDetermination;
+        }
+
+        /**
+         * Gets the value of the timeActivityCurveFit property.
+         * 
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the timeActivityCurveFit property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getTimeActivityCurveFit().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link TimeActivityCurveFit }
+         * 
+         * 
+         */
+        public List<TimeActivityCurveFit> getTimeActivityCurveFit() {
+            if (timeActivityCurveFit == null) {
+                timeActivityCurveFit = new ArrayList<TimeActivityCurveFit>();
+            }
+            return this.timeActivityCurveFit;
+        }
+
+        /**
+         * Obtient la valeur de la propriété absorbedDoseCalculation.
+         * 
+         * @return
+         *     possible object is
+         *     {@link AbsorbedDoseCalculation }
+         *     
+         */
+        public AbsorbedDoseCalculation getAbsorbedDoseCalculation() {
+            return absorbedDoseCalculation;
+        }
+
+        /**
+         * Définit la valeur de la propriété absorbedDoseCalculation.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link AbsorbedDoseCalculation }
+         *     
+         */
+        public void setAbsorbedDoseCalculation(AbsorbedDoseCalculation value) {
+            this.absorbedDoseCalculation = value;
+        }
+
+        /**
+         * Obtient la valeur de la propriété radioBiologicalCalculation.
+         * 
+         * @return
+         *     possible object is
+         *     {@link RadioBiologicalCalculation }
+         *     
+         */
+        public RadioBiologicalCalculation getRadioBiologicalCalculation() {
+            return radioBiologicalCalculation;
+        }
+
+        /**
+         * Définit la valeur de la propriété radioBiologicalCalculation.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link RadioBiologicalCalculation }
+         *     
+         */
+        public void setRadioBiologicalCalculation(RadioBiologicalCalculation value) {
+            this.radioBiologicalCalculation = value;
+        }
+
+    }
+
+
+    /**
+     * <p>Classe Java pour anonymous complex type.
+     * 
+     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
      *         &lt;element name="PatientId" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *         &lt;element name="PatientName" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *         &lt;element name="ClinicalResearchStudyId" type="{http://www.w3.org/2001/XMLSchema}string"/>
@@ -1127,72 +1541,413 @@ public class NonDicomFileSetDescriptor {
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
-        "content"
+        "patientId",
+        "patientName",
+        "clinicalResearchStudyId",
+        "spectDataAcquisitionAndProcessing",
+        "voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation",
+        "doseRateCurveFitVOITimeIntegration",
+        "radioBiologicalCalculation"
     })
-    public static class ThreeDimDosimetryWorkflow {
+    public static class ThreeDimDosimetrySlide2Workflow {
 
-        @XmlElementRefs({
-            @XmlElementRef(name = "AbsorbedDoseCalculation", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
-            @XmlElementRef(name = "SPECTDataAcquisitionAndProcessing", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
-            @XmlElementRef(name = "PatientId", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
-            @XmlElementRef(name = "VOIActivityDetermination", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
-            @XmlElementRef(name = "RegistrationVOISegmentationAndPropagation", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
-            @XmlElementRef(name = "RadioBiologicalCalculation", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
-            @XmlElementRef(name = "VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
-            @XmlElementRef(name = "ClinicalResearchStudyId", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
-            @XmlElementRef(name = "PatientName", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
-            @XmlElementRef(name = "DoseRateCurveFitVOITimeIntegration", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
-            @XmlElementRef(name = "TimeActivityCurveFit", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false)
-        })
-        protected List<JAXBElement<?>> content;
+        @XmlElement(name = "PatientId", required = true)
+        protected String patientId;
+        @XmlElement(name = "PatientName", required = true)
+        protected String patientName;
+        @XmlElement(name = "ClinicalResearchStudyId", required = true)
+        protected String clinicalResearchStudyId;
+        @XmlElement(name = "SPECTDataAcquisitionAndProcessing", required = true)
+        protected List<SPECTDataAcquisitionAndProcessing> spectDataAcquisitionAndProcessing;
+        @XmlElement(name = "VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation", required = true)
+        protected List<VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation> voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation;
+        @XmlElement(name = "DoseRateCurveFitVOITimeIntegration", required = true)
+        protected DoseRateCurveFitVOITimeIntegration doseRateCurveFitVOITimeIntegration;
+        @XmlElement(name = "RadioBiologicalCalculation", required = true)
+        protected RadioBiologicalCalculation radioBiologicalCalculation;
 
         /**
-         * Obtient le reste du modèle de contenu. 
+         * Obtient la valeur de la propriété patientId.
          * 
-         * <p>
-         * Vous obtenez la propriété "catch-all" pour la raison suivante : 
-         * Le nom de champ "PatientId" est utilisé par deux parties différentes d'un schéma. Reportez-vous à : 
-         * ligne 95 sur file:/Users/marinebrenet/Documents/workflowDescriptor2XSD/xsd/nonDicomFileSetDescriptor.xsd
-         * ligne 86 sur file:/Users/marinebrenet/Documents/workflowDescriptor2XSD/xsd/nonDicomFileSetDescriptor.xsd
-         * <p>
-         * Pour vous débarrasser de cette propriété, appliquez une personnalisation de propriété à l'une 
-         * des deux déclarations suivantes afin de modifier leurs noms : 
-         * Gets the value of the content property.
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
+         */
+        public String getPatientId() {
+            return patientId;
+        }
+
+        /**
+         * Définit la valeur de la propriété patientId.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
+         */
+        public void setPatientId(String value) {
+            this.patientId = value;
+        }
+
+        /**
+         * Obtient la valeur de la propriété patientName.
+         * 
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
+         */
+        public String getPatientName() {
+            return patientName;
+        }
+
+        /**
+         * Définit la valeur de la propriété patientName.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
+         */
+        public void setPatientName(String value) {
+            this.patientName = value;
+        }
+
+        /**
+         * Obtient la valeur de la propriété clinicalResearchStudyId.
+         * 
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
+         */
+        public String getClinicalResearchStudyId() {
+            return clinicalResearchStudyId;
+        }
+
+        /**
+         * Définit la valeur de la propriété clinicalResearchStudyId.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
+         */
+        public void setClinicalResearchStudyId(String value) {
+            this.clinicalResearchStudyId = value;
+        }
+
+        /**
+         * Gets the value of the spectDataAcquisitionAndProcessing property.
          * 
          * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the content property.
+         * This is why there is not a <CODE>set</CODE> method for the spectDataAcquisitionAndProcessing property.
          * 
          * <p>
          * For example, to add a new item, do as follows:
          * <pre>
-         *    getContent().add(newItem);
+         *    getSPECTDataAcquisitionAndProcessing().add(newItem);
          * </pre>
          * 
          * 
          * <p>
          * Objects of the following type(s) are allowed in the list
-         * {@link JAXBElement }{@code <}{@link AbsorbedDoseCalculation }{@code >}
-         * {@link JAXBElement }{@code <}{@link SPECTDataAcquisitionAndProcessing }{@code >}
-         * {@link JAXBElement }{@code <}{@link String }{@code >}
-         * {@link JAXBElement }{@code <}{@link VOIActivityDetermination }{@code >}
-         * {@link JAXBElement }{@code <}{@link RegistrationVOISegmentationAndPropagation }{@code >}
-         * {@link JAXBElement }{@code <}{@link RadioBiologicalCalculation }{@code >}
-         * {@link JAXBElement }{@code <}{@link VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation }{@code >}
-         * {@link JAXBElement }{@code <}{@link String }{@code >}
-         * {@link JAXBElement }{@code <}{@link String }{@code >}
-         * {@link JAXBElement }{@code <}{@link DoseRateCurveFitVOITimeIntegration }{@code >}
-         * {@link JAXBElement }{@code <}{@link TimeActivityCurveFit }{@code >}
+         * {@link SPECTDataAcquisitionAndProcessing }
          * 
          * 
          */
-        public List<JAXBElement<?>> getContent() {
-            if (content == null) {
-                content = new ArrayList<JAXBElement<?>>();
+        public List<SPECTDataAcquisitionAndProcessing> getSPECTDataAcquisitionAndProcessing() {
+            if (spectDataAcquisitionAndProcessing == null) {
+                spectDataAcquisitionAndProcessing = new ArrayList<SPECTDataAcquisitionAndProcessing>();
             }
-            return this.content;
+            return this.spectDataAcquisitionAndProcessing;
+        }
+
+        /**
+         * Gets the value of the voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation property.
+         * 
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getVOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation }
+         * 
+         * 
+         */
+        public List<VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation> getVOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation() {
+            if (voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation == null) {
+                voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation = new ArrayList<VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation>();
+            }
+            return this.voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation;
+        }
+
+        /**
+         * Obtient la valeur de la propriété doseRateCurveFitVOITimeIntegration.
+         * 
+         * @return
+         *     possible object is
+         *     {@link DoseRateCurveFitVOITimeIntegration }
+         *     
+         */
+        public DoseRateCurveFitVOITimeIntegration getDoseRateCurveFitVOITimeIntegration() {
+            return doseRateCurveFitVOITimeIntegration;
+        }
+
+        /**
+         * Définit la valeur de la propriété doseRateCurveFitVOITimeIntegration.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link DoseRateCurveFitVOITimeIntegration }
+         *     
+         */
+        public void setDoseRateCurveFitVOITimeIntegration(DoseRateCurveFitVOITimeIntegration value) {
+            this.doseRateCurveFitVOITimeIntegration = value;
+        }
+
+        /**
+         * Obtient la valeur de la propriété radioBiologicalCalculation.
+         * 
+         * @return
+         *     possible object is
+         *     {@link RadioBiologicalCalculation }
+         *     
+         */
+        public RadioBiologicalCalculation getRadioBiologicalCalculation() {
+            return radioBiologicalCalculation;
+        }
+
+        /**
+         * Définit la valeur de la propriété radioBiologicalCalculation.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link RadioBiologicalCalculation }
+         *     
+         */
+        public void setRadioBiologicalCalculation(RadioBiologicalCalculation value) {
+            this.radioBiologicalCalculation = value;
+        }
+
+    }
+
+
+    /**
+     * <p>Classe Java pour anonymous complex type.
+     * 
+     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="TimeIntegratedActivityCoefficientPerVOIValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
+     *         &lt;element name="TimeIntegratedActivityCoefficientPerVOIUnit" type="{http://www.w3.org/2001/XMLSchema}string"/>
+     *         &lt;element name="VOIIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
+     */
+    @XmlAccessorType(XmlAccessType.FIELD)
+    @XmlType(name = "", propOrder = {
+        "timeIntegratedActivityCoefficientPerVOIValue",
+        "timeIntegratedActivityCoefficientPerVOIUnit",
+        "voiIdentifier"
+    })
+    public static class TimeIntegratedActivityCoefficientPerVOI {
+
+        @XmlElement(name = "TimeIntegratedActivityCoefficientPerVOIValue")
+        protected float timeIntegratedActivityCoefficientPerVOIValue;
+        @XmlElement(name = "TimeIntegratedActivityCoefficientPerVOIUnit", required = true)
+        protected String timeIntegratedActivityCoefficientPerVOIUnit;
+        @XmlElement(name = "VOIIdentifier", required = true)
+        protected String voiIdentifier;
+
+        /**
+         * Obtient la valeur de la propriété timeIntegratedActivityCoefficientPerVOIValue.
+         * 
+         */
+        public float getTimeIntegratedActivityCoefficientPerVOIValue() {
+            return timeIntegratedActivityCoefficientPerVOIValue;
+        }
+
+        /**
+         * Définit la valeur de la propriété timeIntegratedActivityCoefficientPerVOIValue.
+         * 
+         */
+        public void setTimeIntegratedActivityCoefficientPerVOIValue(float value) {
+            this.timeIntegratedActivityCoefficientPerVOIValue = value;
+        }
+
+        /**
+         * Obtient la valeur de la propriété timeIntegratedActivityCoefficientPerVOIUnit.
+         * 
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
+         */
+        public String getTimeIntegratedActivityCoefficientPerVOIUnit() {
+            return timeIntegratedActivityCoefficientPerVOIUnit;
+        }
+
+        /**
+         * Définit la valeur de la propriété timeIntegratedActivityCoefficientPerVOIUnit.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
+         */
+        public void setTimeIntegratedActivityCoefficientPerVOIUnit(String value) {
+            this.timeIntegratedActivityCoefficientPerVOIUnit = value;
+        }
+
+        /**
+         * Obtient la valeur de la propriété voiIdentifier.
+         * 
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
+         */
+        public String getVOIIdentifier() {
+            return voiIdentifier;
+        }
+
+        /**
+         * Définit la valeur de la propriété voiIdentifier.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
+         */
+        public void setVOIIdentifier(String value) {
+            this.voiIdentifier = value;
+        }
+
+    }
+
+
+    /**
+     * <p>Classe Java pour anonymous complex type.
+     * 
+     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="TimeIntegratedActivityPerVOIValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
+     *         &lt;element name="TimeIntegratedActivityPerVOIUnit" type="{http://www.w3.org/2001/XMLSchema}string"/>
+     *         &lt;element name="VOIIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
+     */
+    @XmlAccessorType(XmlAccessType.FIELD)
+    @XmlType(name = "", propOrder = {
+        "timeIntegratedActivityPerVOIValue",
+        "timeIntegratedActivityPerVOIUnit",
+        "voiIdentifier"
+    })
+    public static class TimeIntegratedActivityPerVOI {
+
+        @XmlElement(name = "TimeIntegratedActivityPerVOIValue")
+        protected float timeIntegratedActivityPerVOIValue;
+        @XmlElement(name = "TimeIntegratedActivityPerVOIUnit", required = true)
+        protected String timeIntegratedActivityPerVOIUnit;
+        @XmlElement(name = "VOIIdentifier", required = true)
+        protected String voiIdentifier;
+
+        /**
+         * Obtient la valeur de la propriété timeIntegratedActivityPerVOIValue.
+         * 
+         */
+        public float getTimeIntegratedActivityPerVOIValue() {
+            return timeIntegratedActivityPerVOIValue;
+        }
+
+        /**
+         * Définit la valeur de la propriété timeIntegratedActivityPerVOIValue.
+         * 
+         */
+        public void setTimeIntegratedActivityPerVOIValue(float value) {
+            this.timeIntegratedActivityPerVOIValue = value;
+        }
+
+        /**
+         * Obtient la valeur de la propriété timeIntegratedActivityPerVOIUnit.
+         * 
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
+         */
+        public String getTimeIntegratedActivityPerVOIUnit() {
+            return timeIntegratedActivityPerVOIUnit;
+        }
+
+        /**
+         * Définit la valeur de la propriété timeIntegratedActivityPerVOIUnit.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
+         */
+        public void setTimeIntegratedActivityPerVOIUnit(String value) {
+            this.timeIntegratedActivityPerVOIUnit = value;
+        }
+
+        /**
+         * Obtient la valeur de la propriété voiIdentifier.
+         * 
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
+         */
+        public String getVOIIdentifier() {
+            return voiIdentifier;
+        }
+
+        /**
+         * Définit la valeur de la propriété voiIdentifier.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
+         */
+        public void setVOIIdentifier(String value) {
+            this.voiIdentifier = value;
         }
 
     }

@@ -285,7 +285,18 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="VOI">
 		<xs:sequence>
 				<xs:element name="VOIIdentifier" type="xs:string"/>
-				<xs:element name="OrganOrTissue" type="irdbb:string:bone/breast/esophagus/heart/lungs/skin"/>
+		<xs:element name="OrganOrTissue">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="bone"/>
+					<xs:enumeration value="breast"/>
+					<xs:enumeration value="esophagus"/>
+					<xs:enumeration value="heart"/>
+					<xs:enumeration value="lungs"/>
+					<xs:enumeration value="skin"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
 				<xs:element name="DICOMVOIContainer" type="irdbb:DICOMData" minOccurs="0" />
 				<xs:element name="NonDICOMVOIContainer" type="irdbb:NonDICOMData" minOccurs="0" />
 		</xs:sequence>
