@@ -92,21 +92,34 @@ def generateSimpleObject(nombre, name, typeName):
     xsdString = '\t\t\t\t<xs:element name="'+name.replace(" ","")+'" type="'+convertType(typeName)
     nombre=nombre.replace(" ","")
     if nombre=="1" :
-        xsdString = xsdString +'"/>'
+        xsdString += '"/>'
     elif nombre=="0,1":
-        xsdString = xsdString +'" minOccurs="0" />'
+        xsdString += '" minOccurs="0" />'
     elif nombre=="1,n" or nombre=="1,m":
-        xsdString = xsdString +'" maxOccurs="unbounded" />'
+        xsdString += '" maxOccurs="unbounded" />'
     elif nombre=="0,n" or nombre=="0,m":
-        xsdString = xsdString +'" minOccurs="0" maxOccurs="unbounded" />'
+        xsdString += '" minOccurs="0" maxOccurs="unbounded" />'
     else:
-        xsdString = xsdString +'" minOccurs="0" />'
+        xsdString += '" minOccurs="0" />'
     return xsdString
 
-def generateElementRestricted(string, typeName):   
+def generateElementRestricted(nombre, string, typeName):   
     nameElement = string.split(":")[0]
     listValues = string.split(":")[1]
-    xsd =  '\t\t<xs:element name="'+nameElement+'">\n'
+    xsd =  '\t\t<xs:element name="'+nameElement
+    
+    nombre=nombre.replace(" ","")
+    if nombre=="1" :
+        xsd += '">'+'\n'
+    elif nombre=="0,1":
+        xsd += '" minOccurs="0" >'+'\n'
+    elif nombre=="1,n" or nombre=="1,m":
+       xsd += '" maxOccurs="unbounded" >'+'\n'
+    elif nombre=="0,n" or nombre=="0,m":
+        xsd += '" minOccurs="0" maxOccurs="unbounded" >'+'\n'
+    else:
+       xsd += '" minOccurs="0" >'+'\n'
+    
     xsd += '\t\t\t<xs:simpleType>\n'
     xsd += '\t\t\t\t<xs:restriction base="'+convertType(typeName)+'">\n'
     for value in listValues.split("/"):
@@ -193,7 +206,7 @@ for key in dico:
                 listeTypes.append(typeName)
                 if name != "" and name.replace("\n","").replace(" ","") != "":
                     if ":" in name and "/" in name:
-                        sousObjets+=generateElementRestricted(name, typeName)
+                        sousObjets+=generateElementRestricted(nombre, name, typeName)
                     else:
                         sousObjets+=generateSimpleObject(nombre, name, typeName)+"\n"
         

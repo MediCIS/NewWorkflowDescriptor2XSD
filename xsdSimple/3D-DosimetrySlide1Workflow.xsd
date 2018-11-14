@@ -152,7 +152,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="NMRelevantCalibrationReference">
 		<xs:sequence>
 				<xs:element name="ReferenceCalibrationDate" type="xs:string"/>
-		<xs:element name="Isotope">
+		<xs:element name="Isotope"/>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="radium223"/>

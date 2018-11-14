@@ -201,7 +201,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				<xs:element name="PostAdminActivityUnit" type="xs:string"/>
 				<xs:element name="PostAdminActivityTimestamp" type="xs:string"/>
 				<xs:element name="HotInsertIdentifier" type="xs:string"/>
-		<xs:element name="Isotope">
+		<xs:element name="Isotope"/>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="radium223"/>
@@ -235,7 +235,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				<xs:element name="PostAdminBackgroundActivityUnit" type="xs:string"/>
 				<xs:element name="PostAdminBackgroundActivityTimestamp" type="xs:string"/>
 				<xs:element name="TankIdentifier" type="xs:string"/>
-		<xs:element name="Isotope">
+		<xs:element name="Isotope"/>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="radium223"/>
@@ -295,7 +295,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				<xs:element name="CalibrationCoefficientValue" type="xs:float"/>
 				<xs:element name="CalibrationCoefficientUnit" type="xs:string"/>
 				<xs:element name="ReferenceCalibrationDate" type="xs:string"/>
-		<xs:element name="Isotope">
+		<xs:element name="Isotope"/>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="radium223"/>
@@ -314,7 +314,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 				<xs:element name="ElementOfSPECTRecoveryCoefficientCurve" type="irdbb:ElementOfSPECTRecoveryCoefficientCurve" maxOccurs="unbounded" />
 				<xs:element name="ReferenceCalibrationDate" type="xs:string"/>
-		<xs:element name="Isotope">
+		<xs:element name="Isotope"/>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="radium223"/>
@@ -347,7 +347,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="NonDICOMData">
 		<xs:sequence>
-		<xs:element name="NonDICOMDataClass">
+		<xs:element name="NonDICOMDataClass"/>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="VOI"/>
@@ -356,7 +356,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:element>
-		<xs:element name="NonDICOMDataFormat">
+		<xs:element name="NonDICOMDataFormat"/>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="zipped imageJ contours format"/>

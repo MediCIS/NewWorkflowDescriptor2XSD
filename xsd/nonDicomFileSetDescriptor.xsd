@@ -524,7 +524,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:element>
-		<xs:element name="StatisticalSubCategory">
+		<xs:element name="StatisticalSubCategory" minOccurs="0" >
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="mean"/>

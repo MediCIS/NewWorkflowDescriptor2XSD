@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.12 à 05:36:08 PM CET 
+// Généré le : 2018.11.14 à 10:45:43 AM CET 
 //
 
 
@@ -37,7 +37,7 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>
- *         &lt;element name="StatisticalSubCategory">
+ *         &lt;element name="StatisticalSubCategory" minOccurs="0">
  *           &lt;simpleType>
  *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *               &lt;enumeration value="mean"/>
@@ -79,7 +79,7 @@ public class AbsorbedDosePerVOIType {
 
     @XmlElement(name = "AbsorbedDoseCategory", required = true)
     protected String absorbedDoseCategory;
-    @XmlElement(name = "StatisticalSubCategory", required = true)
+    @XmlElement(name = "StatisticalSubCategory")
     protected String statisticalSubCategory;
     @XmlElement(name = "AbsorbedDoseValue", required = true)
     protected String absorbedDoseValue;

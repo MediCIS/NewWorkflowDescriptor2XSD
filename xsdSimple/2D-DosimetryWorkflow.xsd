@@ -195,7 +195,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="NMRelevantCalibrationReference">
 		<xs:sequence>
 				<xs:element name="ReferenceCalibrationDate" type="xs:string"/>
-		<xs:element name="Isotope">
+		<xs:element name="Isotope"/>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="radium223"/>
@@ -301,7 +301,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="NonDICOMData">
 		<xs:sequence>
-		<xs:element name="NonDICOMDataClass">
+		<xs:element name="NonDICOMDataClass"/>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="VOI"/>
@@ -310,7 +310,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:element>
-		<xs:element name="NonDICOMDataFormat">
+		<xs:element name="NonDICOMDataFormat"/>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="zipped imageJ contours format"/>

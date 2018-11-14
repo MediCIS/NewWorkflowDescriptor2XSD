@@ -33,7 +33,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:element name="NonDICOMData" minOccurs="0" maxOccurs="unbounded">
 		<xs:complexType>
 			<xs:sequence>
-		<xs:element name="NonDICOMDataClass">
+		<xs:element name="NonDICOMDataClass"/>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="VOI"/>
@@ -42,7 +42,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:element>
-		<xs:element name="NonDICOMDataFormat">
+		<xs:element name="NonDICOMDataFormat"/>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="zipped imageJ contours format"/>
@@ -147,7 +147,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="AbsorbedDosePerVOIType">
 		<xs:sequence>
-		<xs:element name="AbsorbedDoseCategory">
+		<xs:element name="AbsorbedDoseCategory"/>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="mean absorbed dose normalized to CTDI free in air normalized to tube load"/>
@@ -160,7 +160,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:element>
-		<xs:element name="StatisticalSubCategory">
+		<xs:element name="StatisticalSubCategory" minOccurs="0" />
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="mean"/>
@@ -173,7 +173,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:element>
 				<xs:element name="AbsorbedDoseValue" type="xs:string"/>
 				<xs:element name="VOIIdentifier" type="xs:string"/>
-		<xs:element name="AbsorbedDoseUnit">
+		<xs:element name="AbsorbedDoseUnit"/>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="milligray per (milligray per (100 milliampere second))"/>
@@ -188,7 +188,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="VoxelBasedDistributionOfAbsorbedDoseType">
 		<xs:sequence>
 				<xs:element name="VoxelBasedDistributionOfAbsorbedDoseIdentifier" type="xs:string"/>
-		<xs:element name="VoxelBasedDistributionOfAbsorbedDoseCategory">
+		<xs:element name="VoxelBasedDistributionOfAbsorbedDoseCategory"/>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="absorbed dose normalized to CTDI free in air normalized to tube load"/>
@@ -197,7 +197,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:element>
-		<xs:element name="AbsorbedDoseUnit">
+		<xs:element name="AbsorbedDoseUnit"/>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="milligray per (milligray per (100 milliampere second))"/>
@@ -214,7 +214,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="VOI">
 		<xs:sequence>
 				<xs:element name="VOIIdentifier" type="xs:string"/>
-		<xs:element name="OrganOrTissue">
+		<xs:element name="OrganOrTissue"/>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="bone"/>

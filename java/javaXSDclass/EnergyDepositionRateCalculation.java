@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.12 à 05:36:08 PM CET 
+// Généré le : 2018.11.14 à 10:45:43 AM CET 
 //
 
 
@@ -50,11 +50,11 @@ import javax.xml.bind.annotation.XmlType;
 public class EnergyDepositionRateCalculation {
 
     @XmlElementRefs({
-        @XmlElementRef(name = "VOIIdentifierUsed", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "VOIUsed", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "ThreeDimEnergyDepositionRateMatrixAtTimePointProduced", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "ProcessExecutionContext", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "DICOMData", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "VOIIdentifierUsed", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "ProcessExecutionContext", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "ThreeDimEnergyDepositionRateMatrixAtTimePointProduced", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "TimePointIdentifierUsed", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false)
     })
     protected List<JAXBElement<?>> content;
@@ -89,10 +89,10 @@ public class EnergyDepositionRateCalculation {
      * Objects of the following type(s) are allowed in the list
      * {@link JAXBElement }{@code <}{@link String }{@code >}
      * {@link JAXBElement }{@code <}{@link String }{@code >}
+     * {@link JAXBElement }{@code <}{@link String }{@code >}
      * {@link JAXBElement }{@code <}{@link NonDICOMData }{@code >}
+     * {@link JAXBElement }{@code <}{@link String }{@code >}
      * {@link JAXBElement }{@code <}{@link ProcessExecutionContext }{@code >}
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
      * 
      * 
      */
