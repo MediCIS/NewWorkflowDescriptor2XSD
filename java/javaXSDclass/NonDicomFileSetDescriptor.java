@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.14 à 10:45:43 AM CET 
+// Généré le : 2018.11.14 à 11:29:52 AM CET 
 //
 
 
@@ -71,9 +71,6 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element name="PatientId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="PatientName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="ClinicalResearchStudyId" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                   &lt;element name="CTSegmentation" type="{https://www.irdbb-medirad.com}CTSegmentation" minOccurs="0"/>
  *                   &lt;element name="SimpleCTMonteCarloDosimetry" type="{https://www.irdbb-medirad.com}SimpleCTMonteCarloDosimetry" maxOccurs="unbounded" minOccurs="0"/>
  *                 &lt;/sequence>
@@ -86,9 +83,6 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element name="PatientId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="PatientName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="ClinicalResearchStudyId" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                   &lt;element name="SPECTDataAcquisitionAndProcessing" type="{https://www.irdbb-medirad.com}SPECTDataAcquisitionAndProcessing" maxOccurs="unbounded"/>
  *                   &lt;element name="RegistrationVOISegmentationAndPropagation" type="{https://www.irdbb-medirad.com}RegistrationVOISegmentationAndPropagation"/>
  *                   &lt;element name="VOIActivityDetermination" type="{https://www.irdbb-medirad.com}VOIActivityDetermination" maxOccurs="unbounded"/>
@@ -131,9 +125,6 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element name="PatientId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="PatientName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="ClinicalResearchStudyId" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                   &lt;element name="PlanarDataAcquisitionAndProcessing" type="{https://www.irdbb-medirad.com}PlanarDataAcquisitionAndProcessing" maxOccurs="unbounded"/>
  *                   &lt;element name="TwoDimDosimetryViaAbsorbedDoseRateCalculation" type="{https://www.irdbb-medirad.com}TwoDimDosimetryViaAbsorbedDoseRateCalculation" minOccurs="0"/>
  *                   &lt;element name="TwoDimDosimetryViaTimeActivityCurveFit" type="{https://www.irdbb-medirad.com}TwoDimDosimetryViaTimeActivityCurveFit" minOccurs="0"/>
@@ -148,9 +139,6 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element name="PatientId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="PatientName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="ClinicalResearchStudyId" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                   &lt;element name="PlanarDataAcquisitionAndProcessing" type="{https://www.irdbb-medirad.com}PlanarDataAcquisitionAndProcessing" maxOccurs="unbounded"/>
  *                   &lt;element name="SPECTDataAcquisitionAndProcessing" type="{https://www.irdbb-medirad.com}SPECTDataAcquisitionAndProcessing"/>
  *                   &lt;element name="HybridDosimetryViaAbsorbedDoseRateCalculation" type="{https://www.irdbb-medirad.com}HybridDosimetryViaAbsorbedDoseRateCalculation" minOccurs="0"/>
@@ -168,8 +156,8 @@ import javax.xml.bind.annotation.XmlType;
  *                 &lt;sequence>
  *                   &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
  *                   &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="DICOMSeriesUIDNMTomoReconUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="DICOMSeriesUIDCTReconUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *                   &lt;element name="NMTomoReconUsed" type="{https://www.irdbb-medirad.com}DICOMData"/>
+ *                   &lt;element name="CTReconUsed" type="{https://www.irdbb-medirad.com}DICOMData"/>
  *                   &lt;element name="RegistrationAndSegmentationMethodMethodUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                   &lt;element name="CountsPerVOIAtTimePointProduced" type="{https://www.irdbb-medirad.com}CountsPerVOIAtTimePoint" maxOccurs="unbounded"/>
  *                   &lt;element name="VOIInSPECTProduced" type="{https://www.irdbb-medirad.com}VOI" maxOccurs="unbounded"/>
@@ -184,9 +172,6 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element name="PatientId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="PatientName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="ClinicalResearchStudyId" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                   &lt;element name="SPECTDataAcquisitionAndProcessing" type="{https://www.irdbb-medirad.com}SPECTDataAcquisitionAndProcessing" maxOccurs="unbounded"/>
  *                   &lt;element name="VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation" type="{https://www.irdbb-medirad.com}VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation" maxOccurs="unbounded"/>
  *                   &lt;element name="DoseRateCurveFitVOITimeIntegration" type="{https://www.irdbb-medirad.com}DoseRateCurveFitVOITimeIntegration"/>
@@ -802,9 +787,6 @@ public class NonDicomFileSetDescriptor {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element name="PatientId" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="PatientName" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="ClinicalResearchStudyId" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *         &lt;element name="PlanarDataAcquisitionAndProcessing" type="{https://www.irdbb-medirad.com}PlanarDataAcquisitionAndProcessing" maxOccurs="unbounded"/>
      *         &lt;element name="SPECTDataAcquisitionAndProcessing" type="{https://www.irdbb-medirad.com}SPECTDataAcquisitionAndProcessing"/>
      *         &lt;element name="HybridDosimetryViaAbsorbedDoseRateCalculation" type="{https://www.irdbb-medirad.com}HybridDosimetryViaAbsorbedDoseRateCalculation" minOccurs="0"/>
@@ -820,9 +802,6 @@ public class NonDicomFileSetDescriptor {
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
-        "patientId",
-        "patientName",
-        "clinicalResearchStudyId",
         "planarDataAcquisitionAndProcessing",
         "spectDataAcquisitionAndProcessing",
         "hybridDosimetryViaAbsorbedDoseRateCalculation",
@@ -831,12 +810,6 @@ public class NonDicomFileSetDescriptor {
     })
     public static class HybridDosimetryworkflow {
 
-        @XmlElement(name = "PatientId", required = true)
-        protected String patientId;
-        @XmlElement(name = "PatientName", required = true)
-        protected String patientName;
-        @XmlElement(name = "ClinicalResearchStudyId", required = true)
-        protected String clinicalResearchStudyId;
         @XmlElement(name = "PlanarDataAcquisitionAndProcessing", required = true)
         protected List<PlanarDataAcquisitionAndProcessing> planarDataAcquisitionAndProcessing;
         @XmlElement(name = "SPECTDataAcquisitionAndProcessing", required = true)
@@ -847,78 +820,6 @@ public class NonDicomFileSetDescriptor {
         protected HybridDosimetryViaTimeActivityCurveFit hybridDosimetryViaTimeActivityCurveFit;
         @XmlElement(name = "RadioBiologicalCalculation")
         protected RadioBiologicalCalculation radioBiologicalCalculation;
-
-        /**
-         * Obtient la valeur de la propriété patientId.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
-         */
-        public String getPatientId() {
-            return patientId;
-        }
-
-        /**
-         * Définit la valeur de la propriété patientId.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
-         */
-        public void setPatientId(String value) {
-            this.patientId = value;
-        }
-
-        /**
-         * Obtient la valeur de la propriété patientName.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
-         */
-        public String getPatientName() {
-            return patientName;
-        }
-
-        /**
-         * Définit la valeur de la propriété patientName.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
-         */
-        public void setPatientName(String value) {
-            this.patientName = value;
-        }
-
-        /**
-         * Obtient la valeur de la propriété clinicalResearchStudyId.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
-         */
-        public String getClinicalResearchStudyId() {
-            return clinicalResearchStudyId;
-        }
-
-        /**
-         * Définit la valeur de la propriété clinicalResearchStudyId.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
-         */
-        public void setClinicalResearchStudyId(String value) {
-            this.clinicalResearchStudyId = value;
-        }
 
         /**
          * Gets the value of the planarDataAcquisitionAndProcessing property.
@@ -1143,8 +1044,8 @@ public class NonDicomFileSetDescriptor {
      *       &lt;sequence>
      *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
      *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="DICOMSeriesUIDNMTomoReconUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="DICOMSeriesUIDCTReconUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
+     *         &lt;element name="NMTomoReconUsed" type="{https://www.irdbb-medirad.com}DICOMData"/>
+     *         &lt;element name="CTReconUsed" type="{https://www.irdbb-medirad.com}DICOMData"/>
      *         &lt;element name="RegistrationAndSegmentationMethodMethodUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *         &lt;element name="CountsPerVOIAtTimePointProduced" type="{https://www.irdbb-medirad.com}CountsPerVOIAtTimePoint" maxOccurs="unbounded"/>
      *         &lt;element name="VOIInSPECTProduced" type="{https://www.irdbb-medirad.com}VOI" maxOccurs="unbounded"/>
@@ -1161,8 +1062,8 @@ public class NonDicomFileSetDescriptor {
     @XmlType(name = "", propOrder = {
         "processExecutionContext",
         "timePointIdentifierUsed",
-        "dicomSeriesUIDNMTomoReconUsed",
-        "dicomSeriesUIDCTReconUsed",
+        "nmTomoReconUsed",
+        "ctReconUsed",
         "registrationAndSegmentationMethodMethodUsed",
         "countsPerVOIAtTimePointProduced",
         "voiInSPECTProduced",
@@ -1174,10 +1075,10 @@ public class NonDicomFileSetDescriptor {
         protected ProcessExecutionContext processExecutionContext;
         @XmlElement(name = "TimePointIdentifierUsed", required = true)
         protected String timePointIdentifierUsed;
-        @XmlElement(name = "DICOMSeriesUIDNMTomoReconUsed", required = true)
-        protected String dicomSeriesUIDNMTomoReconUsed;
-        @XmlElement(name = "DICOMSeriesUIDCTReconUsed", required = true)
-        protected String dicomSeriesUIDCTReconUsed;
+        @XmlElement(name = "NMTomoReconUsed", required = true)
+        protected DICOMData nmTomoReconUsed;
+        @XmlElement(name = "CTReconUsed", required = true)
+        protected DICOMData ctReconUsed;
         @XmlElement(name = "RegistrationAndSegmentationMethodMethodUsed", required = true)
         protected String registrationAndSegmentationMethodMethodUsed;
         @XmlElement(name = "CountsPerVOIAtTimePointProduced", required = true)
@@ -1236,51 +1137,51 @@ public class NonDicomFileSetDescriptor {
         }
 
         /**
-         * Obtient la valeur de la propriété dicomSeriesUIDNMTomoReconUsed.
+         * Obtient la valeur de la propriété nmTomoReconUsed.
          * 
          * @return
          *     possible object is
-         *     {@link String }
+         *     {@link DICOMData }
          *     
          */
-        public String getDICOMSeriesUIDNMTomoReconUsed() {
-            return dicomSeriesUIDNMTomoReconUsed;
+        public DICOMData getNMTomoReconUsed() {
+            return nmTomoReconUsed;
         }
 
         /**
-         * Définit la valeur de la propriété dicomSeriesUIDNMTomoReconUsed.
+         * Définit la valeur de la propriété nmTomoReconUsed.
          * 
          * @param value
          *     allowed object is
-         *     {@link String }
+         *     {@link DICOMData }
          *     
          */
-        public void setDICOMSeriesUIDNMTomoReconUsed(String value) {
-            this.dicomSeriesUIDNMTomoReconUsed = value;
+        public void setNMTomoReconUsed(DICOMData value) {
+            this.nmTomoReconUsed = value;
         }
 
         /**
-         * Obtient la valeur de la propriété dicomSeriesUIDCTReconUsed.
+         * Obtient la valeur de la propriété ctReconUsed.
          * 
          * @return
          *     possible object is
-         *     {@link String }
+         *     {@link DICOMData }
          *     
          */
-        public String getDICOMSeriesUIDCTReconUsed() {
-            return dicomSeriesUIDCTReconUsed;
+        public DICOMData getCTReconUsed() {
+            return ctReconUsed;
         }
 
         /**
-         * Définit la valeur de la propriété dicomSeriesUIDCTReconUsed.
+         * Définit la valeur de la propriété ctReconUsed.
          * 
          * @param value
          *     allowed object is
-         *     {@link String }
+         *     {@link DICOMData }
          *     
          */
-        public void setDICOMSeriesUIDCTReconUsed(String value) {
-            this.dicomSeriesUIDCTReconUsed = value;
+        public void setCTReconUsed(DICOMData value) {
+            this.ctReconUsed = value;
         }
 
         /**
@@ -1402,9 +1303,6 @@ public class NonDicomFileSetDescriptor {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element name="PatientId" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="PatientName" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="ClinicalResearchStudyId" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *         &lt;element name="SPECTDataAcquisitionAndProcessing" type="{https://www.irdbb-medirad.com}SPECTDataAcquisitionAndProcessing" maxOccurs="unbounded"/>
      *         &lt;element name="RegistrationVOISegmentationAndPropagation" type="{https://www.irdbb-medirad.com}RegistrationVOISegmentationAndPropagation"/>
      *         &lt;element name="VOIActivityDetermination" type="{https://www.irdbb-medirad.com}VOIActivityDetermination" maxOccurs="unbounded"/>
@@ -1421,9 +1319,6 @@ public class NonDicomFileSetDescriptor {
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
-        "patientId",
-        "patientName",
-        "clinicalResearchStudyId",
         "spectDataAcquisitionAndProcessing",
         "registrationVOISegmentationAndPropagation",
         "voiActivityDetermination",
@@ -1433,12 +1328,6 @@ public class NonDicomFileSetDescriptor {
     })
     public static class ThreeDimDosimetrySlide1Workflow {
 
-        @XmlElement(name = "PatientId", required = true)
-        protected String patientId;
-        @XmlElement(name = "PatientName", required = true)
-        protected String patientName;
-        @XmlElement(name = "ClinicalResearchStudyId", required = true)
-        protected String clinicalResearchStudyId;
         @XmlElement(name = "SPECTDataAcquisitionAndProcessing", required = true)
         protected List<SPECTDataAcquisitionAndProcessing> spectDataAcquisitionAndProcessing;
         @XmlElement(name = "RegistrationVOISegmentationAndPropagation", required = true)
@@ -1451,78 +1340,6 @@ public class NonDicomFileSetDescriptor {
         protected AbsorbedDoseCalculation absorbedDoseCalculation;
         @XmlElement(name = "RadioBiologicalCalculation")
         protected RadioBiologicalCalculation radioBiologicalCalculation;
-
-        /**
-         * Obtient la valeur de la propriété patientId.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
-         */
-        public String getPatientId() {
-            return patientId;
-        }
-
-        /**
-         * Définit la valeur de la propriété patientId.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
-         */
-        public void setPatientId(String value) {
-            this.patientId = value;
-        }
-
-        /**
-         * Obtient la valeur de la propriété patientName.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
-         */
-        public String getPatientName() {
-            return patientName;
-        }
-
-        /**
-         * Définit la valeur de la propriété patientName.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
-         */
-        public void setPatientName(String value) {
-            this.patientName = value;
-        }
-
-        /**
-         * Obtient la valeur de la propriété clinicalResearchStudyId.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
-         */
-        public String getClinicalResearchStudyId() {
-            return clinicalResearchStudyId;
-        }
-
-        /**
-         * Définit la valeur de la propriété clinicalResearchStudyId.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
-         */
-        public void setClinicalResearchStudyId(String value) {
-            this.clinicalResearchStudyId = value;
-        }
 
         /**
          * Gets the value of the spectDataAcquisitionAndProcessing property.
@@ -1696,9 +1513,6 @@ public class NonDicomFileSetDescriptor {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element name="PatientId" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="PatientName" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="ClinicalResearchStudyId" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *         &lt;element name="SPECTDataAcquisitionAndProcessing" type="{https://www.irdbb-medirad.com}SPECTDataAcquisitionAndProcessing" maxOccurs="unbounded"/>
      *         &lt;element name="VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation" type="{https://www.irdbb-medirad.com}VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation" maxOccurs="unbounded"/>
      *         &lt;element name="DoseRateCurveFitVOITimeIntegration" type="{https://www.irdbb-medirad.com}DoseRateCurveFitVOITimeIntegration"/>
@@ -1713,9 +1527,6 @@ public class NonDicomFileSetDescriptor {
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
-        "patientId",
-        "patientName",
-        "clinicalResearchStudyId",
         "spectDataAcquisitionAndProcessing",
         "voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation",
         "doseRateCurveFitVOITimeIntegration",
@@ -1723,12 +1534,6 @@ public class NonDicomFileSetDescriptor {
     })
     public static class ThreeDimDosimetrySlide2Workflow {
 
-        @XmlElement(name = "PatientId", required = true)
-        protected String patientId;
-        @XmlElement(name = "PatientName", required = true)
-        protected String patientName;
-        @XmlElement(name = "ClinicalResearchStudyId", required = true)
-        protected String clinicalResearchStudyId;
         @XmlElement(name = "SPECTDataAcquisitionAndProcessing", required = true)
         protected List<SPECTDataAcquisitionAndProcessing> spectDataAcquisitionAndProcessing;
         @XmlElement(name = "VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation", required = true)
@@ -1737,78 +1542,6 @@ public class NonDicomFileSetDescriptor {
         protected DoseRateCurveFitVOITimeIntegration doseRateCurveFitVOITimeIntegration;
         @XmlElement(name = "RadioBiologicalCalculation")
         protected RadioBiologicalCalculation radioBiologicalCalculation;
-
-        /**
-         * Obtient la valeur de la propriété patientId.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
-         */
-        public String getPatientId() {
-            return patientId;
-        }
-
-        /**
-         * Définit la valeur de la propriété patientId.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
-         */
-        public void setPatientId(String value) {
-            this.patientId = value;
-        }
-
-        /**
-         * Obtient la valeur de la propriété patientName.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
-         */
-        public String getPatientName() {
-            return patientName;
-        }
-
-        /**
-         * Définit la valeur de la propriété patientName.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
-         */
-        public void setPatientName(String value) {
-            this.patientName = value;
-        }
-
-        /**
-         * Obtient la valeur de la propriété clinicalResearchStudyId.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
-         */
-        public String getClinicalResearchStudyId() {
-            return clinicalResearchStudyId;
-        }
-
-        /**
-         * Définit la valeur de la propriété clinicalResearchStudyId.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
-         */
-        public void setClinicalResearchStudyId(String value) {
-            this.clinicalResearchStudyId = value;
-        }
 
         /**
          * Gets the value of the spectDataAcquisitionAndProcessing property.
@@ -2135,9 +1868,6 @@ public class NonDicomFileSetDescriptor {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element name="PatientId" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="PatientName" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="ClinicalResearchStudyId" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *         &lt;element name="PlanarDataAcquisitionAndProcessing" type="{https://www.irdbb-medirad.com}PlanarDataAcquisitionAndProcessing" maxOccurs="unbounded"/>
      *         &lt;element name="TwoDimDosimetryViaAbsorbedDoseRateCalculation" type="{https://www.irdbb-medirad.com}TwoDimDosimetryViaAbsorbedDoseRateCalculation" minOccurs="0"/>
      *         &lt;element name="TwoDimDosimetryViaTimeActivityCurveFit" type="{https://www.irdbb-medirad.com}TwoDimDosimetryViaTimeActivityCurveFit" minOccurs="0"/>
@@ -2152,9 +1882,6 @@ public class NonDicomFileSetDescriptor {
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
-        "patientId",
-        "patientName",
-        "clinicalResearchStudyId",
         "planarDataAcquisitionAndProcessing",
         "twoDimDosimetryViaAbsorbedDoseRateCalculation",
         "twoDimDosimetryViaTimeActivityCurveFit",
@@ -2162,12 +1889,6 @@ public class NonDicomFileSetDescriptor {
     })
     public static class TwoDimDosimetryworkflow {
 
-        @XmlElement(name = "PatientId", required = true)
-        protected String patientId;
-        @XmlElement(name = "PatientName", required = true)
-        protected String patientName;
-        @XmlElement(name = "ClinicalResearchStudyId", required = true)
-        protected String clinicalResearchStudyId;
         @XmlElement(name = "PlanarDataAcquisitionAndProcessing", required = true)
         protected List<PlanarDataAcquisitionAndProcessing> planarDataAcquisitionAndProcessing;
         @XmlElement(name = "TwoDimDosimetryViaAbsorbedDoseRateCalculation")
@@ -2176,78 +1897,6 @@ public class NonDicomFileSetDescriptor {
         protected TwoDimDosimetryViaTimeActivityCurveFit twoDimDosimetryViaTimeActivityCurveFit;
         @XmlElement(name = "RadioBiologicalCalculation")
         protected RadioBiologicalCalculation radioBiologicalCalculation;
-
-        /**
-         * Obtient la valeur de la propriété patientId.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
-         */
-        public String getPatientId() {
-            return patientId;
-        }
-
-        /**
-         * Définit la valeur de la propriété patientId.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
-         */
-        public void setPatientId(String value) {
-            this.patientId = value;
-        }
-
-        /**
-         * Obtient la valeur de la propriété patientName.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
-         */
-        public String getPatientName() {
-            return patientName;
-        }
-
-        /**
-         * Définit la valeur de la propriété patientName.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
-         */
-        public void setPatientName(String value) {
-            this.patientName = value;
-        }
-
-        /**
-         * Obtient la valeur de la propriété clinicalResearchStudyId.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
-         */
-        public String getClinicalResearchStudyId() {
-            return clinicalResearchStudyId;
-        }
-
-        /**
-         * Définit la valeur de la propriété clinicalResearchStudyId.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
-         */
-        public void setClinicalResearchStudyId(String value) {
-            this.clinicalResearchStudyId = value;
-        }
 
         /**
          * Gets the value of the planarDataAcquisitionAndProcessing property.
@@ -2363,9 +2012,6 @@ public class NonDicomFileSetDescriptor {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element name="PatientId" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="PatientName" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="ClinicalResearchStudyId" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *         &lt;element name="CTSegmentation" type="{https://www.irdbb-medirad.com}CTSegmentation" minOccurs="0"/>
      *         &lt;element name="SimpleCTMonteCarloDosimetry" type="{https://www.irdbb-medirad.com}SimpleCTMonteCarloDosimetry" maxOccurs="unbounded" minOccurs="0"/>
      *       &lt;/sequence>
@@ -2378,96 +2024,15 @@ public class NonDicomFileSetDescriptor {
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
-        "patientId",
-        "patientName",
-        "clinicalResearchStudyId",
         "ctSegmentation",
         "simpleCTMonteCarloDosimetry"
     })
     public static class WP2Subtask212WorkflowData {
 
-        @XmlElement(name = "PatientId", required = true)
-        protected String patientId;
-        @XmlElement(name = "PatientName", required = true)
-        protected String patientName;
-        @XmlElement(name = "ClinicalResearchStudyId", required = true)
-        protected String clinicalResearchStudyId;
         @XmlElement(name = "CTSegmentation")
         protected CTSegmentation ctSegmentation;
         @XmlElement(name = "SimpleCTMonteCarloDosimetry")
         protected List<SimpleCTMonteCarloDosimetry> simpleCTMonteCarloDosimetry;
-
-        /**
-         * Obtient la valeur de la propriété patientId.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
-         */
-        public String getPatientId() {
-            return patientId;
-        }
-
-        /**
-         * Définit la valeur de la propriété patientId.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
-         */
-        public void setPatientId(String value) {
-            this.patientId = value;
-        }
-
-        /**
-         * Obtient la valeur de la propriété patientName.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
-         */
-        public String getPatientName() {
-            return patientName;
-        }
-
-        /**
-         * Définit la valeur de la propriété patientName.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
-         */
-        public void setPatientName(String value) {
-            this.patientName = value;
-        }
-
-        /**
-         * Obtient la valeur de la propriété clinicalResearchStudyId.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
-         */
-        public String getClinicalResearchStudyId() {
-            return clinicalResearchStudyId;
-        }
-
-        /**
-         * Définit la valeur de la propriété clinicalResearchStudyId.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
-         */
-        public void setClinicalResearchStudyId(String value) {
-            this.clinicalResearchStudyId = value;
-        }
 
         /**
          * Obtient la valeur de la propriété ctSegmentation.

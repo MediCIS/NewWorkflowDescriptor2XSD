@@ -3,9 +3,6 @@
 //-------------------------
 ThreeDimDosimetrySlide1workflow
 {
- 1-string-PatientId
- 1-string-PatientName
- 1-string-ClinicalResearchStudyId
  1,n-SPECTDataAcquisitionAndProcessing-SPECTDataAcquisitionAndProcessing
  1-RegistrationVOISegmentationAndPropagation-RegistrationVOISegmentationAndPropagation
  1,n-VOIActivityDetermination-VOIActivityDetermination
@@ -38,8 +35,8 @@ SPECTReconstruction
 {
  1-ProcessExecutionContext-ProcessExecutionContext
  1-string-TimePointIdentifierUsed
- 1-string-DICOMSeriesUIDNMTomoUsed
- 1-string-DICOMSeriesUIDCTReconUsed
+ 1-DICOMData-NMTomoUsed
+ 1-DICOMData-CTReconUsed
  1-string-ReconstructionMethodAndCorrectionsUsed
 // to be replaced by structured items
  1-CalibrationFactor-CalibrationFactorUsed
@@ -50,8 +47,8 @@ RegistrationVOISegmentationAndPropagation
 {
  1-ProcessExecutionContext-ProcessExecutionContext
  1,n-string-TimePointIdentifierUsed
- 1,n-string-DICOMSeriesUIDNMTomoReconUsed
- 1,n-string-DICOMSeriesUIDCTReconUsed
+ 1,n-DICOMData-NMTomoReconUsed
+ 1,n-DICOMData-CTReconUsed
  1-string-ImageProcessingMethodMethodUsed
 // to be replaced by structured items
  1,n-CountsPerVOIAtTimePoint-CountsPerVOIAtTimePointProduced
@@ -95,8 +92,8 @@ AbsorbedDoseCalculation
  1,n-string-VOIIdentifierUsed
 // Corresponding Time Integrated Activity Coefficient per VOI need to be retrieved
 // Corresponding Time Integrated Activity per VOI need to be retrieved
- 1,n-string-DICOMSeriesUIDCTReconResampledOnCommonReferenceUsed
- 1,n-string-DICOMSeriesUIDNMTomoReconResampledOnCommonReferenceUsed
+ 1,n-DICOMData-CTReconResampledOnCommonReferenceUsed
+ 1,n-DICOMData-NMTomoReconResampledOnCommonReferenceUsed
  1-string-AbsorbedDoseCalculationMethodUsed
 // to be provided as a closed list of possible values
  1,n-MeanAbsorbedDoseInVOI-MeanAbsorbedDoseInVOIProduced
@@ -233,6 +230,8 @@ DICOMData
 
 NonDICOMData
 {
- 1-string-FileName
+ 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map
+ 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo_DICOM ImpactMC
+ 1,n-string-NonDICOMDataFileName
+ 0,1-string-FHIRIdentifier
 }
-// 1-string-ReconstructionMethodAndCorrectionsUsed:toto/tata

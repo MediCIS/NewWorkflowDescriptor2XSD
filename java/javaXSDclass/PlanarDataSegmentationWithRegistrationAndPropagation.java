@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.14 à 10:45:43 AM CET 
+// Généré le : 2018.11.14 à 11:29:52 AM CET 
 //
 
 
@@ -28,7 +28,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
  *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
- *         &lt;element name="DICOMSeriesUIDNMStaticCorrectedUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
+ *         &lt;element name="NMStaticCorrectedUsed" type="{https://www.irdbb-medirad.com}DICOMData" maxOccurs="unbounded"/>
  *         &lt;element name="ROIIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="SegmentationMethodUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="CountsPerROIAtTimePointProduced" type="{https://www.irdbb-medirad.com}CountsPerROIAtTimePoint" maxOccurs="unbounded"/>
@@ -46,7 +46,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "PlanarDataSegmentationWithRegistrationAndPropagation", propOrder = {
     "processExecutionContext",
     "timePointIdentifierUsed",
-    "dicomSeriesUIDNMStaticCorrectedUsed",
+    "nmStaticCorrectedUsed",
     "roiIdentifierUsed",
     "segmentationMethodUsed",
     "countsPerROIAtTimePointProduced",
@@ -59,8 +59,8 @@ public class PlanarDataSegmentationWithRegistrationAndPropagation {
     protected ProcessExecutionContext processExecutionContext;
     @XmlElement(name = "TimePointIdentifierUsed", required = true)
     protected List<String> timePointIdentifierUsed;
-    @XmlElement(name = "DICOMSeriesUIDNMStaticCorrectedUsed", required = true)
-    protected List<String> dicomSeriesUIDNMStaticCorrectedUsed;
+    @XmlElement(name = "NMStaticCorrectedUsed", required = true)
+    protected List<DICOMData> nmStaticCorrectedUsed;
     @XmlElement(name = "ROIIdentifierUsed")
     protected List<String> roiIdentifierUsed;
     @XmlElement(name = "SegmentationMethodUsed", required = true)
@@ -126,32 +126,32 @@ public class PlanarDataSegmentationWithRegistrationAndPropagation {
     }
 
     /**
-     * Gets the value of the dicomSeriesUIDNMStaticCorrectedUsed property.
+     * Gets the value of the nmStaticCorrectedUsed property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the dicomSeriesUIDNMStaticCorrectedUsed property.
+     * This is why there is not a <CODE>set</CODE> method for the nmStaticCorrectedUsed property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getDICOMSeriesUIDNMStaticCorrectedUsed().add(newItem);
+     *    getNMStaticCorrectedUsed().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link String }
+     * {@link DICOMData }
      * 
      * 
      */
-    public List<String> getDICOMSeriesUIDNMStaticCorrectedUsed() {
-        if (dicomSeriesUIDNMStaticCorrectedUsed == null) {
-            dicomSeriesUIDNMStaticCorrectedUsed = new ArrayList<String>();
+    public List<DICOMData> getNMStaticCorrectedUsed() {
+        if (nmStaticCorrectedUsed == null) {
+            nmStaticCorrectedUsed = new ArrayList<DICOMData>();
         }
-        return this.dicomSeriesUIDNMStaticCorrectedUsed;
+        return this.nmStaticCorrectedUsed;
     }
 
     /**

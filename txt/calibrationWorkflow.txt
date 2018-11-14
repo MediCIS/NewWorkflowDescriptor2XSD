@@ -46,7 +46,7 @@ CTAcqForCTNumberCalibrationCurve
 CalculationOfCTNumberCalibrationCurve
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1-string-DICOMSeriesUIDCTReconUsed
+ 1-DICOMData-CTReconUsed
  1-CTNumberCalibrationCurve-CTNumberCalibrationCurveProduced
 }
 
@@ -62,8 +62,8 @@ SPECTAcqCTAcqAndReconstruction
 SPECTReconstruction
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1-string-DICOMSeriesUIDNMTomoUsed
- 1-string-DICOMSeriesUIDCTReconUsed
+ 1-DICOMData-NMTomoUsed
+ 1-DICOMData-CTReconUsed
  1-string-ReconstructionMethodAndCorrectionsUsed
 // to be replaced by structured items
  1-CTNumberCalibrationCurve-CTNumberCalibrationCurveUsed
@@ -73,8 +73,8 @@ SPECTReconstruction
 CTSegmentation
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1-string-DICOMSeriesUIDNMTomoReconUsed
- 1-string-DICOMSeriesUIDCTReconUsed
+ 1-DICOMData-NMTomoReconUsed
+ 1-DICOMData-CTReconUsed
  1-string-SegmentationMethodMethodUsed
 // to be replaced by structured items
  1,n-VOIInCT-VOIInCTProduced
@@ -110,7 +110,7 @@ PlanarAcquisition
 PlanarImageCorrections
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1-string-DICOMSeriesUIDNMStaticUsed
+ 1-DICOMData-NMStaticUsed
  1-string-CorrectionsUsed
 // to be replaced by structured items
  1-DICOMData-NMStaticCorrectedProduced
@@ -119,7 +119,7 @@ PlanarImageCorrections
 PlanarImageSegmentation
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1-string-DICOMSeriesUIDNMStaticCorrectedUsed
+ 1-DICOMData-NMStaticCorrectedUsed
  1-string-SegmentationMethodUsed
 // to be replaced by structured items
  1,n-ROIInSPECT-ROIInSPECTProduced
@@ -129,7 +129,7 @@ PlanarSensitivityCalculation
 {
  1-ProcessExecutionContext-ProcessExecutionContext
  1,n-string-ROIIdentifierUsed
- 1-string-DICOMSeriesUIDNMStaticCorrectedUsed
+ 1-DICOMData-NMStaticCorrectedUsed
  1-CalibrationCoefficient-CalibrationCoefficientProduced
  }
 
@@ -273,7 +273,7 @@ DICOMData
 NonDICOMData
 {
  1-String-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map
- 1-String-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo-DICOM ImpactMC
+ 1-String-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo_DICOM ImpactMC
  1,n-String-NonDICOMDataFileName
- 1-String-FHIRId
+ 0,1-string-FHIRIdentifier
 }

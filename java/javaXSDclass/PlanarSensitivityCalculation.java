@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.14 à 10:45:43 AM CET 
+// Généré le : 2018.11.14 à 11:29:52 AM CET 
 //
 
 
@@ -28,7 +28,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
  *         &lt;element name="ROIIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
- *         &lt;element name="DICOMSeriesUIDNMStaticCorrectedUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="NMStaticCorrectedUsed" type="{https://www.irdbb-medirad.com}DICOMData"/>
  *         &lt;element name="CalibrationCoefficientProduced" type="{https://www.irdbb-medirad.com}CalibrationCoefficient"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -42,7 +42,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "PlanarSensitivityCalculation", propOrder = {
     "processExecutionContext",
     "roiIdentifierUsed",
-    "dicomSeriesUIDNMStaticCorrectedUsed",
+    "nmStaticCorrectedUsed",
     "calibrationCoefficientProduced"
 })
 public class PlanarSensitivityCalculation {
@@ -51,8 +51,8 @@ public class PlanarSensitivityCalculation {
     protected ProcessExecutionContext processExecutionContext;
     @XmlElement(name = "ROIIdentifierUsed", required = true)
     protected List<String> roiIdentifierUsed;
-    @XmlElement(name = "DICOMSeriesUIDNMStaticCorrectedUsed", required = true)
-    protected String dicomSeriesUIDNMStaticCorrectedUsed;
+    @XmlElement(name = "NMStaticCorrectedUsed", required = true)
+    protected DICOMData nmStaticCorrectedUsed;
     @XmlElement(name = "CalibrationCoefficientProduced", required = true)
     protected CalibrationCoefficient calibrationCoefficientProduced;
 
@@ -110,27 +110,27 @@ public class PlanarSensitivityCalculation {
     }
 
     /**
-     * Obtient la valeur de la propriété dicomSeriesUIDNMStaticCorrectedUsed.
+     * Obtient la valeur de la propriété nmStaticCorrectedUsed.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link DICOMData }
      *     
      */
-    public String getDICOMSeriesUIDNMStaticCorrectedUsed() {
-        return dicomSeriesUIDNMStaticCorrectedUsed;
+    public DICOMData getNMStaticCorrectedUsed() {
+        return nmStaticCorrectedUsed;
     }
 
     /**
-     * Définit la valeur de la propriété dicomSeriesUIDNMStaticCorrectedUsed.
+     * Définit la valeur de la propriété nmStaticCorrectedUsed.
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link DICOMData }
      *     
      */
-    public void setDICOMSeriesUIDNMStaticCorrectedUsed(String value) {
-        this.dicomSeriesUIDNMStaticCorrectedUsed = value;
+    public void setNMStaticCorrectedUsed(DICOMData value) {
+        this.nmStaticCorrectedUsed = value;
     }
 
     /**

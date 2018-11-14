@@ -3,9 +3,6 @@
 //-------------------------
 ThreeDimDosimetrySlide2workflow
 {
- 1-string-PatientId
- 1-string-PatientName
- 1-string-ClinicalResearchStudyId
  1,n-SPECTDataAcquisitionAndProcessing-SPECTDataAcquisitionAndProcessing
  1,n-VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation-VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation
  1-DoseRateCurveFitVOITimeIntegration-DoseRateCurveFitVOITimeIntegration
@@ -44,8 +41,8 @@ SPECTReconstruction
 {
  1-ProcessExecutionContext-ProcessExecutionContext
  1-string-TimePointIdentifierUsed
- 1-string-DICOMSeriesUIDNMTomoUsed
- 1-string-DICOMSeriesUIDCTReconUsed
+ 1-DICOMData-NMTomoUsed
+ 1-DICOMData-CTReconUsed
  1-string-ReconstructionMethodAndCorrectionsUsed
 // to be replaced by structured items
  1-CalibrationFactor-CalibrationFactorUsed
@@ -57,8 +54,8 @@ VOISegmentationVOIMassDetermination
  1-ProcessExecutionContext-ProcessExecutionContext
  1-string-TimePointIdentifierUsed
 // because this processing concerns 1 TimePoint only
- 1-string-DICOMSeriesUIDNMTomoReconUsed
- 1-string-DICOMSeriesUIDCTReconUsed
+ 1-DICOMData-NMTomoReconUsed
+ 1-DICOMData-CTReconUsed
  1-string-VOISegmentationMethodUsed
 // to be replaced by structured items
  1,n-CountsPerVOIAtTimePoint-CountsPerVOIAtTimePointProduced
@@ -89,8 +86,8 @@ EnergyDepositionRateCalculation
  1,n-string-VOIUsed
 // Corresponding Mass Per VOI AtTimePoint need to be retrieved
 // Corresponding VOIs At TimePoint need to be retrieved
- 1-string-DICOMData-CTReconResampledOnNMReferenceUsed
- 1-string-DICOMData-NMTomoReconUsed
+ 1-DICOMData-CTReconResampledOnNMReferenceUsed
+ 1-DICOMData-NMTomoReconUsed
  1-NonDICOMData-ThreeDimEnergyDepositionRateMatrixAtTimePointProduced
 }
 
@@ -244,6 +241,8 @@ DICOMData
 
 NonDICOMData
 {
- 1-string-FileName
+ 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map
+ 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo_DICOM ImpactMC
+ 1,n-string-NonDICOMDataFileName
+ 0,1-string-FHIRIdentifier
 }
-// 1-string-ReconstructionMethodAndCorrectionsUsed:toto/tata

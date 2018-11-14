@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.14 à 10:45:43 AM CET 
+// Généré le : 2018.11.14 à 11:29:52 AM CET 
 //
 
 
@@ -28,8 +28,8 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
  *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="DICOMSeriesUIDNMTomoReconUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="DICOMSeriesUIDCTReconUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="NMTomoReconUsed" type="{https://www.irdbb-medirad.com}DICOMData"/>
+ *         &lt;element name="CTReconUsed" type="{https://www.irdbb-medirad.com}DICOMData"/>
  *         &lt;element name="VOISegmentationMethodUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="CountsPerVOIAtTimePointProduced" type="{https://www.irdbb-medirad.com}CountsPerVOIAtTimePoint" maxOccurs="unbounded"/>
  *         &lt;element name="VOIProduced" type="{https://www.irdbb-medirad.com}VOI" maxOccurs="unbounded"/>
@@ -47,8 +47,8 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "VOISegmentationVOIMassDetermination", propOrder = {
     "processExecutionContext",
     "timePointIdentifierUsed",
-    "dicomSeriesUIDNMTomoReconUsed",
-    "dicomSeriesUIDCTReconUsed",
+    "nmTomoReconUsed",
+    "ctReconUsed",
     "voiSegmentationMethodUsed",
     "countsPerVOIAtTimePointProduced",
     "voiProduced",
@@ -61,10 +61,10 @@ public class VOISegmentationVOIMassDetermination {
     protected ProcessExecutionContext processExecutionContext;
     @XmlElement(name = "TimePointIdentifierUsed", required = true)
     protected String timePointIdentifierUsed;
-    @XmlElement(name = "DICOMSeriesUIDNMTomoReconUsed", required = true)
-    protected String dicomSeriesUIDNMTomoReconUsed;
-    @XmlElement(name = "DICOMSeriesUIDCTReconUsed", required = true)
-    protected String dicomSeriesUIDCTReconUsed;
+    @XmlElement(name = "NMTomoReconUsed", required = true)
+    protected DICOMData nmTomoReconUsed;
+    @XmlElement(name = "CTReconUsed", required = true)
+    protected DICOMData ctReconUsed;
     @XmlElement(name = "VOISegmentationMethodUsed", required = true)
     protected String voiSegmentationMethodUsed;
     @XmlElement(name = "CountsPerVOIAtTimePointProduced", required = true)
@@ -125,51 +125,51 @@ public class VOISegmentationVOIMassDetermination {
     }
 
     /**
-     * Obtient la valeur de la propriété dicomSeriesUIDNMTomoReconUsed.
+     * Obtient la valeur de la propriété nmTomoReconUsed.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link DICOMData }
      *     
      */
-    public String getDICOMSeriesUIDNMTomoReconUsed() {
-        return dicomSeriesUIDNMTomoReconUsed;
+    public DICOMData getNMTomoReconUsed() {
+        return nmTomoReconUsed;
     }
 
     /**
-     * Définit la valeur de la propriété dicomSeriesUIDNMTomoReconUsed.
+     * Définit la valeur de la propriété nmTomoReconUsed.
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link DICOMData }
      *     
      */
-    public void setDICOMSeriesUIDNMTomoReconUsed(String value) {
-        this.dicomSeriesUIDNMTomoReconUsed = value;
+    public void setNMTomoReconUsed(DICOMData value) {
+        this.nmTomoReconUsed = value;
     }
 
     /**
-     * Obtient la valeur de la propriété dicomSeriesUIDCTReconUsed.
+     * Obtient la valeur de la propriété ctReconUsed.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link DICOMData }
      *     
      */
-    public String getDICOMSeriesUIDCTReconUsed() {
-        return dicomSeriesUIDCTReconUsed;
+    public DICOMData getCTReconUsed() {
+        return ctReconUsed;
     }
 
     /**
-     * Définit la valeur de la propriété dicomSeriesUIDCTReconUsed.
+     * Définit la valeur de la propriété ctReconUsed.
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link DICOMData }
      *     
      */
-    public void setDICOMSeriesUIDCTReconUsed(String value) {
-        this.dicomSeriesUIDCTReconUsed = value;
+    public void setCTReconUsed(DICOMData value) {
+        this.ctReconUsed = value;
     }
 
     /**

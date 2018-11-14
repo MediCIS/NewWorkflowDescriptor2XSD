@@ -21,9 +21,6 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:element name="ThreeDimDosimetrySlide1workflow" minOccurs="0" maxOccurs="unbounded">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="PatientId" type="xs:string"/>
-				<xs:element name="PatientName" type="xs:string"/>
-				<xs:element name="ClinicalResearchStudyId" type="xs:string"/>
 				<xs:element name="SPECTDataAcquisitionAndProcessing" type="irdbb:SPECTDataAcquisitionAndProcessing" maxOccurs="unbounded" />
 				<xs:element name="RegistrationVOISegmentationAndPropagation" type="irdbb:RegistrationVOISegmentationAndPropagation"/>
 				<xs:element name="VOIActivityDetermination" type="irdbb:VOIActivityDetermination" maxOccurs="unbounded" />
@@ -58,8 +55,8 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 				<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
 				<xs:element name="TimePointIdentifierUsed" type="xs:string"/>
-				<xs:element name="DICOMSeriesUIDNMTomoUsed" type="xs:string"/>
-				<xs:element name="DICOMSeriesUIDCTReconUsed" type="xs:string"/>
+				<xs:element name="NMTomoUsed" type="irdbb:DICOMData"/>
+				<xs:element name="CTReconUsed" type="irdbb:DICOMData"/>
 				<xs:element name="ReconstructionMethodAndCorrectionsUsed" type="xs:string"/>
 				<xs:element name="CalibrationFactorUsed" type="irdbb:CalibrationFactor"/>
 				<xs:element name="NMTomoReconProduced" type="irdbb:DICOMData"/>
@@ -70,8 +67,8 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 				<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
 				<xs:element name="TimePointIdentifierUsed" type="xs:string" maxOccurs="unbounded" />
-				<xs:element name="DICOMSeriesUIDNMTomoReconUsed" type="xs:string" maxOccurs="unbounded" />
-				<xs:element name="DICOMSeriesUIDCTReconUsed" type="xs:string" maxOccurs="unbounded" />
+				<xs:element name="NMTomoReconUsed" type="irdbb:DICOMData" maxOccurs="unbounded" />
+				<xs:element name="CTReconUsed" type="irdbb:DICOMData" maxOccurs="unbounded" />
 				<xs:element name="ImageProcessingMethodMethodUsed" type="xs:string"/>
 				<xs:element name="CountsPerVOIAtTimePointProduced" type="irdbb:CountsPerVOIAtTimePoint" maxOccurs="unbounded" />
 				<xs:element name="VOIProduced" type="irdbb:VOI" maxOccurs="unbounded" />
@@ -108,8 +105,8 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 				<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
 				<xs:element name="VOIIdentifierUsed" type="xs:string" maxOccurs="unbounded" />
-				<xs:element name="DICOMSeriesUIDCTReconResampledOnCommonReferenceUsed" type="xs:string" maxOccurs="unbounded" />
-				<xs:element name="DICOMSeriesUIDNMTomoReconResampledOnCommonReferenceUsed" type="xs:string" maxOccurs="unbounded" />
+				<xs:element name="CTReconResampledOnCommonReferenceUsed" type="irdbb:DICOMData" maxOccurs="unbounded" />
+				<xs:element name="NMTomoReconResampledOnCommonReferenceUsed" type="irdbb:DICOMData" maxOccurs="unbounded" />
 				<xs:element name="AbsorbedDoseCalculationMethodUsed" type="xs:string"/>
 				<xs:element name="MeanAbsorbedDoseInVOIProduced" type="irdbb:MeanAbsorbedDoseInVOI" maxOccurs="unbounded" />
 				<xs:element name="VoxelAbsorbedDoseMapProduced" type="irdbb:NonDICOMData" minOccurs="0" maxOccurs="unbounded" />
@@ -152,7 +149,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="NMRelevantCalibrationReference">
 		<xs:sequence>
 				<xs:element name="ReferenceCalibrationDate" type="xs:string"/>
-		<xs:element name="Isotope"/>
+		<xs:element name="Isotope">
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="radium223"/>
@@ -248,7 +245,26 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="NonDICOMData">
 		<xs:sequence>
-				<xs:element name="FileName" type="xs:string"/>
+		<xs:element name="NonDICOMDataClass">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="VOI"/>
+					<xs:enumeration value="VOI superimposed on images"/>
+					<xs:enumeration value="3D dose map"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+		<xs:element name="NonDICOMDataFormat">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="zipped imageJ contours format"/>
+					<xs:enumeration value="TIFF format embedding imageJ contours"/>
+					<xs:enumeration value="zipped pseudo_DICOM ImpactMC"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+				<xs:element name="NonDICOMDataFileName" type="xs:string" maxOccurs="unbounded" />
+				<xs:element name="FHIRIdentifier" type="xs:string" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 </xs:schema>

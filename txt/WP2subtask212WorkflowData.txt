@@ -3,9 +3,6 @@
 
 WP2subtask212WorkflowData
 {
- 1-string-PatientId
- 1-string-PatientName
- 1-string-ClinicalResearchStudyId
  0,1-CTSegmentation-CTSegmentation
  0,n-SimpleCTMonteCarloDosimetry-SimpleCTMonteCarloDosimetry
 }
@@ -76,19 +73,7 @@ MethodSettingType
  0,1-string-MethodSettingUnit
 }
 
-DICOMData
-{
- 1-string-DICOMStudyUID
- 1-string-DICOMSeriesUID
-}
 
-NonDICOMData
-{
- 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map
- 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo-DICOM ImpactMC
- 1,n-string-NonDICOMDataFileName
- 1-string-FHIRId
-}
 
 AttenuatorType
 {
@@ -105,8 +90,8 @@ AbsorbedDosePerVOIType
  1-string-AbsorbedDoseCategory:mean absorbed dose normalized to CTDI free in air normalized to tube load/mean absorbed dose normalized to CTDI vol normalized to tube load/mean absorbed radiation dose/maximum absorbed radiation dose/minimum absorbed radiation dose/median absorbed radiation dose/mode absorbed radiation dose
  0,1-string-StatisticalSubCategory:mean/maximum/minimum/median/mode
  1-string-AbsorbedDoseValue
- 1-string-VOIIdentifier
  1-string-AbsorbedDoseUnit:milligray per (milligray per (100 milliampere second))/milligray per (100 milliampere second)/milligray
+ 1-string-VOIIdentifier
 }
 
 VoxelBasedDistributionOfAbsorbedDoseType
@@ -122,12 +107,23 @@ VOI
 {
  1-string-VOIIdentifier
  1-string-OrganOrTissue:bone/breast/esophagus/heart/lungs/skin
- 0,1-DICOMData-DICOMVOIContainer
- 0,1-NonDICOMData-NonDICOMVOIContainer
+ 0,n-DICOMData-DICOMVOIContainer
+ 0,n-NonDICOMData-NonDICOMVOIContainer
 }
 
+DICOMData
+{
+ 1-string-DICOMStudyUID
+ 1-string-DICOMSeriesUID
+}
 
-
+NonDICOMData
+{
+ 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map
+ 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo_DICOM ImpactMC
+ 1,n-string-NonDICOMDataFileName
+ 0,1-string-FHIRIdentifier
+}
 
 
 

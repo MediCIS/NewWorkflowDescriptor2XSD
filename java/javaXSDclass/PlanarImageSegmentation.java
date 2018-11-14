@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.14 à 10:45:43 AM CET 
+// Généré le : 2018.11.14 à 11:29:52 AM CET 
 //
 
 
@@ -27,7 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
- *         &lt;element name="DICOMSeriesUIDNMStaticCorrectedUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="NMStaticCorrectedUsed" type="{https://www.irdbb-medirad.com}DICOMData"/>
  *         &lt;element name="SegmentationMethodUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="ROIInSPECTProduced" type="{https://www.irdbb-medirad.com}ROIInSPECT" maxOccurs="unbounded"/>
  *       &lt;/sequence>
@@ -41,7 +41,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "PlanarImageSegmentation", propOrder = {
     "processExecutionContext",
-    "dicomSeriesUIDNMStaticCorrectedUsed",
+    "nmStaticCorrectedUsed",
     "segmentationMethodUsed",
     "roiInSPECTProduced"
 })
@@ -49,8 +49,8 @@ public class PlanarImageSegmentation {
 
     @XmlElement(name = "ProcessExecutionContext", required = true)
     protected ProcessExecutionContext processExecutionContext;
-    @XmlElement(name = "DICOMSeriesUIDNMStaticCorrectedUsed", required = true)
-    protected String dicomSeriesUIDNMStaticCorrectedUsed;
+    @XmlElement(name = "NMStaticCorrectedUsed", required = true)
+    protected DICOMData nmStaticCorrectedUsed;
     @XmlElement(name = "SegmentationMethodUsed", required = true)
     protected String segmentationMethodUsed;
     @XmlElement(name = "ROIInSPECTProduced", required = true)
@@ -81,27 +81,27 @@ public class PlanarImageSegmentation {
     }
 
     /**
-     * Obtient la valeur de la propriété dicomSeriesUIDNMStaticCorrectedUsed.
+     * Obtient la valeur de la propriété nmStaticCorrectedUsed.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link DICOMData }
      *     
      */
-    public String getDICOMSeriesUIDNMStaticCorrectedUsed() {
-        return dicomSeriesUIDNMStaticCorrectedUsed;
+    public DICOMData getNMStaticCorrectedUsed() {
+        return nmStaticCorrectedUsed;
     }
 
     /**
-     * Définit la valeur de la propriété dicomSeriesUIDNMStaticCorrectedUsed.
+     * Définit la valeur de la propriété nmStaticCorrectedUsed.
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link DICOMData }
      *     
      */
-    public void setDICOMSeriesUIDNMStaticCorrectedUsed(String value) {
-        this.dicomSeriesUIDNMStaticCorrectedUsed = value;
+    public void setNMStaticCorrectedUsed(DICOMData value) {
+        this.nmStaticCorrectedUsed = value;
     }
 
     /**

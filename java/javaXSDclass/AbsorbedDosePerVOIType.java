@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.14 à 10:45:43 AM CET 
+// Généré le : 2018.11.14 à 11:29:52 AM CET 
 //
 
 
@@ -49,7 +49,6 @@ import javax.xml.bind.annotation.XmlType;
  *           &lt;/simpleType>
  *         &lt;/element>
  *         &lt;element name="AbsorbedDoseValue" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="VOIIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="AbsorbedDoseUnit">
  *           &lt;simpleType>
  *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
@@ -59,6 +58,7 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>
+ *         &lt;element name="VOIIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -72,8 +72,8 @@ import javax.xml.bind.annotation.XmlType;
     "absorbedDoseCategory",
     "statisticalSubCategory",
     "absorbedDoseValue",
-    "voiIdentifier",
-    "absorbedDoseUnit"
+    "absorbedDoseUnit",
+    "voiIdentifier"
 })
 public class AbsorbedDosePerVOIType {
 
@@ -83,10 +83,10 @@ public class AbsorbedDosePerVOIType {
     protected String statisticalSubCategory;
     @XmlElement(name = "AbsorbedDoseValue", required = true)
     protected String absorbedDoseValue;
-    @XmlElement(name = "VOIIdentifier", required = true)
-    protected String voiIdentifier;
     @XmlElement(name = "AbsorbedDoseUnit", required = true)
     protected String absorbedDoseUnit;
+    @XmlElement(name = "VOIIdentifier", required = true)
+    protected String voiIdentifier;
 
     /**
      * Obtient la valeur de la propriété absorbedDoseCategory.
@@ -161,30 +161,6 @@ public class AbsorbedDosePerVOIType {
     }
 
     /**
-     * Obtient la valeur de la propriété voiIdentifier.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getVOIIdentifier() {
-        return voiIdentifier;
-    }
-
-    /**
-     * Définit la valeur de la propriété voiIdentifier.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setVOIIdentifier(String value) {
-        this.voiIdentifier = value;
-    }
-
-    /**
      * Obtient la valeur de la propriété absorbedDoseUnit.
      * 
      * @return
@@ -206,6 +182,30 @@ public class AbsorbedDosePerVOIType {
      */
     public void setAbsorbedDoseUnit(String value) {
         this.absorbedDoseUnit = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété voiIdentifier.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getVOIIdentifier() {
+        return voiIdentifier;
+    }
+
+    /**
+     * Définit la valeur de la propriété voiIdentifier.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setVOIIdentifier(String value) {
+        this.voiIdentifier = value;
     }
 
 }

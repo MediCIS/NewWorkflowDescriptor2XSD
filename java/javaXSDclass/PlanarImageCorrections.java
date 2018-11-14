@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.14 à 10:45:43 AM CET 
+// Généré le : 2018.11.14 à 11:29:52 AM CET 
 //
 
 
@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
- *         &lt;element name="DICOMSeriesUIDNMStaticUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="NMStaticUsed" type="{https://www.irdbb-medirad.com}DICOMData"/>
  *         &lt;element name="CorrectionsUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="NMStaticCorrectedProduced" type="{https://www.irdbb-medirad.com}DICOMData"/>
  *       &lt;/sequence>
@@ -39,7 +39,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "PlanarImageCorrections", propOrder = {
     "processExecutionContext",
-    "dicomSeriesUIDNMStaticUsed",
+    "nmStaticUsed",
     "correctionsUsed",
     "nmStaticCorrectedProduced"
 })
@@ -47,8 +47,8 @@ public class PlanarImageCorrections {
 
     @XmlElement(name = "ProcessExecutionContext", required = true)
     protected ProcessExecutionContext processExecutionContext;
-    @XmlElement(name = "DICOMSeriesUIDNMStaticUsed", required = true)
-    protected String dicomSeriesUIDNMStaticUsed;
+    @XmlElement(name = "NMStaticUsed", required = true)
+    protected DICOMData nmStaticUsed;
     @XmlElement(name = "CorrectionsUsed", required = true)
     protected String correctionsUsed;
     @XmlElement(name = "NMStaticCorrectedProduced", required = true)
@@ -79,27 +79,27 @@ public class PlanarImageCorrections {
     }
 
     /**
-     * Obtient la valeur de la propriété dicomSeriesUIDNMStaticUsed.
+     * Obtient la valeur de la propriété nmStaticUsed.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link DICOMData }
      *     
      */
-    public String getDICOMSeriesUIDNMStaticUsed() {
-        return dicomSeriesUIDNMStaticUsed;
+    public DICOMData getNMStaticUsed() {
+        return nmStaticUsed;
     }
 
     /**
-     * Définit la valeur de la propriété dicomSeriesUIDNMStaticUsed.
+     * Définit la valeur de la propriété nmStaticUsed.
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link DICOMData }
      *     
      */
-    public void setDICOMSeriesUIDNMStaticUsed(String value) {
-        this.dicomSeriesUIDNMStaticUsed = value;
+    public void setNMStaticUsed(DICOMData value) {
+        this.nmStaticUsed = value;
     }
 
     /**

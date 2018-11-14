@@ -21,9 +21,6 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:element name="HybridDosimetryworkflow" minOccurs="0" maxOccurs="unbounded">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="PatientId" type="xs:string"/>
-				<xs:element name="PatientName" type="xs:string"/>
-				<xs:element name="ClinicalResearchStudyId" type="xs:string"/>
 				<xs:element name="PlanarDataAcquisitionAndProcessing" type="irdbb:PlanarDataAcquisitionAndProcessing" maxOccurs="unbounded" />
 				<xs:element name="SPECTDataAcquisitionAndProcessing" type="irdbb:SPECTDataAcquisitionAndProcessing"/>
 				<xs:element name="HybridDosimetryViaAbsorbedDoseRateCalculation" type="irdbb:HybridDosimetryViaAbsorbedDoseRateCalculation" minOccurs="0" />
@@ -92,7 +89,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 				<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
 				<xs:element name="TimePointIdentifierUsed" type="xs:string"/>
-				<xs:element name="DICOMSeriesUIDNMStaticUsed" type="xs:string"/>
+				<xs:element name="NMStaticUsed" type="irdbb:DICOMData"/>
 				<xs:element name="CorrectionsUsed" type="xs:string"/>
 				<xs:element name="NMStaticCorrectedProduced" type="irdbb:DICOMData"/>
 		</xs:sequence>
@@ -102,7 +99,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 				<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
 				<xs:element name="TimePointIdentifierUsed" type="xs:string" maxOccurs="unbounded" />
-				<xs:element name="DICOMSeriesUIDNMStaticCorrectedUsed" type="xs:string" maxOccurs="unbounded" />
+				<xs:element name="NMStaticCorrectedUsed" type="irdbb:DICOMData" maxOccurs="unbounded" />
 				<xs:element name="SegmentationMethodUsed" type="xs:string"/>
 				<xs:element name="CountsPerROIAtTimePointProduced" type="irdbb:CountsPerROIAtTimePoint" maxOccurs="unbounded" />
 				<xs:element name="ROIProduced" type="irdbb:ROI" maxOccurs="unbounded" />
@@ -113,7 +110,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 				<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
 				<xs:element name="TimePointIdentifierUsed" type="xs:string" maxOccurs="unbounded" />
-				<xs:element name="DICOMSeriesUIDNMStaticCorrectedUsed" type="xs:string" maxOccurs="unbounded" />
+				<xs:element name="NMStaticCorrectedUsed" type="irdbb:DICOMData" maxOccurs="unbounded" />
 				<xs:element name="ROIIdentifierUsed" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
 				<xs:element name="SegmentationMethodUsed" type="xs:string"/>
 				<xs:element name="CountsPerROIAtTimePointProduced" type="irdbb:CountsPerROIAtTimePoint" maxOccurs="unbounded" />
@@ -146,8 +143,8 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 				<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
 				<xs:element name="TimePointIdentifierUsed" type="xs:string"/>
-				<xs:element name="DICOMSeriesUIDNMTomoUsed" type="xs:string"/>
-				<xs:element name="DICOMSeriesUIDCTReconUsed" type="xs:string"/>
+				<xs:element name="NMTomoUsed" type="irdbb:DICOMData"/>
+				<xs:element name="CTReconUsed" type="irdbb:DICOMData"/>
 				<xs:element name="ReconstructionMethodAndCorrectionsUsed" type="xs:string"/>
 				<xs:element name="CalibrationFactorUsed" type="irdbb:CalibrationFactor"/>
 				<xs:element name="NMTomoReconProduced" type="irdbb:DICOMData"/>
@@ -158,8 +155,8 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 				<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
 				<xs:element name="TimePointIdentifierUsed" type="xs:string"/>
-				<xs:element name="DICOMSeriesUIDNMTomoReconUsed" type="xs:string"/>
-				<xs:element name="DICOMSeriesUIDCTReconUsed" type="xs:string"/>
+				<xs:element name="NMTomoReconUsed" type="irdbb:DICOMData"/>
+				<xs:element name="CTReconUsed" type="irdbb:DICOMData"/>
 				<xs:element name="RegistrationAndSegmentationMethodMethodUsed" type="xs:string"/>
 				<xs:element name="CountsPerVOIAtTimePointProduced" type="irdbb:CountsPerVOIAtTimePoint" maxOccurs="unbounded" />
 				<xs:element name="VOIInSPECTProduced" type="irdbb:VOI" maxOccurs="unbounded" />
@@ -172,7 +169,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				<xs:element name="TimePointIdentifierUsed" type="xs:string"/>
 				<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
 				<xs:element name="VoxelDataActivityAtTimePointIdentifier" type="xs:string"/>
-				<xs:element name="DICOMSeriesUIDCTReconResampledOnSPECTUsed" type="xs:string"/>
+				<xs:element name="CTReconResampledOnSPECTUsed" type="irdbb:DICOMData"/>
 				<xs:element name="ThreeDimEnergyDepositionRateMatrixAtTimePointProduced" type="irdbb:NonDICOMData"/>
 		</xs:sequence>
 	</xs:complexType>
@@ -278,7 +275,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="NMRelevantCalibrationReference">
 		<xs:sequence>
 				<xs:element name="ReferenceCalibrationDate" type="xs:string"/>
-		<xs:element name="Isotope"/>
+		<xs:element name="Isotope">
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="radium223"/>
@@ -314,7 +311,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="VOI">
 		<xs:sequence>
 				<xs:element name="VOIIdentifier" type="xs:string"/>
-		<xs:element name="OrganOrTissue"/>
+		<xs:element name="OrganOrTissue">
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="bone"/>
@@ -438,7 +435,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="NonDICOMData">
 		<xs:sequence>
-		<xs:element name="NonDICOMDataClass"/>
+		<xs:element name="NonDICOMDataClass">
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="VOI"/>
@@ -447,17 +444,17 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:element>
-		<xs:element name="NonDICOMDataFormat"/>
+		<xs:element name="NonDICOMDataFormat">
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="zipped imageJ contours format"/>
 					<xs:enumeration value="TIFF format embedding imageJ contours"/>
-					<xs:enumeration value="zipped pseudo"/>
+					<xs:enumeration value="zipped pseudo_DICOM ImpactMC"/>
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:element>
 				<xs:element name="NonDICOMDataFileName" type="xs:string" maxOccurs="unbounded" />
-				<xs:element name="FHIRId" type="xs:string"/>
+				<xs:element name="FHIRIdentifier" type="xs:string" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 </xs:schema>

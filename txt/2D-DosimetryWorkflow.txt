@@ -3,9 +3,6 @@
 //-------------------------
 TwoDimDosimetryworkflow
 {
- 1-string-PatientId
- 1-string-PatientName
- 1-string-ClinicalResearchStudyId
  1,n-PlanarDataAcquisitionAndProcessing-PlanarDataAcquisitionAndProcessing
  0,1-TwoDimDosimetryViaAbsorbedDoseRateCalculation-TwoDimDosimetryViaAbsorbedDoseRateCalculation
  0,1-TwoDimDosimetryViaTimeActivityCurveFit-TwoDimDosimetryViaTimeActivityCurveFit
@@ -47,7 +44,7 @@ PlanarDataCorrections
 {
  1-ProcessExecutionContext-ProcessExecutionContext
  1-string-TimePointIdentifierUsed
- 1-string-DICOMSeriesUIDNMStaticUsed
+ 1-DICOMData-NMStaticUsed
  1-string-CorrectionsUsed
 // to be replaced by structured items
  1-DICOMData-NMStaticCorrectedProduced
@@ -57,7 +54,7 @@ PlanarDataSegmentationWithoutRegistration
 {
  1-ProcessExecutionContext-ProcessExecutionContext
  1,n-string-TimePointIdentifierUsed
- 1,n-string-DICOMSeriesUIDNMStaticCorrectedUsed
+ 1,n-DICOMData-NMStaticCorrectedUsed
  1-string-SegmentationMethodUsed
 // to be replaced by structured items
  1,n-CountsPerROIAtTimePoint-CountsPerROIAtTimePointProduced
@@ -68,7 +65,7 @@ PlanarDataSegmentationWithRegistrationAndPropagation
 {
  1-ProcessExecutionContext-ProcessExecutionContext
  1,n-string-TimePointIdentifierUsed
- 1,n-string-DICOMSeriesUIDNMStaticCorrectedUsed
+ 1,n-DICOMData-NMStaticCorrectedUsed
  0,n-string-ROIIdentifierUsed
  1-string-SegmentationMethodUsed
 // to be replaced by structured items
@@ -276,7 +273,7 @@ DICOMData
 NonDICOMData
 {
  1-String-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map
- 1-String-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo-DICOM ImpactMC
+ 1-String-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo_DICOM ImpactMC
  1,n-String-NonDICOMDataFileName
- 1-String-FHIRId
+ 0,1-string-FHIRIdentifier
 }

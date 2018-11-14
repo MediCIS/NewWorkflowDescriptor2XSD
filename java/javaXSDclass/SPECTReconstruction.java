@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.14 à 10:45:43 AM CET 
+// Généré le : 2018.11.14 à 11:29:52 AM CET 
 //
 
 
@@ -26,8 +26,8 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
  *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="DICOMSeriesUIDNMTomoUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="DICOMSeriesUIDCTReconUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="NMTomoUsed" type="{https://www.irdbb-medirad.com}DICOMData"/>
+ *         &lt;element name="CTReconUsed" type="{https://www.irdbb-medirad.com}DICOMData"/>
  *         &lt;element name="ReconstructionMethodAndCorrectionsUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="CalibrationFactorUsed" type="{https://www.irdbb-medirad.com}CalibrationFactor"/>
  *         &lt;element name="NMTomoReconProduced" type="{https://www.irdbb-medirad.com}DICOMData"/>
@@ -43,8 +43,8 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "SPECTReconstruction", propOrder = {
     "processExecutionContext",
     "timePointIdentifierUsed",
-    "dicomSeriesUIDNMTomoUsed",
-    "dicomSeriesUIDCTReconUsed",
+    "nmTomoUsed",
+    "ctReconUsed",
     "reconstructionMethodAndCorrectionsUsed",
     "calibrationFactorUsed",
     "nmTomoReconProduced"
@@ -55,10 +55,10 @@ public class SPECTReconstruction {
     protected ProcessExecutionContext processExecutionContext;
     @XmlElement(name = "TimePointIdentifierUsed", required = true)
     protected String timePointIdentifierUsed;
-    @XmlElement(name = "DICOMSeriesUIDNMTomoUsed", required = true)
-    protected String dicomSeriesUIDNMTomoUsed;
-    @XmlElement(name = "DICOMSeriesUIDCTReconUsed", required = true)
-    protected String dicomSeriesUIDCTReconUsed;
+    @XmlElement(name = "NMTomoUsed", required = true)
+    protected DICOMData nmTomoUsed;
+    @XmlElement(name = "CTReconUsed", required = true)
+    protected DICOMData ctReconUsed;
     @XmlElement(name = "ReconstructionMethodAndCorrectionsUsed", required = true)
     protected String reconstructionMethodAndCorrectionsUsed;
     @XmlElement(name = "CalibrationFactorUsed", required = true)
@@ -115,51 +115,51 @@ public class SPECTReconstruction {
     }
 
     /**
-     * Obtient la valeur de la propriété dicomSeriesUIDNMTomoUsed.
+     * Obtient la valeur de la propriété nmTomoUsed.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link DICOMData }
      *     
      */
-    public String getDICOMSeriesUIDNMTomoUsed() {
-        return dicomSeriesUIDNMTomoUsed;
+    public DICOMData getNMTomoUsed() {
+        return nmTomoUsed;
     }
 
     /**
-     * Définit la valeur de la propriété dicomSeriesUIDNMTomoUsed.
+     * Définit la valeur de la propriété nmTomoUsed.
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link DICOMData }
      *     
      */
-    public void setDICOMSeriesUIDNMTomoUsed(String value) {
-        this.dicomSeriesUIDNMTomoUsed = value;
+    public void setNMTomoUsed(DICOMData value) {
+        this.nmTomoUsed = value;
     }
 
     /**
-     * Obtient la valeur de la propriété dicomSeriesUIDCTReconUsed.
+     * Obtient la valeur de la propriété ctReconUsed.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link DICOMData }
      *     
      */
-    public String getDICOMSeriesUIDCTReconUsed() {
-        return dicomSeriesUIDCTReconUsed;
+    public DICOMData getCTReconUsed() {
+        return ctReconUsed;
     }
 
     /**
-     * Définit la valeur de la propriété dicomSeriesUIDCTReconUsed.
+     * Définit la valeur de la propriété ctReconUsed.
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link DICOMData }
      *     
      */
-    public void setDICOMSeriesUIDCTReconUsed(String value) {
-        this.dicomSeriesUIDCTReconUsed = value;
+    public void setCTReconUsed(DICOMData value) {
+        this.ctReconUsed = value;
     }
 
     /**

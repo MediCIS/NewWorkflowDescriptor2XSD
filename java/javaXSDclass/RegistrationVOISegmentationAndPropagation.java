@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.14 à 10:45:43 AM CET 
+// Généré le : 2018.11.14 à 11:29:52 AM CET 
 //
 
 
@@ -28,8 +28,8 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
  *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
- *         &lt;element name="DICOMSeriesUIDNMTomoReconUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
- *         &lt;element name="DICOMSeriesUIDCTReconUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
+ *         &lt;element name="NMTomoReconUsed" type="{https://www.irdbb-medirad.com}DICOMData" maxOccurs="unbounded"/>
+ *         &lt;element name="CTReconUsed" type="{https://www.irdbb-medirad.com}DICOMData" maxOccurs="unbounded"/>
  *         &lt;element name="ImageProcessingMethodMethodUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="CountsPerVOIAtTimePointProduced" type="{https://www.irdbb-medirad.com}CountsPerVOIAtTimePoint" maxOccurs="unbounded"/>
  *         &lt;element name="VOIProduced" type="{https://www.irdbb-medirad.com}VOI" maxOccurs="unbounded"/>
@@ -47,8 +47,8 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "RegistrationVOISegmentationAndPropagation", propOrder = {
     "processExecutionContext",
     "timePointIdentifierUsed",
-    "dicomSeriesUIDNMTomoReconUsed",
-    "dicomSeriesUIDCTReconUsed",
+    "nmTomoReconUsed",
+    "ctReconUsed",
     "imageProcessingMethodMethodUsed",
     "countsPerVOIAtTimePointProduced",
     "voiProduced",
@@ -61,10 +61,10 @@ public class RegistrationVOISegmentationAndPropagation {
     protected ProcessExecutionContext processExecutionContext;
     @XmlElement(name = "TimePointIdentifierUsed", required = true)
     protected List<String> timePointIdentifierUsed;
-    @XmlElement(name = "DICOMSeriesUIDNMTomoReconUsed", required = true)
-    protected List<String> dicomSeriesUIDNMTomoReconUsed;
-    @XmlElement(name = "DICOMSeriesUIDCTReconUsed", required = true)
-    protected List<String> dicomSeriesUIDCTReconUsed;
+    @XmlElement(name = "NMTomoReconUsed", required = true)
+    protected List<DICOMData> nmTomoReconUsed;
+    @XmlElement(name = "CTReconUsed", required = true)
+    protected List<DICOMData> ctReconUsed;
     @XmlElement(name = "ImageProcessingMethodMethodUsed", required = true)
     protected String imageProcessingMethodMethodUsed;
     @XmlElement(name = "CountsPerVOIAtTimePointProduced", required = true)
@@ -130,61 +130,61 @@ public class RegistrationVOISegmentationAndPropagation {
     }
 
     /**
-     * Gets the value of the dicomSeriesUIDNMTomoReconUsed property.
+     * Gets the value of the nmTomoReconUsed property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the dicomSeriesUIDNMTomoReconUsed property.
+     * This is why there is not a <CODE>set</CODE> method for the nmTomoReconUsed property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getDICOMSeriesUIDNMTomoReconUsed().add(newItem);
+     *    getNMTomoReconUsed().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link String }
+     * {@link DICOMData }
      * 
      * 
      */
-    public List<String> getDICOMSeriesUIDNMTomoReconUsed() {
-        if (dicomSeriesUIDNMTomoReconUsed == null) {
-            dicomSeriesUIDNMTomoReconUsed = new ArrayList<String>();
+    public List<DICOMData> getNMTomoReconUsed() {
+        if (nmTomoReconUsed == null) {
+            nmTomoReconUsed = new ArrayList<DICOMData>();
         }
-        return this.dicomSeriesUIDNMTomoReconUsed;
+        return this.nmTomoReconUsed;
     }
 
     /**
-     * Gets the value of the dicomSeriesUIDCTReconUsed property.
+     * Gets the value of the ctReconUsed property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the dicomSeriesUIDCTReconUsed property.
+     * This is why there is not a <CODE>set</CODE> method for the ctReconUsed property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getDICOMSeriesUIDCTReconUsed().add(newItem);
+     *    getCTReconUsed().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link String }
+     * {@link DICOMData }
      * 
      * 
      */
-    public List<String> getDICOMSeriesUIDCTReconUsed() {
-        if (dicomSeriesUIDCTReconUsed == null) {
-            dicomSeriesUIDCTReconUsed = new ArrayList<String>();
+    public List<DICOMData> getCTReconUsed() {
+        if (ctReconUsed == null) {
+            ctReconUsed = new ArrayList<DICOMData>();
         }
-        return this.dicomSeriesUIDCTReconUsed;
+        return this.ctReconUsed;
     }
 
     /**

@@ -21,38 +21,8 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:element name="WP2subtask212WorkflowData" minOccurs="0" maxOccurs="unbounded">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="PatientId" type="xs:string"/>
-				<xs:element name="PatientName" type="xs:string"/>
-				<xs:element name="ClinicalResearchStudyId" type="xs:string"/>
 				<xs:element name="CTSegmentation" type="irdbb:CTSegmentation" minOccurs="0" />
 				<xs:element name="SimpleCTMonteCarloDosimetry" type="irdbb:SimpleCTMonteCarloDosimetry" minOccurs="0" maxOccurs="unbounded" />
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
-
-	<xs:element name="NonDICOMData" minOccurs="0" maxOccurs="unbounded">
-		<xs:complexType>
-			<xs:sequence>
-		<xs:element name="NonDICOMDataClass"/>
-			<xs:simpleType>
-				<xs:restriction base="xs:string">
-					<xs:enumeration value="VOI"/>
-					<xs:enumeration value="VOI superimposed on images"/>
-					<xs:enumeration value="3D dose map"/>
-				</xs:restriction>
-			</xs:simpleType>
-		</xs:element>
-		<xs:element name="NonDICOMDataFormat"/>
-			<xs:simpleType>
-				<xs:restriction base="xs:string">
-					<xs:enumeration value="zipped imageJ contours format"/>
-					<xs:enumeration value="TIFF format embedding imageJ contours"/>
-					<xs:enumeration value="zipped pseudo"/>
-				</xs:restriction>
-			</xs:simpleType>
-		</xs:element>
-				<xs:element name="NonDICOMDataFileName" type="xs:string" maxOccurs="unbounded" />
-				<xs:element name="FHIRId" type="xs:string"/>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -127,13 +97,6 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:complexType name="DICOMData">
-		<xs:sequence>
-				<xs:element name="DICOMStudyUID" type="xs:string"/>
-				<xs:element name="DICOMSeriesUID" type="xs:string"/>
-		</xs:sequence>
-	</xs:complexType>
-
 	<xs:complexType name="AttenuatorType">
 		<xs:sequence>
 				<xs:element name="AttenuatorCategory" type="xs:string"/>
@@ -147,7 +110,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="AbsorbedDosePerVOIType">
 		<xs:sequence>
-		<xs:element name="AbsorbedDoseCategory"/>
+		<xs:element name="AbsorbedDoseCategory">
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="mean absorbed dose normalized to CTDI free in air normalized to tube load"/>
@@ -160,7 +123,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:element>
-		<xs:element name="StatisticalSubCategory" minOccurs="0" />
+		<xs:element name="StatisticalSubCategory" minOccurs="0" >
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="mean"/>
@@ -172,8 +135,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			</xs:simpleType>
 		</xs:element>
 				<xs:element name="AbsorbedDoseValue" type="xs:string"/>
-				<xs:element name="VOIIdentifier" type="xs:string"/>
-		<xs:element name="AbsorbedDoseUnit"/>
+		<xs:element name="AbsorbedDoseUnit">
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="milligray per (milligray per (100 milliampere second))"/>
@@ -182,13 +144,14 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:element>
+				<xs:element name="VOIIdentifier" type="xs:string"/>
 		</xs:sequence>
 	</xs:complexType>
 
 	<xs:complexType name="VoxelBasedDistributionOfAbsorbedDoseType">
 		<xs:sequence>
 				<xs:element name="VoxelBasedDistributionOfAbsorbedDoseIdentifier" type="xs:string"/>
-		<xs:element name="VoxelBasedDistributionOfAbsorbedDoseCategory"/>
+		<xs:element name="VoxelBasedDistributionOfAbsorbedDoseCategory">
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="absorbed dose normalized to CTDI free in air normalized to tube load"/>
@@ -197,7 +160,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:element>
-		<xs:element name="AbsorbedDoseUnit"/>
+		<xs:element name="AbsorbedDoseUnit">
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="milligray per (milligray per (100 milliampere second))"/>
@@ -214,7 +177,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="VOI">
 		<xs:sequence>
 				<xs:element name="VOIIdentifier" type="xs:string"/>
-		<xs:element name="OrganOrTissue"/>
+		<xs:element name="OrganOrTissue">
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="bone"/>
@@ -226,8 +189,40 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:element>
-				<xs:element name="DICOMVOIContainer" type="irdbb:DICOMData" minOccurs="0" />
-				<xs:element name="NonDICOMVOIContainer" type="irdbb:NonDICOMData" minOccurs="0" />
+				<xs:element name="DICOMVOIContainer" type="irdbb:DICOMData" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element name="NonDICOMVOIContainer" type="irdbb:NonDICOMData" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="DICOMData">
+		<xs:sequence>
+				<xs:element name="DICOMStudyUID" type="xs:string"/>
+				<xs:element name="DICOMSeriesUID" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="NonDICOMData">
+		<xs:sequence>
+		<xs:element name="NonDICOMDataClass">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="VOI"/>
+					<xs:enumeration value="VOI superimposed on images"/>
+					<xs:enumeration value="3D dose map"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+		<xs:element name="NonDICOMDataFormat">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="zipped imageJ contours format"/>
+					<xs:enumeration value="TIFF format embedding imageJ contours"/>
+					<xs:enumeration value="zipped pseudo_DICOM ImpactMC"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+				<xs:element name="NonDICOMDataFileName" type="xs:string" maxOccurs="unbounded" />
+				<xs:element name="FHIRIdentifier" type="xs:string" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 </xs:schema>
