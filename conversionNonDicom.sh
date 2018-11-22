@@ -3,7 +3,7 @@
 #  Created by Marine Brenet on 31/10/2018.
 
 # 0 Get Version Number
-fileVersion="version.txt"
+fileVersion="versionNonDicom.txt"
 
 version=$(($(cat $fileVersion) + 1))
 
