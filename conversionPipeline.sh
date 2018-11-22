@@ -20,9 +20,12 @@ do
 xjc -p javaXSDclass -quiet $i
 done
 
-## 3 Conversion txt to multiple xsd
+# 3 Conversion txt to multiple xsd
 cd ../txt
 for i in *.txt
 do
 ../workflowDescriptor2XSD.py "$i" ../xsdSimple/$i $version
 done
+
+# 4 Generation
+../TableGenerateur.py $version
