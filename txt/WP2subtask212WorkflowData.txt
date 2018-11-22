@@ -1,0 +1,130 @@
+//Descriptions of Workflows
+//-------------------------
+
+WP2subtask212WorkflowData
+{
+ 0,1-CTSegmentation-CTSegmentation
+ 0,n-SimpleCTMonteCarloDosimetry-SimpleCTMonteCarloDosimetry
+}
+
+SimpleCTMonteCarloDosimetry
+{
+ 1-CalculationOfVoxelMap-CalculationOfVoxelMap
+ 1-CalculationOfAbsorbedDosesInVOIs-CalculationOfAbsorbedDosesInVOIs
+}
+
+//Descriptions of Individual boxes
+//-------------------------
+
+CTSegmentation
+{
+ 1-ProcessExecutionContext-ProcessExecutionContext
+ 1-DICOMData-DICOMImageUsed
+ 0,1-SegmentationMethodType-SegmentationMethodUsed
+ 1,n-VOI-VOIDescriptorProduced
+}
+
+CalculationOfVoxelMap
+{
+ 1-ProcessExecutionContext-ProcessExecutionContext
+ 0,n-AttenuatorType-AttenuatorUsed
+ 0,1-MonteCarloMethodType-MonteCarloMethodUsed
+ 1-DICOMData-DICOMCTImageDataUsed
+ 0,1-VoxelBasedDistributionOfAbsorbedDoseType-VoxelBasedDistributionOfAbsorbedDoseProduced
+}
+
+CalculationOfAbsorbedDosesInVOIs
+{
+ 1-ProcessExecutionContext-ProcessExecutionContext
+ 1-string-VoxelBasedDistributionOfAbsorbedDoseIdentifierUsed
+ 0,n-string-VOIIdentifierUsed
+ 0,n-AbsorbedDosePerVOIType-AbsorbedDosePerVOIProduced      
+}
+
+
+//Descriptions of Input-Output types
+//-----------------------------------
+
+ProcessExecutionContext
+{
+ 1-string-DateTimeProcessStarted
+ 1-string-PerformingInstitution
+}
+
+SegmentationMethodType
+{
+ 1-string-SegmentationMethod
+ 0,n-string-SoftwareName
+ 0,n-MethodSettingType-SegmentationMethodSetting
+}
+
+MonteCarloMethodType
+{
+ 1-string-MonteCarloMethod
+ 0,n-string-SoftwareName
+ 0,n-string-SimulatedImagingDevice
+ 0,n-MethodSettingType-MonteCarloMethodSetting
+}
+
+MethodSettingType
+{
+ 0,1-string-MethodSetting
+ 0,1-string-MethodSettingValue
+ 0,1-string-MethodSettingUnit
+}
+
+
+
+AttenuatorType
+{
+ 1-string-AttenuatorCategory
+ 1-string-EquivalentAttenuatorDescription
+ 1-string-EquivalentAttenuatorMaterial
+ 1-string-EquivalentAttenuatorThicknessValue
+ 1-string-EquivalentAttenuatorThicknessUnit
+ 1-string-EquivalentAttenuatorModel
+}
+
+AbsorbedDosePerVOIType
+{
+ 1-string-AbsorbedDoseCategory:mean absorbed dose normalized to CTDI free in air normalized to tube load/mean absorbed dose normalized to CTDI vol normalized to tube load/mean absorbed radiation dose/maximum absorbed radiation dose/minimum absorbed radiation dose/median absorbed radiation dose/mode absorbed radiation dose
+ 0,1-string-StatisticalSubCategory:mean/maximum/minimum/median/mode
+ 1-string-AbsorbedDoseValue
+ 1-string-AbsorbedDoseUnit:milligray per (milligray per (100 milliampere second))/milligray per (100 milliampere second)/milligray
+ 1-string-VOIIdentifier
+}
+
+VoxelBasedDistributionOfAbsorbedDoseType
+{
+ 1-string-VoxelBasedDistributionOfAbsorbedDoseIdentifier
+ 1-string-VoxelBasedDistributionOfAbsorbedDoseCategory:absorbed dose normalized to CTDI free in air normalized to tube load/absorbed dose normalized to CTDI vol normalized to tube load/absorbed dose
+ 1-string-AbsorbedDoseUnit:milligray per (milligray per (100 milliampere second))/milligray per (100 milliampere second)/milligray
+ 0,1-NonDICOMData-NonDICOMVoxelBasedAbsorbedDoseDistribution
+ 0,1-DICOMData-DICOMVoxelBasedAbsorbedDoseDistribution
+}
+
+VOI
+{
+ 1-string-VOIIdentifier
+ 1-string-OrganOrTissue:bone/breast/esophagus/heart/lungs/skin
+ 0,n-DICOMData-DICOMVOIContainer
+ 0,n-NonDICOMData-NonDICOMVOIContainer
+}
+
+DICOMData
+{
+ 1-string-DICOMStudyUID
+ 1-string-DICOMSeriesUID
+}
+
+NonDICOMData
+{
+ 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map
+ 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo_DICOM ImpactMC
+ 1,n-string-NonDICOMDataFileName
+ 0,1-string-FHIRIdentifier
+}
+
+
+
+
