@@ -15,6 +15,14 @@ pathXSD = "xsd/nonDicomFileSetDescriptor.xsd"
 dico = {}
 contentList=[]
 
+nVersion = sys.argv[2]
+if len(nVersion)==1:
+    nVersion="00"+nVersion
+elif len(nVersion)==2:
+    nVersion="0"+nVersion
+
+version = "Version " +nVersion
+
 def readFile(path):
     inside=False
     key=""
@@ -159,6 +167,7 @@ def generateComplexType(name, sousObj):
 
 def generateXSD(elements, types):
     XSD = '<?xml version="1.0"?>'+"\n"
+    XSD+= '<!--'+version+'-->'+"\n"
     XSD+= '<xs:schema'+"\n"
     XSD+= 'targetNamespace="https://www.irdbb-medirad.com"'+"\n"
     XSD+= 'elementFormDefault="qualified"'+"\n"

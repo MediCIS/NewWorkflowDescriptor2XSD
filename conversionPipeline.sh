@@ -2,8 +2,16 @@
 
 #  Created by Marine Brenet on 31/10/2018.
 
+# 0 Get Version Number
+fileVersion="version.txt"
+
+version=$(($(cat $fileVersion) + 1))
+
+echo "Nouvelle Version : ""$version"
+echo "$version" > "$fileVersion"
+
 # 1 Conversion txt to single xsd
-./workflowDescriptor2NonDicomXSD.py ./txt
+./workflowDescriptor2NonDicomXSD.py ./txt $version
 
 # 2 Conversion xsd to javaClass
 cd java
@@ -16,5 +24,5 @@ done
 cd ../txt
 for i in *.txt
 do
-../workflowDescriptor2XSD.py "$i" ../xsdSimple/$i
+../workflowDescriptor2XSD.py "$i" ../xsdSimple/$i $version
 done
