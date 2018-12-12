@@ -161,7 +161,7 @@ VOI
  1-string-OrganOrTissue
 // to be provided as a closed list of possible values
  0,1-DICOMData-DICOMVOIContainer
- 0,1-NonDICOMData-NonDICOMVOIContainer
+ 0,n-NonDICOMData-NonDICOMVOIContainer
 }
 
 CalibrationFactor
@@ -225,7 +225,7 @@ TimeIntegratedActivityPerVOI
 DICOMData
 {
  1-string-DICOMStudyUID
- 1-string-DICOMDICOMSeriesUID
+ 1-string-DICOMSeriesUID
 }
 
 NonDICOMData

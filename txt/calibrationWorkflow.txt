@@ -218,7 +218,7 @@ VOIInCT
  1-string-VOIVolumeUnit
  1-string-PhantomPartIdentifier
  0,1-DICOMData-DICOMVOIContainer
- 0,1-NonDICOMData-NonDICOMVOIContainer
+ 0,n-NonDICOMData-NonDICOMVOIContainer
 }
 
 VOIInSPECT
@@ -228,7 +228,7 @@ VOIInSPECT
  1-string-CountsInVOIUnit
  1-string-PhantomPartIdentifier
  0,1-DICOMData-DICOMVOIContainer
- 0,1-NonDICOMData-NonDICOMVOIContainer
+ 0,n-NonDICOMData-NonDICOMVOIContainer
 }
 
 ROIInSPECT

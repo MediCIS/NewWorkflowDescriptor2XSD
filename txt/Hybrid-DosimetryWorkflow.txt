@@ -288,7 +288,7 @@ VOI
  1-string-VOIIdentifier
  1-string-OrganOrTissue:bone/breast/esophagus/heart/lungs/skin
  0,1-DICOMData-DICOMVOIContainer
- 0,1-NonDICOMData-NonDICOMVOIContainer
+ 0,n-NonDICOMData-NonDICOMVOIContainer
 }
 
 ROI
