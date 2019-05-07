@@ -1,0 +1,14 @@
+CTSegmentation : calibrationWorkflow.txt, WP2subtask212WorkflowData.txt
+NonDICOMData : calibrationWorkflow.txt, WP2subtask212WorkflowData.txt, 3D-DosimetrySlide1Workflow.txt, 2D-DosimetryWorkflow.txt, Hybrid-DosimetryWorkflow.txt, 3D-DosimetrySlide2Workflow.txt
+SPECTAcqCTAcqAndReconstruction : calibrationWorkflow.txt, 3D-DosimetrySlide1Workflow.txt, Hybrid-DosimetryWorkflow.txt, 3D-DosimetrySlide2Workflow.txt
+SPECTReconstruction : calibrationWorkflow.txt, 3D-DosimetrySlide1Workflow.txt, Hybrid-DosimetryWorkflow.txt, 3D-DosimetrySlide2Workflow.txt
+VOI : WP2subtask212WorkflowData.txt, 3D-DosimetrySlide1Workflow.txt, Hybrid-DosimetryWorkflow.txt, 3D-DosimetrySlide2Workflow.txt
+SPECTRecoveryCoefficientCurve : calibrationWorkflow.txt, 3D-DosimetrySlide1Workflow.txt, Hybrid-DosimetryWorkflow.txt, 3D-DosimetrySlide2Workflow.txt
+TimeActivityCurveFit : 3D-DosimetrySlide1Workflow.txt, 2D-DosimetryWorkflow.txt, Hybrid-DosimetryWorkflow.txt
+AbsorbedDoseCalculation : 3D-DosimetrySlide1Workflow.txt, 2D-DosimetryWorkflow.txt, Hybrid-DosimetryWorkflow.txt
+RadioBiologicalCalculation : 3D-DosimetrySlide1Workflow.txt, 2D-DosimetryWorkflow.txt, Hybrid-DosimetryWorkflow.txt, 3D-DosimetrySlide2Workflow.txt
+SPECTDataAcquisitionAndProcessing : 3D-DosimetrySlide1Workflow.txt, Hybrid-DosimetryWorkflow.txt, 3D-DosimetrySlide2Workflow.txt
+ROIPlanarActivityDetermination : 2D-DosimetryWorkflow.txt, Hybrid-DosimetryWorkflow.txt
+AbsorbedDoseRateCalculation : 2D-DosimetryWorkflow.txt, Hybrid-DosimetryWorkflow.txt
+PatientOrganMass : 2D-DosimetryWorkflow.txt, Hybrid-DosimetryWorkflow.txt
+EnergyDepositionRateCalculation : Hybrid-DosimetryWorkflow.txt, 3D-DosimetrySlide2Workflow.txt
