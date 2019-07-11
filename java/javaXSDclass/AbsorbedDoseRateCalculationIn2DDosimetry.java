@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.12.11 à 04:47:30 PM CET 
+// Généré le : 2019.06.25 à 10:43:07 AM CEST 
 //
 
 
@@ -17,22 +17,24 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour AbsorbedDoseRateCalculation complex type.
+ * <p>Classe Java pour AbsorbedDoseRateCalculationIn2DDosimetry complex type.
  * 
  * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
- * &lt;complexType name="AbsorbedDoseRateCalculation">
+ * &lt;complexType name="AbsorbedDoseRateCalculationIn2DDosimetry">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
  *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="VOIIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
+ *         &lt;element name="ROIIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
  *         &lt;element name="PreAdministeredActivityUsed" type="{https://www.irdbb-medirad.com}AdministeredActivity"/>
  *         &lt;element name="PostAdministeredActivityUsed" type="{https://www.irdbb-medirad.com}AdministeredActivity"/>
- *         &lt;element name="PatientOrganMassUsed" type="{https://www.irdbb-medirad.com}PatientOrganMass" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="MeanAbsorbedDoseRateInVOIProduced" type="{https://www.irdbb-medirad.com}MeanAbsorbedDoseRateInVOI" maxOccurs="unbounded"/>
+ *         &lt;element name="OrganSValueUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="ReferenceOrganMassUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="PatientOrganMassUsed" type="{https://www.irdbb-medirad.com}PatientOrganMassIn2DDosimetry" maxOccurs="unbounded"/>
+ *         &lt;element name="MeanAbsorbedDoseRateInROIProduced" type="{https://www.irdbb-medirad.com}MeanAbsorbedDoseRateInROI" maxOccurs="unbounded"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -42,31 +44,37 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "AbsorbedDoseRateCalculation", propOrder = {
+@XmlType(name = "AbsorbedDoseRateCalculationIn2DDosimetry", propOrder = {
     "processExecutionContext",
     "timePointIdentifierUsed",
-    "voiIdentifierUsed",
+    "roiIdentifierUsed",
     "preAdministeredActivityUsed",
     "postAdministeredActivityUsed",
+    "organSValueUsed",
+    "referenceOrganMassUsed",
     "patientOrganMassUsed",
-    "meanAbsorbedDoseRateInVOIProduced"
+    "meanAbsorbedDoseRateInROIProduced"
 })
-public class AbsorbedDoseRateCalculation {
+public class AbsorbedDoseRateCalculationIn2DDosimetry {
 
     @XmlElement(name = "ProcessExecutionContext", required = true)
     protected ProcessExecutionContext processExecutionContext;
     @XmlElement(name = "TimePointIdentifierUsed", required = true)
     protected String timePointIdentifierUsed;
-    @XmlElement(name = "VOIIdentifierUsed", required = true)
-    protected List<String> voiIdentifierUsed;
+    @XmlElement(name = "ROIIdentifierUsed", required = true)
+    protected List<String> roiIdentifierUsed;
     @XmlElement(name = "PreAdministeredActivityUsed", required = true)
     protected AdministeredActivity preAdministeredActivityUsed;
     @XmlElement(name = "PostAdministeredActivityUsed", required = true)
     protected AdministeredActivity postAdministeredActivityUsed;
-    @XmlElement(name = "PatientOrganMassUsed")
-    protected List<PatientOrganMass> patientOrganMassUsed;
-    @XmlElement(name = "MeanAbsorbedDoseRateInVOIProduced", required = true)
-    protected List<MeanAbsorbedDoseRateInVOI> meanAbsorbedDoseRateInVOIProduced;
+    @XmlElement(name = "OrganSValueUsed", required = true)
+    protected String organSValueUsed;
+    @XmlElement(name = "ReferenceOrganMassUsed", required = true)
+    protected String referenceOrganMassUsed;
+    @XmlElement(name = "PatientOrganMassUsed", required = true)
+    protected List<PatientOrganMassIn2DDosimetry> patientOrganMassUsed;
+    @XmlElement(name = "MeanAbsorbedDoseRateInROIProduced", required = true)
+    protected List<MeanAbsorbedDoseRateInROI> meanAbsorbedDoseRateInROIProduced;
 
     /**
      * Obtient la valeur de la propriété processExecutionContext.
@@ -117,18 +125,18 @@ public class AbsorbedDoseRateCalculation {
     }
 
     /**
-     * Gets the value of the voiIdentifierUsed property.
+     * Gets the value of the roiIdentifierUsed property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the voiIdentifierUsed property.
+     * This is why there is not a <CODE>set</CODE> method for the roiIdentifierUsed property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getVOIIdentifierUsed().add(newItem);
+     *    getROIIdentifierUsed().add(newItem);
      * </pre>
      * 
      * 
@@ -138,11 +146,11 @@ public class AbsorbedDoseRateCalculation {
      * 
      * 
      */
-    public List<String> getVOIIdentifierUsed() {
-        if (voiIdentifierUsed == null) {
-            voiIdentifierUsed = new ArrayList<String>();
+    public List<String> getROIIdentifierUsed() {
+        if (roiIdentifierUsed == null) {
+            roiIdentifierUsed = new ArrayList<String>();
         }
-        return this.voiIdentifierUsed;
+        return this.roiIdentifierUsed;
     }
 
     /**
@@ -194,6 +202,54 @@ public class AbsorbedDoseRateCalculation {
     }
 
     /**
+     * Obtient la valeur de la propriété organSValueUsed.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getOrganSValueUsed() {
+        return organSValueUsed;
+    }
+
+    /**
+     * Définit la valeur de la propriété organSValueUsed.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setOrganSValueUsed(String value) {
+        this.organSValueUsed = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété referenceOrganMassUsed.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getReferenceOrganMassUsed() {
+        return referenceOrganMassUsed;
+    }
+
+    /**
+     * Définit la valeur de la propriété referenceOrganMassUsed.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setReferenceOrganMassUsed(String value) {
+        this.referenceOrganMassUsed = value;
+    }
+
+    /**
      * Gets the value of the patientOrganMassUsed property.
      * 
      * <p>
@@ -211,44 +267,44 @@ public class AbsorbedDoseRateCalculation {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link PatientOrganMass }
+     * {@link PatientOrganMassIn2DDosimetry }
      * 
      * 
      */
-    public List<PatientOrganMass> getPatientOrganMassUsed() {
+    public List<PatientOrganMassIn2DDosimetry> getPatientOrganMassUsed() {
         if (patientOrganMassUsed == null) {
-            patientOrganMassUsed = new ArrayList<PatientOrganMass>();
+            patientOrganMassUsed = new ArrayList<PatientOrganMassIn2DDosimetry>();
         }
         return this.patientOrganMassUsed;
     }
 
     /**
-     * Gets the value of the meanAbsorbedDoseRateInVOIProduced property.
+     * Gets the value of the meanAbsorbedDoseRateInROIProduced property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the meanAbsorbedDoseRateInVOIProduced property.
+     * This is why there is not a <CODE>set</CODE> method for the meanAbsorbedDoseRateInROIProduced property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getMeanAbsorbedDoseRateInVOIProduced().add(newItem);
+     *    getMeanAbsorbedDoseRateInROIProduced().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link MeanAbsorbedDoseRateInVOI }
+     * {@link MeanAbsorbedDoseRateInROI }
      * 
      * 
      */
-    public List<MeanAbsorbedDoseRateInVOI> getMeanAbsorbedDoseRateInVOIProduced() {
-        if (meanAbsorbedDoseRateInVOIProduced == null) {
-            meanAbsorbedDoseRateInVOIProduced = new ArrayList<MeanAbsorbedDoseRateInVOI>();
+    public List<MeanAbsorbedDoseRateInROI> getMeanAbsorbedDoseRateInROIProduced() {
+        if (meanAbsorbedDoseRateInROIProduced == null) {
+            meanAbsorbedDoseRateInROIProduced = new ArrayList<MeanAbsorbedDoseRateInROI>();
         }
-        return this.meanAbsorbedDoseRateInVOIProduced;
+        return this.meanAbsorbedDoseRateInROIProduced;
     }
 
 }

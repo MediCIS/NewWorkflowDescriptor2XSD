@@ -30,7 +30,7 @@ fi
 cd java
 for i in  ../xsd/*.xsd
 do
-xjc -p javaXSDclass -quiet $i
+xjc -p javaXSDclass $i
 done
 
 # 4 Conversion txt to multiple xsd

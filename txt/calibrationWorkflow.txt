@@ -12,11 +12,11 @@ CalibrationWorkflow
 SPECTCTCalibrationWorkflow
 {
  0,1-CTNumberCalibrationWorkfow-CTNumberCalibrationWorkfow
- 1-SPECTAcqCTAcqAndReconstruction-SPECTAcqCTAcqAndReconstruction
- 1-SPECTReconstruction-SPECTReconstruction
- 1-CTSegmentation-CTSegmentation
+ 1-SPECTAcqCTAcqAndReconstructionInCalibration-SPECTAcqCTAcqAndReconstructionInCalibration
+ 1-SPECTReconstructionInCalibration-SPECTReconstructionInCalibration
+ 1-CTSegmentationInCalibration-CTSegmentationInCalibration
  1-SPECTSensitivityCalculation-SPECTSensitivityCalculation
- 0,1-SPECTRecoveryCurveCalculation-SPECTRecoveryCurveCalculation
+ 0,1-SPECTRecoveryCoefficientCurveCalculation-SPECTRecoveryCoefficientCurveCalculation
 }
 
 PlanarCalibrationWorkflow
@@ -50,7 +50,7 @@ CalculationOfCTNumberCalibrationCurve
  1-CTNumberCalibrationCurve-CTNumberCalibrationCurveProduced
 }
 
-SPECTAcqCTAcqAndReconstruction
+SPECTAcqCTAcqAndReconstructionInCalibration
 {
  1-NMPhantom-PhantomUsed
  1-DICOMData-NMTomoProduced
@@ -59,7 +59,7 @@ SPECTAcqCTAcqAndReconstruction
 // it is not needed to detail input that will be retrieved from DICOM metadata
 }
 
-SPECTReconstruction
+SPECTReconstructionInCalibration
 {
  1-ProcessExecutionContext-ProcessExecutionContext
  1-DICOMData-NMTomoUsed
@@ -70,7 +70,7 @@ SPECTReconstruction
  1-DICOMData-NMTomoReconProduced
 }
 
-CTSegmentation
+CTSegmentationInCalibration
 {
  1-ProcessExecutionContext-ProcessExecutionContext
  1-DICOMData-NMTomoReconUsed
@@ -90,14 +90,14 @@ SPECTSensitivityCalculation
  1-CalibrationCoefficient-CalibrationCoefficientProduced
 }
 
-SPECTRecoveryCurveCalculation
+SPECTRecoveryCoefficientCurveCalculation
 {
  1-ProcessExecutionContext-ProcessExecutionContext
  1,n-string-VOIInCTIdentifierUsed
  1,n-string-VOIInSPECTIdentifierUsed
  1-string-PhantomIdentifierUsed
  1-string-CalibrationCoefficientIdentifierUsed
- 1-SPECTRecoveryCoefficientCurve-SPECTRecoveryCoefficientCurve
+ 1-SPECTRecoveryCoefficientCurveInCalibration-SPECTRecoveryCoefficientCurveInCalibration
 }
 
 PlanarAcquisition
@@ -152,8 +152,7 @@ CTNumberCalibrationCurve
 
 ElementOfCTNumberCalibrationCurve
 {
- 1-float-MeasuredDensityValue
- 1-string-MeasuredDensityUnit
+ 1-integer-HounsfieldMeasuredValue
  1-float-RealDensityOfMaterialValue
  1-string-RealDensityOfMaterialUnit
  0,1-string-MaterialIdentifier
@@ -218,7 +217,7 @@ VOIInCT
  1-string-VOIVolumeUnit
  1-string-PhantomPartIdentifier
  0,1-DICOMData-DICOMVOIContainer
- 0,n-NonDICOMData-NonDICOMVOIContainer
+ 0,1-NonDICOMData-NonDICOMVOIContainer
 }
 
 VOIInSPECT
@@ -228,7 +227,7 @@ VOIInSPECT
  1-string-CountsInVOIUnit
  1-string-PhantomPartIdentifier
  0,1-DICOMData-DICOMVOIContainer
- 0,n-NonDICOMData-NonDICOMVOIContainer
+ 0,1-NonDICOMData-NonDICOMVOIContainer
 }
 
 ROIInSPECT
@@ -249,7 +248,7 @@ CalibrationCoefficient
  1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188
 }
 
-SPECTRecoveryCoefficientCurve
+SPECTRecoveryCoefficientCurveInCalibration
 {
  1,n-ElementOfSPECTRecoveryCoefficientCurve-ElementOfSPECTRecoveryCoefficientCurve
  1-string-ReferenceCalibrationDate
@@ -272,8 +271,9 @@ DICOMData
 
 NonDICOMData
 {
- 1-String-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map
- 1-String-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo_DICOM ImpactMC
- 1,n-String-NonDICOMDataFileName
+ 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map
+ 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo_DICOM ImpactMC/GIF format embedding imageJ contours
+ 1,n-string-NonDICOMDataFileName
  0,1-string-FHIRIdentifier
 }
+

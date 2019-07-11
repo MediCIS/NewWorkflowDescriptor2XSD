@@ -42,7 +42,7 @@ def readFile(path):
                     key=key.replace("       ","")
                     key=key.replace("        ","")
                     key=key.replace("        ","")
-                    key = key.replace("\n","")
+                    key=key.replace("\n","")
                     
                     if key!="" and key!='' :
                         fileName = path.split("/")[-1]

@@ -8,9 +8,9 @@ Created on Fri Sep 14 15:55:40 2018
 import os
 import sys
 
-#directory = sys.argv[1]
+directory = sys.argv[1]
 
-directory = "Macintosh HD/Utilisateurs/marinebrenet/Documents/workflowDescriptor2XSD/txt/"
+#directory = "Macintosh HD/Utilisateurs/marinebrenet/Documents/workflowDescriptor2XSD/txt/"
 
 pathXSD = "xsd/nonDicomFileSetDescriptor.xsd"
 

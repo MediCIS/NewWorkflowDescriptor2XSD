@@ -1,4 +1,5 @@
 
+
 //Descriptions of Workflows
 //-------------------------
 HybridDosimetryworkflow
@@ -29,9 +30,9 @@ SPECTDataAcquisitionAndProcessing
 
 HybridDosimetryViaAbsorbedDoseRateCalculation
 {
- 1-EnergyDepositionRateCalculation-EnergyDepositionRateCalculation
+ 1-EnergyDepositionRateCalculationInHybridDosimetry-EnergyDepositionRateCalculationInHybridDosimetry
  1-SumAndScalingEnergyDepositionRate-SumAndScalingEnergyDepositionRate
- 1-AbsorbedDoseRateCalculation-AbsorbedDoseRateCalculation
+ 1-AbsorbedDoseRateCalculationInHybridDosimetry-AbsorbedDoseRateCalculationInHybridDosimetry
  1-TimeAbsorbedDoseRateCurveFit-TimeAbsorbedDoseRateCurveFit
 }
 
@@ -39,7 +40,7 @@ HybridDosimetryViaTimeActivityCurveFit
 {
  1-ActivityScaling-ActivityScaling
  1-TimeActivityCurveFit-TimeActivityCurveFit
- 1-AbsorbedDoseCalculation-AbsorbedDoseCalculation
+ 1-AbsorbedDoseCalculationInROIInHybridDosimetry-AbsorbedDoseCalculationInROIInHybridDosimetry
 }
 
 //Descriptions of Individual boxes
@@ -94,7 +95,6 @@ ROIPlanarActivityDetermination
  1,n-string-ROIIdentifierUsed
 // Corresponding Counts need to be retrieved
  1,n-PlanarCalibrationFactor-PlanarCalibrationFactorUsed
-
  1,n-DataActivityPerROIAtTimePoint-DataActivityPerROIAtTimePointProduced
 }
 
@@ -135,12 +135,24 @@ RegistrationVOISegmentation
  1-DICOMData-CTReconResampledOnSPECTProduced
 }
 
-
-
-EnergyDepositionRateCalculation
+VOIActivityDetermination
 {
- 1-string-TimePointIdentifierUsed
  1-ProcessExecutionContext-ProcessExecutionContext
+// to clarify if the same Calibration Factor is used for all timepoints ?
+ 1,n-string-VOIIdentifierUsed
+ 1-string-TimePointIdentifierUsed
+// Corresponding Counts per VOI at TimePoint need to be retrieved
+ 1-CalibrationFactor-CalibrationFactorUsed
+// how to refer to a value obtained in a calibration workflow?
+ 1-SPECTRecoveryCoefficientCurve-SPECTRecoveryCoefficientCurveUsed
+// how to refer to a SPECT Recovery Coefficient Curve obtained in a calibration workflow?
+ 1,n-DataActivityPerVOIAtTimePoint-DataActivityPerVOIAtTimePointProduced
+}
+
+EnergyDepositionRateCalculationInHybridDosimetry
+{
+ 1-ProcessExecutionContext-ProcessExecutionContext
+ 1-string-TimePointIdentifierUsed
  1-string-VoxelDataActivityAtTimePointIdentifier
  1-DICOMData-CTReconResampledOnSPECTUsed
  1-NonDICOMData-ThreeDimEnergyDepositionRateMatrixAtTimePointProduced
@@ -161,7 +173,7 @@ SumAndScalingEnergyDepositionRate
  1,n-EnergyDepositionRatePerVOIAtTimePoint-EnergyDepositionRatePerVOIAtTimePointProduced
 }
 
-AbsorbedDoseRateCalculation
+AbsorbedDoseRateCalculationInHybridDosimetry
 {
 // to be clarified if all TimePoints are processed in one single execution of this box ?
  1-ProcessExecutionContext-ProcessExecutionContext
@@ -170,7 +182,7 @@ AbsorbedDoseRateCalculation
 // Corresponding Energy Deposition Rate per VOI at this TimePoint need to be retrieved
  1-AdministeredActivity-PreAdministeredActivityUsed
  1-AdministeredActivity-PostAdministeredActivityUsed
- 0,n-PatientOrganMass-PatientOrganMassUsed
+ 0,n-PatientOrganMassInHybridDosimetry-PatientOrganMassUsed
  1,n-MeanAbsorbedDoseRateInVOI-MeanAbsorbedDoseRateInVOIProduced
 }
 
@@ -211,22 +223,24 @@ TimeActivityCurveFit
  1,n-TimeIntegratedActivityPerROI-TimeIntegratedActivityPerROIProduced
 }
 
-AbsorbedDoseCalculation
+AbsorbedDoseCalculationInROIInHybridDosimetry
 {
  1-ProcessExecutionContext-ProcessExecutionContext
  1,n-string-ROIIdentifierUsed
 // Corresponding Time Integrated Activity Coefficient per ROI need to be retrieved
 // Corresponding Time Integrated Activity per ROI need to be retrieved
  1-string-OrganSValueUsed
- 0,n-PatientOrganMass-PatientOrganMassUsed
+ 0,n-PatientOrganMassInHybridDosimetry-PatientOrganMassUsed
  1,n-MeanAbsorbedDoseInVOI-MeanAbsorbedDoseInVOIProduced
 }
 
 RadioBiologicalCalculation
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1,n-string-ROIIdentifierUsed
-// Corresponding Mean Absorbed Dose In ROI need to be retrieved
+ 1,n-string-VOIIdentifierUsed
+ 0,n-string-VoxelAbsorbedDoseMapIdentifierUsed
+// can it be used for RadioBiologicalCalculation ?
+// Corresponding Mean Absorbed Dose In VOI need to be retrieved
  1-string-RadioBiologicalCalculationMethod
 // to be replaced by structured items
  1-string-RadioBiologicalCalculationParameters
@@ -234,7 +248,6 @@ RadioBiologicalCalculation
  1-string-BiologicalEffectiveDose
 // to be replaced by structured items
 }
-
 //Descriptions of Input-Output types
 //-----------------------------------
 
@@ -286,8 +299,8 @@ CountsPerVOIAtTimePoint
 VOI
 {
  1-string-VOIIdentifier
- 1-string-OrganOrTissue:bone/breast/esophagus/heart/lungs/skin
- 0,1-DICOMData-DICOMVOIContainer
+ 1-string-OrganOrTissue:bone/breast/esophagus/heart/lungs/skin/human body
+ 0,n-DICOMData-DICOMVOIContainer
  0,n-NonDICOMData-NonDICOMVOIContainer
 }
 
@@ -356,7 +369,7 @@ AdministeredActivity
 // to be replaced by a structured timestamp
 }
 
-PatientOrganMass
+PatientOrganMassInHybridDosimetry
 {
  1-float-PatientOrganMassValue
  1-string-PatientOrganMassUnit
@@ -407,8 +420,9 @@ DICOMData
 
 NonDICOMData
 {
- 1-String-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map
- 1-String-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo_DICOM ImpactMC
- 1,n-String-NonDICOMDataFileName
+ 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map
+ 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo_DICOM ImpactMC/GIF format embedding imageJ contours
+ 1,n-string-NonDICOMDataFileName
  0,1-string-FHIRIdentifier
 }
+

@@ -20,14 +20,14 @@ PlanarDataAcquisitionAndProcessing
 
 TwoDimDosimetryViaAbsorbedDoseRateCalculation
 {
- 1,n-AbsorbedDoseRateCalculation-AbsorbedDoseRateCalculation
+ 1,n-AbsorbedDoseRateCalculationIn2DDosimetry-AbsorbedDoseRateCalculationIn2DDosimetry
  1-TimeAbsorbedDoseCurveFit-TimeAbsorbedDoseCurveFit
 }
 
 TwoDimDosimetryViaTimeActivityCurveFit
 {
  1-TimeActivityCurveFit-TimeActivityCurveFit
- 1-AbsorbedDoseCalculation-AbsorbedDoseCalculation
+ 1-AbsorbedDoseCalculationInROIIn2DDosimetry-AbsorbedDoseCalculationInROIIn2DDosimetry
 }
 //Descriptions of Individual boxes
 //-------------------------
@@ -81,11 +81,10 @@ ROIPlanarActivityDetermination
  1,n-string-ROIIdentifierUsed
 // Corresponding Counts need to be retrieved
  1,n-PlanarCalibrationFactor-PlanarCalibrationFactorUsed
-// how to refer to a value obtained in a calibration workflow?
  1,n-DataActivityPerROIAtTimePoint-DataActivityPerROIAtTimePointProduced
 }
 
-AbsorbedDoseRateCalculation
+AbsorbedDoseRateCalculationIn2DDosimetry
 {
  1-ProcessExecutionContext-ProcessExecutionContext
  1-string-TimePointIdentifierUsed
@@ -95,7 +94,7 @@ AbsorbedDoseRateCalculation
  1-AdministeredActivity-PostAdministeredActivityUsed
  1-string-OrganSValueUsed
  1-string-ReferenceOrganMassUsed
- 1,n-PatientOrganMass-PatientOrganMassUsed
+ 1,n-PatientOrganMassIn2DDosimetry-PatientOrganMassUsed
  1,n-MeanAbsorbedDoseRateInROI-MeanAbsorbedDoseRateInROIProduced
 }
 
@@ -124,22 +123,24 @@ TimeActivityCurveFit
  1,n-TimeIntegratedActivityPerROI-TimeIntegratedActivityPerROIProduced
 }
 
-AbsorbedDoseCalculation
+AbsorbedDoseCalculationInROIIn2DDosimetry
 {
  1-ProcessExecutionContext-ProcessExecutionContext
  1,n-string-ROIIdentifierUsed
 // Corresponding Time Integrated Activity Coefficient per ROI need to be retrieved
 // Corresponding Time Integrated Activity per ROI need to be retrieved
  1-string-OrganSValueUsed
- 0,n-PatientOrganMass-PatientOrganMassUsed
+ 0,n-PatientOrganMassIn2DDosimetry-PatientOrganMassUsed
  1,n-MeanAbsorbedDoseInROI-MeanAbsorbedDoseInROIProduced
 }
 
 RadioBiologicalCalculation
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1,n-string-ROIIdentifierUsed
-// Corresponding Mean Absorbed Dose In ROI need to be retrieved
+ 1,n-string-VOIIdentifierUsed
+ 0,n-string-VoxelAbsorbedDoseMapIdentifierUsed
+// can it be used for RadioBiologicalCalculation ?
+// Corresponding Mean Absorbed Dose In VOI need to be retrieved
  1-string-RadioBiologicalCalculationMethod
 // to be replaced by structured items
  1-string-RadioBiologicalCalculationParameters
@@ -221,7 +222,7 @@ AdministeredActivity
 // to be replaced by a structured timestamp
 }
 
-PatientOrganMass
+PatientOrganMassIn2DDosimetry
 {
  1-float-PatientOrganMassValue
  1-string-PatientOrganMassUnit
@@ -272,8 +273,8 @@ DICOMData
 
 NonDICOMData
 {
- 1-String-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map
- 1-String-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo_DICOM ImpactMC
- 1,n-String-NonDICOMDataFileName
+ 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map
+ 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo_DICOM ImpactMC/GIF format embedding imageJ contours
+ 1,n-string-NonDICOMDataFileName
  0,1-string-FHIRIdentifier
 }

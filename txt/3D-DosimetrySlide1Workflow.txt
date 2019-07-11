@@ -3,15 +3,15 @@
 //-------------------------
 ThreeDimDosimetrySlide1workflow
 {
- 1,n-SPECTDataAcquisitionAndProcessing-SPECTDataAcquisitionAndProcessing
+ 1,n-SPECTDataAcquisitionAndReconstruction-SPECTDataAcquisitionAndReconstruction
  1-RegistrationVOISegmentationAndPropagation-RegistrationVOISegmentationAndPropagation
  1,n-VOIActivityDetermination-VOIActivityDetermination
- 1,n-TimeActivityCurveFit-TimeActivityCurveFit
- 1-AbsorbedDoseCalculation-AbsorbedDoseCalculation
+ 1,n-TimeActivityCurveFitIn3DDosimetry-TimeActivityCurveFitIn3DDosimetry
+ 1-AbsorbedDoseCalculationInVOI-AbsorbedDoseCalculationInVOI
  0,1-RadioBiologicalCalculation-RadioBiologicalCalculation
 }
 
-SPECTDataAcquisitionAndProcessing
+SPECTDataAcquisitionAndReconstruction
 {
  1-SPECTAcqCTAcqAndReconstruction-SPECTAcqCTAcqAndReconstruction
  1-SPECTReconstruction-SPECTReconstruction
@@ -71,7 +71,7 @@ VOIActivityDetermination
  1,n-DataActivityPerVOIAtTimePoint-DataActivityPerVOIAtTimePointProduced
 }
 
-TimeActivityCurveFit
+TimeActivityCurveFitIn3DDosimetry
 {
  1-ProcessExecutionContext-ProcessExecutionContext
  1-string-VOIIdentifierUsed
@@ -86,7 +86,7 @@ TimeActivityCurveFit
 // Is there one or n values for a VOI ?
 }
 
-AbsorbedDoseCalculation
+AbsorbedDoseCalculationInVOI
 {
  1-ProcessExecutionContext-ProcessExecutionContext
  1,n-string-VOIIdentifierUsed
@@ -158,9 +158,8 @@ CountsPerVOIAtTimePoint
 VOI
 {
  1-string-VOIIdentifier
- 1-string-OrganOrTissue
-// to be provided as a closed list of possible values
- 0,1-DICOMData-DICOMVOIContainer
+ 1-string-OrganOrTissue:bone/breast/esophagus/heart/lungs/skin/human body
+ 0,n-DICOMData-DICOMVOIContainer
  0,n-NonDICOMData-NonDICOMVOIContainer
 }
 
@@ -231,7 +230,7 @@ DICOMData
 NonDICOMData
 {
  1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map
- 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo_DICOM ImpactMC
+ 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo_DICOM ImpactMC/GIF format embedding imageJ contours
  1,n-string-NonDICOMDataFileName
  0,1-string-FHIRIdentifier
 }
