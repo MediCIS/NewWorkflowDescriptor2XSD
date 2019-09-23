@@ -17,12 +17,12 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour RadioBiologicalCalculation complex type.
+ * <p>Classe Java pour RadioBiologicalCalculationIn3DSlide1Dosimetry complex type.
  * 
  * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
- * &lt;complexType name="RadioBiologicalCalculation">
+ * &lt;complexType name="RadioBiologicalCalculationIn3DSlide1Dosimetry">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
@@ -41,7 +41,7 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "RadioBiologicalCalculation", propOrder = {
+@XmlType(name = "RadioBiologicalCalculationIn3DSlide1Dosimetry", propOrder = {
     "processExecutionContext",
     "voiIdentifierUsed",
     "voxelAbsorbedDoseMapIdentifierUsed",
@@ -49,7 +49,7 @@ import javax.xml.bind.annotation.XmlType;
     "radioBiologicalCalculationParameters",
     "biologicalEffectiveDose"
 })
-public class RadioBiologicalCalculation {
+public class RadioBiologicalCalculationIn3DSlide1Dosimetry {
 
     @XmlElement(name = "ProcessExecutionContext", required = true)
     protected ProcessExecutionContext processExecutionContext;

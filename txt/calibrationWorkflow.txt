@@ -65,8 +65,9 @@ SPECTReconstructionInCalibration
  1-DICOMData-NMTomoUsed
  1-DICOMData-CTReconUsed
  1-string-ReconstructionMethodAndCorrectionsUsed
-// to be replaced by structured items
- 1-CTNumberCalibrationCurve-CTNumberCalibrationCurveUsed
+// the choice below is because CTNumberCalibrationCurve may be referred to using a reference or actually entered (by value)
+ 0,1-CTNumberCalibrationCurve-CTNumberCalibrationCurveUsed
+ 0,1-CTNumberCalibrationCurveReference-CTNumberCalibrationCurveReference
  1-DICOMData-NMTomoReconProduced
 }
 
@@ -87,7 +88,7 @@ SPECTSensitivityCalculation
  1-ProcessExecutionContext-ProcessExecutionContext
  1,n-string-VOIInCTIdentifierUsed
  1,n-string-VOIInSPECTIdentifierUsed
- 1-CalibrationCoefficient-CalibrationCoefficientProduced
+ 1-CalibrationCoefficient-SPECTCalibrationCoefficientProduced
 }
 
 SPECTRecoveryCoefficientCurveCalculation
@@ -96,8 +97,8 @@ SPECTRecoveryCoefficientCurveCalculation
  1,n-string-VOIInCTIdentifierUsed
  1,n-string-VOIInSPECTIdentifierUsed
  1-string-PhantomIdentifierUsed
- 1-string-CalibrationCoefficientIdentifierUsed
- 1-SPECTRecoveryCoefficientCurveInCalibration-SPECTRecoveryCoefficientCurveInCalibration
+ 1-NMRelevantCalibrationReference-SPECTCalibrationCoefficientReferenceUsed
+ 1-SPECTRecoveryCoefficientCurveInCalibration-SPECTRecoveryCoefficientCurveInCalibrationProduced
 }
 
 PlanarAcquisition
@@ -130,7 +131,7 @@ PlanarSensitivityCalculation
  1-ProcessExecutionContext-ProcessExecutionContext
  1,n-string-ROIIdentifierUsed
  1-DICOMData-NMStaticCorrectedUsed
- 1-CalibrationCoefficient-CalibrationCoefficientProduced
+ 1-CalibrationCoefficient-PlanarCalibrationCoefficientProduced
  }
 
 
@@ -142,6 +143,11 @@ DensityPhantom
  1-string-DensityPhantomName
 // to be provided as a closed list of possible values
  1-string-DensityPhantomIdentifier
+}
+
+CTNumberCalibrationCurveReference
+{
+ 1-string-ReferenceCalibrationDate
 }
 
 CTNumberCalibrationCurve
@@ -158,6 +164,11 @@ ElementOfCTNumberCalibrationCurve
  0,1-string-MaterialIdentifier
 }
 
+NMRelevantCalibrationReference
+{
+ 1-string-ReferenceCalibrationDate
+ 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188
+}
 
 NMPhantom
 {
@@ -241,6 +252,7 @@ ROIInSPECT
 }
 
 CalibrationCoefficient
+// This structure applies to both Planar calibration coefficient et SPECT calibration coefficient
 {
  1-float-CalibrationCoefficientValue
  1-string-CalibrationCoefficientUnit
@@ -272,7 +284,7 @@ DICOMData
 NonDICOMData
 {
  1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map
- 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo_DICOM ImpactMC/GIF format embedding imageJ contours
+ 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours
  1,n-string-NonDICOMDataFileName
  0,1-string-FHIRIdentifier
 }

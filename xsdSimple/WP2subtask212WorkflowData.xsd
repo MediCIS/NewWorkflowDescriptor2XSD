@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<!--VersionSchemas : ../xsdSimple/WP2subtask212WorkflowData.txt-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -220,7 +221,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="zipped imageJ contours format"/>
 					<xs:enumeration value="TIFF format embedding imageJ contours"/>
-					<xs:enumeration value="zipped pseudo_DICOM ImpactMC"/>
+					<xs:enumeration value="zipped pseudo DICOM ImpactMC"/>
 					<xs:enumeration value="GIF format embedding imageJ contours"/>
 				</xs:restriction>
 			</xs:simpleType>

@@ -17,18 +17,17 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour RadioBiologicalCalculation complex type.
+ * <p>Classe Java pour RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry complex type.
  * 
  * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
- * &lt;complexType name="RadioBiologicalCalculation">
+ * &lt;complexType name="RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
  *         &lt;element name="VOIIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
- *         &lt;element name="VoxelAbsorbedDoseMapIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="RadioBiologicalCalculationMethod" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="RadioBiologicalCalculationParameters" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="BiologicalEffectiveDose" type="{http://www.w3.org/2001/XMLSchema}string"/>
@@ -41,22 +40,19 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "RadioBiologicalCalculation", propOrder = {
+@XmlType(name = "RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry", propOrder = {
     "processExecutionContext",
     "voiIdentifierUsed",
-    "voxelAbsorbedDoseMapIdentifierUsed",
     "radioBiologicalCalculationMethod",
     "radioBiologicalCalculationParameters",
     "biologicalEffectiveDose"
 })
-public class RadioBiologicalCalculation {
+public class RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry {
 
     @XmlElement(name = "ProcessExecutionContext", required = true)
     protected ProcessExecutionContext processExecutionContext;
     @XmlElement(name = "VOIIdentifierUsed", required = true)
     protected List<String> voiIdentifierUsed;
-    @XmlElement(name = "VoxelAbsorbedDoseMapIdentifierUsed")
-    protected List<String> voxelAbsorbedDoseMapIdentifierUsed;
     @XmlElement(name = "RadioBiologicalCalculationMethod", required = true)
     protected String radioBiologicalCalculationMethod;
     @XmlElement(name = "RadioBiologicalCalculationParameters", required = true)
@@ -115,35 +111,6 @@ public class RadioBiologicalCalculation {
             voiIdentifierUsed = new ArrayList<String>();
         }
         return this.voiIdentifierUsed;
-    }
-
-    /**
-     * Gets the value of the voxelAbsorbedDoseMapIdentifierUsed property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the voxelAbsorbedDoseMapIdentifierUsed property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getVoxelAbsorbedDoseMapIdentifierUsed().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getVoxelAbsorbedDoseMapIdentifierUsed() {
-        if (voxelAbsorbedDoseMapIdentifierUsed == null) {
-            voxelAbsorbedDoseMapIdentifierUsed = new ArrayList<String>();
-        }
-        return this.voxelAbsorbedDoseMapIdentifierUsed;
     }
 
     /**

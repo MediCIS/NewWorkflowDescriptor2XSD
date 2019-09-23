@@ -80,7 +80,7 @@ ROIPlanarActivityDetermination
  1,n-string-TimePointIdentifierUsed
  1,n-string-ROIIdentifierUsed
 // Corresponding Counts need to be retrieved
- 1,n-PlanarCalibrationFactor-PlanarCalibrationFactorUsed
+ 1-NMRelevantCalibrationReference-PlanarCalibrationFactorReference
  1,n-DataActivityPerROIAtTimePoint-DataActivityPerROIAtTimePointProduced
 }
 
@@ -168,11 +168,6 @@ ProcessExecutionContext
  1-string-PerformingInstitution
 }
 
-CTRelevantCalibrationReference
-{
- 1-string-ReferenceCalibrationDate
-}
-
 NMRelevantCalibrationReference
 {
  1-string-ReferenceCalibrationDate
@@ -197,11 +192,17 @@ ROI
  0,1-NonDICOMData-NonDICOMROIContainer
 }
 
-PlanarCalibrationFactor
+ActualPlanarCalibrationFactor-ActualPlanarCalibrationFactor
 {
-// how to refer to a value obtained in a calibration workflow?
+// provided as an explicit value
  1-float-PlanarCalibrationFactorValue
  1-string-PlanarCalibrationFactorUnit
+}
+
+PlanarCalibrationFactorReference
+{
+// provided as a reference to the value calculated in the calibration workflow
+ 1-string-PlanarCalibrationFactorDate
 }
 
 DataActivityPerROIAtTimePoint
@@ -274,7 +275,7 @@ DICOMData
 NonDICOMData
 {
  1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map
- 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo_DICOM ImpactMC/GIF format embedding imageJ contours
+ 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours
  1,n-string-NonDICOMDataFileName
  0,1-string-FHIRIdentifier
 }

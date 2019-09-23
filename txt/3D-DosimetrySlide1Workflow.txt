@@ -8,7 +8,7 @@ ThreeDimDosimetrySlide1workflow
  1,n-VOIActivityDetermination-VOIActivityDetermination
  1,n-TimeActivityCurveFitIn3DDosimetry-TimeActivityCurveFitIn3DDosimetry
  1-AbsorbedDoseCalculationInVOI-AbsorbedDoseCalculationInVOI
- 0,1-RadioBiologicalCalculation-RadioBiologicalCalculation
+ 0,1-RadioBiologicalCalculationIn3DSlide1Dosimetry-RadioBiologicalCalculationIn3DSlide1Dosimetry
 }
 
 SPECTDataAcquisitionAndReconstruction
@@ -38,8 +38,9 @@ SPECTReconstruction
  1-DICOMData-NMTomoUsed
  1-DICOMData-CTReconUsed
  1-string-ReconstructionMethodAndCorrectionsUsed
-// to be replaced by structured items
- 1-CalibrationFactor-CalibrationFactorUsed
+// the choice below is because CTNumberCalibrationCurve may be referred to using a reference or actually entered (by value)
+ 0,1-CTNumberCalibrationCurve-CTNumberCalibrationCurveUsed
+ 0,1-CTNumberCalibrationCurveReference-CTNumberCalibrationCurveReference
  1-DICOMData-NMTomoReconProduced
 }
 
@@ -64,9 +65,9 @@ VOIActivityDetermination
  1,n-string-VOIIdentifierUsed
  1-string-TimePointIdentifierUsed
 // Corresponding Counts per VOI at TimePoint need to be retrieved
- 1-CalibrationFactor-CalibrationFactorUsed
+ 1-NMRelevantCalibrationReference-SPECTCalibrationFactorReferenceUsed
 // how to refer to a value obtained in a calibration workflow?
- 1-SPECTRecoveryCoefficientCurve-SPECTRecoveryCoefficientCurveUsed
+ 1-NMRelevantCalibrationReference-SPECTRecoveryCoefficientCurveReferenceUsed
 // how to refer to a SPECT Recovery Coefficient Curve obtained in a calibration workflow?
  1,n-DataActivityPerVOIAtTimePoint-DataActivityPerVOIAtTimePointProduced
 }
@@ -101,7 +102,7 @@ AbsorbedDoseCalculationInVOI
 //is it actually optional  ? is it non DICOM ?
 }
 
-RadioBiologicalCalculation
+RadioBiologicalCalculationIn3DSlide1Dosimetry
 {
  1-ProcessExecutionContext-ProcessExecutionContext
  1,n-string-VOIIdentifierUsed
@@ -140,6 +141,11 @@ CTRelevantCalibrationReference
  1-string-ReferenceCalibrationDate
 }
 
+CTNumberCalibrationCurveReference
+{
+ 1-string-ReferenceCalibrationDate
+}
+
 NMRelevantCalibrationReference
 {
  1-string-ReferenceCalibrationDate
@@ -163,11 +169,18 @@ VOI
  0,n-NonDICOMData-NonDICOMVOIContainer
 }
 
-CalibrationFactor
+CTNumberCalibrationCurve
 {
-// how to refer to a value obtained in a calibration workflow?
- 1-float-CalibrationFactorValue
- 1-string-CalibrationFactorUnit
+  1,n-ElementOfCTNumberCalibrationCurve-ElementOfCTNumberCalibrationCurve
+  1-string-ReferenceCalibrationDate
+}
+
+ElementOfCTNumberCalibrationCurve
+{
+ 1-integer-HounsfieldMeasuredValue
+ 1-float-RealDensityOfMaterialValue
+ 1-string-RealDensityOfMaterialUnit
+ 0,1-string-MaterialIdentifier
 }
 
 SPECTRecoveryCoefficientCurve
@@ -230,7 +243,7 @@ DICOMData
 NonDICOMData
 {
  1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map
- 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo_DICOM ImpactMC/GIF format embedding imageJ contours
+ 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours
  1,n-string-NonDICOMDataFileName
  0,1-string-FHIRIdentifier
 }

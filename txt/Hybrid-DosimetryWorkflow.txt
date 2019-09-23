@@ -1,5 +1,4 @@
 
-
 //Descriptions of Workflows
 //-------------------------
 HybridDosimetryworkflow
@@ -8,7 +7,7 @@ HybridDosimetryworkflow
  1-SPECTDataAcquisitionAndProcessing-SPECTDataAcquisitionAndProcessing
  0,1-HybridDosimetryViaAbsorbedDoseRateCalculation-HybridDosimetryViaAbsorbedDoseRateCalculation
  0,1-HybridDosimetryViaTimeActivityCurveFit-HybridDosimetryViaTimeActivityCurveFit
- 0,1-RadioBiologicalCalculation-RadioBiologicalCalculation
+ 0,1-RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry-RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry
 }
 
 PlanarDataAcquisitionAndProcessing
@@ -94,7 +93,7 @@ ROIPlanarActivityDetermination
  1,n-string-TimePointIdentifierUsed
  1,n-string-ROIIdentifierUsed
 // Corresponding Counts need to be retrieved
- 1,n-PlanarCalibrationFactor-PlanarCalibrationFactorUsed
+ 1-NMRelevantCalibrationReference-PlanarCalibrationFactorReference
  1,n-DataActivityPerROIAtTimePoint-DataActivityPerROIAtTimePointProduced
 }
 
@@ -116,8 +115,9 @@ SPECTReconstruction
  1-DICOMData-NMTomoUsed
  1-DICOMData-CTReconUsed
  1-string-ReconstructionMethodAndCorrectionsUsed
-// to be replaced by structured items
- 1-CalibrationFactor-CalibrationFactorUsed
+// the choice below is because CTNumberCalibrationCurve may be referred to using a reference or actually entered (by value)
+ 0,1-CTNumberCalibrationCurve-CTNumberCalibrationCurveUsed
+ 0,1-CTNumberCalibrationCurveReference-CTNumberCalibrationCurveReference
  1-DICOMData-NMTomoReconProduced
 }
 
@@ -142,9 +142,9 @@ VOIActivityDetermination
  1,n-string-VOIIdentifierUsed
  1-string-TimePointIdentifierUsed
 // Corresponding Counts per VOI at TimePoint need to be retrieved
- 1-CalibrationFactor-CalibrationFactorUsed
+ 1-NMRelevantCalibrationReference-SPECTCalibrationFactorReferenceUsed
 // how to refer to a value obtained in a calibration workflow?
- 1-SPECTRecoveryCoefficientCurve-SPECTRecoveryCoefficientCurveUsed
+ 1-NMRelevantCalibrationReference-SPECTRecoveryCoefficientCurveReferenceUsed
 // how to refer to a SPECT Recovery Coefficient Curve obtained in a calibration workflow?
  1,n-DataActivityPerVOIAtTimePoint-DataActivityPerVOIAtTimePointProduced
 }
@@ -234,13 +234,11 @@ AbsorbedDoseCalculationInROIInHybridDosimetry
  1,n-MeanAbsorbedDoseInVOI-MeanAbsorbedDoseInVOIProduced
 }
 
-RadioBiologicalCalculation
+RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry
 {
  1-ProcessExecutionContext-ProcessExecutionContext
  1,n-string-VOIIdentifierUsed
- 0,n-string-VoxelAbsorbedDoseMapIdentifierUsed
-// can it be used for RadioBiologicalCalculation ?
-// Corresponding Mean Absorbed Dose In VOI need to be retrieved
+// Corresponding Absorbed Dose In VOI need to be retrieved
  1-string-RadioBiologicalCalculationMethod
 // to be replaced by structured items
  1-string-RadioBiologicalCalculationParameters
@@ -248,6 +246,7 @@ RadioBiologicalCalculation
  1-string-BiologicalEffectiveDose
 // to be replaced by structured items
 }
+
 //Descriptions of Input-Output types
 //-----------------------------------
 
@@ -268,6 +267,11 @@ ProcessExecutionContext
 }
 
 CTRelevantCalibrationReference
+{
+ 1-string-ReferenceCalibrationDate
+}
+
+CTNumberCalibrationCurveReference
 {
  1-string-ReferenceCalibrationDate
 }
@@ -313,24 +317,18 @@ ROI
  0,1-NonDICOMData-NonDICOMROIContainer
 }
 
-PlanarCalibrationFactor
+CTNumberCalibrationCurve
 {
-// how to refer to a value obtained in a calibration workflow?
- 1-float-PlanarCalibrationFactorValue
- 1-string-PlanarCalibrationFactorUnit
+  1,n-ElementOfCTNumberCalibrationCurve-ElementOfCTNumberCalibrationCurve
+  1-string-ReferenceCalibrationDate
 }
 
-CalibrationFactor
+ElementOfCTNumberCalibrationCurve
 {
-// how to refer to a value obtained in a calibration workflow?
- 1-float-CalibrationFactorValue
- 1-string-CalibrationFactorUnit
-}
-
-SPECTRecoveryCoefficientCurve
-{
-// how to represent this curve obtained in a calibration workflow?
- 1-string-SPECTRecoveryCoefficientCurve
+ 1-integer-HounsfieldMeasuredValue
+ 1-float-RealDensityOfMaterialValue
+ 1-string-RealDensityOfMaterialUnit
+ 0,1-string-MaterialIdentifier
 }
 
 DataActivityPerROIAtTimePoint
@@ -421,7 +419,7 @@ DICOMData
 NonDICOMData
 {
  1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map
- 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo_DICOM ImpactMC/GIF format embedding imageJ contours
+ 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours
  1,n-string-NonDICOMDataFileName
  0,1-string-FHIRIdentifier
 }

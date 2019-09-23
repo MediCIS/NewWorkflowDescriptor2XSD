@@ -17,6 +17,12 @@ inside=False
 key=""
 content=""
 
+nVersion = sys.argv[2]
+#nVersion = "001"
+if len(nVersion)==1:
+    nVersion="00"+nVersion
+elif len(nVersion)==2:
+    nVersion="0"+nVersion
 
 print("Read the Text File : "+path)
 workflowDescriptor = open(path, "r")
@@ -149,6 +155,7 @@ def generateComplexType(name, sousObj):
 
 def generateXSD(elements, types):
     XSD = '<?xml version="1.0"?>'+"\n"
+    XSD+= '<!--VersionSchemas : '+nVersion+'-->'+"\n"
     XSD+= '<xs:schema'+"\n"
     XSD+= 'targetNamespace="https://www.irdbb-medirad.com"'+"\n"
     XSD+= 'elementFormDefault="qualified"'+"\n"
