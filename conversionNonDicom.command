@@ -2,20 +2,13 @@
 
 #  Created by Marine Brenet on 31/10/2018.
 
-cd /Users/marinebrenet/Documents/workflowDescriptor2XSD/
+#echo $0
+echo "$( dirname "${BASH_SOURCE[0]}" )"
+
+cd "$( dirname "${BASH_SOURCE[0]}" )"
 cp xsd/nonDicomFileSetDescriptor.xsd oldNonDicomFileSetDescriptor.xsd
 
-# 0 Get Version Number
-fileVersion="versionNonDicom.txt"
-
-oldVersion=$(($(cat $fileVersion)))
-version=$(($(cat $fileVersion) + 1))
-
-echo "Nouvelle Version : ""$version"
-echo "Ancienne Version : ""$oldVersion"
-#echo "$version" > "$fileVersion"
-
-# 1 Coherence Test
+# 0 Coherence Test
 rm inconsistencyList.txt
 if ./testCoherence.py ./txt
 then echo "Coherents Files"
@@ -25,6 +18,16 @@ echo "See inconsistencyList.txt for details"
 
 exit 1
 fi
+
+# 1 Version Number
+fileVersion="versionNonDicom.txt"
+
+oldVersion=$(($(cat $fileVersion)))
+version=$(($(cat $fileVersion) + 1))
+
+echo "Nouvelle Version : ""$version"
+echo "Ancienne Version : ""$oldVersion"
+echo "$version" > "$fileVersion"
 
 # 2 Conversion txt to single xsd
 ./workflowDescriptor2NonDicomXSD.py ./txt $version
@@ -44,6 +47,6 @@ do
 done
 
 # 5 Diff
-cd /Users/marinebrenet/Documents/workflowDescriptor2XSD/
+cd "$( dirname "${BASH_SOURCE[0]}" )"
 
 diff xsd/nonDicomFileSetDescriptor.xsd oldNonDicomFileSetDescriptor.xsd > diffXsd$oldVersion-$version.txt
