@@ -22,7 +22,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:element name="ThreeDimDosimetrySlide1workflow" minOccurs="0" maxOccurs="unbounded">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="SPECTDataAcquisitionAndReconstruction" type="irdbb:SPECTDataAcquisitionAndReconstruction" maxOccurs="unbounded" />
+				<xs:element name="SPECTDataAcquisitionAndReconstruction" type="irdbb:SPECTDataAcquisitionAndReconstruction" minOccurs="0" maxOccurs="unbounded" />
 				<xs:element name="RegistrationVOISegmentationAndPropagation" type="irdbb:RegistrationVOISegmentationAndPropagation"/>
 				<xs:element name="VOIActivityDetermination" type="irdbb:VOIActivityDetermination" maxOccurs="unbounded" />
 				<xs:element name="TimeActivityCurveFitIn3DDosimetry" type="irdbb:TimeActivityCurveFitIn3DDosimetry" maxOccurs="unbounded" />
@@ -118,7 +118,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				<xs:element name="CTReconResampledOnCommonReferenceUsed" type="irdbb:DICOMData" maxOccurs="unbounded" />
 				<xs:element name="NMTomoReconResampledOnCommonReferenceUsed" type="irdbb:DICOMData" maxOccurs="unbounded" />
 				<xs:element name="AbsorbedDoseCalculationMethodUsed" type="xs:string"/>
-				<xs:element name="MeanAbsorbedDoseInVOIProduced" type="irdbb:MeanAbsorbedDoseInVOI" maxOccurs="unbounded" />
+				<xs:element name="AbsorbedDoseInVOIProduced" type="irdbb:AbsorbedDoseInVOI" maxOccurs="unbounded" />
 				<xs:element name="VoxelAbsorbedDoseMapProduced" type="irdbb:NonDICOMData" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
@@ -136,10 +136,31 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="TimePointDescription">
 		<xs:sequence>
-				<xs:element name="TimePointCategory" type="xs:string"/>
+		<xs:element name="TimePointCategory">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="168h plus or minus 24h post RAIT timepoint"/>
+					<xs:enumeration value="96h plus or minus 12h post RAIT timepoint"/>
+					<xs:enumeration value="72h plus or minus 12h post RAIT timepoint"/>
+					<xs:enumeration value="48h plus or minus 4h post RAIT timepoint"/>
+					<xs:enumeration value="24h plus or minus 4h post RAIT timepoint"/>
+					<xs:enumeration value="6h plus or minus 2h post RAIT timepoint"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
 				<xs:element name="TimePointIdentifier" type="xs:string"/>
 				<xs:element name="TimePointDistanceFromReferenceEventValue" type="xs:integer"/>
-				<xs:element name="TimePointDistanceFromReferenceEventUnit" type="xs:string"/>
+		<xs:element name="TimePointDistanceFromReferenceEventUnit">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="minutes"/>
+					<xs:enumeration value="hours"/>
+					<xs:enumeration value="days"/>
+					<xs:enumeration value="months"/>
+					<xs:enumeration value="years"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
 		</xs:sequence>
 	</xs:complexType>
 
@@ -243,10 +264,10 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:complexType name="MeanAbsorbedDoseInVOI">
+	<xs:complexType name="AbsorbedDoseInVOI">
 		<xs:sequence>
-				<xs:element name="MeanAbsorbedDoseInVOIValue" type="xs:float"/>
-				<xs:element name="MeanAbsorbedDoseInVOIUnit" type="xs:string"/>
+				<xs:element name="AbsorbedDoseInVOIValue" type="xs:float"/>
+				<xs:element name="AbsorbedDoseInVOIUnit" type="xs:string"/>
 				<xs:element name="VOIIdentifier" type="xs:string"/>
 		</xs:sequence>
 	</xs:complexType>
@@ -292,6 +313,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 					<xs:enumeration value="TIFF format embedding imageJ contours"/>
 					<xs:enumeration value="zipped pseudo DICOM ImpactMC"/>
 					<xs:enumeration value="GIF format embedding imageJ contours"/>
+					<xs:enumeration value="NRRD format"/>
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:element>

@@ -3,7 +3,7 @@
 //-------------------------
 ThreeDimDosimetrySlide2workflow
 {
- 1,n-SPECTDataAcquisitionAndReconstruction-SPECTDataAcquisitionAndReconstruction
+ 0,n-SPECTDataAcquisitionAndReconstruction-SPECTDataAcquisitionAndReconstruction
  1,n-VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation-VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation
  1-DoseRateCurveFitVOITimeIntegration-DoseRateCurveFitVOITimeIntegration
  0,1-RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry-RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry
@@ -89,6 +89,8 @@ EnergyDepositionRateCalculationIn3DDosimetry
 // Corresponding VOIs At TimePoint need to be retrieved
  1-DICOMData-CTReconResampledOnNMReferenceUsed
  1-DICOMData-NMTomoReconUsed
+ 1-string-CalculationAlgorithmUsed:local energy deposition/FFT convolution/homogeneous matrix convolution/heterogeneous matrix convolution/Monte Carlo
+ 0,1-KernelLimitForConvolutions-KernelLimitForConvolutionsUsed
  1-NonDICOMData-ThreeDimEnergyDepositionRateMatrixAtTimePointProduced
 }
 
@@ -114,7 +116,7 @@ DoseRateCurveFitVOITimeIntegration
 // Corresponding Absorbed Dose Rate for all VOIs and all TimePoints need to be retrieved
  1-string-PKAssessmentMethodUsed
 // to be provided as a closed list of possible values
- 1,n-MeanAbsorbedDoseInVOI-MeanAbsorbedDoseInVOIProduced
+ 1,n-AbsorbedDoseInVOI-AbsorbedDoseInVOIProduced
 }
 
 RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry
@@ -135,12 +137,10 @@ RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry
 
 TimePointDescription
 {
- 1-string-TimePointCategory
-// to be provided as a closed list of possible values
+ 1-string-TimePointCategory:168h plus or minus 24h post RAIT timepoint/96h plus or minus 12h post RAIT timepoint/72h plus or minus 12h post RAIT timepoint/48h plus or minus 4h post RAIT timepoint/24h plus or minus 4h post RAIT timepoint/6h plus or minus 2h post RAIT timepoint
  1-string-TimePointIdentifier
  1-integer-TimePointDistanceFromReferenceEventValue
- 1-string-TimePointDistanceFromReferenceEventUnit
-// to be provided as a closed list of possible values
+ 1-string-TimePointDistanceFromReferenceEventUnit:minutes/hours/days/months/years
 }
 
 ProcessExecutionContext
@@ -209,6 +209,7 @@ MassPerVOIAtTimePoint
  1-string-MassUnit
 // to be provided as a closed list of possible values
  1-string-VOIIdentifier
+ 1-string-TimePointIdentifier
 }
 
 DataActivityPerVOIAtTimePoint
@@ -220,14 +221,6 @@ DataActivityPerVOIAtTimePoint
  1-string-TimePointIdentifier
 }
 
-AdministeredActivity
-{
- 1-float-AdministeredActivityValue
- 1-string-AdministeredActivityUnit
-// to be provided as a closed list of possible values
- 1-string-Timestamp
-// to be replaced by a structured timestamp
-}
 
 AbsorbedDoseRatePerVOIAtTimePoint
 {
@@ -238,12 +231,18 @@ AbsorbedDoseRatePerVOIAtTimePoint
  1-string-TimePointIdentifier
 }
 
-MeanAbsorbedDoseInVOI
+AbsorbedDoseInVOI
 {
- 1-float-MeanAbsorbedDoseInVOIValue
- 1-string-MeanAbsorbedDoseInVOIUnit
+ 1-float-AbsorbedDoseInVOIValue
+ 1-string-AbsorbedDoseInVOIUnit
 // to be provided as a closed list of possible values
  1-string-VOIIdentifier
+}
+
+KernelLimitForConvolutions
+{
+ 1-float-KernelLimitForConvolutionsValue
+ 1-string-KernelLimitForConvolutionsUnit:millimeter/centimeter
 }
 
 DICOMData
@@ -255,7 +254,7 @@ DICOMData
 NonDICOMData
 {
  1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map
- 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours
+ 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format
  1,n-string-NonDICOMDataFileName
  0,1-string-FHIRIdentifier
 }

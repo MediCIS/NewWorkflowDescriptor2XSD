@@ -15,17 +15,17 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour PatientOrganMassInHybridDosimetry complex type.
+ * <p>Classe Java pour AbsorbedDoseInVOI complex type.
  * 
  * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
- * &lt;complexType name="PatientOrganMassInHybridDosimetry">
+ * &lt;complexType name="AbsorbedDoseInVOI">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="PatientOrganMassValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
- *         &lt;element name="PatientOrganMassUnit" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="AbsorbedDoseInVOIValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
+ *         &lt;element name="AbsorbedDoseInVOIUnit" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="VOIIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -36,58 +36,58 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "PatientOrganMassInHybridDosimetry", propOrder = {
-    "patientOrganMassValue",
-    "patientOrganMassUnit",
+@XmlType(name = "AbsorbedDoseInVOI", propOrder = {
+    "absorbedDoseInVOIValue",
+    "absorbedDoseInVOIUnit",
     "voiIdentifier"
 })
-public class PatientOrganMassInHybridDosimetry {
+public class AbsorbedDoseInVOI {
 
-    @XmlElement(name = "PatientOrganMassValue")
-    protected float patientOrganMassValue;
-    @XmlElement(name = "PatientOrganMassUnit", required = true)
-    protected String patientOrganMassUnit;
+    @XmlElement(name = "AbsorbedDoseInVOIValue")
+    protected float absorbedDoseInVOIValue;
+    @XmlElement(name = "AbsorbedDoseInVOIUnit", required = true)
+    protected String absorbedDoseInVOIUnit;
     @XmlElement(name = "VOIIdentifier", required = true)
     protected String voiIdentifier;
 
     /**
-     * Obtient la valeur de la propriété patientOrganMassValue.
+     * Obtient la valeur de la propriété absorbedDoseInVOIValue.
      * 
      */
-    public float getPatientOrganMassValue() {
-        return patientOrganMassValue;
+    public float getAbsorbedDoseInVOIValue() {
+        return absorbedDoseInVOIValue;
     }
 
     /**
-     * Définit la valeur de la propriété patientOrganMassValue.
+     * Définit la valeur de la propriété absorbedDoseInVOIValue.
      * 
      */
-    public void setPatientOrganMassValue(float value) {
-        this.patientOrganMassValue = value;
+    public void setAbsorbedDoseInVOIValue(float value) {
+        this.absorbedDoseInVOIValue = value;
     }
 
     /**
-     * Obtient la valeur de la propriété patientOrganMassUnit.
+     * Obtient la valeur de la propriété absorbedDoseInVOIUnit.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getPatientOrganMassUnit() {
-        return patientOrganMassUnit;
+    public String getAbsorbedDoseInVOIUnit() {
+        return absorbedDoseInVOIUnit;
     }
 
     /**
-     * Définit la valeur de la propriété patientOrganMassUnit.
+     * Définit la valeur de la propriété absorbedDoseInVOIUnit.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setPatientOrganMassUnit(String value) {
-        this.patientOrganMassUnit = value;
+    public void setAbsorbedDoseInVOIUnit(String value) {
+        this.absorbedDoseInVOIUnit = value;
     }
 
     /**

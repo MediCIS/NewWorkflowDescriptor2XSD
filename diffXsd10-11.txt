@@ -1,0 +1,106 @@
+2c2
+< <!--VersionSchemas : 011-->
+---
+> <!--VersionSchemas : 022-->
+43c43
+< 				<xs:element name="SPECTDataAcquisitionAndReconstruction" type="irdbb:SPECTDataAcquisitionAndReconstruction" minOccurs="0" maxOccurs="unbounded" />
+---
+> 				<xs:element name="SPECTDataAcquisitionAndReconstruction" type="irdbb:SPECTDataAcquisitionAndReconstruction" maxOccurs="unbounded" />
+104c104
+< 				<xs:element name="SPECTDataAcquisitionAndReconstruction" type="irdbb:SPECTDataAcquisitionAndReconstruction" minOccurs="0" maxOccurs="unbounded" />
+---
+> 				<xs:element name="SPECTDataAcquisitionAndReconstruction" type="irdbb:SPECTDataAcquisitionAndReconstruction" maxOccurs="unbounded" />
+472d471
+< 					<xs:enumeration value="NRRD format"/>
+716c715
+< 				<xs:element name="AbsorbedDoseInVOIProduced" type="irdbb:AbsorbedDoseInVOI" maxOccurs="unbounded" />
+---
+> 				<xs:element name="MeanAbsorbedDoseInVOIProduced" type="irdbb:MeanAbsorbedDoseInVOI" maxOccurs="unbounded" />
+734,745c733
+< 		<xs:element name="TimePointCategory">
+< 			<xs:simpleType>
+< 				<xs:restriction base="xs:string">
+< 					<xs:enumeration value="168h plus or minus 24h post RAIT timepoint"/>
+< 					<xs:enumeration value="96h plus or minus 12h post RAIT timepoint"/>
+< 					<xs:enumeration value="72h plus or minus 12h post RAIT timepoint"/>
+< 					<xs:enumeration value="48h plus or minus 4h post RAIT timepoint"/>
+< 					<xs:enumeration value="24h plus or minus 4h post RAIT timepoint"/>
+< 					<xs:enumeration value="6h plus or minus 2h post RAIT timepoint"/>
+< 				</xs:restriction>
+< 			</xs:simpleType>
+< 		</xs:element>
+---
+> 				<xs:element name="TimePointCategory" type="xs:string"/>
+748,758c736
+< 		<xs:element name="TimePointDistanceFromReferenceEventUnit">
+< 			<xs:simpleType>
+< 				<xs:restriction base="xs:string">
+< 					<xs:enumeration value="minutes"/>
+< 					<xs:enumeration value="hours"/>
+< 					<xs:enumeration value="days"/>
+< 					<xs:enumeration value="months"/>
+< 					<xs:enumeration value="years"/>
+< 				</xs:restriction>
+< 			</xs:simpleType>
+< 		</xs:element>
+---
+> 				<xs:element name="TimePointDistanceFromReferenceEventUnit" type="xs:string"/>
+794c772
+< 	<xs:complexType name="AbsorbedDoseInVOI">
+---
+> 	<xs:complexType name="MeanAbsorbedDoseInVOI">
+796,797c774,775
+< 				<xs:element name="AbsorbedDoseInVOIValue" type="xs:float"/>
+< 				<xs:element name="AbsorbedDoseInVOIUnit" type="xs:string"/>
+---
+> 				<xs:element name="MeanAbsorbedDoseInVOIValue" type="xs:float"/>
+> 				<xs:element name="MeanAbsorbedDoseInVOIUnit" type="xs:string"/>
+1021,1022c999,1000
+< 				<xs:element name="SPECTAcqCTAcqAndReconstruction" type="irdbb:SPECTAcqCTAcqAndReconstruction" minOccurs="0" />
+< 				<xs:element name="SPECTReconstruction" type="irdbb:SPECTReconstruction" minOccurs="0" />
+---
+> 				<xs:element name="SPECTAcqCTAcqAndReconstruction" type="irdbb:SPECTAcqCTAcqAndReconstruction"/>
+> 				<xs:element name="SPECTReconstruction" type="irdbb:SPECTReconstruction"/>
+1156,1163d1133
+< 	<xs:complexType name="MeanAbsorbedDoseInVOI">
+< 		<xs:sequence>
+< 				<xs:element name="MeanAbsorbedDoseInVOIValue" type="xs:float"/>
+< 				<xs:element name="MeanAbsorbedDoseInVOIUnit" type="xs:string"/>
+< 				<xs:element name="VOIIdentifier" type="xs:string"/>
+< 		</xs:sequence>
+< 	</xs:complexType>
+< 
+1195,1206d1164
+< 		<xs:element name="CalculationAlgorithmUsed">
+< 			<xs:simpleType>
+< 				<xs:restriction base="xs:string">
+< 					<xs:enumeration value="local energy deposition"/>
+< 					<xs:enumeration value="FFT convolution"/>
+< 					<xs:enumeration value="homogeneous matrix convolution"/>
+< 					<xs:enumeration value="heterogeneous matrix convolution"/>
+< 					<xs:enumeration value="Monte Carlo"/>
+< 				</xs:restriction>
+< 			</xs:simpleType>
+< 		</xs:element>
+< 				<xs:element name="KernelLimitForConvolutionsUsed" type="irdbb:KernelLimitForConvolutions" minOccurs="0" />
+1228c1186
+< 				<xs:element name="AbsorbedDoseInVOIProduced" type="irdbb:AbsorbedDoseInVOI" maxOccurs="unbounded" />
+---
+> 				<xs:element name="MeanAbsorbedDoseInVOIProduced" type="irdbb:MeanAbsorbedDoseInVOI" maxOccurs="unbounded" />
+1237d1194
+< 				<xs:element name="TimePointIdentifier" type="xs:string"/>
+1249,1262d1205
+< 
+< 	<xs:complexType name="KernelLimitForConvolutions">
+< 		<xs:sequence>
+< 				<xs:element name="KernelLimitForConvolutionsValue" type="xs:float"/>
+< 		<xs:element name="KernelLimitForConvolutionsUnit">
+< 			<xs:simpleType>
+< 				<xs:restriction base="xs:string">
+< 					<xs:enumeration value="millimeter"/>
+< 					<xs:enumeration value="centimeter"/>
+< 				</xs:restriction>
+< 			</xs:simpleType>
+< 		</xs:element>
+< 		</xs:sequence>
+< 	</xs:complexType>

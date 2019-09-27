@@ -21,8 +21,8 @@ PlanarDataAcquisitionAndProcessing
 
 SPECTDataAcquisitionAndProcessing
 {
- 1-SPECTAcqCTAcqAndReconstruction-SPECTAcqCTAcqAndReconstruction
- 1-SPECTReconstruction-SPECTReconstruction
+ 0,1-SPECTAcqCTAcqAndReconstruction-SPECTAcqCTAcqAndReconstruction
+ 0,1-SPECTReconstruction-SPECTReconstruction
  1-RegistrationVOISegmentation-RegistrationVOISegmentation
  1-VOIActivityDetermination-VOIActivityDetermination
 }
@@ -252,12 +252,10 @@ RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry
 
 TimePointDescription
 {
- 1-string-TimePointCategory
-// to be provided as a closed list of possible values
+ 1-string-TimePointCategory:168h plus or minus 24h post RAIT timepoint/96h plus or minus 12h post RAIT timepoint/72h plus or minus 12h post RAIT timepoint/48h plus or minus 4h post RAIT timepoint/24h plus or minus 4h post RAIT timepoint/6h plus or minus 2h post RAIT timepoint
  1-string-TimePointIdentifier
  1-integer-TimePointDistanceFromReferenceEventValue
- 1-string-TimePointDistanceFromReferenceEventUnit
-// to be provided as a closed list of possible values
+ 1-string-TimePointDistanceFromReferenceEventUnit:minutes/hours/days/months/years
 }
 
 ProcessExecutionContext
@@ -419,7 +417,7 @@ DICOMData
 NonDICOMData
 {
  1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map
- 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours
+ 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format
  1,n-string-NonDICOMDataFileName
  0,1-string-FHIRIdentifier
 }

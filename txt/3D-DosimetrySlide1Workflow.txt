@@ -3,7 +3,7 @@
 //-------------------------
 ThreeDimDosimetrySlide1workflow
 {
- 1,n-SPECTDataAcquisitionAndReconstruction-SPECTDataAcquisitionAndReconstruction
+ 0,n-SPECTDataAcquisitionAndReconstruction-SPECTDataAcquisitionAndReconstruction
  1-RegistrationVOISegmentationAndPropagation-RegistrationVOISegmentationAndPropagation
  1,n-VOIActivityDetermination-VOIActivityDetermination
  1,n-TimeActivityCurveFitIn3DDosimetry-TimeActivityCurveFitIn3DDosimetry
@@ -97,7 +97,7 @@ AbsorbedDoseCalculationInVOI
  1,n-DICOMData-NMTomoReconResampledOnCommonReferenceUsed
  1-string-AbsorbedDoseCalculationMethodUsed
 // to be provided as a closed list of possible values
- 1,n-MeanAbsorbedDoseInVOI-MeanAbsorbedDoseInVOIProduced
+ 1,n-AbsorbedDoseInVOI-AbsorbedDoseInVOIProduced
  0,n-NonDICOMData-VoxelAbsorbedDoseMapProduced
 //is it actually optional  ? is it non DICOM ?
 }
@@ -122,12 +122,10 @@ RadioBiologicalCalculationIn3DSlide1Dosimetry
 
 TimePointDescription
 {
- 1-string-TimePointCategory
-// to be provided as a closed list of possible values
+ 1-string-TimePointCategory:168h plus or minus 24h post RAIT timepoint/96h plus or minus 12h post RAIT timepoint/72h plus or minus 12h post RAIT timepoint/48h plus or minus 4h post RAIT timepoint/24h plus or minus 4h post RAIT timepoint/6h plus or minus 2h post RAIT timepoint
  1-string-TimePointIdentifier
  1-integer-TimePointDistanceFromReferenceEventValue
- 1-string-TimePointDistanceFromReferenceEventUnit
-// to be provided as a closed list of possible values
+ 1-string-TimePointDistanceFromReferenceEventUnit:minutes/hours/days/months/years
 }
 
 ProcessExecutionContext
@@ -207,10 +205,10 @@ AdministeredActivity
 // to be replaced by a structured timestamp
 }
 
-MeanAbsorbedDoseInVOI
+AbsorbedDoseInVOI
 {
- 1-float-MeanAbsorbedDoseInVOIValue
- 1-string-MeanAbsorbedDoseInVOIUnit
+ 1-float-AbsorbedDoseInVOIValue
+ 1-string-AbsorbedDoseInVOIUnit
 // to be provided as a closed list of possible values
  1-string-VOIIdentifier
 }
@@ -243,7 +241,7 @@ DICOMData
 NonDICOMData
 {
  1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map
- 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours
+ 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format
  1,n-string-NonDICOMDataFileName
  0,1-string-FHIRIdentifier
 }

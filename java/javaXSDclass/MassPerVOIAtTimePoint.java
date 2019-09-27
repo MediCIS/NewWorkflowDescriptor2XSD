@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.09.23 à 03:50:22 PM CEST 
+// Généré le : 2019.09.27 à 11:41:39 AM CEST 
 //
 
 
@@ -27,6 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="MassValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
  *         &lt;element name="MassUnit" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="VOIIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="TimePointIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -39,7 +40,8 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "MassPerVOIAtTimePoint", propOrder = {
     "massValue",
     "massUnit",
-    "voiIdentifier"
+    "voiIdentifier",
+    "timePointIdentifier"
 })
 public class MassPerVOIAtTimePoint {
 
@@ -49,6 +51,8 @@ public class MassPerVOIAtTimePoint {
     protected String massUnit;
     @XmlElement(name = "VOIIdentifier", required = true)
     protected String voiIdentifier;
+    @XmlElement(name = "TimePointIdentifier", required = true)
+    protected String timePointIdentifier;
 
     /**
      * Obtient la valeur de la propriété massValue.
@@ -112,6 +116,30 @@ public class MassPerVOIAtTimePoint {
      */
     public void setVOIIdentifier(String value) {
         this.voiIdentifier = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété timePointIdentifier.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getTimePointIdentifier() {
+        return timePointIdentifier;
+    }
+
+    /**
+     * Définit la valeur de la propriété timePointIdentifier.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setTimePointIdentifier(String value) {
+        this.timePointIdentifier = value;
     }
 
 }

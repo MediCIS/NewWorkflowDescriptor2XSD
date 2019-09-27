@@ -46,8 +46,8 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="SPECTDataAcquisitionAndProcessing">
 		<xs:sequence>
-				<xs:element name="SPECTAcqCTAcqAndReconstruction" type="irdbb:SPECTAcqCTAcqAndReconstruction"/>
-				<xs:element name="SPECTReconstruction" type="irdbb:SPECTReconstruction"/>
+				<xs:element name="SPECTAcqCTAcqAndReconstruction" type="irdbb:SPECTAcqCTAcqAndReconstruction" minOccurs="0" />
+				<xs:element name="SPECTReconstruction" type="irdbb:SPECTReconstruction" minOccurs="0" />
 				<xs:element name="RegistrationVOISegmentation" type="irdbb:RegistrationVOISegmentation"/>
 				<xs:element name="VOIActivityDetermination" type="irdbb:VOIActivityDetermination"/>
 		</xs:sequence>
@@ -257,10 +257,31 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="TimePointDescription">
 		<xs:sequence>
-				<xs:element name="TimePointCategory" type="xs:string"/>
+		<xs:element name="TimePointCategory">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="168h plus or minus 24h post RAIT timepoint"/>
+					<xs:enumeration value="96h plus or minus 12h post RAIT timepoint"/>
+					<xs:enumeration value="72h plus or minus 12h post RAIT timepoint"/>
+					<xs:enumeration value="48h plus or minus 4h post RAIT timepoint"/>
+					<xs:enumeration value="24h plus or minus 4h post RAIT timepoint"/>
+					<xs:enumeration value="6h plus or minus 2h post RAIT timepoint"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
 				<xs:element name="TimePointIdentifier" type="xs:string"/>
 				<xs:element name="TimePointDistanceFromReferenceEventValue" type="xs:integer"/>
-				<xs:element name="TimePointDistanceFromReferenceEventUnit" type="xs:string"/>
+		<xs:element name="TimePointDistanceFromReferenceEventUnit">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="minutes"/>
+					<xs:enumeration value="hours"/>
+					<xs:enumeration value="days"/>
+					<xs:enumeration value="months"/>
+					<xs:enumeration value="years"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
 		</xs:sequence>
 	</xs:complexType>
 
@@ -465,6 +486,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 					<xs:enumeration value="TIFF format embedding imageJ contours"/>
 					<xs:enumeration value="zipped pseudo DICOM ImpactMC"/>
 					<xs:enumeration value="GIF format embedding imageJ contours"/>
+					<xs:enumeration value="NRRD format"/>
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:element>
