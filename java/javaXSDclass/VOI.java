@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.09.27 à 12:00:56 PM CEST 
+// Généré le : 2019.10.22 à 02:34:53 PM CEST 
 //
 
 
@@ -27,19 +27,6 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="VOIIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="OrganOrTissue">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="bone"/>
- *               &lt;enumeration value="breast"/>
- *               &lt;enumeration value="esophagus"/>
- *               &lt;enumeration value="heart"/>
- *               &lt;enumeration value="lungs"/>
- *               &lt;enumeration value="skin"/>
- *               &lt;enumeration value="human body"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
  *         &lt;element name="DICOMVOIContainer" type="{https://www.irdbb-medirad.com}DICOMData" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="NonDICOMVOIContainer" type="{https://www.irdbb-medirad.com}NonDICOMData" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
@@ -53,7 +40,6 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "VOI", propOrder = {
     "voiIdentifier",
-    "organOrTissue",
     "dicomvoiContainer",
     "nonDICOMVOIContainer"
 })
@@ -61,8 +47,6 @@ public class VOI {
 
     @XmlElement(name = "VOIIdentifier", required = true)
     protected String voiIdentifier;
-    @XmlElement(name = "OrganOrTissue", required = true)
-    protected String organOrTissue;
     @XmlElement(name = "DICOMVOIContainer")
     protected List<DICOMData> dicomvoiContainer;
     @XmlElement(name = "NonDICOMVOIContainer")
@@ -90,30 +74,6 @@ public class VOI {
      */
     public void setVOIIdentifier(String value) {
         this.voiIdentifier = value;
-    }
-
-    /**
-     * Obtient la valeur de la propriété organOrTissue.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getOrganOrTissue() {
-        return organOrTissue;
-    }
-
-    /**
-     * Définit la valeur de la propriété organOrTissue.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setOrganOrTissue(String value) {
-        this.organOrTissue = value;
     }
 
     /**

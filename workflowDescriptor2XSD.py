@@ -17,7 +17,7 @@ inside=False
 key=""
 content=""
 
-nVersion = sys.argv[2]
+nVersion = sys.argv[3]
 #nVersion = "001"
 if len(nVersion)==1:
     nVersion="00"+nVersion

@@ -1,0 +1,20 @@
+2c2
+< <!--VersionSchemas : 014-->
+---
+> <!--VersionSchemas : 013-->
+627a628,640
+> 		<xs:element name="OrganOrTissue">
+> 			<xs:simpleType>
+> 				<xs:restriction base="xs:string">
+> 					<xs:enumeration value="bone"/>
+> 					<xs:enumeration value="breast"/>
+> 					<xs:enumeration value="esophagus"/>
+> 					<xs:enumeration value="heart"/>
+> 					<xs:enumeration value="lungs"/>
+> 					<xs:enumeration value="skin"/>
+> 					<xs:enumeration value="human body"/>
+> 				</xs:restriction>
+> 			</xs:simpleType>
+> 		</xs:element>
+955a969
+> 				<xs:element name="OrganOrTissue" type="xs:string"/>

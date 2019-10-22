@@ -1,0 +1,29 @@
+2c2
+< <!--VersionSchemas : 012-->
+---
+> <!--VersionSchemas : 011-->
+280a281
+> 					<xs:enumeration value="radium223"/>
+282,283d282
+< 					<xs:enumeration value="terbium161"/>
+< 					<xs:enumeration value="flourine18"/>
+317a317
+> 					<xs:enumeration value="radium223"/>
+319,320d318
+< 					<xs:enumeration value="terbium161"/>
+< 					<xs:enumeration value="flourine18"/>
+352a351
+> 					<xs:enumeration value="radium223"/>
+354,355d352
+< 					<xs:enumeration value="terbium161"/>
+< 					<xs:enumeration value="flourine18"/>
+413a411
+> 					<xs:enumeration value="radium223"/>
+415,416d412
+< 					<xs:enumeration value="terbium161"/>
+< 					<xs:enumeration value="flourine18"/>
+433a430
+> 					<xs:enumeration value="radium223"/>
+435,436d431
+< 					<xs:enumeration value="terbium161"/>
+< 					<xs:enumeration value="flourine18"/>

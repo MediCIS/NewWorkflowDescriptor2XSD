@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : ../xsdSimple/calibrationWorkflow.txt-->
+<!--VersionSchemas : 014-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -197,8 +197,9 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 					<xs:enumeration value="iodine131"/>
 					<xs:enumeration value="lutetium177"/>
 					<xs:enumeration value="yttrium90"/>
-					<xs:enumeration value="radium223"/>
 					<xs:enumeration value="rhenium188"/>
+					<xs:enumeration value="terbium161"/>
+					<xs:enumeration value="flourine18"/>
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:element>
@@ -233,8 +234,9 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 					<xs:enumeration value="iodine131"/>
 					<xs:enumeration value="lutetium177"/>
 					<xs:enumeration value="yttrium90"/>
-					<xs:enumeration value="radium223"/>
 					<xs:enumeration value="rhenium188"/>
+					<xs:enumeration value="terbium161"/>
+					<xs:enumeration value="flourine18"/>
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:element>
@@ -267,8 +269,9 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 					<xs:enumeration value="iodine131"/>
 					<xs:enumeration value="lutetium177"/>
 					<xs:enumeration value="yttrium90"/>
-					<xs:enumeration value="radium223"/>
 					<xs:enumeration value="rhenium188"/>
+					<xs:enumeration value="terbium161"/>
+					<xs:enumeration value="flourine18"/>
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:element>
@@ -327,8 +330,9 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 					<xs:enumeration value="iodine131"/>
 					<xs:enumeration value="lutetium177"/>
 					<xs:enumeration value="yttrium90"/>
-					<xs:enumeration value="radium223"/>
 					<xs:enumeration value="rhenium188"/>
+					<xs:enumeration value="terbium161"/>
+					<xs:enumeration value="flourine18"/>
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:element>
@@ -346,8 +350,9 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 					<xs:enumeration value="iodine131"/>
 					<xs:enumeration value="lutetium177"/>
 					<xs:enumeration value="yttrium90"/>
-					<xs:enumeration value="radium223"/>
 					<xs:enumeration value="rhenium188"/>
+					<xs:enumeration value="terbium161"/>
+					<xs:enumeration value="flourine18"/>
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:element>
