@@ -50,3 +50,6 @@ done
 cd "$( dirname "${BASH_SOURCE[0]}" )"
 
 diff xsd/nonDicomFileSetDescriptor.xsd oldNonDicomFileSetDescriptor.xsd > diffXsd$oldVersion-$version.txt
+
+# 6 Compress XSD simple Files
+tar -czf XSD_$version.tar.gz xsdSimple/*

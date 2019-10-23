@@ -277,7 +277,7 @@ CTNumberCalibrationCurveReference
 NMRelevantCalibrationReference
 {
  1-string-ReferenceCalibrationDate
- 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/rhenium188/terbium161/flourine18
+ 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/rhenium188/terbium161/fluorine18
 }
 
 CountsPerROIAtTimePoint
