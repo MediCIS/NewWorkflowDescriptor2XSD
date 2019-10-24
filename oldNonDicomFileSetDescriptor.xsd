@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 013-->
+<!--VersionSchemas : 014-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -625,19 +625,6 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="VOI">
 		<xs:sequence>
 				<xs:element name="VOIIdentifier" type="xs:string"/>
-		<xs:element name="OrganOrTissue">
-			<xs:simpleType>
-				<xs:restriction base="xs:string">
-					<xs:enumeration value="bone"/>
-					<xs:enumeration value="breast"/>
-					<xs:enumeration value="esophagus"/>
-					<xs:enumeration value="heart"/>
-					<xs:enumeration value="lungs"/>
-					<xs:enumeration value="skin"/>
-					<xs:enumeration value="human body"/>
-				</xs:restriction>
-			</xs:simpleType>
-		</xs:element>
 				<xs:element name="DICOMVOIContainer" type="irdbb:DICOMData" minOccurs="0" maxOccurs="unbounded" />
 				<xs:element name="NonDICOMVOIContainer" type="irdbb:NonDICOMData" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
@@ -966,7 +953,6 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="ROI">
 		<xs:sequence>
 				<xs:element name="ROIIdentifier" type="xs:string"/>
-				<xs:element name="OrganOrTissue" type="xs:string"/>
 				<xs:element name="DICOMROIContainer" type="irdbb:DICOMData" minOccurs="0" />
 				<xs:element name="NonDICOMROIContainer" type="irdbb:NonDICOMData" minOccurs="0" />
 		</xs:sequence>
