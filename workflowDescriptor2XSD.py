@@ -202,7 +202,7 @@ for key in dico:
                 nombre=line.split("-")[0]
                 listeTypes.append(typeName)
                 if name != "" and name.replace("\n","").replace(" ","") != "":
-                    if ":" in name and "/" in name:
+                    if ":" in name in name: #and "/" 
                         sousObjets+=generateElementRestricted(nombre, name, typeName)
                     else:
                         sousObjets+=generateSimpleObject(nombre, name, typeName)+"\n"

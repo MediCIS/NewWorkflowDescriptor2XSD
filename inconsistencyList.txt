@@ -1,2 +1,0 @@
-VOI : WP2subtask212WorkflowData.txt, 3D-DosimetrySlide1Workflow.txt, Hybrid-DosimetryWorkflow.txt, 3D-DosimetrySlide2Workflow.txt
-/Users/marinebrenet/Documents/workflowDescriptor2XSD/XSD_15.tar.gz

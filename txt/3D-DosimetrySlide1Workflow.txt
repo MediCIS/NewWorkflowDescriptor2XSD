@@ -54,8 +54,10 @@ RegistrationVOISegmentationAndPropagation
 // to be replaced by structured items
  1,n-CountsPerVOIAtTimePoint-CountsPerVOIAtTimePointProduced
  1,n-VOI-VOIProduced
- 1,n-DICOMData-CTReconResampledOnCommonReferenceProduced
- 1,n-DICOMData-NMTomoReconResampledOnCommonReferenceProduced
+ 0,n-DICOMData-CTReconResampledOnCommonReferenceProduced
+ 0,n-NonDICOMData-CTReconResampledOnCommonReferenceProducedNonDICOM
+ 0,n-DICOMData-NMTomoReconResampledOnCommonReferenceProduced
+ 0,n-NonDICOMData-NMTomoReconResampledOnCommonReferenceProducedNonDICOM
 }
 
 VOIActivityDetermination
