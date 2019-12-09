@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.11.14 à 02:58:49 PM CET 
+// Généré le : 2019.12.08 à 10:03:35 PM CET 
 //
 
 
@@ -40,7 +40,7 @@ import javax.xml.bind.annotation.XmlType;
  *           &lt;/complexType>
  *         &lt;/element>
  *         &lt;element name="PatientId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="CalibrationWorkflow" maxOccurs="unbounded" minOccurs="0">
+ *         &lt;element name="CalibrationWorkflow">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -52,7 +52,7 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;/complexContent>
  *           &lt;/complexType>
  *         &lt;/element>
- *         &lt;element name="WP2subtask212WorkflowData" maxOccurs="unbounded" minOccurs="0">
+ *         &lt;element name="WP2subtask212WorkflowData">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -64,39 +64,28 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;/complexContent>
  *           &lt;/complexType>
  *         &lt;/element>
- *         &lt;element name="ThreeDimDosimetrySlide1workflow" maxOccurs="unbounded" minOccurs="0">
+ *         &lt;element name="ThreeDimDosimetrySlide1workflow">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element name="SPECTDataAcquisitionAndReconstruction" type="{https://www.irdbb-medirad.com}SPECTDataAcquisitionAndReconstruction" maxOccurs="unbounded" minOccurs="0"/>
+ *                   &lt;element name="SPECTDataAcquisitionAndReconstruction" type="{https://www.irdbb-medirad.com}SPECTDataAcquisitionAndReconstruction"/>
  *                   &lt;element name="RegistrationVOISegmentationAndPropagation" type="{https://www.irdbb-medirad.com}RegistrationVOISegmentationAndPropagation"/>
- *                   &lt;element name="VOIActivityDetermination" type="{https://www.irdbb-medirad.com}VOIActivityDetermination" maxOccurs="unbounded"/>
- *                   &lt;element name="TimeActivityCurveFitIn3DDosimetry" type="{https://www.irdbb-medirad.com}TimeActivityCurveFitIn3DDosimetry" maxOccurs="unbounded"/>
+ *                   &lt;element name="VOIActivityDetermination" type="{https://www.irdbb-medirad.com}VOIActivityDetermination"/>
+ *                   &lt;element name="TimeActivityCurveFitIn3DDosimetry" type="{https://www.irdbb-medirad.com}TimeActivityCurveFitIn3DDosimetry"/>
  *                   &lt;element name="AbsorbedDoseCalculationInVOI" type="{https://www.irdbb-medirad.com}AbsorbedDoseCalculationInVOI"/>
- *                   &lt;element name="RadioBiologicalCalculationIn3DSlide1Dosimetry" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculationIn3DSlide1Dosimetry" minOccurs="0"/>
+ *                   &lt;element name="RadioBiologicalCalculationIn3DSlide1Dosimetry" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculationIn3DSlide1Dosimetry"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
  *           &lt;/complexType>
  *         &lt;/element>
- *         &lt;element name="SPECTRecoveryCoefficientCurve" maxOccurs="unbounded" minOccurs="0">
+ *         &lt;element name="TwoDimDosimetryworkflow">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element name="SPECTRecoveryCoefficientCurve" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="TwoDimDosimetryworkflow" maxOccurs="unbounded" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="PlanarDataAcquisitionAndProcessing" type="{https://www.irdbb-medirad.com}PlanarDataAcquisitionAndProcessing" maxOccurs="unbounded"/>
+ *                   &lt;element name="PlanarDataAcquisitionAndProcessingContainer" type="{https://www.irdbb-medirad.com}PlanarDataAcquisitionAndProcessingContainer"/>
  *                   &lt;element name="TwoDimDosimetryViaAbsorbedDoseRateCalculation" type="{https://www.irdbb-medirad.com}TwoDimDosimetryViaAbsorbedDoseRateCalculation" minOccurs="0"/>
  *                   &lt;element name="TwoDimDosimetryViaTimeActivityCurveFit" type="{https://www.irdbb-medirad.com}TwoDimDosimetryViaTimeActivityCurveFit" minOccurs="0"/>
  *                   &lt;element name="RadioBiologicalCalculation" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculation" minOccurs="0"/>
@@ -105,30 +94,7 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;/complexContent>
  *           &lt;/complexType>
  *         &lt;/element>
- *         &lt;element name="ActualPlanarCalibrationFactor-ActualPlanarCalibrationFactor" maxOccurs="unbounded" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="PlanarCalibrationFactorValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
- *                   &lt;element name="PlanarCalibrationFactorUnit" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="PlanarCalibrationFactorReference" maxOccurs="unbounded" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="PlanarCalibrationFactorDate" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="HybridDosimetryworkflow" maxOccurs="unbounded" minOccurs="0">
+ *         &lt;element name="HybridDosimetryworkflow">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -143,7 +109,7 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;/complexContent>
  *           &lt;/complexType>
  *         &lt;/element>
- *         &lt;element name="ThreeDimDosimetrySlide2workflow" maxOccurs="unbounded" minOccurs="0">
+ *         &lt;element name="ThreeDimDosimetrySlide2workflow">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -172,10 +138,7 @@ import javax.xml.bind.annotation.XmlType;
     "calibrationWorkflow",
     "wp2Subtask212WorkflowData",
     "threeDimDosimetrySlide1Workflow",
-    "spectRecoveryCoefficientCurve",
     "twoDimDosimetryworkflow",
-    "actualPlanarCalibrationFactorActualPlanarCalibrationFactor",
-    "planarCalibrationFactorReference",
     "hybridDosimetryworkflow",
     "threeDimDosimetrySlide2Workflow"
 })
@@ -186,24 +149,18 @@ public class NonDicomFileSetDescriptor {
     protected NonDicomFileSetDescriptor.ReferencedClinicalResearchStudy referencedClinicalResearchStudy;
     @XmlElement(name = "PatientId", required = true)
     protected String patientId;
-    @XmlElement(name = "CalibrationWorkflow")
-    protected List<NonDicomFileSetDescriptor.CalibrationWorkflow> calibrationWorkflow;
-    @XmlElement(name = "WP2subtask212WorkflowData")
-    protected List<NonDicomFileSetDescriptor.WP2Subtask212WorkflowData> wp2Subtask212WorkflowData;
-    @XmlElement(name = "ThreeDimDosimetrySlide1workflow")
-    protected List<NonDicomFileSetDescriptor.ThreeDimDosimetrySlide1Workflow> threeDimDosimetrySlide1Workflow;
-    @XmlElement(name = "SPECTRecoveryCoefficientCurve")
-    protected List<NonDicomFileSetDescriptor.SPECTRecoveryCoefficientCurve> spectRecoveryCoefficientCurve;
-    @XmlElement(name = "TwoDimDosimetryworkflow")
-    protected List<NonDicomFileSetDescriptor.TwoDimDosimetryworkflow> twoDimDosimetryworkflow;
-    @XmlElement(name = "ActualPlanarCalibrationFactor-ActualPlanarCalibrationFactor")
-    protected List<NonDicomFileSetDescriptor.ActualPlanarCalibrationFactorActualPlanarCalibrationFactor> actualPlanarCalibrationFactorActualPlanarCalibrationFactor;
-    @XmlElement(name = "PlanarCalibrationFactorReference")
-    protected List<NonDicomFileSetDescriptor.PlanarCalibrationFactorReference> planarCalibrationFactorReference;
-    @XmlElement(name = "HybridDosimetryworkflow")
-    protected List<NonDicomFileSetDescriptor.HybridDosimetryworkflow> hybridDosimetryworkflow;
-    @XmlElement(name = "ThreeDimDosimetrySlide2workflow")
-    protected List<NonDicomFileSetDescriptor.ThreeDimDosimetrySlide2Workflow> threeDimDosimetrySlide2Workflow;
+    @XmlElement(name = "CalibrationWorkflow", required = true)
+    protected NonDicomFileSetDescriptor.CalibrationWorkflow calibrationWorkflow;
+    @XmlElement(name = "WP2subtask212WorkflowData", required = true)
+    protected NonDicomFileSetDescriptor.WP2Subtask212WorkflowData wp2Subtask212WorkflowData;
+    @XmlElement(name = "ThreeDimDosimetrySlide1workflow", required = true)
+    protected NonDicomFileSetDescriptor.ThreeDimDosimetrySlide1Workflow threeDimDosimetrySlide1Workflow;
+    @XmlElement(name = "TwoDimDosimetryworkflow", required = true)
+    protected NonDicomFileSetDescriptor.TwoDimDosimetryworkflow twoDimDosimetryworkflow;
+    @XmlElement(name = "HybridDosimetryworkflow", required = true)
+    protected NonDicomFileSetDescriptor.HybridDosimetryworkflow hybridDosimetryworkflow;
+    @XmlElement(name = "ThreeDimDosimetrySlide2workflow", required = true)
+    protected NonDicomFileSetDescriptor.ThreeDimDosimetrySlide2Workflow threeDimDosimetrySlide2Workflow;
 
     /**
      * Obtient la valeur de la propriété referencedClinicalResearchStudy.
@@ -254,339 +211,147 @@ public class NonDicomFileSetDescriptor {
     }
 
     /**
-     * Gets the value of the calibrationWorkflow property.
+     * Obtient la valeur de la propriété calibrationWorkflow.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the calibrationWorkflow property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getCalibrationWorkflow().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link NonDicomFileSetDescriptor.CalibrationWorkflow }
-     * 
-     * 
+     * @return
+     *     possible object is
+     *     {@link NonDicomFileSetDescriptor.CalibrationWorkflow }
+     *     
      */
-    public List<NonDicomFileSetDescriptor.CalibrationWorkflow> getCalibrationWorkflow() {
-        if (calibrationWorkflow == null) {
-            calibrationWorkflow = new ArrayList<NonDicomFileSetDescriptor.CalibrationWorkflow>();
-        }
-        return this.calibrationWorkflow;
+    public NonDicomFileSetDescriptor.CalibrationWorkflow getCalibrationWorkflow() {
+        return calibrationWorkflow;
     }
 
     /**
-     * Gets the value of the wp2Subtask212WorkflowData property.
+     * Définit la valeur de la propriété calibrationWorkflow.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the wp2Subtask212WorkflowData property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getWP2Subtask212WorkflowData().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link NonDicomFileSetDescriptor.WP2Subtask212WorkflowData }
-     * 
-     * 
+     * @param value
+     *     allowed object is
+     *     {@link NonDicomFileSetDescriptor.CalibrationWorkflow }
+     *     
      */
-    public List<NonDicomFileSetDescriptor.WP2Subtask212WorkflowData> getWP2Subtask212WorkflowData() {
-        if (wp2Subtask212WorkflowData == null) {
-            wp2Subtask212WorkflowData = new ArrayList<NonDicomFileSetDescriptor.WP2Subtask212WorkflowData>();
-        }
-        return this.wp2Subtask212WorkflowData;
+    public void setCalibrationWorkflow(NonDicomFileSetDescriptor.CalibrationWorkflow value) {
+        this.calibrationWorkflow = value;
     }
 
     /**
-     * Gets the value of the threeDimDosimetrySlide1Workflow property.
+     * Obtient la valeur de la propriété wp2Subtask212WorkflowData.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the threeDimDosimetrySlide1Workflow property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getThreeDimDosimetrySlide1Workflow().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link NonDicomFileSetDescriptor.ThreeDimDosimetrySlide1Workflow }
-     * 
-     * 
+     * @return
+     *     possible object is
+     *     {@link NonDicomFileSetDescriptor.WP2Subtask212WorkflowData }
+     *     
      */
-    public List<NonDicomFileSetDescriptor.ThreeDimDosimetrySlide1Workflow> getThreeDimDosimetrySlide1Workflow() {
-        if (threeDimDosimetrySlide1Workflow == null) {
-            threeDimDosimetrySlide1Workflow = new ArrayList<NonDicomFileSetDescriptor.ThreeDimDosimetrySlide1Workflow>();
-        }
-        return this.threeDimDosimetrySlide1Workflow;
+    public NonDicomFileSetDescriptor.WP2Subtask212WorkflowData getWP2Subtask212WorkflowData() {
+        return wp2Subtask212WorkflowData;
     }
 
     /**
-     * Gets the value of the spectRecoveryCoefficientCurve property.
+     * Définit la valeur de la propriété wp2Subtask212WorkflowData.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the spectRecoveryCoefficientCurve property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getSPECTRecoveryCoefficientCurve().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link NonDicomFileSetDescriptor.SPECTRecoveryCoefficientCurve }
-     * 
-     * 
+     * @param value
+     *     allowed object is
+     *     {@link NonDicomFileSetDescriptor.WP2Subtask212WorkflowData }
+     *     
      */
-    public List<NonDicomFileSetDescriptor.SPECTRecoveryCoefficientCurve> getSPECTRecoveryCoefficientCurve() {
-        if (spectRecoveryCoefficientCurve == null) {
-            spectRecoveryCoefficientCurve = new ArrayList<NonDicomFileSetDescriptor.SPECTRecoveryCoefficientCurve>();
-        }
-        return this.spectRecoveryCoefficientCurve;
+    public void setWP2Subtask212WorkflowData(NonDicomFileSetDescriptor.WP2Subtask212WorkflowData value) {
+        this.wp2Subtask212WorkflowData = value;
     }
 
     /**
-     * Gets the value of the twoDimDosimetryworkflow property.
+     * Obtient la valeur de la propriété threeDimDosimetrySlide1Workflow.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the twoDimDosimetryworkflow property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getTwoDimDosimetryworkflow().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link NonDicomFileSetDescriptor.TwoDimDosimetryworkflow }
-     * 
-     * 
+     * @return
+     *     possible object is
+     *     {@link NonDicomFileSetDescriptor.ThreeDimDosimetrySlide1Workflow }
+     *     
      */
-    public List<NonDicomFileSetDescriptor.TwoDimDosimetryworkflow> getTwoDimDosimetryworkflow() {
-        if (twoDimDosimetryworkflow == null) {
-            twoDimDosimetryworkflow = new ArrayList<NonDicomFileSetDescriptor.TwoDimDosimetryworkflow>();
-        }
-        return this.twoDimDosimetryworkflow;
+    public NonDicomFileSetDescriptor.ThreeDimDosimetrySlide1Workflow getThreeDimDosimetrySlide1Workflow() {
+        return threeDimDosimetrySlide1Workflow;
     }
 
     /**
-     * Gets the value of the actualPlanarCalibrationFactorActualPlanarCalibrationFactor property.
+     * Définit la valeur de la propriété threeDimDosimetrySlide1Workflow.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the actualPlanarCalibrationFactorActualPlanarCalibrationFactor property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getActualPlanarCalibrationFactorActualPlanarCalibrationFactor().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link NonDicomFileSetDescriptor.ActualPlanarCalibrationFactorActualPlanarCalibrationFactor }
-     * 
-     * 
+     * @param value
+     *     allowed object is
+     *     {@link NonDicomFileSetDescriptor.ThreeDimDosimetrySlide1Workflow }
+     *     
      */
-    public List<NonDicomFileSetDescriptor.ActualPlanarCalibrationFactorActualPlanarCalibrationFactor> getActualPlanarCalibrationFactorActualPlanarCalibrationFactor() {
-        if (actualPlanarCalibrationFactorActualPlanarCalibrationFactor == null) {
-            actualPlanarCalibrationFactorActualPlanarCalibrationFactor = new ArrayList<NonDicomFileSetDescriptor.ActualPlanarCalibrationFactorActualPlanarCalibrationFactor>();
-        }
-        return this.actualPlanarCalibrationFactorActualPlanarCalibrationFactor;
+    public void setThreeDimDosimetrySlide1Workflow(NonDicomFileSetDescriptor.ThreeDimDosimetrySlide1Workflow value) {
+        this.threeDimDosimetrySlide1Workflow = value;
     }
 
     /**
-     * Gets the value of the planarCalibrationFactorReference property.
+     * Obtient la valeur de la propriété twoDimDosimetryworkflow.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the planarCalibrationFactorReference property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getPlanarCalibrationFactorReference().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link NonDicomFileSetDescriptor.PlanarCalibrationFactorReference }
-     * 
-     * 
+     * @return
+     *     possible object is
+     *     {@link NonDicomFileSetDescriptor.TwoDimDosimetryworkflow }
+     *     
      */
-    public List<NonDicomFileSetDescriptor.PlanarCalibrationFactorReference> getPlanarCalibrationFactorReference() {
-        if (planarCalibrationFactorReference == null) {
-            planarCalibrationFactorReference = new ArrayList<NonDicomFileSetDescriptor.PlanarCalibrationFactorReference>();
-        }
-        return this.planarCalibrationFactorReference;
+    public NonDicomFileSetDescriptor.TwoDimDosimetryworkflow getTwoDimDosimetryworkflow() {
+        return twoDimDosimetryworkflow;
     }
 
     /**
-     * Gets the value of the hybridDosimetryworkflow property.
+     * Définit la valeur de la propriété twoDimDosimetryworkflow.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the hybridDosimetryworkflow property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getHybridDosimetryworkflow().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link NonDicomFileSetDescriptor.HybridDosimetryworkflow }
-     * 
-     * 
+     * @param value
+     *     allowed object is
+     *     {@link NonDicomFileSetDescriptor.TwoDimDosimetryworkflow }
+     *     
      */
-    public List<NonDicomFileSetDescriptor.HybridDosimetryworkflow> getHybridDosimetryworkflow() {
-        if (hybridDosimetryworkflow == null) {
-            hybridDosimetryworkflow = new ArrayList<NonDicomFileSetDescriptor.HybridDosimetryworkflow>();
-        }
-        return this.hybridDosimetryworkflow;
+    public void setTwoDimDosimetryworkflow(NonDicomFileSetDescriptor.TwoDimDosimetryworkflow value) {
+        this.twoDimDosimetryworkflow = value;
     }
 
     /**
-     * Gets the value of the threeDimDosimetrySlide2Workflow property.
+     * Obtient la valeur de la propriété hybridDosimetryworkflow.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the threeDimDosimetrySlide2Workflow property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getThreeDimDosimetrySlide2Workflow().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link NonDicomFileSetDescriptor.ThreeDimDosimetrySlide2Workflow }
-     * 
-     * 
+     * @return
+     *     possible object is
+     *     {@link NonDicomFileSetDescriptor.HybridDosimetryworkflow }
+     *     
      */
-    public List<NonDicomFileSetDescriptor.ThreeDimDosimetrySlide2Workflow> getThreeDimDosimetrySlide2Workflow() {
-        if (threeDimDosimetrySlide2Workflow == null) {
-            threeDimDosimetrySlide2Workflow = new ArrayList<NonDicomFileSetDescriptor.ThreeDimDosimetrySlide2Workflow>();
-        }
-        return this.threeDimDosimetrySlide2Workflow;
+    public NonDicomFileSetDescriptor.HybridDosimetryworkflow getHybridDosimetryworkflow() {
+        return hybridDosimetryworkflow;
     }
 
+    /**
+     * Définit la valeur de la propriété hybridDosimetryworkflow.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link NonDicomFileSetDescriptor.HybridDosimetryworkflow }
+     *     
+     */
+    public void setHybridDosimetryworkflow(NonDicomFileSetDescriptor.HybridDosimetryworkflow value) {
+        this.hybridDosimetryworkflow = value;
+    }
 
     /**
-     * <p>Classe Java pour anonymous complex type.
+     * Obtient la valeur de la propriété threeDimDosimetrySlide2Workflow.
      * 
-     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="PlanarCalibrationFactorValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
-     *         &lt;element name="PlanarCalibrationFactorUnit" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * @return
+     *     possible object is
+     *     {@link NonDicomFileSetDescriptor.ThreeDimDosimetrySlide2Workflow }
+     *     
      */
-    @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = {
-        "planarCalibrationFactorValue",
-        "planarCalibrationFactorUnit"
-    })
-    public static class ActualPlanarCalibrationFactorActualPlanarCalibrationFactor {
+    public NonDicomFileSetDescriptor.ThreeDimDosimetrySlide2Workflow getThreeDimDosimetrySlide2Workflow() {
+        return threeDimDosimetrySlide2Workflow;
+    }
 
-        @XmlElement(name = "PlanarCalibrationFactorValue")
-        protected float planarCalibrationFactorValue;
-        @XmlElement(name = "PlanarCalibrationFactorUnit", required = true)
-        protected String planarCalibrationFactorUnit;
-
-        /**
-         * Obtient la valeur de la propriété planarCalibrationFactorValue.
-         * 
-         */
-        public float getPlanarCalibrationFactorValue() {
-            return planarCalibrationFactorValue;
-        }
-
-        /**
-         * Définit la valeur de la propriété planarCalibrationFactorValue.
-         * 
-         */
-        public void setPlanarCalibrationFactorValue(float value) {
-            this.planarCalibrationFactorValue = value;
-        }
-
-        /**
-         * Obtient la valeur de la propriété planarCalibrationFactorUnit.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
-         */
-        public String getPlanarCalibrationFactorUnit() {
-            return planarCalibrationFactorUnit;
-        }
-
-        /**
-         * Définit la valeur de la propriété planarCalibrationFactorUnit.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
-         */
-        public void setPlanarCalibrationFactorUnit(String value) {
-            this.planarCalibrationFactorUnit = value;
-        }
-
+    /**
+     * Définit la valeur de la propriété threeDimDosimetrySlide2Workflow.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link NonDicomFileSetDescriptor.ThreeDimDosimetrySlide2Workflow }
+     *     
+     */
+    public void setThreeDimDosimetrySlide2Workflow(NonDicomFileSetDescriptor.ThreeDimDosimetrySlide2Workflow value) {
+        this.threeDimDosimetrySlide2Workflow = value;
     }
 
 
@@ -855,61 +620,6 @@ public class NonDicomFileSetDescriptor {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element name="PlanarCalibrationFactorDate" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
-     */
-    @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = {
-        "planarCalibrationFactorDate"
-    })
-    public static class PlanarCalibrationFactorReference {
-
-        @XmlElement(name = "PlanarCalibrationFactorDate", required = true)
-        protected String planarCalibrationFactorDate;
-
-        /**
-         * Obtient la valeur de la propriété planarCalibrationFactorDate.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
-         */
-        public String getPlanarCalibrationFactorDate() {
-            return planarCalibrationFactorDate;
-        }
-
-        /**
-         * Définit la valeur de la propriété planarCalibrationFactorDate.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
-         */
-        public void setPlanarCalibrationFactorDate(String value) {
-            this.planarCalibrationFactorDate = value;
-        }
-
-    }
-
-
-    /**
-     * <p>Classe Java pour anonymous complex type.
-     * 
-     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
      *         &lt;element name="ClinicalResearchStudyID" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *         &lt;element name="ClinicalResearchStudyTitle" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *       &lt;/sequence>
@@ -993,67 +703,12 @@ public class NonDicomFileSetDescriptor {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element name="SPECTRecoveryCoefficientCurve" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
-     */
-    @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = {
-        "spectRecoveryCoefficientCurve"
-    })
-    public static class SPECTRecoveryCoefficientCurve {
-
-        @XmlElement(name = "SPECTRecoveryCoefficientCurve", required = true)
-        protected String spectRecoveryCoefficientCurve;
-
-        /**
-         * Obtient la valeur de la propriété spectRecoveryCoefficientCurve.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
-         */
-        public String getSPECTRecoveryCoefficientCurve() {
-            return spectRecoveryCoefficientCurve;
-        }
-
-        /**
-         * Définit la valeur de la propriété spectRecoveryCoefficientCurve.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
-         */
-        public void setSPECTRecoveryCoefficientCurve(String value) {
-            this.spectRecoveryCoefficientCurve = value;
-        }
-
-    }
-
-
-    /**
-     * <p>Classe Java pour anonymous complex type.
-     * 
-     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="SPECTDataAcquisitionAndReconstruction" type="{https://www.irdbb-medirad.com}SPECTDataAcquisitionAndReconstruction" maxOccurs="unbounded" minOccurs="0"/>
+     *         &lt;element name="SPECTDataAcquisitionAndReconstruction" type="{https://www.irdbb-medirad.com}SPECTDataAcquisitionAndReconstruction"/>
      *         &lt;element name="RegistrationVOISegmentationAndPropagation" type="{https://www.irdbb-medirad.com}RegistrationVOISegmentationAndPropagation"/>
-     *         &lt;element name="VOIActivityDetermination" type="{https://www.irdbb-medirad.com}VOIActivityDetermination" maxOccurs="unbounded"/>
-     *         &lt;element name="TimeActivityCurveFitIn3DDosimetry" type="{https://www.irdbb-medirad.com}TimeActivityCurveFitIn3DDosimetry" maxOccurs="unbounded"/>
+     *         &lt;element name="VOIActivityDetermination" type="{https://www.irdbb-medirad.com}VOIActivityDetermination"/>
+     *         &lt;element name="TimeActivityCurveFitIn3DDosimetry" type="{https://www.irdbb-medirad.com}TimeActivityCurveFitIn3DDosimetry"/>
      *         &lt;element name="AbsorbedDoseCalculationInVOI" type="{https://www.irdbb-medirad.com}AbsorbedDoseCalculationInVOI"/>
-     *         &lt;element name="RadioBiologicalCalculationIn3DSlide1Dosimetry" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculationIn3DSlide1Dosimetry" minOccurs="0"/>
+     *         &lt;element name="RadioBiologicalCalculationIn3DSlide1Dosimetry" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculationIn3DSlide1Dosimetry"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -1073,46 +728,41 @@ public class NonDicomFileSetDescriptor {
     })
     public static class ThreeDimDosimetrySlide1Workflow {
 
-        @XmlElement(name = "SPECTDataAcquisitionAndReconstruction")
-        protected List<SPECTDataAcquisitionAndReconstruction> spectDataAcquisitionAndReconstruction;
+        @XmlElement(name = "SPECTDataAcquisitionAndReconstruction", required = true)
+        protected SPECTDataAcquisitionAndReconstruction spectDataAcquisitionAndReconstruction;
         @XmlElement(name = "RegistrationVOISegmentationAndPropagation", required = true)
         protected RegistrationVOISegmentationAndPropagation registrationVOISegmentationAndPropagation;
         @XmlElement(name = "VOIActivityDetermination", required = true)
-        protected List<VOIActivityDetermination> voiActivityDetermination;
+        protected VOIActivityDetermination voiActivityDetermination;
         @XmlElement(name = "TimeActivityCurveFitIn3DDosimetry", required = true)
-        protected List<TimeActivityCurveFitIn3DDosimetry> timeActivityCurveFitIn3DDosimetry;
+        protected TimeActivityCurveFitIn3DDosimetry timeActivityCurveFitIn3DDosimetry;
         @XmlElement(name = "AbsorbedDoseCalculationInVOI", required = true)
         protected AbsorbedDoseCalculationInVOI absorbedDoseCalculationInVOI;
-        @XmlElement(name = "RadioBiologicalCalculationIn3DSlide1Dosimetry")
+        @XmlElement(name = "RadioBiologicalCalculationIn3DSlide1Dosimetry", required = true)
         protected RadioBiologicalCalculationIn3DSlide1Dosimetry radioBiologicalCalculationIn3DSlide1Dosimetry;
 
         /**
-         * Gets the value of the spectDataAcquisitionAndReconstruction property.
+         * Obtient la valeur de la propriété spectDataAcquisitionAndReconstruction.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the spectDataAcquisitionAndReconstruction property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getSPECTDataAcquisitionAndReconstruction().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link SPECTDataAcquisitionAndReconstruction }
-         * 
-         * 
+         * @return
+         *     possible object is
+         *     {@link SPECTDataAcquisitionAndReconstruction }
+         *     
          */
-        public List<SPECTDataAcquisitionAndReconstruction> getSPECTDataAcquisitionAndReconstruction() {
-            if (spectDataAcquisitionAndReconstruction == null) {
-                spectDataAcquisitionAndReconstruction = new ArrayList<SPECTDataAcquisitionAndReconstruction>();
-            }
-            return this.spectDataAcquisitionAndReconstruction;
+        public SPECTDataAcquisitionAndReconstruction getSPECTDataAcquisitionAndReconstruction() {
+            return spectDataAcquisitionAndReconstruction;
+        }
+
+        /**
+         * Définit la valeur de la propriété spectDataAcquisitionAndReconstruction.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link SPECTDataAcquisitionAndReconstruction }
+         *     
+         */
+        public void setSPECTDataAcquisitionAndReconstruction(SPECTDataAcquisitionAndReconstruction value) {
+            this.spectDataAcquisitionAndReconstruction = value;
         }
 
         /**
@@ -1140,61 +790,51 @@ public class NonDicomFileSetDescriptor {
         }
 
         /**
-         * Gets the value of the voiActivityDetermination property.
+         * Obtient la valeur de la propriété voiActivityDetermination.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the voiActivityDetermination property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getVOIActivityDetermination().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link VOIActivityDetermination }
-         * 
-         * 
+         * @return
+         *     possible object is
+         *     {@link VOIActivityDetermination }
+         *     
          */
-        public List<VOIActivityDetermination> getVOIActivityDetermination() {
-            if (voiActivityDetermination == null) {
-                voiActivityDetermination = new ArrayList<VOIActivityDetermination>();
-            }
-            return this.voiActivityDetermination;
+        public VOIActivityDetermination getVOIActivityDetermination() {
+            return voiActivityDetermination;
         }
 
         /**
-         * Gets the value of the timeActivityCurveFitIn3DDosimetry property.
+         * Définit la valeur de la propriété voiActivityDetermination.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the timeActivityCurveFitIn3DDosimetry property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getTimeActivityCurveFitIn3DDosimetry().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link TimeActivityCurveFitIn3DDosimetry }
-         * 
-         * 
+         * @param value
+         *     allowed object is
+         *     {@link VOIActivityDetermination }
+         *     
          */
-        public List<TimeActivityCurveFitIn3DDosimetry> getTimeActivityCurveFitIn3DDosimetry() {
-            if (timeActivityCurveFitIn3DDosimetry == null) {
-                timeActivityCurveFitIn3DDosimetry = new ArrayList<TimeActivityCurveFitIn3DDosimetry>();
-            }
-            return this.timeActivityCurveFitIn3DDosimetry;
+        public void setVOIActivityDetermination(VOIActivityDetermination value) {
+            this.voiActivityDetermination = value;
+        }
+
+        /**
+         * Obtient la valeur de la propriété timeActivityCurveFitIn3DDosimetry.
+         * 
+         * @return
+         *     possible object is
+         *     {@link TimeActivityCurveFitIn3DDosimetry }
+         *     
+         */
+        public TimeActivityCurveFitIn3DDosimetry getTimeActivityCurveFitIn3DDosimetry() {
+            return timeActivityCurveFitIn3DDosimetry;
+        }
+
+        /**
+         * Définit la valeur de la propriété timeActivityCurveFitIn3DDosimetry.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link TimeActivityCurveFitIn3DDosimetry }
+         *     
+         */
+        public void setTimeActivityCurveFitIn3DDosimetry(TimeActivityCurveFitIn3DDosimetry value) {
+            this.timeActivityCurveFitIn3DDosimetry = value;
         }
 
         /**
@@ -1407,7 +1047,7 @@ public class NonDicomFileSetDescriptor {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element name="PlanarDataAcquisitionAndProcessing" type="{https://www.irdbb-medirad.com}PlanarDataAcquisitionAndProcessing" maxOccurs="unbounded"/>
+     *         &lt;element name="PlanarDataAcquisitionAndProcessingContainer" type="{https://www.irdbb-medirad.com}PlanarDataAcquisitionAndProcessingContainer"/>
      *         &lt;element name="TwoDimDosimetryViaAbsorbedDoseRateCalculation" type="{https://www.irdbb-medirad.com}TwoDimDosimetryViaAbsorbedDoseRateCalculation" minOccurs="0"/>
      *         &lt;element name="TwoDimDosimetryViaTimeActivityCurveFit" type="{https://www.irdbb-medirad.com}TwoDimDosimetryViaTimeActivityCurveFit" minOccurs="0"/>
      *         &lt;element name="RadioBiologicalCalculation" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculation" minOccurs="0"/>
@@ -1421,15 +1061,15 @@ public class NonDicomFileSetDescriptor {
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
-        "planarDataAcquisitionAndProcessing",
+        "planarDataAcquisitionAndProcessingContainer",
         "twoDimDosimetryViaAbsorbedDoseRateCalculation",
         "twoDimDosimetryViaTimeActivityCurveFit",
         "radioBiologicalCalculation"
     })
     public static class TwoDimDosimetryworkflow {
 
-        @XmlElement(name = "PlanarDataAcquisitionAndProcessing", required = true)
-        protected List<PlanarDataAcquisitionAndProcessing> planarDataAcquisitionAndProcessing;
+        @XmlElement(name = "PlanarDataAcquisitionAndProcessingContainer", required = true)
+        protected PlanarDataAcquisitionAndProcessingContainer planarDataAcquisitionAndProcessingContainer;
         @XmlElement(name = "TwoDimDosimetryViaAbsorbedDoseRateCalculation")
         protected TwoDimDosimetryViaAbsorbedDoseRateCalculation twoDimDosimetryViaAbsorbedDoseRateCalculation;
         @XmlElement(name = "TwoDimDosimetryViaTimeActivityCurveFit")
@@ -1438,32 +1078,27 @@ public class NonDicomFileSetDescriptor {
         protected RadioBiologicalCalculation radioBiologicalCalculation;
 
         /**
-         * Gets the value of the planarDataAcquisitionAndProcessing property.
+         * Obtient la valeur de la propriété planarDataAcquisitionAndProcessingContainer.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the planarDataAcquisitionAndProcessing property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getPlanarDataAcquisitionAndProcessing().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link PlanarDataAcquisitionAndProcessing }
-         * 
-         * 
+         * @return
+         *     possible object is
+         *     {@link PlanarDataAcquisitionAndProcessingContainer }
+         *     
          */
-        public List<PlanarDataAcquisitionAndProcessing> getPlanarDataAcquisitionAndProcessing() {
-            if (planarDataAcquisitionAndProcessing == null) {
-                planarDataAcquisitionAndProcessing = new ArrayList<PlanarDataAcquisitionAndProcessing>();
-            }
-            return this.planarDataAcquisitionAndProcessing;
+        public PlanarDataAcquisitionAndProcessingContainer getPlanarDataAcquisitionAndProcessingContainer() {
+            return planarDataAcquisitionAndProcessingContainer;
+        }
+
+        /**
+         * Définit la valeur de la propriété planarDataAcquisitionAndProcessingContainer.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link PlanarDataAcquisitionAndProcessingContainer }
+         *     
+         */
+        public void setPlanarDataAcquisitionAndProcessingContainer(PlanarDataAcquisitionAndProcessingContainer value) {
+            this.planarDataAcquisitionAndProcessingContainer = value;
         }
 
         /**

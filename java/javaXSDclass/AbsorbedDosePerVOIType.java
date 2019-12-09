@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.11.14 à 02:58:49 PM CET 
+// Généré le : 2019.12.08 à 10:03:35 PM CET 
 //
 
 
@@ -11,6 +11,7 @@ package javaXSDclass;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -24,41 +25,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="AbsorbedDoseCategory">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="mean absorbed dose normalized to CTDI free in air normalized to tube load"/>
- *               &lt;enumeration value="mean absorbed dose normalized to CTDI vol normalized to tube load"/>
- *               &lt;enumeration value="mean absorbed radiation dose"/>
- *               &lt;enumeration value="maximum absorbed radiation dose"/>
- *               &lt;enumeration value="minimum absorbed radiation dose"/>
- *               &lt;enumeration value="median absorbed radiation dose"/>
- *               &lt;enumeration value="mode absorbed radiation dose"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="StatisticalSubCategory" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="mean"/>
- *               &lt;enumeration value="maximum"/>
- *               &lt;enumeration value="minimum"/>
- *               &lt;enumeration value="median"/>
- *               &lt;enumeration value="mode"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
+ *         &lt;element name="AbsorbedDoseCategory" type="{https://www.irdbb-medirad.com}AbsorbedDoseCategory"/>
+ *         &lt;element name="StatisticalSubCategory" type="{https://www.irdbb-medirad.com}StatisticalSubCategory" minOccurs="0"/>
  *         &lt;element name="AbsorbedDoseValue" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="AbsorbedDoseUnit">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="milligray per (milligray per (100 milliampere second))"/>
- *               &lt;enumeration value="milligray per (100 milliampere second)"/>
- *               &lt;enumeration value="milligray"/>
- *               &lt;enumeration value="milligray per (milligray per (1 milliampere second))"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
+ *         &lt;element name="AbsorbedDoseUnit" type="{https://www.irdbb-medirad.com}AbsorbedDoseUnit"/>
  *         &lt;element name="VOIIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -79,13 +49,16 @@ import javax.xml.bind.annotation.XmlType;
 public class AbsorbedDosePerVOIType {
 
     @XmlElement(name = "AbsorbedDoseCategory", required = true)
-    protected String absorbedDoseCategory;
+    @XmlSchemaType(name = "string")
+    protected AbsorbedDoseCategory absorbedDoseCategory;
     @XmlElement(name = "StatisticalSubCategory")
-    protected String statisticalSubCategory;
+    @XmlSchemaType(name = "string")
+    protected StatisticalSubCategory statisticalSubCategory;
     @XmlElement(name = "AbsorbedDoseValue", required = true)
     protected String absorbedDoseValue;
     @XmlElement(name = "AbsorbedDoseUnit", required = true)
-    protected String absorbedDoseUnit;
+    @XmlSchemaType(name = "string")
+    protected AbsorbedDoseUnit absorbedDoseUnit;
     @XmlElement(name = "VOIIdentifier", required = true)
     protected String voiIdentifier;
 
@@ -94,10 +67,10 @@ public class AbsorbedDosePerVOIType {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link AbsorbedDoseCategory }
      *     
      */
-    public String getAbsorbedDoseCategory() {
+    public AbsorbedDoseCategory getAbsorbedDoseCategory() {
         return absorbedDoseCategory;
     }
 
@@ -106,10 +79,10 @@ public class AbsorbedDosePerVOIType {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link AbsorbedDoseCategory }
      *     
      */
-    public void setAbsorbedDoseCategory(String value) {
+    public void setAbsorbedDoseCategory(AbsorbedDoseCategory value) {
         this.absorbedDoseCategory = value;
     }
 
@@ -118,10 +91,10 @@ public class AbsorbedDosePerVOIType {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link StatisticalSubCategory }
      *     
      */
-    public String getStatisticalSubCategory() {
+    public StatisticalSubCategory getStatisticalSubCategory() {
         return statisticalSubCategory;
     }
 
@@ -130,10 +103,10 @@ public class AbsorbedDosePerVOIType {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link StatisticalSubCategory }
      *     
      */
-    public void setStatisticalSubCategory(String value) {
+    public void setStatisticalSubCategory(StatisticalSubCategory value) {
         this.statisticalSubCategory = value;
     }
 
@@ -166,10 +139,10 @@ public class AbsorbedDosePerVOIType {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link AbsorbedDoseUnit }
      *     
      */
-    public String getAbsorbedDoseUnit() {
+    public AbsorbedDoseUnit getAbsorbedDoseUnit() {
         return absorbedDoseUnit;
     }
 
@@ -178,10 +151,10 @@ public class AbsorbedDosePerVOIType {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link AbsorbedDoseUnit }
      *     
      */
-    public void setAbsorbedDoseUnit(String value) {
+    public void setAbsorbedDoseUnit(AbsorbedDoseUnit value) {
         this.absorbedDoseUnit = value;
     }
 

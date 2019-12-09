@@ -21,26 +21,45 @@ CTSegmentation
  1-ProcessExecutionContext-ProcessExecutionContext
  1-DICOMData-DICOMImageUsed
  0,1-SegmentationMethodType-SegmentationMethodUsed
- 1,n-VOI-VOIDescriptorProduced
+ 1-VOIcontainer-VOIDescriptorProduced
+}
+
+VOIcontainer
+{
+ 1,n-VOI-VOI
 }
 
 CalculationOfVoxelMap
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 0,n-AttenuatorType-AttenuatorUsed
+ 0,1-AttenuatorTypeContainer-AttenuatorUsed
  0,1-MonteCarloMethodType-MonteCarloMethodUsed
  1-DICOMData-DICOMCTImageDataUsed
  0,1-VoxelBasedDistributionOfAbsorbedDoseType-VoxelBasedDistributionOfAbsorbedDoseProduced
+}
+
+AttenuatorTypeContainer
+{
+ 1,n-AttenuatorType-AttenuatorType
 }
 
 CalculationOfAbsorbedDosesInVOIs
 {
  1-ProcessExecutionContext-ProcessExecutionContext
  1-string-VoxelBasedDistributionOfAbsorbedDoseIdentifierUsed
- 0,n-string-VOIIdentifierUsed
- 0,n-AbsorbedDosePerVOIType-AbsorbedDosePerVOIProduced      
+ 0,1-VOIIdentifierContainer-VOIIdentifierUsed
+ 0,1-AbsorbedDosePerVOITypeContainer-AbsorbedDosePerVOIProduced
 }
 
+VOIIdentifierContainer
+{
+ 1,n-string-VOIIdentifierUsed
+}
+
+AbsorbedDosePerVOITypeContainer
+{
+ 1,n-AbsorbedDosePerVOIType-AbsorbedDosePerVOIType
+}
 
 //Descriptions of Input-Output types
 //-----------------------------------
@@ -54,16 +73,26 @@ ProcessExecutionContext
 SegmentationMethodType
 {
  1-string-SegmentationMethod
- 0,n-string-SoftwareName
- 0,n-MethodSettingType-SegmentationMethodSetting
+ 0,1-SoftwareNameContainer-SoftwareNamesUsed
+ 0,1-MethodSettingTypeContainer-SegmentationMethodSetting
+}
+
+SoftwareNameContainer
+{
+ 1,n-string-SoftwareName
+}
+
+MethodSettingTypeContainer
+{
+ 1,n-MethodSettingType-MethodSettingType
 }
 
 MonteCarloMethodType
 {
  1-string-MonteCarloMethod
- 0,n-string-SoftwareName
- 0,n-string-SimulatedImagingDevice
- 0,n-MethodSettingType-MonteCarloMethodSetting
+ 0,1-SoftwareNameContainer-SoftwareNames
+ 0,1-MethodSettingTypeContainer-MonteCarloMethodSetting
+ 0,1-SimulatedImagingDevicesContainer-SimulatedImagingDevices
 }
 
 MethodSettingType
@@ -73,7 +102,10 @@ MethodSettingType
  0,1-string-MethodSettingUnit
 }
 
-
+SimulatedImagingDevicesContainer
+{
+ 0,n-string-SimulatedImagingDevice
+}
 
 AttenuatorType
 {
@@ -106,9 +138,19 @@ VoxelBasedDistributionOfAbsorbedDoseType
 VOI
 {
  1-string-VOIIdentifier
- 1-string-OrganOrTissue:bone/breast/esophagus/heart/lungs/skin/human body/Adipose residual tissue/Adrenal left/Adrenal right/Air inside body/Air outside body/Alveolar interstitium/Ankles and foot bones cortical/Ankles and foot bones spongiosa/Anterior nasal passage (ET1)/Ascending colon contents/Ascending colon wall/Blood vessels arms/Blood vessels head/Blood vessels legs/Blood vessels trunk/Brain/Breast a + Breast g/Breast left adipose tissue/Breast left glandular tissue/Breast right adipose tissue/Breast right glandular tissue/Bronchi/Cartilage arms/Cartilage head/Cartilage legs/Cartilage trunk/Cervical spine cortical/Cervical spine spongiosa/Clavicles cortical/Clavicles spongiosa/Colon/Cranium cortical/Cranium spongiosa/Descending colon contents/Descending colon wall/ET region/Eye bulb left/Eye bulb right/Eye lense left/Eye lense right/Femora lower half cortical/Femora lower half medullary cavity/Femora lower half spongiosa/Femora upper half cortical/Femora upper half medullary cavity/Femora upper half spongiosa/Gall bladder contents/Gall bladder wall/Heart contents (blood)/Heart wall/Humeri lower half cortical/Humeri lower half medullary cavity/Humeri lower half spongiosa/Humeri upper half cortical/Humeri upper half medullary cavity/Humeri upper half spongiosa/Kidney left cortex/Kidney left medulla/Kidney left pelvis/Kidney right cortex/Kidney right medulla/Kidney right pelvis/LBreast a + LBresat g/Left colon wall (left transverse + descending)/Left kidney C+M+P/Left lung lobe/Lenses of eye/Liver/Lumbar spine cortical/Lumbar spine spongiosa/Lung left blood/Lung left tissue/Lung right blood/Lung right tissue/Lymphatic nodes arms/Lymphatic nodes extrathoracic airways/Lymphatic nodes head/Lymphatic nodes legs/Lymphatic nodes thoracic airways/Lymphatic nodes trunk/Lymph nodes/Lymph nodes except LN ET + LN Th/Mandible cortical/Mandible spongiosa/Muscle/Muscle arms/Muscle head/Muscle legs/Muscle trunk/Oesophagus/Oral mucosa/Oral mucosa lips and cheeks/Oral mucosa tongue/Ovary left/Ovary right/Pancreas/Pelvis cortical/Pelvis spongiosa/Pituitary gland/Posterior nasal passage down to larynx (ET2)/Prostate/RAdrenal + LAdrenal/RBreast a + LBreast a/RBreast a + RBreast g/RBreast g + LBreast g/Rectum wall/Residual tissue arms/Residual tissue head/Residual tissue legs/Residual tissue trunk/Ribs cortical/Ribs spongiosa/Right colon wall (ascending + right transverse)/Right kidney C+M+P/Right lung lobe/RKidney + LKidney/RLung + LLung/ROvary + LOvary/Sacrum spongiosa/Salivary glands/Salivary glands left/Salivary glands right/Scapulae cortical/Scapulae spongiosa/Sigmoid colon contents/Sigmoid colon wall/Sigmoid colon wall + rectum wall/Skin/Skin arms/Skin at top and bottom/Skin head/Skin legs/Skin trunk/Small intestine contents/Small intestine wall/Spinal cord/Spleen/Sternum cortical/Sternum spongiosa/Stomach contents/Stomach wall/Teeth/Testes/Testis left/Testis right/Thoracic spine cortical/Thoracic spine spongiosa/Thymus/Thyroid/Tibiae fibulae and patellae cortical/Tibiae fibulae and patellae medullary cavity/Tibiae fibulae and patellae spongiosa/Tongue/Tongue (inner part)/Tonsils/Total body except organ contents/Trachea/Transverse colon contents left/Transverse colon contents right/Transverse colon wall left/Transverse colon wall right/Ulnae and radii cortical/Ulnae and radii medullary cavity/Ulnae and radii spongiosa/Ureter left/Ureter right/Ureters/Urinary bladder contents/Urinary bladder wall/Uterus/Wrists and hand bones cortical/Wrists and hand bones spongiosa
- 0,n-DICOMData-DICOMVOIContainer
- 0,n-NonDICOMData-NonDICOMVOIContainer
+ 1-string-OrganOrTissue:bone/breast/esophagus/heart/lungs/skin/human body
+ 0,1-DICOMDataContainer-DICOMDataContainer
+ 0,1-NonDICOMDataContainer-NonDICOMDataContainer
+}
+
+DICOMDataContainer
+{
+ 1,n-DICOMData-DICOMVOIContainer
+}
+
+NonDICOMDataContainer
+{
+ 1,n-NonDICOMData-NonDICOMVOIContainer
 }
 
 DICOMData
@@ -119,12 +161,13 @@ DICOMData
 
 NonDICOMData
 {
- 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map/3D density map/3D activity map/3D absorbed dose rate map
- 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format
- 1,n-string-NonDICOMDataFileName
+ 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map
+ 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format/STL format
+ 1-FileNameList-FileNameList
  0,1-string-FHIRIdentifier
 }
 
-
-
-
+FileNameList
+{
+ 1,n-string-NonDICOMDataFileName
+}

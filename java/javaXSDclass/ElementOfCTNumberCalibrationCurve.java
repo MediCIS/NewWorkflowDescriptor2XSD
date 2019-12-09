@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.11.14 à 02:58:49 PM CET 
+// Généré le : 2019.12.08 à 10:03:35 PM CET 
 //
 
 
@@ -12,6 +12,7 @@ import java.math.BigInteger;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -27,7 +28,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="HounsfieldMeasuredValue" type="{http://www.w3.org/2001/XMLSchema}integer"/>
  *         &lt;element name="RealDensityOfMaterialValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
- *         &lt;element name="RealDensityOfMaterialUnit" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="RealDensityOfMaterialUnit" type="{https://www.irdbb-medirad.com}RealDensityOfMaterialUnit"/>
  *         &lt;element name="MaterialIdentifier" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -51,7 +52,8 @@ public class ElementOfCTNumberCalibrationCurve {
     @XmlElement(name = "RealDensityOfMaterialValue")
     protected float realDensityOfMaterialValue;
     @XmlElement(name = "RealDensityOfMaterialUnit", required = true)
-    protected String realDensityOfMaterialUnit;
+    @XmlSchemaType(name = "string")
+    protected RealDensityOfMaterialUnit realDensityOfMaterialUnit;
     @XmlElement(name = "MaterialIdentifier")
     protected String materialIdentifier;
 
@@ -100,10 +102,10 @@ public class ElementOfCTNumberCalibrationCurve {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link RealDensityOfMaterialUnit }
      *     
      */
-    public String getRealDensityOfMaterialUnit() {
+    public RealDensityOfMaterialUnit getRealDensityOfMaterialUnit() {
         return realDensityOfMaterialUnit;
     }
 
@@ -112,10 +114,10 @@ public class ElementOfCTNumberCalibrationCurve {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link RealDensityOfMaterialUnit }
      *     
      */
-    public void setRealDensityOfMaterialUnit(String value) {
+    public void setRealDensityOfMaterialUnit(RealDensityOfMaterialUnit value) {
         this.realDensityOfMaterialUnit = value;
     }
 

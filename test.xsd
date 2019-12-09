@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--VersionSchemas : 071-->
+<xs:schema
+targetNamespace="https://www.irdbb-medirad.com"
+elementFormDefault="qualified"
+attributeFormDefault="unqualified"
+xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:irdbb="https://www.irdbb-medirad.com">
+    <xs:element name="NonDicomFileSetDescriptor">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="timePoint" type="irdbb:TimePointCategory" />
+                <!--irdbb:-->
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:simpleType name="TimePointCategory">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="168h plus or minus 24h post RAIT timepoint"/>
+            <xs:enumeration value="96h plus or minus 12h post RAIT timepoint"/>
+            <xs:enumeration value="72h plus or minus 12h post RAIT timepoint"/>
+            <xs:enumeration value="48h plus or minus 4h post RAIT timepoint"/>
+            <xs:enumeration value="24h plus or minus 4h post RAIT timepoint"/>
+            <xs:enumeration value="6h plus or minus 2h post RAIT timepoint"/>
+            <xs:enumeration value="additional timepoint"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
+

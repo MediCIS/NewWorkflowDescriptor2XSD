@@ -2,14 +2,12 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.11.14 à 02:58:49 PM CET 
+// Généré le : 2019.12.08 à 10:03:35 PM CET 
 //
 
 
 package javaXSDclass;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -28,10 +26,10 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
  *         &lt;element name="VOIIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
+ *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="PreAdministeredActivityUsed" type="{https://www.irdbb-medirad.com}AdministeredActivity"/>
  *         &lt;element name="PostAdministeredActivityUsed" type="{https://www.irdbb-medirad.com}AdministeredActivity"/>
- *         &lt;element name="PKAssessmentMethodUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="PKAssessmentMethodUsed" type="{https://www.irdbb-medirad.com}CurveFittingMethod"/>
  *         &lt;element name="TimeIntegratedActivityCoefficientPerVOIProduced" type="{https://www.irdbb-medirad.com}TimeIntegratedActivityCoefficientPerVOI"/>
  *         &lt;element name="TimeIntegratedActivityPerVOIProduced" type="{https://www.irdbb-medirad.com}TimeIntegratedActivityPerVOI"/>
  *       &lt;/sequence>
@@ -60,13 +58,13 @@ public class TimeActivityCurveFitIn3DDosimetry {
     @XmlElement(name = "VOIIdentifierUsed", required = true)
     protected String voiIdentifierUsed;
     @XmlElement(name = "TimePointIdentifierUsed", required = true)
-    protected List<String> timePointIdentifierUsed;
+    protected String timePointIdentifierUsed;
     @XmlElement(name = "PreAdministeredActivityUsed", required = true)
     protected AdministeredActivity preAdministeredActivityUsed;
     @XmlElement(name = "PostAdministeredActivityUsed", required = true)
     protected AdministeredActivity postAdministeredActivityUsed;
     @XmlElement(name = "PKAssessmentMethodUsed", required = true)
-    protected String pkAssessmentMethodUsed;
+    protected CurveFittingMethod pkAssessmentMethodUsed;
     @XmlElement(name = "TimeIntegratedActivityCoefficientPerVOIProduced", required = true)
     protected TimeIntegratedActivityCoefficientPerVOI timeIntegratedActivityCoefficientPerVOIProduced;
     @XmlElement(name = "TimeIntegratedActivityPerVOIProduced", required = true)
@@ -121,32 +119,27 @@ public class TimeActivityCurveFitIn3DDosimetry {
     }
 
     /**
-     * Gets the value of the timePointIdentifierUsed property.
+     * Obtient la valeur de la propriété timePointIdentifierUsed.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the timePointIdentifierUsed property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getTimePointIdentifierUsed().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
-    public List<String> getTimePointIdentifierUsed() {
-        if (timePointIdentifierUsed == null) {
-            timePointIdentifierUsed = new ArrayList<String>();
-        }
-        return this.timePointIdentifierUsed;
+    public String getTimePointIdentifierUsed() {
+        return timePointIdentifierUsed;
+    }
+
+    /**
+     * Définit la valeur de la propriété timePointIdentifierUsed.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setTimePointIdentifierUsed(String value) {
+        this.timePointIdentifierUsed = value;
     }
 
     /**
@@ -202,10 +195,10 @@ public class TimeActivityCurveFitIn3DDosimetry {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link CurveFittingMethod }
      *     
      */
-    public String getPKAssessmentMethodUsed() {
+    public CurveFittingMethod getPKAssessmentMethodUsed() {
         return pkAssessmentMethodUsed;
     }
 
@@ -214,10 +207,10 @@ public class TimeActivityCurveFitIn3DDosimetry {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link CurveFittingMethod }
      *     
      */
-    public void setPKAssessmentMethodUsed(String value) {
+    public void setPKAssessmentMethodUsed(CurveFittingMethod value) {
         this.pkAssessmentMethodUsed = value;
     }
 

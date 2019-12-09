@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.11.14 à 02:58:49 PM CET 
+// Généré le : 2019.12.08 à 10:03:35 PM CET 
 //
 
 
@@ -11,22 +11,24 @@ package javaXSDclass;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour ElementOfSPECTRecoveryCoefficientCurve complex type.
+ * <p>Classe Java pour anonymous complex type.
  * 
  * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
- * &lt;complexType name="ElementOfSPECTRecoveryCoefficientCurve">
+ * &lt;complexType>
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="RatioMeasuredActivityToTrueActivity" type="{http://www.w3.org/2001/XMLSchema}float"/>
  *         &lt;element name="HotInsertVolumeValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
- *         &lt;element name="HotInsertVolumeUnit" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="HotInsertVolumeUnit" type="{https://www.irdbb-medirad.com}HotInsertVolumeUnit"/>
  *         &lt;element name="HotInsertIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -37,12 +39,13 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ElementOfSPECTRecoveryCoefficientCurve", propOrder = {
+@XmlType(name = "", propOrder = {
     "ratioMeasuredActivityToTrueActivity",
     "hotInsertVolumeValue",
     "hotInsertVolumeUnit",
     "hotInsertIdentifier"
 })
+@XmlRootElement(name = "ElementOfSPECTRecoveryCoefficientCurve")
 public class ElementOfSPECTRecoveryCoefficientCurve {
 
     @XmlElement(name = "RatioMeasuredActivityToTrueActivity")
@@ -50,7 +53,8 @@ public class ElementOfSPECTRecoveryCoefficientCurve {
     @XmlElement(name = "HotInsertVolumeValue")
     protected float hotInsertVolumeValue;
     @XmlElement(name = "HotInsertVolumeUnit", required = true)
-    protected String hotInsertVolumeUnit;
+    @XmlSchemaType(name = "string")
+    protected HotInsertVolumeUnit hotInsertVolumeUnit;
     @XmlElement(name = "HotInsertIdentifier", required = true)
     protected String hotInsertIdentifier;
 
@@ -91,10 +95,10 @@ public class ElementOfSPECTRecoveryCoefficientCurve {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link HotInsertVolumeUnit }
      *     
      */
-    public String getHotInsertVolumeUnit() {
+    public HotInsertVolumeUnit getHotInsertVolumeUnit() {
         return hotInsertVolumeUnit;
     }
 
@@ -103,10 +107,10 @@ public class ElementOfSPECTRecoveryCoefficientCurve {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link HotInsertVolumeUnit }
      *     
      */
-    public void setHotInsertVolumeUnit(String value) {
+    public void setHotInsertVolumeUnit(HotInsertVolumeUnit value) {
         this.hotInsertVolumeUnit = value;
     }
 

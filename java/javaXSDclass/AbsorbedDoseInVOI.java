@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.11.14 à 02:58:49 PM CET 
+// Généré le : 2019.12.08 à 10:03:35 PM CET 
 //
 
 
@@ -11,6 +11,7 @@ package javaXSDclass;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -25,7 +26,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="AbsorbedDoseInVOIValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
- *         &lt;element name="AbsorbedDoseInVOIUnit" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="AbsorbedDoseInVOIUnit" type="{https://www.irdbb-medirad.com}AbsorbedDoseInVOIUnit"/>
  *         &lt;element name="VOIIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -46,7 +47,8 @@ public class AbsorbedDoseInVOI {
     @XmlElement(name = "AbsorbedDoseInVOIValue")
     protected float absorbedDoseInVOIValue;
     @XmlElement(name = "AbsorbedDoseInVOIUnit", required = true)
-    protected String absorbedDoseInVOIUnit;
+    @XmlSchemaType(name = "string")
+    protected AbsorbedDoseInVOIUnit absorbedDoseInVOIUnit;
     @XmlElement(name = "VOIIdentifier", required = true)
     protected String voiIdentifier;
 
@@ -71,10 +73,10 @@ public class AbsorbedDoseInVOI {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link AbsorbedDoseInVOIUnit }
      *     
      */
-    public String getAbsorbedDoseInVOIUnit() {
+    public AbsorbedDoseInVOIUnit getAbsorbedDoseInVOIUnit() {
         return absorbedDoseInVOIUnit;
     }
 
@@ -83,10 +85,10 @@ public class AbsorbedDoseInVOI {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link AbsorbedDoseInVOIUnit }
      *     
      */
-    public void setAbsorbedDoseInVOIUnit(String value) {
+    public void setAbsorbedDoseInVOIUnit(AbsorbedDoseInVOIUnit value) {
         this.absorbedDoseInVOIUnit = value;
     }
 

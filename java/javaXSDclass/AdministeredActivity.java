@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.11.14 à 02:58:49 PM CET 
+// Généré le : 2019.12.08 à 10:03:35 PM CET 
 //
 
 
@@ -11,6 +11,7 @@ package javaXSDclass;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -25,8 +26,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="AdministeredActivityValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
- *         &lt;element name="AdministeredActivityUnit" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="Timestamp" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="AdministeredActivityUnit" type="{https://www.irdbb-medirad.com}AdministeredActivityUnit"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -38,17 +38,15 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "AdministeredActivity", propOrder = {
     "administeredActivityValue",
-    "administeredActivityUnit",
-    "timestamp"
+    "administeredActivityUnit"
 })
 public class AdministeredActivity {
 
     @XmlElement(name = "AdministeredActivityValue")
     protected float administeredActivityValue;
     @XmlElement(name = "AdministeredActivityUnit", required = true)
-    protected String administeredActivityUnit;
-    @XmlElement(name = "Timestamp", required = true)
-    protected String timestamp;
+    @XmlSchemaType(name = "string")
+    protected AdministeredActivityUnit administeredActivityUnit;
 
     /**
      * Obtient la valeur de la propriété administeredActivityValue.
@@ -71,10 +69,10 @@ public class AdministeredActivity {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link AdministeredActivityUnit }
      *     
      */
-    public String getAdministeredActivityUnit() {
+    public AdministeredActivityUnit getAdministeredActivityUnit() {
         return administeredActivityUnit;
     }
 
@@ -83,35 +81,11 @@ public class AdministeredActivity {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link AdministeredActivityUnit }
      *     
      */
-    public void setAdministeredActivityUnit(String value) {
+    public void setAdministeredActivityUnit(AdministeredActivityUnit value) {
         this.administeredActivityUnit = value;
-    }
-
-    /**
-     * Obtient la valeur de la propriété timestamp.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTimestamp() {
-        return timestamp;
-    }
-
-    /**
-     * Définit la valeur de la propriété timestamp.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTimestamp(String value) {
-        this.timestamp = value;
     }
 
 }

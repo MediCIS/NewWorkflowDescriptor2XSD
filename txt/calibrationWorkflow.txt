@@ -1,4 +1,3 @@
-
 //Descriptions of Workflows
 //-------------------------
 
@@ -78,24 +77,39 @@ CTSegmentationInCalibration
  1-DICOMData-CTReconUsed
  1-string-SegmentationMethodMethodUsed
 // to be replaced by structured items
- 1,n-VOIInCT-VOIInCTProduced
- 1,n-VOIInSPECT-VOIInSPECTProduced
+ 1-VOIInCTcontainer-VOIInCTProduced
+ 1-VOIInSPECTcontainer-VOIInSPECTProduced
 // Is it in DICOM or nonDICOM ?
+}
+
+VOIInSPECTcontainer
+{
+ 1,n-VOIInSPECT-VOIInSPECT
+}
+
+VOIInCTcontainer
+{
+ 1,n-VOIInCT-VOIInCT
 }
 
 SPECTSensitivityCalculation
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1,n-string-VOIInCTIdentifierUsed
- 1,n-string-VOIInSPECTIdentifierUsed
+ 1-VOIIdentifierContainer-VOIInCTIdentifierUsed
+ 1-VOIIdentifierContainer-VOIInSPECTIdentifierUsed
  1-CalibrationCoefficient-SPECTCalibrationCoefficientProduced
+}
+
+VOIIdentifierContainer
+{
+ 1,n-string-VOIIdentifierUsed
 }
 
 SPECTRecoveryCoefficientCurveCalculation
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1,n-string-VOIInCTIdentifierUsed
- 1,n-string-VOIInSPECTIdentifierUsed
+ 1-VOIIdentifierContainer-VOIInCTIdentifierUsed
+ 1-VOIIdentifierContainer-VOIInSPECTIdentifierUsed
  1-string-PhantomIdentifierUsed
  1-NMRelevantCalibrationReference-SPECTCalibrationCoefficientReferenceUsed
  1-SPECTRecoveryCoefficientCurveInCalibration-SPECTRecoveryCoefficientCurveInCalibrationProduced
@@ -129,10 +143,15 @@ PlanarImageSegmentation
 PlanarSensitivityCalculation
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1,n-string-ROIIdentifierUsed
+ 1-ROIIdentifierContainer-ROIIdentifierUsed
  1-DICOMData-NMStaticCorrectedUsed
  1-CalibrationCoefficient-PlanarCalibrationCoefficientProduced
- }
+}
+
+ROIIdentifierContainer
+{
+ 1,n-string-ROIIdentifier
+}
 
 
 //Descriptions of Input-Output types
@@ -152,22 +171,27 @@ CTNumberCalibrationCurveReference
 
 CTNumberCalibrationCurve
 {
-  1,n-ElementOfCTNumberCalibrationCurve-ElementOfCTNumberCalibrationCurve
-  1-string-ReferenceCalibrationDate
+ 1-ElementsOfCTNumberCalibrationCurve-ElementsOfCTNumberCalibrationCurve
+ 1-string-ReferenceCalibrationDate
+}
+
+ElementsOfCTNumberCalibrationCurve
+{
+ 1,n-ElementOfCTNumberCalibrationCurve-ElementOfCTNumberCalibrationCurve
 }
 
 ElementOfCTNumberCalibrationCurve
 {
  1-integer-HounsfieldMeasuredValue
  1-float-RealDensityOfMaterialValue
- 1-string-RealDensityOfMaterialUnit
+ 1-string-RealDensityOfMaterialUnit:hounsfield
  0,1-string-MaterialIdentifier
 }
 
 NMRelevantCalibrationReference
 {
  1-string-ReferenceCalibrationDate
- 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/rhenium188/terbium161/fluorine18
+ 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188
 }
 
 NMPhantom
@@ -175,44 +199,54 @@ NMPhantom
  1-string-NMPhantomName
 // to be provided as a closed list of possible values
  1-string-NMPhantomIdentifier
- 1,n-HotInsert-HotInsert
- 1,n-ColdInsert-ColdInsert
+ 1-HotInsertContainer-HotInsertContainer
+ 1-ColdInsertContainer-ColdInsertContainer
  1-Tank-Tank
+}
+
+HotInsertContainer
+{
+ 1,n-HotInsert-HotInsert
+}
+
+ColdInsertContainer
+{
+ 1,n-ColdInsert-ColdInsert
 }
 
 HotInsert
 {
  1-float-VolumeValue
- 1-string-VolumeUnit
+ 1-string-VolumeUnit:milliliter/cubic centimeter
  1-float-PreAdminActivityValue
- 1-string-PreAdminActivityUnit
+ 1-string-PreAdminActivityUnit:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
  1-string-PreAdminActivityTimestamp
  1-float-PostAdminActivityValue
- 1-string-PostAdminActivityUnit
+ 1-string-PostAdminActivityUnit:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
  1-string-PostAdminActivityTimestamp
  1-string-HotInsertIdentifier
- 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/rhenium188/terbium161/fluorine18
+ 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188
 }
 
 ColdInsert
 {
  1-float-VolumeValue
- 1-string-VolumeUnit
+ 1-string-VolumeUnit:milliliter/cubic centimeter
  1-string-ColdInsertIdentifier
 }
 
 Tank
 {
  1-float-VolumeValue
- 1-string-VolumeUnit
+ 1-string-VolumeUnit:milliliter/cubic centimeter
  1-float-PreAdminBackgroundActivityValue
- 1-string-PreAdminBackgroundActivityUnit
+ 1-string-PreAdminBackgroundActivityUnit:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
  1-string-PreAdminBackgroundActivityTimestamp
  1-float-PostAdminBackgroundActivityValue
- 1-string-PostAdminBackgroundActivityUnit
+ 1-string-PostAdminBackgroundActivityUnit:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
  1-string-PostAdminBackgroundActivityTimestamp
  1-string-TankIdentifier
- 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/rhenium188/terbium161/fluorine18
+ 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188
 }
 
 ProcessExecutionContext
@@ -225,7 +259,7 @@ VOIInCT
 {
  1-string-VOIIdentifier
  1-float-VOIVolumeValue
- 1-string-VOIVolumeUnit
+ 1-string-VOIVolumeUnit:milliliter/cubic centimeter
  1-string-PhantomPartIdentifier
  0,1-DICOMData-DICOMVOIContainer
  0,1-NonDICOMData-NonDICOMVOIContainer
@@ -235,7 +269,7 @@ VOIInSPECT
 {
  1-string-VOIIdentifier
  1-float-CountsInVOIValue
- 1-string-CountsInVOIUnit
+ 1-string-CountsInVOIUnit:counts
  1-string-PhantomPartIdentifier
  0,1-DICOMData-DICOMVOIContainer
  0,1-NonDICOMData-NonDICOMVOIContainer
@@ -245,7 +279,7 @@ ROIInSPECT
 {
  1-string-ROIIdentifier
  1-float-CountsInROIValue
- 1-string-CountsInROIUnit
+ 1-string-CountsInROIUnit:counts
  1-string-PhantomPartIdentifier
  0,1-DICOMData-DICOMROIContainer
  0,1-NonDICOMData-NonDICOMROIContainer
@@ -255,23 +289,28 @@ CalibrationCoefficient
 // This structure applies to both Planar calibration coefficient et SPECT calibration coefficient
 {
  1-float-CalibrationCoefficientValue
- 1-string-CalibrationCoefficientUnit
+ 1-string-CalibrationCoefficientUnit:counts per second per megabecquerel
  1-string-ReferenceCalibrationDate
- 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/rhenium188/terbium161/fluorine18
+ 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188
 }
 
 SPECTRecoveryCoefficientCurveInCalibration
 {
- 1,n-ElementOfSPECTRecoveryCoefficientCurve-ElementOfSPECTRecoveryCoefficientCurve
+ 1-ElementOfSPECTRecoveryCoefficientCurveContainer-ElementsOfSPECTRecoveryCoefficientCurve
  1-string-ReferenceCalibrationDate
- 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/rhenium188/terbium161/fluorine18
+ 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188
+}
+
+ElementOfSPECTRecoveryCoefficientCurveContainer
+{
+1,n-ElementOfSPECTRecoveryCoefficientCurve-ElementOfSPECTRecoveryCoefficientCurve
 }
 
 ElementOfSPECTRecoveryCoefficientCurve
 {
  1-float-RatioMeasuredActivityToTrueActivity
  1-float-HotInsertVolumeValue
- 1-string-HotInsertVolumeUnit
+ 1-string-HotInsertVolumeUnit:milliliter/cubic centimeter
  1-string-HotInsertIdentifier
 }
 
@@ -283,9 +322,13 @@ DICOMData
 
 NonDICOMData
 {
- 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map/3D density map/3D activity map/3D absorbed dose rate map
- 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format
- 1,n-string-NonDICOMDataFileName
+ 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map
+ 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format/STL format
+ 1-FileNameList-FileNameList
  0,1-string-FHIRIdentifier
 }
 
+FileNameList
+{
+ 1,n-string-NonDICOMDataFileName
+}

@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.11.14 à 02:58:49 PM CET 
+// Généré le : 2019.12.08 à 10:03:35 PM CET 
 //
 
 
@@ -11,6 +11,7 @@ package javaXSDclass;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -25,27 +26,15 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="VolumeValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
- *         &lt;element name="VolumeUnit" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="VolumeUnit" type="{https://www.irdbb-medirad.com}VolumeUnit"/>
  *         &lt;element name="PreAdminBackgroundActivityValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
- *         &lt;element name="PreAdminBackgroundActivityUnit" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="PreAdminBackgroundActivityUnit" type="{https://www.irdbb-medirad.com}PreAdminBackgroundActivityUnit"/>
  *         &lt;element name="PreAdminBackgroundActivityTimestamp" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="PostAdminBackgroundActivityValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
- *         &lt;element name="PostAdminBackgroundActivityUnit" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="PostAdminBackgroundActivityUnit" type="{https://www.irdbb-medirad.com}PostAdminBackgroundActivityUnit"/>
  *         &lt;element name="PostAdminBackgroundActivityTimestamp" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="TankIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="Isotope">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="radium223"/>
- *               &lt;enumeration value="iodine131"/>
- *               &lt;enumeration value="lutetium177"/>
- *               &lt;enumeration value="yttrium90"/>
- *               &lt;enumeration value="rhenium188"/>
- *               &lt;enumeration value="terbium161"/>
- *               &lt;enumeration value="fluorine18"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
+ *         &lt;element name="Isotope" type="{https://www.irdbb-medirad.com}Isotope"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -72,23 +61,27 @@ public class Tank {
     @XmlElement(name = "VolumeValue")
     protected float volumeValue;
     @XmlElement(name = "VolumeUnit", required = true)
-    protected String volumeUnit;
+    @XmlSchemaType(name = "string")
+    protected VolumeUnit volumeUnit;
     @XmlElement(name = "PreAdminBackgroundActivityValue")
     protected float preAdminBackgroundActivityValue;
     @XmlElement(name = "PreAdminBackgroundActivityUnit", required = true)
-    protected String preAdminBackgroundActivityUnit;
+    @XmlSchemaType(name = "string")
+    protected PreAdminBackgroundActivityUnit preAdminBackgroundActivityUnit;
     @XmlElement(name = "PreAdminBackgroundActivityTimestamp", required = true)
     protected String preAdminBackgroundActivityTimestamp;
     @XmlElement(name = "PostAdminBackgroundActivityValue")
     protected float postAdminBackgroundActivityValue;
     @XmlElement(name = "PostAdminBackgroundActivityUnit", required = true)
-    protected String postAdminBackgroundActivityUnit;
+    @XmlSchemaType(name = "string")
+    protected PostAdminBackgroundActivityUnit postAdminBackgroundActivityUnit;
     @XmlElement(name = "PostAdminBackgroundActivityTimestamp", required = true)
     protected String postAdminBackgroundActivityTimestamp;
     @XmlElement(name = "TankIdentifier", required = true)
     protected String tankIdentifier;
     @XmlElement(name = "Isotope", required = true)
-    protected String isotope;
+    @XmlSchemaType(name = "string")
+    protected Isotope isotope;
 
     /**
      * Obtient la valeur de la propriété volumeValue.
@@ -111,10 +104,10 @@ public class Tank {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link VolumeUnit }
      *     
      */
-    public String getVolumeUnit() {
+    public VolumeUnit getVolumeUnit() {
         return volumeUnit;
     }
 
@@ -123,10 +116,10 @@ public class Tank {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link VolumeUnit }
      *     
      */
-    public void setVolumeUnit(String value) {
+    public void setVolumeUnit(VolumeUnit value) {
         this.volumeUnit = value;
     }
 
@@ -151,10 +144,10 @@ public class Tank {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link PreAdminBackgroundActivityUnit }
      *     
      */
-    public String getPreAdminBackgroundActivityUnit() {
+    public PreAdminBackgroundActivityUnit getPreAdminBackgroundActivityUnit() {
         return preAdminBackgroundActivityUnit;
     }
 
@@ -163,10 +156,10 @@ public class Tank {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link PreAdminBackgroundActivityUnit }
      *     
      */
-    public void setPreAdminBackgroundActivityUnit(String value) {
+    public void setPreAdminBackgroundActivityUnit(PreAdminBackgroundActivityUnit value) {
         this.preAdminBackgroundActivityUnit = value;
     }
 
@@ -215,10 +208,10 @@ public class Tank {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link PostAdminBackgroundActivityUnit }
      *     
      */
-    public String getPostAdminBackgroundActivityUnit() {
+    public PostAdminBackgroundActivityUnit getPostAdminBackgroundActivityUnit() {
         return postAdminBackgroundActivityUnit;
     }
 
@@ -227,10 +220,10 @@ public class Tank {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link PostAdminBackgroundActivityUnit }
      *     
      */
-    public void setPostAdminBackgroundActivityUnit(String value) {
+    public void setPostAdminBackgroundActivityUnit(PostAdminBackgroundActivityUnit value) {
         this.postAdminBackgroundActivityUnit = value;
     }
 
@@ -287,10 +280,10 @@ public class Tank {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link Isotope }
      *     
      */
-    public String getIsotope() {
+    public Isotope getIsotope() {
         return isotope;
     }
 
@@ -299,10 +292,10 @@ public class Tank {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link Isotope }
      *     
      */
-    public void setIsotope(String value) {
+    public void setIsotope(Isotope value) {
         this.isotope = value;
     }
 

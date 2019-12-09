@@ -1,8 +1,0 @@
-860,863c860,861
-< 				<xs:element name="CTReconResampledOnCommonReferenceProduced" type="irdbb:DICOMData" minOccurs="0" maxOccurs="unbounded" />
-< 				<xs:element name="CTReconResampledOnCommonReferenceProducedNonDICOM" type="irdbb:NonDICOMData" minOccurs="0" maxOccurs="unbounded" />
-< 				<xs:element name="NMTomoReconResampledOnCommonReferenceProduced" type="irdbb:DICOMData" minOccurs="0" maxOccurs="unbounded" />
-< 				<xs:element name="NMTomoReconResampledOnCommonReferenceProducedNonDICOM" type="irdbb:NonDICOMData" minOccurs="0" maxOccurs="unbounded" />
----
-> 				<xs:element name="CTReconResampledOnCommonReferenceProduced" type="irdbb:DICOMData" maxOccurs="unbounded" />
-> 				<xs:element name="NMTomoReconResampledOnCommonReferenceProduced" type="irdbb:DICOMData" maxOccurs="unbounded" />

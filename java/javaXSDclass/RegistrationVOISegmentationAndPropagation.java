@@ -2,14 +2,12 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.11.14 à 02:58:49 PM CET 
+// Généré le : 2019.12.08 à 10:03:35 PM CET 
 //
 
 
 package javaXSDclass;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -27,16 +25,14 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
- *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
- *         &lt;element name="NMTomoReconUsed" type="{https://www.irdbb-medirad.com}DICOMData" maxOccurs="unbounded"/>
- *         &lt;element name="CTReconUsed" type="{https://www.irdbb-medirad.com}DICOMData" maxOccurs="unbounded"/>
+ *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="CountsPerVOIAtTimePointProducedContainer" type="{https://www.irdbb-medirad.com}CountsPerVOIAtTimePointProducedContainer"/>
+ *         &lt;element name="NMTomoReconUsed" type="{https://www.irdbb-medirad.com}DICOMDataContainer"/>
+ *         &lt;element name="CTReconUsed" type="{https://www.irdbb-medirad.com}DICOMDataContainer"/>
  *         &lt;element name="ImageProcessingMethodMethodUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="CountsPerVOIAtTimePointProduced" type="{https://www.irdbb-medirad.com}CountsPerVOIAtTimePoint" maxOccurs="unbounded"/>
- *         &lt;element name="VOIProduced" type="{https://www.irdbb-medirad.com}VOI" maxOccurs="unbounded"/>
- *         &lt;element name="CTReconResampledOnCommonReferenceProduced" type="{https://www.irdbb-medirad.com}DICOMData" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="CTReconResampledOnCommonReferenceProducedNonDICOM" type="{https://www.irdbb-medirad.com}NonDICOMData" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="NMTomoReconResampledOnCommonReferenceProduced" type="{https://www.irdbb-medirad.com}DICOMData" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="NMTomoReconResampledOnCommonReferenceProducedNonDICOM" type="{https://www.irdbb-medirad.com}NonDICOMData" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="SegmentationProduced" type="{https://www.irdbb-medirad.com}VoiProducedContainer"/>
+ *         &lt;element name="CTReconResampledOnCommonReferenceProduced" type="{https://www.irdbb-medirad.com}DICOMDataContainer"/>
+ *         &lt;element name="NMTomoReconResampledOnCommonReferenceProduced" type="{https://www.irdbb-medirad.com}DICOMDataContainer"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -49,40 +45,34 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "RegistrationVOISegmentationAndPropagation", propOrder = {
     "processExecutionContext",
     "timePointIdentifierUsed",
+    "countsPerVOIAtTimePointProducedContainer",
     "nmTomoReconUsed",
     "ctReconUsed",
     "imageProcessingMethodMethodUsed",
-    "countsPerVOIAtTimePointProduced",
-    "voiProduced",
+    "segmentationProduced",
     "ctReconResampledOnCommonReferenceProduced",
-    "ctReconResampledOnCommonReferenceProducedNonDICOM",
-    "nmTomoReconResampledOnCommonReferenceProduced",
-    "nmTomoReconResampledOnCommonReferenceProducedNonDICOM"
+    "nmTomoReconResampledOnCommonReferenceProduced"
 })
 public class RegistrationVOISegmentationAndPropagation {
 
     @XmlElement(name = "ProcessExecutionContext", required = true)
     protected ProcessExecutionContext processExecutionContext;
     @XmlElement(name = "TimePointIdentifierUsed", required = true)
-    protected List<String> timePointIdentifierUsed;
+    protected String timePointIdentifierUsed;
+    @XmlElement(name = "CountsPerVOIAtTimePointProducedContainer", required = true)
+    protected CountsPerVOIAtTimePointProducedContainer countsPerVOIAtTimePointProducedContainer;
     @XmlElement(name = "NMTomoReconUsed", required = true)
-    protected List<DICOMData> nmTomoReconUsed;
+    protected DICOMDataContainer nmTomoReconUsed;
     @XmlElement(name = "CTReconUsed", required = true)
-    protected List<DICOMData> ctReconUsed;
+    protected DICOMDataContainer ctReconUsed;
     @XmlElement(name = "ImageProcessingMethodMethodUsed", required = true)
     protected String imageProcessingMethodMethodUsed;
-    @XmlElement(name = "CountsPerVOIAtTimePointProduced", required = true)
-    protected List<CountsPerVOIAtTimePoint> countsPerVOIAtTimePointProduced;
-    @XmlElement(name = "VOIProduced", required = true)
-    protected List<VOI> voiProduced;
-    @XmlElement(name = "CTReconResampledOnCommonReferenceProduced")
-    protected List<DICOMData> ctReconResampledOnCommonReferenceProduced;
-    @XmlElement(name = "CTReconResampledOnCommonReferenceProducedNonDICOM")
-    protected List<NonDICOMData> ctReconResampledOnCommonReferenceProducedNonDICOM;
-    @XmlElement(name = "NMTomoReconResampledOnCommonReferenceProduced")
-    protected List<DICOMData> nmTomoReconResampledOnCommonReferenceProduced;
-    @XmlElement(name = "NMTomoReconResampledOnCommonReferenceProducedNonDICOM")
-    protected List<NonDICOMData> nmTomoReconResampledOnCommonReferenceProducedNonDICOM;
+    @XmlElement(name = "SegmentationProduced", required = true)
+    protected VoiProducedContainer segmentationProduced;
+    @XmlElement(name = "CTReconResampledOnCommonReferenceProduced", required = true)
+    protected DICOMDataContainer ctReconResampledOnCommonReferenceProduced;
+    @XmlElement(name = "NMTomoReconResampledOnCommonReferenceProduced", required = true)
+    protected DICOMDataContainer nmTomoReconResampledOnCommonReferenceProduced;
 
     /**
      * Obtient la valeur de la propriété processExecutionContext.
@@ -109,90 +99,99 @@ public class RegistrationVOISegmentationAndPropagation {
     }
 
     /**
-     * Gets the value of the timePointIdentifierUsed property.
+     * Obtient la valeur de la propriété timePointIdentifierUsed.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the timePointIdentifierUsed property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getTimePointIdentifierUsed().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
-    public List<String> getTimePointIdentifierUsed() {
-        if (timePointIdentifierUsed == null) {
-            timePointIdentifierUsed = new ArrayList<String>();
-        }
-        return this.timePointIdentifierUsed;
+    public String getTimePointIdentifierUsed() {
+        return timePointIdentifierUsed;
     }
 
     /**
-     * Gets the value of the nmTomoReconUsed property.
+     * Définit la valeur de la propriété timePointIdentifierUsed.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the nmTomoReconUsed property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getNMTomoReconUsed().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link DICOMData }
-     * 
-     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
-    public List<DICOMData> getNMTomoReconUsed() {
-        if (nmTomoReconUsed == null) {
-            nmTomoReconUsed = new ArrayList<DICOMData>();
-        }
-        return this.nmTomoReconUsed;
+    public void setTimePointIdentifierUsed(String value) {
+        this.timePointIdentifierUsed = value;
     }
 
     /**
-     * Gets the value of the ctReconUsed property.
+     * Obtient la valeur de la propriété countsPerVOIAtTimePointProducedContainer.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the ctReconUsed property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getCTReconUsed().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link DICOMData }
-     * 
-     * 
+     * @return
+     *     possible object is
+     *     {@link CountsPerVOIAtTimePointProducedContainer }
+     *     
      */
-    public List<DICOMData> getCTReconUsed() {
-        if (ctReconUsed == null) {
-            ctReconUsed = new ArrayList<DICOMData>();
-        }
-        return this.ctReconUsed;
+    public CountsPerVOIAtTimePointProducedContainer getCountsPerVOIAtTimePointProducedContainer() {
+        return countsPerVOIAtTimePointProducedContainer;
+    }
+
+    /**
+     * Définit la valeur de la propriété countsPerVOIAtTimePointProducedContainer.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CountsPerVOIAtTimePointProducedContainer }
+     *     
+     */
+    public void setCountsPerVOIAtTimePointProducedContainer(CountsPerVOIAtTimePointProducedContainer value) {
+        this.countsPerVOIAtTimePointProducedContainer = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété nmTomoReconUsed.
+     * 
+     * @return
+     *     possible object is
+     *     {@link DICOMDataContainer }
+     *     
+     */
+    public DICOMDataContainer getNMTomoReconUsed() {
+        return nmTomoReconUsed;
+    }
+
+    /**
+     * Définit la valeur de la propriété nmTomoReconUsed.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link DICOMDataContainer }
+     *     
+     */
+    public void setNMTomoReconUsed(DICOMDataContainer value) {
+        this.nmTomoReconUsed = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété ctReconUsed.
+     * 
+     * @return
+     *     possible object is
+     *     {@link DICOMDataContainer }
+     *     
+     */
+    public DICOMDataContainer getCTReconUsed() {
+        return ctReconUsed;
+    }
+
+    /**
+     * Définit la valeur de la propriété ctReconUsed.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link DICOMDataContainer }
+     *     
+     */
+    public void setCTReconUsed(DICOMDataContainer value) {
+        this.ctReconUsed = value;
     }
 
     /**
@@ -220,177 +219,75 @@ public class RegistrationVOISegmentationAndPropagation {
     }
 
     /**
-     * Gets the value of the countsPerVOIAtTimePointProduced property.
+     * Obtient la valeur de la propriété segmentationProduced.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the countsPerVOIAtTimePointProduced property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getCountsPerVOIAtTimePointProduced().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CountsPerVOIAtTimePoint }
-     * 
-     * 
+     * @return
+     *     possible object is
+     *     {@link VoiProducedContainer }
+     *     
      */
-    public List<CountsPerVOIAtTimePoint> getCountsPerVOIAtTimePointProduced() {
-        if (countsPerVOIAtTimePointProduced == null) {
-            countsPerVOIAtTimePointProduced = new ArrayList<CountsPerVOIAtTimePoint>();
-        }
-        return this.countsPerVOIAtTimePointProduced;
+    public VoiProducedContainer getSegmentationProduced() {
+        return segmentationProduced;
     }
 
     /**
-     * Gets the value of the voiProduced property.
+     * Définit la valeur de la propriété segmentationProduced.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the voiProduced property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getVOIProduced().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link VOI }
-     * 
-     * 
+     * @param value
+     *     allowed object is
+     *     {@link VoiProducedContainer }
+     *     
      */
-    public List<VOI> getVOIProduced() {
-        if (voiProduced == null) {
-            voiProduced = new ArrayList<VOI>();
-        }
-        return this.voiProduced;
+    public void setSegmentationProduced(VoiProducedContainer value) {
+        this.segmentationProduced = value;
     }
 
     /**
-     * Gets the value of the ctReconResampledOnCommonReferenceProduced property.
+     * Obtient la valeur de la propriété ctReconResampledOnCommonReferenceProduced.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the ctReconResampledOnCommonReferenceProduced property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getCTReconResampledOnCommonReferenceProduced().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link DICOMData }
-     * 
-     * 
+     * @return
+     *     possible object is
+     *     {@link DICOMDataContainer }
+     *     
      */
-    public List<DICOMData> getCTReconResampledOnCommonReferenceProduced() {
-        if (ctReconResampledOnCommonReferenceProduced == null) {
-            ctReconResampledOnCommonReferenceProduced = new ArrayList<DICOMData>();
-        }
-        return this.ctReconResampledOnCommonReferenceProduced;
+    public DICOMDataContainer getCTReconResampledOnCommonReferenceProduced() {
+        return ctReconResampledOnCommonReferenceProduced;
     }
 
     /**
-     * Gets the value of the ctReconResampledOnCommonReferenceProducedNonDICOM property.
+     * Définit la valeur de la propriété ctReconResampledOnCommonReferenceProduced.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the ctReconResampledOnCommonReferenceProducedNonDICOM property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getCTReconResampledOnCommonReferenceProducedNonDICOM().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link NonDICOMData }
-     * 
-     * 
+     * @param value
+     *     allowed object is
+     *     {@link DICOMDataContainer }
+     *     
      */
-    public List<NonDICOMData> getCTReconResampledOnCommonReferenceProducedNonDICOM() {
-        if (ctReconResampledOnCommonReferenceProducedNonDICOM == null) {
-            ctReconResampledOnCommonReferenceProducedNonDICOM = new ArrayList<NonDICOMData>();
-        }
-        return this.ctReconResampledOnCommonReferenceProducedNonDICOM;
+    public void setCTReconResampledOnCommonReferenceProduced(DICOMDataContainer value) {
+        this.ctReconResampledOnCommonReferenceProduced = value;
     }
 
     /**
-     * Gets the value of the nmTomoReconResampledOnCommonReferenceProduced property.
+     * Obtient la valeur de la propriété nmTomoReconResampledOnCommonReferenceProduced.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the nmTomoReconResampledOnCommonReferenceProduced property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getNMTomoReconResampledOnCommonReferenceProduced().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link DICOMData }
-     * 
-     * 
+     * @return
+     *     possible object is
+     *     {@link DICOMDataContainer }
+     *     
      */
-    public List<DICOMData> getNMTomoReconResampledOnCommonReferenceProduced() {
-        if (nmTomoReconResampledOnCommonReferenceProduced == null) {
-            nmTomoReconResampledOnCommonReferenceProduced = new ArrayList<DICOMData>();
-        }
-        return this.nmTomoReconResampledOnCommonReferenceProduced;
+    public DICOMDataContainer getNMTomoReconResampledOnCommonReferenceProduced() {
+        return nmTomoReconResampledOnCommonReferenceProduced;
     }
 
     /**
-     * Gets the value of the nmTomoReconResampledOnCommonReferenceProducedNonDICOM property.
+     * Définit la valeur de la propriété nmTomoReconResampledOnCommonReferenceProduced.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the nmTomoReconResampledOnCommonReferenceProducedNonDICOM property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getNMTomoReconResampledOnCommonReferenceProducedNonDICOM().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link NonDICOMData }
-     * 
-     * 
+     * @param value
+     *     allowed object is
+     *     {@link DICOMDataContainer }
+     *     
      */
-    public List<NonDICOMData> getNMTomoReconResampledOnCommonReferenceProducedNonDICOM() {
-        if (nmTomoReconResampledOnCommonReferenceProducedNonDICOM == null) {
-            nmTomoReconResampledOnCommonReferenceProducedNonDICOM = new ArrayList<NonDICOMData>();
-        }
-        return this.nmTomoReconResampledOnCommonReferenceProducedNonDICOM;
+    public void setNMTomoReconResampledOnCommonReferenceProduced(DICOMDataContainer value) {
+        this.nmTomoReconResampledOnCommonReferenceProduced = value;
     }
 
 }

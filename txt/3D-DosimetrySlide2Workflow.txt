@@ -1,4 +1,3 @@
-
 //Descriptions of Workflows
 //-------------------------
 ThreeDimDosimetrySlide2workflow
@@ -11,8 +10,42 @@ ThreeDimDosimetrySlide2workflow
 
 SPECTDataAcquisitionAndReconstruction
 {
- 1-SPECTAcqCTAcqAndReconstruction-SPECTAcqCTAcqAndReconstruction
- 1-SPECTReconstruction-SPECTReconstruction
+ 1-SPECTAcqCTAcqAndReconstructionContainer-SPECTAcqCTAcqAndReconstructionContainer
+ 1-SPECTReconstructionContainer-SPECTReconstructionContainer
+}
+
+SPECTAcqCTAcqAndReconstructionContainer
+{
+ 1,n-SPECTAcqCTAcqAndReconstruction-SPECTAcqCTAcqAndReconstruction
+}
+
+SPECTReconstructionContainer
+{
+ 1,n-SPECTReconstruction-SPECTReconstruction
+}
+
+SPECTAcqCTAcqAndReconstruction
+{
+ 1-TimePointDescription-TimePointDescription
+ 1-NMRelevantCalibrationReference-NMRelevantCalibrationReference
+ 1-CTRelevantCalibrationReference-CTRelevantCalibrationReference
+ 1-DICOMData-NMTomoProduced
+// it is not needed to detail input that will be retrieved from DICOM metadata
+ 1-DICOMData-CTReconProduced
+// it is not needed to detail input that will be retrieved from DICOM metadata
+}
+
+SPECTReconstruction
+{
+ 1-ProcessExecutionContext-ProcessExecutionContext
+ 1-string-TimePointIdentifierUsed
+ 1-DICOMData-NMTomoUsed
+ 1-DICOMData-CTReconUsed
+ 1-string-ReconstructionMethodAndCorrectionsUsed
+// the choice below is because CTNumberCalibrationCurve may be referred to using a reference or actually entered (by value)
+ 0,1-CTNumberCalibrationCurve-CTNumberCalibrationCurveUsed
+ 0,1-CTNumberCalibrationCurveReference-CTNumberCalibrationCurveReference
+ 1-DICOMData-NMTomoReconProduced
 }
 
 VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation
@@ -59,32 +92,42 @@ VOISegmentationVOIMassDetermination
  1-DICOMData-CTReconUsed
  1-string-VOISegmentationMethodUsed
 // to be replaced by structured items
- 1,n-CountsPerVOIAtTimePoint-CountsPerVOIAtTimePointProduced
- 1,n-VOI-VOIProduced
- 1,n-DICOMData-CTReconResampledOnNMReferenceProduced
+ 1-CountsPerVOIAtTimePointContainer-CountsPerVOIAtTimePointContainer
+ 1-VOIidentifierContainer-VOIProduced
+ 1-DICOMDataContainer-CTReconResampledOnNMReferenceProduced
+ 1-MassPerVOIAtTimePointContainer-MassPerVOIAtTimePointContainer
+}
+
+MassPerVOIAtTimePointContainer
+{
  1,n-MassPerVOIAtTimePoint-MassPerVOIAtTimePointProduced
+}
+
+CountsPerVOIAtTimePointContainer
+{
+ 1,n-CountsPerVOIAtTimePoint-CountsPerVOIAtTimePointProduced
 }
 
 VOIActivityDetermination
 {
  1-ProcessExecutionContext-ProcessExecutionContext
 // to clarify if the same Calibration Factor is used for all timepoints ?
- 1,n-string-VOIIdentifierUsed
+ 1-VOIContainer-VOIContainer
  1-string-TimePointIdentifierUsed
 // Corresponding Counts per VOI at TimePoint need to be retrieved
  1-NMRelevantCalibrationReference-SPECTCalibrationFactorReferenceUsed
 // how to refer to a value obtained in a calibration workflow?
  1-NMRelevantCalibrationReference-SPECTRecoveryCoefficientCurveReferenceUsed
 // how to refer to a SPECT Recovery Coefficient Curve obtained in a calibration workflow?
- 1,n-DataActivityPerVOIAtTimePoint-DataActivityPerVOIAtTimePointProduced
+ 1-DataActivityPerVOIAtTimePointContainer-DataActivityPerVOIAtTimePointContainer
 }
 
 EnergyDepositionRateCalculationIn3DDosimetry
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1,n-string-VOIIdentifierUsed
+ 1-VOIidentifierContainer-VOIIdentifierUsed
  1-string-TimePointIdentifierUsed
- 1,n-string-VOIUsed
+ 1-VOIidentifierContainer-VOIUsed
 // Corresponding Mass Per VOI AtTimePoint need to be retrieved
 // Corresponding VOIs At TimePoint need to be retrieved
  1-DICOMData-CTReconResampledOnNMReferenceUsed
@@ -97,13 +140,18 @@ EnergyDepositionRateCalculationIn3DDosimetry
 SumAndScalingAbsorbedDoseRateCalculation
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1,n-string-VOIIdentifierUsed
+ 1-VOIidentifierContainer-VOIIdentifierUsed
  1-string-TimePointIdentifierUsed
- 1,n-string-VOIUsed
+ 1-VOIContainer-VOIUsed
 // Corresponding Mass Per VOI AtTimePoint need to be retrieved
 // Corresponding VOIs AtTimePoint need to be retrieved
 // Corresponding Data Activities per VOI At TimePoint need to be retrieved
  1-string-ThreeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed
+ 1-AbsorbedDoseRatePerVOIAtTimePointContainer-AbsorbedDoseRatePerVOIAtTimePointProduced
+}
+
+AbsorbedDoseRatePerVOIAtTimePointContainer
+{
  1,n-AbsorbedDoseRatePerVOIAtTimePoint-AbsorbedDoseRatePerVOIAtTimePointProduced
 }
 
@@ -111,18 +159,27 @@ DoseRateCurveFitVOITimeIntegration
 {
  1-ProcessExecutionContext-ProcessExecutionContext
 // Does this processing focus on one VOI only or on all VOIs ? I assume all
- 1,n-string-VOIIdentifierUsed
- 1,n-string-TimePointIdentifierUsed
+ 1-VOIidentifierContainer-VOIIdentifierUsed
+ 1-TimePointIdentifierUsedContainer-TimePointIdentifierUsed
 // Corresponding Absorbed Dose Rate for all VOIs and all TimePoints need to be retrieved
- 1-string-PKAssessmentMethodUsed
-// to be provided as a closed list of possible values
- 1,n-AbsorbedDoseInVOI-AbsorbedDoseInVOIProduced
+ 1-CurveFittingMethod-PKAssessmentMethodUsed
+ 1-AbsorbedDoseInVOIcontainer-AbsorbedDoseInVOIProduced
+}
+
+AbsorbedDoseInVOIcontainer
+{
+ 1,n-AbsorbedDoseInVOI-AbsorbedDoseInVOI
+}
+
+TimePointIdentifierUsedContainer
+{
+ 1,n-string-TimePointIdentifierUsed
 }
 
 RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1,n-string-VOIIdentifierUsed
+ 1-VOIidentifierContainer-VOIIdentifierUsed
 // Corresponding Absorbed Dose In VOI need to be retrieved
  1-string-RadioBiologicalCalculationMethod
 // to be replaced by structured items
@@ -137,7 +194,12 @@ RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry
 
 TimePointDescription
 {
- 1-string-TimePointCategory:168h plus or minus 24h post RAIT timepoint/96h plus or minus 12h post RAIT timepoint/72h plus or minus 12h post RAIT timepoint/48h plus or minus 4h post RAIT timepoint/24h plus or minus 4h post RAIT timepoint/6h plus or minus 2h post RAIT timepoint
+ 1,n-TimePointDescriptionElement-TimePointDescriptionElement
+}
+
+TimePointDescriptionElement
+{
+ 1-string-TimePointCategory:168h plus or minus 24h post RAIT timepoint/96h plus or minus 12h post RAIT timepoint/72h plus or minus 12h post RAIT timepoint/48h plus or minus 4h post RAIT timepoint/24h plus or minus 4h post RAIT timepoint/6h plus or minus 2h post RAIT timepoint/additional timepoint
  1-string-TimePointIdentifier
  1-integer-TimePointDistanceFromReferenceEventValue
  1-string-TimePointDistanceFromReferenceEventUnit:minutes/hours/days/months/years
@@ -162,14 +224,13 @@ CTNumberCalibrationCurveReference
 NMRelevantCalibrationReference
 {
  1-string-ReferenceCalibrationDate
- 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/rhenium188/terbium161/fluorine18
+ 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188
 }
 
 CountsPerVOIAtTimePoint
 {
  1-float-CountsValue
- 1-string-CountsUnit
-// to be provided as a closed list of possible values
+ 1-string-CountsUnit:counts
  1-string-VOIIdentifier
  1-string-TimePointIdentifier
 }
@@ -177,24 +238,54 @@ CountsPerVOIAtTimePoint
 VOI
 {
  1-string-VOIIdentifier
- 1-string-OrganOrTissue:bone/breast/esophagus/heart/lungs/skin/human body/Adipose residual tissue/Adrenal left/Adrenal right/Air inside body/Air outside body/Alveolar interstitium/Ankles and foot bones cortical/Ankles and foot bones spongiosa/Anterior nasal passage (ET1)/Ascending colon contents/Ascending colon wall/Blood vessels arms/Blood vessels head/Blood vessels legs/Blood vessels trunk/Brain/Breast a + Breast g/Breast left adipose tissue/Breast left glandular tissue/Breast right adipose tissue/Breast right glandular tissue/Bronchi/Cartilage arms/Cartilage head/Cartilage legs/Cartilage trunk/Cervical spine cortical/Cervical spine spongiosa/Clavicles cortical/Clavicles spongiosa/Colon/Cranium cortical/Cranium spongiosa/Descending colon contents/Descending colon wall/ET region/Eye bulb left/Eye bulb right/Eye lense left/Eye lense right/Femora lower half cortical/Femora lower half medullary cavity/Femora lower half spongiosa/Femora upper half cortical/Femora upper half medullary cavity/Femora upper half spongiosa/Gall bladder contents/Gall bladder wall/Heart contents (blood)/Heart wall/Humeri lower half cortical/Humeri lower half medullary cavity/Humeri lower half spongiosa/Humeri upper half cortical/Humeri upper half medullary cavity/Humeri upper half spongiosa/Kidney left cortex/Kidney left medulla/Kidney left pelvis/Kidney right cortex/Kidney right medulla/Kidney right pelvis/LBreast a + LBresat g/Left colon wall (left transverse + descending)/Left kidney C+M+P/Left lung lobe/Lenses of eye/Liver/Lumbar spine cortical/Lumbar spine spongiosa/Lung left blood/Lung left tissue/Lung right blood/Lung right tissue/Lymphatic nodes arms/Lymphatic nodes extrathoracic airways/Lymphatic nodes head/Lymphatic nodes legs/Lymphatic nodes thoracic airways/Lymphatic nodes trunk/Lymph nodes/Lymph nodes except LN ET + LN Th/Mandible cortical/Mandible spongiosa/Muscle/Muscle arms/Muscle head/Muscle legs/Muscle trunk/Oesophagus/Oral mucosa/Oral mucosa lips and cheeks/Oral mucosa tongue/Ovary left/Ovary right/Pancreas/Pelvis cortical/Pelvis spongiosa/Pituitary gland/Posterior nasal passage down to larynx (ET2)/Prostate/RAdrenal + LAdrenal/RBreast a + LBreast a/RBreast a + RBreast g/RBreast g + LBreast g/Rectum wall/Residual tissue arms/Residual tissue head/Residual tissue legs/Residual tissue trunk/Ribs cortical/Ribs spongiosa/Right colon wall (ascending + right transverse)/Right kidney C+M+P/Right lung lobe/RKidney + LKidney/RLung + LLung/ROvary + LOvary/Sacrum spongiosa/Salivary glands/Salivary glands left/Salivary glands right/Scapulae cortical/Scapulae spongiosa/Sigmoid colon contents/Sigmoid colon wall/Sigmoid colon wall + rectum wall/Skin/Skin arms/Skin at top and bottom/Skin head/Skin legs/Skin trunk/Small intestine contents/Small intestine wall/Spinal cord/Spleen/Sternum cortical/Sternum spongiosa/Stomach contents/Stomach wall/Teeth/Testes/Testis left/Testis right/Thoracic spine cortical/Thoracic spine spongiosa/Thymus/Thyroid/Tibiae fibulae and patellae cortical/Tibiae fibulae and patellae medullary cavity/Tibiae fibulae and patellae spongiosa/Tongue/Tongue (inner part)/Tonsils/Total body except organ contents/Trachea/Transverse colon contents left/Transverse colon contents right/Transverse colon wall left/Transverse colon wall right/Ulnae and radii cortical/Ulnae and radii medullary cavity/Ulnae and radii spongiosa/Ureter left/Ureter right/Ureters/Urinary bladder contents/Urinary bladder wall/Uterus/Wrists and hand bones cortical/Wrists and hand bones spongiosa
- 0,n-DICOMData-DICOMVOIContainer
- 0,n-NonDICOMData-NonDICOMVOIContainer
+ 1-string-OrganOrTissue:bone/breast/esophagus/heart/lungs/skin/human body
+ 0,1-DICOMDataContainer-DICOMDataContainer
+ 0,1-NonDICOMDataContainer-NonDICOMDataContainer
+}
+
+DataActivityPerVOIAtTimePointContainer
+{
+ 1,n-DataActivityPerVOIAtTimePoint-DataActivityPerVOIAtTimePointProduced
 }
 
 
+VOIidentifierContainer
+{
+ 1-string-VOIIdentifierUsed
+}
+
+DICOMDataContainer
+{
+ 1,n-DICOMData-DICOMVOIContainer
+}
+
+NonDICOMDataContainer
+{
+ 1,n-NonDICOMData-NonDICOMVOIContainer
+}
+
 CTNumberCalibrationCurve
 {
-  1,n-ElementOfCTNumberCalibrationCurve-ElementOfCTNumberCalibrationCurve
-  1-string-ReferenceCalibrationDate
+ 1-ElementsOfCTNumberCalibrationCurve-ElementsOfCTNumberCalibrationCurve
+ 1-string-ReferenceCalibrationDate
+}
+
+ElementsOfCTNumberCalibrationCurve
+{
+ 1,n-ElementOfCTNumberCalibrationCurve-ElementOfCTNumberCalibrationCurve
 }
 
 ElementOfCTNumberCalibrationCurve
 {
  1-integer-HounsfieldMeasuredValue
  1-float-RealDensityOfMaterialValue
- 1-string-RealDensityOfMaterialUnit
+ 1-string-RealDensityOfMaterialUnit:hounsfield
  0,1-string-MaterialIdentifier
+}
+
+VOIContainer
+{
+ 1-string-VOIIdentifierUsed
 }
 
 SPECTRecoveryCoefficientCurve
@@ -206,8 +297,7 @@ SPECTRecoveryCoefficientCurve
 MassPerVOIAtTimePoint
 {
  1-float-MassValue
- 1-string-MassUnit
-// to be provided as a closed list of possible values
+ 1-string-MassUnit:gram/kilogram
  1-string-VOIIdentifier
  1-string-TimePointIdentifier
 }
@@ -215,18 +305,15 @@ MassPerVOIAtTimePoint
 DataActivityPerVOIAtTimePoint
 {
  1-float-DataActivityValue
- 1-string-DataActivityUnit
-// to be provided as a closed list of possible values
+ 1-string-AdministeredActivityUnit:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
  1-string-VOIIdentifier
  1-string-TimePointIdentifier
 }
 
-
 AbsorbedDoseRatePerVOIAtTimePoint
 {
  1-float-AbsorbedDoseRateValue
- 1-string-AbsorbedDoseRateUnit
-// to be provided as a closed list of possible values
+ 1-string-AbsorbedDoseRateUnit:gray per second/milligray per second
  1-string-VOIIdentifier
  1-string-TimePointIdentifier
 }
@@ -234,8 +321,7 @@ AbsorbedDoseRatePerVOIAtTimePoint
 AbsorbedDoseInVOI
 {
  1-float-AbsorbedDoseInVOIValue
- 1-string-AbsorbedDoseInVOIUnit
-// to be provided as a closed list of possible values
+ 1-string-AbsorbedDoseInVOIUnit:gray/milligray
  1-string-VOIIdentifier
 }
 
@@ -243,6 +329,13 @@ KernelLimitForConvolutions
 {
  1-float-KernelLimitForConvolutionsValue
  1-string-KernelLimitForConvolutionsUnit:millimeter/centimeter
+}
+
+CurveFittingMethod
+{
+ 1-string-IncorporationFunction:constant/linear/exponential
+ 1-string-IntegrationAlgorithm:trapezoid/mono_exponential/bi_exponential/tri_exponential/x_exponential/other
+ 1-string-FittingFunction
 }
 
 DICOMData
@@ -253,8 +346,13 @@ DICOMData
 
 NonDICOMData
 {
- 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D dose map/3D density map/3D activity map/3D absorbed dose rate map
- 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format
- 1,n-string-NonDICOMDataFileName
+ 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map
+ 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format/STL format
+ 1-FileNameList-FileNameList
  0,1-string-FHIRIdentifier
+}
+
+FileNameList
+{
+ 1,n-string-NonDICOMDataFileName
 }

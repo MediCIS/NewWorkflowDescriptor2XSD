@@ -15,15 +15,14 @@ then echo "Coherents Files"
 else
 echo "Incoherents Files"
 echo "See inconsistencyList.txt for details"
-
 exit 1
 fi
 
 # 1 Version Number
 fileVersion="versionNonDicom.txt"
-
 oldVersion=$(($(cat $fileVersion)))
-version=$(($(cat $fileVersion) + 1))
+version=$(($(cat $fileVersion) ))
+#version=$(($(cat $fileVersion) + 1))
 
 echo "Nouvelle Version : ""$version"
 echo "Ancienne Version : ""$oldVersion"
@@ -36,7 +35,7 @@ echo "$version" > "$fileVersion"
 cd java
 for i in  ../xsd/*.xsd
 do
-xjc -p javaXSDclass $i
+xjc -readOnly -p javaXSDclass $i
 done
 
 # 4 Conversion txt to multiple xsd
@@ -48,7 +47,6 @@ done
 
 # 5 Diff
 cd "$( dirname "${BASH_SOURCE[0]}" )"
-
 diff xsd/nonDicomFileSetDescriptor.xsd oldNonDicomFileSetDescriptor.xsd > diffXsd$oldVersion-$version.txt
 
 # 6 Compress XSD simple Files
