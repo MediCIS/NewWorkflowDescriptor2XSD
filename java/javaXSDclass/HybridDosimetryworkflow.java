@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.12.07 à 03:48:07 PM CET 
+// Généré le : 2019.12.11 à 04:46:08 PM CET 
 //
 
 
@@ -13,17 +13,16 @@ import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour anonymous complex type.
+ * <p>Classe Java pour HybridDosimetryworkflow complex type.
  * 
  * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
- * &lt;complexType>
+ * &lt;complexType name="HybridDosimetryworkflow">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
@@ -41,14 +40,13 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
+@XmlType(name = "HybridDosimetryworkflow", propOrder = {
     "planarDataAcquisitionAndProcessing",
     "spectDataAcquisitionAndProcessing",
     "hybridDosimetryViaAbsorbedDoseRateCalculation",
     "hybridDosimetryViaTimeActivityCurveFit",
     "radioBiologicalCalculationInHybridOr3DSlide2Dosimetry"
 })
-@XmlRootElement(name = "HybridDosimetryworkflow")
 public class HybridDosimetryworkflow {
 
     @XmlElement(name = "PlanarDataAcquisitionAndProcessing", required = true)

@@ -1,35 +1,34 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 001-->
+<!--VersionSchemas : 007-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
 attributeFormDefault="unqualified"
 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 xmlns:irdbb="https://www.irdbb-medirad.com">
-	<xs:element name="NonDicomFileSetDescriptor">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="ReferencedClinicalResearchStudy">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="ClinicalResearchStudyID" type="xs:string"/>
-							<xs:element name="ClinicalResearchStudyTitle" type="xs:string"/>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
-				<xs:element name="PatientId" type="xs:string"/>
+	<xs:element name="NonDicomFileSetDescriptor"  type="irdbb:NonDicomFileSetDescriptor" />
+	<xs:complexType name="NonDicomFileSetDescriptor">
+		<xs:sequence>
+			<xs:element name="ReferencedClinicalResearchStudy" type="irdbb:ReferencedClinicalResearchStudy" />
+			<xs:element name="PatientId" type="xs:string"/>
+				<xs:element name="WP2subtask212WorkflowData" type="irdbb:WP2subtask212WorkflowData" />
+		</xs:sequence>
+	</xs:complexType>
 
-				<xs:element name="WP2subtask212WorkflowData">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="CTSegmentation" type="irdbb:CTSegmentation" minOccurs="0" />
-							<xs:element name="SimpleCTMonteCarloDosimetry" type="irdbb:SimpleCTMonteCarloDosimetry" minOccurs="0" maxOccurs="unbounded" />
+			<xs:complexType name="ReferencedClinicalResearchStudy">
+					<xs:sequence>
+						<xs:element name="ClinicalResearchStudyID" type="xs:string"/>
+						<xs:element name="ClinicalResearchStudyTitle" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+
+			<xs:complexType name="WP2subtask212WorkflowData">
+				<xs:sequence>
+					<xs:element name="CTSegmentation" type="irdbb:CTSegmentation" minOccurs="0" />
+					<xs:element name="SimpleCTMonteCarloDosimetry" type="irdbb:SimpleCTMonteCarloDosimetry" minOccurs="0" maxOccurs="unbounded" />
 						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
+				</xs:complexType>
 
 	<xs:complexType name="SimpleCTMonteCarloDosimetry">
 		<xs:sequence>
@@ -213,12 +212,55 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:simpleType name="OrganOrTissue">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="bone"/>
-			<xs:enumeration value="breast"/>
-			<xs:enumeration value="esophagus"/>
-			<xs:enumeration value="heart"/>
+			<xs:enumeration value="bone surfaces"/>
+			<xs:enumeration value="red bone marrow"/>
+			<xs:enumeration value="bladder"/>
+			<xs:enumeration value="breasts"/>
+			<xs:enumeration value="left male breast"/>
+			<xs:enumeration value="left female breast"/>
+			<xs:enumeration value="right male breast"/>
+			<xs:enumeration value="right female breast"/>
+			<xs:enumeration value="colon"/>
+			<xs:enumeration value="testes"/>
+			<xs:enumeration value="left testis"/>
+			<xs:enumeration value="right testis"/>
+			<xs:enumeration value="ovaries"/>
+			<xs:enumeration value="left ovary"/>
+			<xs:enumeration value="right ovary"/>
+			<xs:enumeration value="liver"/>
 			<xs:enumeration value="lungs"/>
+			<xs:enumeration value="left lung"/>
+			<xs:enumeration value="right lung"/>
+			<xs:enumeration value="esophagus"/>
 			<xs:enumeration value="skin"/>
-			<xs:enumeration value="human body"/>
+			<xs:enumeration value="stomach"/>
+			<xs:enumeration value="thyroid"/>
+			<xs:enumeration value="brain"/>
+			<xs:enumeration value="salivary glands"/>
+			<xs:enumeration value="parotid glands"/>
+			<xs:enumeration value="left parotid gland"/>
+			<xs:enumeration value="right parotid gland"/>
+			<xs:enumeration value="submandibular glands"/>
+			<xs:enumeration value="left submandibular gland"/>
+			<xs:enumeration value="right submandibular gland"/>
+			<xs:enumeration value="adrenals"/>
+			<xs:enumeration value="extrathoracic region"/>
+			<xs:enumeration value="gallbladder"/>
+			<xs:enumeration value="heart"/>
+			<xs:enumeration value="kidneys"/>
+			<xs:enumeration value="left kidney"/>
+			<xs:enumeration value="right kidney"/>
+			<xs:enumeration value="lymphatic nodes"/>
+			<xs:enumeration value="muscle"/>
+			<xs:enumeration value="oral mucosa"/>
+			<xs:enumeration value="pancreas"/>
+			<xs:enumeration value="prostate"/>
+			<xs:enumeration value="small intestine"/>
+			<xs:enumeration value="spleen"/>
+			<xs:enumeration value="thymus"/>
+			<xs:enumeration value="uterus"/>
+			<xs:enumeration value="air"/>
+			<xs:enumeration value="body surface"/>
 		</xs:restriction>
 	</xs:simpleType>
 

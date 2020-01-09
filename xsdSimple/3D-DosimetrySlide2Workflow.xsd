@@ -1,34 +1,41 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 001-->
+<!--VersionSchemas : 007-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
 attributeFormDefault="unqualified"
 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 xmlns:irdbb="https://www.irdbb-medirad.com">
-	<xs:element name="NonDicomFileSetDescriptor">
+	<xs:element name="NonDicomFileSetDescriptor"  type="irdbb:NonDicomFileSetDescriptor" />
+	<xs:complexType name="NonDicomFileSetDescriptor">
+		<xs:sequence>
+			<xs:element name="ReferencedClinicalResearchStudy" type="irdbb:ReferencedClinicalResearchStudy" />
+			<xs:element name="PatientId" type="xs:string"/>
+				<xs:element name="ThreeDimDosimetrySlide2workflow" type="irdbb:ThreeDimDosimetrySlide2workflow" />
+		</xs:sequence>
+	</xs:complexType>
+
+			<xs:complexType name="ReferencedClinicalResearchStudy">
+					<xs:sequence>
+						<xs:element name="ClinicalResearchStudyID" type="xs:string"/>
+						<xs:element name="ClinicalResearchStudyTitle" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+
+			<xs:complexType name="ThreeDimDosimetrySlide2workflow">
+				<xs:sequence>
+					<xs:element name="SPECTDataAcquisitionAndReconstruction" type="irdbb:SPECTDataAcquisitionAndReconstruction" minOccurs="0" maxOccurs="unbounded" />
+					<xs:element name="VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation" type="irdbb:VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation" maxOccurs="unbounded" />
+					<xs:element name="DoseRateCurveFitVOITimeIntegration" type="irdbb:DoseRateCurveFitVOITimeIntegration"/>
+					<xs:element name="RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry" type="irdbb:RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry" minOccurs="0" />
+						</xs:sequence>
+				</xs:complexType>
+
+	<xs:element name="TimeUnit" >
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="ReferencedClinicalResearchStudy">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="ClinicalResearchStudyID" type="xs:string"/>
-							<xs:element name="ClinicalResearchStudyTitle" type="xs:string"/>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
-				<xs:element name="PatientId" type="xs:string"/>
-
-				<xs:element name="ThreeDimDosimetrySlide2workflow">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="SPECTDataAcquisitionAndReconstruction" type="irdbb:SPECTDataAcquisitionAndReconstruction" minOccurs="0" maxOccurs="unbounded" />
-							<xs:element name="VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation" type="irdbb:VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation" maxOccurs="unbounded" />
-							<xs:element name="DoseRateCurveFitVOITimeIntegration" type="irdbb:DoseRateCurveFitVOITimeIntegration"/>
-							<xs:element name="RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry" type="irdbb:RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry" minOccurs="0" />
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
+		<xs:element name="TimeUnit" type="irdbb:TimeUnit" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -211,6 +218,17 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:sequence>
 	</xs:complexType>
 
+	<xs:simpleType name="TimeUnit">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="seconds"/>
+			<xs:enumeration value="minutes"/>
+			<xs:enumeration value="hours"/>
+			<xs:enumeration value="days"/>
+			<xs:enumeration value="months"/>
+			<xs:enumeration value="years"/>
+		</xs:restriction>
+	</xs:simpleType>
+
 	<xs:simpleType name="TimePointCategory">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="168h plus or minus 24h post RAIT timepoint"/>
@@ -223,22 +241,12 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:restriction>
 	</xs:simpleType>
 
-	<xs:simpleType name="TimePointDistanceFromReferenceEventUnit">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="minutes"/>
-			<xs:enumeration value="hours"/>
-			<xs:enumeration value="days"/>
-			<xs:enumeration value="months"/>
-			<xs:enumeration value="years"/>
-		</xs:restriction>
-	</xs:simpleType>
-
 	<xs:complexType name="TimePointDescriptionElement">
 		<xs:sequence>
 		<xs:element name="TimePointCategory" type="irdbb:TimePointCategory" />
 			<xs:element name="TimePointIdentifier" type="xs:string"/>
 			<xs:element name="TimePointDistanceFromReferenceEventValue" type="xs:integer"/>
-		<xs:element name="TimePointDistanceFromReferenceEventUnit" type="irdbb:TimePointDistanceFromReferenceEventUnit" />
+			<xs:element name="TimePointDistanceFromReferenceEventUnit" type="irdbb:TimeUnit"/>
 		</xs:sequence>
 	</xs:complexType>
 
@@ -297,12 +305,55 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:simpleType name="OrganOrTissue">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="bone"/>
-			<xs:enumeration value="breast"/>
-			<xs:enumeration value="esophagus"/>
-			<xs:enumeration value="heart"/>
+			<xs:enumeration value="bone surfaces"/>
+			<xs:enumeration value="red bone marrow"/>
+			<xs:enumeration value="bladder"/>
+			<xs:enumeration value="breasts"/>
+			<xs:enumeration value="left male breast"/>
+			<xs:enumeration value="left female breast"/>
+			<xs:enumeration value="right male breast"/>
+			<xs:enumeration value="right female breast"/>
+			<xs:enumeration value="colon"/>
+			<xs:enumeration value="testes"/>
+			<xs:enumeration value="left testis"/>
+			<xs:enumeration value="right testis"/>
+			<xs:enumeration value="ovaries"/>
+			<xs:enumeration value="left ovary"/>
+			<xs:enumeration value="right ovary"/>
+			<xs:enumeration value="liver"/>
 			<xs:enumeration value="lungs"/>
+			<xs:enumeration value="left lung"/>
+			<xs:enumeration value="right lung"/>
+			<xs:enumeration value="esophagus"/>
 			<xs:enumeration value="skin"/>
-			<xs:enumeration value="human body"/>
+			<xs:enumeration value="stomach"/>
+			<xs:enumeration value="thyroid"/>
+			<xs:enumeration value="brain"/>
+			<xs:enumeration value="salivary glands"/>
+			<xs:enumeration value="parotid glands"/>
+			<xs:enumeration value="left parotid gland"/>
+			<xs:enumeration value="right parotid gland"/>
+			<xs:enumeration value="submandibular glands"/>
+			<xs:enumeration value="left submandibular gland"/>
+			<xs:enumeration value="right submandibular gland"/>
+			<xs:enumeration value="adrenals"/>
+			<xs:enumeration value="extrathoracic region"/>
+			<xs:enumeration value="gallbladder"/>
+			<xs:enumeration value="heart"/>
+			<xs:enumeration value="kidneys"/>
+			<xs:enumeration value="left kidney"/>
+			<xs:enumeration value="right kidney"/>
+			<xs:enumeration value="lymphatic nodes"/>
+			<xs:enumeration value="muscle"/>
+			<xs:enumeration value="oral mucosa"/>
+			<xs:enumeration value="pancreas"/>
+			<xs:enumeration value="prostate"/>
+			<xs:enumeration value="small intestine"/>
+			<xs:enumeration value="spleen"/>
+			<xs:enumeration value="thymus"/>
+			<xs:enumeration value="uterus"/>
+			<xs:enumeration value="air"/>
+			<xs:enumeration value="body surface"/>
 		</xs:restriction>
 	</xs:simpleType>
 
@@ -386,21 +437,10 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:simpleType name="AdministeredActivityUnit">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="becquerel"/>
-			<xs:enumeration value="kilobecquerel"/>
-			<xs:enumeration value="megabecquerel"/>
-			<xs:enumeration value="curie"/>
-			<xs:enumeration value="millicurie"/>
-			<xs:enumeration value="microcurie"/>
-		</xs:restriction>
-	</xs:simpleType>
-
 	<xs:complexType name="DataActivityPerVOIAtTimePoint">
 		<xs:sequence>
 			<xs:element name="DataActivityValue" type="xs:float"/>
-		<xs:element name="AdministeredActivityUnit" type="irdbb:AdministeredActivityUnit" />
+			<xs:element name="AdministeredActivityUnit" type="irdbb:ActivityUnit"/>
 			<xs:element name="VOIIdentifier" type="xs:string"/>
 			<xs:element name="TimePointIdentifier" type="xs:string"/>
 		</xs:sequence>

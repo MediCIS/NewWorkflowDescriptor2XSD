@@ -157,6 +157,16 @@ ROIIdentifierContainer
 //Descriptions of Input-Output types
 //-----------------------------------
 
+TimeUnit
+{
+ 1-string-TimeUnit:seconds/minutes/hours/days/months/years
+}
+
+ActivityUnit
+{
+ 1-string-ActivityUnit:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
+}
+
 DensityPhantom
 {
  1-string-DensityPhantomName
@@ -219,10 +229,10 @@ HotInsert
  1-float-VolumeValue
  1-string-VolumeUnit:milliliter/cubic centimeter
  1-float-PreAdminActivityValue
- 1-string-PreAdminActivityUnit:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
+ 1-ActivityUnit-PreAdminActivityUnit
  1-string-PreAdminActivityTimestamp
  1-float-PostAdminActivityValue
- 1-string-PostAdminActivityUnit:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
+ 1-ActivityUnit-PostAdminActivityUnit
  1-string-PostAdminActivityTimestamp
  1-string-HotInsertIdentifier
  1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188
@@ -240,10 +250,10 @@ Tank
  1-float-VolumeValue
  1-string-VolumeUnit:milliliter/cubic centimeter
  1-float-PreAdminBackgroundActivityValue
- 1-string-PreAdminBackgroundActivityUnit:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
+ 1-ActivityUnit-PreAdminBackgroundActivityUnit
  1-string-PreAdminBackgroundActivityTimestamp
  1-float-PostAdminBackgroundActivityValue
- 1-string-PostAdminBackgroundActivityUnit:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
+ 1-ActivityUnit-PostAdminBackgroundActivityUnit
  1-string-PostAdminBackgroundActivityTimestamp
  1-string-TankIdentifier
  1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188

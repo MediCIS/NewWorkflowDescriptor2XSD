@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.12.08 à 10:03:35 PM CET 
+// Généré le : 2019.12.11 à 04:46:08 PM CET 
 //
 
 
@@ -37,14 +37,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link NonDicomFileSetDescriptor }
-     * 
-     */
-    public NonDicomFileSetDescriptor createNonDicomFileSetDescriptor() {
-        return new NonDicomFileSetDescriptor();
-    }
-
-    /**
      * Create an instance of {@link ElementOfSPECTRecoveryCoefficientCurve }
      * 
      */
@@ -58,78 +50,6 @@ public class ObjectFactory {
      */
     public ActualPlanarCalibrationFactorActualPlanarCalibrationFactor createActualPlanarCalibrationFactorActualPlanarCalibrationFactor() {
         return new ActualPlanarCalibrationFactorActualPlanarCalibrationFactor();
-    }
-
-    /**
-     * Create an instance of {@link NonDicomFileSetDescriptor.ReferencedClinicalResearchStudy }
-     * 
-     */
-    public NonDicomFileSetDescriptor.ReferencedClinicalResearchStudy createNonDicomFileSetDescriptorReferencedClinicalResearchStudy() {
-        return new NonDicomFileSetDescriptor.ReferencedClinicalResearchStudy();
-    }
-
-    /**
-     * Create an instance of {@link NonDicomFileSetDescriptor.CalibrationWorkflow }
-     * 
-     */
-    public NonDicomFileSetDescriptor.CalibrationWorkflow createNonDicomFileSetDescriptorCalibrationWorkflow() {
-        return new NonDicomFileSetDescriptor.CalibrationWorkflow();
-    }
-
-    /**
-     * Create an instance of {@link NonDicomFileSetDescriptor.WP2Subtask212WorkflowData }
-     * 
-     */
-    public NonDicomFileSetDescriptor.WP2Subtask212WorkflowData createNonDicomFileSetDescriptorWP2Subtask212WorkflowData() {
-        return new NonDicomFileSetDescriptor.WP2Subtask212WorkflowData();
-    }
-
-    /**
-     * Create an instance of {@link NonDicomFileSetDescriptor.ThreeDimDosimetrySlide1Workflow }
-     * 
-     */
-    public NonDicomFileSetDescriptor.ThreeDimDosimetrySlide1Workflow createNonDicomFileSetDescriptorThreeDimDosimetrySlide1Workflow() {
-        return new NonDicomFileSetDescriptor.ThreeDimDosimetrySlide1Workflow();
-    }
-
-    /**
-     * Create an instance of {@link NonDicomFileSetDescriptor.TwoDimDosimetryworkflow }
-     * 
-     */
-    public NonDicomFileSetDescriptor.TwoDimDosimetryworkflow createNonDicomFileSetDescriptorTwoDimDosimetryworkflow() {
-        return new NonDicomFileSetDescriptor.TwoDimDosimetryworkflow();
-    }
-
-    /**
-     * Create an instance of {@link NonDicomFileSetDescriptor.HybridDosimetryworkflow }
-     * 
-     */
-    public NonDicomFileSetDescriptor.HybridDosimetryworkflow createNonDicomFileSetDescriptorHybridDosimetryworkflow() {
-        return new NonDicomFileSetDescriptor.HybridDosimetryworkflow();
-    }
-
-    /**
-     * Create an instance of {@link NonDicomFileSetDescriptor.ThreeDimDosimetrySlide2Workflow }
-     * 
-     */
-    public NonDicomFileSetDescriptor.ThreeDimDosimetrySlide2Workflow createNonDicomFileSetDescriptorThreeDimDosimetrySlide2Workflow() {
-        return new NonDicomFileSetDescriptor.ThreeDimDosimetrySlide2Workflow();
-    }
-
-    /**
-     * Create an instance of {@link AbsorbedDoseInVOIContainer }
-     * 
-     */
-    public AbsorbedDoseInVOIContainer createAbsorbedDoseInVOIContainer() {
-        return new AbsorbedDoseInVOIContainer();
-    }
-
-    /**
-     * Create an instance of {@link AbsorbedDoseInVOI }
-     * 
-     */
-    public AbsorbedDoseInVOI createAbsorbedDoseInVOI() {
-        return new AbsorbedDoseInVOI();
     }
 
     /**
@@ -397,6 +317,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link ReferencedClinicalResearchStudy }
+     * 
+     */
+    public ReferencedClinicalResearchStudy createReferencedClinicalResearchStudy() {
+        return new ReferencedClinicalResearchStudy();
+    }
+
+    /**
      * Create an instance of {@link TimeIntegratedActivityCoefficientPerROI }
      * 
      */
@@ -493,6 +421,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link ThreeDimDosimetrySlide2Workflow }
+     * 
+     */
+    public ThreeDimDosimetrySlide2Workflow createThreeDimDosimetrySlide2Workflow() {
+        return new ThreeDimDosimetrySlide2Workflow();
+    }
+
+    /**
      * Create an instance of {@link AbsorbedDoseRateCalculationIn2DDosimetryContainer }
      * 
      */
@@ -514,6 +450,14 @@ public class ObjectFactory {
      */
     public VoxelBasedDistributionOfAbsorbedDoseType createVoxelBasedDistributionOfAbsorbedDoseType() {
         return new VoxelBasedDistributionOfAbsorbedDoseType();
+    }
+
+    /**
+     * Create an instance of {@link HybridDosimetryworkflow }
+     * 
+     */
+    public HybridDosimetryworkflow createHybridDosimetryworkflow() {
+        return new HybridDosimetryworkflow();
     }
 
     /**
@@ -717,6 +661,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link CalibrationWorkflow }
+     * 
+     */
+    public CalibrationWorkflow createCalibrationWorkflow() {
+        return new CalibrationWorkflow();
+    }
+
+    /**
      * Create an instance of {@link CalculationOfCTNumberCalibrationCurve }
      * 
      */
@@ -789,6 +741,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link AbsorbedDoseInVOIContainer }
+     * 
+     */
+    public AbsorbedDoseInVOIContainer createAbsorbedDoseInVOIContainer() {
+        return new AbsorbedDoseInVOIContainer();
+    }
+
+    /**
      * Create an instance of {@link KernelLimitForConvolutions }
      * 
      */
@@ -826,6 +786,14 @@ public class ObjectFactory {
      */
     public PlanarDataSegmentationWithoutRegistration createPlanarDataSegmentationWithoutRegistration() {
         return new PlanarDataSegmentationWithoutRegistration();
+    }
+
+    /**
+     * Create an instance of {@link WP2Subtask212WorkflowData }
+     * 
+     */
+    public WP2Subtask212WorkflowData createWP2Subtask212WorkflowData() {
+        return new WP2Subtask212WorkflowData();
     }
 
     /**
@@ -917,6 +885,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link TwoDimDosimetryworkflow }
+     * 
+     */
+    public TwoDimDosimetryworkflow createTwoDimDosimetryworkflow() {
+        return new TwoDimDosimetryworkflow();
+    }
+
+    /**
      * Create an instance of {@link PatientOrganMassUsedContainer }
      * 
      */
@@ -946,6 +922,14 @@ public class ObjectFactory {
      */
     public AbsorbedDoseCalculationInVOI createAbsorbedDoseCalculationInVOI() {
         return new AbsorbedDoseCalculationInVOI();
+    }
+
+    /**
+     * Create an instance of {@link ThreeDimDosimetrySlide1Workflow }
+     * 
+     */
+    public ThreeDimDosimetrySlide1Workflow createThreeDimDosimetrySlide1Workflow() {
+        return new ThreeDimDosimetrySlide1Workflow();
     }
 
     /**
@@ -1149,6 +1133,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link NonDicomFileSetDescriptor }
+     * 
+     */
+    public NonDicomFileSetDescriptor createNonDicomFileSetDescriptor() {
+        return new NonDicomFileSetDescriptor();
+    }
+
+    /**
      * Create an instance of {@link ROI }
      * 
      */
@@ -1242,6 +1234,14 @@ public class ObjectFactory {
      */
     public TimeIntegratedActivityPerROIcontainer createTimeIntegratedActivityPerROIcontainer() {
         return new TimeIntegratedActivityPerROIcontainer();
+    }
+
+    /**
+     * Create an instance of {@link AbsorbedDoseInVOI }
+     * 
+     */
+    public AbsorbedDoseInVOI createAbsorbedDoseInVOI() {
+        return new AbsorbedDoseInVOI();
     }
 
     /**

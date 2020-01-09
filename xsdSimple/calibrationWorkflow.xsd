@@ -1,32 +1,47 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 001-->
+<!--VersionSchemas : 007-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
 attributeFormDefault="unqualified"
 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 xmlns:irdbb="https://www.irdbb-medirad.com">
-	<xs:element name="NonDicomFileSetDescriptor">
+	<xs:element name="NonDicomFileSetDescriptor"  type="irdbb:NonDicomFileSetDescriptor" />
+	<xs:complexType name="NonDicomFileSetDescriptor">
+		<xs:sequence>
+			<xs:element name="ReferencedClinicalResearchStudy" type="irdbb:ReferencedClinicalResearchStudy" />
+			<xs:element name="PatientId" type="xs:string"/>
+				<xs:element name="CalibrationWorkflow" type="irdbb:CalibrationWorkflow" />
+		</xs:sequence>
+	</xs:complexType>
+
+			<xs:complexType name="ReferencedClinicalResearchStudy">
+					<xs:sequence>
+						<xs:element name="ClinicalResearchStudyID" type="xs:string"/>
+						<xs:element name="ClinicalResearchStudyTitle" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+
+			<xs:complexType name="CalibrationWorkflow">
+				<xs:sequence>
+					<xs:element name="SPECTCTCalibrationWorkflow" type="irdbb:SPECTCTCalibrationWorkflow"/>
+					<xs:element name="PlanarCalibrationWorkflow" type="irdbb:PlanarCalibrationWorkflow"/>
+						</xs:sequence>
+				</xs:complexType>
+
+	<xs:element name="TimeUnit" >
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="ReferencedClinicalResearchStudy">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="ClinicalResearchStudyID" type="xs:string"/>
-							<xs:element name="ClinicalResearchStudyTitle" type="xs:string"/>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
-				<xs:element name="PatientId" type="xs:string"/>
+		<xs:element name="TimeUnit" type="irdbb:TimeUnit" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
 
-				<xs:element name="CalibrationWorkflow">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="SPECTCTCalibrationWorkflow" type="irdbb:SPECTCTCalibrationWorkflow"/>
-							<xs:element name="PlanarCalibrationWorkflow" type="irdbb:PlanarCalibrationWorkflow"/>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
+	<xs:element name="ActivityUnit" >
+		<xs:complexType>
+			<xs:sequence>
+		<xs:element name="ActivityUnit" type="irdbb:ActivityUnit" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -193,6 +208,28 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:sequence>
 	</xs:complexType>
 
+	<xs:simpleType name="TimeUnit">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="seconds"/>
+			<xs:enumeration value="minutes"/>
+			<xs:enumeration value="hours"/>
+			<xs:enumeration value="days"/>
+			<xs:enumeration value="months"/>
+			<xs:enumeration value="years"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="ActivityUnit">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="becquerel"/>
+			<xs:enumeration value="kilobecquerel"/>
+			<xs:enumeration value="megabecquerel"/>
+			<xs:enumeration value="curie"/>
+			<xs:enumeration value="millicurie"/>
+			<xs:enumeration value="microcurie"/>
+		</xs:restriction>
+	</xs:simpleType>
+
 	<xs:complexType name="DensityPhantom">
 		<xs:sequence>
 			<xs:element name="DensityPhantomName" type="xs:string"/>
@@ -281,37 +318,15 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:restriction>
 	</xs:simpleType>
 
-	<xs:simpleType name="PreAdminActivityUnit">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="becquerel"/>
-			<xs:enumeration value="kilobecquerel"/>
-			<xs:enumeration value="megabecquerel"/>
-			<xs:enumeration value="curie"/>
-			<xs:enumeration value="millicurie"/>
-			<xs:enumeration value="microcurie"/>
-		</xs:restriction>
-	</xs:simpleType>
-
-	<xs:simpleType name="PostAdminActivityUnit">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="becquerel"/>
-			<xs:enumeration value="kilobecquerel"/>
-			<xs:enumeration value="megabecquerel"/>
-			<xs:enumeration value="curie"/>
-			<xs:enumeration value="millicurie"/>
-			<xs:enumeration value="microcurie"/>
-		</xs:restriction>
-	</xs:simpleType>
-
 	<xs:complexType name="HotInsert">
 		<xs:sequence>
 			<xs:element name="VolumeValue" type="xs:float"/>
 		<xs:element name="VolumeUnit" type="irdbb:VolumeUnit" />
 			<xs:element name="PreAdminActivityValue" type="xs:float"/>
-		<xs:element name="PreAdminActivityUnit" type="irdbb:PreAdminActivityUnit" />
+			<xs:element name="PreAdminActivityUnit" type="irdbb:ActivityUnit"/>
 			<xs:element name="PreAdminActivityTimestamp" type="xs:string"/>
 			<xs:element name="PostAdminActivityValue" type="xs:float"/>
-		<xs:element name="PostAdminActivityUnit" type="irdbb:PostAdminActivityUnit" />
+			<xs:element name="PostAdminActivityUnit" type="irdbb:ActivityUnit"/>
 			<xs:element name="PostAdminActivityTimestamp" type="xs:string"/>
 			<xs:element name="HotInsertIdentifier" type="xs:string"/>
 		<xs:element name="Isotope" type="irdbb:Isotope" />
@@ -326,37 +341,15 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:simpleType name="PreAdminBackgroundActivityUnit">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="becquerel"/>
-			<xs:enumeration value="kilobecquerel"/>
-			<xs:enumeration value="megabecquerel"/>
-			<xs:enumeration value="curie"/>
-			<xs:enumeration value="millicurie"/>
-			<xs:enumeration value="microcurie"/>
-		</xs:restriction>
-	</xs:simpleType>
-
-	<xs:simpleType name="PostAdminBackgroundActivityUnit">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="becquerel"/>
-			<xs:enumeration value="kilobecquerel"/>
-			<xs:enumeration value="megabecquerel"/>
-			<xs:enumeration value="curie"/>
-			<xs:enumeration value="millicurie"/>
-			<xs:enumeration value="microcurie"/>
-		</xs:restriction>
-	</xs:simpleType>
-
 	<xs:complexType name="Tank">
 		<xs:sequence>
 			<xs:element name="VolumeValue" type="xs:float"/>
 		<xs:element name="VolumeUnit" type="irdbb:VolumeUnit" />
 			<xs:element name="PreAdminBackgroundActivityValue" type="xs:float"/>
-		<xs:element name="PreAdminBackgroundActivityUnit" type="irdbb:PreAdminBackgroundActivityUnit" />
+			<xs:element name="PreAdminBackgroundActivityUnit" type="irdbb:ActivityUnit"/>
 			<xs:element name="PreAdminBackgroundActivityTimestamp" type="xs:string"/>
 			<xs:element name="PostAdminBackgroundActivityValue" type="xs:float"/>
-		<xs:element name="PostAdminBackgroundActivityUnit" type="irdbb:PostAdminBackgroundActivityUnit" />
+			<xs:element name="PostAdminBackgroundActivityUnit" type="irdbb:ActivityUnit"/>
 			<xs:element name="PostAdminBackgroundActivityTimestamp" type="xs:string"/>
 			<xs:element name="TankIdentifier" type="xs:string"/>
 		<xs:element name="Isotope" type="irdbb:Isotope" />

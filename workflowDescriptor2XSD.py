@@ -164,22 +164,25 @@ def generateComplexType(name, sousObj):
     xsdString += "\t</xs:complexType>"+"\n"
     return xsdString
 
+def generateRootType(name):
+    return '\t\t\t\t<xs:element name="'+name+'" type="irdbb:'+name+'" />\n'
+
 def generateComplexRoot(name, sousObj):
     if choice==True:
-        xsdString='\n\t\t\t\t<xs:element name="'+name.replace("\n","").replace(" ","")+'type="'+name.replace("\n","").replace(" ","")+'">'+"\n"
-        xsdString += "\t\t\t\t\t<xs:complexType>"+"\n"
-        xsdString += "\t\t\t\t\t\t<xs:choice>"+"\n"
-        xsdString += "\t\t\t\t"+sousObj.replace("\n","\n\t\t\t\t")
-        xsdString += "\t\t\t\t\t\t\t</xs:choice>"+"\n"
+        xsdString='\n\t\t\t<xs:complexType name="'+name.replace("\n","").replace(" ","")+'">'+"\n"
+        #xsdString += "\t\t\t\t<xs:complexType>"+"\n"
+        xsdString += "\t\t\t\t\t<xs:choice>"+"\n"
+        xsdString += "\t\t\t"+sousObj.replace("\n","\n\t\t\t\t")
+        xsdString += "\t\t\t\t\t\t</xs:choice>"+"\n"
     else:
-        xsdString='\n\t\t\t\t<xs:element name="'+name.replace("\n","").replace(" ","")+'">'+"\n"
-        xsdString += "\t\t\t\t\t<xs:complexType>"+"\n"
-        xsdString += "\t\t\t\t\t\t<xs:sequence>"+"\n"
-        xsdString += "\t\t\t\t"+sousObj.replace("\n","\n\t\t\t\t")
-        xsdString += "\t\t\t\t\t\t</xs:sequence>"+"\n"
+        xsdString='\n\t\t\t<xs:complexType name="'+name.replace("\n","").replace(" ","")+'">'+"\n"
+        #xsdString += "\t\t\t\t<xs:complexType>"+"\n"
+        xsdString += "\t\t\t\t<xs:sequence>"+"\n"
+        xsdString += "\t\t"+sousObj.replace("\n","\n\t\t")
+        xsdString += "\t\t\t\t</xs:sequence>"+"\n"
     
-    xsdString += "\t\t\t\t\t</xs:complexType>"+"\n"
-    xsdString += "\t\t\t\t</xs:element>"+"\n"
+    xsdString += "\t\t\t\t</xs:complexType>"+"\n"
+    #xsdString += "\t\t\t</xs:element>"+"\n"
     xsdString = xsdString.replace("										</xs:sequence>","\t\t\t\t\t\t</xs:sequence>")
     return xsdString
 
@@ -191,34 +194,37 @@ def generateXSD(elements, types, rootElements):
     XSD+= 'elementFormDefault="qualified"'+"\n"
     XSD+= 'attributeFormDefault="unqualified"'+"\n"
     XSD+= 'xmlns:xs="http://www.w3.org/2001/XMLSchema"'+"\n"
+    XSD+= 'xmlns:xsd="http://www.w3.org/2001/XMLSchema"'+"\n"
     XSD+= 'xmlns:irdbb="https://www.irdbb-medirad.com">'+"\n"
-    XSD+= '\t<xs:element name="NonDicomFileSetDescriptor">'+"\n"
-    XSD+= '\t\t<xs:complexType>'+"\n"
-    XSD+= '\t\t\t<xs:sequence>'+"\n"
-    XSD+= '\t\t\t\t<xs:element name="ReferencedClinicalResearchStudy">'+"\n"
-    XSD+= '\t\t\t\t\t<xs:complexType>'+"\n"
-    XSD+= '\t\t\t\t\t\t<xs:sequence>'+"\n"
-    XSD+= '\t\t\t\t\t\t\t<xs:element name="ClinicalResearchStudyID" type="xs:string"/>'+"\n"
-    XSD+= '\t\t\t\t\t\t\t<xs:element name="ClinicalResearchStudyTitle" type="xs:string"/>'+"\n"
-    XSD+= '\t\t\t\t\t\t</xs:sequence>'+"\n"
-    XSD+= '\t\t\t\t\t</xs:complexType>'+"\n"
-    XSD+= '\t\t\t\t</xs:element>'+"\n"
-    XSD+= '\t\t\t\t<xs:element name="PatientId" type="xs:string"/>'+"\n"
-    XSD+= rootElements
-    XSD+= '\t\t\t</xs:sequence>'+"\n"
-    XSD+= '\t\t</xs:complexType>'+"\n"
-    XSD+= '\t</xs:element>'+"\n"
-    XSD+= elements
-    XSD+= types    
-    XSD+= '\n</xs:schema>'
+    XSD+= '\t<xs:element name="NonDicomFileSetDescriptor"  type="irdbb:NonDicomFileSetDescriptor" />'+"\n"
+    XSD+= '\t<xs:complexType name="NonDicomFileSetDescriptor">'+"\n"
+    XSD+= '\t\t<xs:sequence>'+"\n"
+    XSD+= '\t\t\t<xs:element name="ReferencedClinicalResearchStudy" type="irdbb:ReferencedClinicalResearchStudy" />'+"\n"
+    XSD+= '\t\t\t<xs:element name="PatientId" type="xs:string"/>'+"\n"
+    XSD+=rootElements
+    XSD+= '\t\t</xs:sequence>'+"\n"
+    XSD+= '\t</xs:complexType>'+"\n"+"\n"
+    XSD+= '\t\t\t<xs:complexType name="ReferencedClinicalResearchStudy">'+"\n"
+    XSD+= '\t\t\t\t\t<xs:sequence>'+"\n"
+    XSD+= '\t\t\t\t\t\t<xs:element name="ClinicalResearchStudyID" type="xs:string"/>'+"\n"
+    XSD+= '\t\t\t\t\t\t<xs:element name="ClinicalResearchStudyTitle" type="xs:string"/>'+"\n"
+    XSD+= '\t\t\t\t\t</xs:sequence>'+"\n"
+    XSD+= '\t\t\t\t</xs:complexType>'+"\n"
+    XSD+=elements
+    XSD+=types        
+    XSD+='\n</xs:schema>'
     return XSD
 
 xmlElements = ""
 xmlTypes = ""
 xmlRootElements = ""
 
-listeTypes=["DataActivityPerVOIAtTimePoint", "MeanAbsorbedDoseRateInROI", "VOIInCT", "VOIInSPECT", "ROIIdentifierUsedContainer", "VOIidentifierContainer", "ROIIdentifierContainer", "VOIIdentifierContainer", "VOIcontainer",
-            "TimeIntegratedActivityCoefficientPerROI", "TimeIntegratedActivityPerROI", "ElementOfCTNumberCalibrationCurve", "SPECTRecoveryCoefficientCurve","ROIIdentifierUsedContainer","VOIIdentifierUsedContainer" ]
+listeTypes=["DataActivityPerVOIAtTimePoint", "MeanAbsorbedDoseRateInROI", "VOIInCT", "VOIInSPECT",
+            "ROIIdentifierUsedContainer", "VOIidentifierContainer", "ROIIdentifierContainer", 
+            "VOIIdentifierContainer", "VOIcontainer", "AbsorbedDoseInVOIContainer",
+            "TimeIntegratedActivityCoefficientPerROI", "TimeIntegratedActivityPerROI",
+            "ElementOfCTNumberCalibrationCurve", "SPECTRecoveryCoefficientCurve",
+            "ROIIdentifierUsedContainer","VOIIdentifierUsedContainer" ]
 
 listeTypesRestricted=[]
 
@@ -248,13 +254,16 @@ for key in dico:
                         sousObjets += generateSimpleObject(nombre, name, typeName)+"\n"
         key = key.replace("\n","").replace(" ","")
         if key != "" :
+            print(key)
             if key in listeRacines:
-                xmlRootElements += generateComplexRoot(key,sousObjets)
-            elif key in listeTypes:
+                xmlRootElements += generateRootType(key)
+                xmlElements += generateComplexRoot(key,sousObjets)
+            elif key in listeTypes or "VOIcontainer" in key or "VOIIdentifierContainer" in key :
                 xmlTypes += generateComplexType(key,sousObjets)
             else:
                 xmlElements += generateComplexObject(key,sousObjets)        
-            
+       
+
 
 if len(sys.argv) < 2:
     pathXSD = path.replace("txt", "xsd")
@@ -264,7 +273,9 @@ else:
 print("XSD file : "+pathXSD)
 
 fileXSD = open(pathXSD, "w")
-fileXSD.write(generateXSD(xmlElements, xmlTypes, xmlRootElements))
+contenu = generateXSD(xmlElements, xmlTypes, xmlRootElements)
+
+fileXSD.write(contenu)
 fileXSD.close()
 
 print("Converted")
