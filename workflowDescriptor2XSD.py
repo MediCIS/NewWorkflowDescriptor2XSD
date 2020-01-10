@@ -224,7 +224,7 @@ listeTypes=["DataActivityPerVOIAtTimePoint", "MeanAbsorbedDoseRateInROI", "VOIIn
             "VOIIdentifierContainer", "VOIcontainer", "AbsorbedDoseInVOIContainer",
             "TimeIntegratedActivityCoefficientPerROI", "TimeIntegratedActivityPerROI",
             "ElementOfCTNumberCalibrationCurve", "SPECTRecoveryCoefficientCurve",
-            "ROIIdentifierUsedContainer","VOIIdentifierUsedContainer" ]
+            "ROIIdentifierUsedContainer","VOIIdentifierUsedContainer", "ActivityUnit", "TimeUnit" , "Segmentation" ]
 
 listeTypesRestricted=[]
 

@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.12.11 à 04:46:08 PM CET 
+// Généré le : 2020.01.10 à 04:03:36 PM CET 
 //
 
 
@@ -26,7 +26,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="AdministeredActivityValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
- *         &lt;element name="AdministeredActivityUnit" type="{https://www.irdbb-medirad.com}AdministeredActivityUnit"/>
+ *         &lt;element name="ActivityUnit" type="{https://www.irdbb-medirad.com}ActivityUnit"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -38,15 +38,15 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "AdministeredActivity", propOrder = {
     "administeredActivityValue",
-    "administeredActivityUnit"
+    "activityUnit"
 })
 public class AdministeredActivity {
 
     @XmlElement(name = "AdministeredActivityValue")
     protected float administeredActivityValue;
-    @XmlElement(name = "AdministeredActivityUnit", required = true)
+    @XmlElement(name = "ActivityUnit", required = true)
     @XmlSchemaType(name = "string")
-    protected AdministeredActivityUnit administeredActivityUnit;
+    protected ActivityUnit activityUnit;
 
     /**
      * Obtient la valeur de la propriété administeredActivityValue.
@@ -65,27 +65,27 @@ public class AdministeredActivity {
     }
 
     /**
-     * Obtient la valeur de la propriété administeredActivityUnit.
+     * Obtient la valeur de la propriété activityUnit.
      * 
      * @return
      *     possible object is
-     *     {@link AdministeredActivityUnit }
+     *     {@link ActivityUnit }
      *     
      */
-    public AdministeredActivityUnit getAdministeredActivityUnit() {
-        return administeredActivityUnit;
+    public ActivityUnit getActivityUnit() {
+        return activityUnit;
     }
 
     /**
-     * Définit la valeur de la propriété administeredActivityUnit.
+     * Définit la valeur de la propriété activityUnit.
      * 
      * @param value
      *     allowed object is
-     *     {@link AdministeredActivityUnit }
+     *     {@link ActivityUnit }
      *     
      */
-    public void setAdministeredActivityUnit(AdministeredActivityUnit value) {
-        this.administeredActivityUnit = value;
+    public void setActivityUnit(ActivityUnit value) {
+        this.activityUnit = value;
     }
 
 }

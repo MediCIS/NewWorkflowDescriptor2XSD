@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.12.11 à 04:46:08 PM CET 
+// Généré le : 2020.01.10 à 04:03:36 PM CET 
 //
 
 
@@ -30,7 +30,8 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="CTReconUsed" type="{https://www.irdbb-medirad.com}DICOMData"/>
  *         &lt;element name="VOISegmentationMethodUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="CountsPerVOIAtTimePointContainer" type="{https://www.irdbb-medirad.com}CountsPerVOIAtTimePointContainer"/>
- *         &lt;element name="VOIProduced" type="{https://www.irdbb-medirad.com}VOIidentifierContainer"/>
+ *         &lt;element name="VOIProduced" type="{https://www.irdbb-medirad.com}VOIidentifierContainer" minOccurs="0"/>
+ *         &lt;element name="SegmentationProduced" type="{https://www.irdbb-medirad.com}Segmentation" minOccurs="0"/>
  *         &lt;element name="CTReconResampledOnNMReferenceProduced" type="{https://www.irdbb-medirad.com}DICOMDataContainer"/>
  *         &lt;element name="MassPerVOIAtTimePointContainer" type="{https://www.irdbb-medirad.com}MassPerVOIAtTimePointContainer"/>
  *       &lt;/sequence>
@@ -50,6 +51,7 @@ import javax.xml.bind.annotation.XmlType;
     "voiSegmentationMethodUsed",
     "countsPerVOIAtTimePointContainer",
     "voiProduced",
+    "segmentationProduced",
     "ctReconResampledOnNMReferenceProduced",
     "massPerVOIAtTimePointContainer"
 })
@@ -67,8 +69,10 @@ public class VOISegmentationVOIMassDetermination {
     protected String voiSegmentationMethodUsed;
     @XmlElement(name = "CountsPerVOIAtTimePointContainer", required = true)
     protected CountsPerVOIAtTimePointContainer countsPerVOIAtTimePointContainer;
-    @XmlElement(name = "VOIProduced", required = true)
+    @XmlElement(name = "VOIProduced")
     protected VOIidentifierContainer voiProduced;
+    @XmlElement(name = "SegmentationProduced")
+    protected Segmentation segmentationProduced;
     @XmlElement(name = "CTReconResampledOnNMReferenceProduced", required = true)
     protected DICOMDataContainer ctReconResampledOnNMReferenceProduced;
     @XmlElement(name = "MassPerVOIAtTimePointContainer", required = true)
@@ -240,6 +244,30 @@ public class VOISegmentationVOIMassDetermination {
      */
     public void setVOIProduced(VOIidentifierContainer value) {
         this.voiProduced = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété segmentationProduced.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Segmentation }
+     *     
+     */
+    public Segmentation getSegmentationProduced() {
+        return segmentationProduced;
+    }
+
+    /**
+     * Définit la valeur de la propriété segmentationProduced.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Segmentation }
+     *     
+     */
+    public void setSegmentationProduced(Segmentation value) {
+        this.segmentationProduced = value;
     }
 
     /**

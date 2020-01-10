@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.12.11 à 04:46:08 PM CET 
+// Généré le : 2020.01.10 à 04:03:36 PM CET 
 //
 
 
@@ -28,10 +28,10 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="VolumeValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
  *         &lt;element name="VolumeUnit" type="{https://www.irdbb-medirad.com}VolumeUnit"/>
  *         &lt;element name="PreAdminBackgroundActivityValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
- *         &lt;element name="PreAdminBackgroundActivityUnit" type="{https://www.irdbb-medirad.com}PreAdminBackgroundActivityUnit"/>
+ *         &lt;element name="PreAdminBackgroundActivity" type="{https://www.irdbb-medirad.com}PreAdminBackgroundActivity"/>
  *         &lt;element name="PreAdminBackgroundActivityTimestamp" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="PostAdminBackgroundActivityValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
- *         &lt;element name="PostAdminBackgroundActivityUnit" type="{https://www.irdbb-medirad.com}PostAdminBackgroundActivityUnit"/>
+ *         &lt;element name="PostAdminBackgroundActivity" type="{https://www.irdbb-medirad.com}PostAdminBackgroundActivity"/>
  *         &lt;element name="PostAdminBackgroundActivityTimestamp" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="TankIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="Isotope" type="{https://www.irdbb-medirad.com}Isotope"/>
@@ -48,10 +48,10 @@ import javax.xml.bind.annotation.XmlType;
     "volumeValue",
     "volumeUnit",
     "preAdminBackgroundActivityValue",
-    "preAdminBackgroundActivityUnit",
+    "preAdminBackgroundActivity",
     "preAdminBackgroundActivityTimestamp",
     "postAdminBackgroundActivityValue",
-    "postAdminBackgroundActivityUnit",
+    "postAdminBackgroundActivity",
     "postAdminBackgroundActivityTimestamp",
     "tankIdentifier",
     "isotope"
@@ -65,16 +65,16 @@ public class Tank {
     protected VolumeUnit volumeUnit;
     @XmlElement(name = "PreAdminBackgroundActivityValue")
     protected float preAdminBackgroundActivityValue;
-    @XmlElement(name = "PreAdminBackgroundActivityUnit", required = true)
+    @XmlElement(name = "PreAdminBackgroundActivity", required = true)
     @XmlSchemaType(name = "string")
-    protected PreAdminBackgroundActivityUnit preAdminBackgroundActivityUnit;
+    protected PreAdminBackgroundActivity preAdminBackgroundActivity;
     @XmlElement(name = "PreAdminBackgroundActivityTimestamp", required = true)
     protected String preAdminBackgroundActivityTimestamp;
     @XmlElement(name = "PostAdminBackgroundActivityValue")
     protected float postAdminBackgroundActivityValue;
-    @XmlElement(name = "PostAdminBackgroundActivityUnit", required = true)
+    @XmlElement(name = "PostAdminBackgroundActivity", required = true)
     @XmlSchemaType(name = "string")
-    protected PostAdminBackgroundActivityUnit postAdminBackgroundActivityUnit;
+    protected PostAdminBackgroundActivity postAdminBackgroundActivity;
     @XmlElement(name = "PostAdminBackgroundActivityTimestamp", required = true)
     protected String postAdminBackgroundActivityTimestamp;
     @XmlElement(name = "TankIdentifier", required = true)
@@ -140,27 +140,27 @@ public class Tank {
     }
 
     /**
-     * Obtient la valeur de la propriété preAdminBackgroundActivityUnit.
+     * Obtient la valeur de la propriété preAdminBackgroundActivity.
      * 
      * @return
      *     possible object is
-     *     {@link PreAdminBackgroundActivityUnit }
+     *     {@link PreAdminBackgroundActivity }
      *     
      */
-    public PreAdminBackgroundActivityUnit getPreAdminBackgroundActivityUnit() {
-        return preAdminBackgroundActivityUnit;
+    public PreAdminBackgroundActivity getPreAdminBackgroundActivity() {
+        return preAdminBackgroundActivity;
     }
 
     /**
-     * Définit la valeur de la propriété preAdminBackgroundActivityUnit.
+     * Définit la valeur de la propriété preAdminBackgroundActivity.
      * 
      * @param value
      *     allowed object is
-     *     {@link PreAdminBackgroundActivityUnit }
+     *     {@link PreAdminBackgroundActivity }
      *     
      */
-    public void setPreAdminBackgroundActivityUnit(PreAdminBackgroundActivityUnit value) {
-        this.preAdminBackgroundActivityUnit = value;
+    public void setPreAdminBackgroundActivity(PreAdminBackgroundActivity value) {
+        this.preAdminBackgroundActivity = value;
     }
 
     /**
@@ -204,27 +204,27 @@ public class Tank {
     }
 
     /**
-     * Obtient la valeur de la propriété postAdminBackgroundActivityUnit.
+     * Obtient la valeur de la propriété postAdminBackgroundActivity.
      * 
      * @return
      *     possible object is
-     *     {@link PostAdminBackgroundActivityUnit }
+     *     {@link PostAdminBackgroundActivity }
      *     
      */
-    public PostAdminBackgroundActivityUnit getPostAdminBackgroundActivityUnit() {
-        return postAdminBackgroundActivityUnit;
+    public PostAdminBackgroundActivity getPostAdminBackgroundActivity() {
+        return postAdminBackgroundActivity;
     }
 
     /**
-     * Définit la valeur de la propriété postAdminBackgroundActivityUnit.
+     * Définit la valeur de la propriété postAdminBackgroundActivity.
      * 
      * @param value
      *     allowed object is
-     *     {@link PostAdminBackgroundActivityUnit }
+     *     {@link PostAdminBackgroundActivity }
      *     
      */
-    public void setPostAdminBackgroundActivityUnit(PostAdminBackgroundActivityUnit value) {
-        this.postAdminBackgroundActivityUnit = value;
+    public void setPostAdminBackgroundActivity(PostAdminBackgroundActivity value) {
+        this.postAdminBackgroundActivity = value;
     }
 
     /**

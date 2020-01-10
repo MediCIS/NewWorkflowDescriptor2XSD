@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 007-->
+<!--VersionSchemas : 011-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -37,22 +37,6 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 					<xs:element name="PlanarCalibrationWorkflow" type="irdbb:PlanarCalibrationWorkflow"/>
 						</xs:sequence>
 				</xs:complexType>
-
-	<xs:element name="TimeUnit" >
-		<xs:complexType>
-			<xs:sequence>
-		<xs:element name="TimeUnit" type="irdbb:TimeUnit" />
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
-
-	<xs:element name="ActivityUnit" >
-		<xs:complexType>
-			<xs:sequence>
-		<xs:element name="ActivityUnit" type="irdbb:ActivityUnit" />
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
 
 	<xs:element name="ElementOfSPECTRecoveryCoefficientCurve" >
 		<xs:complexType>
@@ -280,28 +264,6 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:simpleType name="TimeUnit">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="seconds"/>
-			<xs:enumeration value="minutes"/>
-			<xs:enumeration value="hours"/>
-			<xs:enumeration value="days"/>
-			<xs:enumeration value="months"/>
-			<xs:enumeration value="years"/>
-		</xs:restriction>
-	</xs:simpleType>
-
-	<xs:simpleType name="ActivityUnit">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="becquerel"/>
-			<xs:enumeration value="kilobecquerel"/>
-			<xs:enumeration value="megabecquerel"/>
-			<xs:enumeration value="curie"/>
-			<xs:enumeration value="millicurie"/>
-			<xs:enumeration value="microcurie"/>
-		</xs:restriction>
-	</xs:simpleType>
-
 	<xs:complexType name="DensityPhantom">
 		<xs:sequence>
 			<xs:element name="DensityPhantomName" type="xs:string"/>
@@ -390,15 +352,37 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:restriction>
 	</xs:simpleType>
 
+	<xs:simpleType name="PreAdminActivity">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="becquerel"/>
+			<xs:enumeration value="kilobecquerel"/>
+			<xs:enumeration value="megabecquerel"/>
+			<xs:enumeration value="curie"/>
+			<xs:enumeration value="millicurie"/>
+			<xs:enumeration value="microcurie"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="PostAdminActivity">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="becquerel"/>
+			<xs:enumeration value="kilobecquerel"/>
+			<xs:enumeration value="megabecquerel"/>
+			<xs:enumeration value="curie"/>
+			<xs:enumeration value="millicurie"/>
+			<xs:enumeration value="microcurie"/>
+		</xs:restriction>
+	</xs:simpleType>
+
 	<xs:complexType name="HotInsert">
 		<xs:sequence>
 			<xs:element name="VolumeValue" type="xs:float"/>
 		<xs:element name="VolumeUnit" type="irdbb:VolumeUnit" />
 			<xs:element name="PreAdminActivityValue" type="xs:float"/>
-			<xs:element name="PreAdminActivityUnit" type="irdbb:ActivityUnit"/>
+		<xs:element name="PreAdminActivity" type="irdbb:PreAdminActivity" />
 			<xs:element name="PreAdminActivityTimestamp" type="xs:string"/>
 			<xs:element name="PostAdminActivityValue" type="xs:float"/>
-			<xs:element name="PostAdminActivityUnit" type="irdbb:ActivityUnit"/>
+		<xs:element name="PostAdminActivity" type="irdbb:PostAdminActivity" />
 			<xs:element name="PostAdminActivityTimestamp" type="xs:string"/>
 			<xs:element name="HotInsertIdentifier" type="xs:string"/>
 		<xs:element name="Isotope" type="irdbb:Isotope" />
@@ -413,15 +397,37 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:sequence>
 	</xs:complexType>
 
+	<xs:simpleType name="PreAdminBackgroundActivity">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="becquerel"/>
+			<xs:enumeration value="kilobecquerel"/>
+			<xs:enumeration value="megabecquerel"/>
+			<xs:enumeration value="curie"/>
+			<xs:enumeration value="millicurie"/>
+			<xs:enumeration value="microcurie"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="PostAdminBackgroundActivity">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="becquerel"/>
+			<xs:enumeration value="kilobecquerel"/>
+			<xs:enumeration value="megabecquerel"/>
+			<xs:enumeration value="curie"/>
+			<xs:enumeration value="millicurie"/>
+			<xs:enumeration value="microcurie"/>
+		</xs:restriction>
+	</xs:simpleType>
+
 	<xs:complexType name="Tank">
 		<xs:sequence>
 			<xs:element name="VolumeValue" type="xs:float"/>
 		<xs:element name="VolumeUnit" type="irdbb:VolumeUnit" />
 			<xs:element name="PreAdminBackgroundActivityValue" type="xs:float"/>
-			<xs:element name="PreAdminBackgroundActivityUnit" type="irdbb:ActivityUnit"/>
+		<xs:element name="PreAdminBackgroundActivity" type="irdbb:PreAdminBackgroundActivity" />
 			<xs:element name="PreAdminBackgroundActivityTimestamp" type="xs:string"/>
 			<xs:element name="PostAdminBackgroundActivityValue" type="xs:float"/>
-			<xs:element name="PostAdminBackgroundActivityUnit" type="irdbb:ActivityUnit"/>
+		<xs:element name="PostAdminBackgroundActivity" type="irdbb:PostAdminBackgroundActivity" />
 			<xs:element name="PostAdminBackgroundActivityTimestamp" type="xs:string"/>
 			<xs:element name="TankIdentifier" type="xs:string"/>
 		<xs:element name="Isotope" type="irdbb:Isotope" />
@@ -534,6 +540,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:enumeration value="VOI"/>
 			<xs:enumeration value="VOI superimposed on images"/>
 			<xs:enumeration value="3D absorbed dose map"/>
+			<xs:enumeration value="segmentation"/>
 		</xs:restriction>
 	</xs:simpleType>
 
@@ -855,9 +862,18 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:element name="NMTomoReconUsed" type="irdbb:DICOMDataContainer"/>
 			<xs:element name="CTReconUsed" type="irdbb:DICOMDataContainer"/>
 			<xs:element name="ImageProcessingMethodMethodUsed" type="xs:string"/>
-			<xs:element name="SegmentationProduced" type="irdbb:VoiProducedContainer"/>
+			<xs:element name="Segmentation" type="irdbb:Segmentation"/>
 			<xs:element name="CTReconResampledOnCommonReferenceProduced" type="irdbb:DICOMDataContainer"/>
 			<xs:element name="NMTomoReconResampledOnCommonReferenceProduced" type="irdbb:DICOMDataContainer"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Segmentation">
+		<xs:sequence>
+			<xs:element name="SegmentationIdentifier" type="xs:string"/>
+			<xs:element name="VOIContainer" type="irdbb:VoiProducedContainer"/>
+			<xs:element name="DICOMDataContainer" type="irdbb:DICOMDataContainer" minOccurs="0" />
+			<xs:element name="NonDICOMDataContainer" type="irdbb:NonDICOMDataContainer" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 
@@ -961,12 +977,23 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:restriction>
 	</xs:simpleType>
 
+	<xs:simpleType name="TimeUnit">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="seconds"/>
+			<xs:enumeration value="minutes"/>
+			<xs:enumeration value="hours"/>
+			<xs:enumeration value="days"/>
+			<xs:enumeration value="months"/>
+			<xs:enumeration value="years"/>
+		</xs:restriction>
+	</xs:simpleType>
+
 	<xs:complexType name="TimePointDescriptionElement">
 		<xs:sequence>
 		<xs:element name="TimePointCategory" type="irdbb:TimePointCategory" />
 			<xs:element name="TimePointIdentifier" type="xs:string"/>
 			<xs:element name="TimePointDistanceFromReferenceEventValue" type="xs:integer"/>
-			<xs:element name="TimePointDistanceFromReferenceEventUnit" type="irdbb:TimeUnit"/>
+		<xs:element name="TimeUnit" type="irdbb:TimeUnit" />
 		</xs:sequence>
 	</xs:complexType>
 
@@ -997,10 +1024,21 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:sequence>
 	</xs:complexType>
 
+	<xs:simpleType name="ActivityUnit">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="becquerel"/>
+			<xs:enumeration value="kilobecquerel"/>
+			<xs:enumeration value="megabecquerel"/>
+			<xs:enumeration value="curie"/>
+			<xs:enumeration value="millicurie"/>
+			<xs:enumeration value="microcurie"/>
+		</xs:restriction>
+	</xs:simpleType>
+
 	<xs:complexType name="DataActivityPerVOIAtTimePoint">
 		<xs:sequence>
 			<xs:element name="DataActivityValue" type="xs:float"/>
-			<xs:element name="AdministeredActivityUnit" type="irdbb:ActivityUnit"/>
+		<xs:element name="ActivityUnit" type="irdbb:ActivityUnit" />
 			<xs:element name="VOIIdentifier" type="xs:string"/>
 			<xs:element name="TimePointIdentifier" type="xs:string"/>
 		</xs:sequence>
@@ -1009,7 +1047,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="AdministeredActivity">
 		<xs:sequence>
 			<xs:element name="AdministeredActivityValue" type="xs:float"/>
-			<xs:element name="AdministeredActivityUnit" type="irdbb:ActivityUnit"/>
+		<xs:element name="ActivityUnit" type="irdbb:ActivityUnit" />
 		</xs:sequence>
 	</xs:complexType>
 
@@ -1031,7 +1069,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="TimeIntegratedActivityCoefficientPerVOI">
 		<xs:sequence>
 			<xs:element name="TimeIntegratedActivityCoefficientPerVOIValue" type="xs:float"/>
-			<xs:element name="TimeIntegratedActivityCoefficientPerVOIUnit" type="irdbb:TimeUnit"/>
+		<xs:element name="TimeUnit" type="irdbb:TimeUnit" />
 			<xs:element name="VOIIdentifier" type="xs:string"/>
 		</xs:sequence>
 	</xs:complexType>
@@ -1039,7 +1077,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="TimeIntegratedActivityPerVOI">
 		<xs:sequence>
 			<xs:element name="TimeIntegratedActivityPerVOIValue" type="xs:float"/>
-			<xs:element name="TimeIntegratedActivityPerVOIUnit" type="irdbb:TimeUnit"/>
+		<xs:element name="TimeUnit" type="irdbb:TimeUnit" />
 			<xs:element name="VOIIdentifier" type="xs:string"/>
 		</xs:sequence>
 	</xs:complexType>
@@ -1315,7 +1353,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="DataActivityPerROIAtTimePoint">
 		<xs:sequence>
 			<xs:element name="DataActivityValue" type="xs:float"/>
-			<xs:element name="DataActivityUnit" type="irdbb:ActivityUnit"/>
+		<xs:element name="ActivityUnit" type="irdbb:ActivityUnit" />
 			<xs:element name="ROIIdentifier" type="xs:string"/>
 			<xs:element name="TimePointIdentifier" type="xs:string"/>
 		</xs:sequence>
@@ -1369,7 +1407,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="TimeIntegratedActivityCoefficientPerROI">
 		<xs:sequence>
 			<xs:element name="TimeIntegratedActivityCoefficientPerROIValue" type="xs:float"/>
-			<xs:element name="TimeIntegratedActivityCoefficientPerROIUnit" type="irdbb:TimeUnit"/>
+		<xs:element name="TimeUnit" type="irdbb:TimeUnit" />
 			<xs:element name="ROIIdentifier" type="xs:string"/>
 		</xs:sequence>
 	</xs:complexType>
@@ -1377,7 +1415,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="TimeIntegratedActivityPerROI">
 		<xs:sequence>
 			<xs:element name="TimeIntegratedActivityPerROIValue" type="xs:float"/>
-			<xs:element name="TimeIntegratedActivityPerROIUnit" type="irdbb:TimeUnit"/>
+		<xs:element name="TimeUnit" type="irdbb:TimeUnit" />
 			<xs:element name="ROIIdentifier" type="xs:string"/>
 		</xs:sequence>
 	</xs:complexType>
@@ -1607,7 +1645,8 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:element name="CTReconUsed" type="irdbb:DICOMData"/>
 			<xs:element name="VOISegmentationMethodUsed" type="xs:string"/>
 			<xs:element name="CountsPerVOIAtTimePointContainer" type="irdbb:CountsPerVOIAtTimePointContainer"/>
-			<xs:element name="VOIProduced" type="irdbb:VOIidentifierContainer"/>
+			<xs:element name="VOIProduced" type="irdbb:VOIidentifierContainer" minOccurs="0" />
+			<xs:element name="SegmentationProduced" type="irdbb:Segmentation" minOccurs="0" />
 			<xs:element name="CTReconResampledOnNMReferenceProduced" type="irdbb:DICOMDataContainer"/>
 			<xs:element name="MassPerVOIAtTimePointContainer" type="irdbb:MassPerVOIAtTimePointContainer"/>
 		</xs:sequence>
@@ -1648,7 +1687,8 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
 			<xs:element name="VOIIdentifierUsed" type="irdbb:VOIidentifierContainer"/>
 			<xs:element name="TimePointIdentifierUsed" type="xs:string"/>
-			<xs:element name="VOIUsed" type="irdbb:VOIContainer"/>
+			<xs:element name="VOIUsed" type="irdbb:VOIContainer" minOccurs="0" />
+			<xs:element name="SegmentationUsed" type="xs:string" minOccurs="0" />
 			<xs:element name="ThreeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed" type="xs:string"/>
 			<xs:element name="AbsorbedDoseRatePerVOIAtTimePointProduced" type="irdbb:AbsorbedDoseRatePerVOIAtTimePointContainer"/>
 		</xs:sequence>

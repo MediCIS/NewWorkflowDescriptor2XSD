@@ -1,0 +1,10 @@
+870,878d869
+< 	<xs:complexType name="Segmentation">
+< 		<xs:sequence>
+< 			<xs:element name="SegmentationIdentifier" type="xs:string"/>
+< 			<xs:element name="VOIContainer" type="irdbb:VoiProducedContainer"/>
+< 			<xs:element name="DICOMDataContainer" type="irdbb:DICOMDataContainer" minOccurs="0" />
+< 			<xs:element name="NonDICOMDataContainer" type="irdbb:NonDICOMDataContainer" minOccurs="0" />
+< 		</xs:sequence>
+< 	</xs:complexType>
+< 

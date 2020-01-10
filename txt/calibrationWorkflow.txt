@@ -157,15 +157,6 @@ ROIIdentifierContainer
 //Descriptions of Input-Output types
 //-----------------------------------
 
-TimeUnit
-{
- 1-string-TimeUnit:seconds/minutes/hours/days/months/years
-}
-
-ActivityUnit
-{
- 1-string-ActivityUnit:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
-}
 
 DensityPhantom
 {
@@ -229,10 +220,10 @@ HotInsert
  1-float-VolumeValue
  1-string-VolumeUnit:milliliter/cubic centimeter
  1-float-PreAdminActivityValue
- 1-ActivityUnit-PreAdminActivityUnit
+ 1-string-PreAdminActivity:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
  1-string-PreAdminActivityTimestamp
  1-float-PostAdminActivityValue
- 1-ActivityUnit-PostAdminActivityUnit
+ 1-string-PostAdminActivity:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
  1-string-PostAdminActivityTimestamp
  1-string-HotInsertIdentifier
  1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188
@@ -250,10 +241,10 @@ Tank
  1-float-VolumeValue
  1-string-VolumeUnit:milliliter/cubic centimeter
  1-float-PreAdminBackgroundActivityValue
- 1-ActivityUnit-PreAdminBackgroundActivityUnit
+ 1-string-PreAdminBackgroundActivity:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
  1-string-PreAdminBackgroundActivityTimestamp
  1-float-PostAdminBackgroundActivityValue
- 1-ActivityUnit-PostAdminBackgroundActivityUnit
+ 1-string-PostAdminBackgroundActivity:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
  1-string-PostAdminBackgroundActivityTimestamp
  1-string-TankIdentifier
  1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188
@@ -332,7 +323,7 @@ DICOMData
 
 NonDICOMData
 {
- 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map
+ 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map/segmentation
  1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format/STL format
  1-FileNameList-FileNameList
  0,1-string-FHIRIdentifier

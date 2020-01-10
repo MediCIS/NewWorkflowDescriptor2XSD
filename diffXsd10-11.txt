@@ -1,0 +1,6 @@
+2c2
+< <!--VersionSchemas : 011-->
+---
+> <!--VersionSchemas : 010-->
+543d542
+< 			<xs:enumeration value="segmentation"/>

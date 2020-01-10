@@ -93,9 +93,23 @@ VOISegmentationVOIMassDetermination
  1-string-VOISegmentationMethodUsed
 // to be replaced by structured items
  1-CountsPerVOIAtTimePointContainer-CountsPerVOIAtTimePointContainer
- 1-VOIidentifierContainer-VOIProduced
+ 0,1-VOIidentifierContainer-VOIProduced
+ 0,1-Segmentation-SegmentationProduced
  1-DICOMDataContainer-CTReconResampledOnNMReferenceProduced
  1-MassPerVOIAtTimePointContainer-MassPerVOIAtTimePointContainer
+}
+
+Segmentation
+{
+ 1-string-SegmentationIdentifier
+ 1-VoiProducedContainer-VOIContainer
+ 0,1-DICOMDataContainer-DICOMDataContainer
+ 0,1-NonDICOMDataContainer-NonDICOMDataContainer
+}
+
+VoiProducedContainer
+{
+ 1,n-VOI-VOIProduced
 }
 
 MassPerVOIAtTimePointContainer
@@ -142,7 +156,8 @@ SumAndScalingAbsorbedDoseRateCalculation
  1-ProcessExecutionContext-ProcessExecutionContext
  1-VOIidentifierContainer-VOIIdentifierUsed
  1-string-TimePointIdentifierUsed
- 1-VOIContainer-VOIUsed
+ 0,1-VOIContainer-VOIUsed
+ 0,1-string-SegmentationUsed
 // Corresponding Mass Per VOI AtTimePoint need to be retrieved
 // Corresponding VOIs AtTimePoint need to be retrieved
 // Corresponding Data Activities per VOI At TimePoint need to be retrieved
@@ -197,17 +212,12 @@ TimePointDescription
  1,n-TimePointDescriptionElement-TimePointDescriptionElement
 }
 
-TimeUnit
-{
- 1-string-TimeUnit:seconds/minutes/hours/days/months/years
-}
-
 TimePointDescriptionElement
 {
  1-string-TimePointCategory:168h plus or minus 24h post RAIT timepoint/96h plus or minus 12h post RAIT timepoint/72h plus or minus 12h post RAIT timepoint/48h plus or minus 4h post RAIT timepoint/24h plus or minus 4h post RAIT timepoint/6h plus or minus 2h post RAIT timepoint/additional timepoint
  1-string-TimePointIdentifier
  1-integer-TimePointDistanceFromReferenceEventValue
- 1-TimeUnit-TimePointDistanceFromReferenceEventUnit
+ 1-string-TimeUnit:seconds/minutes/hours/days/months/years
 }
 ProcessExecutionContext
 {
@@ -309,7 +319,7 @@ MassPerVOIAtTimePoint
 DataActivityPerVOIAtTimePoint
 {
  1-float-DataActivityValue
- 1-ActivityUnit-AdministeredActivityUnit
+ 1-string-ActivityUnit:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
  1-string-VOIIdentifier
  1-string-TimePointIdentifier
 }
@@ -350,7 +360,7 @@ DICOMData
 
 NonDICOMData
 {
- 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map
+ 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map/segmentation
  1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format/STL format
  1-FileNameList-FileNameList
  0,1-string-FHIRIdentifier
@@ -360,3 +370,4 @@ FileNameList
 {
  1,n-string-NonDICOMDataFileName
 }
+

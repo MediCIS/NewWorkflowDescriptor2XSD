@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.12.11 à 04:46:08 PM CET 
+// Généré le : 2020.01.10 à 04:03:36 PM CET 
 //
 
 
@@ -26,7 +26,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="DataActivityValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
- *         &lt;element name="DataActivityUnit" type="{https://www.irdbb-medirad.com}DataActivityUnit"/>
+ *         &lt;element name="ActivityUnit" type="{https://www.irdbb-medirad.com}ActivityUnit"/>
  *         &lt;element name="ROIIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="TimePointIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
@@ -40,7 +40,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DataActivityPerROIAtTimePoint", propOrder = {
     "dataActivityValue",
-    "dataActivityUnit",
+    "activityUnit",
     "roiIdentifier",
     "timePointIdentifier"
 })
@@ -48,9 +48,9 @@ public class DataActivityPerROIAtTimePoint {
 
     @XmlElement(name = "DataActivityValue")
     protected float dataActivityValue;
-    @XmlElement(name = "DataActivityUnit", required = true)
+    @XmlElement(name = "ActivityUnit", required = true)
     @XmlSchemaType(name = "string")
-    protected DataActivityUnit dataActivityUnit;
+    protected ActivityUnit activityUnit;
     @XmlElement(name = "ROIIdentifier", required = true)
     protected String roiIdentifier;
     @XmlElement(name = "TimePointIdentifier", required = true)
@@ -73,27 +73,27 @@ public class DataActivityPerROIAtTimePoint {
     }
 
     /**
-     * Obtient la valeur de la propriété dataActivityUnit.
+     * Obtient la valeur de la propriété activityUnit.
      * 
      * @return
      *     possible object is
-     *     {@link DataActivityUnit }
+     *     {@link ActivityUnit }
      *     
      */
-    public DataActivityUnit getDataActivityUnit() {
-        return dataActivityUnit;
+    public ActivityUnit getActivityUnit() {
+        return activityUnit;
     }
 
     /**
-     * Définit la valeur de la propriété dataActivityUnit.
+     * Définit la valeur de la propriété activityUnit.
      * 
      * @param value
      *     allowed object is
-     *     {@link DataActivityUnit }
+     *     {@link ActivityUnit }
      *     
      */
-    public void setDataActivityUnit(DataActivityUnit value) {
-        this.dataActivityUnit = value;
+    public void setActivityUnit(ActivityUnit value) {
+        this.activityUnit = value;
     }
 
     /**

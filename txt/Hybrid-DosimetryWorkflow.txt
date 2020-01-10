@@ -44,15 +44,8 @@ HybridDosimetryViaTimeActivityCurveFit
 //Descriptions of Individual boxes
 //-------------------------
 
-TimeUnit
-{
- 1-string-TimeUnit:seconds/minutes/hours/days/months/years
-}
 
-ActivityUnit
-{
- 1-string-ActivityUnit:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
-}
+
 
 PlanarDataAcquisition
 {
@@ -345,7 +338,7 @@ TimePointDescriptionElement
  1-string-TimePointCategory:168h plus or minus 24h post RAIT timepoint/96h plus or minus 12h post RAIT timepoint/72h plus or minus 12h post RAIT timepoint/48h plus or minus 4h post RAIT timepoint/24h plus or minus 4h post RAIT timepoint/6h plus or minus 2h post RAIT timepoint/additional timepoint
  1-string-TimePointIdentifier
  1-integer-TimePointDistanceFromReferenceEventValue
- 1-TimeUnit-TimePointDistanceFromReferenceEventUnit
+ 1-string-TimeUnit:seconds/minutes/hours/days/months/years
 }
 
 ProcessExecutionContext
@@ -445,7 +438,7 @@ ElementOfCTNumberCalibrationCurve
 DataActivityPerROIAtTimePoint
 {
  1-float-DataActivityValue
- 1-ActivityUnit-DataActivityUnit
+ 1-string-ActivityUnit:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
  1-string-ROIIdentifier
  1-string-TimePointIdentifier
 }
@@ -453,7 +446,7 @@ DataActivityPerROIAtTimePoint
 DataActivityPerVOIAtTimePoint
 {
  1-float-DataActivityValue
- 1-ActivityUnit-AdministeredActivityUnit
+ 1-string-ActivityUnit:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
  1-string-VOIIdentifier
  1-string-TimePointIdentifier
 }
@@ -469,7 +462,7 @@ EnergyDepositionRatePerVOIAtTimePoint
 AdministeredActivity
 {
  1-float-AdministeredActivityValue
- 1-ActivityUnit-AdministeredActivityUnit
+ 1-string-ActivityUnit:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
 // to be replaced by a structured timestamp
 }
 
@@ -498,7 +491,7 @@ TimeIntegratedActivityCoefficientPerROI
 // i.e. residence time
 {
  1-float-TimeIntegratedActivityCoefficientPerROIValue
- 1-TimeUnit-TimeIntegratedActivityCoefficientPerROIUnit
+ 1-string-TimeUnit:seconds/minutes/hours/days/months/years
  1-string-ROIIdentifier
 }
 
@@ -507,7 +500,7 @@ TimeIntegratedActivityPerROI
 {
 // not sure at all how cumulated activities are represented ??
  1-float-TimeIntegratedActivityPerROIValue
- 1-TimeUnit-TimeIntegratedActivityPerROIUnit
+ 1-string-TimeUnit:seconds/minutes/hours/days/months/years
  1-string-ROIIdentifier
 }
 
@@ -526,7 +519,7 @@ DICOMData
 
 NonDICOMData
 {
- 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map
+ 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map/segmentation
  1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format/STL format
  1-FileNameList-FileNameList
  0,1-string-FHIRIdentifier

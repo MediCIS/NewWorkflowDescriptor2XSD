@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.12.11 à 04:46:08 PM CET 
+// Généré le : 2020.01.10 à 04:03:36 PM CET 
 //
 
 
@@ -30,7 +30,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="NMTomoReconUsed" type="{https://www.irdbb-medirad.com}DICOMDataContainer"/>
  *         &lt;element name="CTReconUsed" type="{https://www.irdbb-medirad.com}DICOMDataContainer"/>
  *         &lt;element name="ImageProcessingMethodMethodUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="SegmentationProduced" type="{https://www.irdbb-medirad.com}VoiProducedContainer"/>
+ *         &lt;element name="Segmentation" type="{https://www.irdbb-medirad.com}Segmentation"/>
  *         &lt;element name="CTReconResampledOnCommonReferenceProduced" type="{https://www.irdbb-medirad.com}DICOMDataContainer"/>
  *         &lt;element name="NMTomoReconResampledOnCommonReferenceProduced" type="{https://www.irdbb-medirad.com}DICOMDataContainer"/>
  *       &lt;/sequence>
@@ -49,7 +49,7 @@ import javax.xml.bind.annotation.XmlType;
     "nmTomoReconUsed",
     "ctReconUsed",
     "imageProcessingMethodMethodUsed",
-    "segmentationProduced",
+    "segmentation",
     "ctReconResampledOnCommonReferenceProduced",
     "nmTomoReconResampledOnCommonReferenceProduced"
 })
@@ -67,8 +67,8 @@ public class RegistrationVOISegmentationAndPropagation {
     protected DICOMDataContainer ctReconUsed;
     @XmlElement(name = "ImageProcessingMethodMethodUsed", required = true)
     protected String imageProcessingMethodMethodUsed;
-    @XmlElement(name = "SegmentationProduced", required = true)
-    protected VoiProducedContainer segmentationProduced;
+    @XmlElement(name = "Segmentation", required = true)
+    protected Segmentation segmentation;
     @XmlElement(name = "CTReconResampledOnCommonReferenceProduced", required = true)
     protected DICOMDataContainer ctReconResampledOnCommonReferenceProduced;
     @XmlElement(name = "NMTomoReconResampledOnCommonReferenceProduced", required = true)
@@ -219,27 +219,27 @@ public class RegistrationVOISegmentationAndPropagation {
     }
 
     /**
-     * Obtient la valeur de la propriété segmentationProduced.
+     * Obtient la valeur de la propriété segmentation.
      * 
      * @return
      *     possible object is
-     *     {@link VoiProducedContainer }
+     *     {@link Segmentation }
      *     
      */
-    public VoiProducedContainer getSegmentationProduced() {
-        return segmentationProduced;
+    public Segmentation getSegmentation() {
+        return segmentation;
     }
 
     /**
-     * Définit la valeur de la propriété segmentationProduced.
+     * Définit la valeur de la propriété segmentation.
      * 
      * @param value
      *     allowed object is
-     *     {@link VoiProducedContainer }
+     *     {@link Segmentation }
      *     
      */
-    public void setSegmentationProduced(VoiProducedContainer value) {
-        this.segmentationProduced = value;
+    public void setSegmentation(Segmentation value) {
+        this.segmentation = value;
     }
 
     /**

@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.12.11 à 04:46:08 PM CET 
+// Généré le : 2020.01.10 à 04:03:36 PM CET 
 //
 
 
@@ -27,7 +27,8 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
  *         &lt;element name="VOIIdentifierUsed" type="{https://www.irdbb-medirad.com}VOIidentifierContainer"/>
  *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="VOIUsed" type="{https://www.irdbb-medirad.com}VOIContainer"/>
+ *         &lt;element name="VOIUsed" type="{https://www.irdbb-medirad.com}VOIContainer" minOccurs="0"/>
+ *         &lt;element name="SegmentationUsed" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="ThreeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="AbsorbedDoseRatePerVOIAtTimePointProduced" type="{https://www.irdbb-medirad.com}AbsorbedDoseRatePerVOIAtTimePointContainer"/>
  *       &lt;/sequence>
@@ -44,6 +45,7 @@ import javax.xml.bind.annotation.XmlType;
     "voiIdentifierUsed",
     "timePointIdentifierUsed",
     "voiUsed",
+    "segmentationUsed",
     "threeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed",
     "absorbedDoseRatePerVOIAtTimePointProduced"
 })
@@ -55,8 +57,10 @@ public class SumAndScalingAbsorbedDoseRateCalculation {
     protected VOIidentifierContainer voiIdentifierUsed;
     @XmlElement(name = "TimePointIdentifierUsed", required = true)
     protected String timePointIdentifierUsed;
-    @XmlElement(name = "VOIUsed", required = true)
+    @XmlElement(name = "VOIUsed")
     protected VOIContainer voiUsed;
+    @XmlElement(name = "SegmentationUsed")
+    protected String segmentationUsed;
     @XmlElement(name = "ThreeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed", required = true)
     protected String threeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed;
     @XmlElement(name = "AbsorbedDoseRatePerVOIAtTimePointProduced", required = true)
@@ -156,6 +160,30 @@ public class SumAndScalingAbsorbedDoseRateCalculation {
      */
     public void setVOIUsed(VOIContainer value) {
         this.voiUsed = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété segmentationUsed.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getSegmentationUsed() {
+        return segmentationUsed;
+    }
+
+    /**
+     * Définit la valeur de la propriété segmentationUsed.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setSegmentationUsed(String value) {
+        this.segmentationUsed = value;
     }
 
     /**

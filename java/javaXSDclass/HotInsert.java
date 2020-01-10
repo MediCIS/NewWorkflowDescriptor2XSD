@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.12.11 à 04:46:08 PM CET 
+// Généré le : 2020.01.10 à 04:03:36 PM CET 
 //
 
 
@@ -28,10 +28,10 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="VolumeValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
  *         &lt;element name="VolumeUnit" type="{https://www.irdbb-medirad.com}VolumeUnit"/>
  *         &lt;element name="PreAdminActivityValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
- *         &lt;element name="PreAdminActivityUnit" type="{https://www.irdbb-medirad.com}PreAdminActivityUnit"/>
+ *         &lt;element name="PreAdminActivity" type="{https://www.irdbb-medirad.com}PreAdminActivity"/>
  *         &lt;element name="PreAdminActivityTimestamp" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="PostAdminActivityValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
- *         &lt;element name="PostAdminActivityUnit" type="{https://www.irdbb-medirad.com}PostAdminActivityUnit"/>
+ *         &lt;element name="PostAdminActivity" type="{https://www.irdbb-medirad.com}PostAdminActivity"/>
  *         &lt;element name="PostAdminActivityTimestamp" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="HotInsertIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="Isotope" type="{https://www.irdbb-medirad.com}Isotope"/>
@@ -48,10 +48,10 @@ import javax.xml.bind.annotation.XmlType;
     "volumeValue",
     "volumeUnit",
     "preAdminActivityValue",
-    "preAdminActivityUnit",
+    "preAdminActivity",
     "preAdminActivityTimestamp",
     "postAdminActivityValue",
-    "postAdminActivityUnit",
+    "postAdminActivity",
     "postAdminActivityTimestamp",
     "hotInsertIdentifier",
     "isotope"
@@ -65,16 +65,16 @@ public class HotInsert {
     protected VolumeUnit volumeUnit;
     @XmlElement(name = "PreAdminActivityValue")
     protected float preAdminActivityValue;
-    @XmlElement(name = "PreAdminActivityUnit", required = true)
+    @XmlElement(name = "PreAdminActivity", required = true)
     @XmlSchemaType(name = "string")
-    protected PreAdminActivityUnit preAdminActivityUnit;
+    protected PreAdminActivity preAdminActivity;
     @XmlElement(name = "PreAdminActivityTimestamp", required = true)
     protected String preAdminActivityTimestamp;
     @XmlElement(name = "PostAdminActivityValue")
     protected float postAdminActivityValue;
-    @XmlElement(name = "PostAdminActivityUnit", required = true)
+    @XmlElement(name = "PostAdminActivity", required = true)
     @XmlSchemaType(name = "string")
-    protected PostAdminActivityUnit postAdminActivityUnit;
+    protected PostAdminActivity postAdminActivity;
     @XmlElement(name = "PostAdminActivityTimestamp", required = true)
     protected String postAdminActivityTimestamp;
     @XmlElement(name = "HotInsertIdentifier", required = true)
@@ -140,27 +140,27 @@ public class HotInsert {
     }
 
     /**
-     * Obtient la valeur de la propriété preAdminActivityUnit.
+     * Obtient la valeur de la propriété preAdminActivity.
      * 
      * @return
      *     possible object is
-     *     {@link PreAdminActivityUnit }
+     *     {@link PreAdminActivity }
      *     
      */
-    public PreAdminActivityUnit getPreAdminActivityUnit() {
-        return preAdminActivityUnit;
+    public PreAdminActivity getPreAdminActivity() {
+        return preAdminActivity;
     }
 
     /**
-     * Définit la valeur de la propriété preAdminActivityUnit.
+     * Définit la valeur de la propriété preAdminActivity.
      * 
      * @param value
      *     allowed object is
-     *     {@link PreAdminActivityUnit }
+     *     {@link PreAdminActivity }
      *     
      */
-    public void setPreAdminActivityUnit(PreAdminActivityUnit value) {
-        this.preAdminActivityUnit = value;
+    public void setPreAdminActivity(PreAdminActivity value) {
+        this.preAdminActivity = value;
     }
 
     /**
@@ -204,27 +204,27 @@ public class HotInsert {
     }
 
     /**
-     * Obtient la valeur de la propriété postAdminActivityUnit.
+     * Obtient la valeur de la propriété postAdminActivity.
      * 
      * @return
      *     possible object is
-     *     {@link PostAdminActivityUnit }
+     *     {@link PostAdminActivity }
      *     
      */
-    public PostAdminActivityUnit getPostAdminActivityUnit() {
-        return postAdminActivityUnit;
+    public PostAdminActivity getPostAdminActivity() {
+        return postAdminActivity;
     }
 
     /**
-     * Définit la valeur de la propriété postAdminActivityUnit.
+     * Définit la valeur de la propriété postAdminActivity.
      * 
      * @param value
      *     allowed object is
-     *     {@link PostAdminActivityUnit }
+     *     {@link PostAdminActivity }
      *     
      */
-    public void setPostAdminActivityUnit(PostAdminActivityUnit value) {
-        this.postAdminActivityUnit = value;
+    public void setPostAdminActivity(PostAdminActivity value) {
+        this.postAdminActivity = value;
     }
 
     /**

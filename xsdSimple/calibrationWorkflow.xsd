@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 007-->
+<!--VersionSchemas : 011-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -29,22 +29,6 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 					<xs:element name="PlanarCalibrationWorkflow" type="irdbb:PlanarCalibrationWorkflow"/>
 						</xs:sequence>
 				</xs:complexType>
-
-	<xs:element name="TimeUnit" >
-		<xs:complexType>
-			<xs:sequence>
-		<xs:element name="TimeUnit" type="irdbb:TimeUnit" />
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
-
-	<xs:element name="ActivityUnit" >
-		<xs:complexType>
-			<xs:sequence>
-		<xs:element name="ActivityUnit" type="irdbb:ActivityUnit" />
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
 
 	<xs:element name="ElementOfSPECTRecoveryCoefficientCurve" >
 		<xs:complexType>
@@ -208,28 +192,6 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:simpleType name="TimeUnit">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="seconds"/>
-			<xs:enumeration value="minutes"/>
-			<xs:enumeration value="hours"/>
-			<xs:enumeration value="days"/>
-			<xs:enumeration value="months"/>
-			<xs:enumeration value="years"/>
-		</xs:restriction>
-	</xs:simpleType>
-
-	<xs:simpleType name="ActivityUnit">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="becquerel"/>
-			<xs:enumeration value="kilobecquerel"/>
-			<xs:enumeration value="megabecquerel"/>
-			<xs:enumeration value="curie"/>
-			<xs:enumeration value="millicurie"/>
-			<xs:enumeration value="microcurie"/>
-		</xs:restriction>
-	</xs:simpleType>
-
 	<xs:complexType name="DensityPhantom">
 		<xs:sequence>
 			<xs:element name="DensityPhantomName" type="xs:string"/>
@@ -318,15 +280,37 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:restriction>
 	</xs:simpleType>
 
+	<xs:simpleType name="PreAdminActivity">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="becquerel"/>
+			<xs:enumeration value="kilobecquerel"/>
+			<xs:enumeration value="megabecquerel"/>
+			<xs:enumeration value="curie"/>
+			<xs:enumeration value="millicurie"/>
+			<xs:enumeration value="microcurie"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="PostAdminActivity">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="becquerel"/>
+			<xs:enumeration value="kilobecquerel"/>
+			<xs:enumeration value="megabecquerel"/>
+			<xs:enumeration value="curie"/>
+			<xs:enumeration value="millicurie"/>
+			<xs:enumeration value="microcurie"/>
+		</xs:restriction>
+	</xs:simpleType>
+
 	<xs:complexType name="HotInsert">
 		<xs:sequence>
 			<xs:element name="VolumeValue" type="xs:float"/>
 		<xs:element name="VolumeUnit" type="irdbb:VolumeUnit" />
 			<xs:element name="PreAdminActivityValue" type="xs:float"/>
-			<xs:element name="PreAdminActivityUnit" type="irdbb:ActivityUnit"/>
+		<xs:element name="PreAdminActivity" type="irdbb:PreAdminActivity" />
 			<xs:element name="PreAdminActivityTimestamp" type="xs:string"/>
 			<xs:element name="PostAdminActivityValue" type="xs:float"/>
-			<xs:element name="PostAdminActivityUnit" type="irdbb:ActivityUnit"/>
+		<xs:element name="PostAdminActivity" type="irdbb:PostAdminActivity" />
 			<xs:element name="PostAdminActivityTimestamp" type="xs:string"/>
 			<xs:element name="HotInsertIdentifier" type="xs:string"/>
 		<xs:element name="Isotope" type="irdbb:Isotope" />
@@ -341,15 +325,37 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:sequence>
 	</xs:complexType>
 
+	<xs:simpleType name="PreAdminBackgroundActivity">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="becquerel"/>
+			<xs:enumeration value="kilobecquerel"/>
+			<xs:enumeration value="megabecquerel"/>
+			<xs:enumeration value="curie"/>
+			<xs:enumeration value="millicurie"/>
+			<xs:enumeration value="microcurie"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="PostAdminBackgroundActivity">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="becquerel"/>
+			<xs:enumeration value="kilobecquerel"/>
+			<xs:enumeration value="megabecquerel"/>
+			<xs:enumeration value="curie"/>
+			<xs:enumeration value="millicurie"/>
+			<xs:enumeration value="microcurie"/>
+		</xs:restriction>
+	</xs:simpleType>
+
 	<xs:complexType name="Tank">
 		<xs:sequence>
 			<xs:element name="VolumeValue" type="xs:float"/>
 		<xs:element name="VolumeUnit" type="irdbb:VolumeUnit" />
 			<xs:element name="PreAdminBackgroundActivityValue" type="xs:float"/>
-			<xs:element name="PreAdminBackgroundActivityUnit" type="irdbb:ActivityUnit"/>
+		<xs:element name="PreAdminBackgroundActivity" type="irdbb:PreAdminBackgroundActivity" />
 			<xs:element name="PreAdminBackgroundActivityTimestamp" type="xs:string"/>
 			<xs:element name="PostAdminBackgroundActivityValue" type="xs:float"/>
-			<xs:element name="PostAdminBackgroundActivityUnit" type="irdbb:ActivityUnit"/>
+		<xs:element name="PostAdminBackgroundActivity" type="irdbb:PostAdminBackgroundActivity" />
 			<xs:element name="PostAdminBackgroundActivityTimestamp" type="xs:string"/>
 			<xs:element name="TankIdentifier" type="xs:string"/>
 		<xs:element name="Isotope" type="irdbb:Isotope" />
@@ -462,6 +468,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:enumeration value="VOI"/>
 			<xs:enumeration value="VOI superimposed on images"/>
 			<xs:enumeration value="3D absorbed dose map"/>
+			<xs:enumeration value="segmentation"/>
 		</xs:restriction>
 	</xs:simpleType>
 

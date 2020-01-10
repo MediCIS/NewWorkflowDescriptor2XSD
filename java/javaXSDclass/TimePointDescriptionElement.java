@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.12.11 à 04:46:08 PM CET 
+// Généré le : 2020.01.10 à 04:03:36 PM CET 
 //
 
 
@@ -29,7 +29,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="TimePointCategory" type="{https://www.irdbb-medirad.com}TimePointCategory"/>
  *         &lt;element name="TimePointIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="TimePointDistanceFromReferenceEventValue" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *         &lt;element name="TimePointDistanceFromReferenceEventUnit" type="{https://www.irdbb-medirad.com}TimePointDistanceFromReferenceEventUnit"/>
+ *         &lt;element name="TimeUnit" type="{https://www.irdbb-medirad.com}TimeUnit"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -43,7 +43,7 @@ import javax.xml.bind.annotation.XmlType;
     "timePointCategory",
     "timePointIdentifier",
     "timePointDistanceFromReferenceEventValue",
-    "timePointDistanceFromReferenceEventUnit"
+    "timeUnit"
 })
 public class TimePointDescriptionElement {
 
@@ -53,9 +53,9 @@ public class TimePointDescriptionElement {
     protected String timePointIdentifier;
     @XmlElement(name = "TimePointDistanceFromReferenceEventValue", required = true)
     protected BigInteger timePointDistanceFromReferenceEventValue;
-    @XmlElement(name = "TimePointDistanceFromReferenceEventUnit", required = true)
+    @XmlElement(name = "TimeUnit", required = true)
     @XmlSchemaType(name = "string")
-    protected TimePointDistanceFromReferenceEventUnit timePointDistanceFromReferenceEventUnit;
+    protected TimeUnit timeUnit;
 
     /**
      * Obtient la valeur de la propriété timePointCategory.
@@ -130,27 +130,27 @@ public class TimePointDescriptionElement {
     }
 
     /**
-     * Obtient la valeur de la propriété timePointDistanceFromReferenceEventUnit.
+     * Obtient la valeur de la propriété timeUnit.
      * 
      * @return
      *     possible object is
-     *     {@link TimePointDistanceFromReferenceEventUnit }
+     *     {@link TimeUnit }
      *     
      */
-    public TimePointDistanceFromReferenceEventUnit getTimePointDistanceFromReferenceEventUnit() {
-        return timePointDistanceFromReferenceEventUnit;
+    public TimeUnit getTimeUnit() {
+        return timeUnit;
     }
 
     /**
-     * Définit la valeur de la propriété timePointDistanceFromReferenceEventUnit.
+     * Définit la valeur de la propriété timeUnit.
      * 
      * @param value
      *     allowed object is
-     *     {@link TimePointDistanceFromReferenceEventUnit }
+     *     {@link TimeUnit }
      *     
      */
-    public void setTimePointDistanceFromReferenceEventUnit(TimePointDistanceFromReferenceEventUnit value) {
-        this.timePointDistanceFromReferenceEventUnit = value;
+    public void setTimeUnit(TimeUnit value) {
+        this.timeUnit = value;
     }
 
 }

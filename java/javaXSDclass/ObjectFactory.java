@@ -2,13 +2,16 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.12.11 à 04:46:08 PM CET 
+// Généré le : 2020.01.10 à 04:03:36 PM CET 
 //
 
 
 package javaXSDclass;
 
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.annotation.XmlElementDecl;
 import javax.xml.bind.annotation.XmlRegistry;
+import javax.xml.namespace.QName;
 
 
 /**
@@ -28,6 +31,7 @@ import javax.xml.bind.annotation.XmlRegistry;
 @XmlRegistry
 public class ObjectFactory {
 
+    private final static QName _NonDicomFileSetDescriptor_QNAME = new QName("https://www.irdbb-medirad.com", "NonDicomFileSetDescriptor");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: javaXSDclass
@@ -53,6 +57,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link NonDicomFileSetDescriptor }
+     * 
+     */
+    public NonDicomFileSetDescriptor createNonDicomFileSetDescriptor() {
+        return new NonDicomFileSetDescriptor();
+    }
+
+    /**
      * Create an instance of {@link PlanarCalibrationFactorReference }
      * 
      */
@@ -66,6 +78,14 @@ public class ObjectFactory {
      */
     public AbsorbedDoseRateCalculationIn2DDosimetry createAbsorbedDoseRateCalculationIn2DDosimetry() {
         return new AbsorbedDoseRateCalculationIn2DDosimetry();
+    }
+
+    /**
+     * Create an instance of {@link Segmentation }
+     * 
+     */
+    public Segmentation createSegmentation() {
+        return new Segmentation();
     }
 
     /**
@@ -1133,14 +1153,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link NonDicomFileSetDescriptor }
-     * 
-     */
-    public NonDicomFileSetDescriptor createNonDicomFileSetDescriptor() {
-        return new NonDicomFileSetDescriptor();
-    }
-
-    /**
      * Create an instance of {@link ROI }
      * 
      */
@@ -1354,6 +1366,15 @@ public class ObjectFactory {
      */
     public MeanAbsorbedDoseRateInROI createMeanAbsorbedDoseRateInROI() {
         return new MeanAbsorbedDoseRateInROI();
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link NonDicomFileSetDescriptor }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "NonDicomFileSetDescriptor")
+    public JAXBElement<NonDicomFileSetDescriptor> createNonDicomFileSetDescriptor(NonDicomFileSetDescriptor value) {
+        return new JAXBElement<NonDicomFileSetDescriptor>(_NonDicomFileSetDescriptor_QNAME, NonDicomFileSetDescriptor.class, null, value);
     }
 
 }
