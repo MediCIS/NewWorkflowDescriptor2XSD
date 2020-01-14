@@ -1,0 +1,6 @@
+2c2
+< <!--VersionSchemas : 020-->
+---
+> <!--VersionSchemas : 019-->
+544d543
+< 			<xs:enumeration value="volume"/>

@@ -22,6 +22,7 @@ fi
 fileVersion="versionNonDicom.txt"
 oldVersion=$(($(cat $fileVersion)))
 version=$(($(cat $fileVersion) + 1))
+#version=$(($(cat $fileVersion)))
 
 echo "Nouvelle Version : ""$version"
 echo "Ancienne Version : ""$oldVersion"

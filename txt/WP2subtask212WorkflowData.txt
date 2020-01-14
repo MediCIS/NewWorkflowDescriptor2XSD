@@ -1,4 +1,4 @@
-//Descriptions of Workflows
+RegistrationVOISegmentationAndPropagation//Descriptions of Workflows
 //-------------------------
 
 WP2subtask212WorkflowData
@@ -21,10 +21,10 @@ CTSegmentation
  1-ProcessExecutionContext-ProcessExecutionContext
  1-DICOMData-DICOMImageUsed
  0,1-SegmentationMethodType-SegmentationMethodUsed
- 1-VOIcontainer-VOIDescriptorProduced
+ 1-VOIList-VOIDescriptorProduced
 }
 
-VOIcontainer
+VOIList
 {
  1,n-VOI-VOI
 }
@@ -53,7 +53,7 @@ CalculationOfAbsorbedDosesInVOIs
 
 VOIIdentifierContainer
 {
- 1,n-string-VOIIdentifierUsed
+ 1-string-VOIIdentifierUsed
 }
 
 AbsorbedDosePerVOITypeContainer
@@ -145,12 +145,12 @@ VOI
 
 DICOMDataContainer
 {
- 1,n-DICOMData-DICOMVOIContainer
+ 1,n-DICOMData-DICOMContainer
 }
 
 NonDICOMDataContainer
 {
- 1,n-NonDICOMData-NonDICOMVOIContainer
+ 1,n-NonDICOMData-NonDICOMContainer
 }
 
 DICOMData
@@ -161,7 +161,7 @@ DICOMData
 
 NonDICOMData
 {
- 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map/segmentation
+ 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map/segmentation/volume
  1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format/STL format
  1-FileNameList-FileNameList
  0,1-string-FHIRIdentifier
@@ -171,3 +171,5 @@ FileNameList
 {
  1,n-string-NonDICOMDataFileName
 }
+
+

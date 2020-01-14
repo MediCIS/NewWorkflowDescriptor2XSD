@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.10 à 04:03:36 PM CET 
+// Généré le : 2020.01.14 à 12:22:41 PM CET 
 //
 
 
@@ -121,6 +121,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link RegistrationVOISegmentationAndPropagationContainer }
+     * 
+     */
+    public RegistrationVOISegmentationAndPropagationContainer createRegistrationVOISegmentationAndPropagationContainer() {
+        return new RegistrationVOISegmentationAndPropagationContainer();
+    }
+
+    /**
      * Create an instance of {@link SoftwareNameContainer }
      * 
      */
@@ -134,14 +142,6 @@ public class ObjectFactory {
      */
     public TwoDimDosimetryViaAbsorbedDoseRateCalculation createTwoDimDosimetryViaAbsorbedDoseRateCalculation() {
         return new TwoDimDosimetryViaAbsorbedDoseRateCalculation();
-    }
-
-    /**
-     * Create an instance of {@link MeanAbsorbedDoseRateInVOIcontainer }
-     * 
-     */
-    public MeanAbsorbedDoseRateInVOIcontainer createMeanAbsorbedDoseRateInVOIcontainer() {
-        return new MeanAbsorbedDoseRateInVOIcontainer();
     }
 
     /**
@@ -270,6 +270,14 @@ public class ObjectFactory {
      */
     public CalibrationCoefficient createCalibrationCoefficient() {
         return new CalibrationCoefficient();
+    }
+
+    /**
+     * Create an instance of {@link MeanAbsorbedDoseInVOIContainer }
+     * 
+     */
+    public MeanAbsorbedDoseInVOIContainer createMeanAbsorbedDoseInVOIContainer() {
+        return new MeanAbsorbedDoseInVOIContainer();
     }
 
     /**
@@ -529,14 +537,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link AbsorbedDoseInVOIcontainer }
-     * 
-     */
-    public AbsorbedDoseInVOIcontainer createAbsorbedDoseInVOIcontainer() {
-        return new AbsorbedDoseInVOIcontainer();
-    }
-
-    /**
      * Create an instance of {@link AbsorbedDoseRateCalculationInHybridDosimetry }
      * 
      */
@@ -614,6 +614,14 @@ public class ObjectFactory {
      */
     public TimeAbsorbedDoseRateCurveFit createTimeAbsorbedDoseRateCurveFit() {
         return new TimeAbsorbedDoseRateCurveFit();
+    }
+
+    /**
+     * Create an instance of {@link VOIActivityDeterminationContainer }
+     * 
+     */
+    public VOIActivityDeterminationContainer createVOIActivityDeterminationContainer() {
+        return new VOIActivityDeterminationContainer();
     }
 
     /**
@@ -713,14 +721,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link MeanAbsorbedDoseInVOIcontainer }
-     * 
-     */
-    public MeanAbsorbedDoseInVOIcontainer createMeanAbsorbedDoseInVOIcontainer() {
-        return new MeanAbsorbedDoseInVOIcontainer();
-    }
-
-    /**
      * Create an instance of {@link VOIInCTcontainer }
      * 
      */
@@ -742,14 +742,6 @@ public class ObjectFactory {
      */
     public VoxelAbsorbedDoseMapIdentifierUsed createVoxelAbsorbedDoseMapIdentifierUsed() {
         return new VoxelAbsorbedDoseMapIdentifierUsed();
-    }
-
-    /**
-     * Create an instance of {@link VOIidentifierContainer }
-     * 
-     */
-    public VOIidentifierContainer createVOIidentifierContainer() {
-        return new VOIidentifierContainer();
     }
 
     /**
@@ -790,6 +782,14 @@ public class ObjectFactory {
      */
     public PlanarDataSegmentationWithRegistrationAndPropagation createPlanarDataSegmentationWithRegistrationAndPropagation() {
         return new PlanarDataSegmentationWithRegistrationAndPropagation();
+    }
+
+    /**
+     * Create an instance of {@link VOIList }
+     * 
+     */
+    public VOIList createVOIList() {
+        return new VOIList();
     }
 
     /**
@@ -985,14 +985,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link VOIcontainer }
-     * 
-     */
-    public VOIcontainer createVOIcontainer() {
-        return new VOIcontainer();
-    }
-
-    /**
      * Create an instance of {@link CTSegmentation }
      * 
      */
@@ -1158,6 +1150,14 @@ public class ObjectFactory {
      */
     public ROI createROI() {
         return new ROI();
+    }
+
+    /**
+     * Create an instance of {@link MeanAbsorbedDoseRateInVOIContainer }
+     * 
+     */
+    public MeanAbsorbedDoseRateInVOIContainer createMeanAbsorbedDoseRateInVOIContainer() {
+        return new MeanAbsorbedDoseRateInVOIContainer();
     }
 
     /**

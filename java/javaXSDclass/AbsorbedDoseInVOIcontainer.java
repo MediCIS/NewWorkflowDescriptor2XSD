@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.10 à 04:03:36 PM CET 
+// Généré le : 2020.01.14 à 12:22:41 PM CET 
 //
 
 
@@ -17,16 +17,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour AbsorbedDoseInVOIcontainer complex type.
+ * <p>Classe Java pour AbsorbedDoseInVOIContainer complex type.
  * 
  * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
- * &lt;complexType name="AbsorbedDoseInVOIcontainer">
+ * &lt;complexType name="AbsorbedDoseInVOIContainer">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="AbsorbedDoseInVOI" type="{https://www.irdbb-medirad.com}AbsorbedDoseInVOI" maxOccurs="unbounded"/>
+ *         &lt;element name="AbsorbedDoseInVOIProduced" type="{https://www.irdbb-medirad.com}AbsorbedDoseInVOI" maxOccurs="unbounded"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,27 +36,27 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "AbsorbedDoseInVOIcontainer", propOrder = {
-    "absorbedDoseInVOI"
+@XmlType(name = "AbsorbedDoseInVOIContainer", propOrder = {
+    "absorbedDoseInVOIProduced"
 })
-public class AbsorbedDoseInVOIcontainer {
+public class AbsorbedDoseInVOIContainer {
 
-    @XmlElement(name = "AbsorbedDoseInVOI", required = true)
-    protected List<AbsorbedDoseInVOI> absorbedDoseInVOI;
+    @XmlElement(name = "AbsorbedDoseInVOIProduced", required = true)
+    protected List<AbsorbedDoseInVOI> absorbedDoseInVOIProduced;
 
     /**
-     * Gets the value of the absorbedDoseInVOI property.
+     * Gets the value of the absorbedDoseInVOIProduced property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the absorbedDoseInVOI property.
+     * This is why there is not a <CODE>set</CODE> method for the absorbedDoseInVOIProduced property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getAbsorbedDoseInVOI().add(newItem);
+     *    getAbsorbedDoseInVOIProduced().add(newItem);
      * </pre>
      * 
      * 
@@ -66,11 +66,11 @@ public class AbsorbedDoseInVOIcontainer {
      * 
      * 
      */
-    public List<AbsorbedDoseInVOI> getAbsorbedDoseInVOI() {
-        if (absorbedDoseInVOI == null) {
-            absorbedDoseInVOI = new ArrayList<AbsorbedDoseInVOI>();
+    public List<AbsorbedDoseInVOI> getAbsorbedDoseInVOIProduced() {
+        if (absorbedDoseInVOIProduced == null) {
+            absorbedDoseInVOIProduced = new ArrayList<AbsorbedDoseInVOI>();
         }
-        return this.absorbedDoseInVOI;
+        return this.absorbedDoseInVOIProduced;
     }
 
 }

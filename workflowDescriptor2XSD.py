@@ -254,7 +254,7 @@ for key in dico:
                         sousObjets += generateSimpleObject(nombre, name, typeName)+"\n"
         key = key.replace("\n","").replace(" ","")
         if key != "" :
-            print(key)
+            #print(key)
             if key in listeRacines:
                 xmlRootElements += generateRootType(key)
                 xmlElements += generateComplexRoot(key,sousObjets)

@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.10 à 04:03:36 PM CET 
+// Généré le : 2020.01.14 à 12:22:41 PM CET 
 //
 
 
@@ -28,7 +28,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="VOIIdentifierUsed" type="{https://www.irdbb-medirad.com}VOIIdentifierContainer"/>
  *         &lt;element name="TimePointIdentifierUsed" type="{https://www.irdbb-medirad.com}TimePointIdentifierContainer"/>
  *         &lt;element name="PKAssessmentMethodUsed" type="{https://www.irdbb-medirad.com}CurveFittingMethod"/>
- *         &lt;element name="MeanAbsorbedDoseInVOIProduced" type="{https://www.irdbb-medirad.com}MeanAbsorbedDoseInVOIcontainer"/>
+ *         &lt;element name="MeanAbsorbedDoseInVOIProduced" type="{https://www.irdbb-medirad.com}MeanAbsorbedDoseInVOIContainer"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -56,7 +56,7 @@ public class TimeAbsorbedDoseRateCurveFit {
     @XmlElement(name = "PKAssessmentMethodUsed", required = true)
     protected CurveFittingMethod pkAssessmentMethodUsed;
     @XmlElement(name = "MeanAbsorbedDoseInVOIProduced", required = true)
-    protected MeanAbsorbedDoseInVOIcontainer meanAbsorbedDoseInVOIProduced;
+    protected MeanAbsorbedDoseInVOIContainer meanAbsorbedDoseInVOIProduced;
 
     /**
      * Obtient la valeur de la propriété processExecutionContext.
@@ -159,10 +159,10 @@ public class TimeAbsorbedDoseRateCurveFit {
      * 
      * @return
      *     possible object is
-     *     {@link MeanAbsorbedDoseInVOIcontainer }
+     *     {@link MeanAbsorbedDoseInVOIContainer }
      *     
      */
-    public MeanAbsorbedDoseInVOIcontainer getMeanAbsorbedDoseInVOIProduced() {
+    public MeanAbsorbedDoseInVOIContainer getMeanAbsorbedDoseInVOIProduced() {
         return meanAbsorbedDoseInVOIProduced;
     }
 
@@ -171,10 +171,10 @@ public class TimeAbsorbedDoseRateCurveFit {
      * 
      * @param value
      *     allowed object is
-     *     {@link MeanAbsorbedDoseInVOIcontainer }
+     *     {@link MeanAbsorbedDoseInVOIContainer }
      *     
      */
-    public void setMeanAbsorbedDoseInVOIProduced(MeanAbsorbedDoseInVOIcontainer value) {
+    public void setMeanAbsorbedDoseInVOIProduced(MeanAbsorbedDoseInVOIContainer value) {
         this.meanAbsorbedDoseInVOIProduced = value;
     }
 

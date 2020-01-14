@@ -2,14 +2,12 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.10 à 04:03:36 PM CET 
+// Généré le : 2020.01.14 à 12:22:41 PM CET 
 //
 
 
 package javaXSDclass;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -17,16 +15,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour VOIcontainer complex type.
+ * <p>Classe Java pour VOIContainer complex type.
  * 
  * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
- * &lt;complexType name="VOIcontainer">
+ * &lt;complexType name="VOIContainer">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="VOI" type="{https://www.irdbb-medirad.com}VOI" maxOccurs="unbounded"/>
+ *         &lt;element name="VOIIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,41 +34,36 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "VOIcontainer", propOrder = {
-    "voi"
+@XmlType(name = "VOIContainer", propOrder = {
+    "voiIdentifierUsed"
 })
-public class VOIcontainer {
+public class VOIContainer {
 
-    @XmlElement(name = "VOI", required = true)
-    protected List<VOI> voi;
+    @XmlElement(name = "VOIIdentifierUsed", required = true)
+    protected String voiIdentifierUsed;
 
     /**
-     * Gets the value of the voi property.
+     * Obtient la valeur de la propriété voiIdentifierUsed.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the voi property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getVOI().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link VOI }
-     * 
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
-    public List<VOI> getVOI() {
-        if (voi == null) {
-            voi = new ArrayList<VOI>();
-        }
-        return this.voi;
+    public String getVOIIdentifierUsed() {
+        return voiIdentifierUsed;
+    }
+
+    /**
+     * Définit la valeur de la propriété voiIdentifierUsed.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setVOIIdentifierUsed(String value) {
+        this.voiIdentifierUsed = value;
     }
 
 }

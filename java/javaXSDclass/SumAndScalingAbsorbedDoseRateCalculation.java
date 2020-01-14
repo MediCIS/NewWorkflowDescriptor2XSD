@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.10 à 04:03:36 PM CET 
+// Généré le : 2020.01.14 à 12:22:41 PM CET 
 //
 
 
@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
- *         &lt;element name="VOIIdentifierUsed" type="{https://www.irdbb-medirad.com}VOIidentifierContainer"/>
+ *         &lt;element name="VOIIdentifierUsed" type="{https://www.irdbb-medirad.com}VOIIdentifierContainer"/>
  *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="VOIUsed" type="{https://www.irdbb-medirad.com}VOIContainer" minOccurs="0"/>
  *         &lt;element name="SegmentationUsed" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
@@ -54,7 +54,7 @@ public class SumAndScalingAbsorbedDoseRateCalculation {
     @XmlElement(name = "ProcessExecutionContext", required = true)
     protected ProcessExecutionContext processExecutionContext;
     @XmlElement(name = "VOIIdentifierUsed", required = true)
-    protected VOIidentifierContainer voiIdentifierUsed;
+    protected VOIIdentifierContainer voiIdentifierUsed;
     @XmlElement(name = "TimePointIdentifierUsed", required = true)
     protected String timePointIdentifierUsed;
     @XmlElement(name = "VOIUsed")
@@ -95,10 +95,10 @@ public class SumAndScalingAbsorbedDoseRateCalculation {
      * 
      * @return
      *     possible object is
-     *     {@link VOIidentifierContainer }
+     *     {@link VOIIdentifierContainer }
      *     
      */
-    public VOIidentifierContainer getVOIIdentifierUsed() {
+    public VOIIdentifierContainer getVOIIdentifierUsed() {
         return voiIdentifierUsed;
     }
 
@@ -107,10 +107,10 @@ public class SumAndScalingAbsorbedDoseRateCalculation {
      * 
      * @param value
      *     allowed object is
-     *     {@link VOIidentifierContainer }
+     *     {@link VOIIdentifierContainer }
      *     
      */
-    public void setVOIIdentifierUsed(VOIidentifierContainer value) {
+    public void setVOIIdentifierUsed(VOIIdentifierContainer value) {
         this.voiIdentifierUsed = value;
     }
 

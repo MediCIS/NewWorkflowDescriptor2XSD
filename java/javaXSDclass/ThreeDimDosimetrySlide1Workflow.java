@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.10 à 04:03:36 PM CET 
+// Généré le : 2020.01.14 à 12:22:41 PM CET 
 //
 
 
@@ -25,8 +25,8 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="SPECTDataAcquisitionAndReconstruction" type="{https://www.irdbb-medirad.com}SPECTDataAcquisitionAndReconstruction"/>
- *         &lt;element name="RegistrationVOISegmentationAndPropagation" type="{https://www.irdbb-medirad.com}RegistrationVOISegmentationAndPropagation"/>
- *         &lt;element name="VOIActivityDetermination" type="{https://www.irdbb-medirad.com}VOIActivityDetermination"/>
+ *         &lt;element name="RegistrationVOISegmentationAndPropagationContainer" type="{https://www.irdbb-medirad.com}RegistrationVOISegmentationAndPropagationContainer"/>
+ *         &lt;element name="VOIActivityDeterminationContainer" type="{https://www.irdbb-medirad.com}VOIActivityDeterminationContainer"/>
  *         &lt;element name="TimeActivityCurveFitIn3DDosimetry" type="{https://www.irdbb-medirad.com}TimeActivityCurveFitIn3DDosimetry"/>
  *         &lt;element name="AbsorbedDoseCalculationInVOI" type="{https://www.irdbb-medirad.com}AbsorbedDoseCalculationInVOI"/>
  *         &lt;element name="RadioBiologicalCalculationIn3DSlide1Dosimetry" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculationIn3DSlide1Dosimetry"/>
@@ -41,8 +41,8 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ThreeDimDosimetrySlide1workflow", propOrder = {
     "spectDataAcquisitionAndReconstruction",
-    "registrationVOISegmentationAndPropagation",
-    "voiActivityDetermination",
+    "registrationVOISegmentationAndPropagationContainer",
+    "voiActivityDeterminationContainer",
     "timeActivityCurveFitIn3DDosimetry",
     "absorbedDoseCalculationInVOI",
     "radioBiologicalCalculationIn3DSlide1Dosimetry"
@@ -51,10 +51,10 @@ public class ThreeDimDosimetrySlide1Workflow {
 
     @XmlElement(name = "SPECTDataAcquisitionAndReconstruction", required = true)
     protected SPECTDataAcquisitionAndReconstruction spectDataAcquisitionAndReconstruction;
-    @XmlElement(name = "RegistrationVOISegmentationAndPropagation", required = true)
-    protected RegistrationVOISegmentationAndPropagation registrationVOISegmentationAndPropagation;
-    @XmlElement(name = "VOIActivityDetermination", required = true)
-    protected VOIActivityDetermination voiActivityDetermination;
+    @XmlElement(name = "RegistrationVOISegmentationAndPropagationContainer", required = true)
+    protected RegistrationVOISegmentationAndPropagationContainer registrationVOISegmentationAndPropagationContainer;
+    @XmlElement(name = "VOIActivityDeterminationContainer", required = true)
+    protected VOIActivityDeterminationContainer voiActivityDeterminationContainer;
     @XmlElement(name = "TimeActivityCurveFitIn3DDosimetry", required = true)
     protected TimeActivityCurveFitIn3DDosimetry timeActivityCurveFitIn3DDosimetry;
     @XmlElement(name = "AbsorbedDoseCalculationInVOI", required = true)
@@ -87,51 +87,51 @@ public class ThreeDimDosimetrySlide1Workflow {
     }
 
     /**
-     * Obtient la valeur de la propriété registrationVOISegmentationAndPropagation.
+     * Obtient la valeur de la propriété registrationVOISegmentationAndPropagationContainer.
      * 
      * @return
      *     possible object is
-     *     {@link RegistrationVOISegmentationAndPropagation }
+     *     {@link RegistrationVOISegmentationAndPropagationContainer }
      *     
      */
-    public RegistrationVOISegmentationAndPropagation getRegistrationVOISegmentationAndPropagation() {
-        return registrationVOISegmentationAndPropagation;
+    public RegistrationVOISegmentationAndPropagationContainer getRegistrationVOISegmentationAndPropagationContainer() {
+        return registrationVOISegmentationAndPropagationContainer;
     }
 
     /**
-     * Définit la valeur de la propriété registrationVOISegmentationAndPropagation.
+     * Définit la valeur de la propriété registrationVOISegmentationAndPropagationContainer.
      * 
      * @param value
      *     allowed object is
-     *     {@link RegistrationVOISegmentationAndPropagation }
+     *     {@link RegistrationVOISegmentationAndPropagationContainer }
      *     
      */
-    public void setRegistrationVOISegmentationAndPropagation(RegistrationVOISegmentationAndPropagation value) {
-        this.registrationVOISegmentationAndPropagation = value;
+    public void setRegistrationVOISegmentationAndPropagationContainer(RegistrationVOISegmentationAndPropagationContainer value) {
+        this.registrationVOISegmentationAndPropagationContainer = value;
     }
 
     /**
-     * Obtient la valeur de la propriété voiActivityDetermination.
+     * Obtient la valeur de la propriété voiActivityDeterminationContainer.
      * 
      * @return
      *     possible object is
-     *     {@link VOIActivityDetermination }
+     *     {@link VOIActivityDeterminationContainer }
      *     
      */
-    public VOIActivityDetermination getVOIActivityDetermination() {
-        return voiActivityDetermination;
+    public VOIActivityDeterminationContainer getVOIActivityDeterminationContainer() {
+        return voiActivityDeterminationContainer;
     }
 
     /**
-     * Définit la valeur de la propriété voiActivityDetermination.
+     * Définit la valeur de la propriété voiActivityDeterminationContainer.
      * 
      * @param value
      *     allowed object is
-     *     {@link VOIActivityDetermination }
+     *     {@link VOIActivityDeterminationContainer }
      *     
      */
-    public void setVOIActivityDetermination(VOIActivityDetermination value) {
-        this.voiActivityDetermination = value;
+    public void setVOIActivityDeterminationContainer(VOIActivityDeterminationContainer value) {
+        this.voiActivityDeterminationContainer = value;
     }
 
     /**

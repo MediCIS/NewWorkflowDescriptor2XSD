@@ -93,7 +93,7 @@ VOISegmentationVOIMassDetermination
  1-string-VOISegmentationMethodUsed
 // to be replaced by structured items
  1-CountsPerVOIAtTimePointContainer-CountsPerVOIAtTimePointContainer
- 0,1-VOIidentifierContainer-VOIProduced
+ 0,1-VOIIdentifierContainer-VOIProduced
  0,1-Segmentation-SegmentationProduced
  1-DICOMDataContainer-CTReconResampledOnNMReferenceProduced
  1-MassPerVOIAtTimePointContainer-MassPerVOIAtTimePointContainer
@@ -126,7 +126,7 @@ VOIActivityDetermination
 {
  1-ProcessExecutionContext-ProcessExecutionContext
 // to clarify if the same Calibration Factor is used for all timepoints ?
- 1-VOIContainer-VOIContainer
+ 1-string-SegmentationIdentifierUsed
  1-string-TimePointIdentifierUsed
 // Corresponding Counts per VOI at TimePoint need to be retrieved
  1-NMRelevantCalibrationReference-SPECTCalibrationFactorReferenceUsed
@@ -134,14 +134,15 @@ VOIActivityDetermination
  1-NMRelevantCalibrationReference-SPECTRecoveryCoefficientCurveReferenceUsed
 // how to refer to a SPECT Recovery Coefficient Curve obtained in a calibration workflow?
  1-DataActivityPerVOIAtTimePointContainer-DataActivityPerVOIAtTimePointContainer
+ 1-NonDICOMContainer-VoxelActivityMapProduced
 }
 
 EnergyDepositionRateCalculationIn3DDosimetry
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1-VOIidentifierContainer-VOIIdentifierUsed
+ 1-VOIIdentifierContainer-VOIIdentifierUsed
  1-string-TimePointIdentifierUsed
- 1-VOIidentifierContainer-VOIUsed
+ 1-VOIIdentifierContainer-VOIUsed
 // Corresponding Mass Per VOI AtTimePoint need to be retrieved
 // Corresponding VOIs At TimePoint need to be retrieved
  1-DICOMData-CTReconResampledOnNMReferenceUsed
@@ -154,7 +155,7 @@ EnergyDepositionRateCalculationIn3DDosimetry
 SumAndScalingAbsorbedDoseRateCalculation
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1-VOIidentifierContainer-VOIIdentifierUsed
+ 1-VOIIdentifierContainer-VOIIdentifierUsed
  1-string-TimePointIdentifierUsed
  0,1-VOIContainer-VOIUsed
  0,1-string-SegmentationUsed
@@ -174,16 +175,16 @@ DoseRateCurveFitVOITimeIntegration
 {
  1-ProcessExecutionContext-ProcessExecutionContext
 // Does this processing focus on one VOI only or on all VOIs ? I assume all
- 1-VOIidentifierContainer-VOIIdentifierUsed
+ 1-VOIIdentifierContainer-VOIIdentifierUsed
  1-TimePointIdentifierUsedContainer-TimePointIdentifierUsed
 // Corresponding Absorbed Dose Rate for all VOIs and all TimePoints need to be retrieved
  1-CurveFittingMethod-PKAssessmentMethodUsed
- 1-AbsorbedDoseInVOIcontainer-AbsorbedDoseInVOIProduced
+ 1-AbsorbedDoseInVOIContainer-AbsorbedDoseInVOIProduced
 }
 
-AbsorbedDoseInVOIcontainer
+AbsorbedDoseInVOIContainer
 {
- 1,n-AbsorbedDoseInVOI-AbsorbedDoseInVOI
+ 1,n-AbsorbedDoseInVOI-AbsorbedDoseInVOIProduced
 }
 
 TimePointIdentifierUsedContainer
@@ -194,7 +195,7 @@ TimePointIdentifierUsedContainer
 RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1-VOIidentifierContainer-VOIIdentifierUsed
+ 1-VOIIdentifierContainer-VOIIdentifierUsed
 // Corresponding Absorbed Dose In VOI need to be retrieved
  1-string-RadioBiologicalCalculationMethod
 // to be replaced by structured items
@@ -263,19 +264,19 @@ DataActivityPerVOIAtTimePointContainer
 }
 
 
-VOIidentifierContainer
+VOIIdentifierContainer
 {
  1-string-VOIIdentifierUsed
 }
 
 DICOMDataContainer
 {
- 1,n-DICOMData-DICOMVOIContainer
+ 1,n-DICOMData-DICOMContainer
 }
 
 NonDICOMDataContainer
 {
- 1,n-NonDICOMData-NonDICOMVOIContainer
+ 1,n-NonDICOMData-NonDICOMContainer
 }
 
 CTNumberCalibrationCurve
@@ -301,6 +302,7 @@ VOIContainer
 {
  1-string-VOIIdentifierUsed
 }
+
 
 SPECTRecoveryCoefficientCurve
 {
@@ -360,7 +362,7 @@ DICOMData
 
 NonDICOMData
 {
- 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map/segmentation
+ 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map/segmentation/volume
  1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format/STL format
  1-FileNameList-FileNameList
  0,1-string-FHIRIdentifier

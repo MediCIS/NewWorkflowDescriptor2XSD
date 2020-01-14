@@ -255,12 +255,12 @@ CountsPerROIAtTimePoint
 
 DICOMDataContainer
 {
- 1,n-DICOMData-DICOMVOIContainer
+ 1,n-DICOMData-DICOMContainer
 }
 
 NonDICOMDataContainer
 {
- 1,n-NonDICOMData-NonDICOMVOIContainer
+ 1,n-NonDICOMData-NonDICOMContainer
 }
 
 ROI
@@ -353,7 +353,7 @@ DICOMData
 
 NonDICOMData
 {
- 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map/segmentation
+ 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map/segmentation/volume
  1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format/STL format
  1-FileNameList-FileNameList
  0,1-string-FHIRIdentifier

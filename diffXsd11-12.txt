@@ -1,0 +1,54 @@
+2c2
+< <!--VersionSchemas : 012-->
+---
+> <!--VersionSchemas : 011-->
+62,63c62,63
+< 					<xs:element name="RegistrationVOISegmentationAndPropagationContainer" type="irdbb:RegistrationVOISegmentationAndPropagationContainer"/>
+< 					<xs:element name="VOIActivityDeterminationContainer" type="irdbb:VOIActivityDeterminationContainer"/>
+---
+> 					<xs:element name="RegistrationVOISegmentationAndPropagation" type="irdbb:RegistrationVOISegmentationAndPropagation"/>
+> 					<xs:element name="VOIActivityDetermination" type="irdbb:VOIActivityDetermination"/>
+70,85d69
+< 	<xs:element name="RegistrationVOISegmentationAndPropagation" >
+< 		<xs:complexType>
+< 			<xs:sequence>
+< 			<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
+< 			<xs:element name="TimePointIdentifierUsed" type="xs:string"/>
+< 			<xs:element name="CountsPerVOIAtTimePointProducedContainer" type="irdbb:CountsPerVOIAtTimePointProducedContainer"/>
+< 			<xs:element name="NMTomoReconUsed" type="irdbb:DICOMDataContainer"/>
+< 			<xs:element name="CTReconUsed" type="irdbb:DICOMDataContainer"/>
+< 			<xs:element name="ImageProcessingMethodMethodUsed" type="xs:string"/>
+< 			<xs:element name="Segmentation" type="irdbb:Segmentation"/>
+< 			<xs:element name="CTReconResampledOnCommonReferenceProduced" type="irdbb:DICOMDataContainer"/>
+< 			<xs:element name="NMTomoReconResampledOnCommonReferenceProduced" type="irdbb:DICOMDataContainer"/>
+< 			</xs:sequence>
+< 		</xs:complexType>
+< 	</xs:element>
+< 
+831,841d814
+< 	<xs:complexType name="VOIActivityDeterminationContainer">
+< 		<xs:sequence>
+< 			<xs:element name="VOIActivityDetermination" type="irdbb:VOIActivityDetermination" maxOccurs="unbounded" />
+< 		</xs:sequence>
+< 	</xs:complexType>
+< 
+< 	<xs:complexType name="RegistrationVOISegmentationAndPropagationContainer">
+< 		<xs:sequence>
+< 		</xs:sequence>
+< 	</xs:complexType>
+< 
+883a857,870
+> 	<xs:complexType name="RegistrationVOISegmentationAndPropagation">
+> 		<xs:sequence>
+> 			<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
+> 			<xs:element name="TimePointIdentifierUsed" type="xs:string"/>
+> 			<xs:element name="CountsPerVOIAtTimePointProducedContainer" type="irdbb:CountsPerVOIAtTimePointProducedContainer"/>
+> 			<xs:element name="NMTomoReconUsed" type="irdbb:DICOMDataContainer"/>
+> 			<xs:element name="CTReconUsed" type="irdbb:DICOMDataContainer"/>
+> 			<xs:element name="ImageProcessingMethodMethodUsed" type="xs:string"/>
+> 			<xs:element name="Segmentation" type="irdbb:Segmentation"/>
+> 			<xs:element name="CTReconResampledOnCommonReferenceProduced" type="irdbb:DICOMDataContainer"/>
+> 			<xs:element name="NMTomoReconResampledOnCommonReferenceProduced" type="irdbb:DICOMDataContainer"/>
+> 		</xs:sequence>
+> 	</xs:complexType>
+> 

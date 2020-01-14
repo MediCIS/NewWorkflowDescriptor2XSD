@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 011-->
+<!--VersionSchemas : 022-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -193,7 +193,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:element name="CTReconUsed" type="irdbb:DICOMData"/>
 			<xs:element name="RegistrationAndSegmentationMethodMethodUsed" type="xs:string"/>
 			<xs:element name="CountsPerVOIAtTimePointProduced" type="irdbb:CountsPerVOIAtTimePointContainer"/>
-			<xs:element name="VOIInSPECTProduced" type="irdbb:VOIcontainer"/>
+			<xs:element name="VOIInSPECTProduced" type="irdbb:VOIContainer"/>
 			<xs:element name="CTReconResampledOnSPECTProduced" type="irdbb:DICOMData"/>
 		</xs:sequence>
 	</xs:complexType>
@@ -207,11 +207,12 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="VOIActivityDetermination">
 		<xs:sequence>
 			<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
-			<xs:element name="VOIContainer" type="irdbb:VOIContainer"/>
+			<xs:element name="SegmentationIdentifierUsed" type="xs:string"/>
 			<xs:element name="TimePointIdentifierUsed" type="xs:string"/>
 			<xs:element name="SPECTCalibrationFactorReferenceUsed" type="irdbb:NMRelevantCalibrationReference"/>
 			<xs:element name="SPECTRecoveryCoefficientCurveReferenceUsed" type="irdbb:NMRelevantCalibrationReference"/>
 			<xs:element name="DataActivityPerVOIAtTimePointContainer" type="irdbb:DataActivityPerVOIAtTimePointContainer"/>
+			<xs:element name="VoxelActivityMapProduced" type="irdbb:NonDICOMContainer"/>
 		</xs:sequence>
 	</xs:complexType>
 
@@ -254,7 +255,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:complexType name="VOIidentifierContainer">
+	<xs:complexType name="VOIIdentifierContainer">
 		<xs:sequence>
 			<xs:element name="VOIIdentifierUsed" type="xs:string"/>
 		</xs:sequence>
@@ -268,11 +269,11 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:element name="PreAdministeredActivityUsed" type="irdbb:AdministeredActivity"/>
 			<xs:element name="PostAdministeredActivityUsed" type="irdbb:AdministeredActivity"/>
 			<xs:element name="PatientOrganMassUsed" type="irdbb:PatientOrganMassInHybridDosimetryContainer" minOccurs="0" />
-			<xs:element name="MeanAbsorbedDoseRateInVOIProduced" type="irdbb:MeanAbsorbedDoseRateInVOIcontainer"/>
+			<xs:element name="MeanAbsorbedDoseRateInVOIProduced" type="irdbb:MeanAbsorbedDoseRateInVOIContainer"/>
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:complexType name="MeanAbsorbedDoseRateInVOIcontainer">
+	<xs:complexType name="MeanAbsorbedDoseRateInVOIContainer">
 		<xs:sequence>
 			<xs:element name="MeanAbsorbedDoseRateInVOI" type="irdbb:MeanAbsorbedDoseRateInVOI" maxOccurs="unbounded" />
 		</xs:sequence>
@@ -290,11 +291,11 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:element name="VOIIdentifierUsed" type="irdbb:VOIIdentifierContainer"/>
 			<xs:element name="TimePointIdentifierUsed" type="irdbb:TimePointIdentifierContainer"/>
 			<xs:element name="PKAssessmentMethodUsed" type="irdbb:CurveFittingMethod"/>
-			<xs:element name="MeanAbsorbedDoseInVOIProduced" type="irdbb:MeanAbsorbedDoseInVOIcontainer"/>
+			<xs:element name="MeanAbsorbedDoseInVOIProduced" type="irdbb:MeanAbsorbedDoseInVOIContainer"/>
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:complexType name="MeanAbsorbedDoseInVOIcontainer">
+	<xs:complexType name="MeanAbsorbedDoseInVOIContainer">
 		<xs:sequence>
 			<xs:element name="MeanAbsorbedDoseInVOI" type="irdbb:MeanAbsorbedDoseInVOI" maxOccurs="unbounded" />
 		</xs:sequence>
@@ -341,14 +342,14 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:element name="ROIIdentifierUsed" type="irdbb:ROIIdentifierContainer"/>
 			<xs:element name="OrganSValueUsed" type="xs:string"/>
 			<xs:element name="PatientOrganMassUsed" type="irdbb:PatientOrganMassInHybridDosimetry" minOccurs="0" maxOccurs="unbounded" />
-			<xs:element name="MeanAbsorbedDoseInVOIProduced" type="irdbb:MeanAbsorbedDoseInVOIcontainer"/>
+			<xs:element name="MeanAbsorbedDoseInVOIProduced" type="irdbb:MeanAbsorbedDoseInVOIContainer"/>
 		</xs:sequence>
 	</xs:complexType>
 
 	<xs:complexType name="RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry">
 		<xs:sequence>
 			<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
-			<xs:element name="VOIIdentifierUsed" type="irdbb:VOIidentifierContainer"/>
+			<xs:element name="VOIIdentifierUsed" type="irdbb:VOIIdentifierContainer"/>
 			<xs:element name="RadioBiologicalCalculationMethod" type="xs:string"/>
 			<xs:element name="RadioBiologicalCalculationParameters" type="xs:string"/>
 			<xs:element name="BiologicalEffectiveDose" type="xs:string"/>
@@ -511,7 +512,13 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="DICOMDataContainer">
 		<xs:sequence>
-			<xs:element name="DICOMVOIContainer" type="irdbb:DICOMData" maxOccurs="unbounded" />
+			<xs:element name="DICOMContainer" type="irdbb:DICOMData" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="NonDICOMDataContainer">
+		<xs:sequence>
+			<xs:element name="NonDICOMContainer" type="irdbb:NonDICOMData" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 
@@ -524,12 +531,6 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="VOIContainer">
 		<xs:sequence>
 			<xs:element name="VOIIdentifierUsed" type="xs:string"/>
-		</xs:sequence>
-	</xs:complexType>
-
-	<xs:complexType name="NonDICOMDataContainer">
-		<xs:sequence>
-			<xs:element name="NonDICOMVOIContainer" type="irdbb:NonDICOMData" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 
@@ -723,6 +724,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:enumeration value="VOI superimposed on images"/>
 			<xs:enumeration value="3D absorbed dose map"/>
 			<xs:enumeration value="segmentation"/>
+			<xs:enumeration value="volume"/>
 		</xs:restriction>
 	</xs:simpleType>
 

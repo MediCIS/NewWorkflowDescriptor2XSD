@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.10 à 04:03:36 PM CET 
+// Généré le : 2020.01.14 à 12:22:41 PM CET 
 //
 
 
@@ -27,7 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
  *         &lt;element name="DICOMImageUsed" type="{https://www.irdbb-medirad.com}DICOMData"/>
  *         &lt;element name="SegmentationMethodUsed" type="{https://www.irdbb-medirad.com}SegmentationMethodType" minOccurs="0"/>
- *         &lt;element name="VOIDescriptorProduced" type="{https://www.irdbb-medirad.com}VOIcontainer"/>
+ *         &lt;element name="VOIDescriptorProduced" type="{https://www.irdbb-medirad.com}VOIList"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -52,7 +52,7 @@ public class CTSegmentation {
     @XmlElement(name = "SegmentationMethodUsed")
     protected SegmentationMethodType segmentationMethodUsed;
     @XmlElement(name = "VOIDescriptorProduced", required = true)
-    protected VOIcontainer voiDescriptorProduced;
+    protected VOIList voiDescriptorProduced;
 
     /**
      * Obtient la valeur de la propriété processExecutionContext.
@@ -131,10 +131,10 @@ public class CTSegmentation {
      * 
      * @return
      *     possible object is
-     *     {@link VOIcontainer }
+     *     {@link VOIList }
      *     
      */
-    public VOIcontainer getVOIDescriptorProduced() {
+    public VOIList getVOIDescriptorProduced() {
         return voiDescriptorProduced;
     }
 
@@ -143,10 +143,10 @@ public class CTSegmentation {
      * 
      * @param value
      *     allowed object is
-     *     {@link VOIcontainer }
+     *     {@link VOIList }
      *     
      */
-    public void setVOIDescriptorProduced(VOIcontainer value) {
+    public void setVOIDescriptorProduced(VOIList value) {
         this.voiDescriptorProduced = value;
     }
 

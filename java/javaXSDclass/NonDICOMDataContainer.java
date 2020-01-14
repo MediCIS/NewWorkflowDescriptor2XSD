@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.10 à 04:03:36 PM CET 
+// Généré le : 2020.01.14 à 12:22:41 PM CET 
 //
 
 
@@ -26,7 +26,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="NonDICOMVOIContainer" type="{https://www.irdbb-medirad.com}NonDICOMData" maxOccurs="unbounded"/>
+ *         &lt;element name="NonDICOMContainer" type="{https://www.irdbb-medirad.com}NonDICOMData" maxOccurs="unbounded"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -37,26 +37,26 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "NonDICOMDataContainer", propOrder = {
-    "nonDICOMVOIContainer"
+    "nonDICOMContainer"
 })
 public class NonDICOMDataContainer {
 
-    @XmlElement(name = "NonDICOMVOIContainer", required = true)
-    protected List<NonDICOMData> nonDICOMVOIContainer;
+    @XmlElement(name = "NonDICOMContainer", required = true)
+    protected List<NonDICOMData> nonDICOMContainer;
 
     /**
-     * Gets the value of the nonDICOMVOIContainer property.
+     * Gets the value of the nonDICOMContainer property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the nonDICOMVOIContainer property.
+     * This is why there is not a <CODE>set</CODE> method for the nonDICOMContainer property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getNonDICOMVOIContainer().add(newItem);
+     *    getNonDICOMContainer().add(newItem);
      * </pre>
      * 
      * 
@@ -66,11 +66,11 @@ public class NonDICOMDataContainer {
      * 
      * 
      */
-    public List<NonDICOMData> getNonDICOMVOIContainer() {
-        if (nonDICOMVOIContainer == null) {
-            nonDICOMVOIContainer = new ArrayList<NonDICOMData>();
+    public List<NonDICOMData> getNonDICOMContainer() {
+        if (nonDICOMContainer == null) {
+            nonDICOMContainer = new ArrayList<NonDICOMData>();
         }
-        return this.nonDICOMVOIContainer;
+        return this.nonDICOMContainer;
     }
 
 }

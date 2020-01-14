@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.10 à 04:03:36 PM CET 
+// Généré le : 2020.01.14 à 12:22:41 PM CET 
 //
 
 
@@ -30,7 +30,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="ROIIdentifierUsed" type="{https://www.irdbb-medirad.com}ROIIdentifierContainer"/>
  *         &lt;element name="OrganSValueUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="PatientOrganMassUsed" type="{https://www.irdbb-medirad.com}PatientOrganMassInHybridDosimetry" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="MeanAbsorbedDoseInVOIProduced" type="{https://www.irdbb-medirad.com}MeanAbsorbedDoseInVOIcontainer"/>
+ *         &lt;element name="MeanAbsorbedDoseInVOIProduced" type="{https://www.irdbb-medirad.com}MeanAbsorbedDoseInVOIContainer"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -58,7 +58,7 @@ public class AbsorbedDoseCalculationInROIInHybridDosimetry {
     @XmlElement(name = "PatientOrganMassUsed")
     protected List<PatientOrganMassInHybridDosimetry> patientOrganMassUsed;
     @XmlElement(name = "MeanAbsorbedDoseInVOIProduced", required = true)
-    protected MeanAbsorbedDoseInVOIcontainer meanAbsorbedDoseInVOIProduced;
+    protected MeanAbsorbedDoseInVOIContainer meanAbsorbedDoseInVOIProduced;
 
     /**
      * Obtient la valeur de la propriété processExecutionContext.
@@ -166,10 +166,10 @@ public class AbsorbedDoseCalculationInROIInHybridDosimetry {
      * 
      * @return
      *     possible object is
-     *     {@link MeanAbsorbedDoseInVOIcontainer }
+     *     {@link MeanAbsorbedDoseInVOIContainer }
      *     
      */
-    public MeanAbsorbedDoseInVOIcontainer getMeanAbsorbedDoseInVOIProduced() {
+    public MeanAbsorbedDoseInVOIContainer getMeanAbsorbedDoseInVOIProduced() {
         return meanAbsorbedDoseInVOIProduced;
     }
 
@@ -178,10 +178,10 @@ public class AbsorbedDoseCalculationInROIInHybridDosimetry {
      * 
      * @param value
      *     allowed object is
-     *     {@link MeanAbsorbedDoseInVOIcontainer }
+     *     {@link MeanAbsorbedDoseInVOIContainer }
      *     
      */
-    public void setMeanAbsorbedDoseInVOIProduced(MeanAbsorbedDoseInVOIcontainer value) {
+    public void setMeanAbsorbedDoseInVOIProduced(MeanAbsorbedDoseInVOIContainer value) {
         this.meanAbsorbedDoseInVOIProduced = value;
     }
 

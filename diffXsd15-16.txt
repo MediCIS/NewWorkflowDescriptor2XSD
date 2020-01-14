@@ -1,0 +1,63 @@
+2c2
+< <!--VersionSchemas : 016-->
+---
+> <!--VersionSchemas : 015-->
+212c212
+< 			<xs:element name="VOIIdentifierUsed" type="xs:string"/>
+---
+> 			<xs:element name="VOIIdentifierUsed" type="xs:string" maxOccurs="unbounded" />
+1471c1471
+< 			<xs:element name="VOIInSPECTProduced" type="irdbb:VOIContainer"/>
+---
+> 			<xs:element name="VOIInSPECTProduced" type="irdbb:VOIcontainer"/>
+1514a1515,1520
+> 	<xs:complexType name="VOIidentifierContainer">
+> 		<xs:sequence>
+> 			<xs:element name="VOIIdentifierUsed" type="xs:string"/>
+> 		</xs:sequence>
+> 	</xs:complexType>
+> 
+1523c1529
+< 			<xs:element name="MeanAbsorbedDoseRateInVOIProduced" type="irdbb:MeanAbsorbedDoseRateInVOIContainer"/>
+---
+> 			<xs:element name="MeanAbsorbedDoseRateInVOIProduced" type="irdbb:MeanAbsorbedDoseRateInVOIcontainer"/>
+1527c1533
+< 	<xs:complexType name="MeanAbsorbedDoseRateInVOIContainer">
+---
+> 	<xs:complexType name="MeanAbsorbedDoseRateInVOIcontainer">
+1545c1551
+< 			<xs:element name="MeanAbsorbedDoseInVOIProduced" type="irdbb:MeanAbsorbedDoseInVOIContainer"/>
+---
+> 			<xs:element name="MeanAbsorbedDoseInVOIProduced" type="irdbb:MeanAbsorbedDoseInVOIcontainer"/>
+1549c1555
+< 	<xs:complexType name="MeanAbsorbedDoseInVOIContainer">
+---
+> 	<xs:complexType name="MeanAbsorbedDoseInVOIcontainer">
+1571c1577
+< 			<xs:element name="MeanAbsorbedDoseInVOIProduced" type="irdbb:MeanAbsorbedDoseInVOIContainer"/>
+---
+> 			<xs:element name="MeanAbsorbedDoseInVOIProduced" type="irdbb:MeanAbsorbedDoseInVOIcontainer"/>
+1578c1584
+< 			<xs:element name="VOIIdentifierUsed" type="irdbb:VOIIdentifierContainer"/>
+---
+> 			<xs:element name="VOIIdentifierUsed" type="irdbb:VOIidentifierContainer"/>
+1656c1662
+< 			<xs:element name="VOIProduced" type="irdbb:VOIIdentifierContainer" minOccurs="0" />
+---
+> 			<xs:element name="VOIProduced" type="irdbb:VOIidentifierContainer" minOccurs="0" />
+1682c1688
+< 			<xs:element name="VOIIdentifierUsed" type="irdbb:VOIIdentifierContainer"/>
+---
+> 			<xs:element name="VOIIdentifierUsed" type="irdbb:VOIidentifierContainer"/>
+1684c1690
+< 			<xs:element name="VOIUsed" type="irdbb:VOIIdentifierContainer"/>
+---
+> 			<xs:element name="VOIUsed" type="irdbb:VOIidentifierContainer"/>
+1696c1702
+< 			<xs:element name="VOIIdentifierUsed" type="irdbb:VOIIdentifierContainer"/>
+---
+> 			<xs:element name="VOIIdentifierUsed" type="irdbb:VOIidentifierContainer"/>
+1714c1720
+< 			<xs:element name="VOIIdentifierUsed" type="irdbb:VOIIdentifierContainer"/>
+---
+> 			<xs:element name="VOIIdentifierUsed" type="irdbb:VOIidentifierContainer"/>

@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.10 à 04:03:36 PM CET 
+// Généré le : 2020.01.14 à 12:22:41 PM CET 
 //
 
 
@@ -31,8 +31,10 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="CTReconUsed" type="{https://www.irdbb-medirad.com}DICOMDataContainer"/>
  *         &lt;element name="ImageProcessingMethodMethodUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="Segmentation" type="{https://www.irdbb-medirad.com}Segmentation"/>
- *         &lt;element name="CTReconResampledOnCommonReferenceProduced" type="{https://www.irdbb-medirad.com}DICOMDataContainer"/>
- *         &lt;element name="NMTomoReconResampledOnCommonReferenceProduced" type="{https://www.irdbb-medirad.com}DICOMDataContainer"/>
+ *         &lt;element name="CTReconResampledOnCommonReferenceProduced" type="{https://www.irdbb-medirad.com}DICOMDataContainer" minOccurs="0"/>
+ *         &lt;element name="NMTomoReconResampledOnCommonReferenceProduced" type="{https://www.irdbb-medirad.com}DICOMDataContainer" minOccurs="0"/>
+ *         &lt;element name="NonDICOMCTReconResampledOnCommonReferenceProduced" type="{https://www.irdbb-medirad.com}NonDICOMDataContainer" minOccurs="0"/>
+ *         &lt;element name="NonDICOMNMTomoReconResampledOnCommonReferenceProduced" type="{https://www.irdbb-medirad.com}NonDICOMDataContainer" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -51,7 +53,9 @@ import javax.xml.bind.annotation.XmlType;
     "imageProcessingMethodMethodUsed",
     "segmentation",
     "ctReconResampledOnCommonReferenceProduced",
-    "nmTomoReconResampledOnCommonReferenceProduced"
+    "nmTomoReconResampledOnCommonReferenceProduced",
+    "nonDICOMCTReconResampledOnCommonReferenceProduced",
+    "nonDICOMNMTomoReconResampledOnCommonReferenceProduced"
 })
 public class RegistrationVOISegmentationAndPropagation {
 
@@ -69,10 +73,14 @@ public class RegistrationVOISegmentationAndPropagation {
     protected String imageProcessingMethodMethodUsed;
     @XmlElement(name = "Segmentation", required = true)
     protected Segmentation segmentation;
-    @XmlElement(name = "CTReconResampledOnCommonReferenceProduced", required = true)
+    @XmlElement(name = "CTReconResampledOnCommonReferenceProduced")
     protected DICOMDataContainer ctReconResampledOnCommonReferenceProduced;
-    @XmlElement(name = "NMTomoReconResampledOnCommonReferenceProduced", required = true)
+    @XmlElement(name = "NMTomoReconResampledOnCommonReferenceProduced")
     protected DICOMDataContainer nmTomoReconResampledOnCommonReferenceProduced;
+    @XmlElement(name = "NonDICOMCTReconResampledOnCommonReferenceProduced")
+    protected NonDICOMDataContainer nonDICOMCTReconResampledOnCommonReferenceProduced;
+    @XmlElement(name = "NonDICOMNMTomoReconResampledOnCommonReferenceProduced")
+    protected NonDICOMDataContainer nonDICOMNMTomoReconResampledOnCommonReferenceProduced;
 
     /**
      * Obtient la valeur de la propriété processExecutionContext.
@@ -288,6 +296,54 @@ public class RegistrationVOISegmentationAndPropagation {
      */
     public void setNMTomoReconResampledOnCommonReferenceProduced(DICOMDataContainer value) {
         this.nmTomoReconResampledOnCommonReferenceProduced = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété nonDICOMCTReconResampledOnCommonReferenceProduced.
+     * 
+     * @return
+     *     possible object is
+     *     {@link NonDICOMDataContainer }
+     *     
+     */
+    public NonDICOMDataContainer getNonDICOMCTReconResampledOnCommonReferenceProduced() {
+        return nonDICOMCTReconResampledOnCommonReferenceProduced;
+    }
+
+    /**
+     * Définit la valeur de la propriété nonDICOMCTReconResampledOnCommonReferenceProduced.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link NonDICOMDataContainer }
+     *     
+     */
+    public void setNonDICOMCTReconResampledOnCommonReferenceProduced(NonDICOMDataContainer value) {
+        this.nonDICOMCTReconResampledOnCommonReferenceProduced = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété nonDICOMNMTomoReconResampledOnCommonReferenceProduced.
+     * 
+     * @return
+     *     possible object is
+     *     {@link NonDICOMDataContainer }
+     *     
+     */
+    public NonDICOMDataContainer getNonDICOMNMTomoReconResampledOnCommonReferenceProduced() {
+        return nonDICOMNMTomoReconResampledOnCommonReferenceProduced;
+    }
+
+    /**
+     * Définit la valeur de la propriété nonDICOMNMTomoReconResampledOnCommonReferenceProduced.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link NonDICOMDataContainer }
+     *     
+     */
+    public void setNonDICOMNMTomoReconResampledOnCommonReferenceProduced(NonDICOMDataContainer value) {
+        this.nonDICOMNMTomoReconResampledOnCommonReferenceProduced = value;
     }
 
 }

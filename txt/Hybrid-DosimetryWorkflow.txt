@@ -157,7 +157,7 @@ RegistrationVOISegmentation
  1-string-RegistrationAndSegmentationMethodMethodUsed
 // to be replaced by structured items
  1-CountsPerVOIAtTimePointContainer-CountsPerVOIAtTimePointProduced
- 1-VOIcontainer-VOIInSPECTProduced
+ 1-VOIContainer-VOIInSPECTProduced
 // Is it in DICOM or nonDICOM ?
  1-DICOMData-CTReconResampledOnSPECTProduced
 }
@@ -171,7 +171,7 @@ VOIActivityDetermination
 {
  1-ProcessExecutionContext-ProcessExecutionContext
 // to clarify if the same Calibration Factor is used for all timepoints ?
- 1-VOIContainer-VOIContainer
+ 1-string-SegmentationIdentifierUsed
  1-string-TimePointIdentifierUsed
 // Corresponding Counts per VOI at TimePoint need to be retrieved
  1-NMRelevantCalibrationReference-SPECTCalibrationFactorReferenceUsed
@@ -179,6 +179,7 @@ VOIActivityDetermination
  1-NMRelevantCalibrationReference-SPECTRecoveryCoefficientCurveReferenceUsed
 // how to refer to a SPECT Recovery Coefficient Curve obtained in a calibration workflow?
  1-DataActivityPerVOIAtTimePointContainer-DataActivityPerVOIAtTimePointContainer
+ 1-NonDICOMContainer-VoxelActivityMapProduced
 }
 
 EnergyDepositionRateCalculationInHybridDosimetry
@@ -219,7 +220,7 @@ TimePointIdentifierContainer
  1,n-string-TimePointIdentifier
 }
 
-VOIidentifierContainer
+VOIIdentifierContainer
 {
  1-string-VOIIdentifierUsed
 }
@@ -234,10 +235,10 @@ AbsorbedDoseRateCalculationInHybridDosimetry
  1-AdministeredActivity-PreAdministeredActivityUsed
  1-AdministeredActivity-PostAdministeredActivityUsed
  0,1-PatientOrganMassInHybridDosimetryContainer-PatientOrganMassUsed
- 1-MeanAbsorbedDoseRateInVOIcontainer-MeanAbsorbedDoseRateInVOIProduced
+ 1-MeanAbsorbedDoseRateInVOIContainer-MeanAbsorbedDoseRateInVOIProduced
 }
 
-MeanAbsorbedDoseRateInVOIcontainer
+MeanAbsorbedDoseRateInVOIContainer
 {
  1,n-MeanAbsorbedDoseRateInVOI-MeanAbsorbedDoseRateInVOI
 }
@@ -254,10 +255,10 @@ TimeAbsorbedDoseRateCurveFit
  1-TimePointIdentifierContainer-TimePointIdentifierUsed
 // Corresponding Mean Absorbed Dose Rate per VOI need to be retrieved
  1-CurveFittingMethod-PKAssessmentMethodUsed
- 1-MeanAbsorbedDoseInVOIcontainer-MeanAbsorbedDoseInVOIProduced
+ 1-MeanAbsorbedDoseInVOIContainer-MeanAbsorbedDoseInVOIProduced
 }
 
-MeanAbsorbedDoseInVOIcontainer
+MeanAbsorbedDoseInVOIContainer
 {
  1,n-MeanAbsorbedDoseInVOI-MeanAbsorbedDoseInVOI
 }
@@ -304,10 +305,10 @@ AbsorbedDoseCalculationInROIInHybridDosimetry
 // Corresponding Time Integrated Activity per ROI need to be retrieved
  1-string-OrganSValueUsed
  0,n-PatientOrganMassInHybridDosimetry-PatientOrganMassUsed
- 1-MeanAbsorbedDoseInVOIcontainer-MeanAbsorbedDoseInVOIProduced
+ 1-MeanAbsorbedDoseInVOIContainer-MeanAbsorbedDoseInVOIProduced
 }
 
-MeanAbsorbedDoseInVOIcontainer
+MeanAbsorbedDoseInVOIContainer
 {
  1,n-MeanAbsorbedDoseInVOI-MeanAbsorbedDoseInVOI
 }
@@ -315,7 +316,7 @@ MeanAbsorbedDoseInVOIcontainer
 RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1-VOIidentifierContainer-VOIIdentifierUsed
+ 1-VOIIdentifierContainer-VOIIdentifierUsed
 // Corresponding Absorbed Dose In VOI need to be retrieved
  1-string-RadioBiologicalCalculationMethod
 // to be replaced by structured items
@@ -389,7 +390,12 @@ VOI
 
 DICOMDataContainer
 {
- 1,n-DICOMData-DICOMVOIContainer
+ 1,n-DICOMData-DICOMContainer
+}
+
+NonDICOMDataContainer
+{
+ 1,n-NonDICOMData-NonDICOMContainer
 }
 
 DataActivityPerVOIAtTimePointContainer
@@ -400,11 +406,6 @@ DataActivityPerVOIAtTimePointContainer
 VOIContainer
 {
  1-string-VOIIdentifierUsed
-}
-
-NonDICOMDataContainer
-{
- 1,n-NonDICOMData-NonDICOMVOIContainer
 }
 
 ROI
@@ -519,7 +520,7 @@ DICOMData
 
 NonDICOMData
 {
- 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map/segmentation
+ 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map/segmentation/volume
  1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format/STL format
  1-FileNameList-FileNameList
  0,1-string-FHIRIdentifier
@@ -528,9 +529,4 @@ NonDICOMData
 FileNameList
 {
  1,n-string-NonDICOMDataFileName
-}
-
-VOIidentifierContainer
-{
- 1-string-VOIIdentifierUsed
 }

@@ -3,11 +3,21 @@
 ThreeDimDosimetrySlide1workflow
 {
  1-SPECTDataAcquisitionAndReconstruction-SPECTDataAcquisitionAndReconstruction
- 1-RegistrationVOISegmentationAndPropagation-RegistrationVOISegmentationAndPropagation
- 1-VOIActivityDetermination-VOIActivityDetermination
+ 1-RegistrationVOISegmentationAndPropagationContainer-RegistrationVOISegmentationAndPropagationContainer
+ 1-VOIActivityDeterminationContainer-VOIActivityDeterminationContainer
  1-TimeActivityCurveFitIn3DDosimetry-TimeActivityCurveFitIn3DDosimetry
  1-AbsorbedDoseCalculationInVOI-AbsorbedDoseCalculationInVOI
  1-RadioBiologicalCalculationIn3DSlide1Dosimetry-RadioBiologicalCalculationIn3DSlide1Dosimetry
+}
+
+VOIActivityDeterminationContainer
+{
+ 1,n-VOIActivityDetermination-VOIActivityDetermination
+}
+
+RegistrationVOISegmentationAndPropagationContainer
+{
+ 1,n-RegistrationVOISegmentationAndPropagation-RegistrationVOISegmentationAndPropagation
 }
 
 SPECTDataAcquisitionAndReconstruction
@@ -57,14 +67,16 @@ RegistrationVOISegmentationAndPropagation
 {
  1-ProcessExecutionContext-ProcessExecutionContext
  1-string-TimePointIdentifierUsed
- 1-CountsPerVOIAtTimePointProducedContainer-CountsPerVOIAtTimePointProducedContainer
+ 0,1-CountsPerVOIAtTimePointProducedContainer-CountsPerVOIAtTimePointProducedContainer
  1-DICOMDataContainer-NMTomoReconUsed
  1-DICOMDataContainer-CTReconUsed
  1-string-ImageProcessingMethodMethodUsed
 // to be replaced by structured items
  1-Segmentation-Segmentation
- 1-DICOMDataContainer-CTReconResampledOnCommonReferenceProduced
- 1-DICOMDataContainer-NMTomoReconResampledOnCommonReferenceProduced
+ 0,1-DICOMDataContainer-CTReconResampledOnCommonReferenceProduced
+ 0,1-DICOMDataContainer-NMTomoReconResampledOnCommonReferenceProduced
+ 0,1-NonDICOMDataContainer-NonDICOMCTReconResampledOnCommonReferenceProduced
+ 0,1-NonDICOMDataContainer-NonDICOMNMTomoReconResampledOnCommonReferenceProduced
 }
 
 Segmentation
@@ -89,7 +101,7 @@ VOIActivityDetermination
 {
  1-ProcessExecutionContext-ProcessExecutionContext
 // to clarify if the same Calibration Factor is used for all timepoints ?
- 1-VOIContainer-VOIContainer
+ 1-string-SegmentationIdentifierUsed
  1-string-TimePointIdentifierUsed
 // Corresponding Counts per VOI at TimePoint need to be retrieved
  1-NMRelevantCalibrationReference-SPECTCalibrationFactorReferenceUsed
@@ -97,6 +109,7 @@ VOIActivityDetermination
  1-NMRelevantCalibrationReference-SPECTRecoveryCoefficientCurveReferenceUsed
 // how to refer to a SPECT Recovery Coefficient Curve obtained in a calibration workflow?
  1-DataActivityPerVOIAtTimePointContainer-DataActivityPerVOIAtTimePointContainer
+ 1-NonDICOMContainer-VoxelActivityMapProduced
 }
 
 DataActivityPerVOIAtTimePointContainer
@@ -126,7 +139,7 @@ TimeActivityCurveFitIn3DDosimetry
 AbsorbedDoseCalculationInVOI
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1-string-VOIIdentifierUsed
+ 1-string-SegmentationIdentifierUsed
 // Corresponding Time Integrated Activity Coefficient per VOI need to be retrieved
 // Corresponding Time Integrated Activity per VOI need to be retrieved
  1-DICOMDataContainer-CTReconResampledOnCommonReferenceUsed
@@ -135,8 +148,11 @@ AbsorbedDoseCalculationInVOI
 // to be provided as a closed list of possible values
 
  0,1-NonDICOMDataContainer-VoxelAbsorbedDoseMapProduced
-//is it actually optional  ? is it non DICOM ?
+ 0,1-NonDICOMDataContainer-DensityImageUsed
+ 0,1-NonDICOMDataContainer-ActivityMapImageUsed
+ 0,1-AbsorbedDoseInVOIContainer-AbsorbedDoseInVOIContainer
 }
+
 AbsorbedDoseInVOIContainer
 {
  1,n-AbsorbedDoseInVOI-AbsorbedDoseInVOIProduced
@@ -218,12 +234,12 @@ VOI
 
 DICOMDataContainer
 {
- 1,n-DICOMData-DICOMVOIContainer
+ 1,n-DICOMData-DICOMContainer
 }
 
 NonDICOMDataContainer
 {
- 1,n-NonDICOMData-NonDICOMVOIContainer
+ 1,n-NonDICOMData-NonDICOMContainer
 }
 
 CTNumberCalibrationCurve
@@ -306,7 +322,7 @@ DICOMData
 
 NonDICOMData
 {
- 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map/segmentation
+ 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map/segmentation/volume
  1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format/STL format
  1-FileNameList-FileNameList
  0,1-string-FHIRIdentifier
