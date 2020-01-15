@@ -1,0 +1,10 @@
+2c2
+< <!--VersionSchemas : 023-->
+---
+> <!--VersionSchemas : 022-->
+936,937c936,937
+< 			<xs:element name="VOIIdentifierUsed" type="xs:string" minOccurs="0" />
+< 			<xs:element name="TimePointIdentifierUsed" type="xs:string" minOccurs="0" />
+---
+> 			<xs:element name="VOIIdentifierUsed" type="xs:string"/>
+> 			<xs:element name="TimePointIdentifierUsed" type="xs:string"/>

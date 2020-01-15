@@ -109,7 +109,7 @@ VOIActivityDetermination
  1-NMRelevantCalibrationReference-SPECTRecoveryCoefficientCurveReferenceUsed
 // how to refer to a SPECT Recovery Coefficient Curve obtained in a calibration workflow?
  1-DataActivityPerVOIAtTimePointContainer-DataActivityPerVOIAtTimePointContainer
- 1-NonDICOMContainer-VoxelActivityMapProduced
+ 1-NonDICOMDataContainer-VoxelActivityMapProduced
 }
 
 DataActivityPerVOIAtTimePointContainer
@@ -125,8 +125,8 @@ VOIContainer
 TimeActivityCurveFitIn3DDosimetry
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1-string-VOIIdentifierUsed
- 1-string-TimePointIdentifierUsed
+ 0,1-string-VOIIdentifierUsed
+ 0,1-string-TimePointIdentifierUsed
 // Corresponding Activities for this VOI at the different TimePoints need to be retrieved
  1-AdministeredActivity-PreAdministeredActivityUsed
  1-AdministeredActivity-PostAdministeredActivityUsed
@@ -239,7 +239,7 @@ DICOMDataContainer
 
 NonDICOMDataContainer
 {
- 1,n-NonDICOMData-NonDICOMContainer
+ 1,n-NonDICOMData-NonDICOMDataContainer
 }
 
 CTNumberCalibrationCurve

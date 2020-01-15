@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.14 à 12:22:41 PM CET 
+// Généré le : 2020.01.15 à 03:15:48 PM CET 
 //
 
 
@@ -25,11 +25,14 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
- *         &lt;element name="VOIIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="SegmentationIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="CTReconResampledOnCommonReferenceUsed" type="{https://www.irdbb-medirad.com}DICOMDataContainer"/>
  *         &lt;element name="NMTomoReconResampledOnCommonReferenceUsed" type="{https://www.irdbb-medirad.com}DICOMDataContainer"/>
  *         &lt;element name="AbsorbedDoseCalculationMethodUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="VoxelAbsorbedDoseMapProduced" type="{https://www.irdbb-medirad.com}NonDICOMDataContainer" minOccurs="0"/>
+ *         &lt;element name="DensityImageUsed" type="{https://www.irdbb-medirad.com}NonDICOMDataContainer" minOccurs="0"/>
+ *         &lt;element name="ActivityMapImageUsed" type="{https://www.irdbb-medirad.com}NonDICOMDataContainer" minOccurs="0"/>
+ *         &lt;element name="AbsorbedDoseInVOIContainer" type="{https://www.irdbb-medirad.com}AbsorbedDoseInVOIContainer" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -41,18 +44,21 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "AbsorbedDoseCalculationInVOI", propOrder = {
     "processExecutionContext",
-    "voiIdentifierUsed",
+    "segmentationIdentifierUsed",
     "ctReconResampledOnCommonReferenceUsed",
     "nmTomoReconResampledOnCommonReferenceUsed",
     "absorbedDoseCalculationMethodUsed",
-    "voxelAbsorbedDoseMapProduced"
+    "voxelAbsorbedDoseMapProduced",
+    "densityImageUsed",
+    "activityMapImageUsed",
+    "absorbedDoseInVOIContainer"
 })
 public class AbsorbedDoseCalculationInVOI {
 
     @XmlElement(name = "ProcessExecutionContext", required = true)
     protected ProcessExecutionContext processExecutionContext;
-    @XmlElement(name = "VOIIdentifierUsed", required = true)
-    protected String voiIdentifierUsed;
+    @XmlElement(name = "SegmentationIdentifierUsed", required = true)
+    protected String segmentationIdentifierUsed;
     @XmlElement(name = "CTReconResampledOnCommonReferenceUsed", required = true)
     protected DICOMDataContainer ctReconResampledOnCommonReferenceUsed;
     @XmlElement(name = "NMTomoReconResampledOnCommonReferenceUsed", required = true)
@@ -61,6 +67,12 @@ public class AbsorbedDoseCalculationInVOI {
     protected String absorbedDoseCalculationMethodUsed;
     @XmlElement(name = "VoxelAbsorbedDoseMapProduced")
     protected NonDICOMDataContainer voxelAbsorbedDoseMapProduced;
+    @XmlElement(name = "DensityImageUsed")
+    protected NonDICOMDataContainer densityImageUsed;
+    @XmlElement(name = "ActivityMapImageUsed")
+    protected NonDICOMDataContainer activityMapImageUsed;
+    @XmlElement(name = "AbsorbedDoseInVOIContainer")
+    protected AbsorbedDoseInVOIContainer absorbedDoseInVOIContainer;
 
     /**
      * Obtient la valeur de la propriété processExecutionContext.
@@ -87,27 +99,27 @@ public class AbsorbedDoseCalculationInVOI {
     }
 
     /**
-     * Obtient la valeur de la propriété voiIdentifierUsed.
+     * Obtient la valeur de la propriété segmentationIdentifierUsed.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getVOIIdentifierUsed() {
-        return voiIdentifierUsed;
+    public String getSegmentationIdentifierUsed() {
+        return segmentationIdentifierUsed;
     }
 
     /**
-     * Définit la valeur de la propriété voiIdentifierUsed.
+     * Définit la valeur de la propriété segmentationIdentifierUsed.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setVOIIdentifierUsed(String value) {
-        this.voiIdentifierUsed = value;
+    public void setSegmentationIdentifierUsed(String value) {
+        this.segmentationIdentifierUsed = value;
     }
 
     /**
@@ -204,6 +216,78 @@ public class AbsorbedDoseCalculationInVOI {
      */
     public void setVoxelAbsorbedDoseMapProduced(NonDICOMDataContainer value) {
         this.voxelAbsorbedDoseMapProduced = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété densityImageUsed.
+     * 
+     * @return
+     *     possible object is
+     *     {@link NonDICOMDataContainer }
+     *     
+     */
+    public NonDICOMDataContainer getDensityImageUsed() {
+        return densityImageUsed;
+    }
+
+    /**
+     * Définit la valeur de la propriété densityImageUsed.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link NonDICOMDataContainer }
+     *     
+     */
+    public void setDensityImageUsed(NonDICOMDataContainer value) {
+        this.densityImageUsed = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété activityMapImageUsed.
+     * 
+     * @return
+     *     possible object is
+     *     {@link NonDICOMDataContainer }
+     *     
+     */
+    public NonDICOMDataContainer getActivityMapImageUsed() {
+        return activityMapImageUsed;
+    }
+
+    /**
+     * Définit la valeur de la propriété activityMapImageUsed.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link NonDICOMDataContainer }
+     *     
+     */
+    public void setActivityMapImageUsed(NonDICOMDataContainer value) {
+        this.activityMapImageUsed = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété absorbedDoseInVOIContainer.
+     * 
+     * @return
+     *     possible object is
+     *     {@link AbsorbedDoseInVOIContainer }
+     *     
+     */
+    public AbsorbedDoseInVOIContainer getAbsorbedDoseInVOIContainer() {
+        return absorbedDoseInVOIContainer;
+    }
+
+    /**
+     * Définit la valeur de la propriété absorbedDoseInVOIContainer.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link AbsorbedDoseInVOIContainer }
+     *     
+     */
+    public void setAbsorbedDoseInVOIContainer(AbsorbedDoseInVOIContainer value) {
+        this.absorbedDoseInVOIContainer = value;
     }
 
 }

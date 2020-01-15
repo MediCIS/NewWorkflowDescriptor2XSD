@@ -150,7 +150,7 @@ DICOMDataContainer
 
 NonDICOMDataContainer
 {
- 1,n-NonDICOMData-NonDICOMContainer
+ 1,n-NonDICOMData-NonDICOMDataContainer
 }
 
 DICOMData

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 022-->
+<!--VersionSchemas : 024-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -281,7 +281,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="NonDICOMDataContainer">
 		<xs:sequence>
-			<xs:element name="NonDICOMContainer" type="irdbb:NonDICOMData" maxOccurs="unbounded" />
+			<xs:element name="NonDICOMDataContainer" type="irdbb:NonDICOMData" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 

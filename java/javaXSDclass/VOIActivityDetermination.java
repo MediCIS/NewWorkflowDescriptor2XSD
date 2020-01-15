@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.14 à 12:22:41 PM CET 
+// Généré le : 2020.01.15 à 03:15:48 PM CET 
 //
 
 
@@ -25,11 +25,12 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
- *         &lt;element name="VOIContainer" type="{https://www.irdbb-medirad.com}VOIContainer"/>
+ *         &lt;element name="SegmentationIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="SPECTCalibrationFactorReferenceUsed" type="{https://www.irdbb-medirad.com}NMRelevantCalibrationReference"/>
  *         &lt;element name="SPECTRecoveryCoefficientCurveReferenceUsed" type="{https://www.irdbb-medirad.com}NMRelevantCalibrationReference"/>
  *         &lt;element name="DataActivityPerVOIAtTimePointContainer" type="{https://www.irdbb-medirad.com}DataActivityPerVOIAtTimePointContainer"/>
+ *         &lt;element name="VoxelActivityMapProduced" type="{https://www.irdbb-medirad.com}NonDICOMDataContainer"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -41,18 +42,19 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "VOIActivityDetermination", propOrder = {
     "processExecutionContext",
-    "voiContainer",
+    "segmentationIdentifierUsed",
     "timePointIdentifierUsed",
     "spectCalibrationFactorReferenceUsed",
     "spectRecoveryCoefficientCurveReferenceUsed",
-    "dataActivityPerVOIAtTimePointContainer"
+    "dataActivityPerVOIAtTimePointContainer",
+    "voxelActivityMapProduced"
 })
 public class VOIActivityDetermination {
 
     @XmlElement(name = "ProcessExecutionContext", required = true)
     protected ProcessExecutionContext processExecutionContext;
-    @XmlElement(name = "VOIContainer", required = true)
-    protected VOIContainer voiContainer;
+    @XmlElement(name = "SegmentationIdentifierUsed", required = true)
+    protected String segmentationIdentifierUsed;
     @XmlElement(name = "TimePointIdentifierUsed", required = true)
     protected String timePointIdentifierUsed;
     @XmlElement(name = "SPECTCalibrationFactorReferenceUsed", required = true)
@@ -61,6 +63,8 @@ public class VOIActivityDetermination {
     protected NMRelevantCalibrationReference spectRecoveryCoefficientCurveReferenceUsed;
     @XmlElement(name = "DataActivityPerVOIAtTimePointContainer", required = true)
     protected DataActivityPerVOIAtTimePointContainer dataActivityPerVOIAtTimePointContainer;
+    @XmlElement(name = "VoxelActivityMapProduced", required = true)
+    protected NonDICOMDataContainer voxelActivityMapProduced;
 
     /**
      * Obtient la valeur de la propriété processExecutionContext.
@@ -87,27 +91,27 @@ public class VOIActivityDetermination {
     }
 
     /**
-     * Obtient la valeur de la propriété voiContainer.
+     * Obtient la valeur de la propriété segmentationIdentifierUsed.
      * 
      * @return
      *     possible object is
-     *     {@link VOIContainer }
+     *     {@link String }
      *     
      */
-    public VOIContainer getVOIContainer() {
-        return voiContainer;
+    public String getSegmentationIdentifierUsed() {
+        return segmentationIdentifierUsed;
     }
 
     /**
-     * Définit la valeur de la propriété voiContainer.
+     * Définit la valeur de la propriété segmentationIdentifierUsed.
      * 
      * @param value
      *     allowed object is
-     *     {@link VOIContainer }
+     *     {@link String }
      *     
      */
-    public void setVOIContainer(VOIContainer value) {
-        this.voiContainer = value;
+    public void setSegmentationIdentifierUsed(String value) {
+        this.segmentationIdentifierUsed = value;
     }
 
     /**
@@ -204,6 +208,30 @@ public class VOIActivityDetermination {
      */
     public void setDataActivityPerVOIAtTimePointContainer(DataActivityPerVOIAtTimePointContainer value) {
         this.dataActivityPerVOIAtTimePointContainer = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété voxelActivityMapProduced.
+     * 
+     * @return
+     *     possible object is
+     *     {@link NonDICOMDataContainer }
+     *     
+     */
+    public NonDICOMDataContainer getVoxelActivityMapProduced() {
+        return voxelActivityMapProduced;
+    }
+
+    /**
+     * Définit la valeur de la propriété voxelActivityMapProduced.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link NonDICOMDataContainer }
+     *     
+     */
+    public void setVoxelActivityMapProduced(NonDICOMDataContainer value) {
+        this.voxelActivityMapProduced = value;
     }
 
 }

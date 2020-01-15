@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.14 à 12:22:41 PM CET 
+// Généré le : 2020.01.15 à 03:15:48 PM CET 
 //
 
 
@@ -26,7 +26,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
  *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="CountsPerVOIAtTimePointProducedContainer" type="{https://www.irdbb-medirad.com}CountsPerVOIAtTimePointProducedContainer"/>
+ *         &lt;element name="CountsPerVOIAtTimePointProducedContainer" type="{https://www.irdbb-medirad.com}CountsPerVOIAtTimePointProducedContainer" minOccurs="0"/>
  *         &lt;element name="NMTomoReconUsed" type="{https://www.irdbb-medirad.com}DICOMDataContainer"/>
  *         &lt;element name="CTReconUsed" type="{https://www.irdbb-medirad.com}DICOMDataContainer"/>
  *         &lt;element name="ImageProcessingMethodMethodUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
@@ -63,7 +63,7 @@ public class RegistrationVOISegmentationAndPropagation {
     protected ProcessExecutionContext processExecutionContext;
     @XmlElement(name = "TimePointIdentifierUsed", required = true)
     protected String timePointIdentifierUsed;
-    @XmlElement(name = "CountsPerVOIAtTimePointProducedContainer", required = true)
+    @XmlElement(name = "CountsPerVOIAtTimePointProducedContainer")
     protected CountsPerVOIAtTimePointProducedContainer countsPerVOIAtTimePointProducedContainer;
     @XmlElement(name = "NMTomoReconUsed", required = true)
     protected DICOMDataContainer nmTomoReconUsed;
