@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.15 à 03:15:48 PM CET 
+// Généré le : 2020.01.16 à 12:21:52 PM CET 
 //
 
 
@@ -32,6 +32,11 @@ import javax.xml.namespace.QName;
 public class ObjectFactory {
 
     private final static QName _NonDicomFileSetDescriptor_QNAME = new QName("https://www.irdbb-medirad.com", "NonDicomFileSetDescriptor");
+    private final static QName _TimeIntegratedActivityPerVOITimeIntegratedActivityPerVOIValue_QNAME = new QName("https://www.irdbb-medirad.com", "TimeIntegratedActivityPerVOIValue");
+    private final static QName _TimeIntegratedActivityPerVOITimeIntegratedActivityCoefficientPerVOIUnit_QNAME = new QName("https://www.irdbb-medirad.com", "TimeIntegratedActivityCoefficientPerVOIUnit");
+    private final static QName _TimeIntegratedActivityPerVOIVOIIdentifier_QNAME = new QName("https://www.irdbb-medirad.com", "VOIIdentifier");
+    private final static QName _TimeIntegratedActivityPerVOITimeIntegratedActivityPerVOIUnit_QNAME = new QName("https://www.irdbb-medirad.com", "TimeIntegratedActivityPerVOIUnit");
+    private final static QName _TimeIntegratedActivityPerVOIPKAssessmentMethodUsed_QNAME = new QName("https://www.irdbb-medirad.com", "PKAssessmentMethodUsed");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: javaXSDclass
@@ -46,6 +51,22 @@ public class ObjectFactory {
      */
     public ElementOfSPECTRecoveryCoefficientCurve createElementOfSPECTRecoveryCoefficientCurve() {
         return new ElementOfSPECTRecoveryCoefficientCurve();
+    }
+
+    /**
+     * Create an instance of {@link TimeIntegratedActivityPerVOIContainer }
+     * 
+     */
+    public TimeIntegratedActivityPerVOIContainer createTimeIntegratedActivityPerVOIContainer() {
+        return new TimeIntegratedActivityPerVOIContainer();
+    }
+
+    /**
+     * Create an instance of {@link TimeIntegratedActivityPerVOI }
+     * 
+     */
+    public TimeIntegratedActivityPerVOI createTimeIntegratedActivityPerVOI() {
+        return new TimeIntegratedActivityPerVOI();
     }
 
     /**
@@ -929,14 +950,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link TimeIntegratedActivityPerVOI }
-     * 
-     */
-    public TimeIntegratedActivityPerVOI createTimeIntegratedActivityPerVOI() {
-        return new TimeIntegratedActivityPerVOI();
-    }
-
-    /**
      * Create an instance of {@link AbsorbedDoseCalculationInVOI }
      * 
      */
@@ -1375,6 +1388,51 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "NonDicomFileSetDescriptor")
     public JAXBElement<NonDicomFileSetDescriptor> createNonDicomFileSetDescriptor(NonDicomFileSetDescriptor value) {
         return new JAXBElement<NonDicomFileSetDescriptor>(_NonDicomFileSetDescriptor_QNAME, NonDicomFileSetDescriptor.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Float }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "TimeIntegratedActivityPerVOIValue", scope = TimeIntegratedActivityPerVOI.class)
+    public JAXBElement<Float> createTimeIntegratedActivityPerVOITimeIntegratedActivityPerVOIValue(Float value) {
+        return new JAXBElement<Float>(_TimeIntegratedActivityPerVOITimeIntegratedActivityPerVOIValue_QNAME, Float.class, TimeIntegratedActivityPerVOI.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link TimeIntegratedActivityCoefficientPerVOIUnit }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "TimeIntegratedActivityCoefficientPerVOIUnit", scope = TimeIntegratedActivityPerVOI.class)
+    public JAXBElement<TimeIntegratedActivityCoefficientPerVOIUnit> createTimeIntegratedActivityPerVOITimeIntegratedActivityCoefficientPerVOIUnit(TimeIntegratedActivityCoefficientPerVOIUnit value) {
+        return new JAXBElement<TimeIntegratedActivityCoefficientPerVOIUnit>(_TimeIntegratedActivityPerVOITimeIntegratedActivityCoefficientPerVOIUnit_QNAME, TimeIntegratedActivityCoefficientPerVOIUnit.class, TimeIntegratedActivityPerVOI.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "VOIIdentifier", scope = TimeIntegratedActivityPerVOI.class)
+    public JAXBElement<String> createTimeIntegratedActivityPerVOIVOIIdentifier(String value) {
+        return new JAXBElement<String>(_TimeIntegratedActivityPerVOIVOIIdentifier_QNAME, String.class, TimeIntegratedActivityPerVOI.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link TimeIntegratedActivityPerVOIUnit }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "TimeIntegratedActivityPerVOIUnit", scope = TimeIntegratedActivityPerVOI.class)
+    public JAXBElement<TimeIntegratedActivityPerVOIUnit> createTimeIntegratedActivityPerVOITimeIntegratedActivityPerVOIUnit(TimeIntegratedActivityPerVOIUnit value) {
+        return new JAXBElement<TimeIntegratedActivityPerVOIUnit>(_TimeIntegratedActivityPerVOITimeIntegratedActivityPerVOIUnit_QNAME, TimeIntegratedActivityPerVOIUnit.class, TimeIntegratedActivityPerVOI.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CurveFittingMethod }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "https://www.irdbb-medirad.com", name = "PKAssessmentMethodUsed", scope = TimeIntegratedActivityPerVOI.class)
+    public JAXBElement<CurveFittingMethod> createTimeIntegratedActivityPerVOIPKAssessmentMethodUsed(CurveFittingMethod value) {
+        return new JAXBElement<CurveFittingMethod>(_TimeIntegratedActivityPerVOIPKAssessmentMethodUsed_QNAME, CurveFittingMethod.class, TimeIntegratedActivityPerVOI.class, value);
     }
 
 }

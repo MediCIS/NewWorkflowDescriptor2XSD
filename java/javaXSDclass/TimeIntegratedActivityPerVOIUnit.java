@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.12.11 à 04:46:08 PM CET 
+// Généré le : 2020.01.16 à 12:21:52 PM CET 
 //
 
 
@@ -21,9 +21,8 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;simpleType name="TimeIntegratedActivityPerVOIUnit">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="seconds"/>
- *     &lt;enumeration value="minutes"/>
- *     &lt;enumeration value="hours"/>
+ *     &lt;enumeration value="MegabecquerelXSecond"/>
+ *     &lt;enumeration value="MegabecquerelXHour"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
@@ -33,12 +32,10 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum TimeIntegratedActivityPerVOIUnit {
 
-    @XmlEnumValue("seconds")
-    SECONDS("seconds"),
-    @XmlEnumValue("minutes")
-    MINUTES("minutes"),
-    @XmlEnumValue("hours")
-    HOURS("hours");
+    @XmlEnumValue("MegabecquerelXSecond")
+    MEGABECQUEREL_X_SECOND("MegabecquerelXSecond"),
+    @XmlEnumValue("MegabecquerelXHour")
+    MEGABECQUEREL_X_HOUR("MegabecquerelXHour");
     private final String value;
 
     TimeIntegratedActivityPerVOIUnit(String v) {

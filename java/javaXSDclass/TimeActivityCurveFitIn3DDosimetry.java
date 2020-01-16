@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.15 à 03:15:48 PM CET 
+// Généré le : 2020.01.16 à 12:21:52 PM CET 
 //
 
 
@@ -26,11 +26,12 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
  *         &lt;element name="VOIIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="SegmentationIdentifier" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="PreAdministeredActivityUsed" type="{https://www.irdbb-medirad.com}AdministeredActivity"/>
  *         &lt;element name="PostAdministeredActivityUsed" type="{https://www.irdbb-medirad.com}AdministeredActivity"/>
- *         &lt;element name="PKAssessmentMethodUsed" type="{https://www.irdbb-medirad.com}CurveFittingMethod"/>
- *         &lt;element name="TimeIntegratedActivityCoefficientPerVOIProduced" type="{https://www.irdbb-medirad.com}TimeIntegratedActivityCoefficientPerVOI"/>
+ *         &lt;element name="PKAssessmentMethodUsed" type="{https://www.irdbb-medirad.com}CurveFittingMethod" minOccurs="0"/>
+ *         &lt;element name="TimeIntegratedActivityCoefficientPerVOIProduced" type="{https://www.irdbb-medirad.com}TimeIntegratedActivityCoefficientPerVOI" minOccurs="0"/>
  *         &lt;element name="TimeIntegratedActivityPerVOIProduced" type="{https://www.irdbb-medirad.com}TimeIntegratedActivityPerVOI"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -44,6 +45,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "TimeActivityCurveFitIn3DDosimetry", propOrder = {
     "processExecutionContext",
     "voiIdentifierUsed",
+    "segmentationIdentifier",
     "timePointIdentifierUsed",
     "preAdministeredActivityUsed",
     "postAdministeredActivityUsed",
@@ -57,15 +59,17 @@ public class TimeActivityCurveFitIn3DDosimetry {
     protected ProcessExecutionContext processExecutionContext;
     @XmlElement(name = "VOIIdentifierUsed")
     protected String voiIdentifierUsed;
+    @XmlElement(name = "SegmentationIdentifier")
+    protected String segmentationIdentifier;
     @XmlElement(name = "TimePointIdentifierUsed")
     protected String timePointIdentifierUsed;
     @XmlElement(name = "PreAdministeredActivityUsed", required = true)
     protected AdministeredActivity preAdministeredActivityUsed;
     @XmlElement(name = "PostAdministeredActivityUsed", required = true)
     protected AdministeredActivity postAdministeredActivityUsed;
-    @XmlElement(name = "PKAssessmentMethodUsed", required = true)
+    @XmlElement(name = "PKAssessmentMethodUsed")
     protected CurveFittingMethod pkAssessmentMethodUsed;
-    @XmlElement(name = "TimeIntegratedActivityCoefficientPerVOIProduced", required = true)
+    @XmlElement(name = "TimeIntegratedActivityCoefficientPerVOIProduced")
     protected TimeIntegratedActivityCoefficientPerVOI timeIntegratedActivityCoefficientPerVOIProduced;
     @XmlElement(name = "TimeIntegratedActivityPerVOIProduced", required = true)
     protected TimeIntegratedActivityPerVOI timeIntegratedActivityPerVOIProduced;
@@ -116,6 +120,30 @@ public class TimeActivityCurveFitIn3DDosimetry {
      */
     public void setVOIIdentifierUsed(String value) {
         this.voiIdentifierUsed = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété segmentationIdentifier.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getSegmentationIdentifier() {
+        return segmentationIdentifier;
+    }
+
+    /**
+     * Définit la valeur de la propriété segmentationIdentifier.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setSegmentationIdentifier(String value) {
+        this.segmentationIdentifier = value;
     }
 
     /**

@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.12.11 à 04:46:08 PM CET 
+// Généré le : 2020.01.16 à 12:21:52 PM CET 
 //
 
 
@@ -24,6 +24,9 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="seconds"/>
  *     &lt;enumeration value="minutes"/>
  *     &lt;enumeration value="hours"/>
+ *     &lt;enumeration value="days"/>
+ *     &lt;enumeration value="months"/>
+ *     &lt;enumeration value="years"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
@@ -38,7 +41,13 @@ public enum TimeIntegratedActivityCoefficientPerVOIUnit {
     @XmlEnumValue("minutes")
     MINUTES("minutes"),
     @XmlEnumValue("hours")
-    HOURS("hours");
+    HOURS("hours"),
+    @XmlEnumValue("days")
+    DAYS("days"),
+    @XmlEnumValue("months")
+    MONTHS("months"),
+    @XmlEnumValue("years")
+    YEARS("years");
     private final String value;
 
     TimeIntegratedActivityCoefficientPerVOIUnit(String v) {

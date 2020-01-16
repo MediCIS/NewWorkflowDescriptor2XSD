@@ -126,12 +126,13 @@ TimeActivityCurveFitIn3DDosimetry
 {
  1-ProcessExecutionContext-ProcessExecutionContext
  0,1-string-VOIIdentifierUsed
+ 0,1-string-SegmentationIdentifier
  0,1-string-TimePointIdentifierUsed
 // Corresponding Activities for this VOI at the different TimePoints need to be retrieved
  1-AdministeredActivity-PreAdministeredActivityUsed
  1-AdministeredActivity-PostAdministeredActivityUsed
- 1-CurveFittingMethod-PKAssessmentMethodUsed
- 1-TimeIntegratedActivityCoefficientPerVOI-TimeIntegratedActivityCoefficientPerVOIProduced
+ 0,1-CurveFittingMethod-PKAssessmentMethodUsed
+ 0,1-TimeIntegratedActivityCoefficientPerVOI-TimeIntegratedActivityCoefficientPerVOIProduced
  1-TimeIntegratedActivityPerVOI-TimeIntegratedActivityPerVOIProduced
 // Is there one or n values for a VOI ?
 }
@@ -298,13 +299,21 @@ TimeIntegratedActivityCoefficientPerVOI
  1-string-VOIIdentifier
 }
 
+TimeIntegratedActivityPerVOIContainer
+{
+ 1,n-TimeIntegratedActivityPerVOI-TimeIntegratedActivityPerVOI
+}
+
 TimeIntegratedActivityPerVOI
 // i.e. cumulated activity
 {
 // not sure at all how cumulated activities are represented ??
  1-float-TimeIntegratedActivityPerVOIValue
- 1-string-TimeUnit:seconds/minutes/hours/days/months/years
+ 1-string-TimeIntegratedActivityPerVOIUnit:MegabecquerelXSecond/MegabecquerelXHour
  1-string-VOIIdentifier
+ 1-string-TimeIntegratedActivityCoefficientPerVOIUnit:seconds/minutes/hours/days/months/years
+ 1-float-TimeIntegratedActivityPerVOIValue
+ 1-CurveFittingMethod-PKAssessmentMethodUsed
 }
 
 CurveFittingMethod

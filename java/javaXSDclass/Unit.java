@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2019.12.11 à 04:46:08 PM CET 
+// Généré le : 2020.01.16 à 10:58:12 AM CET 
 //
 
 
@@ -14,43 +14,31 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour DataActivityUnit.
+ * <p>Classe Java pour Unit.
  * 
  * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * <p>
  * <pre>
- * &lt;simpleType name="DataActivityUnit">
+ * &lt;simpleType name="Unit">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="becquerel"/>
- *     &lt;enumeration value="kilobecquerel"/>
- *     &lt;enumeration value="megabecquerel"/>
- *     &lt;enumeration value="curie"/>
- *     &lt;enumeration value="millicurie"/>
- *     &lt;enumeration value="microcurie"/>
+ *     &lt;enumeration value="MegabecquerelXSecond"/>
+ *     &lt;enumeration value="MegabecquerelXHour"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
  * 
  */
-@XmlType(name = "DataActivityUnit")
+@XmlType(name = "Unit")
 @XmlEnum
-public enum DataActivityUnit {
+public enum Unit {
 
-    @XmlEnumValue("becquerel")
-    BECQUEREL("becquerel"),
-    @XmlEnumValue("kilobecquerel")
-    KILOBECQUEREL("kilobecquerel"),
-    @XmlEnumValue("megabecquerel")
-    MEGABECQUEREL("megabecquerel"),
-    @XmlEnumValue("curie")
-    CURIE("curie"),
-    @XmlEnumValue("millicurie")
-    MILLICURIE("millicurie"),
-    @XmlEnumValue("microcurie")
-    MICROCURIE("microcurie");
+    @XmlEnumValue("MegabecquerelXSecond")
+    MEGABECQUEREL_X_SECOND("MegabecquerelXSecond"),
+    @XmlEnumValue("MegabecquerelXHour")
+    MEGABECQUEREL_X_HOUR("MegabecquerelXHour");
     private final String value;
 
-    DataActivityUnit(String v) {
+    Unit(String v) {
         value = v;
     }
 
@@ -58,8 +46,8 @@ public enum DataActivityUnit {
         return value;
     }
 
-    public static DataActivityUnit fromValue(String v) {
-        for (DataActivityUnit c: DataActivityUnit.values()) {
+    public static Unit fromValue(String v) {
+        for (Unit c: Unit.values()) {
             if (c.value.equals(v)) {
                 return c;
             }
