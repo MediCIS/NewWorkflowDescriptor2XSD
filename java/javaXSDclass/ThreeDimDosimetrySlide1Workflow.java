@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.16 à 03:06:40 PM CET 
+// Généré le : 2020.01.16 à 05:10:16 PM CET 
 //
 
 
@@ -27,7 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="SPECTDataAcquisitionAndReconstruction" type="{https://www.irdbb-medirad.com}SPECTDataAcquisitionAndReconstruction"/>
  *         &lt;element name="RegistrationVOISegmentationAndPropagationContainer" type="{https://www.irdbb-medirad.com}RegistrationVOISegmentationAndPropagationContainer"/>
  *         &lt;element name="VOIActivityDeterminationContainer" type="{https://www.irdbb-medirad.com}VOIActivityDeterminationContainer"/>
- *         &lt;element name="TimeActivityCurveFitIn3DDosimetry" type="{https://www.irdbb-medirad.com}TimeActivityCurveFitIn3DDosimetryContainer"/>
+ *         &lt;element name="TimeActivityCurveFitIn3DDosimetryContainer" type="{https://www.irdbb-medirad.com}TimeActivityCurveFitIn3DDosimetryContainer"/>
  *         &lt;element name="AbsorbedDoseCalculationInVOI" type="{https://www.irdbb-medirad.com}AbsorbedDoseCalculationInVOI"/>
  *         &lt;element name="RadioBiologicalCalculationIn3DSlide1Dosimetry" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculationIn3DSlide1Dosimetry"/>
  *       &lt;/sequence>
@@ -43,7 +43,7 @@ import javax.xml.bind.annotation.XmlType;
     "spectDataAcquisitionAndReconstruction",
     "registrationVOISegmentationAndPropagationContainer",
     "voiActivityDeterminationContainer",
-    "timeActivityCurveFitIn3DDosimetry",
+    "timeActivityCurveFitIn3DDosimetryContainer",
     "absorbedDoseCalculationInVOI",
     "radioBiologicalCalculationIn3DSlide1Dosimetry"
 })
@@ -55,8 +55,8 @@ public class ThreeDimDosimetrySlide1Workflow {
     protected RegistrationVOISegmentationAndPropagationContainer registrationVOISegmentationAndPropagationContainer;
     @XmlElement(name = "VOIActivityDeterminationContainer", required = true)
     protected VOIActivityDeterminationContainer voiActivityDeterminationContainer;
-    @XmlElement(name = "TimeActivityCurveFitIn3DDosimetry", required = true)
-    protected TimeActivityCurveFitIn3DDosimetryContainer timeActivityCurveFitIn3DDosimetry;
+    @XmlElement(name = "TimeActivityCurveFitIn3DDosimetryContainer", required = true)
+    protected TimeActivityCurveFitIn3DDosimetryContainer timeActivityCurveFitIn3DDosimetryContainer;
     @XmlElement(name = "AbsorbedDoseCalculationInVOI", required = true)
     protected AbsorbedDoseCalculationInVOI absorbedDoseCalculationInVOI;
     @XmlElement(name = "RadioBiologicalCalculationIn3DSlide1Dosimetry", required = true)
@@ -135,27 +135,27 @@ public class ThreeDimDosimetrySlide1Workflow {
     }
 
     /**
-     * Obtient la valeur de la propriété timeActivityCurveFitIn3DDosimetry.
+     * Obtient la valeur de la propriété timeActivityCurveFitIn3DDosimetryContainer.
      * 
      * @return
      *     possible object is
      *     {@link TimeActivityCurveFitIn3DDosimetryContainer }
      *     
      */
-    public TimeActivityCurveFitIn3DDosimetryContainer getTimeActivityCurveFitIn3DDosimetry() {
-        return timeActivityCurveFitIn3DDosimetry;
+    public TimeActivityCurveFitIn3DDosimetryContainer getTimeActivityCurveFitIn3DDosimetryContainer() {
+        return timeActivityCurveFitIn3DDosimetryContainer;
     }
 
     /**
-     * Définit la valeur de la propriété timeActivityCurveFitIn3DDosimetry.
+     * Définit la valeur de la propriété timeActivityCurveFitIn3DDosimetryContainer.
      * 
      * @param value
      *     allowed object is
      *     {@link TimeActivityCurveFitIn3DDosimetryContainer }
      *     
      */
-    public void setTimeActivityCurveFitIn3DDosimetry(TimeActivityCurveFitIn3DDosimetryContainer value) {
-        this.timeActivityCurveFitIn3DDosimetry = value;
+    public void setTimeActivityCurveFitIn3DDosimetryContainer(TimeActivityCurveFitIn3DDosimetryContainer value) {
+        this.timeActivityCurveFitIn3DDosimetryContainer = value;
     }
 
     /**

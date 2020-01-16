@@ -1,0 +1,12 @@
+2c2
+< <!--VersionSchemas : 031-->
+---
+> <!--VersionSchemas : 030-->
+64c64
+< 					<xs:element name="TimeActivityCurveFitIn3DDosimetryContainer" type="irdbb:TimeActivityCurveFitIn3DDosimetryContainer"/>
+---
+> 					<xs:element name="TimeActivityCurveFitIn3DDosimetry" type="irdbb:TimeActivityCurveFitIn3DDosimetryContainer"/>
+826c826
+< 			<xs:element name="TimeActivityCurveFitIn3DDosimetry" type="irdbb:TimeActivityCurveFitIn3DDosimetry" maxOccurs="unbounded" />
+---
+> 			<xs:element name="TimeActivityCurveFitIn3DDosimetryContainer" type="irdbb:TimeActivityCurveFitIn3DDosimetry" maxOccurs="unbounded" />

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 029-->
+<!--VersionSchemas : 030-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -1115,7 +1115,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:restriction>
 	</xs:simpleType>
 
-	<xs:simpleType name="TimeIntegratedActivityCoefficientPerVOIUnit">
+	<xs:simpleType name="ResidenceTimePerVOIUnit">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="seconds"/>
 			<xs:enumeration value="minutes"/>
@@ -1128,11 +1128,11 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="TimeIntegratedActivityPerVOI">
 		<xs:sequence>
-			<xs:element name="TimeIntegratedActivityPerVOIValue" type="xs:float"/>
+			<xs:element name="ResidenceTimePerVOIValue" type="xs:float"/>
 		<xs:element name="TimeIntegratedActivityPerVOIUnit" type="irdbb:TimeIntegratedActivityPerVOIUnit" />
 			<xs:element name="VOIIdentifier" type="xs:string"/>
-		<xs:element name="TimeIntegratedActivityCoefficientPerVOIUnit" type="irdbb:TimeIntegratedActivityCoefficientPerVOIUnit" />
-			<xs:element name="TimeIntegratedActivityPerVOIValue" type="xs:float"/>
+		<xs:element name="ResidenceTimePerVOIUnit" type="irdbb:ResidenceTimePerVOIUnit" />
+			<xs:element name="TimeIntegratedActivityCoefficientPerVOIValue" type="xs:float"/>
 			<xs:element name="PKAssessmentMethodUsed" type="irdbb:CurveFittingMethod"/>
 		</xs:sequence>
 	</xs:complexType>
