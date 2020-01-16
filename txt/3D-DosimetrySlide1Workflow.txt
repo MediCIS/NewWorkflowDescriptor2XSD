@@ -5,9 +5,14 @@ ThreeDimDosimetrySlide1workflow
  1-SPECTDataAcquisitionAndReconstruction-SPECTDataAcquisitionAndReconstruction
  1-RegistrationVOISegmentationAndPropagationContainer-RegistrationVOISegmentationAndPropagationContainer
  1-VOIActivityDeterminationContainer-VOIActivityDeterminationContainer
- 1-TimeActivityCurveFitIn3DDosimetry-TimeActivityCurveFitIn3DDosimetry
+ 1-TimeActivityCurveFitIn3DDosimetryContainer-TimeActivityCurveFitIn3DDosimetry
  1-AbsorbedDoseCalculationInVOI-AbsorbedDoseCalculationInVOI
  1-RadioBiologicalCalculationIn3DSlide1Dosimetry-RadioBiologicalCalculationIn3DSlide1Dosimetry
+}
+
+TimeActivityCurveFitIn3DDosimetryContainer
+{
+ 1,n-TimeActivityCurveFitIn3DDosimetry-TimeActivityCurveFitIn3DDosimetryContainer
 }
 
 VOIActivityDeterminationContainer
@@ -117,11 +122,6 @@ DataActivityPerVOIAtTimePointContainer
  1,n-DataActivityPerVOIAtTimePoint-DataActivityPerVOIAtTimePointProduced
 }
 
-VOIContainer
-{
- 1-string-VOIIdentifierUsed
-}
-
 TimeActivityCurveFitIn3DDosimetry
 {
  1-ProcessExecutionContext-ProcessExecutionContext
@@ -135,6 +135,11 @@ TimeActivityCurveFitIn3DDosimetry
  0,1-TimeIntegratedActivityCoefficientPerVOI-TimeIntegratedActivityCoefficientPerVOIProduced
  1-TimeIntegratedActivityPerVOI-TimeIntegratedActivityPerVOIProduced
 // Is there one or n values for a VOI ?
+}
+
+VOIContainer
+{
+ 1-string-VOIIdentifierUsed
 }
 
 AbsorbedDoseCalculationInVOI
@@ -308,11 +313,11 @@ TimeIntegratedActivityPerVOI
 // i.e. cumulated activity
 {
 // not sure at all how cumulated activities are represented ??
- 1-float-TimeIntegratedActivityPerVOIValue
+ 1-float-ResidenceTimePerVOIValue
  1-string-TimeIntegratedActivityPerVOIUnit:MegabecquerelXSecond/MegabecquerelXHour
  1-string-VOIIdentifier
- 1-string-TimeIntegratedActivityCoefficientPerVOIUnit:seconds/minutes/hours/days/months/years
- 1-float-TimeIntegratedActivityPerVOIValue
+ 1-string-ResidenceTimePerVOIUnit:seconds/minutes/hours/days/months/years
+ 1-float-TimeIntegratedActivityCoefficientPerVOIValue
  1-CurveFittingMethod-PKAssessmentMethodUsed
 }
 

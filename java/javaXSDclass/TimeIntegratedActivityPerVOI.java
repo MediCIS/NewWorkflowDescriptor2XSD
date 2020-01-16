@@ -2,19 +2,16 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.16 à 12:21:52 PM CET 
+// Généré le : 2020.01.16 à 03:06:40 PM CET 
 //
 
 
 package javaXSDclass;
 
-import java.util.ArrayList;
-import java.util.List;
-import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElementRef;
-import javax.xml.bind.annotation.XmlElementRefs;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -28,11 +25,11 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="TimeIntegratedActivityPerVOIValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
+ *         &lt;element name="ResidenceTimePerVOIValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
  *         &lt;element name="TimeIntegratedActivityPerVOIUnit" type="{https://www.irdbb-medirad.com}TimeIntegratedActivityPerVOIUnit"/>
  *         &lt;element name="VOIIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="TimeIntegratedActivityCoefficientPerVOIUnit" type="{https://www.irdbb-medirad.com}TimeIntegratedActivityCoefficientPerVOIUnit"/>
- *         &lt;element name="TimeIntegratedActivityPerVOIValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
+ *         &lt;element name="ResidenceTimePerVOIUnit" type="{https://www.irdbb-medirad.com}ResidenceTimePerVOIUnit"/>
+ *         &lt;element name="TimeIntegratedActivityCoefficientPerVOIValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
  *         &lt;element name="PKAssessmentMethodUsed" type="{https://www.irdbb-medirad.com}CurveFittingMethod"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -44,60 +41,156 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "TimeIntegratedActivityPerVOI", propOrder = {
-    "content"
+    "residenceTimePerVOIValue",
+    "timeIntegratedActivityPerVOIUnit",
+    "voiIdentifier",
+    "residenceTimePerVOIUnit",
+    "timeIntegratedActivityCoefficientPerVOIValue",
+    "pkAssessmentMethodUsed"
 })
 public class TimeIntegratedActivityPerVOI {
 
-    @XmlElementRefs({
-        @XmlElementRef(name = "TimeIntegratedActivityPerVOIUnit", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "PKAssessmentMethodUsed", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "TimeIntegratedActivityPerVOIValue", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "VOIIdentifier", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "TimeIntegratedActivityCoefficientPerVOIUnit", namespace = "https://www.irdbb-medirad.com", type = JAXBElement.class, required = false)
-    })
-    protected List<JAXBElement<?>> content;
+    @XmlElement(name = "ResidenceTimePerVOIValue")
+    protected float residenceTimePerVOIValue;
+    @XmlElement(name = "TimeIntegratedActivityPerVOIUnit", required = true)
+    @XmlSchemaType(name = "string")
+    protected TimeIntegratedActivityPerVOIUnit timeIntegratedActivityPerVOIUnit;
+    @XmlElement(name = "VOIIdentifier", required = true)
+    protected String voiIdentifier;
+    @XmlElement(name = "ResidenceTimePerVOIUnit", required = true)
+    @XmlSchemaType(name = "string")
+    protected ResidenceTimePerVOIUnit residenceTimePerVOIUnit;
+    @XmlElement(name = "TimeIntegratedActivityCoefficientPerVOIValue")
+    protected float timeIntegratedActivityCoefficientPerVOIValue;
+    @XmlElement(name = "PKAssessmentMethodUsed", required = true)
+    protected CurveFittingMethod pkAssessmentMethodUsed;
 
     /**
-     * Obtient le reste du modèle de contenu. 
-     * 
-     * <p>
-     * Vous obtenez la propriété "catch-all" pour la raison suivante : 
-     * Le nom de champ "TimeIntegratedActivityPerVOIValue" est utilisé par deux parties différentes d'un schéma. Reportez-vous à : 
-     * ligne 1129 sur file:/Users/marinebrenet/Documents/workflowDescriptor2XSD/xsd/nonDicomFileSetDescriptor.xsd
-     * ligne 1125 sur file:/Users/marinebrenet/Documents/workflowDescriptor2XSD/xsd/nonDicomFileSetDescriptor.xsd
-     * <p>
-     * Pour vous débarrasser de cette propriété, appliquez une personnalisation de propriété à l'une 
-     * des deux déclarations suivantes afin de modifier leurs noms : 
-     * Gets the value of the content property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the content property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getContent().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link JAXBElement }{@code <}{@link TimeIntegratedActivityPerVOIUnit }{@code >}
-     * {@link JAXBElement }{@code <}{@link Float }{@code >}
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
-     * {@link JAXBElement }{@code <}{@link CurveFittingMethod }{@code >}
-     * {@link JAXBElement }{@code <}{@link TimeIntegratedActivityCoefficientPerVOIUnit }{@code >}
-     * 
+     * Obtient la valeur de la propriété residenceTimePerVOIValue.
      * 
      */
-    public List<JAXBElement<?>> getContent() {
-        if (content == null) {
-            content = new ArrayList<JAXBElement<?>>();
-        }
-        return this.content;
+    public float getResidenceTimePerVOIValue() {
+        return residenceTimePerVOIValue;
+    }
+
+    /**
+     * Définit la valeur de la propriété residenceTimePerVOIValue.
+     * 
+     */
+    public void setResidenceTimePerVOIValue(float value) {
+        this.residenceTimePerVOIValue = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété timeIntegratedActivityPerVOIUnit.
+     * 
+     * @return
+     *     possible object is
+     *     {@link TimeIntegratedActivityPerVOIUnit }
+     *     
+     */
+    public TimeIntegratedActivityPerVOIUnit getTimeIntegratedActivityPerVOIUnit() {
+        return timeIntegratedActivityPerVOIUnit;
+    }
+
+    /**
+     * Définit la valeur de la propriété timeIntegratedActivityPerVOIUnit.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TimeIntegratedActivityPerVOIUnit }
+     *     
+     */
+    public void setTimeIntegratedActivityPerVOIUnit(TimeIntegratedActivityPerVOIUnit value) {
+        this.timeIntegratedActivityPerVOIUnit = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété voiIdentifier.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getVOIIdentifier() {
+        return voiIdentifier;
+    }
+
+    /**
+     * Définit la valeur de la propriété voiIdentifier.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setVOIIdentifier(String value) {
+        this.voiIdentifier = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété residenceTimePerVOIUnit.
+     * 
+     * @return
+     *     possible object is
+     *     {@link ResidenceTimePerVOIUnit }
+     *     
+     */
+    public ResidenceTimePerVOIUnit getResidenceTimePerVOIUnit() {
+        return residenceTimePerVOIUnit;
+    }
+
+    /**
+     * Définit la valeur de la propriété residenceTimePerVOIUnit.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link ResidenceTimePerVOIUnit }
+     *     
+     */
+    public void setResidenceTimePerVOIUnit(ResidenceTimePerVOIUnit value) {
+        this.residenceTimePerVOIUnit = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété timeIntegratedActivityCoefficientPerVOIValue.
+     * 
+     */
+    public float getTimeIntegratedActivityCoefficientPerVOIValue() {
+        return timeIntegratedActivityCoefficientPerVOIValue;
+    }
+
+    /**
+     * Définit la valeur de la propriété timeIntegratedActivityCoefficientPerVOIValue.
+     * 
+     */
+    public void setTimeIntegratedActivityCoefficientPerVOIValue(float value) {
+        this.timeIntegratedActivityCoefficientPerVOIValue = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété pkAssessmentMethodUsed.
+     * 
+     * @return
+     *     possible object is
+     *     {@link CurveFittingMethod }
+     *     
+     */
+    public CurveFittingMethod getPKAssessmentMethodUsed() {
+        return pkAssessmentMethodUsed;
+    }
+
+    /**
+     * Définit la valeur de la propriété pkAssessmentMethodUsed.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CurveFittingMethod }
+     *     
+     */
+    public void setPKAssessmentMethodUsed(CurveFittingMethod value) {
+        this.pkAssessmentMethodUsed = value;
     }
 
 }

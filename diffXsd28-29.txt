@@ -1,0 +1,39 @@
+69a70,85
+> 	<xs:element name="TimeActivityCurveFitIn3DDosimetry" >
+> 		<xs:complexType>
+> 			<xs:sequence>
+> 			<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
+> 			<xs:element name="VOIIdentifierUsed" type="xs:string" minOccurs="0" />
+> 			<xs:element name="SegmentationIdentifier" type="xs:string" minOccurs="0" />
+> 			<xs:element name="TimePointIdentifierUsed" type="xs:string" minOccurs="0" />
+> 			<xs:element name="PreAdministeredActivityUsed" type="irdbb:AdministeredActivity"/>
+> 			<xs:element name="PostAdministeredActivityUsed" type="irdbb:AdministeredActivity"/>
+> 			<xs:element name="PKAssessmentMethodUsed" type="irdbb:CurveFittingMethod" minOccurs="0" />
+> 			<xs:element name="TimeIntegratedActivityCoefficientPerVOIProduced" type="irdbb:TimeIntegratedActivityCoefficientPerVOI" minOccurs="0" />
+> 			<xs:element name="TimeIntegratedActivityPerVOIProduced" type="irdbb:TimeIntegratedActivityPerVOI"/>
+> 			</xs:sequence>
+> 		</xs:complexType>
+> 	</xs:element>
+> 
+824,829d839
+< 	<xs:complexType name="TimeActivityCurveFitIn3DDosimetryContainer">
+< 		<xs:sequence>
+< 			<xs:element name="TimeActivityCurveFitIn3DDosimetryContainer" type="irdbb:TimeActivityCurveFitIn3DDosimetry" maxOccurs="unbounded" />
+< 		</xs:sequence>
+< 	</xs:complexType>
+< 
+939,952d948
+< 	<xs:complexType name="TimeActivityCurveFitIn3DDosimetry">
+< 		<xs:sequence>
+< 			<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
+< 			<xs:element name="VOIIdentifierUsed" type="xs:string" minOccurs="0" />
+< 			<xs:element name="SegmentationIdentifier" type="xs:string" minOccurs="0" />
+< 			<xs:element name="TimePointIdentifierUsed" type="xs:string" minOccurs="0" />
+< 			<xs:element name="PreAdministeredActivityUsed" type="irdbb:AdministeredActivity"/>
+< 			<xs:element name="PostAdministeredActivityUsed" type="irdbb:AdministeredActivity"/>
+< 			<xs:element name="PKAssessmentMethodUsed" type="irdbb:CurveFittingMethod" minOccurs="0" />
+< 			<xs:element name="TimeIntegratedActivityCoefficientPerVOIProduced" type="irdbb:TimeIntegratedActivityCoefficientPerVOI" minOccurs="0" />
+< 			<xs:element name="TimeIntegratedActivityPerVOIProduced" type="irdbb:TimeIntegratedActivityPerVOI"/>
+< 		</xs:sequence>
+< 	</xs:complexType>
+< 

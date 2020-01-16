@@ -1,0 +1,76 @@
+//
+// Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
+// Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
+// Généré le : 2020.01.16 à 03:06:40 PM CET 
+//
+
+
+package javaXSDclass;
+
+import java.util.ArrayList;
+import java.util.List;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Classe Java pour TimeActivityCurveFitIn3DDosimetryContainer complex type.
+ * 
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * 
+ * <pre>
+ * &lt;complexType name="TimeActivityCurveFitIn3DDosimetryContainer">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="TimeActivityCurveFitIn3DDosimetryContainer" type="{https://www.irdbb-medirad.com}TimeActivityCurveFitIn3DDosimetry" maxOccurs="unbounded"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "TimeActivityCurveFitIn3DDosimetryContainer", propOrder = {
+    "timeActivityCurveFitIn3DDosimetryContainer"
+})
+public class TimeActivityCurveFitIn3DDosimetryContainer {
+
+    @XmlElement(name = "TimeActivityCurveFitIn3DDosimetryContainer", required = true)
+    protected List<TimeActivityCurveFitIn3DDosimetry> timeActivityCurveFitIn3DDosimetryContainer;
+
+    /**
+     * Gets the value of the timeActivityCurveFitIn3DDosimetryContainer property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the timeActivityCurveFitIn3DDosimetryContainer property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getTimeActivityCurveFitIn3DDosimetryContainer().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link TimeActivityCurveFitIn3DDosimetry }
+     * 
+     * 
+     */
+    public List<TimeActivityCurveFitIn3DDosimetry> getTimeActivityCurveFitIn3DDosimetryContainer() {
+        if (timeActivityCurveFitIn3DDosimetryContainer == null) {
+            timeActivityCurveFitIn3DDosimetryContainer = new ArrayList<TimeActivityCurveFitIn3DDosimetry>();
+        }
+        return this.timeActivityCurveFitIn3DDosimetryContainer;
+    }
+
+}

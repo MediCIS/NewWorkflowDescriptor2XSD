@@ -1,0 +1,12 @@
+2c2
+< <!--VersionSchemas : 028-->
+---
+> <!--VersionSchemas : 027-->
+64c64
+< 					<xs:element name="TimeActivityCurveFitIn3DDosimetryContainer" type="irdbb:TimeActivityCurveFitIn3DDosimetry"/>
+---
+> 					<xs:element name="TimeActivityCurveFitIn3DDosimetry" type="irdbb:TimeActivityCurveFitIn3DDosimetry"/>
+936c936
+< 			<xs:element name="VOIIdentifierUsed" type="xs:string" minOccurs="0" />
+---
+> 			<xs:element name="VOIContainer" type="irdbb:VOIContainer" minOccurs="0" />

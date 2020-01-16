@@ -1,0 +1,22 @@
+2c2
+< <!--VersionSchemas : 027-->
+---
+> <!--VersionSchemas : 026-->
+932a933,938
+> 	<xs:complexType name="VOIContainer">
+> 		<xs:sequence>
+> 			<xs:element name="VOIIdentifierUsed" type="xs:string"/>
+> 		</xs:sequence>
+> 	</xs:complexType>
+> 
+936c942
+< 			<xs:element name="VOIContainer" type="irdbb:VOIContainer" minOccurs="0" />
+---
+> 			<xs:element name="VOIIdentifierUsed" type="xs:string" minOccurs="0" />
+947,952d952
+< 	<xs:complexType name="VOIContainer">
+< 		<xs:sequence>
+< 			<xs:element name="VOIIdentifierUsed" type="xs:string"/>
+< 		</xs:sequence>
+< 	</xs:complexType>
+< 

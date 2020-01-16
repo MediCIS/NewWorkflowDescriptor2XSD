@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 025-->
+<!--VersionSchemas : 029-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -61,11 +61,19 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 					<xs:element name="SPECTDataAcquisitionAndReconstruction" type="irdbb:SPECTDataAcquisitionAndReconstruction"/>
 					<xs:element name="RegistrationVOISegmentationAndPropagationContainer" type="irdbb:RegistrationVOISegmentationAndPropagationContainer"/>
 					<xs:element name="VOIActivityDeterminationContainer" type="irdbb:VOIActivityDeterminationContainer"/>
-					<xs:element name="TimeActivityCurveFitIn3DDosimetry" type="irdbb:TimeActivityCurveFitIn3DDosimetry"/>
+					<xs:element name="TimeActivityCurveFitIn3DDosimetry" type="irdbb:TimeActivityCurveFitIn3DDosimetryContainer"/>
 					<xs:element name="AbsorbedDoseCalculationInVOI" type="irdbb:AbsorbedDoseCalculationInVOI"/>
 					<xs:element name="RadioBiologicalCalculationIn3DSlide1Dosimetry" type="irdbb:RadioBiologicalCalculationIn3DSlide1Dosimetry"/>
 						</xs:sequence>
 				</xs:complexType>
+
+	<xs:element name="TimeIntegratedActivityPerVOIContainer" >
+		<xs:complexType>
+			<xs:sequence>
+			<xs:element name="TimeIntegratedActivityPerVOI" type="irdbb:TimeIntegratedActivityPerVOI" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
 
 			<xs:complexType name="TwoDimDosimetryworkflow">
 				<xs:sequence>
@@ -813,6 +821,12 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:sequence>
 	</xs:complexType>
 
+	<xs:complexType name="TimeActivityCurveFitIn3DDosimetryContainer">
+		<xs:sequence>
+			<xs:element name="TimeActivityCurveFitIn3DDosimetryContainer" type="irdbb:TimeActivityCurveFitIn3DDosimetry" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
 	<xs:complexType name="VOIActivityDeterminationContainer">
 		<xs:sequence>
 			<xs:element name="VOIActivityDetermination" type="irdbb:VOIActivityDetermination" maxOccurs="unbounded" />
@@ -922,12 +936,6 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:complexType name="VOIContainer">
-		<xs:sequence>
-			<xs:element name="VOIIdentifierUsed" type="xs:string"/>
-		</xs:sequence>
-	</xs:complexType>
-
 	<xs:complexType name="TimeActivityCurveFitIn3DDosimetry">
 		<xs:sequence>
 			<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
@@ -936,9 +944,15 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:element name="TimePointIdentifierUsed" type="xs:string" minOccurs="0" />
 			<xs:element name="PreAdministeredActivityUsed" type="irdbb:AdministeredActivity"/>
 			<xs:element name="PostAdministeredActivityUsed" type="irdbb:AdministeredActivity"/>
-			<xs:element name="PKAssessmentMethodUsed" type="irdbb:CurveFittingMethod"/>
-			<xs:element name="TimeIntegratedActivityCoefficientPerVOIProduced" type="irdbb:TimeIntegratedActivityCoefficientPerVOI"/>
+			<xs:element name="PKAssessmentMethodUsed" type="irdbb:CurveFittingMethod" minOccurs="0" />
+			<xs:element name="TimeIntegratedActivityCoefficientPerVOIProduced" type="irdbb:TimeIntegratedActivityCoefficientPerVOI" minOccurs="0" />
 			<xs:element name="TimeIntegratedActivityPerVOIProduced" type="irdbb:TimeIntegratedActivityPerVOI"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="VOIContainer">
+		<xs:sequence>
+			<xs:element name="VOIIdentifierUsed" type="xs:string"/>
 		</xs:sequence>
 	</xs:complexType>
 
@@ -1094,18 +1108,32 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:simpleType name="Unit">
+	<xs:simpleType name="TimeIntegratedActivityPerVOIUnit">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="MegabecquerelXSecond"/>
 			<xs:enumeration value="MegabecquerelXHour"/>
 		</xs:restriction>
 	</xs:simpleType>
 
+	<xs:simpleType name="TimeIntegratedActivityCoefficientPerVOIUnit">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="seconds"/>
+			<xs:enumeration value="minutes"/>
+			<xs:enumeration value="hours"/>
+			<xs:enumeration value="days"/>
+			<xs:enumeration value="months"/>
+			<xs:enumeration value="years"/>
+		</xs:restriction>
+	</xs:simpleType>
+
 	<xs:complexType name="TimeIntegratedActivityPerVOI">
 		<xs:sequence>
 			<xs:element name="TimeIntegratedActivityPerVOIValue" type="xs:float"/>
-		<xs:element name="Unit" type="irdbb:Unit" />
+		<xs:element name="TimeIntegratedActivityPerVOIUnit" type="irdbb:TimeIntegratedActivityPerVOIUnit" />
 			<xs:element name="VOIIdentifier" type="xs:string"/>
+		<xs:element name="TimeIntegratedActivityCoefficientPerVOIUnit" type="irdbb:TimeIntegratedActivityCoefficientPerVOIUnit" />
+			<xs:element name="TimeIntegratedActivityPerVOIValue" type="xs:float"/>
+			<xs:element name="PKAssessmentMethodUsed" type="irdbb:CurveFittingMethod"/>
 		</xs:sequence>
 	</xs:complexType>
 

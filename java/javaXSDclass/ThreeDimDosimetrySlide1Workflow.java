@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.16 à 12:21:52 PM CET 
+// Généré le : 2020.01.16 à 03:06:40 PM CET 
 //
 
 
@@ -27,7 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="SPECTDataAcquisitionAndReconstruction" type="{https://www.irdbb-medirad.com}SPECTDataAcquisitionAndReconstruction"/>
  *         &lt;element name="RegistrationVOISegmentationAndPropagationContainer" type="{https://www.irdbb-medirad.com}RegistrationVOISegmentationAndPropagationContainer"/>
  *         &lt;element name="VOIActivityDeterminationContainer" type="{https://www.irdbb-medirad.com}VOIActivityDeterminationContainer"/>
- *         &lt;element name="TimeActivityCurveFitIn3DDosimetry" type="{https://www.irdbb-medirad.com}TimeActivityCurveFitIn3DDosimetry"/>
+ *         &lt;element name="TimeActivityCurveFitIn3DDosimetry" type="{https://www.irdbb-medirad.com}TimeActivityCurveFitIn3DDosimetryContainer"/>
  *         &lt;element name="AbsorbedDoseCalculationInVOI" type="{https://www.irdbb-medirad.com}AbsorbedDoseCalculationInVOI"/>
  *         &lt;element name="RadioBiologicalCalculationIn3DSlide1Dosimetry" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculationIn3DSlide1Dosimetry"/>
  *       &lt;/sequence>
@@ -56,7 +56,7 @@ public class ThreeDimDosimetrySlide1Workflow {
     @XmlElement(name = "VOIActivityDeterminationContainer", required = true)
     protected VOIActivityDeterminationContainer voiActivityDeterminationContainer;
     @XmlElement(name = "TimeActivityCurveFitIn3DDosimetry", required = true)
-    protected TimeActivityCurveFitIn3DDosimetry timeActivityCurveFitIn3DDosimetry;
+    protected TimeActivityCurveFitIn3DDosimetryContainer timeActivityCurveFitIn3DDosimetry;
     @XmlElement(name = "AbsorbedDoseCalculationInVOI", required = true)
     protected AbsorbedDoseCalculationInVOI absorbedDoseCalculationInVOI;
     @XmlElement(name = "RadioBiologicalCalculationIn3DSlide1Dosimetry", required = true)
@@ -139,10 +139,10 @@ public class ThreeDimDosimetrySlide1Workflow {
      * 
      * @return
      *     possible object is
-     *     {@link TimeActivityCurveFitIn3DDosimetry }
+     *     {@link TimeActivityCurveFitIn3DDosimetryContainer }
      *     
      */
-    public TimeActivityCurveFitIn3DDosimetry getTimeActivityCurveFitIn3DDosimetry() {
+    public TimeActivityCurveFitIn3DDosimetryContainer getTimeActivityCurveFitIn3DDosimetry() {
         return timeActivityCurveFitIn3DDosimetry;
     }
 
@@ -151,10 +151,10 @@ public class ThreeDimDosimetrySlide1Workflow {
      * 
      * @param value
      *     allowed object is
-     *     {@link TimeActivityCurveFitIn3DDosimetry }
+     *     {@link TimeActivityCurveFitIn3DDosimetryContainer }
      *     
      */
-    public void setTimeActivityCurveFitIn3DDosimetry(TimeActivityCurveFitIn3DDosimetry value) {
+    public void setTimeActivityCurveFitIn3DDosimetry(TimeActivityCurveFitIn3DDosimetryContainer value) {
         this.timeActivityCurveFitIn3DDosimetry = value;
     }
 
