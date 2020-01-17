@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 031-->
+<!--VersionSchemas : 032-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -894,6 +894,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:element name="NMTomoReconResampledOnCommonReferenceProduced" type="irdbb:DICOMDataContainer" minOccurs="0" />
 			<xs:element name="NonDICOMCTReconResampledOnCommonReferenceProduced" type="irdbb:NonDICOMDataContainer" minOccurs="0" />
 			<xs:element name="NonDICOMNMTomoReconResampledOnCommonReferenceProduced" type="irdbb:NonDICOMDataContainer" minOccurs="0" />
+			<xs:element name="DensityImageProduced" type="irdbb:NonDICOMDataContainer" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 
@@ -959,13 +960,9 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="AbsorbedDoseCalculationInVOI">
 		<xs:sequence>
 			<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
-			<xs:element name="SegmentationIdentifierUsed" type="xs:string"/>
-			<xs:element name="CTReconResampledOnCommonReferenceUsed" type="irdbb:DICOMDataContainer"/>
-			<xs:element name="NMTomoReconResampledOnCommonReferenceUsed" type="irdbb:DICOMDataContainer"/>
+			<xs:element name="SegmentationIdentifierUsed" type="xs:string" minOccurs="0" />
 			<xs:element name="AbsorbedDoseCalculationMethodUsed" type="xs:string"/>
 			<xs:element name="VoxelAbsorbedDoseMapProduced" type="irdbb:NonDICOMDataContainer" minOccurs="0" />
-			<xs:element name="DensityImageUsed" type="irdbb:NonDICOMDataContainer" minOccurs="0" />
-			<xs:element name="ActivityMapImageUsed" type="irdbb:NonDICOMDataContainer" minOccurs="0" />
 			<xs:element name="AbsorbedDoseInVOIContainer" type="irdbb:AbsorbedDoseInVOIContainer" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
@@ -1096,6 +1093,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 			<xs:element name="AbsorbedDoseInVOIValue" type="xs:float"/>
 		<xs:element name="AbsorbedDoseInVOIUnit" type="irdbb:AbsorbedDoseInVOIUnit" />
+			<xs:element name="AbsorbedDoseInVOIUncertainty" type="xs:float" minOccurs="0" />
 			<xs:element name="VOIIdentifier" type="xs:string"/>
 		</xs:sequence>
 	</xs:complexType>

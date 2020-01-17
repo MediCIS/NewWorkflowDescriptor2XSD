@@ -338,6 +338,7 @@ AbsorbedDoseInVOI
 {
  1-float-AbsorbedDoseInVOIValue
  1-string-AbsorbedDoseInVOIUnit:gray/milligray
+ 0,1-float-AbsorbedDoseInVOIUncertainty
  1-string-VOIIdentifier
 }
 

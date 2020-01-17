@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.16 à 05:10:16 PM CET 
+// Généré le : 2020.01.17 à 12:29:06 PM CET 
 //
 
 
@@ -27,6 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="AbsorbedDoseInVOIValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
  *         &lt;element name="AbsorbedDoseInVOIUnit" type="{https://www.irdbb-medirad.com}AbsorbedDoseInVOIUnit"/>
+ *         &lt;element name="AbsorbedDoseInVOIUncertainty" type="{http://www.w3.org/2001/XMLSchema}float" minOccurs="0"/>
  *         &lt;element name="VOIIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -40,6 +41,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "AbsorbedDoseInVOI", propOrder = {
     "absorbedDoseInVOIValue",
     "absorbedDoseInVOIUnit",
+    "absorbedDoseInVOIUncertainty",
     "voiIdentifier"
 })
 public class AbsorbedDoseInVOI {
@@ -49,6 +51,8 @@ public class AbsorbedDoseInVOI {
     @XmlElement(name = "AbsorbedDoseInVOIUnit", required = true)
     @XmlSchemaType(name = "string")
     protected AbsorbedDoseInVOIUnit absorbedDoseInVOIUnit;
+    @XmlElement(name = "AbsorbedDoseInVOIUncertainty")
+    protected Float absorbedDoseInVOIUncertainty;
     @XmlElement(name = "VOIIdentifier", required = true)
     protected String voiIdentifier;
 
@@ -90,6 +94,30 @@ public class AbsorbedDoseInVOI {
      */
     public void setAbsorbedDoseInVOIUnit(AbsorbedDoseInVOIUnit value) {
         this.absorbedDoseInVOIUnit = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété absorbedDoseInVOIUncertainty.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Float }
+     *     
+     */
+    public Float getAbsorbedDoseInVOIUncertainty() {
+        return absorbedDoseInVOIUncertainty;
+    }
+
+    /**
+     * Définit la valeur de la propriété absorbedDoseInVOIUncertainty.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Float }
+     *     
+     */
+    public void setAbsorbedDoseInVOIUncertainty(Float value) {
+        this.absorbedDoseInVOIUncertainty = value;
     }
 
     /**

@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.16 à 05:10:16 PM CET 
+// Généré le : 2020.01.17 à 12:29:06 PM CET 
 //
 
 
@@ -35,6 +35,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="NMTomoReconResampledOnCommonReferenceProduced" type="{https://www.irdbb-medirad.com}DICOMDataContainer" minOccurs="0"/>
  *         &lt;element name="NonDICOMCTReconResampledOnCommonReferenceProduced" type="{https://www.irdbb-medirad.com}NonDICOMDataContainer" minOccurs="0"/>
  *         &lt;element name="NonDICOMNMTomoReconResampledOnCommonReferenceProduced" type="{https://www.irdbb-medirad.com}NonDICOMDataContainer" minOccurs="0"/>
+ *         &lt;element name="DensityImageProduced" type="{https://www.irdbb-medirad.com}NonDICOMDataContainer" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -55,7 +56,8 @@ import javax.xml.bind.annotation.XmlType;
     "ctReconResampledOnCommonReferenceProduced",
     "nmTomoReconResampledOnCommonReferenceProduced",
     "nonDICOMCTReconResampledOnCommonReferenceProduced",
-    "nonDICOMNMTomoReconResampledOnCommonReferenceProduced"
+    "nonDICOMNMTomoReconResampledOnCommonReferenceProduced",
+    "densityImageProduced"
 })
 public class RegistrationVOISegmentationAndPropagation {
 
@@ -81,6 +83,8 @@ public class RegistrationVOISegmentationAndPropagation {
     protected NonDICOMDataContainer nonDICOMCTReconResampledOnCommonReferenceProduced;
     @XmlElement(name = "NonDICOMNMTomoReconResampledOnCommonReferenceProduced")
     protected NonDICOMDataContainer nonDICOMNMTomoReconResampledOnCommonReferenceProduced;
+    @XmlElement(name = "DensityImageProduced")
+    protected NonDICOMDataContainer densityImageProduced;
 
     /**
      * Obtient la valeur de la propriété processExecutionContext.
@@ -344,6 +348,30 @@ public class RegistrationVOISegmentationAndPropagation {
      */
     public void setNonDICOMNMTomoReconResampledOnCommonReferenceProduced(NonDICOMDataContainer value) {
         this.nonDICOMNMTomoReconResampledOnCommonReferenceProduced = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété densityImageProduced.
+     * 
+     * @return
+     *     possible object is
+     *     {@link NonDICOMDataContainer }
+     *     
+     */
+    public NonDICOMDataContainer getDensityImageProduced() {
+        return densityImageProduced;
+    }
+
+    /**
+     * Définit la valeur de la propriété densityImageProduced.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link NonDICOMDataContainer }
+     *     
+     */
+    public void setDensityImageProduced(NonDICOMDataContainer value) {
+        this.densityImageProduced = value;
     }
 
 }

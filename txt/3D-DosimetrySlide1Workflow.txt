@@ -82,6 +82,7 @@ RegistrationVOISegmentationAndPropagation
  0,1-DICOMDataContainer-NMTomoReconResampledOnCommonReferenceProduced
  0,1-NonDICOMDataContainer-NonDICOMCTReconResampledOnCommonReferenceProduced
  0,1-NonDICOMDataContainer-NonDICOMNMTomoReconResampledOnCommonReferenceProduced
+ 0,1-NonDICOMDataContainer-DensityImageProduced
 }
 
 Segmentation
@@ -145,17 +146,17 @@ VOIContainer
 AbsorbedDoseCalculationInVOI
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1-string-SegmentationIdentifierUsed
+ 0,1-string-SegmentationIdentifierUsed
 // Corresponding Time Integrated Activity Coefficient per VOI need to be retrieved
 // Corresponding Time Integrated Activity per VOI need to be retrieved
- 1-DICOMDataContainer-CTReconResampledOnCommonReferenceUsed
- 1-DICOMDataContainer-NMTomoReconResampledOnCommonReferenceUsed
+// 1-DICOMDataContainer-CTReconResampledOnCommonReferenceUsed
+// 1-DICOMDataContainer-NMTomoReconResampledOnCommonReferenceUsed
  1-string-AbsorbedDoseCalculationMethodUsed
 // to be provided as a closed list of possible values
 
  0,1-NonDICOMDataContainer-VoxelAbsorbedDoseMapProduced
- 0,1-NonDICOMDataContainer-DensityImageUsed
- 0,1-NonDICOMDataContainer-ActivityMapImageUsed
+// 0,1-NonDICOMDataContainer-DensityImageUsed
+// 0,1-NonDICOMDataContainer-ActivityMapImageUsed
  0,1-AbsorbedDoseInVOIContainer-AbsorbedDoseInVOIContainer
 }
 
@@ -292,6 +293,7 @@ AbsorbedDoseInVOI
 {
  1-float-AbsorbedDoseInVOIValue
  1-string-AbsorbedDoseInVOIUnit:gray/milligray
+ 0,1-float-AbsorbedDoseInVOIUncertainty
  1-string-VOIIdentifier
 }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 031-->
+<!--VersionSchemas : 032-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -492,6 +492,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 			<xs:element name="AbsorbedDoseInVOIValue" type="xs:float"/>
 		<xs:element name="AbsorbedDoseInVOIUnit" type="irdbb:AbsorbedDoseInVOIUnit" />
+			<xs:element name="AbsorbedDoseInVOIUncertainty" type="xs:float" minOccurs="0" />
 			<xs:element name="VOIIdentifier" type="xs:string"/>
 		</xs:sequence>
 	</xs:complexType>

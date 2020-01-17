@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.16 à 05:10:16 PM CET 
+// Généré le : 2020.01.17 à 12:29:06 PM CET 
 //
 
 
@@ -25,13 +25,9 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
- *         &lt;element name="SegmentationIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="CTReconResampledOnCommonReferenceUsed" type="{https://www.irdbb-medirad.com}DICOMDataContainer"/>
- *         &lt;element name="NMTomoReconResampledOnCommonReferenceUsed" type="{https://www.irdbb-medirad.com}DICOMDataContainer"/>
+ *         &lt;element name="SegmentationIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="AbsorbedDoseCalculationMethodUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="VoxelAbsorbedDoseMapProduced" type="{https://www.irdbb-medirad.com}NonDICOMDataContainer" minOccurs="0"/>
- *         &lt;element name="DensityImageUsed" type="{https://www.irdbb-medirad.com}NonDICOMDataContainer" minOccurs="0"/>
- *         &lt;element name="ActivityMapImageUsed" type="{https://www.irdbb-medirad.com}NonDICOMDataContainer" minOccurs="0"/>
  *         &lt;element name="AbsorbedDoseInVOIContainer" type="{https://www.irdbb-medirad.com}AbsorbedDoseInVOIContainer" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -45,32 +41,20 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "AbsorbedDoseCalculationInVOI", propOrder = {
     "processExecutionContext",
     "segmentationIdentifierUsed",
-    "ctReconResampledOnCommonReferenceUsed",
-    "nmTomoReconResampledOnCommonReferenceUsed",
     "absorbedDoseCalculationMethodUsed",
     "voxelAbsorbedDoseMapProduced",
-    "densityImageUsed",
-    "activityMapImageUsed",
     "absorbedDoseInVOIContainer"
 })
 public class AbsorbedDoseCalculationInVOI {
 
     @XmlElement(name = "ProcessExecutionContext", required = true)
     protected ProcessExecutionContext processExecutionContext;
-    @XmlElement(name = "SegmentationIdentifierUsed", required = true)
+    @XmlElement(name = "SegmentationIdentifierUsed")
     protected String segmentationIdentifierUsed;
-    @XmlElement(name = "CTReconResampledOnCommonReferenceUsed", required = true)
-    protected DICOMDataContainer ctReconResampledOnCommonReferenceUsed;
-    @XmlElement(name = "NMTomoReconResampledOnCommonReferenceUsed", required = true)
-    protected DICOMDataContainer nmTomoReconResampledOnCommonReferenceUsed;
     @XmlElement(name = "AbsorbedDoseCalculationMethodUsed", required = true)
     protected String absorbedDoseCalculationMethodUsed;
     @XmlElement(name = "VoxelAbsorbedDoseMapProduced")
     protected NonDICOMDataContainer voxelAbsorbedDoseMapProduced;
-    @XmlElement(name = "DensityImageUsed")
-    protected NonDICOMDataContainer densityImageUsed;
-    @XmlElement(name = "ActivityMapImageUsed")
-    protected NonDICOMDataContainer activityMapImageUsed;
     @XmlElement(name = "AbsorbedDoseInVOIContainer")
     protected AbsorbedDoseInVOIContainer absorbedDoseInVOIContainer;
 
@@ -123,54 +107,6 @@ public class AbsorbedDoseCalculationInVOI {
     }
 
     /**
-     * Obtient la valeur de la propriété ctReconResampledOnCommonReferenceUsed.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DICOMDataContainer }
-     *     
-     */
-    public DICOMDataContainer getCTReconResampledOnCommonReferenceUsed() {
-        return ctReconResampledOnCommonReferenceUsed;
-    }
-
-    /**
-     * Définit la valeur de la propriété ctReconResampledOnCommonReferenceUsed.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DICOMDataContainer }
-     *     
-     */
-    public void setCTReconResampledOnCommonReferenceUsed(DICOMDataContainer value) {
-        this.ctReconResampledOnCommonReferenceUsed = value;
-    }
-
-    /**
-     * Obtient la valeur de la propriété nmTomoReconResampledOnCommonReferenceUsed.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DICOMDataContainer }
-     *     
-     */
-    public DICOMDataContainer getNMTomoReconResampledOnCommonReferenceUsed() {
-        return nmTomoReconResampledOnCommonReferenceUsed;
-    }
-
-    /**
-     * Définit la valeur de la propriété nmTomoReconResampledOnCommonReferenceUsed.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DICOMDataContainer }
-     *     
-     */
-    public void setNMTomoReconResampledOnCommonReferenceUsed(DICOMDataContainer value) {
-        this.nmTomoReconResampledOnCommonReferenceUsed = value;
-    }
-
-    /**
      * Obtient la valeur de la propriété absorbedDoseCalculationMethodUsed.
      * 
      * @return
@@ -216,54 +152,6 @@ public class AbsorbedDoseCalculationInVOI {
      */
     public void setVoxelAbsorbedDoseMapProduced(NonDICOMDataContainer value) {
         this.voxelAbsorbedDoseMapProduced = value;
-    }
-
-    /**
-     * Obtient la valeur de la propriété densityImageUsed.
-     * 
-     * @return
-     *     possible object is
-     *     {@link NonDICOMDataContainer }
-     *     
-     */
-    public NonDICOMDataContainer getDensityImageUsed() {
-        return densityImageUsed;
-    }
-
-    /**
-     * Définit la valeur de la propriété densityImageUsed.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link NonDICOMDataContainer }
-     *     
-     */
-    public void setDensityImageUsed(NonDICOMDataContainer value) {
-        this.densityImageUsed = value;
-    }
-
-    /**
-     * Obtient la valeur de la propriété activityMapImageUsed.
-     * 
-     * @return
-     *     possible object is
-     *     {@link NonDICOMDataContainer }
-     *     
-     */
-    public NonDICOMDataContainer getActivityMapImageUsed() {
-        return activityMapImageUsed;
-    }
-
-    /**
-     * Définit la valeur de la propriété activityMapImageUsed.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link NonDICOMDataContainer }
-     *     
-     */
-    public void setActivityMapImageUsed(NonDICOMDataContainer value) {
-        this.activityMapImageUsed = value;
     }
 
     /**
