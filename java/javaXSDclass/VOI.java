@@ -2,12 +2,13 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.17 à 12:29:06 PM CET 
+// Généré le : 2020.01.20 à 09:37:33 AM CET 
 //
 
 
 package javaXSDclass;
 
+import java.math.BigInteger;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -25,7 +26,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="VOIIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="VOIIdentifier" type="{http://www.w3.org/2001/XMLSchema}integer"/>
  *         &lt;element name="OrganOrTissue" type="{https://www.irdbb-medirad.com}OrganOrTissue"/>
  *         &lt;element name="DICOMDataContainer" type="{https://www.irdbb-medirad.com}DICOMDataContainer" minOccurs="0"/>
  *         &lt;element name="NonDICOMDataContainer" type="{https://www.irdbb-medirad.com}NonDICOMDataContainer" minOccurs="0"/>
@@ -47,7 +48,7 @@ import javax.xml.bind.annotation.XmlType;
 public class VOI {
 
     @XmlElement(name = "VOIIdentifier", required = true)
-    protected String voiIdentifier;
+    protected BigInteger voiIdentifier;
     @XmlElement(name = "OrganOrTissue", required = true)
     @XmlSchemaType(name = "string")
     protected OrganOrTissue organOrTissue;
@@ -61,10 +62,10 @@ public class VOI {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link BigInteger }
      *     
      */
-    public String getVOIIdentifier() {
+    public BigInteger getVOIIdentifier() {
         return voiIdentifier;
     }
 
@@ -73,10 +74,10 @@ public class VOI {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link BigInteger }
      *     
      */
-    public void setVOIIdentifier(String value) {
+    public void setVOIIdentifier(BigInteger value) {
         this.voiIdentifier = value;
     }
 

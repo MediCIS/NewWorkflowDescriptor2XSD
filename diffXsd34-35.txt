@@ -1,0 +1,20 @@
+2c2
+< <!--VersionSchemas : 035-->
+---
+> <!--VersionSchemas : 034-->
+67a68,75
+> 	<xs:element name="PlanarCalibrationFactorReference" >
+> 		<xs:complexType>
+> 			<xs:sequence>
+> 			<xs:element name="PlanarCalibrationFactorDate" type="xs:string"/>
+> 			</xs:sequence>
+> 		</xs:complexType>
+> 	</xs:element>
+> 
+1381,1386d1388
+< 	<xs:complexType name="PlanarCalibrationFactorReference">
+< 		<xs:sequence>
+< 			<xs:element name="PlanarCalibrationFactorDate" type="xs:string"/>
+< 		</xs:sequence>
+< 	</xs:complexType>
+< 

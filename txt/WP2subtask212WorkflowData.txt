@@ -53,7 +53,7 @@ CalculationOfAbsorbedDosesInVOIs
 
 VOIIdentifierContainer
 {
- 1-string-VOIIdentifierUsed
+ 1-integer-VOIIdentifierUsed
 }
 
 AbsorbedDosePerVOITypeContainer
@@ -123,7 +123,7 @@ AbsorbedDosePerVOIType
  0,1-string-StatisticalSubCategory:mean/maximum/minimum/median/mode
  1-string-AbsorbedDoseValue
  1-string-AbsorbedDoseUnit:milligray per (milligray per (100 milliampere second))/milligray per (100 milliampere second)/milligray/milligray per (milligray per (1 milliampere second))
- 1-string-VOIIdentifier
+ 1-integer-VOIIdentifier
 }
 
 VoxelBasedDistributionOfAbsorbedDoseType
@@ -137,7 +137,7 @@ VoxelBasedDistributionOfAbsorbedDoseType
 
 VOI
 {
- 1-string-VOIIdentifier
+ 1-integer-VOIIdentifier
  1-string-OrganOrTissue:bone/bone surfaces/red bone marrow/bladder/breasts/left male breast/left female breast/right male breast/right female breast/colon/testes/left testis/right testis/ovaries/left ovary/right ovary/liver/lungs/left lung/right lung/esophagus/skin/stomach/thyroid/brain/salivary glands/parotid glands/left parotid gland/right parotid gland/submandibular glands/left submandibular gland/right submandibular gland/adrenals/extrathoracic region/gallbladder/heart/kidneys/left kidney/right kidney/lymphatic nodes/muscle/oral mucosa/pancreas/prostate/small intestine/spleen/thymus/uterus/air/body surface
  0,1-DICOMDataContainer-DICOMDataContainer
  0,1-NonDICOMDataContainer-NonDICOMDataContainer

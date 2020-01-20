@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 032-->
+<!--VersionSchemas : 038-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -29,17 +29,6 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 					<xs:element name="PlanarCalibrationWorkflow" type="irdbb:PlanarCalibrationWorkflow"/>
 						</xs:sequence>
 				</xs:complexType>
-
-	<xs:element name="ElementOfSPECTRecoveryCoefficientCurve" >
-		<xs:complexType>
-			<xs:sequence>
-			<xs:element name="RatioMeasuredActivityToTrueActivity" type="xs:float"/>
-			<xs:element name="HotInsertVolumeValue" type="xs:float"/>
-		<xs:element name="HotInsertVolumeUnit" type="irdbb:HotInsertVolumeUnit" />
-			<xs:element name="HotInsertIdentifier" type="xs:string"/>
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
 
 	<xs:complexType name="SPECTCTCalibrationWorkflow">
 		<xs:sequence>
@@ -137,7 +126,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="VOIIdentifierContainer">
 		<xs:sequence>
-			<xs:element name="VOIIdentifierUsed" type="xs:string"/>
+			<xs:element name="VOIIdentifierUsed" type="xs:integer"/>
 		</xs:sequence>
 	</xs:complexType>
 
@@ -378,7 +367,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="VOIInCT">
 		<xs:sequence>
-			<xs:element name="VOIIdentifier" type="xs:string"/>
+			<xs:element name="VOIIdentifier" type="xs:integer"/>
 			<xs:element name="VOIVolumeValue" type="xs:float"/>
 		<xs:element name="VOIVolumeUnit" type="irdbb:VOIVolumeUnit" />
 			<xs:element name="PhantomPartIdentifier" type="xs:string"/>
@@ -395,7 +384,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="VOIInSPECT">
 		<xs:sequence>
-			<xs:element name="VOIIdentifier" type="xs:string"/>
+			<xs:element name="VOIIdentifier" type="xs:integer"/>
 			<xs:element name="CountsInVOIValue" type="xs:float"/>
 		<xs:element name="CountsInVOIUnit" type="irdbb:CountsInVOIUnit" />
 			<xs:element name="PhantomPartIdentifier" type="xs:string"/>
@@ -455,6 +444,15 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:enumeration value="cubic centimeter"/>
 		</xs:restriction>
 	</xs:simpleType>
+
+	<xs:complexType name="ElementOfSPECTRecoveryCoefficientCurve">
+		<xs:sequence>
+			<xs:element name="RatioMeasuredActivityToTrueActivity" type="xs:float"/>
+			<xs:element name="HotInsertVolumeValue" type="xs:float"/>
+		<xs:element name="HotInsertVolumeUnit" type="irdbb:HotInsertVolumeUnit" />
+			<xs:element name="HotInsertIdentifier" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
 
 	<xs:complexType name="DICOMData">
 		<xs:sequence>

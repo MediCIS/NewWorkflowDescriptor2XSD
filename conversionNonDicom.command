@@ -6,6 +6,7 @@
 echo "$( dirname "${BASH_SOURCE[0]}" )"
 
 cd "$( dirname "${BASH_SOURCE[0]}" )"
+
 cp xsd/nonDicomFileSetDescriptor.xsd oldNonDicomFileSetDescriptor.xsd
 
 # 0 Coherence Test
@@ -51,3 +52,13 @@ diff xsd/nonDicomFileSetDescriptor.xsd oldNonDicomFileSetDescriptor.xsd > diffXs
 
 # 6 Compress XSD simple Files
 tar -czf XSD_$version.tar.gz xsdSimple/*
+
+# 6 Compress XSD simple Files
+cd schemas
+java -jar ../xsdvi/dist/lib/xsdvi.jar ../xsdSimple/WP2subtask212WorkflowData.xsd
+java -jar ../xsdvi/dist/lib/xsdvi.jar ../xsdSimple/calibrationWorkflow.xsd
+java -jar ../xsdvi/dist/lib/xsdvi.jar ../xsdSimple/Hybrid-DosimetryWorkflow.xsd
+java -jar ../xsdvi/dist/lib/xsdvi.jar ../xsdSimple/2D-DosimetryWorkflow.xsd
+java -jar ../xsdvi/dist/lib/xsdvi.jar ../xsdSimple/3D-DosimetrySlide2Workflow.xsd
+java -jar ../xsdvi/dist/lib/xsdvi.jar ../xsdSimple/3D-DosimetrySlide1Workflow.xsd
+java -jar ../xsdvi/dist/lib/xsdvi.jar ../xsd/nonDicomFileSetDescriptor.xsd

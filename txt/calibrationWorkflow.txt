@@ -102,7 +102,7 @@ SPECTSensitivityCalculation
 
 VOIIdentifierContainer
 {
- 1-string-VOIIdentifierUsed
+ 1-integer-VOIIdentifierUsed
 }
 
 SPECTRecoveryCoefficientCurveCalculation
@@ -258,7 +258,7 @@ ProcessExecutionContext
 
 VOIInCT
 {
- 1-string-VOIIdentifier
+ 1-integer-VOIIdentifier
  1-float-VOIVolumeValue
  1-string-VOIVolumeUnit:milliliter/cubic centimeter
  1-string-PhantomPartIdentifier
@@ -268,7 +268,7 @@ VOIInCT
 
 VOIInSPECT
 {
- 1-string-VOIIdentifier
+ 1-integer-VOIIdentifier
  1-float-CountsInVOIValue
  1-string-CountsInVOIUnit:counts
  1-string-PhantomPartIdentifier

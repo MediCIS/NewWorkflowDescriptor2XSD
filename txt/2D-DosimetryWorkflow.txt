@@ -209,7 +209,7 @@ RadioBiologicalCalculation
 
 VOIIdentifierUsedContainer
 {
-1,n-string-VOIIdentifier
+1,n-integer-VOIIdentifier
 }
 
 VoxelAbsorbedDoseMapIdentifierUsedContainer
@@ -272,7 +272,7 @@ ROI
  0,1-NonDICOMData-NonDICOMROIContainer
 }
 
-ActualPlanarCalibrationFactor-ActualPlanarCalibrationFactor
+ActualPlanarCalibrationFactor
 {
 // provided as an explicit value
  1-float-PlanarCalibrationFactorValue

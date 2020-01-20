@@ -2,12 +2,13 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.17 à 12:29:06 PM CET 
+// Généré le : 2020.01.20 à 09:37:33 AM CET 
 //
 
 
 package javaXSDclass;
 
+import java.math.BigInteger;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -25,7 +26,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
- *         &lt;element name="VOIIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="VOIIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
  *         &lt;element name="SegmentationIdentifier" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="PreAdministeredActivityUsed" type="{https://www.irdbb-medirad.com}AdministeredActivity"/>
@@ -58,7 +59,7 @@ public class TimeActivityCurveFitIn3DDosimetry {
     @XmlElement(name = "ProcessExecutionContext", required = true)
     protected ProcessExecutionContext processExecutionContext;
     @XmlElement(name = "VOIIdentifierUsed")
-    protected String voiIdentifierUsed;
+    protected BigInteger voiIdentifierUsed;
     @XmlElement(name = "SegmentationIdentifier")
     protected String segmentationIdentifier;
     @XmlElement(name = "TimePointIdentifierUsed")
@@ -103,10 +104,10 @@ public class TimeActivityCurveFitIn3DDosimetry {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link BigInteger }
      *     
      */
-    public String getVOIIdentifierUsed() {
+    public BigInteger getVOIIdentifierUsed() {
         return voiIdentifierUsed;
     }
 
@@ -115,10 +116,10 @@ public class TimeActivityCurveFitIn3DDosimetry {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link BigInteger }
      *     
      */
-    public void setVOIIdentifierUsed(String value) {
+    public void setVOIIdentifierUsed(BigInteger value) {
         this.voiIdentifierUsed = value;
     }
 

@@ -222,7 +222,7 @@ TimePointIdentifierContainer
 
 VOIIdentifierContainer
 {
- 1-string-VOIIdentifierUsed
+ 1-integer-VOIIdentifierUsed
 }
 
 AbsorbedDoseRateCalculationInHybridDosimetry
@@ -376,13 +376,13 @@ CountsPerVOIAtTimePoint
 {
  1-float-CountsValue
  1-string-CountsUnit:counts
- 1-string-VOIIdentifier
+ 1-integer-VOIIdentifier
  1-string-TimePointIdentifier
 }
 
 VOI
 {
- 1-string-VOIIdentifier
+ 1-integer-VOIIdentifier
  1-string-OrganOrTissue:bone/bone surfaces/red bone marrow/bladder/breasts/left male breast/left female breast/right male breast/right female breast/colon/testes/left testis/right testis/ovaries/left ovary/right ovary/liver/lungs/left lung/right lung/esophagus/skin/stomach/thyroid/brain/salivary glands/parotid glands/left parotid gland/right parotid gland/submandibular glands/left submandibular gland/right submandibular gland/adrenals/extrathoracic region/gallbladder/heart/kidneys/left kidney/right kidney/lymphatic nodes/muscle/oral mucosa/pancreas/prostate/small intestine/spleen/thymus/uterus/air/body surface
  0,1-DICOMDataContainer-DICOMDataContainer
  0,1-NonDICOMDataContainer-NonDICOMDataContainer
@@ -405,7 +405,7 @@ DataActivityPerVOIAtTimePointContainer
 
 VOIContainer
 {
- 1-string-VOIIdentifierUsed
+ 1-integer-VOIIdentifierUsed
 }
 
 ROI
@@ -448,7 +448,7 @@ DataActivityPerVOIAtTimePoint
 {
  1-float-DataActivityValue
  1-string-ActivityUnit:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
- 1-string-VOIIdentifier
+ 1-integer-VOIIdentifier
  1-string-TimePointIdentifier
 }
 
@@ -456,7 +456,7 @@ EnergyDepositionRatePerVOIAtTimePoint
 {
  1-float-EnergyDepositionRateValue
  1-string-EnergyDepositionRateUnit:joule per second/megaelectronvolt per second
- 1-string-VOIIdentifier
+ 1-integer-VOIIdentifier
  1-string-TimePointIdentifier
 }
 
@@ -471,21 +471,21 @@ PatientOrganMassInHybridDosimetry
 {
  1-float-PatientOrganMassValue
  1-string-PatientOrganMassUnit:gram/kilogram
- 1-string-VOIIdentifier
+ 1-integer-VOIIdentifier
 }
 
 MeanAbsorbedDoseRateInVOI
 {
  1-float-MeanAbsorbedDoseRateInVOIValue
  1-string-MeanAbsorbedDoseRateInVOIUnit:gray per second/milligray per second
- 1-string-VOIIdentifier
+ 1-integer-VOIIdentifier
 }
 
 MeanAbsorbedDoseInVOI
 {
  1-float-MeanAbsorbedDoseInVOIValue
  1-string-MeanAbsorbedDoseInVOIUnit:gray/milligray
- 1-string-VOIIdentifier
+ 1-integer-VOIIdentifier
 }
 
 TimeIntegratedActivityCoefficientPerROI

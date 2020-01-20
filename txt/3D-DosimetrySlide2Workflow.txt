@@ -246,13 +246,13 @@ CountsPerVOIAtTimePoint
 {
  1-float-CountsValue
  1-string-CountsUnit:counts
- 1-string-VOIIdentifier
+ 1-integer-VOIIdentifier
  1-string-TimePointIdentifier
 }
 
 VOI
 {
- 1-string-VOIIdentifier
+ 1-integer-VOIIdentifier
  1-string-OrganOrTissue:bone/bone surfaces/red bone marrow/bladder/breasts/left male breast/left female breast/right male breast/right female breast/colon/testes/left testis/right testis/ovaries/left ovary/right ovary/liver/lungs/left lung/right lung/esophagus/skin/stomach/thyroid/brain/salivary glands/parotid glands/left parotid gland/right parotid gland/submandibular glands/left submandibular gland/right submandibular gland/adrenals/extrathoracic region/gallbladder/heart/kidneys/left kidney/right kidney/lymphatic nodes/muscle/oral mucosa/pancreas/prostate/small intestine/spleen/thymus/uterus/air/body surface
  0,1-DICOMDataContainer-DICOMDataContainer
  0,1-NonDICOMDataContainer-NonDICOMDataContainer
@@ -266,7 +266,7 @@ DataActivityPerVOIAtTimePointContainer
 
 VOIIdentifierContainer
 {
- 1-string-VOIIdentifierUsed
+ 1-integer-VOIIdentifierUsed
 }
 
 DICOMDataContainer
@@ -300,7 +300,7 @@ ElementOfCTNumberCalibrationCurve
 
 VOIContainer
 {
- 1-string-VOIIdentifierUsed
+ 1-integer-VOIIdentifierUsed
 }
 
 
@@ -314,7 +314,7 @@ MassPerVOIAtTimePoint
 {
  1-float-MassValue
  1-string-MassUnit:gram/kilogram
- 1-string-VOIIdentifier
+ 1-integer-VOIIdentifier
  1-string-TimePointIdentifier
 }
 
@@ -322,7 +322,7 @@ DataActivityPerVOIAtTimePoint
 {
  1-float-DataActivityValue
  1-string-ActivityUnit:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
- 1-string-VOIIdentifier
+ 1-integer-VOIIdentifier
  1-string-TimePointIdentifier
 }
 
@@ -330,7 +330,7 @@ AbsorbedDoseRatePerVOIAtTimePoint
 {
  1-float-AbsorbedDoseRateValue
  1-string-AbsorbedDoseRateUnit:gray per second/milligray per second
- 1-string-VOIIdentifier
+ 1-integer-VOIIdentifier
  1-string-TimePointIdentifier
 }
 
@@ -339,7 +339,7 @@ AbsorbedDoseInVOI
  1-float-AbsorbedDoseInVOIValue
  1-string-AbsorbedDoseInVOIUnit:gray/milligray
  0,1-float-AbsorbedDoseInVOIUncertainty
- 1-string-VOIIdentifier
+ 1-integer-VOIIdentifier
 }
 
 KernelLimitForConvolutions

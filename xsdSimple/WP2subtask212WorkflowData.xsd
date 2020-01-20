@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 032-->
+<!--VersionSchemas : 038-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -79,7 +79,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="VOIIdentifierContainer">
 		<xs:sequence>
-			<xs:element name="VOIIdentifierUsed" type="xs:string"/>
+			<xs:element name="VOIIdentifierUsed" type="xs:integer"/>
 		</xs:sequence>
 	</xs:complexType>
 
@@ -187,7 +187,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:element name="StatisticalSubCategory" type="irdbb:StatisticalSubCategory" minOccurs="0" />
 			<xs:element name="AbsorbedDoseValue" type="xs:string"/>
 		<xs:element name="AbsorbedDoseUnit" type="irdbb:AbsorbedDoseUnit" />
-			<xs:element name="VOIIdentifier" type="xs:string"/>
+			<xs:element name="VOIIdentifier" type="xs:integer"/>
 		</xs:sequence>
 	</xs:complexType>
 
@@ -266,7 +266,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="VOI">
 		<xs:sequence>
-			<xs:element name="VOIIdentifier" type="xs:string"/>
+			<xs:element name="VOIIdentifier" type="xs:integer"/>
 		<xs:element name="OrganOrTissue" type="irdbb:OrganOrTissue" />
 			<xs:element name="DICOMDataContainer" type="irdbb:DICOMDataContainer" minOccurs="0" />
 			<xs:element name="NonDICOMDataContainer" type="irdbb:NonDICOMDataContainer" minOccurs="0" />

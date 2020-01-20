@@ -234,7 +234,9 @@ listeTypes=["DataActivityPerVOIAtTimePoint", "MeanAbsorbedDoseRateInROI", "VOIIn
             "VOIIdentifierContainer", "VOIcontainer", "AbsorbedDoseInVOIContainer",
             "TimeIntegratedActivityCoefficientPerROI", "TimeIntegratedActivityPerROI",
             "ElementOfCTNumberCalibrationCurve", "SPECTRecoveryCoefficientCurve", "VOIContainer",
-            "ROIIdentifierUsedContainer","VOIIdentifierUsedContainer", "ActivityUnit", "TimeUnit", "Segmentation" ]
+            "ROIIdentifierUsedContainer","VOIIdentifierUsedContainer", "ActivityUnit", "TimeUnit", "Segmentation",
+            "ElementOfSPECTRecoveryCoefficientCurve", "ActualPlanarCalibrationFactor", "TimeIntegratedActivityPerVOIContainer",
+            "ActualPlanarCalibrationFactor", "PlanarCalibrationFactorReference"]
 
 listeTypesRestricted=[]
 

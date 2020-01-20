@@ -1,0 +1,16 @@
+janv. 17, 2020 3:29:18 PM xsdvi.XsdVi main
+INFOS: The style will be embodied
+janv. 17, 2020 3:29:18 PM xsdvi.XsdVi main
+INFOS: Parsing /xsdSimple/*.xsd...
+janv. 17, 2020 3:29:18 PM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: schema_reference.4: Failed to read schema document '/xsdSimple/*.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>. (line: -1)
+janv. 17, 2020 3:29:18 PM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-fatal-error]: null (line: -1)
+janv. 17, 2020 3:30:12 PM xsdvi.XsdVi main
+INFOS: The style will be embodied
+janv. 17, 2020 3:30:12 PM xsdvi.XsdVi main
+INFOS: Parsing /xsdSimple/*.xsd...
+janv. 17, 2020 3:30:12 PM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: schema_reference.4: Failed to read schema document '/xsdSimple/*.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>. (line: -1)
+janv. 17, 2020 3:30:12 PM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-fatal-error]: null (line: -1)

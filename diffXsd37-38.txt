@@ -1,0 +1,76 @@
+2c2
+< <!--VersionSchemas : 038-->
+---
+> <!--VersionSchemas : 037-->
+184c184
+< 			<xs:element name="VOIIdentifierUsed" type="xs:integer"/>
+---
+> 			<xs:element name="VOIIdentifierUsed" type="xs:string"/>
+425c425
+< 			<xs:element name="VOIIdentifier" type="xs:integer"/>
+---
+> 			<xs:element name="VOIIdentifier" type="xs:string"/>
+442c442
+< 			<xs:element name="VOIIdentifier" type="xs:integer"/>
+---
+> 			<xs:element name="VOIIdentifier" type="xs:string"/>
+699c699
+< 			<xs:element name="VOIIdentifier" type="xs:integer"/>
+---
+> 			<xs:element name="VOIIdentifier" type="xs:string"/>
+778c778
+< 			<xs:element name="VOIIdentifier" type="xs:integer"/>
+---
+> 			<xs:element name="VOIIdentifier" type="xs:string"/>
+916c916
+< 			<xs:element name="VOIIdentifierUsed" type="xs:integer" minOccurs="0" />
+---
+> 			<xs:element name="VOIIdentifierUsed" type="xs:string" minOccurs="0" />
+929c929
+< 			<xs:element name="VOIIdentifierUsed" type="xs:integer"/>
+---
+> 			<xs:element name="VOIIdentifierUsed" type="xs:string"/>
+952c952
+< 			<xs:element name="VOIIdentifierUsed" type="xs:integer"/>
+---
+> 			<xs:element name="VOIIdentifierUsed" type="xs:string"/>
+1020c1020
+< 			<xs:element name="VOIIdentifier" type="xs:integer"/>
+---
+> 			<xs:element name="VOIIdentifier" type="xs:string"/>
+1046c1046
+< 			<xs:element name="VOIIdentifier" type="xs:integer"/>
+---
+> 			<xs:element name="VOIIdentifier" type="xs:string"/>
+1070c1070
+< 			<xs:element name="VOIIdentifier" type="xs:integer"/>
+---
+> 			<xs:element name="VOIIdentifier" type="xs:string"/>
+1078c1078
+< 			<xs:element name="VOIIdentifier" type="xs:integer"/>
+---
+> 			<xs:element name="VOIIdentifier" type="xs:string"/>
+1616c1616
+< 			<xs:element name="VOIIdentifier" type="xs:integer"/>
+---
+> 			<xs:element name="VOIIdentifier" type="xs:string"/>
+1625c1625
+< 			<xs:element name="VOIIdentifier" type="xs:integer"/>
+---
+> 			<xs:element name="VOIIdentifier" type="xs:string"/>
+1640c1640
+< 			<xs:element name="VOIIdentifier" type="xs:integer"/>
+---
+> 			<xs:element name="VOIIdentifier" type="xs:string"/>
+1655c1655
+< 			<xs:element name="VOIIdentifier" type="xs:integer"/>
+---
+> 			<xs:element name="VOIIdentifier" type="xs:string"/>
+1752c1752
+< 			<xs:element name="VOIIdentifier" type="xs:integer"/>
+---
+> 			<xs:element name="VOIIdentifier" type="xs:string"/>
+1768c1768
+< 			<xs:element name="VOIIdentifier" type="xs:integer"/>
+---
+> 			<xs:element name="VOIIdentifier" type="xs:string"/>

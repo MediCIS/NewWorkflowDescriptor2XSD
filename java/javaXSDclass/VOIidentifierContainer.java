@@ -2,12 +2,13 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.17 à 12:29:06 PM CET 
+// Généré le : 2020.01.20 à 09:37:33 AM CET 
 //
 
 
 package javaXSDclass;
 
+import java.math.BigInteger;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -24,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="VOIIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="VOIIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}integer"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -40,17 +41,17 @@ import javax.xml.bind.annotation.XmlType;
 public class VOIIdentifierContainer {
 
     @XmlElement(name = "VOIIdentifierUsed", required = true)
-    protected String voiIdentifierUsed;
+    protected BigInteger voiIdentifierUsed;
 
     /**
      * Obtient la valeur de la propriété voiIdentifierUsed.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link BigInteger }
      *     
      */
-    public String getVOIIdentifierUsed() {
+    public BigInteger getVOIIdentifierUsed() {
         return voiIdentifierUsed;
     }
 
@@ -59,10 +60,10 @@ public class VOIIdentifierContainer {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link BigInteger }
      *     
      */
-    public void setVOIIdentifierUsed(String value) {
+    public void setVOIIdentifierUsed(BigInteger value) {
         this.voiIdentifierUsed = value;
     }
 

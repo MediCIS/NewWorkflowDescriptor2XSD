@@ -2,12 +2,13 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.17 à 12:29:06 PM CET 
+// Généré le : 2020.01.20 à 09:37:33 AM CET 
 //
 
 
 package javaXSDclass;
 
+import java.math.BigInteger;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -27,7 +28,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="TimeIntegratedActivityCoefficientPerVOIValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
  *         &lt;element name="TimeUnit" type="{https://www.irdbb-medirad.com}TimeUnit"/>
- *         &lt;element name="VOIIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="VOIIdentifier" type="{http://www.w3.org/2001/XMLSchema}integer"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -50,7 +51,7 @@ public class TimeIntegratedActivityCoefficientPerVOI {
     @XmlSchemaType(name = "string")
     protected TimeUnit timeUnit;
     @XmlElement(name = "VOIIdentifier", required = true)
-    protected String voiIdentifier;
+    protected BigInteger voiIdentifier;
 
     /**
      * Obtient la valeur de la propriété timeIntegratedActivityCoefficientPerVOIValue.
@@ -97,10 +98,10 @@ public class TimeIntegratedActivityCoefficientPerVOI {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link BigInteger }
      *     
      */
-    public String getVOIIdentifier() {
+    public BigInteger getVOIIdentifier() {
         return voiIdentifier;
     }
 
@@ -109,10 +110,10 @@ public class TimeIntegratedActivityCoefficientPerVOI {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link BigInteger }
      *     
      */
-    public void setVOIIdentifier(String value) {
+    public void setVOIIdentifier(BigInteger value) {
         this.voiIdentifier = value;
     }
 

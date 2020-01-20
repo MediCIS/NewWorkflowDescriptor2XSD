@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 032-->
+<!--VersionSchemas : 038-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -36,23 +36,6 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:complexType>
 			<xs:sequence>
 			<xs:element name="NonDICOMDataContainer" type="irdbb:NonDICOMData" maxOccurs="unbounded" />
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
-
-	<xs:element name="ActualPlanarCalibrationFactor-ActualPlanarCalibrationFactor" >
-		<xs:complexType>
-			<xs:sequence>
-			<xs:element name="PlanarCalibrationFactorValue" type="xs:float"/>
-		<xs:element name="PlanarCalibrationFactorUnit" type="irdbb:PlanarCalibrationFactorUnit" />
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
-
-	<xs:element name="PlanarCalibrationFactorReference" >
-		<xs:complexType>
-			<xs:sequence>
-			<xs:element name="PlanarCalibrationFactorDate" type="xs:string"/>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -372,6 +355,19 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:enumeration value="counts per second per megabecquerel"/>
 		</xs:restriction>
 	</xs:simpleType>
+
+	<xs:complexType name="ActualPlanarCalibrationFactor">
+		<xs:sequence>
+			<xs:element name="PlanarCalibrationFactorValue" type="xs:float"/>
+		<xs:element name="PlanarCalibrationFactorUnit" type="irdbb:PlanarCalibrationFactorUnit" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="PlanarCalibrationFactorReference">
+		<xs:sequence>
+			<xs:element name="PlanarCalibrationFactorDate" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
 
 	<xs:simpleType name="ActivityUnit">
 		<xs:restriction base="xs:string">

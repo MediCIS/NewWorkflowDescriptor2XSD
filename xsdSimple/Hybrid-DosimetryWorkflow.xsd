@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 032-->
+<!--VersionSchemas : 038-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -36,7 +36,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:element name="VOI" >
 		<xs:complexType>
 			<xs:sequence>
-			<xs:element name="VOIIdentifier" type="xs:string"/>
+			<xs:element name="VOIIdentifier" type="xs:integer"/>
 		<xs:element name="OrganOrTissue" type="irdbb:OrganOrTissue" />
 			<xs:element name="DICOMDataContainer" type="irdbb:DICOMDataContainer" minOccurs="0" />
 			<xs:element name="NonDICOMDataContainer" type="irdbb:NonDICOMDataContainer" minOccurs="0" />
@@ -257,7 +257,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="VOIIdentifierContainer">
 		<xs:sequence>
-			<xs:element name="VOIIdentifierUsed" type="xs:string"/>
+			<xs:element name="VOIIdentifierUsed" type="xs:integer"/>
 		</xs:sequence>
 	</xs:complexType>
 
@@ -450,7 +450,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 			<xs:element name="CountsValue" type="xs:float"/>
 		<xs:element name="CountsUnit" type="irdbb:CountsUnit" />
-			<xs:element name="VOIIdentifier" type="xs:string"/>
+			<xs:element name="VOIIdentifier" type="xs:integer"/>
 			<xs:element name="TimePointIdentifier" type="xs:string"/>
 		</xs:sequence>
 	</xs:complexType>
@@ -530,7 +530,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="VOIContainer">
 		<xs:sequence>
-			<xs:element name="VOIIdentifierUsed" type="xs:string"/>
+			<xs:element name="VOIIdentifierUsed" type="xs:integer"/>
 		</xs:sequence>
 	</xs:complexType>
 
@@ -595,7 +595,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 			<xs:element name="DataActivityValue" type="xs:float"/>
 		<xs:element name="ActivityUnit" type="irdbb:ActivityUnit" />
-			<xs:element name="VOIIdentifier" type="xs:string"/>
+			<xs:element name="VOIIdentifier" type="xs:integer"/>
 			<xs:element name="TimePointIdentifier" type="xs:string"/>
 		</xs:sequence>
 	</xs:complexType>
@@ -611,7 +611,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 			<xs:element name="EnergyDepositionRateValue" type="xs:float"/>
 		<xs:element name="EnergyDepositionRateUnit" type="irdbb:EnergyDepositionRateUnit" />
-			<xs:element name="VOIIdentifier" type="xs:string"/>
+			<xs:element name="VOIIdentifier" type="xs:integer"/>
 			<xs:element name="TimePointIdentifier" type="xs:string"/>
 		</xs:sequence>
 	</xs:complexType>
@@ -634,7 +634,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 			<xs:element name="PatientOrganMassValue" type="xs:float"/>
 		<xs:element name="PatientOrganMassUnit" type="irdbb:PatientOrganMassUnit" />
-			<xs:element name="VOIIdentifier" type="xs:string"/>
+			<xs:element name="VOIIdentifier" type="xs:integer"/>
 		</xs:sequence>
 	</xs:complexType>
 
@@ -649,7 +649,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 			<xs:element name="MeanAbsorbedDoseRateInVOIValue" type="xs:float"/>
 		<xs:element name="MeanAbsorbedDoseRateInVOIUnit" type="irdbb:MeanAbsorbedDoseRateInVOIUnit" />
-			<xs:element name="VOIIdentifier" type="xs:string"/>
+			<xs:element name="VOIIdentifier" type="xs:integer"/>
 		</xs:sequence>
 	</xs:complexType>
 
@@ -664,7 +664,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 			<xs:element name="MeanAbsorbedDoseInVOIValue" type="xs:float"/>
 		<xs:element name="MeanAbsorbedDoseInVOIUnit" type="irdbb:MeanAbsorbedDoseInVOIUnit" />
-			<xs:element name="VOIIdentifier" type="xs:string"/>
+			<xs:element name="VOIIdentifier" type="xs:integer"/>
 		</xs:sequence>
 	</xs:complexType>
 

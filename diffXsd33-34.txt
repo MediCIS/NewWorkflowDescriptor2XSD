@@ -1,0 +1,60 @@
+2c2
+< <!--VersionSchemas : 034-->
+---
+> <!--VersionSchemas : 033-->
+40a41,51
+> 	<xs:element name="ElementOfSPECTRecoveryCoefficientCurve" >
+> 		<xs:complexType>
+> 			<xs:sequence>
+> 			<xs:element name="RatioMeasuredActivityToTrueActivity" type="xs:float"/>
+> 			<xs:element name="HotInsertVolumeValue" type="xs:float"/>
+> 		<xs:element name="HotInsertVolumeUnit" type="irdbb:HotInsertVolumeUnit" />
+> 			<xs:element name="HotInsertIdentifier" type="xs:string"/>
+> 			</xs:sequence>
+> 		</xs:complexType>
+> 	</xs:element>
+> 
+58a70,77
+> 	<xs:element name="TimeIntegratedActivityPerVOIContainer" >
+> 		<xs:complexType>
+> 			<xs:sequence>
+> 			<xs:element name="TimeIntegratedActivityPerVOI" type="irdbb:TimeIntegratedActivityPerVOI" maxOccurs="unbounded" />
+> 			</xs:sequence>
+> 		</xs:complexType>
+> 	</xs:element>
+> 
+67a87,95
+> 	<xs:element name="ActualPlanarCalibrationFactor-ActualPlanarCalibrationFactor" >
+> 		<xs:complexType>
+> 			<xs:sequence>
+> 			<xs:element name="PlanarCalibrationFactorValue" type="xs:float"/>
+> 		<xs:element name="PlanarCalibrationFactorUnit" type="irdbb:PlanarCalibrationFactorUnit" />
+> 			</xs:sequence>
+> 		</xs:complexType>
+> 	</xs:element>
+> 
+511,519d538
+< 	<xs:complexType name="ElementOfSPECTRecoveryCoefficientCurve">
+< 		<xs:sequence>
+< 			<xs:element name="RatioMeasuredActivityToTrueActivity" type="xs:float"/>
+< 			<xs:element name="HotInsertVolumeValue" type="xs:float"/>
+< 		<xs:element name="HotInsertVolumeUnit" type="irdbb:HotInsertVolumeUnit" />
+< 			<xs:element name="HotInsertIdentifier" type="xs:string"/>
+< 		</xs:sequence>
+< 	</xs:complexType>
+< 
+1090,1095d1108
+< 	<xs:complexType name="TimeIntegratedActivityPerVOIContainer">
+< 		<xs:sequence>
+< 			<xs:element name="TimeIntegratedActivityPerVOI" type="irdbb:TimeIntegratedActivityPerVOI" maxOccurs="unbounded" />
+< 		</xs:sequence>
+< 	</xs:complexType>
+< 
+1382,1388d1394
+< 	<xs:complexType name="ActualPlanarCalibrationFactor">
+< 		<xs:sequence>
+< 			<xs:element name="PlanarCalibrationFactorValue" type="xs:float"/>
+< 		<xs:element name="PlanarCalibrationFactorUnit" type="irdbb:PlanarCalibrationFactorUnit" />
+< 		</xs:sequence>
+< 	</xs:complexType>
+< 
