@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.20 à 01:54:35 PM CET 
+// Généré le : 2020.01.20 à 04:25:28 PM CET 
 //
 
 
@@ -30,6 +30,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="OrganOrTissue" type="{https://www.irdbb-medirad.com}OrganOrTissue"/>
  *         &lt;element name="DICOMDataContainer" type="{https://www.irdbb-medirad.com}DICOMDataContainer" minOccurs="0"/>
  *         &lt;element name="NonDICOMDataContainer" type="{https://www.irdbb-medirad.com}NonDICOMDataContainer" minOccurs="0"/>
+ *         &lt;element name="TimePointIdentifier" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -43,7 +44,8 @@ import javax.xml.bind.annotation.XmlType;
     "voiIdentifier",
     "organOrTissue",
     "dicomDataContainer",
-    "nonDICOMDataContainer"
+    "nonDICOMDataContainer",
+    "timePointIdentifier"
 })
 public class VOI {
 
@@ -56,6 +58,8 @@ public class VOI {
     protected DICOMDataContainer dicomDataContainer;
     @XmlElement(name = "NonDICOMDataContainer")
     protected NonDICOMDataContainer nonDICOMDataContainer;
+    @XmlElement(name = "TimePointIdentifier")
+    protected String timePointIdentifier;
 
     /**
      * Obtient la valeur de la propriété voiIdentifier.
@@ -151,6 +155,30 @@ public class VOI {
      */
     public void setNonDICOMDataContainer(NonDICOMDataContainer value) {
         this.nonDICOMDataContainer = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété timePointIdentifier.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getTimePointIdentifier() {
+        return timePointIdentifier;
+    }
+
+    /**
+     * Définit la valeur de la propriété timePointIdentifier.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setTimePointIdentifier(String value) {
+        this.timePointIdentifier = value;
     }
 
 }

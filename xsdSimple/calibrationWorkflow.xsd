@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 040-->
+<!--VersionSchemas : 041-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -479,6 +479,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:enumeration value="GIF format embedding imageJ contours"/>
 			<xs:enumeration value="NRRD format"/>
 			<xs:enumeration value="STL format"/>
+			<xs:enumeration value="HDF format"/>
 		</xs:restriction>
 	</xs:simpleType>
 

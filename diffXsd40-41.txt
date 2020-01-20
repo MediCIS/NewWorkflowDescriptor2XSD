@@ -1,0 +1,10 @@
+2c2
+< <!--VersionSchemas : 041-->
+---
+> <!--VersionSchemas : 040-->
+537d536
+< 			<xs:enumeration value="HDF format"/>
+783d781
+< 			<xs:element name="TimePointIdentifier" type="xs:string" minOccurs="0" />
+873d870
+< 			<xs:element name="RegistrationMatrixUsed" type="irdbb:NonDICOMDataContainer" minOccurs="0" />
