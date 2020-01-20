@@ -255,12 +255,12 @@ CountsPerROIAtTimePoint
 
 DICOMDataContainer
 {
- 1,n-DICOMData-DICOMContainer
+ 1,n-DICOMData-DICOMData
 }
 
 NonDICOMDataContainer
 {
- 1,n-NonDICOMData-NonDICOMDataContainer
+ 1,n-NonDICOMData-NonDICOMData
 }
 
 ROI

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 041-->
+<!--VersionSchemas : 042-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -55,7 +55,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="SPECTDataAcquisitionAndReconstruction">
 		<xs:sequence>
 			<xs:element name="SPECTAcqCTAcqAndReconstructionContainer" type="irdbb:SPECTAcqCTAcqAndReconstructionContainer"/>
-			<xs:element name="SPECTReconstructionContainer" type="irdbb:SPECTReconstructionContainer"/>
+			<xs:element name="SPECTReconstructionContainer" type="irdbb:SPECTReconstructionContainer" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 
@@ -361,13 +361,13 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="DICOMDataContainer">
 		<xs:sequence>
-			<xs:element name="DICOMContainer" type="irdbb:DICOMData" maxOccurs="unbounded" />
+			<xs:element name="DICOMData" type="irdbb:DICOMData" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 
 	<xs:complexType name="NonDICOMDataContainer">
 		<xs:sequence>
-			<xs:element name="NonDICOMDataContainer" type="irdbb:NonDICOMData" maxOccurs="unbounded" />
+			<xs:element name="NonDICOMData" type="irdbb:NonDICOMData" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 

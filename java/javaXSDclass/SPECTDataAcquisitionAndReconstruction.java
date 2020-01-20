@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.20 à 04:25:28 PM CET 
+// Généré le : 2020.01.20 à 05:46:25 PM CET 
 //
 
 
@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="SPECTAcqCTAcqAndReconstructionContainer" type="{https://www.irdbb-medirad.com}SPECTAcqCTAcqAndReconstructionContainer"/>
- *         &lt;element name="SPECTReconstructionContainer" type="{https://www.irdbb-medirad.com}SPECTReconstructionContainer"/>
+ *         &lt;element name="SPECTReconstructionContainer" type="{https://www.irdbb-medirad.com}SPECTReconstructionContainer" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -43,7 +43,7 @@ public class SPECTDataAcquisitionAndReconstruction {
 
     @XmlElement(name = "SPECTAcqCTAcqAndReconstructionContainer", required = true)
     protected SPECTAcqCTAcqAndReconstructionContainer spectAcqCTAcqAndReconstructionContainer;
-    @XmlElement(name = "SPECTReconstructionContainer", required = true)
+    @XmlElement(name = "SPECTReconstructionContainer")
     protected SPECTReconstructionContainer spectReconstructionContainer;
 
     /**

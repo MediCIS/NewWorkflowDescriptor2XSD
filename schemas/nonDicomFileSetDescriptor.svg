@@ -4920,7 +4920,7 @@ onmouseover='makeVisible("_1_1_1_4_1_1_1_4_1_1_1_3_1_1")' onmouseout='makeHidden
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMContainer</text>
+<text class='strong' x='5' y='27'>DICOMData</text>
 <text class='visible' x='5' y='41'>type: DICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -4999,7 +4999,7 @@ onmouseover='makeVisible("_1_1_1_4_1_1_1_4_1_1_1_4_1_1")' onmouseout='makeHidden
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>NonDICOMDataContainer</text>
+<text class='strong' x='5' y='27'>NonDICOMData</text>
 <text class='visible' x='5' y='41'>type: NonDICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -6482,6 +6482,7 @@ onmouseover='makeVisible("_1_1_1_5_1_1_1_2")' onmouseout='makeHidden("_1_1_1_5_1
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>SPECTReconstructionContainer</text>
 <text class='visible' x='5' y='41'>type: SPECTReconstructionContainer</text>
+<text x='5' y='59'>0..1</text>
 <line class='connection' id='p_1_1_1_5_1_1_1_2' x1='-35' y1='-758' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
 <use x='218' y='17' xlink:href='#minus' id='s_1_1_1_5_1_1_1_2' onclick='show("_1_1_1_5_1_1_1_2")'/>
@@ -7190,7 +7191,7 @@ onmouseover='makeVisible("_1_1_1_5_1_2_1_1_1_4_1_1")' onmouseout='makeHidden("_1
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMContainer</text>
+<text class='strong' x='5' y='27'>DICOMData</text>
 <text class='visible' x='5' y='41'>type: DICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -7268,7 +7269,7 @@ onmouseover='makeVisible("_1_1_1_5_1_2_1_1_1_5_1_1")' onmouseout='makeHidden("_1
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMContainer</text>
+<text class='strong' x='5' y='27'>DICOMData</text>
 <text class='visible' x='5' y='41'>type: DICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -7474,7 +7475,7 @@ onmouseover='makeVisible("_1_1_1_5_1_2_1_1_1_7_1_2_1_1_1_3_1_1")' onmouseout='ma
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMContainer</text>
+<text class='strong' x='5' y='27'>DICOMData</text>
 <text class='visible' x='5' y='41'>type: DICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -7553,7 +7554,7 @@ onmouseover='makeVisible("_1_1_1_5_1_2_1_1_1_7_1_2_1_1_1_4_1_1")' onmouseout='ma
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>NonDICOMDataContainer</text>
+<text class='strong' x='5' y='27'>NonDICOMData</text>
 <text class='visible' x='5' y='41'>type: NonDICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -7698,7 +7699,7 @@ onmouseover='makeVisible("_1_1_1_5_1_2_1_1_1_7_1_3_1_1")' onmouseout='makeHidden
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMContainer</text>
+<text class='strong' x='5' y='27'>DICOMData</text>
 <text class='visible' x='5' y='41'>type: DICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -7778,7 +7779,7 @@ onmouseover='makeVisible("_1_1_1_5_1_2_1_1_1_7_1_4_1_1")' onmouseout='makeHidden
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>NonDICOMDataContainer</text>
+<text class='strong' x='5' y='27'>NonDICOMData</text>
 <text class='visible' x='5' y='41'>type: NonDICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -7909,7 +7910,7 @@ onmouseover='makeVisible("_1_1_1_5_1_2_1_1_1_8_1_1")' onmouseout='makeHidden("_1
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMContainer</text>
+<text class='strong' x='5' y='27'>DICOMData</text>
 <text class='visible' x='5' y='41'>type: DICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -7988,7 +7989,7 @@ onmouseover='makeVisible("_1_1_1_5_1_2_1_1_1_9_1_1")' onmouseout='makeHidden("_1
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMContainer</text>
+<text class='strong' x='5' y='27'>DICOMData</text>
 <text class='visible' x='5' y='41'>type: DICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -8067,7 +8068,7 @@ onmouseover='makeVisible("_1_1_1_5_1_2_1_1_1_10_1_1")' onmouseout='makeHidden("_
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>NonDICOMDataContainer</text>
+<text class='strong' x='5' y='27'>NonDICOMData</text>
 <text class='visible' x='5' y='41'>type: NonDICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -8198,7 +8199,7 @@ onmouseover='makeVisible("_1_1_1_5_1_2_1_1_1_11_1_1")' onmouseout='makeHidden("_
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>NonDICOMDataContainer</text>
+<text class='strong' x='5' y='27'>NonDICOMData</text>
 <text class='visible' x='5' y='41'>type: NonDICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -8329,7 +8330,7 @@ onmouseover='makeVisible("_1_1_1_5_1_2_1_1_1_12_1_1")' onmouseout='makeHidden("_
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>NonDICOMDataContainer</text>
+<text class='strong' x='5' y='27'>NonDICOMData</text>
 <text class='visible' x='5' y='41'>type: NonDICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -8461,7 +8462,7 @@ onmouseover='makeVisible("_1_1_1_5_1_2_1_1_1_13_1_1")' onmouseout='makeHidden("_
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>NonDICOMDataContainer</text>
+<text class='strong' x='5' y='27'>NonDICOMData</text>
 <text class='visible' x='5' y='41'>type: NonDICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -8924,7 +8925,7 @@ onmouseover='makeVisible("_1_1_1_5_1_3_1_1_1_7_1_1")' onmouseout='makeHidden("_1
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>NonDICOMDataContainer</text>
+<text class='strong' x='5' y='27'>NonDICOMData</text>
 <text class='visible' x='5' y='41'>type: NonDICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -9708,7 +9709,7 @@ onmouseover='makeVisible("_1_1_1_5_1_5_1_4_1_1")' onmouseout='makeHidden("_1_1_1
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>NonDICOMDataContainer</text>
+<text class='strong' x='5' y='27'>NonDICOMData</text>
 <text class='visible' x='5' y='41'>type: NonDICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -10768,7 +10769,7 @@ onmouseover='makeVisible("_1_1_1_6_1_1_1_1_1_3_1_3_1_1")' onmouseout='makeHidden
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMContainer</text>
+<text class='strong' x='5' y='27'>DICOMData</text>
 <text class='visible' x='5' y='41'>type: DICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -11313,7 +11314,7 @@ onmouseover='makeVisible("_1_1_1_6_1_1_1_1_1_4_1_3_1_1")' onmouseout='makeHidden
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMContainer</text>
+<text class='strong' x='5' y='27'>DICOMData</text>
 <text class='visible' x='5' y='41'>type: DICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -11753,7 +11754,7 @@ onmouseover='makeVisible("_1_1_1_6_1_1_1_1_1_4_1_8_1_1")' onmouseout='makeHidden
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMContainer</text>
+<text class='strong' x='5' y='27'>DICOMData</text>
 <text class='visible' x='5' y='41'>type: DICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -14527,7 +14528,7 @@ onmouseover='makeVisible("_1_1_1_7_1_1_1_3_1_3_1_1")' onmouseout='makeHidden("_1
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMContainer</text>
+<text class='strong' x='5' y='27'>DICOMData</text>
 <text class='visible' x='5' y='41'>type: DICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -15072,7 +15073,7 @@ onmouseover='makeVisible("_1_1_1_7_1_1_1_4_1_3_1_1")' onmouseout='makeHidden("_1
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMContainer</text>
+<text class='strong' x='5' y='27'>DICOMData</text>
 <text class='visible' x='5' y='41'>type: DICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -15512,7 +15513,7 @@ onmouseover='makeVisible("_1_1_1_7_1_1_1_4_1_8_1_1")' onmouseout='makeHidden("_1
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMContainer</text>
+<text class='strong' x='5' y='27'>DICOMData</text>
 <text class='visible' x='5' y='41'>type: DICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -17362,7 +17363,7 @@ onmouseover='makeVisible("_1_1_1_7_1_2_1_4_1_7_1_1")' onmouseout='makeHidden("_1
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>NonDICOMDataContainer</text>
+<text class='strong' x='5' y='27'>NonDICOMData</text>
 <text class='visible' x='5' y='41'>type: NonDICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -20442,6 +20443,7 @@ onmouseover='makeVisible("_1_1_1_8_1_1_1_2")' onmouseout='makeHidden("_1_1_1_8_1
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>SPECTReconstructionContainer</text>
 <text class='visible' x='5' y='41'>type: SPECTReconstructionContainer</text>
+<text x='5' y='59'>0..1</text>
 <line class='connection' id='p_1_1_1_8_1_1_1_2' x1='-35' y1='-758' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
 <use x='218' y='17' xlink:href='#minus' id='s_1_1_1_8_1_1_1_2' onclick='show("_1_1_1_8_1_1_1_2")'/>
@@ -21419,7 +21421,7 @@ onmouseover='makeVisible("_1_1_1_8_1_2_1_1_1_8_1_2_1_1_1_3_1_1")' onmouseout='ma
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMContainer</text>
+<text class='strong' x='5' y='27'>DICOMData</text>
 <text class='visible' x='5' y='41'>type: DICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -21498,7 +21500,7 @@ onmouseover='makeVisible("_1_1_1_8_1_2_1_1_1_8_1_2_1_1_1_4_1_1")' onmouseout='ma
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>NonDICOMDataContainer</text>
+<text class='strong' x='5' y='27'>NonDICOMData</text>
 <text class='visible' x='5' y='41'>type: NonDICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -21643,7 +21645,7 @@ onmouseover='makeVisible("_1_1_1_8_1_2_1_1_1_8_1_3_1_1")' onmouseout='makeHidden
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMContainer</text>
+<text class='strong' x='5' y='27'>DICOMData</text>
 <text class='visible' x='5' y='41'>type: DICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -21723,7 +21725,7 @@ onmouseover='makeVisible("_1_1_1_8_1_2_1_1_1_8_1_4_1_1")' onmouseout='makeHidden
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>NonDICOMDataContainer</text>
+<text class='strong' x='5' y='27'>NonDICOMData</text>
 <text class='visible' x='5' y='41'>type: NonDICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -21853,7 +21855,7 @@ onmouseover='makeVisible("_1_1_1_8_1_2_1_1_1_9_1_1")' onmouseout='makeHidden("_1
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMContainer</text>
+<text class='strong' x='5' y='27'>DICOMData</text>
 <text class='visible' x='5' y='41'>type: DICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -22340,7 +22342,7 @@ onmouseover='makeVisible("_1_1_1_8_1_2_1_2_1_7_1_1")' onmouseout='makeHidden("_1
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>NonDICOMDataContainer</text>
+<text class='strong' x='5' y='27'>NonDICOMData</text>
 <text class='visible' x='5' y='41'>type: NonDICOMData</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>

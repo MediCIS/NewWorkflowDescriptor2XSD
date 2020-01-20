@@ -1,0 +1,16 @@
+2c2
+< <!--VersionSchemas : 042-->
+---
+> <!--VersionSchemas : 041-->
+789c789
+< 			<xs:element name="DICOMData" type="irdbb:DICOMData" maxOccurs="unbounded" />
+---
+> 			<xs:element name="DICOMContainer" type="irdbb:DICOMData" maxOccurs="unbounded" />
+795c795
+< 			<xs:element name="NonDICOMData" type="irdbb:NonDICOMData" maxOccurs="unbounded" />
+---
+> 			<xs:element name="NonDICOMDataContainer" type="irdbb:NonDICOMData" maxOccurs="unbounded" />
+820c820
+< 			<xs:element name="SPECTReconstructionContainer" type="irdbb:SPECTReconstructionContainer" minOccurs="0" />
+---
+> 			<xs:element name="SPECTReconstructionContainer" type="irdbb:SPECTReconstructionContainer"/>

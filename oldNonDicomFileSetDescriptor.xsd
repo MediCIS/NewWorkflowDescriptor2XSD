@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 040-->
+<!--VersionSchemas : 041-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -534,6 +534,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:enumeration value="GIF format embedding imageJ contours"/>
 			<xs:enumeration value="NRRD format"/>
 			<xs:enumeration value="STL format"/>
+			<xs:enumeration value="HDF format"/>
 		</xs:restriction>
 	</xs:simpleType>
 
@@ -779,6 +780,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:element name="OrganOrTissue" type="irdbb:OrganOrTissue" />
 			<xs:element name="DICOMDataContainer" type="irdbb:DICOMDataContainer" minOccurs="0" />
 			<xs:element name="NonDICOMDataContainer" type="irdbb:NonDICOMDataContainer" minOccurs="0" />
+			<xs:element name="TimePointIdentifier" type="xs:string" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 
@@ -868,6 +870,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:element name="NonDICOMCTReconResampledOnCommonReferenceProduced" type="irdbb:NonDICOMDataContainer" minOccurs="0" />
 			<xs:element name="NonDICOMNMTomoReconResampledOnCommonReferenceProduced" type="irdbb:NonDICOMDataContainer" minOccurs="0" />
 			<xs:element name="DensityImageProduced" type="irdbb:NonDICOMDataContainer" minOccurs="0" />
+			<xs:element name="RegistrationMatrixUsed" type="irdbb:NonDICOMDataContainer" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 

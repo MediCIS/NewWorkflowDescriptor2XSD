@@ -11,7 +11,7 @@ ThreeDimDosimetrySlide2workflow
 SPECTDataAcquisitionAndReconstruction
 {
  1-SPECTAcqCTAcqAndReconstructionContainer-SPECTAcqCTAcqAndReconstructionContainer
- 1-SPECTReconstructionContainer-SPECTReconstructionContainer
+ 0,1-SPECTReconstructionContainer-SPECTReconstructionContainer
 }
 
 SPECTAcqCTAcqAndReconstructionContainer
@@ -272,12 +272,12 @@ VOIIdentifierContainer
 
 DICOMDataContainer
 {
- 1,n-DICOMData-DICOMContainer
+ 1,n-DICOMData-DICOMData
 }
 
 NonDICOMDataContainer
 {
- 1,n-NonDICOMData-NonDICOMDataContainer
+ 1,n-NonDICOMData-NonDICOMData
 }
 
 CTNumberCalibrationCurve
