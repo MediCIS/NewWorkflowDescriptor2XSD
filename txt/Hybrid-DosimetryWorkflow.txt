@@ -405,7 +405,7 @@ DataActivityPerVOIAtTimePointContainer
 
 VOIContainer
 {
- 1-integer-VOIIdentifierUsed
+ 1,n-integer-VOIIdentifierUsed
 }
 
 ROI

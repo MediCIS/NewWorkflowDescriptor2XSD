@@ -300,7 +300,7 @@ ElementOfCTNumberCalibrationCurve
 
 VOIContainer
 {
- 1-integer-VOIIdentifierUsed
+ 1,n-integer-VOIIdentifierUsed
 }
 
 
@@ -339,7 +339,7 @@ AbsorbedDoseInVOI
  1-float-AbsorbedDoseInVOIValue
  1-string-AbsorbedDoseInVOIUnit:gray/milligray
  0,1-float-AbsorbedDoseInVOIUncertainty
- 1-integer-VOIIdentifier
+ 1-VOIContainer-VOIIdentifierList
 }
 
 KernelLimitForConvolutions

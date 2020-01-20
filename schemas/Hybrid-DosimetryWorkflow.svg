@@ -3727,6 +3727,7 @@ onmouseover='makeVisible("_1_2_1_3_1_2_1_3_1_7_1_1")' onmouseout='makeHidden("_1
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>VOIIdentifierUsed</text>
 <text class='visible' x='5' y='41'>type: integer</text>
+<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 

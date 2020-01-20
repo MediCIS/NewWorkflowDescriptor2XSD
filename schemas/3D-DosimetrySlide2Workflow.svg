@@ -3379,6 +3379,7 @@ onmouseover='makeVisible("_1_1_1_3_1_2_1_4_1_4_1_1")' onmouseout='makeHidden("_1
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>VOIIdentifierUsed</text>
 <text class='visible' x='5' y='41'>type: integer</text>
+<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -3825,10 +3826,37 @@ onmouseover='makeVisible("_1_1_1_3_1_3_1_5_1_1_1_4")' onmouseout='makeHidden("_1
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>VOIIdentifier</text>
-<text class='visible' x='5' y='41'>type: integer</text>
+<text class='strong' x='5' y='27'>VOIIdentifierList</text>
+<text class='visible' x='5' y='41'>type: VOIContainer</text>
 <line class='connection' id='p_1_1_1_3_1_3_1_5_1_1_1_4' x1='-35' y1='-190' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
+<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_3_1_3_1_5_1_1_1_4' onclick='show("_1_1_1_3_1_3_1_5_1_1_1_4")'/>
+</g>
+
+<g id='_1_1_1_3_1_3_1_5_1_1_1_4_1' class='box' transform='translate(2201,8357)'>
+<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
+<circle cx='42' cy='14' r='2'/>
+<circle cx='42' cy='23' r='2'/>
+<circle cx='42' cy='32' r='2'/>
+<text class='small' x='30' y='17'>1</text>
+<text class='small' x='30' y='26'>2</text>
+<text class='small' x='30' y='35'>3</text>
+<line x1='42' y1='14' x2='42' y2='32'/>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_3_1_3_1_5_1_1_1_4_1' onclick='show("_1_1_1_3_1_3_1_5_1_1_1_4_1")'/>
+</g>
+
+<g id='_1_1_1_3_1_3_1_5_1_1_1_4_1_1' class='box' transform='translate(2306,8357)'>
+<rect class='shadow' x='3' y='3' width='189' height='46'/>
+<rect class='boxelement' x='0' y='0' width='189' height='46'
+onmouseover='makeVisible("_1_1_1_3_1_3_1_5_1_1_1_4_1_1")' onmouseout='makeHidden("_1_1_1_3_1_3_1_5_1_1_1_4_1_1")'/>
+<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>VOIIdentifierUsed</text>
+<text class='visible' x='5' y='41'>type: integer</text>
+<text x='5' y='59'>1..∞</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
 <g id='_1_1_1_3_1_4' class='box' transform='translate(866,8428)'>

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 038-->
+<!--VersionSchemas : 040-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
