@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.20 à 05:46:25 PM CET 
+// Généré le : 2020.01.22 à 01:10:27 PM CET 
 //
 
 
@@ -310,6 +310,14 @@ public class ObjectFactory {
      */
     public EnergyDepositionRatePerVOIAtTimePoint createEnergyDepositionRatePerVOIAtTimePoint() {
         return new EnergyDepositionRatePerVOIAtTimePoint();
+    }
+
+    /**
+     * Create an instance of {@link VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer }
+     * 
+     */
+    public VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer createVOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer() {
+        return new VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer();
     }
 
     /**
@@ -881,6 +889,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link OrganMass }
+     * 
+     */
+    public OrganMass createOrganMass() {
+        return new OrganMass();
+    }
+
+    /**
      * Create an instance of {@link MeanAbsorbedDoseInROIcontainer }
      * 
      */
@@ -1230,6 +1246,14 @@ public class ObjectFactory {
      */
     public SPECTDataAcquisitionAndProcessing createSPECTDataAcquisitionAndProcessing() {
         return new SPECTDataAcquisitionAndProcessing();
+    }
+
+    /**
+     * Create an instance of {@link SumAndScalingAbsorbedDoseRateCalculationContainer }
+     * 
+     */
+    public SumAndScalingAbsorbedDoseRateCalculationContainer createSumAndScalingAbsorbedDoseRateCalculationContainer() {
+        return new SumAndScalingAbsorbedDoseRateCalculationContainer();
     }
 
     /**

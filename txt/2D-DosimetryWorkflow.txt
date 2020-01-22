@@ -24,7 +24,7 @@ PlanarDataAcquisitionAndProcessing
 
 TwoDimDosimetryViaAbsorbedDoseRateCalculation
 {
- &-AbsorbedDoseRateCalculationIn2DDosimetryContainer-AbsorbedDoseRateCalculationIn2DDosimetryContainer
+ 1-AbsorbedDoseRateCalculationIn2DDosimetryContainer-AbsorbedDoseRateCalculationIn2DDosimetryContainer
  1-TimeAbsorbedDoseCurveFit-TimeAbsorbedDoseCurveFit
 }
 

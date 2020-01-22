@@ -3,9 +3,56 @@
 ThreeDimDosimetrySlide2workflow
 {
  0,n-SPECTDataAcquisitionAndReconstruction-SPECTDataAcquisitionAndReconstruction
- 1,n-VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation-VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation
+ 1-VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer-VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer
  1-DoseRateCurveFitVOITimeIntegration-DoseRateCurveFitVOITimeIntegration
  0,1-RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry-RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry
+ 0,1-RegistrationVOISegmentationAndPropagationContainer-RegistrationVOISegmentationAndPropagationContainer
+ 0,1-AbsorbedDoseCalculationInVOI-AbsorbedDoseCalculationInVOI
+}
+
+AbsorbedDoseCalculationInVOI
+{
+ 1-ProcessExecutionContext-ProcessExecutionContext
+ 0,1-string-SegmentationIdentifierUsed
+// Corresponding Time Integrated Activity Coefficient per VOI need to be retrieved
+// Corresponding Time Integrated Activity per VOI need to be retrieved
+// 1-DICOMDataContainer-CTReconResampledOnCommonReferenceUsed
+// 1-DICOMDataContainer-NMTomoReconResampledOnCommonReferenceUsed
+ 1-string-AbsorbedDoseCalculationMethodUsed
+// to be provided as a closed list of possible values
+
+ 0,1-NonDICOMDataContainer-VoxelAbsorbedDoseMapProduced
+// 0,1-NonDICOMDataContainer-DensityImageUsed
+// 0,1-NonDICOMDataContainer-ActivityMapImageUsed
+ 0,1-AbsorbedDoseInVOIContainer-AbsorbedDoseInVOIContainer
+}
+
+RegistrationVOISegmentationAndPropagationContainer
+{
+ 1,n-RegistrationVOISegmentationAndPropagation-RegistrationVOISegmentationAndPropagation
+}
+
+RegistrationVOISegmentationAndPropagation
+{
+ 1-ProcessExecutionContext-ProcessExecutionContext
+ 1-string-TimePointIdentifierUsed
+ 0,1-CountsPerVOIAtTimePointProducedContainer-CountsPerVOIAtTimePointProducedContainer
+ 1-DICOMDataContainer-NMTomoReconUsed
+ 1-DICOMDataContainer-CTReconUsed
+ 1-string-ImageProcessingMethodMethodUsed
+// to be replaced by structured items
+ 1-Segmentation-Segmentation
+ 0,1-DICOMDataContainer-CTReconResampledOnCommonReferenceProduced
+ 0,1-DICOMDataContainer-NMTomoReconResampledOnCommonReferenceProduced
+ 0,1-NonDICOMDataContainer-NonDICOMCTReconResampledOnCommonReferenceProduced
+ 0,1-NonDICOMDataContainer-NonDICOMNMTomoReconResampledOnCommonReferenceProduced
+ 0,1-NonDICOMDataContainer-DensityImageProduced
+ 0,1-NonDICOMDataContainer-RegistrationMatrixUsed
+}
+
+CountsPerVOIAtTimePointProducedContainer
+{
+ 1,n-CountsPerVOIAtTimePoint-CountsPerVOIAtTimePointProduced
 }
 
 SPECTDataAcquisitionAndReconstruction
@@ -48,12 +95,17 @@ SPECTReconstruction
  1-DICOMData-NMTomoReconProduced
 }
 
+VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer
+{
+ 1,n-VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation-VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation
+}
+
 VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation
 {
  1-VOISegmentationVOIMassDetermination-VOISegmentationVOIMassDetermination
- 1-VOIActivityDetermination-VOIActivityDetermination
+ 0,1-VOIActivityDetermination-VOIActivityDetermination
  1-EnergyDepositionRateCalculationIn3DDosimetry-EnergyDepositionRateCalculationIn3DDosimetry
- 1-SumAndScalingAbsorbedDoseRateCalculation-SumAndScalingAbsorbedDoseRateCalculation
+ 1-SumAndScalingAbsorbedDoseRateCalculationContainer-SumAndScalingAbsorbedDoseRateCalculationContainer
 }
 
 //Descriptions of Individual boxes
@@ -140,9 +192,9 @@ VOIActivityDetermination
 EnergyDepositionRateCalculationIn3DDosimetry
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1-VOIIdentifierContainer-VOIIdentifierUsed
+ 0,1-VOIIdentifierContainer-VOIIdentifierUsed
  1-string-TimePointIdentifierUsed
- 1-VOIIdentifierContainer-VOIUsed
+ 0,1-VOIIdentifierContainer-VOIUsed
 // Corresponding Mass Per VOI AtTimePoint need to be retrieved
 // Corresponding VOIs At TimePoint need to be retrieved
  1-DICOMData-CTReconResampledOnNMReferenceUsed
@@ -152,12 +204,16 @@ EnergyDepositionRateCalculationIn3DDosimetry
  1-NonDICOMData-ThreeDimEnergyDepositionRateMatrixAtTimePointProduced
 }
 
+SumAndScalingAbsorbedDoseRateCalculationContainer
+{
+ 1,n-SumAndScalingAbsorbedDoseRateCalculation-SumAndScalingAbsorbedDoseRateCalculation
+}
+
 SumAndScalingAbsorbedDoseRateCalculation
 {
  1-ProcessExecutionContext-ProcessExecutionContext
  1-VOIIdentifierContainer-VOIIdentifierUsed
  1-string-TimePointIdentifierUsed
- 0,1-VOIContainer-VOIUsed
  0,1-string-SegmentationUsed
 // Corresponding Mass Per VOI AtTimePoint need to be retrieved
 // Corresponding VOIs AtTimePoint need to be retrieved
@@ -257,13 +313,19 @@ VOI
  0,1-DICOMDataContainer-DICOMDataContainer
  0,1-NonDICOMDataContainer-NonDICOMDataContainer
  0,1-string-TimePointIdentifier
+ 0,1-OrganMass-OrganMass
+}
+
+OrganMass
+{
+ 1-float-OrganMassValue
+ 1-String-OrganMassUnit:gram/kilogram
 }
 
 DataActivityPerVOIAtTimePointContainer
 {
  1,n-DataActivityPerVOIAtTimePoint-DataActivityPerVOIAtTimePointProduced
 }
-
 
 VOIIdentifierContainer
 {
@@ -303,7 +365,6 @@ VOIContainer
 {
  1,n-integer-VOIIdentifierUsed
 }
-
 
 SPECTRecoveryCoefficientCurve
 {
@@ -374,4 +435,3 @@ FileNameList
 {
  1,n-string-NonDICOMDataFileName
 }
-

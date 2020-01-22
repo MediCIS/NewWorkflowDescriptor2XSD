@@ -7,7 +7,7 @@ ThreeDimDosimetrySlide1workflow
  1-VOIActivityDeterminationContainer-VOIActivityDeterminationContainer
  1-TimeActivityCurveFitIn3DDosimetryContainer-TimeActivityCurveFitIn3DDosimetryContainer
  1-AbsorbedDoseCalculationInVOI-AbsorbedDoseCalculationInVOI
- 1-RadioBiologicalCalculationIn3DSlide1Dosimetry-RadioBiologicalCalculationIn3DSlide1Dosimetry
+ 0,1-RadioBiologicalCalculationIn3DSlide1Dosimetry-RadioBiologicalCalculationIn3DSlide1Dosimetry
 }
 
 TimeActivityCurveFitIn3DDosimetryContainer
@@ -239,8 +239,15 @@ VOI
  0,1-DICOMDataContainer-DICOMDataContainer
  0,1-NonDICOMDataContainer-NonDICOMDataContainer
  0,1-string-TimePointIdentifier
+ 0,1-OrganMass-OrganMass
 }
 
+OrganMass
+{
+ 1-float-OrganMassValue
+ 1-String-OrganMassUnit:gram/kilogram
+}
+    
 DICOMDataContainer
 {
  1,n-DICOMData-DICOMData
@@ -298,7 +305,6 @@ AbsorbedDoseInVOI
  0,1-float-AbsorbedDoseInVOIUncertainty
  1-VOIContainer-VOIIdentifierList
 }
-
 
 TimeIntegratedActivityCoefficientPerVOI
 // i.e. residence time

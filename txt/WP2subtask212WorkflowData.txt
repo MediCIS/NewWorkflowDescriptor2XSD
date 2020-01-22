@@ -142,6 +142,13 @@ VOI
  0,1-DICOMDataContainer-DICOMDataContainer
  0,1-NonDICOMDataContainer-NonDICOMDataContainer
  0,1-string-TimePointIdentifier
+ 0,1-OrganMass-OrganMass
+}
+
+OrganMass
+{
+ 1-float-OrganMassValue
+ 1-String-OrganMassUnit:gram/kilogram
 }
 
 DICOMDataContainer

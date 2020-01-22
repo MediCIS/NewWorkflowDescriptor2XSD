@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.20 à 05:46:25 PM CET 
+// Généré le : 2020.01.22 à 01:10:27 PM CET 
 //
 
 
@@ -31,6 +31,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="DICOMDataContainer" type="{https://www.irdbb-medirad.com}DICOMDataContainer" minOccurs="0"/>
  *         &lt;element name="NonDICOMDataContainer" type="{https://www.irdbb-medirad.com}NonDICOMDataContainer" minOccurs="0"/>
  *         &lt;element name="TimePointIdentifier" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="OrganMass" type="{https://www.irdbb-medirad.com}OrganMass" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -45,7 +46,8 @@ import javax.xml.bind.annotation.XmlType;
     "organOrTissue",
     "dicomDataContainer",
     "nonDICOMDataContainer",
-    "timePointIdentifier"
+    "timePointIdentifier",
+    "organMass"
 })
 public class VOI {
 
@@ -60,6 +62,8 @@ public class VOI {
     protected NonDICOMDataContainer nonDICOMDataContainer;
     @XmlElement(name = "TimePointIdentifier")
     protected String timePointIdentifier;
+    @XmlElement(name = "OrganMass")
+    protected OrganMass organMass;
 
     /**
      * Obtient la valeur de la propriété voiIdentifier.
@@ -179,6 +183,30 @@ public class VOI {
      */
     public void setTimePointIdentifier(String value) {
         this.timePointIdentifier = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété organMass.
+     * 
+     * @return
+     *     possible object is
+     *     {@link OrganMass }
+     *     
+     */
+    public OrganMass getOrganMass() {
+        return organMass;
+    }
+
+    /**
+     * Définit la valeur de la propriété organMass.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link OrganMass }
+     *     
+     */
+    public void setOrganMass(OrganMass value) {
+        this.organMass = value;
     }
 
 }

@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.20 à 05:46:25 PM CET 
+// Généré le : 2020.01.22 à 01:10:27 PM CET 
 //
 
 
@@ -24,7 +24,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="AbsorbedDoseRateCalculationIn2DDosimetryContainer" type="{https://www.irdbb-medirad.com}AbsorbedDoseRateCalculationIn2DDosimetryContainer" minOccurs="0"/>
+ *         &lt;element name="AbsorbedDoseRateCalculationIn2DDosimetryContainer" type="{https://www.irdbb-medirad.com}AbsorbedDoseRateCalculationIn2DDosimetryContainer"/>
  *         &lt;element name="TimeAbsorbedDoseCurveFit" type="{https://www.irdbb-medirad.com}TimeAbsorbedDoseCurveFit"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -41,7 +41,7 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class TwoDimDosimetryViaAbsorbedDoseRateCalculation {
 
-    @XmlElement(name = "AbsorbedDoseRateCalculationIn2DDosimetryContainer")
+    @XmlElement(name = "AbsorbedDoseRateCalculationIn2DDosimetryContainer", required = true)
     protected AbsorbedDoseRateCalculationIn2DDosimetryContainer absorbedDoseRateCalculationIn2DDosimetryContainer;
     @XmlElement(name = "TimeAbsorbedDoseCurveFit", required = true)
     protected TimeAbsorbedDoseCurveFit timeAbsorbedDoseCurveFit;

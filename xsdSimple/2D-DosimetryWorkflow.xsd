@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 042-->
+<!--VersionSchemas : 045-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -58,7 +58,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="TwoDimDosimetryViaAbsorbedDoseRateCalculation">
 		<xs:sequence>
-			<xs:element name="AbsorbedDoseRateCalculationIn2DDosimetryContainer" type="irdbb:AbsorbedDoseRateCalculationIn2DDosimetryContainer" minOccurs="0" />
+			<xs:element name="AbsorbedDoseRateCalculationIn2DDosimetryContainer" type="irdbb:AbsorbedDoseRateCalculationIn2DDosimetryContainer"/>
 			<xs:element name="TimeAbsorbedDoseCurveFit" type="irdbb:TimeAbsorbedDoseCurveFit"/>
 		</xs:sequence>
 	</xs:complexType>

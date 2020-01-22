@@ -50,8 +50,9 @@ def readFile(path):
                     key=key.replace("       ","")
                     key=key.replace("        ","")
                     key=key.replace("        ","")
-                    dico[key.replace("\n","")]=content
-                    contentList.append(content)
+                    if len(content)>0:
+                        dico[key.replace("\n","")]=content
+                        contentList.append(content)
                     content=""
                 key=line
     
@@ -236,7 +237,9 @@ listeTypes=["DataActivityPerVOIAtTimePoint", "MeanAbsorbedDoseRateInROI", "VOIIn
             "ElementOfCTNumberCalibrationCurve", "SPECTRecoveryCoefficientCurve", "VOIContainer",
             "ROIIdentifierUsedContainer","VOIIdentifierUsedContainer", "ActivityUnit", "TimeUnit", "Segmentation",
             "ElementOfSPECTRecoveryCoefficientCurve", "ActualPlanarCalibrationFactor", "TimeIntegratedActivityPerVOIContainer",
-            "ActualPlanarCalibrationFactor", "PlanarCalibrationFactorReference"]
+            "ActualPlanarCalibrationFactor", "PlanarCalibrationFactorReference",
+            "RegistrationVOISegmentationAndPropagationContainer","AbsorbedDoseCalculationInVOI"
+            ]
 
 listeTypesRestricted=[]
 

@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.20 à 05:46:25 PM CET 
+// Généré le : 2020.01.22 à 01:10:27 PM CET 
 //
 
 
@@ -27,9 +27,11 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="SPECTDataAcquisitionAndReconstruction" type="{https://www.irdbb-medirad.com}SPECTDataAcquisitionAndReconstruction" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation" type="{https://www.irdbb-medirad.com}VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation" maxOccurs="unbounded"/>
+ *         &lt;element name="VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer" type="{https://www.irdbb-medirad.com}VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer"/>
  *         &lt;element name="DoseRateCurveFitVOITimeIntegration" type="{https://www.irdbb-medirad.com}DoseRateCurveFitVOITimeIntegration"/>
  *         &lt;element name="RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry" minOccurs="0"/>
+ *         &lt;element name="RegistrationVOISegmentationAndPropagationContainer" type="{https://www.irdbb-medirad.com}RegistrationVOISegmentationAndPropagationContainer" minOccurs="0"/>
+ *         &lt;element name="AbsorbedDoseCalculationInVOI" type="{https://www.irdbb-medirad.com}AbsorbedDoseCalculationInVOI" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -41,20 +43,26 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ThreeDimDosimetrySlide2workflow", propOrder = {
     "spectDataAcquisitionAndReconstruction",
-    "voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation",
+    "voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer",
     "doseRateCurveFitVOITimeIntegration",
-    "radioBiologicalCalculationInHybridOr3DSlide2Dosimetry"
+    "radioBiologicalCalculationInHybridOr3DSlide2Dosimetry",
+    "registrationVOISegmentationAndPropagationContainer",
+    "absorbedDoseCalculationInVOI"
 })
 public class ThreeDimDosimetrySlide2Workflow {
 
     @XmlElement(name = "SPECTDataAcquisitionAndReconstruction")
     protected List<SPECTDataAcquisitionAndReconstruction> spectDataAcquisitionAndReconstruction;
-    @XmlElement(name = "VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation", required = true)
-    protected List<VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation> voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation;
+    @XmlElement(name = "VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer", required = true)
+    protected VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer;
     @XmlElement(name = "DoseRateCurveFitVOITimeIntegration", required = true)
     protected DoseRateCurveFitVOITimeIntegration doseRateCurveFitVOITimeIntegration;
     @XmlElement(name = "RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry")
     protected RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry radioBiologicalCalculationInHybridOr3DSlide2Dosimetry;
+    @XmlElement(name = "RegistrationVOISegmentationAndPropagationContainer")
+    protected RegistrationVOISegmentationAndPropagationContainer registrationVOISegmentationAndPropagationContainer;
+    @XmlElement(name = "AbsorbedDoseCalculationInVOI")
+    protected AbsorbedDoseCalculationInVOI absorbedDoseCalculationInVOI;
 
     /**
      * Gets the value of the spectDataAcquisitionAndReconstruction property.
@@ -86,32 +94,27 @@ public class ThreeDimDosimetrySlide2Workflow {
     }
 
     /**
-     * Gets the value of the voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation property.
+     * Obtient la valeur de la propriété voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getVOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation }
-     * 
-     * 
+     * @return
+     *     possible object is
+     *     {@link VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer }
+     *     
      */
-    public List<VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation> getVOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation() {
-        if (voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation == null) {
-            voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation = new ArrayList<VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation>();
-        }
-        return this.voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculation;
+    public VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer getVOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer() {
+        return voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer;
+    }
+
+    /**
+     * Définit la valeur de la propriété voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer }
+     *     
+     */
+    public void setVOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer(VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer value) {
+        this.voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer = value;
     }
 
     /**
@@ -160,6 +163,54 @@ public class ThreeDimDosimetrySlide2Workflow {
      */
     public void setRadioBiologicalCalculationInHybridOr3DSlide2Dosimetry(RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry value) {
         this.radioBiologicalCalculationInHybridOr3DSlide2Dosimetry = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété registrationVOISegmentationAndPropagationContainer.
+     * 
+     * @return
+     *     possible object is
+     *     {@link RegistrationVOISegmentationAndPropagationContainer }
+     *     
+     */
+    public RegistrationVOISegmentationAndPropagationContainer getRegistrationVOISegmentationAndPropagationContainer() {
+        return registrationVOISegmentationAndPropagationContainer;
+    }
+
+    /**
+     * Définit la valeur de la propriété registrationVOISegmentationAndPropagationContainer.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link RegistrationVOISegmentationAndPropagationContainer }
+     *     
+     */
+    public void setRegistrationVOISegmentationAndPropagationContainer(RegistrationVOISegmentationAndPropagationContainer value) {
+        this.registrationVOISegmentationAndPropagationContainer = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété absorbedDoseCalculationInVOI.
+     * 
+     * @return
+     *     possible object is
+     *     {@link AbsorbedDoseCalculationInVOI }
+     *     
+     */
+    public AbsorbedDoseCalculationInVOI getAbsorbedDoseCalculationInVOI() {
+        return absorbedDoseCalculationInVOI;
+    }
+
+    /**
+     * Définit la valeur de la propriété absorbedDoseCalculationInVOI.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link AbsorbedDoseCalculationInVOI }
+     *     
+     */
+    public void setAbsorbedDoseCalculationInVOI(AbsorbedDoseCalculationInVOI value) {
+        this.absorbedDoseCalculationInVOI = value;
     }
 
 }

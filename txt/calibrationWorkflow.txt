@@ -153,10 +153,8 @@ ROIIdentifierContainer
  1,n-string-ROIIdentifier
 }
 
-
 //Descriptions of Input-Output types
 //-----------------------------------
-
 
 DensityPhantom
 {
@@ -304,7 +302,7 @@ SPECTRecoveryCoefficientCurveInCalibration
 
 ElementOfSPECTRecoveryCoefficientCurveContainer
 {
-1,n-ElementOfSPECTRecoveryCoefficientCurve-ElementOfSPECTRecoveryCoefficientCurve
+ 1,n-ElementOfSPECTRecoveryCoefficientCurve-ElementOfSPECTRecoveryCoefficientCurve
 }
 
 ElementOfSPECTRecoveryCoefficientCurve
