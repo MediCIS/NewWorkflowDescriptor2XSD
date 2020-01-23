@@ -14,12 +14,12 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:element name="PatientId" type="xs:string"/>
 
 				<!--xmlRootElements-->
-				<xs:element name="CalibrationWorkflow" type="irdbb:CalibrationWorkflow" />
-				<xs:element name="WP2subtask212WorkflowData" type="irdbb:WP2subtask212WorkflowData" />
-				<xs:element name="ThreeDimDosimetrySlide1workflow" type="irdbb:ThreeDimDosimetrySlide1workflow" />
-				<xs:element name="TwoDimDosimetryworkflow" type="irdbb:TwoDimDosimetryworkflow" />
-				<xs:element name="HybridDosimetryworkflow" type="irdbb:HybridDosimetryworkflow" />
-				<xs:element name="ThreeDimDosimetrySlide2workflow" type="irdbb:ThreeDimDosimetrySlide2workflow" />
+				<xs:element name="CalibrationWorkflow" type="irdbb:CalibrationWorkflow" minOccurs="0" />
+				<xs:element name="WP2subtask212WorkflowData" type="irdbb:WP2subtask212WorkflowData" minOccurs="0" />
+				<xs:element name="ThreeDimDosimetrySlide1workflow" type="irdbb:ThreeDimDosimetrySlide1workflow" minOccurs="0" />
+				<xs:element name="TwoDimDosimetryworkflow" type="irdbb:TwoDimDosimetryworkflow" minOccurs="0" />
+				<xs:element name="HybridDosimetryworkflow" type="irdbb:HybridDosimetryworkflow" minOccurs="0" />
+				<xs:element name="ThreeDimDosimetrySlide2workflow" type="irdbb:ThreeDimDosimetrySlide2workflow" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 

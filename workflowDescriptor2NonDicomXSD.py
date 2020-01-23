@@ -180,7 +180,7 @@ def generateComplexType(name, sousObj):
     return xsdString
 
 def generateRootType(name):
-    return '\t\t\t\t<xs:element name="'+name+'" type="irdbb:'+name+'" />\n'
+    return '\t\t\t\t<xs:element name="'+name+'" type="irdbb:'+name+'" minOccurs="0" />\n'
 
 def generateComplexRoot(name, sousObj):
     if choice==True:

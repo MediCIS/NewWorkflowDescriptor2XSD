@@ -27,38 +27,38 @@ version=$(($(cat $fileVersion) + 1))
 
 echo "Nouvelle Version : ""$version"
 echo "Ancienne Version : ""$oldVersion"
-echo "$version" > "$fileVersion"
+#echo "$version" > "$fileVersion"
 
 # 2 Conversion txt to single xsd
 ./workflowDescriptor2NonDicomXSD.py ./txt $version
-
-# 3 Conversion xsd to javaClass
-cd java
-for i in  ../xsd/*.xsd
-do
-xjc -readOnly -p javaXSDclass $i
-done
-
-# 4 Conversion txt to multiple xsd
-cd ../txt
-for i in *.txt
-do
-../workflowDescriptor2XSD.py "$i" ../xsdSimple/$i $version
-done
-
-# 5 Diff
-cd "$( dirname "${BASH_SOURCE[0]}" )"
-diff xsd/nonDicomFileSetDescriptor.xsd oldNonDicomFileSetDescriptor.xsd > diffXsd$oldVersion-$version.txt
-
-# 6 Compress XSD simple Files
-tar -czf XSD_$version.tar.gz xsdSimple/*
-
-# 6 Compress XSD simple Files
-cd schemas
-java -jar ../xsdvi/dist/lib/xsdvi.jar ../xsdSimple/WP2subtask212WorkflowData.xsd
-java -jar ../xsdvi/dist/lib/xsdvi.jar ../xsdSimple/calibrationWorkflow.xsd
-java -jar ../xsdvi/dist/lib/xsdvi.jar ../xsdSimple/Hybrid-DosimetryWorkflow.xsd
-java -jar ../xsdvi/dist/lib/xsdvi.jar ../xsdSimple/2D-DosimetryWorkflow.xsd
-java -jar ../xsdvi/dist/lib/xsdvi.jar ../xsdSimple/3D-DosimetrySlide2Workflow.xsd
-java -jar ../xsdvi/dist/lib/xsdvi.jar ../xsdSimple/3D-DosimetrySlide1Workflow.xsd
-java -jar ../xsdvi/dist/lib/xsdvi.jar ../xsd/nonDicomFileSetDescriptor.xsd
+#
+## 3 Conversion xsd to javaClass
+#cd java
+#for i in  ../xsd/*.xsd
+#do
+#xjc -readOnly -p javaXSDclass $i
+#done
+#
+## 4 Conversion txt to multiple xsd
+#cd ../txt
+#for i in *.txt
+#do
+#../workflowDescriptor2XSD.py "$i" ../xsdSimple/$i $version
+#done
+#
+## 5 Diff
+#cd "$( dirname "${BASH_SOURCE[0]}" )"
+#diff xsd/nonDicomFileSetDescriptor.xsd oldNonDicomFileSetDescriptor.xsd > diffXsd$oldVersion-$version.txt
+#
+## 6 Compress XSD simple Files
+#tar -czf XSD_$version.tar.gz xsdSimple/*
+#
+## 6 Compress XSD simple Files
+#cd schemas
+#java -jar ../xsdvi/dist/lib/xsdvi.jar ../xsdSimple/WP2subtask212WorkflowData.xsd
+#java -jar ../xsdvi/dist/lib/xsdvi.jar ../xsdSimple/calibrationWorkflow.xsd
+#java -jar ../xsdvi/dist/lib/xsdvi.jar ../xsdSimple/Hybrid-DosimetryWorkflow.xsd
+#java -jar ../xsdvi/dist/lib/xsdvi.jar ../xsdSimple/2D-DosimetryWorkflow.xsd
+#java -jar ../xsdvi/dist/lib/xsdvi.jar ../xsdSimple/3D-DosimetrySlide2Workflow.xsd
+#java -jar ../xsdvi/dist/lib/xsdvi.jar ../xsdSimple/3D-DosimetrySlide1Workflow.xsd
+#java -jar ../xsdvi/dist/lib/xsdvi.jar ../xsd/nonDicomFileSetDescriptor.xsd
