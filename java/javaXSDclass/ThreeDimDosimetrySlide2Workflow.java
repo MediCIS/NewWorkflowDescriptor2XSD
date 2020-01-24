@@ -2,14 +2,12 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.22 à 01:10:27 PM CET 
+// Généré le : 2020.01.24 à 10:52:28 AM CET 
 //
 
 
 package javaXSDclass;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -26,9 +24,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="SPECTDataAcquisitionAndReconstruction" type="{https://www.irdbb-medirad.com}SPECTDataAcquisitionAndReconstruction" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="SPECTDataAcquisitionAndReconstruction" type="{https://www.irdbb-medirad.com}SPECTDataAcquisitionAndReconstruction"/>
  *         &lt;element name="VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer" type="{https://www.irdbb-medirad.com}VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer"/>
- *         &lt;element name="DoseRateCurveFitVOITimeIntegration" type="{https://www.irdbb-medirad.com}DoseRateCurveFitVOITimeIntegration"/>
+ *         &lt;element name="DoseRateCurveFitVOITimeIntegrationContainer" type="{https://www.irdbb-medirad.com}DoseRateCurveFitVOITimeIntegrationContainer"/>
  *         &lt;element name="RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry" type="{https://www.irdbb-medirad.com}RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry" minOccurs="0"/>
  *         &lt;element name="RegistrationVOISegmentationAndPropagationContainer" type="{https://www.irdbb-medirad.com}RegistrationVOISegmentationAndPropagationContainer" minOccurs="0"/>
  *         &lt;element name="AbsorbedDoseCalculationInVOI" type="{https://www.irdbb-medirad.com}AbsorbedDoseCalculationInVOI" minOccurs="0"/>
@@ -44,19 +42,19 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "ThreeDimDosimetrySlide2workflow", propOrder = {
     "spectDataAcquisitionAndReconstruction",
     "voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer",
-    "doseRateCurveFitVOITimeIntegration",
+    "doseRateCurveFitVOITimeIntegrationContainer",
     "radioBiologicalCalculationInHybridOr3DSlide2Dosimetry",
     "registrationVOISegmentationAndPropagationContainer",
     "absorbedDoseCalculationInVOI"
 })
 public class ThreeDimDosimetrySlide2Workflow {
 
-    @XmlElement(name = "SPECTDataAcquisitionAndReconstruction")
-    protected List<SPECTDataAcquisitionAndReconstruction> spectDataAcquisitionAndReconstruction;
+    @XmlElement(name = "SPECTDataAcquisitionAndReconstruction", required = true)
+    protected SPECTDataAcquisitionAndReconstruction spectDataAcquisitionAndReconstruction;
     @XmlElement(name = "VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer", required = true)
     protected VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer voiSegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer;
-    @XmlElement(name = "DoseRateCurveFitVOITimeIntegration", required = true)
-    protected DoseRateCurveFitVOITimeIntegration doseRateCurveFitVOITimeIntegration;
+    @XmlElement(name = "DoseRateCurveFitVOITimeIntegrationContainer", required = true)
+    protected DoseRateCurveFitVOITimeIntegrationContainer doseRateCurveFitVOITimeIntegrationContainer;
     @XmlElement(name = "RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry")
     protected RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry radioBiologicalCalculationInHybridOr3DSlide2Dosimetry;
     @XmlElement(name = "RegistrationVOISegmentationAndPropagationContainer")
@@ -65,32 +63,27 @@ public class ThreeDimDosimetrySlide2Workflow {
     protected AbsorbedDoseCalculationInVOI absorbedDoseCalculationInVOI;
 
     /**
-     * Gets the value of the spectDataAcquisitionAndReconstruction property.
+     * Obtient la valeur de la propriété spectDataAcquisitionAndReconstruction.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the spectDataAcquisitionAndReconstruction property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getSPECTDataAcquisitionAndReconstruction().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link SPECTDataAcquisitionAndReconstruction }
-     * 
-     * 
+     * @return
+     *     possible object is
+     *     {@link SPECTDataAcquisitionAndReconstruction }
+     *     
      */
-    public List<SPECTDataAcquisitionAndReconstruction> getSPECTDataAcquisitionAndReconstruction() {
-        if (spectDataAcquisitionAndReconstruction == null) {
-            spectDataAcquisitionAndReconstruction = new ArrayList<SPECTDataAcquisitionAndReconstruction>();
-        }
-        return this.spectDataAcquisitionAndReconstruction;
+    public SPECTDataAcquisitionAndReconstruction getSPECTDataAcquisitionAndReconstruction() {
+        return spectDataAcquisitionAndReconstruction;
+    }
+
+    /**
+     * Définit la valeur de la propriété spectDataAcquisitionAndReconstruction.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link SPECTDataAcquisitionAndReconstruction }
+     *     
+     */
+    public void setSPECTDataAcquisitionAndReconstruction(SPECTDataAcquisitionAndReconstruction value) {
+        this.spectDataAcquisitionAndReconstruction = value;
     }
 
     /**
@@ -118,27 +111,27 @@ public class ThreeDimDosimetrySlide2Workflow {
     }
 
     /**
-     * Obtient la valeur de la propriété doseRateCurveFitVOITimeIntegration.
+     * Obtient la valeur de la propriété doseRateCurveFitVOITimeIntegrationContainer.
      * 
      * @return
      *     possible object is
-     *     {@link DoseRateCurveFitVOITimeIntegration }
+     *     {@link DoseRateCurveFitVOITimeIntegrationContainer }
      *     
      */
-    public DoseRateCurveFitVOITimeIntegration getDoseRateCurveFitVOITimeIntegration() {
-        return doseRateCurveFitVOITimeIntegration;
+    public DoseRateCurveFitVOITimeIntegrationContainer getDoseRateCurveFitVOITimeIntegrationContainer() {
+        return doseRateCurveFitVOITimeIntegrationContainer;
     }
 
     /**
-     * Définit la valeur de la propriété doseRateCurveFitVOITimeIntegration.
+     * Définit la valeur de la propriété doseRateCurveFitVOITimeIntegrationContainer.
      * 
      * @param value
      *     allowed object is
-     *     {@link DoseRateCurveFitVOITimeIntegration }
+     *     {@link DoseRateCurveFitVOITimeIntegrationContainer }
      *     
      */
-    public void setDoseRateCurveFitVOITimeIntegration(DoseRateCurveFitVOITimeIntegration value) {
-        this.doseRateCurveFitVOITimeIntegration = value;
+    public void setDoseRateCurveFitVOITimeIntegrationContainer(DoseRateCurveFitVOITimeIntegrationContainer value) {
+        this.doseRateCurveFitVOITimeIntegrationContainer = value;
     }
 
     /**

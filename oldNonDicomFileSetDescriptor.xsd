@@ -14,12 +14,12 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:element name="PatientId" type="xs:string"/>
 
 				<!--xmlRootElements-->
-				<xs:element name="CalibrationWorkflow" type="irdbb:CalibrationWorkflow" />
-				<xs:element name="WP2subtask212WorkflowData" type="irdbb:WP2subtask212WorkflowData" />
-				<xs:element name="ThreeDimDosimetrySlide1workflow" type="irdbb:ThreeDimDosimetrySlide1workflow" />
-				<xs:element name="TwoDimDosimetryworkflow" type="irdbb:TwoDimDosimetryworkflow" />
-				<xs:element name="HybridDosimetryworkflow" type="irdbb:HybridDosimetryworkflow" />
-				<xs:element name="ThreeDimDosimetrySlide2workflow" type="irdbb:ThreeDimDosimetrySlide2workflow" />
+				<xs:element name="CalibrationWorkflow" type="irdbb:CalibrationWorkflow" minOccurs="0" />
+				<xs:element name="WP2subtask212WorkflowData" type="irdbb:WP2subtask212WorkflowData" minOccurs="0" />
+				<xs:element name="ThreeDimDosimetrySlide1workflow" type="irdbb:ThreeDimDosimetrySlide1workflow" minOccurs="0" />
+				<xs:element name="TwoDimDosimetryworkflow" type="irdbb:TwoDimDosimetryworkflow" minOccurs="0" />
+				<xs:element name="HybridDosimetryworkflow" type="irdbb:HybridDosimetryworkflow" minOccurs="0" />
+				<xs:element name="ThreeDimDosimetrySlide2workflow" type="irdbb:ThreeDimDosimetrySlide2workflow" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 
@@ -77,7 +77,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 			<xs:complexType name="ThreeDimDosimetrySlide2workflow">
 				<xs:sequence>
-					<xs:element name="SPECTDataAcquisitionAndReconstruction" type="irdbb:SPECTDataAcquisitionAndReconstruction" minOccurs="0" maxOccurs="unbounded" />
+					<xs:element name="SPECTDataAcquisitionAndReconstruction" type="irdbb:SPECTDataAcquisitionAndReconstruction"/>
 					<xs:element name="VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer" type="irdbb:VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer"/>
 					<xs:element name="DoseRateCurveFitVOITimeIntegration" type="irdbb:DoseRateCurveFitVOITimeIntegration"/>
 					<xs:element name="RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry" type="irdbb:RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry" minOccurs="0" />
@@ -1749,7 +1749,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:element name="VOIIdentifierUsed" type="irdbb:VOIIdentifierContainer"/>
 			<xs:element name="TimePointIdentifierUsed" type="xs:string"/>
 			<xs:element name="SegmentationUsed" type="xs:string" minOccurs="0" />
-			<xs:element name="ThreeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed" type="xs:string"/>
+			<xs:element name="ThreeDimEnergyDepositionRateMatrixAtTimePointUsed" type="irdbb:NonDICOMData"/>
 			<xs:element name="AbsorbedDoseRatePerVOIAtTimePointProduced" type="irdbb:AbsorbedDoseRatePerVOIAtTimePointContainer"/>
 		</xs:sequence>
 	</xs:complexType>

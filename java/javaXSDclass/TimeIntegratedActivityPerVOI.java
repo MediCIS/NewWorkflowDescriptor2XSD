@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.22 à 01:10:27 PM CET 
+// Généré le : 2020.01.24 à 10:52:28 AM CET 
 //
 
 
@@ -27,7 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="ResidenceTimePerVOIValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
  *         &lt;element name="TimeIntegratedActivityPerVOIUnit" type="{https://www.irdbb-medirad.com}TimeIntegratedActivityPerVOIUnit"/>
- *         &lt;element name="VOIIdentifierList" type="{https://www.irdbb-medirad.com}VOIContainer"/>
+ *         &lt;element name="VOIIdentifierList" type="{https://www.irdbb-medirad.com}VOIIdentifierContainer"/>
  *         &lt;element name="TimeUnit" type="{https://www.irdbb-medirad.com}TimeUnit"/>
  *         &lt;element name="TimeIntegratedActivityPerVOIValue" type="{http://www.w3.org/2001/XMLSchema}float"/>
  *         &lt;element name="PKAssessmentMethodUsed" type="{https://www.irdbb-medirad.com}CurveFittingMethod"/>
@@ -56,7 +56,7 @@ public class TimeIntegratedActivityPerVOI {
     @XmlSchemaType(name = "string")
     protected TimeIntegratedActivityPerVOIUnit timeIntegratedActivityPerVOIUnit;
     @XmlElement(name = "VOIIdentifierList", required = true)
-    protected VOIContainer voiIdentifierList;
+    protected VOIIdentifierContainer voiIdentifierList;
     @XmlElement(name = "TimeUnit", required = true)
     @XmlSchemaType(name = "string")
     protected TimeUnit timeUnit;
@@ -110,10 +110,10 @@ public class TimeIntegratedActivityPerVOI {
      * 
      * @return
      *     possible object is
-     *     {@link VOIContainer }
+     *     {@link VOIIdentifierContainer }
      *     
      */
-    public VOIContainer getVOIIdentifierList() {
+    public VOIIdentifierContainer getVOIIdentifierList() {
         return voiIdentifierList;
     }
 
@@ -122,10 +122,10 @@ public class TimeIntegratedActivityPerVOI {
      * 
      * @param value
      *     allowed object is
-     *     {@link VOIContainer }
+     *     {@link VOIIdentifierContainer }
      *     
      */
-    public void setVOIIdentifierList(VOIContainer value) {
+    public void setVOIIdentifierList(VOIIdentifierContainer value) {
         this.voiIdentifierList = value;
     }
 

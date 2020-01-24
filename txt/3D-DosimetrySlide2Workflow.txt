@@ -2,12 +2,17 @@
 //-------------------------
 ThreeDimDosimetrySlide2workflow
 {
- 0,n-SPECTDataAcquisitionAndReconstruction-SPECTDataAcquisitionAndReconstruction
+ 1-SPECTDataAcquisitionAndReconstruction-SPECTDataAcquisitionAndReconstruction
  1-VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer-VOISegmentationEnergyDepositionCalculationAbsorbedDoseRateCalculationContainer
- 1-DoseRateCurveFitVOITimeIntegration-DoseRateCurveFitVOITimeIntegration
+ 1-DoseRateCurveFitVOITimeIntegrationContainer-DoseRateCurveFitVOITimeIntegrationContainer
  0,1-RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry-RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry
  0,1-RegistrationVOISegmentationAndPropagationContainer-RegistrationVOISegmentationAndPropagationContainer
  0,1-AbsorbedDoseCalculationInVOI-AbsorbedDoseCalculationInVOI
+}
+
+DoseRateCurveFitVOITimeIntegrationContainer
+{
+ 1,n-DoseRateCurveFitVOITimeIntegration-DoseRateCurveFitVOITimeIntegration
 }
 
 AbsorbedDoseCalculationInVOI
@@ -185,7 +190,7 @@ VOIActivityDetermination
 // how to refer to a value obtained in a calibration workflow?
  1-NMRelevantCalibrationReference-SPECTRecoveryCoefficientCurveReferenceUsed
 // how to refer to a SPECT Recovery Coefficient Curve obtained in a calibration workflow?
- 1-DataActivityPerVOIAtTimePointContainer-DataActivityPerVOIAtTimePointContainer
+ 0,1-DataActivityPerVOIAtTimePointContainer-DataActivityPerVOIAtTimePointContainer
  1-NonDICOMDataContainer-VoxelActivityMapProduced
 }
 
@@ -218,7 +223,7 @@ SumAndScalingAbsorbedDoseRateCalculation
 // Corresponding Mass Per VOI AtTimePoint need to be retrieved
 // Corresponding VOIs AtTimePoint need to be retrieved
 // Corresponding Data Activities per VOI At TimePoint need to be retrieved
- 1-string-ThreeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed
+ 1-NonDICOMData-ThreeDimEnergyDepositionRateMatrixAtTimePointUsed
  1-AbsorbedDoseRatePerVOIAtTimePointContainer-AbsorbedDoseRatePerVOIAtTimePointProduced
 }
 
@@ -361,11 +366,6 @@ ElementOfCTNumberCalibrationCurve
  0,1-string-MaterialIdentifier
 }
 
-VOIContainer
-{
- 1,n-integer-VOIIdentifierUsed
-}
-
 SPECTRecoveryCoefficientCurve
 {
 // how to represent this curve obtained in a calibration workflow?
@@ -401,7 +401,7 @@ AbsorbedDoseInVOI
  1-float-AbsorbedDoseInVOIValue
  1-string-AbsorbedDoseInVOIUnit:gray/milligray
  0,1-float-AbsorbedDoseInVOIUncertainty
- 1-VOIContainer-VOIIdentifierList
+ 1-VOIIdentifierContainer-VOIIdentifierList
 }
 
 KernelLimitForConvolutions

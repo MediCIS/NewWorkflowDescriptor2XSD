@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.22 à 01:10:27 PM CET 
+// Généré le : 2020.01.24 à 10:52:28 AM CET 
 //
 
 
@@ -550,6 +550,14 @@ public class ObjectFactory {
      */
     public AbsorbedDoseRateCalculationInHybridDosimetry createAbsorbedDoseRateCalculationInHybridDosimetry() {
         return new AbsorbedDoseRateCalculationInHybridDosimetry();
+    }
+
+    /**
+     * Create an instance of {@link DoseRateCurveFitVOITimeIntegrationContainer }
+     * 
+     */
+    public DoseRateCurveFitVOITimeIntegrationContainer createDoseRateCurveFitVOITimeIntegrationContainer() {
+        return new DoseRateCurveFitVOITimeIntegrationContainer();
     }
 
     /**
@@ -1142,14 +1150,6 @@ public class ObjectFactory {
      */
     public AbsorbedDoseRatePerVOIAtTimePointContainer createAbsorbedDoseRatePerVOIAtTimePointContainer() {
         return new AbsorbedDoseRatePerVOIAtTimePointContainer();
-    }
-
-    /**
-     * Create an instance of {@link VOIContainer }
-     * 
-     */
-    public VOIContainer createVOIContainer() {
-        return new VOIContainer();
     }
 
     /**

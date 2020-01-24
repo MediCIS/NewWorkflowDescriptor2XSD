@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.22 à 01:10:27 PM CET 
+// Généré le : 2020.01.24 à 10:52:28 AM CET 
 //
 
 
@@ -28,7 +28,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="VOIIdentifierUsed" type="{https://www.irdbb-medirad.com}VOIIdentifierContainer"/>
  *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="SegmentationUsed" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="ThreeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="ThreeDimEnergyDepositionRateMatrixAtTimePointUsed" type="{https://www.irdbb-medirad.com}NonDICOMData"/>
  *         &lt;element name="AbsorbedDoseRatePerVOIAtTimePointProduced" type="{https://www.irdbb-medirad.com}AbsorbedDoseRatePerVOIAtTimePointContainer"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -44,7 +44,7 @@ import javax.xml.bind.annotation.XmlType;
     "voiIdentifierUsed",
     "timePointIdentifierUsed",
     "segmentationUsed",
-    "threeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed",
+    "threeDimEnergyDepositionRateMatrixAtTimePointUsed",
     "absorbedDoseRatePerVOIAtTimePointProduced"
 })
 public class SumAndScalingAbsorbedDoseRateCalculation {
@@ -57,8 +57,8 @@ public class SumAndScalingAbsorbedDoseRateCalculation {
     protected String timePointIdentifierUsed;
     @XmlElement(name = "SegmentationUsed")
     protected String segmentationUsed;
-    @XmlElement(name = "ThreeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed", required = true)
-    protected String threeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed;
+    @XmlElement(name = "ThreeDimEnergyDepositionRateMatrixAtTimePointUsed", required = true)
+    protected NonDICOMData threeDimEnergyDepositionRateMatrixAtTimePointUsed;
     @XmlElement(name = "AbsorbedDoseRatePerVOIAtTimePointProduced", required = true)
     protected AbsorbedDoseRatePerVOIAtTimePointContainer absorbedDoseRatePerVOIAtTimePointProduced;
 
@@ -159,27 +159,27 @@ public class SumAndScalingAbsorbedDoseRateCalculation {
     }
 
     /**
-     * Obtient la valeur de la propriété threeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed.
+     * Obtient la valeur de la propriété threeDimEnergyDepositionRateMatrixAtTimePointUsed.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link NonDICOMData }
      *     
      */
-    public String getThreeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed() {
-        return threeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed;
+    public NonDICOMData getThreeDimEnergyDepositionRateMatrixAtTimePointUsed() {
+        return threeDimEnergyDepositionRateMatrixAtTimePointUsed;
     }
 
     /**
-     * Définit la valeur de la propriété threeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed.
+     * Définit la valeur de la propriété threeDimEnergyDepositionRateMatrixAtTimePointUsed.
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link NonDICOMData }
      *     
      */
-    public void setThreeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed(String value) {
-        this.threeDimEnergyDepositionRateMatrixAtTimePointIdentifierUsed = value;
+    public void setThreeDimEnergyDepositionRateMatrixAtTimePointUsed(NonDICOMData value) {
+        this.threeDimEnergyDepositionRateMatrixAtTimePointUsed = value;
     }
 
     /**

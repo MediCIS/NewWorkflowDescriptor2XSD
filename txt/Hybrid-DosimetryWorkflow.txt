@@ -157,7 +157,7 @@ RegistrationVOISegmentation
  1-string-RegistrationAndSegmentationMethodMethodUsed
 // to be replaced by structured items
  1-CountsPerVOIAtTimePointContainer-CountsPerVOIAtTimePointProduced
- 1-VOIContainer-VOIInSPECTProduced
+ 1-VOIIdentifierContainer-VOIInSPECTProduced
 // Is it in DICOM or nonDICOM ?
  1-DICOMData-CTReconResampledOnSPECTProduced
 }
@@ -178,7 +178,7 @@ VOIActivityDetermination
 // how to refer to a value obtained in a calibration workflow?
  1-NMRelevantCalibrationReference-SPECTRecoveryCoefficientCurveReferenceUsed
 // how to refer to a SPECT Recovery Coefficient Curve obtained in a calibration workflow?
- 1-DataActivityPerVOIAtTimePointContainer-DataActivityPerVOIAtTimePointContainer
+ 0,1-DataActivityPerVOIAtTimePointContainer-DataActivityPerVOIAtTimePointContainer
  1-NonDICOMDataContainer-VoxelActivityMapProduced
 }
 
@@ -411,10 +411,6 @@ DataActivityPerVOIAtTimePointContainer
  1,n-DataActivityPerVOIAtTimePoint-DataActivityPerVOIAtTimePointProduced
 }
 
-VOIContainer
-{
- 1,n-integer-VOIIdentifierUsed
-}
 
 ROI
 {

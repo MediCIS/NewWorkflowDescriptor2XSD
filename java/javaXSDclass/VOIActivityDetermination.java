@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.22 à 01:10:27 PM CET 
+// Généré le : 2020.01.24 à 10:52:28 AM CET 
 //
 
 
@@ -29,7 +29,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="TimePointIdentifierUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="SPECTCalibrationFactorReferenceUsed" type="{https://www.irdbb-medirad.com}NMRelevantCalibrationReference"/>
  *         &lt;element name="SPECTRecoveryCoefficientCurveReferenceUsed" type="{https://www.irdbb-medirad.com}NMRelevantCalibrationReference"/>
- *         &lt;element name="DataActivityPerVOIAtTimePointContainer" type="{https://www.irdbb-medirad.com}DataActivityPerVOIAtTimePointContainer"/>
+ *         &lt;element name="DataActivityPerVOIAtTimePointContainer" type="{https://www.irdbb-medirad.com}DataActivityPerVOIAtTimePointContainer" minOccurs="0"/>
  *         &lt;element name="VoxelActivityMapProduced" type="{https://www.irdbb-medirad.com}NonDICOMDataContainer"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -61,7 +61,7 @@ public class VOIActivityDetermination {
     protected NMRelevantCalibrationReference spectCalibrationFactorReferenceUsed;
     @XmlElement(name = "SPECTRecoveryCoefficientCurveReferenceUsed", required = true)
     protected NMRelevantCalibrationReference spectRecoveryCoefficientCurveReferenceUsed;
-    @XmlElement(name = "DataActivityPerVOIAtTimePointContainer", required = true)
+    @XmlElement(name = "DataActivityPerVOIAtTimePointContainer")
     protected DataActivityPerVOIAtTimePointContainer dataActivityPerVOIAtTimePointContainer;
     @XmlElement(name = "VoxelActivityMapProduced", required = true)
     protected NonDICOMDataContainer voxelActivityMapProduced;

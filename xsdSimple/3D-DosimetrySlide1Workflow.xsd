@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 045-->
+<!--VersionSchemas : 046-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -140,7 +140,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:element name="TimePointIdentifierUsed" type="xs:string"/>
 			<xs:element name="SPECTCalibrationFactorReferenceUsed" type="irdbb:NMRelevantCalibrationReference"/>
 			<xs:element name="SPECTRecoveryCoefficientCurveReferenceUsed" type="irdbb:NMRelevantCalibrationReference"/>
-			<xs:element name="DataActivityPerVOIAtTimePointContainer" type="irdbb:DataActivityPerVOIAtTimePointContainer"/>
+			<xs:element name="DataActivityPerVOIAtTimePointContainer" type="irdbb:DataActivityPerVOIAtTimePointContainer" minOccurs="0" />
 			<xs:element name="VoxelActivityMapProduced" type="irdbb:NonDICOMDataContainer"/>
 		</xs:sequence>
 	</xs:complexType>
@@ -162,12 +162,6 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:element name="PKAssessmentMethodUsed" type="irdbb:CurveFittingMethod" minOccurs="0" />
 			<xs:element name="TimeIntegratedActivityCoefficientPerVOIProduced" type="irdbb:TimeIntegratedActivityCoefficientPerVOI" minOccurs="0" />
 			<xs:element name="TimeIntegratedActivityPerVOIProduced" type="irdbb:TimeIntegratedActivityPerVOI"/>
-		</xs:sequence>
-	</xs:complexType>
-
-	<xs:complexType name="VOIContainer">
-		<xs:sequence>
-			<xs:element name="VOIIdentifierUsed" type="xs:integer" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 
@@ -459,7 +453,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:element name="AbsorbedDoseInVOIValue" type="xs:float"/>
 		<xs:element name="AbsorbedDoseInVOIUnit" type="irdbb:AbsorbedDoseInVOIUnit" />
 			<xs:element name="AbsorbedDoseInVOIUncertainty" type="xs:float" minOccurs="0" />
-			<xs:element name="VOIIdentifierList" type="irdbb:VOIContainer"/>
+			<xs:element name="VOIIdentifierList" type="irdbb:VOIIdentifierContainer"/>
 		</xs:sequence>
 	</xs:complexType>
 
@@ -488,7 +482,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 			<xs:element name="ResidenceTimePerVOIValue" type="xs:float"/>
 		<xs:element name="TimeIntegratedActivityPerVOIUnit" type="irdbb:TimeIntegratedActivityPerVOIUnit" />
-			<xs:element name="VOIIdentifierList" type="irdbb:VOIContainer"/>
+			<xs:element name="VOIIdentifierList" type="irdbb:VOIIdentifierContainer"/>
 		<xs:element name="TimeUnit" type="irdbb:TimeUnit" />
 			<xs:element name="TimeIntegratedActivityPerVOIValue" type="xs:float"/>
 			<xs:element name="PKAssessmentMethodUsed" type="irdbb:CurveFittingMethod"/>

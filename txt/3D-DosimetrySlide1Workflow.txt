@@ -115,7 +115,7 @@ VOIActivityDetermination
 // how to refer to a value obtained in a calibration workflow?
  1-NMRelevantCalibrationReference-SPECTRecoveryCoefficientCurveReferenceUsed
 // how to refer to a SPECT Recovery Coefficient Curve obtained in a calibration workflow?
- 1-DataActivityPerVOIAtTimePointContainer-DataActivityPerVOIAtTimePointContainer
+ 0,1-DataActivityPerVOIAtTimePointContainer-DataActivityPerVOIAtTimePointContainer
  1-NonDICOMDataContainer-VoxelActivityMapProduced
 }
 
@@ -137,11 +137,6 @@ TimeActivityCurveFitIn3DDosimetry
  0,1-TimeIntegratedActivityCoefficientPerVOI-TimeIntegratedActivityCoefficientPerVOIProduced
  1-TimeIntegratedActivityPerVOI-TimeIntegratedActivityPerVOIProduced
 // Is there one or n values for a VOI ?
-}
-
-VOIContainer
-{
- 1,n-integer-VOIIdentifierUsed
 }
 
 AbsorbedDoseCalculationInVOI
@@ -303,7 +298,7 @@ AbsorbedDoseInVOI
  1-float-AbsorbedDoseInVOIValue
  1-string-AbsorbedDoseInVOIUnit:gray/milligray
  0,1-float-AbsorbedDoseInVOIUncertainty
- 1-VOIContainer-VOIIdentifierList
+ 1-VOIIdentifierContainer-VOIIdentifierList
 }
 
 TimeIntegratedActivityCoefficientPerVOI
@@ -325,7 +320,7 @@ TimeIntegratedActivityPerVOI
 // not sure at all how cumulated activities are represented ??
  1-float-ResidenceTimePerVOIValue
  1-string-TimeIntegratedActivityPerVOIUnit:MegabecquerelXSecond/MegabecquerelXHour
- 1-VOIContainer-VOIIdentifierList
+ 1-VOIIdentifierContainer-VOIIdentifierList
  1-string-TimeUnit:seconds/minutes/hours/days/months/years
  1-float-TimeIntegratedActivityPerVOIValue
  1-CurveFittingMethod-PKAssessmentMethodUsed

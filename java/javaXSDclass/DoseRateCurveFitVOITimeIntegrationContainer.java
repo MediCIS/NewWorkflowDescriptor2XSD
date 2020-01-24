@@ -17,16 +17,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour ElementOfSPECTRecoveryCoefficientCurveContainer complex type.
+ * <p>Classe Java pour DoseRateCurveFitVOITimeIntegrationContainer complex type.
  * 
  * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
- * &lt;complexType name="ElementOfSPECTRecoveryCoefficientCurveContainer">
+ * &lt;complexType name="DoseRateCurveFitVOITimeIntegrationContainer">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="ElementOfSPECTRecoveryCoefficientCurve" type="{https://www.irdbb-medirad.com}ElementOfSPECTRecoveryCoefficientCurve" maxOccurs="unbounded"/>
+ *         &lt;element name="DoseRateCurveFitVOITimeIntegration" type="{https://www.irdbb-medirad.com}DoseRateCurveFitVOITimeIntegration" maxOccurs="unbounded"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,41 +36,41 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ElementOfSPECTRecoveryCoefficientCurveContainer", propOrder = {
-    "elementOfSPECTRecoveryCoefficientCurve"
+@XmlType(name = "DoseRateCurveFitVOITimeIntegrationContainer", propOrder = {
+    "doseRateCurveFitVOITimeIntegration"
 })
-public class ElementOfSPECTRecoveryCoefficientCurveContainer {
+public class DoseRateCurveFitVOITimeIntegrationContainer {
 
-    @XmlElement(name = "ElementOfSPECTRecoveryCoefficientCurve", required = true)
-    protected List<ElementOfSPECTRecoveryCoefficientCurve> elementOfSPECTRecoveryCoefficientCurve;
+    @XmlElement(name = "DoseRateCurveFitVOITimeIntegration", required = true)
+    protected List<DoseRateCurveFitVOITimeIntegration> doseRateCurveFitVOITimeIntegration;
 
     /**
-     * Gets the value of the elementOfSPECTRecoveryCoefficientCurve property.
+     * Gets the value of the doseRateCurveFitVOITimeIntegration property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the elementOfSPECTRecoveryCoefficientCurve property.
+     * This is why there is not a <CODE>set</CODE> method for the doseRateCurveFitVOITimeIntegration property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getElementOfSPECTRecoveryCoefficientCurve().add(newItem);
+     *    getDoseRateCurveFitVOITimeIntegration().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link ElementOfSPECTRecoveryCoefficientCurve }
+     * {@link DoseRateCurveFitVOITimeIntegration }
      * 
      * 
      */
-    public List<ElementOfSPECTRecoveryCoefficientCurve> getElementOfSPECTRecoveryCoefficientCurve() {
-        if (elementOfSPECTRecoveryCoefficientCurve == null) {
-            elementOfSPECTRecoveryCoefficientCurve = new ArrayList<ElementOfSPECTRecoveryCoefficientCurve>();
+    public List<DoseRateCurveFitVOITimeIntegration> getDoseRateCurveFitVOITimeIntegration() {
+        if (doseRateCurveFitVOITimeIntegration == null) {
+            doseRateCurveFitVOITimeIntegration = new ArrayList<DoseRateCurveFitVOITimeIntegration>();
         }
-        return this.elementOfSPECTRecoveryCoefficientCurve;
+        return this.doseRateCurveFitVOITimeIntegration;
     }
 
 }

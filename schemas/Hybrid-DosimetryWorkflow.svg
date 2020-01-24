@@ -3765,7 +3765,7 @@ onmouseover='makeVisible("_1_2_1_3_1_2_1_3_1_7")' onmouseout='makeHidden("_1_2_1
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>VOIInSPECTProduced</text>
-<text class='visible' x='5' y='41'>type: VOIContainer</text>
+<text class='visible' x='5' y='41'>type: VOIIdentifierContainer</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 <use x='188' y='17' xlink:href='#minus' id='s_1_2_1_3_1_2_1_3_1_7' onclick='show("_1_2_1_3_1_2_1_3_1_7")'/>
 </g>
@@ -3792,7 +3792,6 @@ onmouseover='makeVisible("_1_2_1_3_1_2_1_3_1_7_1_1")' onmouseout='makeHidden("_1
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>VOIIdentifierUsed</text>
 <text class='visible' x='5' y='41'>type: integer</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -4061,6 +4060,7 @@ onmouseover='makeVisible("_1_2_1_3_1_2_1_4_1_6")' onmouseout='makeHidden("_1_2_1
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>DataActivityPerVOIAtTimePointContainer</text>
 <text class='visible' x='5' y='41'>type: DataActivityPerVOIAtTimePointContainer</text>
+<text x='5' y='59'>0..1</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 <use x='278' y='17' xlink:href='#minus' id='s_1_2_1_3_1_2_1_4_1_6' onclick='show("_1_2_1_3_1_2_1_4_1_6")'/>
 </g>

@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.22 à 01:10:27 PM CET 
+// Généré le : 2020.01.24 à 10:52:28 AM CET 
 //
 
 
@@ -26,12 +26,12 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="ReferencedClinicalResearchStudy" type="{https://www.irdbb-medirad.com}ReferencedClinicalResearchStudy"/>
  *         &lt;element name="PatientId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="CalibrationWorkflow" type="{https://www.irdbb-medirad.com}CalibrationWorkflow"/>
- *         &lt;element name="WP2subtask212WorkflowData" type="{https://www.irdbb-medirad.com}WP2subtask212WorkflowData"/>
- *         &lt;element name="ThreeDimDosimetrySlide1workflow" type="{https://www.irdbb-medirad.com}ThreeDimDosimetrySlide1workflow"/>
- *         &lt;element name="TwoDimDosimetryworkflow" type="{https://www.irdbb-medirad.com}TwoDimDosimetryworkflow"/>
- *         &lt;element name="HybridDosimetryworkflow" type="{https://www.irdbb-medirad.com}HybridDosimetryworkflow"/>
- *         &lt;element name="ThreeDimDosimetrySlide2workflow" type="{https://www.irdbb-medirad.com}ThreeDimDosimetrySlide2workflow"/>
+ *         &lt;element name="CalibrationWorkflow" type="{https://www.irdbb-medirad.com}CalibrationWorkflow" minOccurs="0"/>
+ *         &lt;element name="WP2subtask212WorkflowData" type="{https://www.irdbb-medirad.com}WP2subtask212WorkflowData" minOccurs="0"/>
+ *         &lt;element name="ThreeDimDosimetrySlide1workflow" type="{https://www.irdbb-medirad.com}ThreeDimDosimetrySlide1workflow" minOccurs="0"/>
+ *         &lt;element name="TwoDimDosimetryworkflow" type="{https://www.irdbb-medirad.com}TwoDimDosimetryworkflow" minOccurs="0"/>
+ *         &lt;element name="HybridDosimetryworkflow" type="{https://www.irdbb-medirad.com}HybridDosimetryworkflow" minOccurs="0"/>
+ *         &lt;element name="ThreeDimDosimetrySlide2workflow" type="{https://www.irdbb-medirad.com}ThreeDimDosimetrySlide2workflow" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -57,17 +57,17 @@ public class NonDicomFileSetDescriptor {
     protected ReferencedClinicalResearchStudy referencedClinicalResearchStudy;
     @XmlElement(name = "PatientId", required = true)
     protected String patientId;
-    @XmlElement(name = "CalibrationWorkflow", required = true)
+    @XmlElement(name = "CalibrationWorkflow")
     protected CalibrationWorkflow calibrationWorkflow;
-    @XmlElement(name = "WP2subtask212WorkflowData", required = true)
+    @XmlElement(name = "WP2subtask212WorkflowData")
     protected WP2Subtask212WorkflowData wp2Subtask212WorkflowData;
-    @XmlElement(name = "ThreeDimDosimetrySlide1workflow", required = true)
+    @XmlElement(name = "ThreeDimDosimetrySlide1workflow")
     protected ThreeDimDosimetrySlide1Workflow threeDimDosimetrySlide1Workflow;
-    @XmlElement(name = "TwoDimDosimetryworkflow", required = true)
+    @XmlElement(name = "TwoDimDosimetryworkflow")
     protected TwoDimDosimetryworkflow twoDimDosimetryworkflow;
-    @XmlElement(name = "HybridDosimetryworkflow", required = true)
+    @XmlElement(name = "HybridDosimetryworkflow")
     protected HybridDosimetryworkflow hybridDosimetryworkflow;
-    @XmlElement(name = "ThreeDimDosimetrySlide2workflow", required = true)
+    @XmlElement(name = "ThreeDimDosimetrySlide2workflow")
     protected ThreeDimDosimetrySlide2Workflow threeDimDosimetrySlide2Workflow;
 
     /**
