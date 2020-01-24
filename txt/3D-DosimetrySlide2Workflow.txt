@@ -334,7 +334,7 @@ DataActivityPerVOIAtTimePointContainer
 
 VOIIdentifierContainer
 {
- 1-integer-VOIIdentifierUsed
+ 1,n-integer-VOIIdentifierUsed
 }
 
 DICOMDataContainer

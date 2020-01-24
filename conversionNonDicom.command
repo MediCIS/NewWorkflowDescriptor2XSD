@@ -27,7 +27,7 @@ version=$(($(cat $fileVersion) + 1))
 
 echo "Nouvelle Version : ""$version"
 echo "Ancienne Version : ""$oldVersion"
-#echo "$version" > "$fileVersion"
+echo "$version" > "$fileVersion"
 
 # 2 Conversion txt to single xsd
 ./workflowDescriptor2NonDicomXSD.py ./txt $version

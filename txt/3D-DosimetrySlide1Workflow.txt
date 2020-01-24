@@ -301,6 +301,11 @@ AbsorbedDoseInVOI
  1-VOIIdentifierContainer-VOIIdentifierList
 }
 
+VOIIdentifierContainer
+{
+ 1,n-integer-VOIIdentifierUsed
+}
+
 TimeIntegratedActivityCoefficientPerVOI
 // i.e. residence time
 {
