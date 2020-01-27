@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.01.24 à 11:13:55 AM CET 
+// Généré le : 2020.01.24 à 06:05:31 PM CET 
 //
 
 
@@ -28,6 +28,8 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="VOIIdentifierUsed" type="{https://www.irdbb-medirad.com}VOIIdentifierContainer"/>
  *         &lt;element name="TimePointIdentifierUsed" type="{https://www.irdbb-medirad.com}TimePointIdentifierUsedContainer"/>
  *         &lt;element name="PKAssessmentMethodUsed" type="{https://www.irdbb-medirad.com}CurveFittingMethod"/>
+ *         &lt;element name="PreAdministeredActivityUsed" type="{https://www.irdbb-medirad.com}AdministeredActivity"/>
+ *         &lt;element name="PostAdministeredActivityUsed" type="{https://www.irdbb-medirad.com}AdministeredActivity"/>
  *         &lt;element name="AbsorbedDoseInVOIProduced" type="{https://www.irdbb-medirad.com}AbsorbedDoseInVOIContainer"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -43,6 +45,8 @@ import javax.xml.bind.annotation.XmlType;
     "voiIdentifierUsed",
     "timePointIdentifierUsed",
     "pkAssessmentMethodUsed",
+    "preAdministeredActivityUsed",
+    "postAdministeredActivityUsed",
     "absorbedDoseInVOIProduced"
 })
 public class DoseRateCurveFitVOITimeIntegration {
@@ -55,6 +59,10 @@ public class DoseRateCurveFitVOITimeIntegration {
     protected TimePointIdentifierUsedContainer timePointIdentifierUsed;
     @XmlElement(name = "PKAssessmentMethodUsed", required = true)
     protected CurveFittingMethod pkAssessmentMethodUsed;
+    @XmlElement(name = "PreAdministeredActivityUsed", required = true)
+    protected AdministeredActivity preAdministeredActivityUsed;
+    @XmlElement(name = "PostAdministeredActivityUsed", required = true)
+    protected AdministeredActivity postAdministeredActivityUsed;
     @XmlElement(name = "AbsorbedDoseInVOIProduced", required = true)
     protected AbsorbedDoseInVOIContainer absorbedDoseInVOIProduced;
 
@@ -152,6 +160,54 @@ public class DoseRateCurveFitVOITimeIntegration {
      */
     public void setPKAssessmentMethodUsed(CurveFittingMethod value) {
         this.pkAssessmentMethodUsed = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété preAdministeredActivityUsed.
+     * 
+     * @return
+     *     possible object is
+     *     {@link AdministeredActivity }
+     *     
+     */
+    public AdministeredActivity getPreAdministeredActivityUsed() {
+        return preAdministeredActivityUsed;
+    }
+
+    /**
+     * Définit la valeur de la propriété preAdministeredActivityUsed.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link AdministeredActivity }
+     *     
+     */
+    public void setPreAdministeredActivityUsed(AdministeredActivity value) {
+        this.preAdministeredActivityUsed = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété postAdministeredActivityUsed.
+     * 
+     * @return
+     *     possible object is
+     *     {@link AdministeredActivity }
+     *     
+     */
+    public AdministeredActivity getPostAdministeredActivityUsed() {
+        return postAdministeredActivityUsed;
+    }
+
+    /**
+     * Définit la valeur de la propriété postAdministeredActivityUsed.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link AdministeredActivity }
+     *     
+     */
+    public void setPostAdministeredActivityUsed(AdministeredActivity value) {
+        this.postAdministeredActivityUsed = value;
     }
 
     /**

@@ -1,0 +1,16 @@
+2c2
+< <!--VersionSchemas : 050-->
+---
+> <!--VersionSchemas : 049-->
+528,533c528
+< 			<xs:enumeration value="voxel activity map"/>
+< 			<xs:enumeration value="3D Energy Deposition Rate Matrix"/>
+< 			<xs:enumeration value="NM Tomo Reconstruction"/>
+< 			<xs:enumeration value="CT Reconstruction"/>
+< 			<xs:enumeration value="Registration Matrix"/>
+< 			<xs:enumeration value="Density Image"/>
+---
+> 			<xs:enumeration value="volume"/>
+1774,1775d1768
+< 			<xs:element name="PreAdministeredActivityUsed" type="irdbb:AdministeredActivity"/>
+< 			<xs:element name="PostAdministeredActivityUsed" type="irdbb:AdministeredActivity"/>

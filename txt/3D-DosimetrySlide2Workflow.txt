@@ -240,7 +240,16 @@ DoseRateCurveFitVOITimeIntegration
  1-TimePointIdentifierUsedContainer-TimePointIdentifierUsed
 // Corresponding Absorbed Dose Rate for all VOIs and all TimePoints need to be retrieved
  1-CurveFittingMethod-PKAssessmentMethodUsed
+ 1-AdministeredActivity-PreAdministeredActivityUsed
+ 1-AdministeredActivity-PostAdministeredActivityUsed
  1-AbsorbedDoseInVOIContainer-AbsorbedDoseInVOIProduced
+}
+
+AdministeredActivity
+{
+ 1-float-AdministeredActivityValue
+ 1-string-ActivityUnit:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
+// to be replaced by a structured timestamp
 }
 
 AbsorbedDoseInVOIContainer
@@ -425,7 +434,7 @@ DICOMData
 
 NonDICOMData
 {
- 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map/segmentation/volume
+ 1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map/segmentation/voxel activity map/3D Energy Deposition Rate Matrix/NM Tomo Reconstruction/CT Reconstruction/Registration Matrix/Density Image
  1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format/STL format/HDF format
  1-FileNameList-FileNameList
  0,1-string-FHIRIdentifier

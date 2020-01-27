@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 049-->
+<!--VersionSchemas : 051-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -468,7 +468,12 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:enumeration value="VOI superimposed on images"/>
 			<xs:enumeration value="3D absorbed dose map"/>
 			<xs:enumeration value="segmentation"/>
-			<xs:enumeration value="volume"/>
+			<xs:enumeration value="voxel activity map"/>
+			<xs:enumeration value="3D Energy Deposition Rate Matrix"/>
+			<xs:enumeration value="NM Tomo Reconstruction"/>
+			<xs:enumeration value="CT Reconstruction"/>
+			<xs:enumeration value="Registration Matrix"/>
+			<xs:enumeration value="Density Image"/>
 		</xs:restriction>
 	</xs:simpleType>
 
