@@ -2288,35 +2288,8 @@ onmouseover='makeVisible("_1_1_1_3_1_1_1_4_1_5_1_1_1_6_1_3")' onmouseout='makeHi
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_3_1_1_1_4_1_5_1_1_1_6_1_3' onclick='show("_1_1_1_3_1_1_1_4_1_5_1_1_1_6_1_3")'/>
-</g>
-
-<g id='_1_1_1_3_1_1_1_4_1_5_1_1_1_6_1_3_1' class='box' transform='translate(2789,5375)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_3_1_1_1_4_1_5_1_1_1_6_1_3_1' onclick='show("_1_1_1_3_1_1_1_4_1_5_1_1_1_6_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_3_1_1_1_4_1_5_1_1_1_6_1_3_1_1' class='box' transform='translate(2894,5375)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_3_1_1_1_4_1_5_1_1_1_6_1_3_1_1")' onmouseout='makeHidden("_1_1_1_3_1_1_1_4_1_5_1_1_1_6_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -2547,35 +2520,8 @@ onmouseover='makeVisible("_1_1_1_3_1_1_1_4_1_6_1_1_1_6_1_3")' onmouseout='makeHi
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_3_1_1_1_4_1_6_1_1_1_6_1_3' onclick='show("_1_1_1_3_1_1_1_4_1_6_1_1_1_6_1_3")'/>
-</g>
-
-<g id='_1_1_1_3_1_1_1_4_1_6_1_1_1_6_1_3_1' class='box' transform='translate(2789,6085)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_3_1_1_1_4_1_6_1_1_1_6_1_3_1' onclick='show("_1_1_1_3_1_1_1_4_1_6_1_1_1_6_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_3_1_1_1_4_1_6_1_1_1_6_1_3_1_1' class='box' transform='translate(2894,6085)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_3_1_1_1_4_1_6_1_1_1_6_1_3_1_1")' onmouseout='makeHidden("_1_1_1_3_1_1_1_4_1_6_1_1_1_6_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -4284,35 +4230,8 @@ onmouseover='makeVisible("_1_1_1_3_1_2_1_3_1_4_1_6_1_3")' onmouseout='makeHidden
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_3_1_2_1_3_1_4_1_6_1_3' onclick='show("_1_1_1_3_1_2_1_3_1_4_1_6_1_3")'/>
-</g>
-
-<g id='_1_1_1_3_1_2_1_3_1_4_1_6_1_3_1' class='box' transform='translate(2420,11055)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_3_1_2_1_3_1_4_1_6_1_3_1' onclick='show("_1_1_1_3_1_2_1_3_1_4_1_6_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_3_1_2_1_3_1_4_1_6_1_3_1_1' class='box' transform='translate(2525,11055)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_3_1_2_1_3_1_4_1_6_1_3_1_1")' onmouseout='makeHidden("_1_1_1_3_1_2_1_3_1_4_1_6_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -5146,35 +5065,8 @@ onmouseover='makeVisible("_1_1_1_4_1_1_1_4_1_1_1_4_1_1_1_3")' onmouseout='makeHi
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_1_1_4_1_1_1_4_1_1_1_3' onclick='show("_1_1_1_4_1_1_1_4_1_1_1_4_1_1_1_3")'/>
-</g>
-
-<g id='_1_1_1_4_1_1_1_4_1_1_1_4_1_1_1_3_1' class='box' transform='translate(2759,12901)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_1_1_4_1_1_1_4_1_1_1_3_1' onclick='show("_1_1_1_4_1_1_1_4_1_1_1_4_1_1_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_1_1_4_1_1_1_4_1_1_1_3_1_1' class='box' transform='translate(2864,12901)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_1_1_4_1_1_1_4_1_1_1_3_1_1")' onmouseout='makeHidden("_1_1_1_4_1_1_1_4_1_1_1_4_1_1_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -5877,35 +5769,8 @@ onmouseover='makeVisible("_1_1_1_4_1_2_1_1_1_5_1_4_1_3")' onmouseout='makeHidden
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_2_1_1_1_5_1_4_1_3' onclick='show("_1_1_1_4_1_2_1_1_1_5_1_4_1_3")'/>
-</g>
-
-<g id='_1_1_1_4_1_2_1_1_1_5_1_4_1_3_1' class='box' transform='translate(2648,14747)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_2_1_1_1_5_1_4_1_3_1' onclick='show("_1_1_1_4_1_2_1_1_1_5_1_4_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_2_1_1_1_5_1_4_1_3_1_1' class='box' transform='translate(2753,14747)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_2_1_1_1_5_1_4_1_3_1_1")' onmouseout='makeHidden("_1_1_1_4_1_2_1_1_1_5_1_4_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -7755,35 +7620,8 @@ onmouseover='makeVisible("_1_1_1_5_1_2_1_1_1_7_1_2_1_1_1_4_1_1_1_3")' onmouseout
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_5_1_2_1_1_1_7_1_2_1_1_1_4_1_1_1_3' onclick='show("_1_1_1_5_1_2_1_1_1_7_1_2_1_1_1_4_1_1_1_3")'/>
-</g>
-
-<g id='_1_1_1_5_1_2_1_1_1_7_1_2_1_1_1_4_1_1_1_3_1' class='box' transform='translate(3743,18936)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_5_1_2_1_1_1_7_1_2_1_1_1_4_1_1_1_3_1' onclick='show("_1_1_1_5_1_2_1_1_1_7_1_2_1_1_1_4_1_1_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_5_1_2_1_1_1_7_1_2_1_1_1_4_1_1_1_3_1_1' class='box' transform='translate(3848,18936)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_5_1_2_1_1_1_7_1_2_1_1_1_4_1_1_1_3_1_1")' onmouseout='makeHidden("_1_1_1_5_1_2_1_1_1_7_1_2_1_1_1_4_1_1_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -8032,35 +7870,8 @@ onmouseover='makeVisible("_1_1_1_5_1_2_1_1_1_7_1_4_1_1_1_3")' onmouseout='makeHi
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_5_1_2_1_1_1_7_1_4_1_1_1_3' onclick='show("_1_1_1_5_1_2_1_1_1_7_1_4_1_1_1_3")'/>
-</g>
-
-<g id='_1_1_1_5_1_2_1_1_1_7_1_4_1_1_1_3_1' class='box' transform='translate(3065,19575)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_5_1_2_1_1_1_7_1_4_1_1_1_3_1' onclick='show("_1_1_1_5_1_2_1_1_1_7_1_4_1_1_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_5_1_2_1_1_1_7_1_4_1_1_1_3_1_1' class='box' transform='translate(3170,19575)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_5_1_2_1_1_1_7_1_4_1_1_1_3_1_1")' onmouseout='makeHidden("_1_1_1_5_1_2_1_1_1_7_1_4_1_1_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -8321,35 +8132,8 @@ onmouseover='makeVisible("_1_1_1_5_1_2_1_1_1_10_1_1_1_3")' onmouseout='makeHidde
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_5_1_2_1_1_1_10_1_1_1_3' onclick='show("_1_1_1_5_1_2_1_1_1_10_1_1_1_3")'/>
-</g>
-
-<g id='_1_1_1_5_1_2_1_1_1_10_1_1_1_3_1' class='box' transform='translate(2864,20143)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_5_1_2_1_1_1_10_1_1_1_3_1' onclick='show("_1_1_1_5_1_2_1_1_1_10_1_1_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_5_1_2_1_1_1_10_1_1_1_3_1_1' class='box' transform='translate(2969,20143)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_5_1_2_1_1_1_10_1_1_1_3_1_1")' onmouseout='makeHidden("_1_1_1_5_1_2_1_1_1_10_1_1_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -8452,35 +8236,8 @@ onmouseover='makeVisible("_1_1_1_5_1_2_1_1_1_11_1_1_1_3")' onmouseout='makeHidde
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_5_1_2_1_1_1_11_1_1_1_3' onclick='show("_1_1_1_5_1_2_1_1_1_11_1_1_1_3")'/>
-</g>
-
-<g id='_1_1_1_5_1_2_1_1_1_11_1_1_1_3_1' class='box' transform='translate(2888,20427)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_5_1_2_1_1_1_11_1_1_1_3_1' onclick='show("_1_1_1_5_1_2_1_1_1_11_1_1_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_5_1_2_1_1_1_11_1_1_1_3_1_1' class='box' transform='translate(2993,20427)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_5_1_2_1_1_1_11_1_1_1_3_1_1")' onmouseout='makeHidden("_1_1_1_5_1_2_1_1_1_11_1_1_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -8583,35 +8340,8 @@ onmouseover='makeVisible("_1_1_1_5_1_2_1_1_1_12_1_1_1_3")' onmouseout='makeHidde
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_5_1_2_1_1_1_12_1_1_1_3' onclick='show("_1_1_1_5_1_2_1_1_1_12_1_1_1_3")'/>
-</g>
-
-<g id='_1_1_1_5_1_2_1_1_1_12_1_1_1_3_1' class='box' transform='translate(2726,20711)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_5_1_2_1_1_1_12_1_1_1_3_1' onclick='show("_1_1_1_5_1_2_1_1_1_12_1_1_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_5_1_2_1_1_1_12_1_1_1_3_1_1' class='box' transform='translate(2831,20711)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_5_1_2_1_1_1_12_1_1_1_3_1_1")' onmouseout='makeHidden("_1_1_1_5_1_2_1_1_1_12_1_1_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -8715,35 +8445,8 @@ onmouseover='makeVisible("_1_1_1_5_1_2_1_1_1_13_1_1_1_3")' onmouseout='makeHidde
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_5_1_2_1_1_1_13_1_1_1_3' onclick='show("_1_1_1_5_1_2_1_1_1_13_1_1_1_3")'/>
-</g>
-
-<g id='_1_1_1_5_1_2_1_1_1_13_1_1_1_3_1' class='box' transform='translate(2726,20995)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_5_1_2_1_1_1_13_1_1_1_3_1' onclick='show("_1_1_1_5_1_2_1_1_1_13_1_1_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_5_1_2_1_1_1_13_1_1_1_3_1_1' class='box' transform='translate(2831,20995)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_5_1_2_1_1_1_13_1_1_1_3_1_1")' onmouseout='makeHidden("_1_1_1_5_1_2_1_1_1_13_1_1_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -9179,35 +8882,8 @@ onmouseover='makeVisible("_1_1_1_5_1_3_1_1_1_7_1_1_1_3")' onmouseout='makeHidden
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_5_1_3_1_1_1_7_1_1_1_3' onclick='show("_1_1_1_5_1_3_1_1_1_7_1_1_1_3")'/>
-</g>
-
-<g id='_1_1_1_5_1_3_1_1_1_7_1_1_1_3_1' class='box' transform='translate(2522,22131)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_5_1_3_1_1_1_7_1_1_1_3_1' onclick='show("_1_1_1_5_1_3_1_1_1_7_1_1_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_5_1_3_1_1_1_7_1_1_1_3_1_1' class='box' transform='translate(2627,22131)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_5_1_3_1_1_1_7_1_1_1_3_1_1")' onmouseout='makeHidden("_1_1_1_5_1_3_1_1_1_7_1_1_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -9963,35 +9639,8 @@ onmouseover='makeVisible("_1_1_1_5_1_5_1_4_1_1_1_3")' onmouseout='makeHidden("_1
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_5_1_5_1_4_1_1_1_3' onclick='show("_1_1_1_5_1_5_1_4_1_1_1_3")'/>
-</g>
-
-<g id='_1_1_1_5_1_5_1_4_1_1_1_3_1' class='box' transform='translate(2159,24332)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_5_1_5_1_4_1_1_1_3_1' onclick='show("_1_1_1_5_1_5_1_4_1_1_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_5_1_5_1_4_1_1_1_3_1_1' class='box' transform='translate(2264,24332)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_5_1_5_1_4_1_1_1_3_1_1")' onmouseout='makeHidden("_1_1_1_5_1_5_1_4_1_1_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -11323,35 +10972,8 @@ onmouseover='makeVisible("_1_1_1_6_1_1_1_1_1_3_1_6_1_1_1_4_1_3")' onmouseout='ma
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_6_1_1_1_1_1_3_1_6_1_1_1_4_1_3' onclick='show("_1_1_1_6_1_1_1_1_1_3_1_6_1_1_1_4_1_3")'/>
-</g>
-
-<g id='_1_1_1_6_1_1_1_1_1_3_1_6_1_1_1_4_1_3_1' class='box' transform='translate(3380,27527)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_6_1_1_1_1_1_3_1_6_1_1_1_4_1_3_1' onclick='show("_1_1_1_6_1_1_1_1_1_3_1_6_1_1_1_4_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_6_1_1_1_1_1_3_1_6_1_1_1_4_1_3_1_1' class='box' transform='translate(3485,27527)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_6_1_1_1_1_1_3_1_6_1_1_1_4_1_3_1_1")' onmouseout='makeHidden("_1_1_1_6_1_1_1_1_1_3_1_6_1_1_1_4_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -11879,35 +11501,8 @@ onmouseover='makeVisible("_1_1_1_6_1_1_1_1_1_4_1_7_1_1_1_4_1_3")' onmouseout='ma
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_6_1_1_1_1_1_4_1_7_1_1_1_4_1_3' onclick='show("_1_1_1_6_1_1_1_1_1_4_1_7_1_1_1_4_1_3")'/>
-</g>
-
-<g id='_1_1_1_6_1_1_1_1_1_4_1_7_1_1_1_4_1_3_1' class='box' transform='translate(3446,28876)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_6_1_1_1_1_1_4_1_7_1_1_1_4_1_3_1' onclick='show("_1_1_1_6_1_1_1_1_1_4_1_7_1_1_1_4_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_6_1_1_1_1_1_4_1_7_1_1_1_4_1_3_1_1' class='box' transform='translate(3551,28876)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_6_1_1_1_1_1_4_1_7_1_1_1_4_1_3_1_1")' onmouseout='makeHidden("_1_1_1_6_1_1_1_1_1_4_1_7_1_1_1_4_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -15082,35 +14677,8 @@ onmouseover='makeVisible("_1_1_1_7_1_1_1_3_1_6_1_1_1_4_1_3")' onmouseout='makeHi
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_7_1_1_1_3_1_6_1_1_1_4_1_3' onclick='show("_1_1_1_7_1_1_1_3_1_6_1_1_1_4_1_3")'/>
-</g>
-
-<g id='_1_1_1_7_1_1_1_3_1_6_1_1_1_4_1_3_1' class='box' transform='translate(2921,36402)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_7_1_1_1_3_1_6_1_1_1_4_1_3_1' onclick='show("_1_1_1_7_1_1_1_3_1_6_1_1_1_4_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_7_1_1_1_3_1_6_1_1_1_4_1_3_1_1' class='box' transform='translate(3026,36402)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_7_1_1_1_3_1_6_1_1_1_4_1_3_1_1")' onmouseout='makeHidden("_1_1_1_7_1_1_1_3_1_6_1_1_1_4_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -15638,35 +15206,8 @@ onmouseover='makeVisible("_1_1_1_7_1_1_1_4_1_7_1_1_1_4_1_3")' onmouseout='makeHi
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_7_1_1_1_4_1_7_1_1_1_4_1_3' onclick='show("_1_1_1_7_1_1_1_4_1_7_1_1_1_4_1_3")'/>
-</g>
-
-<g id='_1_1_1_7_1_1_1_4_1_7_1_1_1_4_1_3_1' class='box' transform='translate(2987,37751)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_7_1_1_1_4_1_7_1_1_1_4_1_3_1' onclick='show("_1_1_1_7_1_1_1_4_1_7_1_1_1_4_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_7_1_1_1_4_1_7_1_1_1_4_1_3_1_1' class='box' transform='translate(3092,37751)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_7_1_1_1_4_1_7_1_1_1_4_1_3_1_1")' onmouseout='makeHidden("_1_1_1_7_1_1_1_4_1_7_1_1_1_4_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -17620,35 +17161,8 @@ onmouseover='makeVisible("_1_1_1_7_1_2_1_4_1_7_1_1_1_3")' onmouseout='makeHidden
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_7_1_2_1_4_1_7_1_1_1_3' onclick='show("_1_1_1_7_1_2_1_4_1_7_1_1_1_3")'/>
-</g>
-
-<g id='_1_1_1_7_1_2_1_4_1_7_1_1_1_3_1' class='box' transform='translate(2474,42721)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_7_1_2_1_4_1_7_1_1_1_3_1' onclick='show("_1_1_1_7_1_2_1_4_1_7_1_1_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_7_1_2_1_4_1_7_1_1_1_3_1_1' class='box' transform='translate(2579,42721)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_7_1_2_1_4_1_7_1_1_1_3_1_1")' onmouseout='makeHidden("_1_1_1_7_1_2_1_4_1_7_1_1_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -17903,35 +17417,8 @@ onmouseover='makeVisible("_1_1_1_7_1_3_1_1_1_5_1_3")' onmouseout='makeHidden("_1
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_7_1_3_1_1_1_5_1_3' onclick='show("_1_1_1_7_1_3_1_1_1_5_1_3")'/>
-</g>
-
-<g id='_1_1_1_7_1_3_1_1_1_5_1_3_1' class='box' transform='translate(2513,43431)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_7_1_3_1_1_1_5_1_3_1' onclick='show("_1_1_1_7_1_3_1_1_1_5_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_7_1_3_1_1_1_5_1_3_1_1' class='box' transform='translate(2618,43431)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_7_1_3_1_1_1_5_1_3_1_1")' onmouseout='makeHidden("_1_1_1_7_1_3_1_1_1_5_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -21376,6 +20863,7 @@ onmouseover='makeVisible("_1_1_1_8_1_2_1_1_1_1_1_6")' onmouseout='makeHidden("_1
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>CountsPerVOIAtTimePointContainer</text>
 <text class='visible' x='5' y='41'>type: CountsPerVOIAtTimePointContainer</text>
+<text x='5' y='59'>0..1</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 <use x='242' y='17' xlink:href='#minus' id='s_1_1_1_8_1_2_1_1_1_1_1_6' onclick='show("_1_1_1_8_1_2_1_1_1_1_1_6")'/>
 </g>
@@ -21789,35 +21277,8 @@ onmouseover='makeVisible("_1_1_1_8_1_2_1_1_1_1_1_8_1_2_1_1_1_4_1_1_1_3")' onmous
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_8_1_2_1_1_1_1_1_8_1_2_1_1_1_4_1_1_1_3' onclick='show("_1_1_1_8_1_2_1_1_1_1_1_8_1_2_1_1_1_4_1_1_1_3")'/>
-</g>
-
-<g id='_1_1_1_8_1_2_1_1_1_1_1_8_1_2_1_1_1_4_1_1_1_3_1' class='box' transform='translate(4490,52306)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_8_1_2_1_1_1_1_1_8_1_2_1_1_1_4_1_1_1_3_1' onclick='show("_1_1_1_8_1_2_1_1_1_1_1_8_1_2_1_1_1_4_1_1_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_8_1_2_1_1_1_1_1_8_1_2_1_1_1_4_1_1_1_3_1_1' class='box' transform='translate(4595,52306)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_8_1_2_1_1_1_1_1_8_1_2_1_1_1_4_1_1_1_3_1_1")' onmouseout='makeHidden("_1_1_1_8_1_2_1_1_1_1_1_8_1_2_1_1_1_4_1_1_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -22066,35 +21527,8 @@ onmouseover='makeVisible("_1_1_1_8_1_2_1_1_1_1_1_8_1_4_1_1_1_3")' onmouseout='ma
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_8_1_2_1_1_1_1_1_8_1_4_1_1_1_3' onclick='show("_1_1_1_8_1_2_1_1_1_1_1_8_1_4_1_1_1_3")'/>
-</g>
-
-<g id='_1_1_1_8_1_2_1_1_1_1_1_8_1_4_1_1_1_3_1' class='box' transform='translate(3812,52945)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_8_1_2_1_1_1_1_1_8_1_4_1_1_1_3_1' onclick='show("_1_1_1_8_1_2_1_1_1_1_1_8_1_4_1_1_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_8_1_2_1_1_1_1_1_8_1_4_1_1_1_3_1_1' class='box' transform='translate(3917,52945)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_8_1_2_1_1_1_1_1_8_1_4_1_1_1_3_1_1")' onmouseout='makeHidden("_1_1_1_8_1_2_1_1_1_1_1_8_1_4_1_1_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -22685,35 +22119,8 @@ onmouseover='makeVisible("_1_1_1_8_1_2_1_1_1_2_1_7_1_1_1_3")' onmouseout='makeHi
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_8_1_2_1_1_1_2_1_7_1_1_1_3' onclick='show("_1_1_1_8_1_2_1_1_1_2_1_7_1_1_1_3")'/>
-</g>
-
-<g id='_1_1_1_8_1_2_1_1_1_2_1_7_1_1_1_3_1' class='box' transform='translate(3407,54507)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_8_1_2_1_1_1_2_1_7_1_1_1_3_1' onclick='show("_1_1_1_8_1_2_1_1_1_2_1_7_1_1_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_8_1_2_1_1_1_2_1_7_1_1_1_3_1_1' class='box' transform='translate(3512,54507)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_8_1_2_1_1_1_2_1_7_1_1_1_3_1_1")' onmouseout='makeHidden("_1_1_1_8_1_2_1_1_1_2_1_7_1_1_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -23124,35 +22531,8 @@ onmouseover='makeVisible("_1_1_1_8_1_2_1_1_1_3_1_9_1_3")' onmouseout='makeHidden
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_8_1_2_1_1_1_3_1_9_1_3' onclick='show("_1_1_1_8_1_2_1_1_1_3_1_9_1_3")'/>
-</g>
-
-<g id='_1_1_1_8_1_2_1_1_1_3_1_9_1_3_1' class='box' transform='translate(3350,55643)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_8_1_2_1_1_1_3_1_9_1_3_1' onclick='show("_1_1_1_8_1_2_1_1_1_3_1_9_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_8_1_2_1_1_1_3_1_9_1_3_1_1' class='box' transform='translate(3455,55643)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_8_1_2_1_1_1_3_1_9_1_3_1_1")' onmouseout='makeHidden("_1_1_1_8_1_2_1_1_1_3_1_9_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -23284,6 +22664,7 @@ onmouseover='makeVisible("_1_1_1_8_1_2_1_1_1_4_1_1_1_2")' onmouseout='makeHidden
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>VOIIdentifierUsed</text>
 <text class='visible' x='5' y='41'>type: VOIIdentifierContainer</text>
+<text x='5' y='59'>0..1</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 <use x='188' y='17' xlink:href='#minus' id='s_1_1_1_8_1_2_1_1_1_4_1_1_1_2' onclick='show("_1_1_1_8_1_2_1_1_1_4_1_1_1_2")'/>
 </g>
@@ -23396,35 +22777,8 @@ onmouseover='makeVisible("_1_1_1_8_1_2_1_1_1_4_1_1_1_5_1_3")' onmouseout='makeHi
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_8_1_2_1_1_1_4_1_1_1_5_1_3' onclick='show("_1_1_1_8_1_2_1_1_1_4_1_1_1_5_1_3")'/>
-</g>
-
-<g id='_1_1_1_8_1_2_1_1_1_4_1_1_1_5_1_3_1' class='box' transform='translate(3797,56282)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_8_1_2_1_1_1_4_1_1_1_5_1_3_1' onclick='show("_1_1_1_8_1_2_1_1_1_4_1_1_1_5_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_8_1_2_1_1_1_4_1_1_1_5_1_3_1_1' class='box' transform='translate(3902,56282)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_8_1_2_1_1_1_4_1_1_1_5_1_3_1_1")' onmouseout='makeHidden("_1_1_1_8_1_2_1_1_1_4_1_1_1_5_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -24844,35 +24198,8 @@ onmouseover='makeVisible("_1_1_1_8_1_5_1_1_1_7_1_2_1_1_1_4_1_1_1_3")' onmouseout
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_8_1_5_1_1_1_7_1_2_1_1_1_4_1_1_1_3' onclick='show("_1_1_1_8_1_5_1_1_1_7_1_2_1_1_1_4_1_1_1_3")'/>
-</g>
-
-<g id='_1_1_1_8_1_5_1_1_1_7_1_2_1_1_1_4_1_1_1_3_1' class='box' transform='translate(3743,59548)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_8_1_5_1_1_1_7_1_2_1_1_1_4_1_1_1_3_1' onclick='show("_1_1_1_8_1_5_1_1_1_7_1_2_1_1_1_4_1_1_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_8_1_5_1_1_1_7_1_2_1_1_1_4_1_1_1_3_1_1' class='box' transform='translate(3848,59548)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_8_1_5_1_1_1_7_1_2_1_1_1_4_1_1_1_3_1_1")' onmouseout='makeHidden("_1_1_1_8_1_5_1_1_1_7_1_2_1_1_1_4_1_1_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -25121,35 +24448,8 @@ onmouseover='makeVisible("_1_1_1_8_1_5_1_1_1_7_1_4_1_1_1_3")' onmouseout='makeHi
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_8_1_5_1_1_1_7_1_4_1_1_1_3' onclick='show("_1_1_1_8_1_5_1_1_1_7_1_4_1_1_1_3")'/>
-</g>
-
-<g id='_1_1_1_8_1_5_1_1_1_7_1_4_1_1_1_3_1' class='box' transform='translate(3065,60187)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_8_1_5_1_1_1_7_1_4_1_1_1_3_1' onclick='show("_1_1_1_8_1_5_1_1_1_7_1_4_1_1_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_8_1_5_1_1_1_7_1_4_1_1_1_3_1_1' class='box' transform='translate(3170,60187)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_8_1_5_1_1_1_7_1_4_1_1_1_3_1_1")' onmouseout='makeHidden("_1_1_1_8_1_5_1_1_1_7_1_4_1_1_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -25410,35 +24710,8 @@ onmouseover='makeVisible("_1_1_1_8_1_5_1_1_1_10_1_1_1_3")' onmouseout='makeHidde
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_8_1_5_1_1_1_10_1_1_1_3' onclick='show("_1_1_1_8_1_5_1_1_1_10_1_1_1_3")'/>
-</g>
-
-<g id='_1_1_1_8_1_5_1_1_1_10_1_1_1_3_1' class='box' transform='translate(2864,60755)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_8_1_5_1_1_1_10_1_1_1_3_1' onclick='show("_1_1_1_8_1_5_1_1_1_10_1_1_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_8_1_5_1_1_1_10_1_1_1_3_1_1' class='box' transform='translate(2969,60755)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_8_1_5_1_1_1_10_1_1_1_3_1_1")' onmouseout='makeHidden("_1_1_1_8_1_5_1_1_1_10_1_1_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -25541,35 +24814,8 @@ onmouseover='makeVisible("_1_1_1_8_1_5_1_1_1_11_1_1_1_3")' onmouseout='makeHidde
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_8_1_5_1_1_1_11_1_1_1_3' onclick='show("_1_1_1_8_1_5_1_1_1_11_1_1_1_3")'/>
-</g>
-
-<g id='_1_1_1_8_1_5_1_1_1_11_1_1_1_3_1' class='box' transform='translate(2888,61039)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_8_1_5_1_1_1_11_1_1_1_3_1' onclick='show("_1_1_1_8_1_5_1_1_1_11_1_1_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_8_1_5_1_1_1_11_1_1_1_3_1_1' class='box' transform='translate(2993,61039)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_8_1_5_1_1_1_11_1_1_1_3_1_1")' onmouseout='makeHidden("_1_1_1_8_1_5_1_1_1_11_1_1_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -25672,35 +24918,8 @@ onmouseover='makeVisible("_1_1_1_8_1_5_1_1_1_12_1_1_1_3")' onmouseout='makeHidde
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_8_1_5_1_1_1_12_1_1_1_3' onclick='show("_1_1_1_8_1_5_1_1_1_12_1_1_1_3")'/>
-</g>
-
-<g id='_1_1_1_8_1_5_1_1_1_12_1_1_1_3_1' class='box' transform='translate(2726,61323)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_8_1_5_1_1_1_12_1_1_1_3_1' onclick='show("_1_1_1_8_1_5_1_1_1_12_1_1_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_8_1_5_1_1_1_12_1_1_1_3_1_1' class='box' transform='translate(2831,61323)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_8_1_5_1_1_1_12_1_1_1_3_1_1")' onmouseout='makeHidden("_1_1_1_8_1_5_1_1_1_12_1_1_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -25804,35 +25023,8 @@ onmouseover='makeVisible("_1_1_1_8_1_5_1_1_1_13_1_1_1_3")' onmouseout='makeHidde
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_8_1_5_1_1_1_13_1_1_1_3' onclick='show("_1_1_1_8_1_5_1_1_1_13_1_1_1_3")'/>
-</g>
-
-<g id='_1_1_1_8_1_5_1_1_1_13_1_1_1_3_1' class='box' transform='translate(2726,61607)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_8_1_5_1_1_1_13_1_1_1_3_1' onclick='show("_1_1_1_8_1_5_1_1_1_13_1_1_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_8_1_5_1_1_1_13_1_1_1_3_1_1' class='box' transform='translate(2831,61607)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_8_1_5_1_1_1_13_1_1_1_3_1_1")' onmouseout='makeHidden("_1_1_1_8_1_5_1_1_1_13_1_1_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -26039,35 +25231,8 @@ onmouseover='makeVisible("_1_1_1_8_1_6_1_4_1_1_1_3")' onmouseout='makeHidden("_1
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FileNameList</text>
-<text class='visible' x='5' y='41'>type: FileNameList</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_8_1_6_1_4_1_1_1_3' onclick='show("_1_1_1_8_1_6_1_4_1_1_1_3")'/>
-</g>
-
-<g id='_1_1_1_8_1_6_1_4_1_1_1_3_1' class='box' transform='translate(2159,62175)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_8_1_6_1_4_1_1_1_3_1' onclick='show("_1_1_1_8_1_6_1_4_1_1_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_8_1_6_1_4_1_1_1_3_1_1' class='box' transform='translate(2264,62175)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_8_1_6_1_4_1_1_1_3_1_1")' onmouseout='makeHidden("_1_1_1_8_1_6_1_4_1_1_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 

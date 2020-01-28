@@ -348,12 +348,6 @@ NonDICOMData
 {
  1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map/segmentation/voxel activity map/3D Energy Deposition Rate Matrix/NM Tomo Reconstruction/CT Reconstruction/Registration Matrix/Density Image
  1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format/STL format/HDF format
- 1-FileNameList-FileNameList
+ 1-string-NonDICOMDataFileName
  0,1-string-FHIRIdentifier
-}
-
-
-FileNameList
-{
- 1,n-string-NonDICOMDataFileName
 }

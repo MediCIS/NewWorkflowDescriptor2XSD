@@ -1,0 +1,25 @@
+2c2
+< <!--VersionSchemas : 052-->
+---
+> <!--VersionSchemas : 051-->
+553c553
+< 			<xs:element name="NonDICOMDataFileName" type="xs:string"/>
+---
+> 			<xs:element name="FileNameList" type="irdbb:FileNameList"/>
+557a558,563
+> 	<xs:complexType name="FileNameList">
+> 		<xs:sequence>
+> 			<xs:element name="NonDICOMDataFileName" type="xs:string" maxOccurs="unbounded" />
+> 		</xs:sequence>
+> 	</xs:complexType>
+> 
+1701c1707
+< 			<xs:element name="CountsPerVOIAtTimePointContainer" type="irdbb:CountsPerVOIAtTimePointContainer" minOccurs="0" />
+---
+> 			<xs:element name="CountsPerVOIAtTimePointContainer" type="irdbb:CountsPerVOIAtTimePointContainer"/>
+1748c1754
+< 			<xs:element name="VOIIdentifierUsed" type="irdbb:VOIIdentifierContainer" minOccurs="0" />
+---
+> 			<xs:element name="VOIIdentifierUsed" type="irdbb:VOIIdentifierContainer"/>
+1794d1799
+< 			<xs:enumeration value="milligray per hour"/>

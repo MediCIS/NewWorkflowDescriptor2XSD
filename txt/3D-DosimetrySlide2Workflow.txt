@@ -149,7 +149,7 @@ VOISegmentationVOIMassDetermination
  1-DICOMData-CTReconUsed
  1-string-VOISegmentationMethodUsed
 // to be replaced by structured items
- 1-CountsPerVOIAtTimePointContainer-CountsPerVOIAtTimePointContainer
+ 0,1-CountsPerVOIAtTimePointContainer-CountsPerVOIAtTimePointContainer
  0,1-VOIIdentifierContainer-VOIProduced
  0,1-Segmentation-SegmentationProduced
  1-DICOMDataContainer-CTReconResampledOnNMReferenceProduced
@@ -217,7 +217,7 @@ SumAndScalingAbsorbedDoseRateCalculationContainer
 SumAndScalingAbsorbedDoseRateCalculation
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1-VOIIdentifierContainer-VOIIdentifierUsed
+ 0,1-VOIIdentifierContainer-VOIIdentifierUsed
  1-string-TimePointIdentifierUsed
  0,1-string-SegmentationUsed
 // Corresponding Mass Per VOI AtTimePoint need to be retrieved
@@ -400,7 +400,7 @@ DataActivityPerVOIAtTimePoint
 AbsorbedDoseRatePerVOIAtTimePoint
 {
  1-float-AbsorbedDoseRateValue
- 1-string-AbsorbedDoseRateUnit:gray per second/milligray per second
+ 1-string-AbsorbedDoseRateUnit:gray per second/milligray per second/milligray per hour
  1-integer-VOIIdentifier
  1-string-TimePointIdentifier
 }
@@ -436,11 +436,6 @@ NonDICOMData
 {
  1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map/segmentation/voxel activity map/3D Energy Deposition Rate Matrix/NM Tomo Reconstruction/CT Reconstruction/Registration Matrix/Density Image
  1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format/STL format/HDF format
- 1-FileNameList-FileNameList
+ 1-string-NonDICOMDataFileName
  0,1-string-FHIRIdentifier
-}
-
-FileNameList
-{
- 1,n-string-NonDICOMDataFileName
 }

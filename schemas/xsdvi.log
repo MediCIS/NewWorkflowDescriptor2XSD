@@ -1802,3 +1802,73 @@ janv. 24, 2020 6:05:35 PM xsdvi.XsdVi main
 INFOS: Drawing SVG nonDicomFileSetDescriptor.svg...
 janv. 24, 2020 6:05:35 PM xsdvi.XsdVi main
 INFOS: Done.
+janv. 28, 2020 4:59:08 PM xsdvi.XsdVi main
+INFOS: The style will be embodied
+janv. 28, 2020 4:59:08 PM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/WP2subtask212WorkflowData.xsd...
+janv. 28, 2020 4:59:08 PM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+janv. 28, 2020 4:59:08 PM xsdvi.XsdVi main
+INFOS: Drawing SVG WP2subtask212WorkflowData.svg...
+janv. 28, 2020 4:59:08 PM xsdvi.XsdVi main
+INFOS: Done.
+janv. 28, 2020 4:59:08 PM xsdvi.XsdVi main
+INFOS: The style will be embodied
+janv. 28, 2020 4:59:08 PM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/calibrationWorkflow.xsd...
+janv. 28, 2020 4:59:09 PM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+janv. 28, 2020 4:59:09 PM xsdvi.XsdVi main
+INFOS: Drawing SVG calibrationWorkflow.svg...
+janv. 28, 2020 4:59:09 PM xsdvi.XsdVi main
+INFOS: Done.
+janv. 28, 2020 4:59:09 PM xsdvi.XsdVi main
+INFOS: The style will be embodied
+janv. 28, 2020 4:59:09 PM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/Hybrid-DosimetryWorkflow.xsd...
+janv. 28, 2020 4:59:09 PM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+janv. 28, 2020 4:59:09 PM xsdvi.XsdVi main
+INFOS: Drawing SVG Hybrid-DosimetryWorkflow.svg...
+janv. 28, 2020 4:59:09 PM xsdvi.XsdVi main
+INFOS: Done.
+janv. 28, 2020 4:59:09 PM xsdvi.XsdVi main
+INFOS: The style will be embodied
+janv. 28, 2020 4:59:09 PM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/2D-DosimetryWorkflow.xsd...
+janv. 28, 2020 4:59:09 PM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+janv. 28, 2020 4:59:09 PM xsdvi.XsdVi main
+INFOS: Drawing SVG 2D-DosimetryWorkflow.svg...
+janv. 28, 2020 4:59:09 PM xsdvi.XsdVi main
+INFOS: Done.
+janv. 28, 2020 4:59:10 PM xsdvi.XsdVi main
+INFOS: The style will be embodied
+janv. 28, 2020 4:59:10 PM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/3D-DosimetrySlide2Workflow.xsd...
+janv. 28, 2020 4:59:10 PM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+janv. 28, 2020 4:59:10 PM xsdvi.XsdVi main
+INFOS: Drawing SVG 3D-DosimetrySlide2Workflow.svg...
+janv. 28, 2020 4:59:10 PM xsdvi.XsdVi main
+INFOS: Done.
+janv. 28, 2020 4:59:10 PM xsdvi.XsdVi main
+INFOS: The style will be embodied
+janv. 28, 2020 4:59:10 PM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/3D-DosimetrySlide1Workflow.xsd...
+janv. 28, 2020 4:59:10 PM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+janv. 28, 2020 4:59:10 PM xsdvi.XsdVi main
+INFOS: Drawing SVG 3D-DosimetrySlide1Workflow.svg...
+janv. 28, 2020 4:59:10 PM xsdvi.XsdVi main
+INFOS: Done.
+janv. 28, 2020 4:59:11 PM xsdvi.XsdVi main
+INFOS: The style will be embodied
+janv. 28, 2020 4:59:11 PM xsdvi.XsdVi main
+INFOS: Parsing ../xsd/nonDicomFileSetDescriptor.xsd...
+janv. 28, 2020 4:59:11 PM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+janv. 28, 2020 4:59:11 PM xsdvi.XsdVi main
+INFOS: Drawing SVG nonDicomFileSetDescriptor.svg...
+janv. 28, 2020 4:59:11 PM xsdvi.XsdVi main
+INFOS: Done.
