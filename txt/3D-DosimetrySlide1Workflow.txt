@@ -324,10 +324,10 @@ TimeIntegratedActivityPerVOI
 {
 // not sure at all how cumulated activities are represented ??
  1-float-ResidenceTimePerVOIValue
- 1-string-TimeIntegratedActivityPerVOIUnit:MegabecquerelXSecond/MegabecquerelXHour
- 1-VOIIdentifierContainer-VOIIdentifierList
  1-string-TimeUnit:seconds/minutes/hours/days/months/years
  1-float-TimeIntegratedActivityPerVOIValue
+ 1-string-TimeIntegratedActivityPerVOIUnit:MegabecquerelXSecond/MegabecquerelXHour
+ 1-VOIIdentifierContainer-VOIIdentifierList
  1-CurveFittingMethod-PKAssessmentMethodUsed
 }
 
