@@ -83,7 +83,7 @@ RegistrationVOISegmentationAndPropagation
  0,1-NonDICOMDataContainer-NonDICOMCTReconResampledOnCommonReferenceProduced
  0,1-NonDICOMDataContainer-NonDICOMNMTomoReconResampledOnCommonReferenceProduced
  0,1-NonDICOMDataContainer-DensityImageProduced
- 0,1-NonDICOMDataContainer-RegistrationMatrixUsed
+ 0,1-GeometricalTransformationContainer-GeometricalTransformationContainer
 }
 
 Segmentation
@@ -230,7 +230,7 @@ CountsPerVOIAtTimePoint
 VOI
 {
  1-integer-VOIIdentifier
- 1-string-OrganOrTissue:bone/bone surfaces/red bone marrow/bladder/breasts/left male breast/left female breast/right male breast/right female breast/colon/testes/left testis/right testis/ovaries/left ovary/right ovary/liver/lungs/left lung/right lung/esophagus/skin/stomach/thyroid/brain/salivary glands/parotid glands/left parotid gland/right parotid gland/submandibular glands/left submandibular gland/right submandibular gland/adrenals/extrathoracic region/gallbladder/heart/kidneys/left kidney/right kidney/lymphatic nodes/muscle/oral mucosa/pancreas/prostate/small intestine/spleen/thymus/uterus/air/body surface
+ 1-string-OrganOrTissue:bone/bone surfaces/red bone marrow/bladder/breasts/left male breast/left female breast/right male breast/right female breast/colon/testes/left testis/right testis/ovaries/left ovary/right ovary/liver/lungs/left lung/right lung/esophagus/skin/stomach/thyroid/brain/salivary glands/parotid glands/left parotid gland/right parotid gland/submandibular glands/left submandibular gland/right submandibular gland/adrenals/extrathoracic region/gallbladder/heart/kidneys/left kidney/right kidney/lymphatic nodes/muscle/oral mucosa/pancreas/prostate/small intestine/spleen/thymus/uterus/air/body surface/tumor/soft tissue/L2-L4 bone marrow
  0,1-DICOMDataContainer-DICOMDataContainer
  0,1-NonDICOMDataContainer-NonDICOMDataContainer
  0,1-string-TimePointIdentifier
@@ -338,10 +338,34 @@ CurveFittingMethod
  1-string-FittingFunction
 }
 
+GeometricalTransformationContainer
+{
+ 1,n-GeometricalTransformation-GeometricalTransformation
+}
+
+GeometricalTransformation
+{
+ 1-NonDICOMDataContainer-GeometricalTransformationValue
+ 1-string-TransformationType:Linear transformation matrix/BSpline transformation/Advanced elastix transformation
+ 1-string-TransformationIdentifier
+ 0,1-DICOMDataContainer-DICOMCTSourceCoordinateSpaceUsed
+ 0,1-DICOMDataContainer-DICOMCTDestinationCoordinateSpaceUsed
+ 0,1-DICOMDataContainer-DICOMSPECTSourceCoordinateSpaceUsed
+ 0,1-DICOMDataContainer-DICOMSPECTDestinationCoordinateSpaceUsed
+ 0,1-NonDICOMDataContainer-NonDICOMSourceCoordinateSpaceUsed
+ 0,1-NonDICOMDataContainer-NonDICOMDestinationCoordinateSpaceUsed
+}
+
+TransformationIdentifierContainer
+{
+ 1,n-string-TransformationIdentifier
+}
+
 DICOMData
 {
  1-string-DICOMStudyUID
  1-string-DICOMSeriesUID
+ 0,1-TransformationIdentifierContainer-TransformationsUsed
 }
 
 NonDICOMData
@@ -350,4 +374,6 @@ NonDICOMData
  1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format/STL format/HDF format
  1-string-NonDICOMDataFileName
  0,1-string-FHIRIdentifier
+ 0,1-TransformationIdentifierContainer-TransformationsUsed
 }
+

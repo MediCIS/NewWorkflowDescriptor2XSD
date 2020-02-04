@@ -1,8 +1,0 @@
-2c2
-< <!--VersionSchemas : 037-->
----
-> <!--VersionSchemas : 036-->
-1099c1099
-< 			<xs:element name="VOIIdentifierList" type="irdbb:VOIContainer"/>
----
-> 			<xs:element name="VOIIdentifier" type="xs:string"/>

@@ -313,10 +313,16 @@ ElementOfSPECTRecoveryCoefficientCurve
  1-string-HotInsertIdentifier
 }
 
+TransformationIdentifierContainer
+{
+ 1,n-string-TransformationIdentifier
+}
+
 DICOMData
 {
  1-string-DICOMStudyUID
  1-string-DICOMSeriesUID
+ 0,1-TransformationIdentifierContainer-TransformationsUsed
 }
 
 NonDICOMData
@@ -325,4 +331,6 @@ NonDICOMData
  1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format/STL format/HDF format
  1-string-NonDICOMDataFileName
  0,1-string-FHIRIdentifier
+ 0,1-TransformationIdentifierContainer-TransformationsUsed
 }
+

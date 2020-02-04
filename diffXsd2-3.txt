@@ -1,5 +1,0 @@
-1681c1681
-< </xs:schema>
-\ No newline at end of file
----
-> </xs:schema>

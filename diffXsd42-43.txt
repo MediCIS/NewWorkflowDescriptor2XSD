@@ -1,8 +1,0 @@
-2c2
-< <!--VersionSchemas : 043-->
----
-> <!--VersionSchemas : 042-->
-55c55
-< 					<xs:element name="RadioBiologicalCalculationIn3DSlide1Dosimetry" type="irdbb:RadioBiologicalCalculationIn3DSlide1Dosimetry" minOccurs="0" />
----
-> 					<xs:element name="RadioBiologicalCalculationIn3DSlide1Dosimetry" type="irdbb:RadioBiologicalCalculationIn3DSlide1Dosimetry"/>

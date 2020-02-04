@@ -7,7 +7,7 @@ echo "$( dirname "${BASH_SOURCE[0]}" )"
 
 cd "$( dirname "${BASH_SOURCE[0]}" )"
 
-cp xsd/nonDicomFileSetDescriptor.xsd oldNonDicomFileSetDescriptor.xsd
+#cp xsd/nonDicomFileSetDescriptor.xsd oldNonDicomFileSetDescriptor.xsd
 
 # 0 Coherence Test
 rm inconsistencyList.txt
@@ -46,14 +46,15 @@ do
 ../workflowDescriptor2XSD.py "$i" ../xsdSimple/$i $version
 done
 
-# 5 Diff
+## 5 Diff
 cd "$( dirname "${BASH_SOURCE[0]}" )"
-diff xsd/nonDicomFileSetDescriptor.xsd oldNonDicomFileSetDescriptor.xsd > diffXsd$oldVersion-$version.txt
+#diff xsd/nonDicomFileSetDescriptor.xsd oldNonDicomFileSetDescriptor.xsd > diffXsd$oldVersion-$version.txt
 
 # 6 Compress XSD simple Files
+#rm XSD_$oldVersion.tar.gz
 tar -czf XSD_$version.tar.gz xsdSimple/*
 
-# 6 Compress XSD simple Files
+# 7 Compress XSD simple Files
 cd schemas
 java -jar ../xsdvi/dist/lib/xsdvi.jar ../xsdSimple/WP2subtask212WorkflowData.xsd
 java -jar ../xsdvi/dist/lib/xsdvi.jar ../xsdSimple/calibrationWorkflow.xsd

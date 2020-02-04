@@ -1,8 +1,0 @@
-805c805
-< 			<xs:element name="DICOMContainer" type="irdbb:DICOMData" maxOccurs="unbounded" />
----
-> 			<xs:element name="DICOMVOIContainer" type="irdbb:DICOMData" maxOccurs="unbounded" />
-811c811
-< 			<xs:element name="NonDICOMContainer" type="irdbb:NonDICOMData" maxOccurs="unbounded" />
----
-> 			<xs:element name="NonDICOMVOIContainer" type="irdbb:NonDICOMData" maxOccurs="unbounded" />

@@ -1,8 +1,0 @@
-2c2
-< <!--VersionSchemas : 049-->
----
-> <!--VersionSchemas : 048-->
-186c186
-< 			<xs:element name="VOIIdentifierUsed" type="xs:integer" maxOccurs="unbounded" />
----
-> 			<xs:element name="VOIIdentifierUsed" type="xs:integer"/>

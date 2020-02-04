@@ -1,8 +1,0 @@
-2c2
-< <!--VersionSchemas : 010-->
----
-> <!--VersionSchemas : 009-->
-864c864
-< 			<xs:element name="Segmentation" type="irdbb:Segmentation"/>
----
-> 			<xs:element name="Segmentation" type="irdbb:VoiProducedContainer"/>
