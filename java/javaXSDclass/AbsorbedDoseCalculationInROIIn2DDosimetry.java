@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.02.04 à 12:01:52 PM CET 
+// Généré le : 2020.02.05 à 11:10:01 AM CET 
 //
 
 
@@ -26,7 +26,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="ProcessExecutionContext" type="{https://www.irdbb-medirad.com}ProcessExecutionContext"/>
  *         &lt;element name="ROIIdentifierUsed" type="{https://www.irdbb-medirad.com}ROIIdentifierUsedContainer"/>
- *         &lt;element name="OrgansValueUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="OrganSValueUsed" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="PatientOrganMassUsed" type="{https://www.irdbb-medirad.com}PatientOrganMassUsedContainer" minOccurs="0"/>
  *         &lt;element name="MeanAbsorbedDoseInROIProduced" type="{https://www.irdbb-medirad.com}MeanAbsorbedDoseInROIcontainer"/>
  *       &lt;/sequence>
@@ -41,7 +41,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "AbsorbedDoseCalculationInROIIn2DDosimetry", propOrder = {
     "processExecutionContext",
     "roiIdentifierUsed",
-    "organsValueUsed",
+    "organSValueUsed",
     "patientOrganMassUsed",
     "meanAbsorbedDoseInROIProduced"
 })
@@ -51,8 +51,8 @@ public class AbsorbedDoseCalculationInROIIn2DDosimetry {
     protected ProcessExecutionContext processExecutionContext;
     @XmlElement(name = "ROIIdentifierUsed", required = true)
     protected ROIIdentifierUsedContainer roiIdentifierUsed;
-    @XmlElement(name = "OrgansValueUsed", required = true)
-    protected String organsValueUsed;
+    @XmlElement(name = "OrganSValueUsed", required = true)
+    protected String organSValueUsed;
     @XmlElement(name = "PatientOrganMassUsed")
     protected PatientOrganMassUsedContainer patientOrganMassUsed;
     @XmlElement(name = "MeanAbsorbedDoseInROIProduced", required = true)
@@ -107,27 +107,27 @@ public class AbsorbedDoseCalculationInROIIn2DDosimetry {
     }
 
     /**
-     * Obtient la valeur de la propriété organsValueUsed.
+     * Obtient la valeur de la propriété organSValueUsed.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getOrgansValueUsed() {
-        return organsValueUsed;
+    public String getOrganSValueUsed() {
+        return organSValueUsed;
     }
 
     /**
-     * Définit la valeur de la propriété organsValueUsed.
+     * Définit la valeur de la propriété organSValueUsed.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setOrgansValueUsed(String value) {
-        this.organsValueUsed = value;
+    public void setOrganSValueUsed(String value) {
+        this.organSValueUsed = value;
     }
 
     /**

@@ -231,15 +231,16 @@ def generateXSD(elements, types, rootElements):
     return XSD
 
 listeTypes=["DataActivityPerVOIAtTimePoint", "MeanAbsorbedDoseRateInROI", "VOIInCT", "VOIInSPECT",
-            "ROIIdentifierUsedContainer", "VOIidentifierContainer", "ROIIdentifierContainer", 
-            "VOIIdentifierContainer", "VOIcontainer", "AbsorbedDoseInVOIContainer",
-            "TimeIntegratedActivityCoefficientPerROI", "TimeIntegratedActivityPerROI",
-            "ElementOfCTNumberCalibrationCurve", "SPECTRecoveryCoefficientCurve", "VOIContainer",
-            "ROIIdentifierUsedContainer","VOIIdentifierUsedContainer", "ActivityUnit", "TimeUnit", "Segmentation",
-            "ElementOfSPECTRecoveryCoefficientCurve", "ActualPlanarCalibrationFactor", "TimeIntegratedActivityPerVOIContainer",
-            "ActualPlanarCalibrationFactor", "PlanarCalibrationFactorReference",
-            "RegistrationVOISegmentationAndPropagationContainer","AbsorbedDoseCalculationInVOI", "TransformationIdentifierContainer" , "NonDICOMDataContainer"
-            ]
+"ROIIdentifierUsedContainer", "VOIidentifierContainer", "ROIIdentifierContainer",
+"VOIIdentifierContainer", "VOIcontainer", "AbsorbedDoseInVOIContainer",
+"TimeIntegratedActivityCoefficientPerROI", "TimeIntegratedActivityPerROI",
+"ElementOfCTNumberCalibrationCurve", "SPECTRecoveryCoefficientCurve", "VOIContainer",
+"ROIIdentifierUsedContainer","VOIIdentifierUsedContainer", "ActivityUnit", "TimeUnit", "Segmentation",
+"ElementOfSPECTRecoveryCoefficientCurve", "ActualPlanarCalibrationFactor", "TimeIntegratedActivityPerVOIContainer",
+"ActualPlanarCalibrationFactor", "PlanarCalibrationFactorReference",
+"RegistrationVOISegmentationAndPropagationContainer","AbsorbedDoseCalculationInVOI", "TransformationIdentifierContainer", "NonDICOMDataContainer",
+"AbsorbedDoseUnit", "TimePointIdentifierUsedContainer", "OrganMass", "VOI", "VoiProducedContainer"
+]
 
 listeTypesRestricted=[]
 

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 061-->
+<!--VersionSchemas : 070-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -178,6 +178,8 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:enumeration value="milligray per (100 milliampere second)"/>
 			<xs:enumeration value="milligray"/>
 			<xs:enumeration value="milligray per (milligray per (1 milliampere second))"/>
+			<xs:enumeration value="gray"/>
+			<xs:enumeration value="milligray"/>
 		</xs:restriction>
 	</xs:simpleType>
 
@@ -341,7 +343,8 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:enumeration value="GIF format embedding imageJ contours"/>
 			<xs:enumeration value="NRRD format"/>
 			<xs:enumeration value="STL format"/>
-			<xs:enumeration value="HDF format"/>
+			<xs:enumeration value="HDF4 format"/>
+			<xs:enumeration value="HDF5 format"/>
 		</xs:restriction>
 	</xs:simpleType>
 

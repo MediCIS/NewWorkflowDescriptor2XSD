@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 061-->
+<!--VersionSchemas : 070-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -67,7 +67,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 			<xs:complexType name="HybridDosimetryworkflow">
 				<xs:sequence>
-					<xs:element name="PlanarDataAcquisitionAndProcessing" type="irdbb:PlanarDataAcquisitionAndProcessing" maxOccurs="unbounded" />
+					<xs:element name="PlanarDataAcquisitionAndProcessingContainer" type="irdbb:PlanarDataAcquisitionAndProcessingContainer"/>
 					<xs:element name="SPECTDataAcquisitionAndProcessing" type="irdbb:SPECTDataAcquisitionAndProcessing"/>
 					<xs:element name="HybridDosimetryViaAbsorbedDoseRateCalculation" type="irdbb:HybridDosimetryViaAbsorbedDoseRateCalculation" minOccurs="0" />
 					<xs:element name="HybridDosimetryViaTimeActivityCurveFit" type="irdbb:HybridDosimetryViaTimeActivityCurveFit" minOccurs="0" />
@@ -549,7 +549,8 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:enumeration value="GIF format embedding imageJ contours"/>
 			<xs:enumeration value="NRRD format"/>
 			<xs:enumeration value="STL format"/>
-			<xs:enumeration value="HDF format"/>
+			<xs:enumeration value="HDF4 format"/>
+			<xs:enumeration value="HDF5 format"/>
 		</xs:restriction>
 	</xs:simpleType>
 
@@ -698,6 +699,8 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:enumeration value="milligray per (100 milliampere second)"/>
 			<xs:enumeration value="milligray"/>
 			<xs:enumeration value="milligray per (milligray per (1 milliampere second))"/>
+			<xs:enumeration value="gray"/>
+			<xs:enumeration value="milligray"/>
 		</xs:restriction>
 	</xs:simpleType>
 
@@ -1080,17 +1083,10 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:simpleType name="AbsorbedDoseInVOIUnit">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="gray"/>
-			<xs:enumeration value="milligray"/>
-		</xs:restriction>
-	</xs:simpleType>
-
 	<xs:complexType name="AbsorbedDoseInVOI">
 		<xs:sequence>
 			<xs:element name="AbsorbedDoseInVOIValue" type="xs:float"/>
-		<xs:element name="AbsorbedDoseInVOIUnit" type="irdbb:AbsorbedDoseInVOIUnit" />
+		<xs:element name="AbsorbedDoseUnit" type="irdbb:AbsorbedDoseUnit" />
 			<xs:element name="AbsorbedDoseInVOIUncertainty" type="xs:float" minOccurs="0" />
 			<xs:element name="VOIIdentifierList" type="irdbb:VOIIdentifierContainer"/>
 		</xs:sequence>
@@ -1191,7 +1187,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="PlanarDataAcquisitionAndProcessing">
 		<xs:sequence>
-			<xs:element name="PlanarDataAcquisition" type="irdbb:PlanarDataAcquisition"/>
+			<xs:element name="PlanarDataAcquisition" type="irdbb:PlanarDataAcquisition" minOccurs="0" />
 			<xs:element name="PlanarDataCorrections" type="irdbb:PlanarDataCorrections"/>
 			<xs:element name="PlanarDataSegmentationWithoutRegistration" type="irdbb:PlanarDataSegmentationWithoutRegistration" minOccurs="0" />
 			<xs:element name="PlanarDataSegmentationWithRegistrationAndPropagation" type="irdbb:PlanarDataSegmentationWithRegistrationAndPropagation" minOccurs="0" />
@@ -1223,7 +1219,8 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 			<xs:element name="TimePointDescription" type="irdbb:TimePointDescription"/>
 			<xs:element name="NMRelevantCalibrationReference" type="irdbb:NMRelevantCalibrationReference"/>
-			<xs:element name="NMStaticProduced" type="irdbb:DICOMData"/>
+			<xs:element name="NMStaticProduced" type="irdbb:DICOMData" minOccurs="0" />
+			<xs:element name="NonDicomNMStaticProduced" type="irdbb:NonDICOMData" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 
@@ -1240,11 +1237,13 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="PlanarDataSegmentationWithoutRegistration">
 		<xs:sequence>
 			<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
-			<xs:element name="TimePointIdentifierUsedContainer" type="irdbb:TimePointIdentifierUsedContainer"/>
-			<xs:element name="NMStaticCorrectedUsed" type="irdbb:DICOMDataContainer"/>
+			<xs:element name="TimePointIdentifierUsed" type="xs:string"/>
+			<xs:element name="NMStaticCorrectedUsed" type="irdbb:DICOMDataContainer" minOccurs="0" />
+			<xs:element name="NonDICOMNMStaticCorrectedUsed" type="irdbb:NonDICOMDataContainer" minOccurs="0" />
 			<xs:element name="SegmentationMethodUsed" type="xs:string"/>
 			<xs:element name="CountsPerROIAtTimePointContainer" type="irdbb:CountsPerROIAtTimePointContainer"/>
-			<xs:element name="ROIProduced" type="irdbb:ROIcontainer" maxOccurs="unbounded" />
+			<xs:element name="ROIProduced" type="irdbb:ROIcontainer" minOccurs="0" />
+			<xs:element name="SegmentationProduced" type="irdbb:Segmentation" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 
@@ -1269,13 +1268,15 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="PlanarDataSegmentationWithRegistrationAndPropagation">
 		<xs:sequence>
 			<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
-			<xs:element name="TimePointIdentifierUsedContainer" type="irdbb:TimePointIdentifierUsedContainer"/>
-			<xs:element name="NMStaticCorrectedUsed" type="irdbb:DICOMDataContainer"/>
-			<xs:element name="ROIIdentifierUsed" type="xs:string" minOccurs="0" />
+			<xs:element name="TimePointIdentifierUsed" type="xs:string"/>
+			<xs:element name="NMStaticCorrectedUsed" type="irdbb:DICOMDataContainer" minOccurs="0" />
+			<xs:element name="NonDICOMNMStaticCorrectedUsed" type="irdbb:NonDICOMDataContainer" minOccurs="0" />
 			<xs:element name="SegmentationMethodUsed" type="xs:string"/>
 			<xs:element name="CountsPerROIAtTimePointContainer" type="irdbb:CountsPerROIAtTimePointContainer"/>
-			<xs:element name="ROIProduced" type="irdbb:ROIcontainer"/>
-			<xs:element name="NMStaticCorrectedResampledOnCommonReferenceProduced" type="irdbb:DICOMDataContainer"/>
+			<xs:element name="ROIProduced" type="irdbb:ROIcontainer" minOccurs="0" />
+			<xs:element name="SegmentationProduced" type="irdbb:Segmentation" minOccurs="0" />
+			<xs:element name="NMStaticCorrectedResampledOnCommonReferenceProduced" type="irdbb:DICOMDataContainer" minOccurs="0" />
+			<xs:element name="NonDICOMNMStaticCorrectedResampledOnCommonReferenceProduced" type="irdbb:NonDICOMDataContainer" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 
@@ -1288,7 +1289,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="ROIPlanarActivityDetermination">
 		<xs:sequence>
 			<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
-			<xs:element name="TimePointIdentifierUsedContainer" type="irdbb:TimePointIdentifierUsedContainer"/>
+			<xs:element name="TimePointIdentifierUsed" type="xs:string"/>
 			<xs:element name="ROIIdentifierUsed" type="xs:string"/>
 			<xs:element name="PlanarCalibrationFactorReference" type="irdbb:NMRelevantCalibrationReference"/>
 			<xs:element name="DataActivityPerROIAtTimePointContainer" type="irdbb:DataActivityPerROIAtTimePointContainer"/>
@@ -1304,7 +1305,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="AbsorbedDoseRateCalculationIn2DDosimetry">
 		<xs:sequence>
 			<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
-			<xs:element name="TimePointIdentifierUsedContainer" type="irdbb:TimePointIdentifierUsedContainer"/>
+			<xs:element name="TimePointIdentifierUsed" type="xs:string"/>
 			<xs:element name="ROIIdentifierUsed" type="xs:string" maxOccurs="unbounded" />
 			<xs:element name="PreAdministeredActivityUsed" type="irdbb:AdministeredActivity"/>
 			<xs:element name="PostAdministeredActivityUsed" type="irdbb:AdministeredActivity"/>
@@ -1372,7 +1373,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 			<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
 			<xs:element name="ROIIdentifierUsed" type="irdbb:ROIIdentifierUsedContainer"/>
-			<xs:element name="OrgansValueUsed" type="xs:string"/>
+			<xs:element name="OrganSValueUsed" type="xs:string"/>
 			<xs:element name="PatientOrganMassUsed" type="irdbb:PatientOrganMassUsedContainer" minOccurs="0" />
 			<xs:element name="MeanAbsorbedDoseInROIProduced" type="irdbb:MeanAbsorbedDoseInROIcontainer"/>
 		</xs:sequence>
@@ -1476,17 +1477,10 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:simpleType name="MeanAbsorbedDoseInROIUnit">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="gray"/>
-			<xs:enumeration value="milligray"/>
-		</xs:restriction>
-	</xs:simpleType>
-
 	<xs:complexType name="MeanAbsorbedDoseInROI">
 		<xs:sequence>
 			<xs:element name="MeanAbsorbedDoseInROIValue" type="xs:float"/>
-		<xs:element name="MeanAbsorbedDoseInROIUnit" type="irdbb:MeanAbsorbedDoseInROIUnit" />
+		<xs:element name="AbsorbedDoseUnit" type="irdbb:AbsorbedDoseUnit" />
 			<xs:element name="ROIIdentifier" type="xs:string"/>
 		</xs:sequence>
 	</xs:complexType>
@@ -1679,32 +1673,26 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:simpleType name="MeanAbsorbedDoseRateInVOIUnit">
+	<xs:simpleType name="AbsorbedDoseRateUnit">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="gray per second"/>
 			<xs:enumeration value="milligray per second"/>
+			<xs:enumeration value="milligray per hour"/>
 		</xs:restriction>
 	</xs:simpleType>
 
 	<xs:complexType name="MeanAbsorbedDoseRateInVOI">
 		<xs:sequence>
 			<xs:element name="MeanAbsorbedDoseRateInVOIValue" type="xs:float"/>
-		<xs:element name="MeanAbsorbedDoseRateInVOIUnit" type="irdbb:MeanAbsorbedDoseRateInVOIUnit" />
+		<xs:element name="AbsorbedDoseRateUnit" type="irdbb:AbsorbedDoseRateUnit" />
 			<xs:element name="VOIIdentifier" type="xs:integer"/>
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:simpleType name="MeanAbsorbedDoseInVOIUnit">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="gray"/>
-			<xs:enumeration value="milligray"/>
-		</xs:restriction>
-	</xs:simpleType>
-
 	<xs:complexType name="MeanAbsorbedDoseInVOI">
 		<xs:sequence>
 			<xs:element name="MeanAbsorbedDoseInVOIValue" type="xs:float"/>
-		<xs:element name="MeanAbsorbedDoseInVOIUnit" type="irdbb:MeanAbsorbedDoseInVOIUnit" />
+		<xs:element name="AbsorbedDoseUnit" type="irdbb:AbsorbedDoseUnit" />
 			<xs:element name="VOIIdentifier" type="xs:integer"/>
 		</xs:sequence>
 	</xs:complexType>
@@ -1766,7 +1754,6 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:element name="ProcessExecutionContext" type="irdbb:ProcessExecutionContext"/>
 			<xs:element name="VOIIdentifierUsed" type="irdbb:VOIIdentifierContainer" minOccurs="0" />
 			<xs:element name="TimePointIdentifierUsed" type="xs:string"/>
-			<xs:element name="VOIUsed" type="irdbb:VOIIdentifierContainer" minOccurs="0" />
 			<xs:element name="CTReconResampledOnNMReferenceUsed" type="irdbb:DICOMData"/>
 			<xs:element name="NMTomoReconUsed" type="irdbb:DICOMData"/>
 		<xs:element name="CalculationAlgorithmUsed" type="irdbb:CalculationAlgorithmUsed" />
@@ -1825,14 +1812,6 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:element name="TimePointIdentifier" type="xs:string"/>
 		</xs:sequence>
 	</xs:complexType>
-
-	<xs:simpleType name="AbsorbedDoseRateUnit">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="gray per second"/>
-			<xs:enumeration value="milligray per second"/>
-			<xs:enumeration value="milligray per hour"/>
-		</xs:restriction>
-	</xs:simpleType>
 
 	<xs:complexType name="AbsorbedDoseRatePerVOIAtTimePoint">
 		<xs:sequence>

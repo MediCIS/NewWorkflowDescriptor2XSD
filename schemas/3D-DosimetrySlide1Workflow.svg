@@ -5634,8 +5634,8 @@ onmouseover='makeVisible("_1_1_1_3_1_5_1_5_1_1_1_2")' onmouseout='makeHidden("_1
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>AbsorbedDoseInVOIUnit</text>
-<text class='visible' x='5' y='41'>type: AbsorbedDoseInVOIUnit</text>
+<text class='strong' x='5' y='27'>AbsorbedDoseUnit</text>
+<text class='visible' x='5' y='41'>type: AbsorbedDoseUnit</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 

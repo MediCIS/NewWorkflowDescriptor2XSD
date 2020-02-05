@@ -122,7 +122,7 @@ AbsorbedDosePerVOIType
  1-string-AbsorbedDoseCategory:mean absorbed dose normalized to CTDI free in air normalized to tube load/mean absorbed dose normalized to CTDI vol normalized to tube load/mean absorbed radiation dose/maximum absorbed radiation dose/minimum absorbed radiation dose/median absorbed radiation dose/mode absorbed radiation dose
  0,1-string-StatisticalSubCategory:mean/maximum/minimum/median/mode
  1-string-AbsorbedDoseValue
- 1-string-AbsorbedDoseUnit:milligray per (milligray per (100 milliampere second))/milligray per (100 milliampere second)/milligray/milligray per (milligray per (1 milliampere second))
+ 1-string-AbsorbedDoseUnit:milligray per (milligray per (100 milliampere second))/milligray per (100 milliampere second)/milligray/milligray per (milligray per (1 milliampere second))/gray/milligray
  1-integer-VOIIdentifier
 }
 
@@ -130,7 +130,7 @@ VoxelBasedDistributionOfAbsorbedDoseType
 {
  1-string-VoxelBasedDistributionOfAbsorbedDoseIdentifier
  1-string-VoxelBasedDistributionOfAbsorbedDoseCategory:absorbed dose normalized to CTDI free in air normalized to tube load/absorbed dose normalized to CTDI vol normalized to tube load/absorbed dose
- 1-string-AbsorbedDoseUnit:milligray per (milligray per (100 milliampere second))/milligray per (100 milliampere second)/milligray/milligray per (milligray per (1 milliampere second))
+ 1-string-AbsorbedDoseUnit:milligray per (milligray per (100 milliampere second))/milligray per (100 milliampere second)/milligray/milligray per (milligray per (1 milliampere second))/gray/milligray
  0,1-NonDICOMData-NonDICOMVoxelBasedAbsorbedDoseDistribution
  0,1-DICOMData-DICOMVoxelBasedAbsorbedDoseDistribution
 }
@@ -176,7 +176,7 @@ DICOMData
 NonDICOMData
 {
  1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map/segmentation/voxel activity map/3D Energy Deposition Rate Matrix/NM Tomo Reconstruction/CT Reconstruction/Registration Matrix/Density Image
- 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format/STL format/HDF format
+ 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format/STL format/HDF4 format/HDF5 format
  1-string-NonDICOMDataFileName
  0,1-string-FHIRIdentifier
  0,1-TransformationIdentifierContainer-TransformationsUsed

@@ -227,6 +227,12 @@ CountsPerVOIAtTimePoint
  1-string-TimePointIdentifier
 }
 
+OrganMass
+{
+ 1-float-OrganMassValue
+ 1-String-OrganMassUnit:gram/kilogram
+}
+
 VOI
 {
  1-integer-VOIIdentifier
@@ -235,12 +241,6 @@ VOI
  0,1-NonDICOMDataContainer-NonDICOMDataContainer
  0,1-string-TimePointIdentifier
  0,1-OrganMass-OrganMass
-}
-
-OrganMass
-{
- 1-float-OrganMassValue
- 1-String-OrganMassUnit:gram/kilogram
 }
     
 DICOMDataContainer
@@ -296,7 +296,7 @@ AdministeredActivity
 AbsorbedDoseInVOI
 {
  1-float-AbsorbedDoseInVOIValue
- 1-string-AbsorbedDoseInVOIUnit:gray/milligray
+ 1-string-AbsorbedDoseUnit:milligray per (milligray per (100 milliampere second))/milligray per (100 milliampere second)/milligray/milligray per (milligray per (1 milliampere second))/gray/milligray
  0,1-float-AbsorbedDoseInVOIUncertainty
  1-VOIIdentifierContainer-VOIIdentifierList
 }
@@ -371,7 +371,7 @@ DICOMData
 NonDICOMData
 {
  1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map/segmentation/voxel activity map/3D Energy Deposition Rate Matrix/NM Tomo Reconstruction/CT Reconstruction/Registration Matrix/Density Image
- 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format/STL format/HDF format
+ 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format/STL format/HDF4 format/HDF5 format
  1-string-NonDICOMDataFileName
  0,1-string-FHIRIdentifier
  0,1-TransformationIdentifierContainer-TransformationsUsed

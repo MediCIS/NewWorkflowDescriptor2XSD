@@ -228,7 +228,8 @@ listeTypes=["DataActivityPerVOIAtTimePoint", "MeanAbsorbedDoseRateInROI", "VOIIn
             "ROIIdentifierUsedContainer","VOIIdentifierUsedContainer", "ActivityUnit", "TimeUnit", "Segmentation",
             "ElementOfSPECTRecoveryCoefficientCurve", "ActualPlanarCalibrationFactor", "TimeIntegratedActivityPerVOIContainer",
             "ActualPlanarCalibrationFactor", "PlanarCalibrationFactorReference",
-            "RegistrationVOISegmentationAndPropagationContainer","AbsorbedDoseCalculationInVOI", "TransformationIdentifierContainer", "NonDICOMDataContainer"
+            "RegistrationVOISegmentationAndPropagationContainer","AbsorbedDoseCalculationInVOI", "TransformationIdentifierContainer", "NonDICOMDataContainer",
+            "AbsorbedDoseUnit", "TimePointIdentifierUsedContainer", "OrganMass", "VOI", "VoiProducedContainer"
             ]
 
 listeTypesRestricted=[]

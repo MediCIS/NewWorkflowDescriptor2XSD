@@ -15,7 +15,7 @@ PlanarDataAcquisitionAndProcessingContainer
 
 PlanarDataAcquisitionAndProcessing
 {
- 1-PlanarDataAcquisition-PlanarDataAcquisition
+ 0,1-PlanarDataAcquisition-PlanarDataAcquisition
  1-PlanarDataCorrections-PlanarDataCorrections
  0,1-PlanarDataSegmentationWithoutRegistration-PlanarDataSegmentationWithoutRegistration
  0,1-PlanarDataSegmentationWithRegistrationAndPropagation-PlanarDataSegmentationWithRegistrationAndPropagation
@@ -41,12 +41,18 @@ TwoDimDosimetryViaTimeActivityCurveFit
 //Descriptions of Individual boxes
 //-------------------------
 
+OrganMass
+{
+ 1-float-OrganMassValue
+ 1-String-OrganMassUnit:gram/kilogram
+}
 
 PlanarDataAcquisition
 {
  1-TimePointDescription-TimePointDescription
  1-NMRelevantCalibrationReference-NMRelevantCalibrationReference
- 1-DICOMData-NMStaticProduced
+ 0,1-DICOMData-NMStaticProduced
+ 0,1-NonDICOMData-NonDicomNMStaticProduced
 // it is not needed to detail input that will be retrieved from DICOM metadata
 }
 
@@ -60,15 +66,40 @@ PlanarDataCorrections
  1-DICOMData-NMStaticCorrectedProduced
 }
 
+VOI
+{
+ 1-integer-VOIIdentifier
+ 1-string-OrganOrTissue:bone/bone surfaces/red bone marrow/bladder/breasts/left male breast/left female breast/right male breast/right female breast/colon/testes/left testis/right testis/ovaries/left ovary/right ovary/liver/lungs/left lung/right lung/esophagus/skin/stomach/thyroid/brain/salivary glands/parotid glands/left parotid gland/right parotid gland/submandibular glands/left submandibular gland/right submandibular gland/adrenals/extrathoracic region/gallbladder/heart/kidneys/left kidney/right kidney/lymphatic nodes/muscle/oral mucosa/pancreas/prostate/small intestine/spleen/thymus/uterus/air/body surface/tumor/soft tissue/L2-L4 bone marrow
+ 0,1-DICOMDataContainer-DICOMDataContainer
+ 0,1-NonDICOMDataContainer-NonDICOMDataContainer
+ 0,1-string-TimePointIdentifier
+ 0,1-OrganMass-OrganMass
+}
+
+VoiProducedContainer
+{
+ 1,n-VOI-VOIProduced
+}
+
+Segmentation
+{
+ 1-string-SegmentationIdentifier
+ 1-VoiProducedContainer-VOIContainer
+ 0,1-DICOMDataContainer-DICOMDataContainer
+ 0,1-NonDICOMDataContainer-NonDICOMDataContainer
+}
+
 PlanarDataSegmentationWithoutRegistration
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1-TimePointIdentifierUsedContainer-TimePointIdentifierUsedContainer
- 1-DICOMDataContainer-NMStaticCorrectedUsed
+ 1-string-TimePointIdentifierUsed
+ 0,1-DICOMDataContainer-NMStaticCorrectedUsed
+ 0,1-NonDICOMDataContainer-NonDICOMNMStaticCorrectedUsed
  1-string-SegmentationMethodUsed
 // to be replaced by structured items
  1-CountsPerROIAtTimePointContainer-CountsPerROIAtTimePointContainer
- 1,n-ROIcontainer-ROIProduced
+ 0,1-ROIcontainer-ROIProduced
+ 0,1-Segmentation-SegmentationProduced
 }
 
 ROIcontainer
@@ -89,14 +120,16 @@ TimePointIdentifierUsedContainer
 PlanarDataSegmentationWithRegistrationAndPropagation
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1-TimePointIdentifierUsedContainer-TimePointIdentifierUsedContainer
- 1-DICOMDataContainer-NMStaticCorrectedUsed
- 0,1-string-ROIIdentifierUsed
+ 1-string-TimePointIdentifierUsed
+ 0,1-DICOMDataContainer-NMStaticCorrectedUsed
+ 0,1-NonDICOMDataContainer-NonDICOMNMStaticCorrectedUsed
  1-string-SegmentationMethodUsed
 // to be replaced by structured items
  1-CountsPerROIAtTimePointContainer-CountsPerROIAtTimePointContainer
- 1-ROIcontainer-ROIProduced
- 1-DICOMDataContainer-NMStaticCorrectedResampledOnCommonReferenceProduced
+ 0,1-ROIcontainer-ROIProduced
+ 0,1-Segmentation-SegmentationProduced
+ 0,1-DICOMDataContainer-NMStaticCorrectedResampledOnCommonReferenceProduced
+ 0,1-NonDICOMDataContainer-NonDICOMNMStaticCorrectedResampledOnCommonReferenceProduced
 }
 
 ROIIdentifierUsedContainer
@@ -107,7 +140,7 @@ ROIIdentifierUsedContainer
 ROIPlanarActivityDetermination
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1-TimePointIdentifierUsedContainer-TimePointIdentifierUsedContainer
+ 1-string-TimePointIdentifierUsed
  1-string-ROIIdentifierUsed
 // Corresponding Counts need to be retrieved
  1-NMRelevantCalibrationReference-PlanarCalibrationFactorReference
@@ -122,7 +155,7 @@ DataActivityPerROIAtTimePointContainer
 AbsorbedDoseRateCalculationIn2DDosimetry
 {
  1-ProcessExecutionContext-ProcessExecutionContext
- 1-TimePointIdentifierUsedContainer-TimePointIdentifierUsedContainer
+ 1-string-TimePointIdentifierUsed
  1,n-string-ROIIdentifierUsed
 // Corresponding Data activity per ROI need to be retrieved
  1-AdministeredActivity-PreAdministeredActivityUsed
@@ -187,7 +220,7 @@ AbsorbedDoseCalculationInROIIn2DDosimetry
  1-ROIIdentifierUsedContainer-ROIIdentifierUsed
 // Corresponding Time Integrated Activity Coefficient per ROI need to be retrieved
 // Corresponding Time Integrated Activity per ROI need to be retrieved
- 1-string-OrgansValueUsed
+ 1-string-OrganSValueUsed
  0,1-PatientOrganMassUsedContainer-PatientOrganMassUsed
  1-MeanAbsorbedDoseInROIcontainer-MeanAbsorbedDoseInROIProduced
 }
@@ -317,7 +350,7 @@ MeanAbsorbedDoseRateInROI
 MeanAbsorbedDoseInROI
 {
  1-float-MeanAbsorbedDoseInROIValue
- 1-string-MeanAbsorbedDoseInROIUnit:gray/milligray
+ 1-string-AbsorbedDoseUnit:milligray per (milligray per (100 milliampere second))/milligray per (100 milliampere second)/milligray/milligray per (milligray per (1 milliampere second))/gray/milligray
  1-string-ROIIdentifier
 }
 
@@ -374,7 +407,7 @@ DICOMData
 NonDICOMData
 {
  1-string-NonDICOMDataClass:VOI/VOI superimposed on images/3D absorbed dose map/segmentation/voxel activity map/3D Energy Deposition Rate Matrix/NM Tomo Reconstruction/CT Reconstruction/Registration Matrix/Density Image
- 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format/STL format/HDF format
+ 1-string-NonDICOMDataFormat:zipped imageJ contours format/TIFF format embedding imageJ contours/zipped pseudo DICOM ImpactMC/GIF format embedding imageJ contours/NRRD format/STL format/HDF4 format/HDF5 format
  1-string-NonDICOMDataFileName
  0,1-string-FHIRIdentifier
  0,1-TransformationIdentifierContainer-TransformationsUsed
