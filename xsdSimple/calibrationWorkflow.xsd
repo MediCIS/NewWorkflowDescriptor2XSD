@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 071-->
+<!--VersionSchemas : 072-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -481,7 +481,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:enumeration value="CT Reconstruction"/>
 			<xs:enumeration value="Linear transformation matrix"/>
 			<xs:enumeration value="BSpline transformation"/>
-			<xs:enumeration value="Advanced elastix"/>
+			<xs:enumeration value="Advanced elastix transformation"/>
 			<xs:enumeration value="Density Image"/>
 		</xs:restriction>
 	</xs:simpleType>
