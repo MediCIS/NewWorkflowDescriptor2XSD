@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 070-->
+<!--VersionSchemas : 071-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -479,7 +479,9 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:enumeration value="3D Energy Deposition Rate Matrix"/>
 			<xs:enumeration value="NM Tomo Reconstruction"/>
 			<xs:enumeration value="CT Reconstruction"/>
-			<xs:enumeration value="Registration Matrix"/>
+			<xs:enumeration value="Linear transformation matrix"/>
+			<xs:enumeration value="BSpline transformation"/>
+			<xs:enumeration value="Advanced elastix"/>
 			<xs:enumeration value="Density Image"/>
 		</xs:restriction>
 	</xs:simpleType>
