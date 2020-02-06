@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 078-->
+<!--VersionSchemas : 088-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -12,6 +12,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 			<xs:element name="ReferencedClinicalResearchStudy" type="irdbb:ReferencedClinicalResearchStudy" />
 			<xs:element name="PatientId" type="xs:string"/>
+			<xs:element name="AcquisitionSettings" type="irdbb:AcquisitionSettings" />
 
 				<!--xmlRootElements-->
 				<xs:element name="CalibrationWorkflow" type="irdbb:CalibrationWorkflow" minOccurs="0" />
@@ -28,6 +29,18 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 						<xs:element name="ClinicalResearchStudyID" type="xs:string"/>
 						<xs:element name="ClinicalResearchStudyTitle" type="xs:string"/>
 					</xs:sequence>
+				</xs:complexType>
+				<xs:complexType name="AcquisitionSettings">
+						<xs:sequence>
+						<xs:element name="ReferencedClinicalResearchStudy" type="irdbb:ReferencedClinicalResearchStudy" />
+						<xs:element name="PatientId" type="xs:string" />
+						<xs:element name="Siteadministeringthetreatment" type="xs:string" />
+						<xs:element name="Dateandtimeofinjection" type="xs:string" />
+						<xs:element name="PreAdministeredActivity" type="irdbb:AdministeredActivity" />
+						<xs:element name="PostAdministeredActivity" type="irdbb:AdministeredActivity" minOccurs="0" />
+						<xs:element name="Radiopharmaceutical" type="xs:string" />
+						<xs:element name="Radionuclide" type="xs:string" />
+						</xs:sequence>
 				</xs:complexType>
 
 	<!--xmlElements-->
@@ -74,16 +87,6 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 					<xs:element name="RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry" type="irdbb:RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry" minOccurs="0" />
 						</xs:sequence>
 				</xs:complexType>
-
-	<xs:element name="HybridDosimetryPerTimePoint" >
-		<xs:complexType>
-			<xs:sequence>
-			<xs:element name="EnergyDepositionRateCalculationInHybridDosimetry" type="irdbb:EnergyDepositionRateCalculationInHybridDosimetry"/>
-			<xs:element name="SumAndScalingEnergyDepositionRate" type="irdbb:SumAndScalingEnergyDepositionRate"/>
-			<xs:element name="AbsorbedDoseRateCalculationInHybridDosimetry" type="irdbb:AbsorbedDoseRateCalculationInHybridDosimetry"/>
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
 
 			<xs:complexType name="ThreeDimDosimetrySlide2workflow">
 				<xs:sequence>
@@ -573,6 +576,24 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:element name="NonDICOMDataFileName" type="xs:string"/>
 			<xs:element name="FHIRIdentifier" type="xs:string" minOccurs="0" />
 			<xs:element name="TransformationsUsed" type="irdbb:TransformationIdentifierContainer" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:simpleType name="ActivityUnit">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="becquerel"/>
+			<xs:enumeration value="kilobecquerel"/>
+			<xs:enumeration value="megabecquerel"/>
+			<xs:enumeration value="curie"/>
+			<xs:enumeration value="millicurie"/>
+			<xs:enumeration value="microcurie"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="AdministeredActivity">
+		<xs:sequence>
+			<xs:element name="AdministeredActivityValue" type="xs:float"/>
+		<xs:element name="ActivityUnit" type="irdbb:ActivityUnit" />
 		</xs:sequence>
 	</xs:complexType>
 
@@ -1068,30 +1089,12 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:simpleType name="ActivityUnit">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="becquerel"/>
-			<xs:enumeration value="kilobecquerel"/>
-			<xs:enumeration value="megabecquerel"/>
-			<xs:enumeration value="curie"/>
-			<xs:enumeration value="millicurie"/>
-			<xs:enumeration value="microcurie"/>
-		</xs:restriction>
-	</xs:simpleType>
-
 	<xs:complexType name="DataActivityPerVOIAtTimePoint">
 		<xs:sequence>
 			<xs:element name="DataActivityValue" type="xs:float"/>
 		<xs:element name="ActivityUnit" type="irdbb:ActivityUnit" />
 			<xs:element name="VOIIdentifier" type="xs:integer"/>
 			<xs:element name="TimePointIdentifier" type="xs:string"/>
-		</xs:sequence>
-	</xs:complexType>
-
-	<xs:complexType name="AdministeredActivity">
-		<xs:sequence>
-			<xs:element name="AdministeredActivityValue" type="xs:float"/>
-		<xs:element name="ActivityUnit" type="irdbb:ActivityUnit" />
 		</xs:sequence>
 	</xs:complexType>
 
@@ -1542,6 +1545,15 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 
 	<xs:complexType name="HybridDosimetryPerTimePointContainer">
 		<xs:sequence>
+			<xs:element name="HybridDosimetryPerTimePoint" type="irdbb:HybridDosimetryPerTimePoint" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="HybridDosimetryPerTimePoint">
+		<xs:sequence>
+			<xs:element name="EnergyDepositionRateCalculationInHybridDosimetry" type="irdbb:EnergyDepositionRateCalculationInHybridDosimetry"/>
+			<xs:element name="SumAndScalingEnergyDepositionRate" type="irdbb:SumAndScalingEnergyDepositionRate"/>
+			<xs:element name="AbsorbedDoseRateCalculationInHybridDosimetry" type="irdbb:AbsorbedDoseRateCalculationInHybridDosimetry"/>
 		</xs:sequence>
 	</xs:complexType>
 

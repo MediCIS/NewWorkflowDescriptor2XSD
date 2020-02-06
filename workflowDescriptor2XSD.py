@@ -202,6 +202,7 @@ def generateXSD(elements, types, rootElements):
     XSD+= '\t\t<xs:sequence>'+"\n"
     XSD+= '\t\t\t<xs:element name="ReferencedClinicalResearchStudy" type="irdbb:ReferencedClinicalResearchStudy" />'+"\n"
     XSD+= '\t\t\t<xs:element name="PatientId" type="xs:string"/>'+"\n"
+    XSD+= '\t\t\t<xs:element name="AcquisitionSettings" type="irdbb:AcquisitionSettings" />'+"\n"
     XSD+=rootElements
     XSD+= '\t\t</xs:sequence>'+"\n"
     XSD+= '\t</xs:complexType>'+"\n"+"\n"
@@ -210,6 +211,18 @@ def generateXSD(elements, types, rootElements):
     XSD+= '\t\t\t\t\t\t<xs:element name="ClinicalResearchStudyID" type="xs:string"/>'+"\n"
     XSD+= '\t\t\t\t\t\t<xs:element name="ClinicalResearchStudyTitle" type="xs:string"/>'+"\n"
     XSD+= '\t\t\t\t\t</xs:sequence>'+"\n"
+    XSD+= '\t\t\t\t</xs:complexType>'+"\n"
+    XSD+= '\t\t\t\t<xs:complexType name="AcquisitionSettings">'+"\n"
+    XSD+= '\t\t\t\t\t\t<xs:sequence>'+"\n"
+    XSD+= '\t\t\t\t\t\t<xs:element name="ReferencedClinicalResearchStudy" type="irdbb:ReferencedClinicalResearchStudy" />'+"\n"
+    XSD+= '\t\t\t\t\t\t<xs:element name="PatientId" type="xs:string" />'+"\n"
+    XSD+= '\t\t\t\t\t\t<xs:element name="Siteadministeringthetreatment" type="xs:string" />'+"\n"
+    XSD+= '\t\t\t\t\t\t<xs:element name="Dateandtimeofinjection" type="xs:string" />'+"\n"
+    XSD+= '\t\t\t\t\t\t<xs:element name="PreAdministeredActivity" type="irdbb:AdministeredActivity" />'+"\n"
+    XSD+= '\t\t\t\t\t\t<xs:element name="PostAdministeredActivity" type="irdbb:AdministeredActivity" minOccurs="0" />'+"\n"
+    XSD+= '\t\t\t\t\t\t<xs:element name="Radiopharmaceutical" type="xs:string" />'+"\n"
+    XSD+= '\t\t\t\t\t\t<xs:element name="Radionuclide" type="xs:string" />'+"\n"
+    XSD+= '\t\t\t\t\t\t</xs:sequence>'+"\n"
     XSD+= '\t\t\t\t</xs:complexType>'+"\n"
     XSD+=elements
     XSD+=types        
@@ -230,7 +243,7 @@ listeTypes=["DataActivityPerVOIAtTimePoint", "MeanAbsorbedDoseRateInROI", "VOIIn
             "ActualPlanarCalibrationFactor", "PlanarCalibrationFactorReference",
             "RegistrationVOISegmentationAndPropagationContainer","AbsorbedDoseCalculationInVOI", "TransformationIdentifierContainer", "NonDICOMDataContainer",
             "AbsorbedDoseUnit", "TimePointIdentifierUsedContainer", "OrganMass", "VOI", "VoiProducedContainer",
-            "CountsPerVOIAtTimePointContainer"
+            "CountsPerVOIAtTimePointContainer", "GeometricalTransformation", "HybridDosimetryPerTimePoint", "HybridDosimetryPerTimePointContainer", "AdministeredActivity"
             ]
 
 listeTypesRestricted=[]

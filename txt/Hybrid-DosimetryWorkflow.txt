@@ -96,7 +96,7 @@ HybridDosimetryViaAbsorbedDoseRateCalculation
 
 HybridDosimetryPerTimePointContainer
 {
-1,n-HybridDosimetryPerTimePoint-HybridDosimetryPerTimePoint
+ 1,n-HybridDosimetryPerTimePoint-HybridDosimetryPerTimePoint
 }
 
 HybridDosimetryPerTimePoint

@@ -334,3 +334,9 @@ NonDICOMData
  0,1-TransformationIdentifierContainer-TransformationsUsed
 }
 
+AdministeredActivity
+{
+ 1-float-AdministeredActivityValue
+ 1-string-ActivityUnit:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
+// to be replaced by a structured timestamp
+}

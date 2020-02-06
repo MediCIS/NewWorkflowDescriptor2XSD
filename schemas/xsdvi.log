@@ -3818,3 +3818,919 @@ févr. 06, 2020 10:39:47 AM xsdvi.XsdVi main
 INFOS: Drawing SVG nonDicomFileSetDescriptor.svg...
 févr. 06, 2020 10:39:47 AM xsdvi.XsdVi main
 INFOS: Done.
+févr. 06, 2020 11:15:59 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:15:59 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/WP2subtask212WorkflowData.xsd...
+févr. 06, 2020 11:15:59 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:15:59 AM xsdvi.XsdVi main
+INFOS: Drawing SVG WP2subtask212WorkflowData.svg...
+févr. 06, 2020 11:15:59 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:15:59 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:15:59 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/calibrationWorkflow.xsd...
+févr. 06, 2020 11:15:59 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:15:59 AM xsdvi.XsdVi main
+INFOS: Drawing SVG calibrationWorkflow.svg...
+févr. 06, 2020 11:15:59 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:16:00 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:16:00 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/Hybrid-DosimetryWorkflow.xsd...
+févr. 06, 2020 11:16:00 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:16:00 AM xsdvi.XsdVi main
+INFOS: Drawing SVG Hybrid-DosimetryWorkflow.svg...
+févr. 06, 2020 11:16:00 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:16:00 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:16:00 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/2D-DosimetryWorkflow.xsd...
+févr. 06, 2020 11:16:00 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:16:00 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 2D-DosimetryWorkflow.svg...
+févr. 06, 2020 11:16:00 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:16:00 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:16:00 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/3D-DosimetrySlide2Workflow.xsd...
+févr. 06, 2020 11:16:01 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:16:01 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 3D-DosimetrySlide2Workflow.svg...
+févr. 06, 2020 11:16:01 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:16:01 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:16:01 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/3D-DosimetrySlide1Workflow.xsd...
+févr. 06, 2020 11:16:01 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:16:01 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 3D-DosimetrySlide1Workflow.svg...
+févr. 06, 2020 11:16:01 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:16:01 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:16:01 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsd/nonDicomFileSetDescriptor.xsd...
+févr. 06, 2020 11:16:01 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:16:01 AM xsdvi.XsdVi main
+INFOS: Drawing SVG nonDicomFileSetDescriptor.svg...
+févr. 06, 2020 11:16:01 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:18:38 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:18:38 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/WP2subtask212WorkflowData.xsd...
+févr. 06, 2020 11:18:39 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:18:39 AM xsdvi.XsdVi main
+INFOS: Drawing SVG WP2subtask212WorkflowData.svg...
+févr. 06, 2020 11:18:39 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:18:39 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:18:39 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/calibrationWorkflow.xsd...
+févr. 06, 2020 11:18:39 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:18:39 AM xsdvi.XsdVi main
+INFOS: Drawing SVG calibrationWorkflow.svg...
+févr. 06, 2020 11:18:39 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:18:39 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:18:39 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/Hybrid-DosimetryWorkflow.xsd...
+févr. 06, 2020 11:18:39 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:18:39 AM xsdvi.XsdVi main
+INFOS: Drawing SVG Hybrid-DosimetryWorkflow.svg...
+févr. 06, 2020 11:18:39 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:18:40 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:18:40 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/2D-DosimetryWorkflow.xsd...
+févr. 06, 2020 11:18:40 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:18:40 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 2D-DosimetryWorkflow.svg...
+févr. 06, 2020 11:18:40 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:18:40 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:18:40 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/3D-DosimetrySlide2Workflow.xsd...
+févr. 06, 2020 11:18:40 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:18:40 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 3D-DosimetrySlide2Workflow.svg...
+févr. 06, 2020 11:18:40 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:18:40 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:18:41 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/3D-DosimetrySlide1Workflow.xsd...
+févr. 06, 2020 11:18:41 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:18:41 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 3D-DosimetrySlide1Workflow.svg...
+févr. 06, 2020 11:18:41 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:18:41 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:18:41 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsd/nonDicomFileSetDescriptor.xsd...
+févr. 06, 2020 11:18:41 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:18:41 AM xsdvi.XsdVi main
+INFOS: Drawing SVG nonDicomFileSetDescriptor.svg...
+févr. 06, 2020 11:18:41 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:25:05 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:25:05 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/WP2subtask212WorkflowData.xsd...
+févr. 06, 2020 11:25:05 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AcquisitionSetting' to a(n) 'type definition' component. (line: 15)
+févr. 06, 2020 11:25:05 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:25:05 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:25:05 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:25:05 AM xsdvi.XsdVi main
+INFOS: Drawing SVG WP2subtask212WorkflowData.svg...
+févr. 06, 2020 11:25:05 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:25:05 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:25:05 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/calibrationWorkflow.xsd...
+févr. 06, 2020 11:25:05 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AcquisitionSetting' to a(n) 'type definition' component. (line: 15)
+févr. 06, 2020 11:25:05 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:25:05 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:25:05 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:25:05 AM xsdvi.XsdVi main
+INFOS: Drawing SVG calibrationWorkflow.svg...
+févr. 06, 2020 11:25:06 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:25:06 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:25:06 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/Hybrid-DosimetryWorkflow.xsd...
+févr. 06, 2020 11:25:06 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AcquisitionSetting' to a(n) 'type definition' component. (line: 15)
+févr. 06, 2020 11:25:06 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:25:06 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:25:06 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:25:06 AM xsdvi.XsdVi main
+INFOS: Drawing SVG Hybrid-DosimetryWorkflow.svg...
+févr. 06, 2020 11:25:06 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:25:06 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:25:06 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/2D-DosimetryWorkflow.xsd...
+févr. 06, 2020 11:25:06 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AcquisitionSetting' to a(n) 'type definition' component. (line: 15)
+févr. 06, 2020 11:25:06 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:25:06 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:25:06 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:25:06 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 2D-DosimetryWorkflow.svg...
+févr. 06, 2020 11:25:06 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:25:07 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:25:07 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/3D-DosimetrySlide2Workflow.xsd...
+févr. 06, 2020 11:25:07 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AcquisitionSetting' to a(n) 'type definition' component. (line: 15)
+févr. 06, 2020 11:25:07 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:25:07 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:25:07 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:25:07 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 3D-DosimetrySlide2Workflow.svg...
+févr. 06, 2020 11:25:07 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:25:07 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:25:07 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/3D-DosimetrySlide1Workflow.xsd...
+févr. 06, 2020 11:25:07 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AcquisitionSetting' to a(n) 'type definition' component. (line: 15)
+févr. 06, 2020 11:25:07 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:25:07 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:25:07 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:25:07 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 3D-DosimetrySlide1Workflow.svg...
+févr. 06, 2020 11:25:07 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:25:07 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:25:07 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsd/nonDicomFileSetDescriptor.xsd...
+févr. 06, 2020 11:25:08 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:25:08 AM xsdvi.XsdVi main
+INFOS: Drawing SVG nonDicomFileSetDescriptor.svg...
+févr. 06, 2020 11:25:08 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:25:51 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:25:51 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/WP2subtask212WorkflowData.xsd...
+févr. 06, 2020 11:25:51 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AcquisitionSetting' to a(n) 'type definition' component. (line: 15)
+févr. 06, 2020 11:25:51 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:25:51 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:25:51 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:25:51 AM xsdvi.XsdVi main
+INFOS: Drawing SVG WP2subtask212WorkflowData.svg...
+févr. 06, 2020 11:25:51 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:25:52 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:25:52 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/calibrationWorkflow.xsd...
+févr. 06, 2020 11:25:52 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AcquisitionSetting' to a(n) 'type definition' component. (line: 15)
+févr. 06, 2020 11:25:52 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:25:52 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:25:52 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:25:52 AM xsdvi.XsdVi main
+INFOS: Drawing SVG calibrationWorkflow.svg...
+févr. 06, 2020 11:25:52 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:25:52 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:25:52 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/Hybrid-DosimetryWorkflow.xsd...
+févr. 06, 2020 11:25:52 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AcquisitionSetting' to a(n) 'type definition' component. (line: 15)
+févr. 06, 2020 11:25:52 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:25:52 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:25:52 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:25:52 AM xsdvi.XsdVi main
+INFOS: Drawing SVG Hybrid-DosimetryWorkflow.svg...
+févr. 06, 2020 11:25:52 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:25:52 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:25:53 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/2D-DosimetryWorkflow.xsd...
+févr. 06, 2020 11:25:53 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AcquisitionSetting' to a(n) 'type definition' component. (line: 15)
+févr. 06, 2020 11:25:53 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:25:53 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:25:53 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:25:53 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 2D-DosimetryWorkflow.svg...
+févr. 06, 2020 11:25:53 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:25:53 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:25:53 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/3D-DosimetrySlide2Workflow.xsd...
+févr. 06, 2020 11:25:53 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AcquisitionSetting' to a(n) 'type definition' component. (line: 15)
+févr. 06, 2020 11:25:53 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:25:53 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:25:53 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:25:53 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 3D-DosimetrySlide2Workflow.svg...
+févr. 06, 2020 11:25:53 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:25:53 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:25:53 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/3D-DosimetrySlide1Workflow.xsd...
+févr. 06, 2020 11:25:53 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AcquisitionSetting' to a(n) 'type definition' component. (line: 15)
+févr. 06, 2020 11:25:53 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:25:53 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:25:53 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:25:53 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 3D-DosimetrySlide1Workflow.svg...
+févr. 06, 2020 11:25:53 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:25:54 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:25:54 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsd/nonDicomFileSetDescriptor.xsd...
+févr. 06, 2020 11:25:54 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AcquisitionSetting' to a(n) 'type definition' component. (line: 15)
+févr. 06, 2020 11:25:54 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 39)
+févr. 06, 2020 11:25:54 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 40)
+févr. 06, 2020 11:25:54 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:25:54 AM xsdvi.XsdVi main
+INFOS: Drawing SVG nonDicomFileSetDescriptor.svg...
+févr. 06, 2020 11:25:54 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:27:39 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:27:39 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/WP2subtask212WorkflowData.xsd...
+févr. 06, 2020 11:27:39 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AcquisitionSetting' to a(n) 'type definition' component. (line: 15)
+févr. 06, 2020 11:27:39 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:27:39 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:27:39 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:27:39 AM xsdvi.XsdVi main
+INFOS: Drawing SVG WP2subtask212WorkflowData.svg...
+févr. 06, 2020 11:27:39 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:27:40 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:27:40 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/calibrationWorkflow.xsd...
+févr. 06, 2020 11:27:40 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AcquisitionSetting' to a(n) 'type definition' component. (line: 15)
+févr. 06, 2020 11:27:40 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:27:40 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:27:40 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:27:40 AM xsdvi.XsdVi main
+INFOS: Drawing SVG calibrationWorkflow.svg...
+févr. 06, 2020 11:27:40 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:27:40 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:27:40 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/Hybrid-DosimetryWorkflow.xsd...
+févr. 06, 2020 11:27:40 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AcquisitionSetting' to a(n) 'type definition' component. (line: 15)
+févr. 06, 2020 11:27:40 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:27:40 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:27:40 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:27:40 AM xsdvi.XsdVi main
+INFOS: Drawing SVG Hybrid-DosimetryWorkflow.svg...
+févr. 06, 2020 11:27:40 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:27:41 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:27:41 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/2D-DosimetryWorkflow.xsd...
+févr. 06, 2020 11:27:41 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AcquisitionSetting' to a(n) 'type definition' component. (line: 15)
+févr. 06, 2020 11:27:41 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:27:41 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:27:41 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:27:41 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 2D-DosimetryWorkflow.svg...
+févr. 06, 2020 11:27:41 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:27:41 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:27:41 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/3D-DosimetrySlide2Workflow.xsd...
+févr. 06, 2020 11:27:41 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AcquisitionSetting' to a(n) 'type definition' component. (line: 15)
+févr. 06, 2020 11:27:41 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:27:41 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:27:41 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:27:41 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 3D-DosimetrySlide2Workflow.svg...
+févr. 06, 2020 11:27:41 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:27:41 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:27:41 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/3D-DosimetrySlide1Workflow.xsd...
+févr. 06, 2020 11:27:42 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AcquisitionSetting' to a(n) 'type definition' component. (line: 15)
+févr. 06, 2020 11:27:42 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:27:42 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:27:42 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:27:42 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 3D-DosimetrySlide1Workflow.svg...
+févr. 06, 2020 11:27:42 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:27:42 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:27:42 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsd/nonDicomFileSetDescriptor.xsd...
+févr. 06, 2020 11:27:42 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AcquisitionSetting' to a(n) 'type definition' component. (line: 15)
+févr. 06, 2020 11:27:42 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 39)
+févr. 06, 2020 11:27:42 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 40)
+févr. 06, 2020 11:27:42 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:27:42 AM xsdvi.XsdVi main
+INFOS: Drawing SVG nonDicomFileSetDescriptor.svg...
+févr. 06, 2020 11:27:42 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:29:15 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:29:15 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/WP2subtask212WorkflowData.xsd...
+févr. 06, 2020 11:29:15 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:29:15 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:29:15 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:29:15 AM xsdvi.XsdVi main
+INFOS: Drawing SVG WP2subtask212WorkflowData.svg...
+févr. 06, 2020 11:29:15 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:29:15 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:29:15 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/calibrationWorkflow.xsd...
+févr. 06, 2020 11:29:15 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:29:15 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:29:15 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:29:15 AM xsdvi.XsdVi main
+INFOS: Drawing SVG calibrationWorkflow.svg...
+févr. 06, 2020 11:29:15 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:29:16 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:29:16 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/Hybrid-DosimetryWorkflow.xsd...
+févr. 06, 2020 11:29:16 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:29:16 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:29:16 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:29:16 AM xsdvi.XsdVi main
+INFOS: Drawing SVG Hybrid-DosimetryWorkflow.svg...
+févr. 06, 2020 11:29:16 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:29:16 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:29:16 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/2D-DosimetryWorkflow.xsd...
+févr. 06, 2020 11:29:16 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:29:16 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:29:16 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:29:16 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 2D-DosimetryWorkflow.svg...
+févr. 06, 2020 11:29:16 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:29:17 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:29:17 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/3D-DosimetrySlide2Workflow.xsd...
+févr. 06, 2020 11:29:17 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:29:17 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:29:17 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:29:17 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 3D-DosimetrySlide2Workflow.svg...
+févr. 06, 2020 11:29:17 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:29:17 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:29:17 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/3D-DosimetrySlide1Workflow.xsd...
+févr. 06, 2020 11:29:17 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:29:17 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:29:17 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:29:17 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 3D-DosimetrySlide1Workflow.svg...
+févr. 06, 2020 11:29:17 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:29:17 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:29:17 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsd/nonDicomFileSetDescriptor.xsd...
+févr. 06, 2020 11:29:18 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 39)
+févr. 06, 2020 11:29:18 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 40)
+févr. 06, 2020 11:29:18 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:29:18 AM xsdvi.XsdVi main
+INFOS: Drawing SVG nonDicomFileSetDescriptor.svg...
+févr. 06, 2020 11:29:18 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:32:30 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:32:30 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/WP2subtask212WorkflowData.xsd...
+févr. 06, 2020 11:32:30 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:32:30 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:32:30 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:32:30 AM xsdvi.XsdVi main
+INFOS: Drawing SVG WP2subtask212WorkflowData.svg...
+févr. 06, 2020 11:32:30 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:32:30 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:32:30 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/calibrationWorkflow.xsd...
+févr. 06, 2020 11:32:30 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:32:30 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:32:30 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:32:30 AM xsdvi.XsdVi main
+INFOS: Drawing SVG calibrationWorkflow.svg...
+févr. 06, 2020 11:32:30 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:32:31 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:32:31 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/Hybrid-DosimetryWorkflow.xsd...
+févr. 06, 2020 11:32:31 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:32:31 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:32:31 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:32:31 AM xsdvi.XsdVi main
+INFOS: Drawing SVG Hybrid-DosimetryWorkflow.svg...
+févr. 06, 2020 11:32:31 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:32:31 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:32:31 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/2D-DosimetryWorkflow.xsd...
+févr. 06, 2020 11:32:31 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:32:31 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:32:31 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:32:31 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 2D-DosimetryWorkflow.svg...
+févr. 06, 2020 11:32:31 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:32:32 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:32:32 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/3D-DosimetrySlide2Workflow.xsd...
+févr. 06, 2020 11:32:32 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:32:32 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:32:32 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:32:32 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 3D-DosimetrySlide2Workflow.svg...
+févr. 06, 2020 11:32:32 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:32:32 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:32:32 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/3D-DosimetrySlide1Workflow.xsd...
+févr. 06, 2020 11:32:32 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 32)
+févr. 06, 2020 11:32:32 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 33)
+févr. 06, 2020 11:32:32 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:32:32 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 3D-DosimetrySlide1Workflow.svg...
+févr. 06, 2020 11:32:32 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:32:32 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:32:32 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsd/nonDicomFileSetDescriptor.xsd...
+févr. 06, 2020 11:32:33 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 39)
+févr. 06, 2020 11:32:33 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: cvc-datatype-valid.1.2.1: 'xs: AdministeredActivity' is not a valid value for 'QName'. (line: 40)
+févr. 06, 2020 11:32:33 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:32:33 AM xsdvi.XsdVi main
+INFOS: Drawing SVG nonDicomFileSetDescriptor.svg...
+févr. 06, 2020 11:32:33 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:34:03 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:34:03 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/WP2subtask212WorkflowData.xsd...
+févr. 06, 2020 11:34:03 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AdministeredActivity' to a(n) 'type definition' component. (line: 32)
+févr. 06, 2020 11:34:03 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AdministeredActivity' to a(n) 'type definition' component. (line: 33)
+févr. 06, 2020 11:34:03 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:34:03 AM xsdvi.XsdVi main
+INFOS: Drawing SVG WP2subtask212WorkflowData.svg...
+févr. 06, 2020 11:34:03 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:34:03 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:34:03 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/calibrationWorkflow.xsd...
+févr. 06, 2020 11:34:03 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AdministeredActivity' to a(n) 'type definition' component. (line: 32)
+févr. 06, 2020 11:34:03 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AdministeredActivity' to a(n) 'type definition' component. (line: 33)
+févr. 06, 2020 11:34:03 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:34:03 AM xsdvi.XsdVi main
+INFOS: Drawing SVG calibrationWorkflow.svg...
+févr. 06, 2020 11:34:04 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:34:04 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:34:04 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/Hybrid-DosimetryWorkflow.xsd...
+févr. 06, 2020 11:34:04 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:34:04 AM xsdvi.XsdVi main
+INFOS: Drawing SVG Hybrid-DosimetryWorkflow.svg...
+févr. 06, 2020 11:34:04 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:34:04 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:34:04 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/2D-DosimetryWorkflow.xsd...
+févr. 06, 2020 11:34:04 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:34:04 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 2D-DosimetryWorkflow.svg...
+févr. 06, 2020 11:34:04 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:34:05 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:34:05 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/3D-DosimetrySlide2Workflow.xsd...
+févr. 06, 2020 11:34:05 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:34:05 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 3D-DosimetrySlide2Workflow.svg...
+févr. 06, 2020 11:34:05 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:34:05 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:34:05 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/3D-DosimetrySlide1Workflow.xsd...
+févr. 06, 2020 11:34:05 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:34:05 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 3D-DosimetrySlide1Workflow.svg...
+févr. 06, 2020 11:34:05 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:34:05 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:34:06 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsd/nonDicomFileSetDescriptor.xsd...
+févr. 06, 2020 11:34:06 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:34:06 AM xsdvi.XsdVi main
+INFOS: Drawing SVG nonDicomFileSetDescriptor.svg...
+févr. 06, 2020 11:34:06 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:36:41 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:36:41 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/WP2subtask212WorkflowData.xsd...
+févr. 06, 2020 11:36:41 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AdministeredActivity' to a(n) 'type definition' component. (line: 32)
+févr. 06, 2020 11:36:41 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AdministeredActivity' to a(n) 'type definition' component. (line: 33)
+févr. 06, 2020 11:36:41 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:36:41 AM xsdvi.XsdVi main
+INFOS: Drawing SVG WP2subtask212WorkflowData.svg...
+févr. 06, 2020 11:36:41 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:36:41 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:36:41 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/calibrationWorkflow.xsd...
+févr. 06, 2020 11:36:41 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AdministeredActivity' to a(n) 'type definition' component. (line: 32)
+févr. 06, 2020 11:36:41 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AdministeredActivity' to a(n) 'type definition' component. (line: 33)
+févr. 06, 2020 11:36:41 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:36:41 AM xsdvi.XsdVi main
+INFOS: Drawing SVG calibrationWorkflow.svg...
+févr. 06, 2020 11:36:41 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:36:42 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:36:42 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/Hybrid-DosimetryWorkflow.xsd...
+févr. 06, 2020 11:36:42 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:36:42 AM xsdvi.XsdVi main
+INFOS: Drawing SVG Hybrid-DosimetryWorkflow.svg...
+févr. 06, 2020 11:36:42 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:36:42 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:36:42 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/2D-DosimetryWorkflow.xsd...
+févr. 06, 2020 11:36:42 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:36:42 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 2D-DosimetryWorkflow.svg...
+févr. 06, 2020 11:36:42 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:36:43 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:36:43 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/3D-DosimetrySlide2Workflow.xsd...
+févr. 06, 2020 11:36:43 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:36:43 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 3D-DosimetrySlide2Workflow.svg...
+févr. 06, 2020 11:36:43 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:36:43 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:36:43 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/3D-DosimetrySlide1Workflow.xsd...
+févr. 06, 2020 11:36:43 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:36:43 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 3D-DosimetrySlide1Workflow.svg...
+févr. 06, 2020 11:36:43 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:36:43 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:36:43 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsd/nonDicomFileSetDescriptor.xsd...
+févr. 06, 2020 11:36:43 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AdministeredActivity' to a(n) 'type definition' component. (line: 39)
+févr. 06, 2020 11:36:43 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AdministeredActivity' to a(n) 'type definition' component. (line: 40)
+févr. 06, 2020 11:36:43 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AdministeredActivity' to a(n) 'type definition' component. (line: 988)
+févr. 06, 2020 11:36:43 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AdministeredActivity' to a(n) 'type definition' component. (line: 989)
+févr. 06, 2020 11:36:43 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AdministeredActivity' to a(n) 'type definition' component. (line: 1327)
+févr. 06, 2020 11:36:43 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AdministeredActivity' to a(n) 'type definition' component. (line: 1328)
+févr. 06, 2020 11:36:43 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AdministeredActivity' to a(n) 'type definition' component. (line: 1369)
+févr. 06, 2020 11:36:43 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AdministeredActivity' to a(n) 'type definition' component. (line: 1370)
+févr. 06, 2020 11:36:43 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AdministeredActivity' to a(n) 'type definition' component. (line: 1609)
+févr. 06, 2020 11:36:43 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AdministeredActivity' to a(n) 'type definition' component. (line: 1610)
+févr. 06, 2020 11:36:43 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AdministeredActivity' to a(n) 'type definition' component. (line: 1807)
+févr. 06, 2020 11:36:43 AM xsdvi.utils.XsdErrorHandler handleError
+GRAVE: [xs-error]: src-resolve: Cannot resolve the name 'irdbb:AdministeredActivity' to a(n) 'type definition' component. (line: 1808)
+févr. 06, 2020 11:36:43 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:36:44 AM xsdvi.XsdVi main
+INFOS: Drawing SVG nonDicomFileSetDescriptor.svg...
+févr. 06, 2020 11:36:44 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:37:38 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:37:38 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/WP2subtask212WorkflowData.xsd...
+févr. 06, 2020 11:37:38 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:37:38 AM xsdvi.XsdVi main
+INFOS: Drawing SVG WP2subtask212WorkflowData.svg...
+févr. 06, 2020 11:37:38 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:37:39 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:37:39 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/calibrationWorkflow.xsd...
+févr. 06, 2020 11:37:39 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:37:39 AM xsdvi.XsdVi main
+INFOS: Drawing SVG calibrationWorkflow.svg...
+févr. 06, 2020 11:37:39 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:37:39 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:37:39 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/Hybrid-DosimetryWorkflow.xsd...
+févr. 06, 2020 11:37:39 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:37:39 AM xsdvi.XsdVi main
+INFOS: Drawing SVG Hybrid-DosimetryWorkflow.svg...
+févr. 06, 2020 11:37:39 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:37:40 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:37:40 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/2D-DosimetryWorkflow.xsd...
+févr. 06, 2020 11:37:40 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:37:40 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 2D-DosimetryWorkflow.svg...
+févr. 06, 2020 11:37:40 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:37:40 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:37:40 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/3D-DosimetrySlide2Workflow.xsd...
+févr. 06, 2020 11:37:40 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:37:40 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 3D-DosimetrySlide2Workflow.svg...
+févr. 06, 2020 11:37:40 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:37:40 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:37:40 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsdSimple/3D-DosimetrySlide1Workflow.xsd...
+févr. 06, 2020 11:37:41 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:37:41 AM xsdvi.XsdVi main
+INFOS: Drawing SVG 3D-DosimetrySlide1Workflow.svg...
+févr. 06, 2020 11:37:41 AM xsdvi.XsdVi main
+INFOS: Done.
+févr. 06, 2020 11:37:41 AM xsdvi.XsdVi main
+INFOS: The style will be embodied
+févr. 06, 2020 11:37:41 AM xsdvi.XsdVi main
+INFOS: Parsing ../xsd/nonDicomFileSetDescriptor.xsd...
+févr. 06, 2020 11:37:41 AM xsdvi.XsdVi main
+INFOS: Processing XML Schema model...
+févr. 06, 2020 11:37:41 AM xsdvi.XsdVi main
+INFOS: Drawing SVG nonDicomFileSetDescriptor.svg...
+févr. 06, 2020 11:37:41 AM xsdvi.XsdVi main
+INFOS: Done.

@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.02.06 à 10:39:43 AM CET 
+// Généré le : 2020.02.06 à 11:37:37 AM CET 
 //
 
 
@@ -11,17 +11,16 @@ package javaXSDclass;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour anonymous complex type.
+ * <p>Classe Java pour HybridDosimetryPerTimePoint complex type.
  * 
  * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
- * &lt;complexType>
+ * &lt;complexType name="HybridDosimetryPerTimePoint">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
@@ -37,12 +36,11 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
+@XmlType(name = "HybridDosimetryPerTimePoint", propOrder = {
     "energyDepositionRateCalculationInHybridDosimetry",
     "sumAndScalingEnergyDepositionRate",
     "absorbedDoseRateCalculationInHybridDosimetry"
 })
-@XmlRootElement(name = "HybridDosimetryPerTimePoint")
 public class HybridDosimetryPerTimePoint {
 
     @XmlElement(name = "EnergyDepositionRateCalculationInHybridDosimetry", required = true)

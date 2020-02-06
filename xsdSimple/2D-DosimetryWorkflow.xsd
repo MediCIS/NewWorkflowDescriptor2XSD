@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 078-->
+<!--VersionSchemas : 088-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -12,6 +12,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 			<xs:element name="ReferencedClinicalResearchStudy" type="irdbb:ReferencedClinicalResearchStudy" />
 			<xs:element name="PatientId" type="xs:string"/>
+			<xs:element name="AcquisitionSettings" type="irdbb:AcquisitionSettings" />
 				<xs:element name="TwoDimDosimetryworkflow" type="irdbb:TwoDimDosimetryworkflow" />
 		</xs:sequence>
 	</xs:complexType>
@@ -22,6 +23,18 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 						<xs:element name="ClinicalResearchStudyTitle" type="xs:string"/>
 					</xs:sequence>
 				</xs:complexType>
+				<xs:complexType name="AcquisitionSettings">
+						<xs:sequence>
+						<xs:element name="ReferencedClinicalResearchStudy" type="irdbb:ReferencedClinicalResearchStudy" />
+						<xs:element name="PatientId" type="xs:string" />
+						<xs:element name="Siteadministeringthetreatment" type="xs:string" />
+						<xs:element name="Dateandtimeofinjection" type="xs:string" />
+						<xs:element name="PreAdministeredActivity" type="irdbb:AdministeredActivity" />
+						<xs:element name="PostAdministeredActivity" type="irdbb:AdministeredActivity" minOccurs="0" />
+						<xs:element name="Radiopharmaceutical" type="xs:string" />
+						<xs:element name="Radionuclide" type="xs:string" />
+						</xs:sequence>
+				</xs:complexType>
 
 			<xs:complexType name="TwoDimDosimetryworkflow">
 				<xs:sequence>
@@ -31,22 +44,6 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 					<xs:element name="RadioBiologicalCalculation" type="irdbb:RadioBiologicalCalculation" minOccurs="0" />
 						</xs:sequence>
 				</xs:complexType>
-
-	<xs:element name="GeometricalTransformation" >
-		<xs:complexType>
-			<xs:sequence>
-			<xs:element name="GeometricalTransformationValue" type="irdbb:NonDICOMDataContainer"/>
-		<xs:element name="TransformationType" type="irdbb:TransformationType" />
-			<xs:element name="TransformationIdentifier" type="xs:string"/>
-			<xs:element name="DICOMCTSourceCoordinateSpaceUsed" type="irdbb:DICOMDataContainer" minOccurs="0" />
-			<xs:element name="DICOMCTDestinationCoordinateSpaceUsed" type="irdbb:DICOMDataContainer" minOccurs="0" />
-			<xs:element name="DICOMSPECTSourceCoordinateSpaceUsed" type="irdbb:DICOMDataContainer" minOccurs="0" />
-			<xs:element name="DICOMSPECTDestinationCoordinateSpaceUsed" type="irdbb:DICOMDataContainer" minOccurs="0" />
-			<xs:element name="NonDICOMSourceCoordinateSpaceUsed" type="irdbb:NonDICOMDataContainer" minOccurs="0" />
-			<xs:element name="NonDICOMDestinationCoordinateSpaceUsed" type="irdbb:NonDICOMDataContainer" minOccurs="0" />
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
 
 	<xs:complexType name="PlanarDataAcquisitionAndProcessingContainer">
 		<xs:sequence>
@@ -622,6 +619,20 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:enumeration value="Advanced elastix transformation"/>
 		</xs:restriction>
 	</xs:simpleType>
+
+	<xs:complexType name="GeometricalTransformation">
+		<xs:sequence>
+			<xs:element name="GeometricalTransformationValue" type="irdbb:NonDICOMDataContainer"/>
+		<xs:element name="TransformationType" type="irdbb:TransformationType" />
+			<xs:element name="TransformationIdentifier" type="xs:string"/>
+			<xs:element name="DICOMCTSourceCoordinateSpaceUsed" type="irdbb:DICOMDataContainer" minOccurs="0" />
+			<xs:element name="DICOMCTDestinationCoordinateSpaceUsed" type="irdbb:DICOMDataContainer" minOccurs="0" />
+			<xs:element name="DICOMSPECTSourceCoordinateSpaceUsed" type="irdbb:DICOMDataContainer" minOccurs="0" />
+			<xs:element name="DICOMSPECTDestinationCoordinateSpaceUsed" type="irdbb:DICOMDataContainer" minOccurs="0" />
+			<xs:element name="NonDICOMSourceCoordinateSpaceUsed" type="irdbb:NonDICOMDataContainer" minOccurs="0" />
+			<xs:element name="NonDICOMDestinationCoordinateSpaceUsed" type="irdbb:NonDICOMDataContainer" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
 
 	<xs:complexType name="TransformationIdentifierContainer">
 		<xs:sequence>
