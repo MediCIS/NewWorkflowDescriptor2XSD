@@ -214,8 +214,6 @@ def generateXSD(elements, types, rootElements):
     XSD+= '\t\t\t\t</xs:complexType>'+"\n"
     XSD+= '\t\t\t\t<xs:complexType name="AcquisitionSettings">'+"\n"
     XSD+= '\t\t\t\t\t\t<xs:sequence>'+"\n"
-    XSD+= '\t\t\t\t\t\t<xs:element name="ReferencedClinicalResearchStudy" type="irdbb:ReferencedClinicalResearchStudy" />'+"\n"
-    XSD+= '\t\t\t\t\t\t<xs:element name="PatientId" type="xs:string" />'+"\n"
     XSD+= '\t\t\t\t\t\t<xs:element name="Siteadministeringthetreatment" type="xs:string" />'+"\n"
     XSD+= '\t\t\t\t\t\t<xs:element name="Dateandtimeofinjection" type="xs:string" />'+"\n"
     XSD+= '\t\t\t\t\t\t<xs:element name="PreAdministeredActivity" type="irdbb:AdministeredActivity" />'+"\n"

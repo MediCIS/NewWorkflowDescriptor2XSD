@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 088-->
+<!--VersionSchemas : 089-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -32,8 +32,6 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 				</xs:complexType>
 				<xs:complexType name="AcquisitionSettings">
 						<xs:sequence>
-						<xs:element name="ReferencedClinicalResearchStudy" type="irdbb:ReferencedClinicalResearchStudy" />
-						<xs:element name="PatientId" type="xs:string" />
 						<xs:element name="Siteadministeringthetreatment" type="xs:string" />
 						<xs:element name="Dateandtimeofinjection" type="xs:string" />
 						<xs:element name="PreAdministeredActivity" type="irdbb:AdministeredActivity" />

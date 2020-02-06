@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.02.06 à 11:37:37 AM CET 
+// Généré le : 2020.02.06 à 11:50:45 AM CET 
 //
 
 
@@ -24,8 +24,6 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="ReferencedClinicalResearchStudy" type="{https://www.irdbb-medirad.com}ReferencedClinicalResearchStudy"/>
- *         &lt;element name="PatientId" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="Siteadministeringthetreatment" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="Dateandtimeofinjection" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="PreAdministeredActivity" type="{https://www.irdbb-medirad.com}AdministeredActivity"/>
@@ -42,8 +40,6 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "AcquisitionSettings", propOrder = {
-    "referencedClinicalResearchStudy",
-    "patientId",
     "siteadministeringthetreatment",
     "dateandtimeofinjection",
     "preAdministeredActivity",
@@ -53,10 +49,6 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class AcquisitionSettings {
 
-    @XmlElement(name = "ReferencedClinicalResearchStudy", required = true)
-    protected ReferencedClinicalResearchStudy referencedClinicalResearchStudy;
-    @XmlElement(name = "PatientId", required = true)
-    protected String patientId;
     @XmlElement(name = "Siteadministeringthetreatment", required = true)
     protected String siteadministeringthetreatment;
     @XmlElement(name = "Dateandtimeofinjection", required = true)
@@ -69,54 +61,6 @@ public class AcquisitionSettings {
     protected String radiopharmaceutical;
     @XmlElement(name = "Radionuclide", required = true)
     protected String radionuclide;
-
-    /**
-     * Obtient la valeur de la propriété referencedClinicalResearchStudy.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ReferencedClinicalResearchStudy }
-     *     
-     */
-    public ReferencedClinicalResearchStudy getReferencedClinicalResearchStudy() {
-        return referencedClinicalResearchStudy;
-    }
-
-    /**
-     * Définit la valeur de la propriété referencedClinicalResearchStudy.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ReferencedClinicalResearchStudy }
-     *     
-     */
-    public void setReferencedClinicalResearchStudy(ReferencedClinicalResearchStudy value) {
-        this.referencedClinicalResearchStudy = value;
-    }
-
-    /**
-     * Obtient la valeur de la propriété patientId.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPatientId() {
-        return patientId;
-    }
-
-    /**
-     * Définit la valeur de la propriété patientId.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPatientId(String value) {
-        this.patientId = value;
-    }
 
     /**
      * Obtient la valeur de la propriété siteadministeringthetreatment.
