@@ -42,16 +42,68 @@ SPECTDataAcquisitionAndProcessing
 {
  0,1-SPECTAcqCTAcqAndReconstruction-SPECTAcqCTAcqAndReconstruction
  0,1-SPECTReconstruction-SPECTReconstruction
- 1-RegistrationVOISegmentation-RegistrationVOISegmentation
+ 1-RegistrationVOISegmentationAndPropagation-RegistrationVOISegmentation
  1-VOIActivityDetermination-VOIActivityDetermination
+ 1-String-TimePointIdentifierUsed
+}
+
+RegistrationVOISegmentationAndPropagation
+{
+ 1-ProcessExecutionContext-ProcessExecutionContext
+ 1-string-TimePointIdentifierUsed
+ 0,1-CountsPerVOIAtTimePointProducedContainer-CountsPerVOIAtTimePointProducedContainer
+ 1-DICOMDataContainer-NMTomoReconUsed
+ 1-DICOMDataContainer-CTReconUsed
+ 1-string-ImageProcessingMethodMethodUsed
+// to be replaced by structured items
+ 1-Segmentation-Segmentation
+ 0,1-DICOMDataContainer-CTReconResampledOnCommonReferenceProduced
+ 0,1-DICOMDataContainer-NMTomoReconResampledOnCommonReferenceProduced
+ 0,1-NonDICOMDataContainer-NonDICOMCTReconResampledOnCommonReferenceProduced
+ 0,1-NonDICOMDataContainer-NonDICOMNMTomoReconResampledOnCommonReferenceProduced
+ 0,1-NonDICOMDataContainer-DensityImageProduced
+ 0,1-GeometricalTransformationContainer-GeometricalTransformationContainer
+}
+
+GeometricalTransformationContainer
+{
+ 1,n-GeometricalTransformation-GeometricalTransformation
+}
+
+GeometricalTransformation
+{
+ 1-NonDICOMDataContainer-GeometricalTransformationValue
+ 1-string-TransformationType:Linear transformation matrix/BSpline transformation/Advanced elastix transformation
+ 1-string-TransformationIdentifier
+ 0,1-DICOMDataContainer-DICOMCTSourceCoordinateSpaceUsed
+ 0,1-DICOMDataContainer-DICOMCTDestinationCoordinateSpaceUsed
+ 0,1-DICOMDataContainer-DICOMSPECTSourceCoordinateSpaceUsed
+ 0,1-DICOMDataContainer-DICOMSPECTDestinationCoordinateSpaceUsed
+ 0,1-NonDICOMDataContainer-NonDICOMSourceCoordinateSpaceUsed
+ 0,1-NonDICOMDataContainer-NonDICOMDestinationCoordinateSpaceUsed
+}
+
+CountsPerVOIAtTimePointProducedContainer
+{
+ 1,n-CountsPerVOIAtTimePoint-CountsPerVOIAtTimePointProduced
 }
 
 HybridDosimetryViaAbsorbedDoseRateCalculation
 {
+ 1-HybridDosimetryPerTimePointContainer-HybridDosimetryPerTimePointContainer
+ 1-TimeAbsorbedDoseRateCurveFit-TimeAbsorbedDoseRateCurveFit
+}
+
+HybridDosimetryPerTimePointContainer
+{
+1,n-HybridDosimetryPerTimePoint-HybridDosimetryPerTimePoint
+}
+
+HybridDosimetryPerTimePoint
+{
  1-EnergyDepositionRateCalculationInHybridDosimetry-EnergyDepositionRateCalculationInHybridDosimetry
  1-SumAndScalingEnergyDepositionRate-SumAndScalingEnergyDepositionRate
  1-AbsorbedDoseRateCalculationInHybridDosimetry-AbsorbedDoseRateCalculationInHybridDosimetry
- 1-TimeAbsorbedDoseRateCurveFit-TimeAbsorbedDoseRateCurveFit
 }
 
 HybridDosimetryViaTimeActivityCurveFit
@@ -173,24 +225,6 @@ SPECTReconstruction
  1-DICOMData-NMTomoReconProduced
 }
 
-RegistrationVOISegmentation
-{
- 1-ProcessExecutionContext-ProcessExecutionContext
- 1-string-TimePointIdentifierUsed
- 1-DICOMData-NMTomoReconUsed
- 1-DICOMData-CTReconUsed
- 1-string-RegistrationAndSegmentationMethodMethodUsed
-// to be replaced by structured items
- 1-CountsPerVOIAtTimePointContainer-CountsPerVOIAtTimePointProduced
- 1-VOIIdentifierContainer-VOIInSPECTProduced
-// Is it in DICOM or nonDICOM ?
- 1-DICOMData-CTReconResampledOnSPECTProduced
-}
-
-CountsPerVOIAtTimePointContainer
-{
- 1,n-CountsPerVOIAtTimePoint-CountsPerVOIAtTimePointProduced
-}
 
 VOIActivityDetermination
 {
@@ -211,9 +245,11 @@ EnergyDepositionRateCalculationInHybridDosimetry
 {
  1-ProcessExecutionContext-ProcessExecutionContext
  1-string-TimePointIdentifierUsed
- 1-string-VoxelDataActivityAtTimePointIdentifier
+ 0,1-DICOMData-VoxelDataActivityAtTimePointIdentifier
+ 0,1-NonDICOMData-NonDicomVoxelDataActivityAtTimePointIdentifier
  1-DICOMData-CTReconResampledOnSPECTUsed
- 1-NonDICOMData-ThreeDimEnergyDepositionRateMatrixAtTimePointProduced
+ 1-DICOMData-ThreeDimEnergyDepositionRateMatrixAtTimePointProduced
+ 1-NonDICOMData-NonDICOMThreeDimEnergyDepositionRateMatrixAtTimePointProduced
 }
 
 SumAndScalingEnergyDepositionRate
@@ -223,8 +259,6 @@ SumAndScalingEnergyDepositionRate
  1-TimePointIdentifierContainer-TimePointIdentifierUsed
  1-ROIIdentifierContainer-ROIIdentifierUsed
 // Corresponding Data Activity per ROI at this TimePoint need to be retrieved
- 1-VOIIdentifierContainer-VOIIdentifierUsed
-// Corresponding Data Activity per VOI at corresponding unique TimePoint need to be retrieved
  1-string-VOIInSPECTIdentifierUsed
 // Is it in DICOM or nonDICOM ?
  1-EnergyDepositionRatePerVOIAtTimePointContainer-EnergyDepositionRatePerVOIAtTimePointProduced
@@ -329,7 +363,8 @@ AbsorbedDoseCalculationInROIInHybridDosimetry
 // Corresponding Time Integrated Activity Coefficient per ROI need to be retrieved
 // Corresponding Time Integrated Activity per ROI need to be retrieved
  1-string-OrganSValueUsed
- 0,n-PatientOrganMassInHybridDosimetry-PatientOrganMassUsed
+ 0,1-PatientOrganMassInHybridDosimetry-PatientOrganMassUsed
+ 0,1-OrganMass-OrganMassReference
  1-MeanAbsorbedDoseInVOIContainer-MeanAbsorbedDoseInVOIProduced
 }
 
@@ -499,7 +534,7 @@ AdministeredActivity
 PatientOrganMassInHybridDosimetry
 {
  1-float-PatientOrganMassValue
- 1-string-PatientOrganMassUnit:gram/kilogram
+ 1-string-MassUnit:gram/kilogram
  1-integer-VOIIdentifier
 }
 

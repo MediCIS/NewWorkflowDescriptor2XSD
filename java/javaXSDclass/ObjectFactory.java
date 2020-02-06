@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.02.05 à 11:43:48 AM CET 
+// Généré le : 2020.02.06 à 10:39:43 AM CET 
 //
 
 
@@ -46,6 +46,38 @@ public class ObjectFactory {
      */
     public NonDicomFileSetDescriptor createNonDicomFileSetDescriptor() {
         return new NonDicomFileSetDescriptor();
+    }
+
+    /**
+     * Create an instance of {@link HybridDosimetryPerTimePoint }
+     * 
+     */
+    public HybridDosimetryPerTimePoint createHybridDosimetryPerTimePoint() {
+        return new HybridDosimetryPerTimePoint();
+    }
+
+    /**
+     * Create an instance of {@link EnergyDepositionRateCalculationInHybridDosimetry }
+     * 
+     */
+    public EnergyDepositionRateCalculationInHybridDosimetry createEnergyDepositionRateCalculationInHybridDosimetry() {
+        return new EnergyDepositionRateCalculationInHybridDosimetry();
+    }
+
+    /**
+     * Create an instance of {@link SumAndScalingEnergyDepositionRate }
+     * 
+     */
+    public SumAndScalingEnergyDepositionRate createSumAndScalingEnergyDepositionRate() {
+        return new SumAndScalingEnergyDepositionRate();
+    }
+
+    /**
+     * Create an instance of {@link AbsorbedDoseRateCalculationInHybridDosimetry }
+     * 
+     */
+    public AbsorbedDoseRateCalculationInHybridDosimetry createAbsorbedDoseRateCalculationInHybridDosimetry() {
+        return new AbsorbedDoseRateCalculationInHybridDosimetry();
     }
 
     /**
@@ -553,14 +585,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link AbsorbedDoseRateCalculationInHybridDosimetry }
-     * 
-     */
-    public AbsorbedDoseRateCalculationInHybridDosimetry createAbsorbedDoseRateCalculationInHybridDosimetry() {
-        return new AbsorbedDoseRateCalculationInHybridDosimetry();
-    }
-
-    /**
      * Create an instance of {@link DoseRateCurveFitVOITimeIntegrationContainer }
      * 
      */
@@ -582,14 +606,6 @@ public class ObjectFactory {
      */
     public VOI createVOI() {
         return new VOI();
-    }
-
-    /**
-     * Create an instance of {@link SumAndScalingEnergyDepositionRate }
-     * 
-     */
-    public SumAndScalingEnergyDepositionRate createSumAndScalingEnergyDepositionRate() {
-        return new SumAndScalingEnergyDepositionRate();
     }
 
     /**
@@ -790,6 +806,14 @@ public class ObjectFactory {
      */
     public AbsorbedDoseInVOIContainer createAbsorbedDoseInVOIContainer() {
         return new AbsorbedDoseInVOIContainer();
+    }
+
+    /**
+     * Create an instance of {@link HybridDosimetryPerTimePointContainer }
+     * 
+     */
+    public HybridDosimetryPerTimePointContainer createHybridDosimetryPerTimePointContainer() {
+        return new HybridDosimetryPerTimePointContainer();
     }
 
     /**
@@ -1249,14 +1273,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link RegistrationVOISegmentation }
-     * 
-     */
-    public RegistrationVOISegmentation createRegistrationVOISegmentation() {
-        return new RegistrationVOISegmentation();
-    }
-
-    /**
      * Create an instance of {@link SPECTDataAcquisitionAndProcessing }
      * 
      */
@@ -1350,14 +1366,6 @@ public class ObjectFactory {
      */
     public PlanarImageSegmentation createPlanarImageSegmentation() {
         return new PlanarImageSegmentation();
-    }
-
-    /**
-     * Create an instance of {@link EnergyDepositionRateCalculationInHybridDosimetry }
-     * 
-     */
-    public EnergyDepositionRateCalculationInHybridDosimetry createEnergyDepositionRateCalculationInHybridDosimetry() {
-        return new EnergyDepositionRateCalculationInHybridDosimetry();
     }
 
     /**

@@ -161,8 +161,8 @@ AbsorbedDoseRateCalculationIn2DDosimetry
  1-AdministeredActivity-PreAdministeredActivityUsed
  1-AdministeredActivity-PostAdministeredActivityUsed
  1-string-OrganSValueUsed
- 1-string-ReferenceOrganMassUsed
- 1-PatientOrganMassUsedContainer-PatientOrganMassUsed
+ 0,1-string-ReferenceOrganMassUsed
+ 0,1-PatientOrganMassUsedContainer-PatientOrganMassUsed
  1-MeanAbsorbedDoseRateInROIContainer-MeanAbsorbedDoseRateInROIProduced
 }
 
@@ -221,8 +221,16 @@ AbsorbedDoseCalculationInROIIn2DDosimetry
 // Corresponding Time Integrated Activity Coefficient per ROI need to be retrieved
 // Corresponding Time Integrated Activity per ROI need to be retrieved
  1-string-OrganSValueUsed
- 0,1-PatientOrganMassUsedContainer-PatientOrganMassUsed
+ 0,1-PatientOrganMassInHybridDosimetry-PatientOrganMassUsed
+ 0,1-OrganMass-OrganMassReference
  1-MeanAbsorbedDoseInROIcontainer-MeanAbsorbedDoseInROIProduced
+}
+
+PatientOrganMassInHybridDosimetry
+{
+ 1-float-PatientOrganMassValue
+ 1-string-MassUnit:gram/kilogram
+ 1-integer-VOIIdentifier
 }
 
 RadioBiologicalCalculation
@@ -336,14 +344,14 @@ AdministeredActivity
 PatientOrganMassIn2DDosimetry
 {
  1-float-PatientOrganMassValue
- 1-string-PatientOrganMassUnit:gram/kilogram
+ 1-string-MassUnit:gram/kilogram
  1-string-ROIIdentifier
 }
 
 MeanAbsorbedDoseRateInROI
 {
  1-float-MeanAbsorbedDoseRateInROIValue
- 1-string-MeanAbsorbedDoseRateInROIUnit:gram/kilogram
+ 1-string-AbsorbedDoseRateUnit:gray per second/milligray per second/milligray per hour
  1-string-ROIIdentifier
 }
 

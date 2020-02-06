@@ -240,6 +240,7 @@ listeTypes=["DataActivityPerVOIAtTimePoint", "MeanAbsorbedDoseRateInROI", "VOIIn
 "ActualPlanarCalibrationFactor", "PlanarCalibrationFactorReference",
 "RegistrationVOISegmentationAndPropagationContainer","AbsorbedDoseCalculationInVOI", "TransformationIdentifierContainer", "NonDICOMDataContainer",
 "AbsorbedDoseUnit", "TimePointIdentifierUsedContainer", "OrganMass", "VOI", "VoiProducedContainer"
+"CountsPerVOIAtTimePointContainer"
 ]
 
 listeTypesRestricted=[]
