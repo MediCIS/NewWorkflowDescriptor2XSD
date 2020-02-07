@@ -190,7 +190,7 @@ ElementOfCTNumberCalibrationCurve
 NMRelevantCalibrationReference
 {
  1-string-ReferenceCalibrationDate
- 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188
+ 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188/technetium99m/terbium161
 }
 
 NMPhantom
@@ -224,7 +224,7 @@ HotInsert
  1-string-PostAdminActivity:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
  1-string-PostAdminActivityTimestamp
  1-string-HotInsertIdentifier
- 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188
+ 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188/technetium99m/terbium161
 }
 
 ColdInsert
@@ -245,7 +245,7 @@ Tank
  1-string-PostAdminBackgroundActivity:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
  1-string-PostAdminBackgroundActivityTimestamp
  1-string-TankIdentifier
- 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188
+ 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188/technetium99m/terbium161
 }
 
 ProcessExecutionContext
@@ -290,14 +290,14 @@ CalibrationCoefficient
  1-float-CalibrationCoefficientValue
  1-string-CalibrationCoefficientUnit:counts per second per megabecquerel
  1-string-ReferenceCalibrationDate
- 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188
+ 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188/technetium99m/terbium161
 }
 
 SPECTRecoveryCoefficientCurveInCalibration
 {
  1-ElementOfSPECTRecoveryCoefficientCurveContainer-ElementsOfSPECTRecoveryCoefficientCurve
  1-string-ReferenceCalibrationDate
- 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188
+ 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188/technetium99m/terbium161
 }
 
 ElementOfSPECTRecoveryCoefficientCurveContainer

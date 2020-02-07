@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.02.06 à 11:50:45 AM CET 
+// Généré le : 2020.02.06 à 05:03:32 PM CET 
 //
 
 
@@ -11,6 +11,7 @@ package javaXSDclass;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -29,7 +30,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="PreAdministeredActivity" type="{https://www.irdbb-medirad.com}AdministeredActivity"/>
  *         &lt;element name="PostAdministeredActivity" type="{https://www.irdbb-medirad.com}AdministeredActivity" minOccurs="0"/>
  *         &lt;element name="Radiopharmaceutical" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="Radionuclide" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="Radionuclide" type="{https://www.irdbb-medirad.com}Isotope"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -60,7 +61,8 @@ public class AcquisitionSettings {
     @XmlElement(name = "Radiopharmaceutical", required = true)
     protected String radiopharmaceutical;
     @XmlElement(name = "Radionuclide", required = true)
-    protected String radionuclide;
+    @XmlSchemaType(name = "string")
+    protected Isotope radionuclide;
 
     /**
      * Obtient la valeur de la propriété siteadministeringthetreatment.
@@ -187,10 +189,10 @@ public class AcquisitionSettings {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link Isotope }
      *     
      */
-    public String getRadionuclide() {
+    public Isotope getRadionuclide() {
         return radionuclide;
     }
 
@@ -199,10 +201,10 @@ public class AcquisitionSettings {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link Isotope }
      *     
      */
-    public void setRadionuclide(String value) {
+    public void setRadionuclide(Isotope value) {
         this.radionuclide = value;
     }
 

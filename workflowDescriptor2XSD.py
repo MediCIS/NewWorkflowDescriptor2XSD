@@ -219,7 +219,7 @@ def generateXSD(elements, types, rootElements):
     XSD+= '\t\t\t\t\t\t<xs:element name="PreAdministeredActivity" type="irdbb:AdministeredActivity" />'+"\n"
     XSD+= '\t\t\t\t\t\t<xs:element name="PostAdministeredActivity" type="irdbb:AdministeredActivity" minOccurs="0" />'+"\n"
     XSD+= '\t\t\t\t\t\t<xs:element name="Radiopharmaceutical" type="xs:string" />'+"\n"
-    XSD+= '\t\t\t\t\t\t<xs:element name="Radionuclide" type="xs:string" />'+"\n"
+    XSD+= '\t\t\t\t\t\t<xs:element name="Radionuclide" type="irdbb:Isotope" />'+"\n"
     XSD+= '\t\t\t\t\t\t</xs:sequence>'+"\n"
     XSD+= '\t\t\t\t</xs:complexType>'+"\n"
     XSD+=elements
@@ -241,7 +241,7 @@ listeTypes=["DataActivityPerVOIAtTimePoint", "MeanAbsorbedDoseRateInROI", "VOIIn
             "ActualPlanarCalibrationFactor", "PlanarCalibrationFactorReference",
             "RegistrationVOISegmentationAndPropagationContainer","AbsorbedDoseCalculationInVOI", "TransformationIdentifierContainer", "NonDICOMDataContainer",
             "AbsorbedDoseUnit", "TimePointIdentifierUsedContainer", "OrganMass", "VOI", "VoiProducedContainer",
-            "CountsPerVOIAtTimePointContainer", "GeometricalTransformation", "HybridDosimetryPerTimePoint", "HybridDosimetryPerTimePointContainer", "AdministeredActivity"
+            "CountsPerVOIAtTimePointContainer", "GeometricalTransformation", "HybridDosimetryPerTimePoint", "HybridDosimetryPerTimePointContainer", "AdministeredActivity", "Isotope"
             ]
 
 listeTypesRestricted=[]

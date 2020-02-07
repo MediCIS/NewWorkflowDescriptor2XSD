@@ -188,3 +188,9 @@ AdministeredActivity
  1-string-ActivityUnit:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
 // to be replaced by a structured timestamp
 }
+
+NMRelevantCalibrationReference
+{
+ 1-string-ReferenceCalibrationDate
+ 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188/technetium99m/terbium161
+}

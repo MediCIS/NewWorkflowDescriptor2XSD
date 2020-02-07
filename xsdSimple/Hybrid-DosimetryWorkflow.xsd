@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 089-->
+<!--VersionSchemas : 096-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -30,7 +30,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 						<xs:element name="PreAdministeredActivity" type="irdbb:AdministeredActivity" />
 						<xs:element name="PostAdministeredActivity" type="irdbb:AdministeredActivity" minOccurs="0" />
 						<xs:element name="Radiopharmaceutical" type="xs:string" />
-						<xs:element name="Radionuclide" type="xs:string" />
+						<xs:element name="Radionuclide" type="irdbb:Isotope" />
 						</xs:sequence>
 				</xs:complexType>
 
@@ -555,6 +555,8 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:enumeration value="yttrium90"/>
 			<xs:enumeration value="radium223"/>
 			<xs:enumeration value="rhenium188"/>
+			<xs:enumeration value="technetium99m"/>
+			<xs:enumeration value="terbium161"/>
 		</xs:restriction>
 	</xs:simpleType>
 
@@ -624,7 +626,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 	<xs:complexType name="ROI">
 		<xs:sequence>
 			<xs:element name="ROIIdentifier" type="xs:string"/>
-			<xs:element name="OrganOrTissue" type="xs:string"/>
+		<xs:element name="OrganOrTissue" type="irdbb:OrganOrTissue" />
 			<xs:element name="DICOMROIContainer" type="irdbb:DICOMData" minOccurs="0" />
 			<xs:element name="NonDICOMROIContainer" type="irdbb:NonDICOMData" minOccurs="0" />
 		</xs:sequence>
