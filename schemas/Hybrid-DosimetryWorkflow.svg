@@ -560,7 +560,7 @@ onmouseover='makeVisible("_1_1_1_3_1_6")' onmouseout='makeHidden("_1_1_1_3_1_6")
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>Radionuclide</text>
+<text class='strong' x='5' y='27'>Isotope</text>
 <text class='visible' x='5' y='41'>type: Isotope</text>
 <line class='connection' id='p_1_1_1_3_1_6' x1='-35' y1='-474' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>

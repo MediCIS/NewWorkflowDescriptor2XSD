@@ -9,6 +9,16 @@ HybridDosimetryworkflow
  0,1-RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry-RadioBiologicalCalculationInHybridOr3DSlide2Dosimetry
 }
 
+AcquisitionSettings
+{
+ 1-string-Siteadministeringthetreatment
+ 1-string-Dateandtimeofinjection
+ 1-AdministeredActivity-PreAdministeredActivity
+ 0,1-AdministeredActivity-PostAdministeredActivity
+ 1-string-Radiopharmaceutical
+ 1-string-Isotope:radium223/iodine131/lutetium177/yttrium90/radium223/rhenium188/technetium99m/terbium161
+}
+
 VOI
 {
  1-integer-VOIIdentifier
@@ -527,7 +537,6 @@ AdministeredActivity
 {
  1-float-AdministeredActivityValue
  1-string-ActivityUnit:becquerel/kilobecquerel/megabecquerel/curie/millicurie/microcurie
-// to be replaced by a structured timestamp
 }
 
 PatientOrganMassInHybridDosimetry

@@ -226,22 +226,12 @@ def generateXSD(elements, types, rootElements):
     XSD+= '\t\t\t\t\t\t<xs:element name="ClinicalResearchStudyTitle" type="xs:string"/>'+"\n"
     XSD+= '\t\t\t\t\t</xs:sequence>'+"\n"
     XSD+= '\t\t\t\t</xs:complexType>'+"\n"
-    XSD+= '\t\t\t\t<xs:complexType name="AcquisitionSettings">'+"\n"
-    XSD+= '\t\t\t\t\t\t<xs:sequence>'+"\n"
-    XSD+= '\t\t\t\t\t\t<xs:element name="Siteadministeringthetreatment" type="xs:string" />'+"\n"
-    XSD+= '\t\t\t\t\t\t<xs:element name="Dateandtimeofinjection" type="xs:string" />'+"\n"
-    XSD+= '\t\t\t\t\t\t<xs:element name="PreAdministeredActivity" type="irdbb:AdministeredActivity" />'+"\n"
-    XSD+= '\t\t\t\t\t\t<xs:element name="PostAdministeredActivity" type="irdbb:AdministeredActivity" minOccurs="0" />'+"\n"
-    XSD+= '\t\t\t\t\t\t<xs:element name="Radiopharmaceutical" type="xs:string" />'+"\n"
-    XSD+= '\t\t\t\t\t\t<xs:element name="Radionuclide" type="irdbb:Isotope" />'+"\n"
-    XSD+= '\t\t\t\t\t\t</xs:sequence>'+"\n"
-    XSD+= '\t\t\t\t</xs:complexType>'+"\n"
     XSD+=elements
     XSD+=types        
     XSD+='\n</xs:schema>'
     return XSD
 
-listeTypes=["DataActivityPerVOIAtTimePoint", "MeanAbsorbedDoseRateInROI", "VOIInCT", "VOIInSPECT",
+listeTypes=["DataActivityPerVOIAtTimePoint", "MeanAbsorbedDoseRateInROI", "VOIInCT", "VOIInSPECT",  "AcquisitionSettings",
 "ROIIdentifierUsedContainer", "VOIidentifierContainer", "ROIIdentifierContainer",
 "VOIIdentifierContainer", "VOIcontainer", "AbsorbedDoseInVOIContainer",
 "TimeIntegratedActivityCoefficientPerROI", "TimeIntegratedActivityPerROI",

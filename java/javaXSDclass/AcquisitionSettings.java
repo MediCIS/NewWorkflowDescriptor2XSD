@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.02.06 à 05:03:32 PM CET 
+// Généré le : 2020.02.12 à 03:10:23 PM CET 
 //
 
 
@@ -30,7 +30,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="PreAdministeredActivity" type="{https://www.irdbb-medirad.com}AdministeredActivity"/>
  *         &lt;element name="PostAdministeredActivity" type="{https://www.irdbb-medirad.com}AdministeredActivity" minOccurs="0"/>
  *         &lt;element name="Radiopharmaceutical" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="Radionuclide" type="{https://www.irdbb-medirad.com}Isotope"/>
+ *         &lt;element name="Isotope" type="{https://www.irdbb-medirad.com}Isotope"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -46,7 +46,7 @@ import javax.xml.bind.annotation.XmlType;
     "preAdministeredActivity",
     "postAdministeredActivity",
     "radiopharmaceutical",
-    "radionuclide"
+    "isotope"
 })
 public class AcquisitionSettings {
 
@@ -60,9 +60,9 @@ public class AcquisitionSettings {
     protected AdministeredActivity postAdministeredActivity;
     @XmlElement(name = "Radiopharmaceutical", required = true)
     protected String radiopharmaceutical;
-    @XmlElement(name = "Radionuclide", required = true)
+    @XmlElement(name = "Isotope", required = true)
     @XmlSchemaType(name = "string")
-    protected Isotope radionuclide;
+    protected Isotope isotope;
 
     /**
      * Obtient la valeur de la propriété siteadministeringthetreatment.
@@ -185,27 +185,27 @@ public class AcquisitionSettings {
     }
 
     /**
-     * Obtient la valeur de la propriété radionuclide.
+     * Obtient la valeur de la propriété isotope.
      * 
      * @return
      *     possible object is
      *     {@link Isotope }
      *     
      */
-    public Isotope getRadionuclide() {
-        return radionuclide;
+    public Isotope getIsotope() {
+        return isotope;
     }
 
     /**
-     * Définit la valeur de la propriété radionuclide.
+     * Définit la valeur de la propriété isotope.
      * 
      * @param value
      *     allowed object is
      *     {@link Isotope }
      *     
      */
-    public void setRadionuclide(Isotope value) {
-        this.radionuclide = value;
+    public void setIsotope(Isotope value) {
+        this.isotope = value;
     }
 
 }
