@@ -549,7 +549,7 @@ onmouseover='makeVisible("_1_1_1_3_1_5")' onmouseout='makeHidden("_1_1_1_3_1_5")
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>Radiopharmaceutical</text>
-<text class='visible' x='5' y='41'>type: string</text>
+<text class='visible' x='5' y='41'>type: Radiopharmaceutical</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 

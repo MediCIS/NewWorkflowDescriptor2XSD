@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 103-->
+<!--VersionSchemas : 104-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -35,6 +35,12 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 						</xs:sequence>
 				</xs:complexType>
 
+	<xs:simpleType name="Radiopharmaceutical">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="sodiumIodideI131"/>
+		</xs:restriction>
+	</xs:simpleType>
+
 	<xs:simpleType name="Isotope">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="radium223"/>
@@ -54,7 +60,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 			<xs:element name="Dateandtimeofinjection" type="xs:string"/>
 			<xs:element name="PreAdministeredActivity" type="irdbb:AdministeredActivity"/>
 			<xs:element name="PostAdministeredActivity" type="irdbb:AdministeredActivity" minOccurs="0" />
-			<xs:element name="Radiopharmaceutical" type="xs:string"/>
+		<xs:element name="Radiopharmaceutical" type="irdbb:Radiopharmaceutical" />
 		<xs:element name="Isotope" type="irdbb:Isotope" />
 		</xs:sequence>
 	</xs:complexType>
