@@ -21,6 +21,15 @@ xmlRootElements = "\n\t\t\t\t<!--xmlRootElements-->"
 xmlElements = "\n\t<!--xmlElements-->"
 xmlTypes = "\n\t<!--xmlTypes-->"
 
+listeTypes = []
+
+fileListeTypesPath = "listeTypes.txt"
+fileListeTypes = open(fileListeTypesPath, "r")
+
+for t in fileListeTypes:
+    t = t.replace("\n","")
+    listeTypes.append(t)
+
 nVersion = sys.argv[3]
 #nVersion = "002"
 if len(nVersion)==1:
@@ -221,19 +230,6 @@ def generateXSD(elements, types, rootElements):
 xmlElements = ""
 xmlTypes = ""
 xmlRootElements = ""
-
-listeTypes=["DataActivityPerVOIAtTimePoint", "MeanAbsorbedDoseRateInROI", "VOIInCT", "VOIInSPECT", "AcquisitionSettings",
-            "ROIIdentifierUsedContainer", "VOIidentifierContainer", "ROIIdentifierContainer", 
-            "VOIIdentifierContainer", "VOIcontainer", "AbsorbedDoseInVOIContainer",
-            "TimeIntegratedActivityCoefficientPerROI", "TimeIntegratedActivityPerROI",
-            "ElementOfCTNumberCalibrationCurve", "SPECTRecoveryCoefficientCurve", "VOIContainer",
-            "ROIIdentifierUsedContainer","VOIIdentifierUsedContainer", "ActivityUnit", "TimeUnit", "Segmentation",
-            "ElementOfSPECTRecoveryCoefficientCurve", "ActualPlanarCalibrationFactor", "TimeIntegratedActivityPerVOIContainer",
-            "ActualPlanarCalibrationFactor", "PlanarCalibrationFactorReference",
-            "RegistrationVOISegmentationAndPropagationContainer","AbsorbedDoseCalculationInVOI", "TransformationIdentifierContainer", "NonDICOMDataContainer",
-            "AbsorbedDoseUnit", "TimePointIdentifierUsedContainer", "OrganMass", "VOI", "VoiProducedContainer",
-            "CountsPerVOIAtTimePointContainer", "GeometricalTransformation", "HybridDosimetryPerTimePoint", "HybridDosimetryPerTimePointContainer", "AdministeredActivity", "Isotope"
-            ]
 
 listeTypesRestricted=[]
 
