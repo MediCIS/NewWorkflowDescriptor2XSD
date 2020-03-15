@@ -397,6 +397,7 @@ onmouseover='makeVisible("_1_1_1_3")' onmouseout='makeHidden("_1_1_1_3")'/>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>AcquisitionSettings</text>
 <text class='visible' x='5' y='41'>type: AcquisitionSettings</text>
+<text x='5' y='59'>0..1</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 <use x='188' y='17' xlink:href='#minus' id='s_1_1_1_3' onclick='show("_1_1_1_3")'/>
 </g>

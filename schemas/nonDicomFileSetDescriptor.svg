@@ -397,6 +397,7 @@ onmouseover='makeVisible("_1_1_1_3")' onmouseout='makeHidden("_1_1_1_3")'/>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>AcquisitionSettings</text>
 <text class='visible' x='5' y='41'>type: AcquisitionSettings</text>
+<text x='5' y='59'>0..1</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 <use x='188' y='17' xlink:href='#minus' id='s_1_1_1_3' onclick='show("_1_1_1_3")'/>
 </g>
@@ -602,6 +603,7 @@ onmouseover='makeVisible("_1_1_1_4_1_1")' onmouseout='makeHidden("_1_1_1_4_1_1")
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>SPECTCTCalibrationWorkflow</text>
 <text class='visible' x='5' y='41'>type: SPECTCTCalibrationWorkflow</text>
+<text x='5' y='59'>0..1</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 <use x='206' y='17' xlink:href='#minus' id='s_1_1_1_4_1_1' onclick='show("_1_1_1_4_1_1")'/>
 </g>
@@ -3343,6 +3345,7 @@ onmouseover='makeVisible("_1_1_1_4_1_2")' onmouseout='makeHidden("_1_1_1_4_1_2")
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>PlanarCalibrationWorkflow</text>
 <text class='visible' x='5' y='41'>type: PlanarCalibrationWorkflow</text>
+<text x='5' y='59'>0..1</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 <use x='200' y='17' xlink:href='#minus' id='s_1_1_1_4_1_2' onclick='show("_1_1_1_4_1_2")'/>
 </g>
@@ -4971,6 +4974,7 @@ onmouseover='makeVisible("_1_1_1_4_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3")
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>CTCalibrationWorkflow</text>
 <text class='visible' x='5' y='41'>type: CTCalibrationWorkflow</text>
+<text x='5' y='59'>0..1</text>
 <line class='connection' id='p_1_1_1_4_1_3' x1='-35' y1='-11905' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
 <use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3' onclick='show("_1_1_1_4_1_3")'/>

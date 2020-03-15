@@ -3,9 +3,9 @@
 
 CalibrationWorkflow
 {
- 1-SPECTCTCalibrationWorkflow-SPECTCTCalibrationWorkflow
- 1-PlanarCalibrationWorkflow-PlanarCalibrationWorkflow
- 1-CTCalibrationWorkflow-CTCalibrationWorkflow
+ 0,1-SPECTCTCalibrationWorkflow-SPECTCTCalibrationWorkflow
+ 0,1-PlanarCalibrationWorkflow-PlanarCalibrationWorkflow
+ 0,1-CTCalibrationWorkflow-CTCalibrationWorkflow
 }
 
 AcquisitionSettings

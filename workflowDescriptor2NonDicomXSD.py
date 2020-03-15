@@ -225,7 +225,7 @@ def generateXSD(elements, types, rootElements):
     XSD+= '\t\t<xs:sequence>'+"\n"
     XSD+= '\t\t\t<xs:element name="ReferencedClinicalResearchStudy" type="irdbb:ReferencedClinicalResearchStudy" />'+"\n"
     XSD+= '\t\t\t<xs:element name="PatientId" type="xs:string"/>'+"\n"
-    XSD+= '\t\t\t<xs:element name="AcquisitionSettings" type="irdbb:AcquisitionSettings" />'+"\n"
+    XSD+= '\t\t\t<xs:element name="AcquisitionSettings" type="irdbb:AcquisitionSettings"  minOccurs="0" />'+"\n"
     XSD+=rootElements
     XSD+= '\t\t</xs:sequence>'+"\n"
     XSD+= '\t</xs:complexType>'+"\n"+"\n"

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--VersionSchemas : 104-->
+<!--VersionSchemas : 106-->
 <xs:schema
 targetNamespace="https://www.irdbb-medirad.com"
 elementFormDefault="qualified"
@@ -12,7 +12,7 @@ xmlns:irdbb="https://www.irdbb-medirad.com">
 		<xs:sequence>
 			<xs:element name="ReferencedClinicalResearchStudy" type="irdbb:ReferencedClinicalResearchStudy" />
 			<xs:element name="PatientId" type="xs:string"/>
-			<xs:element name="AcquisitionSettings" type="irdbb:AcquisitionSettings" />
+			<xs:element name="AcquisitionSettings" type="irdbb:AcquisitionSettings"  minOccurs="0" />
 				<xs:element name="TwoDimDosimetryworkflow" type="irdbb:TwoDimDosimetryworkflow" />
 		</xs:sequence>
 	</xs:complexType>

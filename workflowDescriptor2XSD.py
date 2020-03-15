@@ -23,7 +23,7 @@ xmlTypes = "\n\t<!--xmlTypes-->"
 
 listeTypes = []
 
-fileListeTypesPath = "listeTypes.txt"
+fileListeTypesPath = "../listeTypes.txt"
 fileListeTypes = open(fileListeTypesPath, "r")
 
 for t in fileListeTypes:
@@ -212,7 +212,7 @@ def generateXSD(elements, types, rootElements):
     XSD+= '\t\t\t<xs:element name="ReferencedClinicalResearchStudy" type="irdbb:ReferencedClinicalResearchStudy" />'+"\n"
     XSD+= '\t\t\t<xs:element name="PatientId" type="xs:string"/>'+"\n"
     if "AcquisitionSettings" in types or "AcquisitionSettings" in elements:
-        XSD+= '\t\t\t<xs:element name="AcquisitionSettings" type="irdbb:AcquisitionSettings" />'+"\n"
+        XSD+= '\t\t\t<xs:element name="AcquisitionSettings" type="irdbb:AcquisitionSettings"  minOccurs="0" />'+"\n"
     XSD+=rootElements
     XSD+= '\t\t</xs:sequence>'+"\n"
     XSD+= '\t</xs:complexType>'+"\n"+"\n"
