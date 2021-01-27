@@ -4994,19 +4994,19 @@ onmouseover='makeVisible("_1_1_1_4_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3")
 </g>
 
 <g id='_1_1_1_4_1_3_1_1' class='box' transform='translate(1157,12759)'>
-<rect class='shadow' x='3' y='3' width='207' height='46'/>
-<rect class='boxelement' x='0' y='0' width='207' height='46'
+<rect class='shadow' x='3' y='3' width='243' height='46'/>
+<rect class='boxelement' x='0' y='0' width='243' height='46'
 onmouseover='makeVisible("_1_1_1_4_1_3_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>CTNumberCalibrationWorkfow</text>
-<text class='visible' x='5' y='41'>type: CTNumberCalibrationWorkfow</text>
+<text class='strong' x='5' y='27'>CTAcqForCTNumberCalibrationCurve</text>
+<text class='visible' x='5' y='41'>type: CTAcqForCTNumberCalibrationCurve</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='206' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1' onclick='show("_1_1_1_4_1_3_1_1")'/>
+<use x='242' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1' onclick='show("_1_1_1_4_1_3_1_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_1_1' class='box' transform='translate(1409,12759)'>
+<g id='_1_1_1_4_1_3_1_1_1' class='box' transform='translate(1445,12759)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -5019,20 +5019,20 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_1")' onmouseout='makeHidden("_1_1_1_4_1
 <use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1' onclick='show("_1_1_1_4_1_3_1_1_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_1_1_1' class='box' transform='translate(1514,12759)'>
-<rect class='shadow' x='3' y='3' width='243' height='46'/>
-<rect class='boxelement' x='0' y='0' width='243' height='46'
+<g id='_1_1_1_4_1_3_1_1_1_1' class='box' transform='translate(1550,12759)'>
+<rect class='shadow' x='3' y='3' width='189' height='46'/>
+<rect class='boxelement' x='0' y='0' width='189' height='46'
 onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_1")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>CTAcqForCTNumberCalibrationCurve</text>
-<text class='visible' x='5' y='41'>type: CTAcqForCTNumberCalibrationCurve</text>
+<text class='strong' x='5' y='27'>DensityPhantomUsed</text>
+<text class='visible' x='5' y='41'>type: DensityPhantom</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='242' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_1' onclick='show("_1_1_1_4_1_3_1_1_1_1")'/>
+<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_1' onclick='show("_1_1_1_4_1_3_1_1_1_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_1_1_1_1' class='box' transform='translate(1802,12759)'>
+<g id='_1_1_1_4_1_3_1_1_1_1_1' class='box' transform='translate(1784,12759)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -5045,36 +5045,10 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_1")' onmouseout='makeHidden("_1_1_1
 <use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_1_1' onclick='show("_1_1_1_4_1_3_1_1_1_1_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_1_1_1_1_1' class='box' transform='translate(1907,12759)'>
+<g id='_1_1_1_4_1_3_1_1_1_1_1_1' class='box' transform='translate(1889,12759)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
 onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_1_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_1_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DensityPhantomUsed</text>
-<text class='visible' x='5' y='41'>type: DensityPhantom</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_1_1_1' onclick='show("_1_1_1_4_1_3_1_1_1_1_1_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_1_1_1_1' class='box' transform='translate(2141,12759)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_1_1_1_1' onclick='show("_1_1_1_4_1_3_1_1_1_1_1_1_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_1_1_1_1_1' class='box' transform='translate(2246,12759)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_1_1_1_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_1_1_1_1_1")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
@@ -5083,126 +5057,34 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_1_1_1_1_1")' onmouseout='makeHidden
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_1_1_1_1_1_1_2' class='box' transform='translate(2246,12830)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_1_1_1_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_1_1_1_1_2")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DensityPhantomIdentifier</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_1_1_1_1_1_1_2' x1='-35' y1='-48' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_1_1_2' class='box' transform='translate(1907,12901)'>
+<g id='_1_1_1_4_1_3_1_1_1_1_1_2' class='box' transform='translate(1889,12830)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
 onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_1_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_1_1_2")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>CTReconProduced</text>
-<text class='visible' x='5' y='41'>type: DICOMData</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_1_1_1_1_2' x1='-35' y1='-119' x2='-35' y2='-40'/>
+<text class='strong' x='5' y='27'>DensityPhantomIdentifier</text>
+<text class='visible' x='5' y='41'>type: string</text>
+<line class='connection' id='p_1_1_1_4_1_3_1_1_1_1_1_2' x1='-35' y1='-48' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_1_1_2' onclick='show("_1_1_1_4_1_3_1_1_1_1_1_2")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_1_1_1_1_2_1' class='box' transform='translate(2141,12901)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_1_1_2_1' onclick='show("_1_1_1_4_1_3_1_1_1_1_1_2_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_1_1_2_1_1' class='box' transform='translate(2246,12901)'>
+<g id='_1_1_1_4_1_3_1_1_1_2' class='box' transform='translate(1550,12901)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_1_1_2_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_1_1_2_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMStudyUID</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_1_1_2_1_2' class='box' transform='translate(2246,12972)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_1_1_2_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_1_1_2_1_2")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMSeriesUID</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_1_1_2_1_3' class='box' transform='translate(2246,13043)'>
-<rect class='shadow' x='3' y='3' width='249' height='46'/>
-<rect class='boxelement' x='0' y='0' width='249' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_1_1_2_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_1_1_2_1_3")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>TransformationsUsed</text>
-<text class='visible' x='5' y='41'>type: TransformationIdentifierContainer</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_1_1_1_1_2_1_3' x1='-35' y1='-119' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-<use x='248' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_1_1_2_1_3' onclick='show("_1_1_1_4_1_3_1_1_1_1_1_2_1_3")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_1_1_2_1_3_1' class='box' transform='translate(2540,13043)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_1_1_2_1_3_1' onclick='show("_1_1_1_4_1_3_1_1_1_1_1_2_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_1_1_2_1_3_1_1' class='box' transform='translate(2645,13043)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_1_1_2_1_3_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_1_1_2_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>TransformationIdentifier</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_2' class='box' transform='translate(1514,13114)'>
-<rect class='shadow' x='3' y='3' width='273' height='46'/>
-<rect class='boxelement' x='0' y='0' width='273' height='46'
 onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_2")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>CalculationOfCTNumberCalibrationCurve</text>
-<text class='visible' x='5' y='41'>type: CalculationOfCTNumberCalibrationCurve</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_1_1_2' x1='-35' y1='-332' x2='-35' y2='-40'/>
+<text class='strong' x='5' y='27'>CTReconProduced</text>
+<text class='visible' x='5' y='41'>type: DICOMData</text>
+<line class='connection' id='p_1_1_1_4_1_3_1_1_1_2' x1='-35' y1='-119' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-<use x='272' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_2' onclick='show("_1_1_1_4_1_3_1_1_1_2")'/>
+<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_2' onclick='show("_1_1_1_4_1_3_1_1_1_2")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_1_1_2_1' class='box' transform='translate(1832,13114)'>
+<g id='_1_1_1_4_1_3_1_1_1_2_1' class='box' transform='translate(1784,12901)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -5215,87 +5097,10 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_2")' onmouseout='makeHidden("_1_1_1
 <use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_2_1' onclick='show("_1_1_1_4_1_3_1_1_1_2_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_1_1_2_1_1' class='box' transform='translate(1937,13114)'>
+<g id='_1_1_1_4_1_3_1_1_1_2_1_1' class='box' transform='translate(1889,12901)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
 onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_2_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_2_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>ProcessExecutionContext</text>
-<text class='visible' x='5' y='41'>type: ProcessExecutionContext</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_2_1_1' onclick='show("_1_1_1_4_1_3_1_1_1_2_1_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_2_1_1_1' class='box' transform='translate(2171,13114)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_2_1_1_1' onclick='show("_1_1_1_4_1_3_1_1_1_2_1_1_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_2_1_1_1_1' class='box' transform='translate(2276,13114)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_2_1_1_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_2_1_1_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DateTimeProcessStarted</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_2_1_1_1_2' class='box' transform='translate(2276,13185)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_2_1_1_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_2_1_1_1_2")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>PerformingInstitution</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_1_1_2_1_1_1_2' x1='-35' y1='-48' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_2_1_2' class='box' transform='translate(1937,13256)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_2_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_2_1_2")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>CTReconUsed</text>
-<text class='visible' x='5' y='41'>type: DICOMData</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_2_1_2' onclick='show("_1_1_1_4_1_3_1_1_1_2_1_2")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_2_1_2_1' class='box' transform='translate(2171,13256)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_2_1_2_1' onclick='show("_1_1_1_4_1_3_1_1_1_2_1_2_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_2_1_2_1_1' class='box' transform='translate(2276,13256)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_2_1_2_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_2_1_2_1_1")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
@@ -5304,10 +5109,10 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_2_1_2_1_1")' onmouseout='makeHidden
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_1_1_2_1_2_1_2' class='box' transform='translate(2276,13327)'>
+<g id='_1_1_1_4_1_3_1_1_1_2_1_2' class='box' transform='translate(1889,12972)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_2_1_2_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_2_1_2_1_2")'/>
+onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_2_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_2_1_2")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
@@ -5316,62 +5121,22 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_2_1_2_1_2")' onmouseout='makeHidden
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_1_1_2_1_2_1_3' class='box' transform='translate(2276,13398)'>
+<g id='_1_1_1_4_1_3_1_1_1_2_1_3' class='box' transform='translate(1889,13043)'>
 <rect class='shadow' x='3' y='3' width='249' height='46'/>
 <rect class='boxelement' x='0' y='0' width='249' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_2_1_2_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_2_1_2_1_3")'/>
+onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_2_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_2_1_3")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>TransformationsUsed</text>
 <text class='visible' x='5' y='41'>type: TransformationIdentifierContainer</text>
 <text x='5' y='59'>0..1</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_1_1_2_1_2_1_3' x1='-35' y1='-119' x2='-35' y2='-40'/>
+<line class='connection' id='p_1_1_1_4_1_3_1_1_1_2_1_3' x1='-35' y1='-119' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-<use x='248' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_2_1_2_1_3' onclick='show("_1_1_1_4_1_3_1_1_1_2_1_2_1_3")'/>
+<use x='248' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_2_1_3' onclick='show("_1_1_1_4_1_3_1_1_1_2_1_3")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_1_1_2_1_2_1_3_1' class='box' transform='translate(2570,13398)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_2_1_2_1_3_1' onclick='show("_1_1_1_4_1_3_1_1_1_2_1_2_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_2_1_2_1_3_1_1' class='box' transform='translate(2675,13398)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_2_1_2_1_3_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_2_1_2_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>TransformationIdentifier</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_2_1_3' class='box' transform='translate(1937,13469)'>
-<rect class='shadow' x='3' y='3' width='225' height='46'/>
-<rect class='boxelement' x='0' y='0' width='225' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_2_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_2_1_3")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>CTNumberCalibrationCurveProduced</text>
-<text class='visible' x='5' y='41'>type: CTNumberCalibrationCurve</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_1_1_2_1_3' x1='-35' y1='-332' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-<use x='224' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_2_1_3' onclick='show("_1_1_1_4_1_3_1_1_1_2_1_3")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_2_1_3_1' class='box' transform='translate(2207,13469)'>
+<g id='_1_1_1_4_1_3_1_1_1_2_1_3_1' class='box' transform='translate(2183,13043)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -5384,136 +5149,34 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_2_1_3")' onmouseout='makeHidden("_1
 <use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_2_1_3_1' onclick='show("_1_1_1_4_1_3_1_1_1_2_1_3_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_1_1_2_1_3_1_1' class='box' transform='translate(2312,13469)'>
-<rect class='shadow' x='3' y='3' width='255' height='46'/>
-<rect class='boxelement' x='0' y='0' width='255' height='46'
+<g id='_1_1_1_4_1_3_1_1_1_2_1_3_1_1' class='box' transform='translate(2288,13043)'>
+<rect class='shadow' x='3' y='3' width='189' height='46'/>
+<rect class='boxelement' x='0' y='0' width='189' height='46'
 onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_2_1_3_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_2_1_3_1_1")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>ElementsOfCTNumberCalibrationCurve</text>
-<text class='visible' x='5' y='41'>type: ElementsOfCTNumberCalibrationCurve</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='254' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_2_1_3_1_1' onclick='show("_1_1_1_4_1_3_1_1_1_2_1_3_1_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_2_1_3_1_1_1' class='box' transform='translate(2612,13469)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_2_1_3_1_1_1' onclick='show("_1_1_1_4_1_3_1_1_1_2_1_3_1_1_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_2_1_3_1_1_1_1' class='box' transform='translate(2717,13469)'>
-<rect class='shadow' x='3' y='3' width='249' height='46'/>
-<rect class='boxelement' x='0' y='0' width='249' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_2_1_3_1_1_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_2_1_3_1_1_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>ElementOfCTNumberCalibrationCurve</text>
-<text class='visible' x='5' y='41'>type: ElementOfCTNumberCalibrationCurve</text>
+<text class='strong' x='5' y='27'>TransformationIdentifier</text>
+<text class='visible' x='5' y='41'>type: string</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='248' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_2_1_3_1_1_1_1' onclick='show("_1_1_1_4_1_3_1_1_1_2_1_3_1_1_1_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_1_1_2_1_3_1_1_1_1_1' class='box' transform='translate(3011,13469)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_1_1_2_1_3_1_1_1_1_1' onclick='show("_1_1_1_4_1_3_1_1_1_2_1_3_1_1_1_1_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_2_1_3_1_1_1_1_1_1' class='box' transform='translate(3116,13469)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_2_1_3_1_1_1_1_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_2_1_3_1_1_1_1_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>HounsfieldMeasuredValue</text>
-<text class='visible' x='5' y='41'>type: integer</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_2_1_3_1_1_1_1_1_2' class='box' transform='translate(3116,13540)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_2_1_3_1_1_1_1_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_2_1_3_1_1_1_1_1_2")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>RealDensityOfMaterialValue</text>
-<text class='visible' x='5' y='41'>type: float</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_2_1_3_1_1_1_1_1_3' class='box' transform='translate(3116,13611)'>
-<rect class='shadow' x='3' y='3' width='201' height='46'/>
-<rect class='boxelement' x='0' y='0' width='201' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_2_1_3_1_1_1_1_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_2_1_3_1_1_1_1_1_3")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>RealDensityOfMaterialUnit</text>
-<text class='visible' x='5' y='41'>type: RealDensityOfMaterialUnit</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_2_1_3_1_1_1_1_1_4' class='box' transform='translate(3116,13682)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_2_1_3_1_1_1_1_1_4")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_2_1_3_1_1_1_1_1_4")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>MaterialIdentifier</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_1_1_2_1_3_1_1_1_1_1_4' x1='-35' y1='-190' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_1_1_2_1_3_1_2' class='box' transform='translate(2312,13753)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_1_1_2_1_3_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_1_1_2_1_3_1_2")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>ReferenceCalibrationDate</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_1_1_2_1_3_1_2' x1='-35' y1='-261' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_2' class='box' transform='translate(1157,13824)'>
-<rect class='shadow' x='3' y='3' width='243' height='46'/>
-<rect class='boxelement' x='0' y='0' width='243' height='46'
+<g id='_1_1_1_4_1_3_1_2' class='box' transform='translate(1157,13114)'>
+<rect class='shadow' x='3' y='3' width='273' height='46'/>
+<rect class='boxelement' x='0' y='0' width='273' height='46'
 onmouseover='makeVisible("_1_1_1_4_1_3_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>SPECTReconstructionInCalibration</text>
-<text class='visible' x='5' y='41'>type: SPECTReconstructionInCalibration</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='242' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2' onclick='show("_1_1_1_4_1_3_1_2")'/>
+<text class='strong' x='5' y='27'>CalculationOfCTNumberCalibrationCurve</text>
+<text class='visible' x='5' y='41'>type: CalculationOfCTNumberCalibrationCurve</text>
+<line class='connection' id='p_1_1_1_4_1_3_1_2' x1='-35' y1='-332' x2='-35' y2='-40'/>
+<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
+<use x='272' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2' onclick='show("_1_1_1_4_1_3_1_2")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1' class='box' transform='translate(1445,13824)'>
+<g id='_1_1_1_4_1_3_1_2_1' class='box' transform='translate(1475,13114)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -5526,7 +5189,7 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_2")' onmouseout='makeHidden("_1_1_1_4_1
 <use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1' onclick='show("_1_1_1_4_1_3_1_2_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_1' class='box' transform='translate(1550,13824)'>
+<g id='_1_1_1_4_1_3_1_2_1_1' class='box' transform='translate(1580,13114)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
 onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_1")'/>
@@ -5539,7 +5202,7 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_1")' onmouseout='makeHidden("_1_1_1
 <use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_1' onclick='show("_1_1_1_4_1_3_1_2_1_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_1_1' class='box' transform='translate(1784,13824)'>
+<g id='_1_1_1_4_1_3_1_2_1_1_1' class='box' transform='translate(1814,13114)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -5552,7 +5215,7 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_1")' onmouseout='makeHidden("_1_1_1
 <use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_1_1' onclick='show("_1_1_1_4_1_3_1_2_1_1_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_1_1_1' class='box' transform='translate(1889,13824)'>
+<g id='_1_1_1_4_1_3_1_2_1_1_1_1' class='box' transform='translate(1919,13114)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
 onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_1_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_1_1_1")'/>
@@ -5564,7 +5227,7 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_1_1_1")' onmouseout='makeHidden("_1
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_1_1_2' class='box' transform='translate(1889,13895)'>
+<g id='_1_1_1_4_1_3_1_2_1_1_1_2' class='box' transform='translate(1919,13185)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
 onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_1_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_1_1_2")'/>
@@ -5577,20 +5240,20 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_1_1_2")' onmouseout='makeHidden("_1
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_2' class='box' transform='translate(1550,13966)'>
+<g id='_1_1_1_4_1_3_1_2_1_2' class='box' transform='translate(1580,13256)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
 onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_2")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>NMTomoUsed</text>
+<text class='strong' x='5' y='27'>CTReconUsed</text>
 <text class='visible' x='5' y='41'>type: DICOMData</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 <use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_2' onclick='show("_1_1_1_4_1_3_1_2_1_2")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_2_1' class='box' transform='translate(1784,13966)'>
+<g id='_1_1_1_4_1_3_1_2_1_2_1' class='box' transform='translate(1814,13256)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -5603,7 +5266,7 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_2")' onmouseout='makeHidden("_1_1_1
 <use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_2_1' onclick='show("_1_1_1_4_1_3_1_2_1_2_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_2_1_1' class='box' transform='translate(1889,13966)'>
+<g id='_1_1_1_4_1_3_1_2_1_2_1_1' class='box' transform='translate(1919,13256)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
 onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_2_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_2_1_1")'/>
@@ -5615,7 +5278,7 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_2_1_1")' onmouseout='makeHidden("_1
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_2_1_2' class='box' transform='translate(1889,14037)'>
+<g id='_1_1_1_4_1_3_1_2_1_2_1_2' class='box' transform='translate(1919,13327)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
 onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_2_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_2_1_2")'/>
@@ -5627,7 +5290,7 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_2_1_2")' onmouseout='makeHidden("_1
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_2_1_3' class='box' transform='translate(1889,14108)'>
+<g id='_1_1_1_4_1_3_1_2_1_2_1_3' class='box' transform='translate(1919,13398)'>
 <rect class='shadow' x='3' y='3' width='249' height='46'/>
 <rect class='boxelement' x='0' y='0' width='249' height='46'
 onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_2_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_2_1_3")'/>
@@ -5642,7 +5305,7 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_2_1_3")' onmouseout='makeHidden("_1
 <use x='248' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_2_1_3' onclick='show("_1_1_1_4_1_3_1_2_1_2_1_3")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_2_1_3_1' class='box' transform='translate(2183,14108)'>
+<g id='_1_1_1_4_1_3_1_2_1_2_1_3_1' class='box' transform='translate(2213,13398)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -5655,7 +5318,7 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_2_1_3")' onmouseout='makeHidden("_1
 <use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_2_1_3_1' onclick='show("_1_1_1_4_1_3_1_2_1_2_1_3_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_2_1_3_1_1' class='box' transform='translate(2288,14108)'>
+<g id='_1_1_1_4_1_3_1_2_1_2_1_3_1_1' class='box' transform='translate(2318,13398)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
 onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_2_1_3_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_2_1_3_1_1")'/>
@@ -5668,20 +5331,21 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_2_1_3_1_1")' onmouseout='makeHidden
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_3' class='box' transform='translate(1550,14179)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
+<g id='_1_1_1_4_1_3_1_2_1_3' class='box' transform='translate(1580,13469)'>
+<rect class='shadow' x='3' y='3' width='225' height='46'/>
+<rect class='boxelement' x='0' y='0' width='225' height='46'
 onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_3")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>CTReconUsed</text>
-<text class='visible' x='5' y='41'>type: DICOMData</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_3' onclick='show("_1_1_1_4_1_3_1_2_1_3")'/>
+<text class='strong' x='5' y='27'>CTNumberCalibrationCurveProduced</text>
+<text class='visible' x='5' y='41'>type: CTNumberCalibrationCurve</text>
+<line class='connection' id='p_1_1_1_4_1_3_1_2_1_3' x1='-35' y1='-332' x2='-35' y2='-40'/>
+<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
+<use x='224' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_3' onclick='show("_1_1_1_4_1_3_1_2_1_3")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_3_1' class='box' transform='translate(1784,14179)'>
+<g id='_1_1_1_4_1_3_1_2_1_3_1' class='box' transform='translate(1850,13469)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -5694,124 +5358,20 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_3")' onmouseout='makeHidden("_1_1_1
 <use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_3_1' onclick='show("_1_1_1_4_1_3_1_2_1_3_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_3_1_1' class='box' transform='translate(1889,14179)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_3_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMStudyUID</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_2_1_3_1_2' class='box' transform='translate(1889,14250)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_3_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_3_1_2")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMSeriesUID</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_2_1_3_1_3' class='box' transform='translate(1889,14321)'>
-<rect class='shadow' x='3' y='3' width='249' height='46'/>
-<rect class='boxelement' x='0' y='0' width='249' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_3_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_3_1_3")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>TransformationsUsed</text>
-<text class='visible' x='5' y='41'>type: TransformationIdentifierContainer</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_2_1_3_1_3' x1='-35' y1='-119' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-<use x='248' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_3_1_3' onclick='show("_1_1_1_4_1_3_1_2_1_3_1_3")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_2_1_3_1_3_1' class='box' transform='translate(2183,14321)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_3_1_3_1' onclick='show("_1_1_1_4_1_3_1_2_1_3_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_2_1_3_1_3_1_1' class='box' transform='translate(2288,14321)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_3_1_3_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_3_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>TransformationIdentifier</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_2_1_4' class='box' transform='translate(1550,14392)'>
-<rect class='shadow' x='3' y='3' width='261' height='46'/>
-<rect class='boxelement' x='0' y='0' width='261' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_4")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_4")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>ReconstructionMethodAndCorrectionsUsed</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_2_1_5' class='box' transform='translate(1550,14463)'>
-<rect class='shadow' x='3' y='3' width='201' height='46'/>
-<rect class='boxelement' x='0' y='0' width='201' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_5")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_5")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>CTNumberCalibrationCurveUsed</text>
-<text class='visible' x='5' y='41'>type: CTNumberCalibrationCurve</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='200' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_5' onclick='show("_1_1_1_4_1_3_1_2_1_5")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_2_1_5_1' class='box' transform='translate(1796,14463)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_5_1' onclick='show("_1_1_1_4_1_3_1_2_1_5_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_2_1_5_1_1' class='box' transform='translate(1901,14463)'>
+<g id='_1_1_1_4_1_3_1_2_1_3_1_1' class='box' transform='translate(1955,13469)'>
 <rect class='shadow' x='3' y='3' width='255' height='46'/>
 <rect class='boxelement' x='0' y='0' width='255' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_5_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_5_1_1")'/>
+onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_3_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_3_1_1")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>ElementsOfCTNumberCalibrationCurve</text>
 <text class='visible' x='5' y='41'>type: ElementsOfCTNumberCalibrationCurve</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='254' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_5_1_1' onclick='show("_1_1_1_4_1_3_1_2_1_5_1_1")'/>
+<use x='254' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_3_1_1' onclick='show("_1_1_1_4_1_3_1_2_1_3_1_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_5_1_1_1' class='box' transform='translate(2201,14463)'>
+<g id='_1_1_1_4_1_3_1_2_1_3_1_1_1' class='box' transform='translate(2255,13469)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -5821,13 +5381,13 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_5_1_1")' onmouseout='makeHidden("_1
 <text class='small' x='30' y='35'>3</text>
 <line x1='42' y1='14' x2='42' y2='32'/>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_5_1_1_1' onclick='show("_1_1_1_4_1_3_1_2_1_5_1_1_1")'/>
+<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_3_1_1_1' onclick='show("_1_1_1_4_1_3_1_2_1_3_1_1_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_5_1_1_1_1' class='box' transform='translate(2306,14463)'>
+<g id='_1_1_1_4_1_3_1_2_1_3_1_1_1_1' class='box' transform='translate(2360,13469)'>
 <rect class='shadow' x='3' y='3' width='249' height='46'/>
 <rect class='boxelement' x='0' y='0' width='249' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_5_1_1_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_5_1_1_1_1")'/>
+onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_3_1_1_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_3_1_1_1_1")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
@@ -5835,10 +5395,10 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_5_1_1_1_1")' onmouseout='makeHidden
 <text class='visible' x='5' y='41'>type: ElementOfCTNumberCalibrationCurve</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='248' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_5_1_1_1_1' onclick='show("_1_1_1_4_1_3_1_2_1_5_1_1_1_1")'/>
+<use x='248' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_3_1_1_1_1' onclick='show("_1_1_1_4_1_3_1_2_1_3_1_1_1_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_5_1_1_1_1_1' class='box' transform='translate(2600,14463)'>
+<g id='_1_1_1_4_1_3_1_2_1_3_1_1_1_1_1' class='box' transform='translate(2654,13469)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -5848,13 +5408,13 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_5_1_1_1_1")' onmouseout='makeHidden
 <text class='small' x='30' y='35'>3</text>
 <line x1='42' y1='14' x2='42' y2='32'/>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_5_1_1_1_1_1' onclick='show("_1_1_1_4_1_3_1_2_1_5_1_1_1_1_1")'/>
+<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_3_1_1_1_1_1' onclick='show("_1_1_1_4_1_3_1_2_1_3_1_1_1_1_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_5_1_1_1_1_1_1' class='box' transform='translate(2705,14463)'>
+<g id='_1_1_1_4_1_3_1_2_1_3_1_1_1_1_1_1' class='box' transform='translate(2759,13469)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_5_1_1_1_1_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_5_1_1_1_1_1_1")'/>
+onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_3_1_1_1_1_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_3_1_1_1_1_1_1")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
@@ -5863,10 +5423,10 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_5_1_1_1_1_1_1")' onmouseout='makeHi
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_5_1_1_1_1_1_2' class='box' transform='translate(2705,14534)'>
+<g id='_1_1_1_4_1_3_1_2_1_3_1_1_1_1_1_2' class='box' transform='translate(2759,13540)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_5_1_1_1_1_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_5_1_1_1_1_1_2")'/>
+onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_3_1_1_1_1_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_3_1_1_1_1_1_2")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
@@ -5875,10 +5435,10 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_5_1_1_1_1_1_2")' onmouseout='makeHi
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_5_1_1_1_1_1_3' class='box' transform='translate(2705,14605)'>
+<g id='_1_1_1_4_1_3_1_2_1_3_1_1_1_1_1_3' class='box' transform='translate(2759,13611)'>
 <rect class='shadow' x='3' y='3' width='201' height='46'/>
 <rect class='boxelement' x='0' y='0' width='201' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_5_1_1_1_1_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_5_1_1_1_1_1_3")'/>
+onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_3_1_1_1_1_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_3_1_1_1_1_1_3")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
@@ -5887,48 +5447,47 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_5_1_1_1_1_1_3")' onmouseout='makeHi
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_5_1_1_1_1_1_4' class='box' transform='translate(2705,14676)'>
+<g id='_1_1_1_4_1_3_1_2_1_3_1_1_1_1_1_4' class='box' transform='translate(2759,13682)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_5_1_1_1_1_1_4")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_5_1_1_1_1_1_4")'/>
+onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_3_1_1_1_1_1_4")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_3_1_1_1_1_1_4")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>MaterialIdentifier</text>
 <text class='visible' x='5' y='41'>type: string</text>
 <text x='5' y='59'>0..1</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_2_1_5_1_1_1_1_1_4' x1='-35' y1='-190' x2='-35' y2='-40'/>
+<line class='connection' id='p_1_1_1_4_1_3_1_2_1_3_1_1_1_1_1_4' x1='-35' y1='-190' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_5_1_2' class='box' transform='translate(1901,14747)'>
+<g id='_1_1_1_4_1_3_1_2_1_3_1_2' class='box' transform='translate(1955,13753)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_5_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_5_1_2")'/>
+onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_3_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_3_1_2")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>ReferenceCalibrationDate</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_2_1_5_1_2' x1='-35' y1='-261' x2='-35' y2='-40'/>
+<line class='connection' id='p_1_1_1_4_1_3_1_2_1_3_1_2' x1='-35' y1='-261' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_6' class='box' transform='translate(1550,14818)'>
-<rect class='shadow' x='3' y='3' width='249' height='46'/>
-<rect class='boxelement' x='0' y='0' width='249' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_6")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_6")'/>
+<g id='_1_2' class='box' transform='translate(128,13824)'>
+<rect class='shadow' x='3' y='3' width='189' height='46'/>
+<rect class='boxelement' x='0' y='0' width='189' height='46'
+onmouseover='makeVisible("_1_2")' onmouseout='makeHidden("_1_2")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>CTNumberCalibrationCurveReference</text>
-<text class='visible' x='5' y='41'>type: CTNumberCalibrationCurveReference</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='248' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_6' onclick='show("_1_1_1_4_1_3_1_2_1_6")'/>
+<text class='strong' x='5' y='27'>CTNumberCalibrationWorkfow</text>
+<line class='connection' id='p_1_2' x1='-35' y1='-13751' x2='-35' y2='-40'/>
+<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
+<use x='188' y='17' xlink:href='#minus' id='s_1_2' onclick='show("_1_2")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_6_1' class='box' transform='translate(1844,14818)'>
+<g id='_1_2_1' class='box' transform='translate(362,13824)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -5938,36 +5497,101 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_6")' onmouseout='makeHidden("_1_1_1
 <text class='small' x='30' y='35'>3</text>
 <line x1='42' y1='14' x2='42' y2='32'/>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_6_1' onclick='show("_1_1_1_4_1_3_1_2_1_6_1")'/>
+<use x='59' y='17' xlink:href='#minus' id='s_1_2_1' onclick='show("_1_2_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_6_1_1' class='box' transform='translate(1949,14818)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_6_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_6_1_1")'/>
+<g id='_1_2_1_1' class='box' transform='translate(467,13824)'>
+<rect class='shadow' x='3' y='3' width='243' height='46'/>
+<rect class='boxelement' x='0' y='0' width='243' height='46'
+onmouseover='makeVisible("_1_2_1_1")' onmouseout='makeHidden("_1_2_1_1")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>ReferenceCalibrationDate</text>
+<text class='strong' x='5' y='27'>CTAcqForCTNumberCalibrationCurve</text>
+<text class='visible' x='5' y='41'>type: CTAcqForCTNumberCalibrationCurve</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+<use x='242' y='17' xlink:href='#minus' id='s_1_2_1_1' onclick='show("_1_2_1_1")'/>
+</g>
+
+<g id='_1_2_1_1_1' class='box' transform='translate(755,13824)'>
+<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
+<circle cx='42' cy='14' r='2'/>
+<circle cx='42' cy='23' r='2'/>
+<circle cx='42' cy='32' r='2'/>
+<text class='small' x='30' y='17'>1</text>
+<text class='small' x='30' y='26'>2</text>
+<text class='small' x='30' y='35'>3</text>
+<line x1='42' y1='14' x2='42' y2='32'/>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+<use x='59' y='17' xlink:href='#minus' id='s_1_2_1_1_1' onclick='show("_1_2_1_1_1")'/>
+</g>
+
+<g id='_1_2_1_1_1_1' class='box' transform='translate(860,13824)'>
+<rect class='shadow' x='3' y='3' width='189' height='46'/>
+<rect class='boxelement' x='0' y='0' width='189' height='46'
+onmouseover='makeVisible("_1_2_1_1_1_1")' onmouseout='makeHidden("_1_2_1_1_1_1")'/>
+<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>DensityPhantomUsed</text>
+<text class='visible' x='5' y='41'>type: DensityPhantom</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+<use x='188' y='17' xlink:href='#minus' id='s_1_2_1_1_1_1' onclick='show("_1_2_1_1_1_1")'/>
+</g>
+
+<g id='_1_2_1_1_1_1_1' class='box' transform='translate(1094,13824)'>
+<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
+<circle cx='42' cy='14' r='2'/>
+<circle cx='42' cy='23' r='2'/>
+<circle cx='42' cy='32' r='2'/>
+<text class='small' x='30' y='17'>1</text>
+<text class='small' x='30' y='26'>2</text>
+<text class='small' x='30' y='35'>3</text>
+<line x1='42' y1='14' x2='42' y2='32'/>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+<use x='59' y='17' xlink:href='#minus' id='s_1_2_1_1_1_1_1' onclick='show("_1_2_1_1_1_1_1")'/>
+</g>
+
+<g id='_1_2_1_1_1_1_1_1' class='box' transform='translate(1199,13824)'>
+<rect class='shadow' x='3' y='3' width='189' height='46'/>
+<rect class='boxelement' x='0' y='0' width='189' height='46'
+onmouseover='makeVisible("_1_2_1_1_1_1_1_1")' onmouseout='makeHidden("_1_2_1_1_1_1_1_1")'/>
+<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>DensityPhantomName</text>
 <text class='visible' x='5' y='41'>type: string</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_7' class='box' transform='translate(1550,14889)'>
+<g id='_1_2_1_1_1_1_1_2' class='box' transform='translate(1199,13895)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_7")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_7")'/>
+onmouseover='makeVisible("_1_2_1_1_1_1_1_2")' onmouseout='makeHidden("_1_2_1_1_1_1_1_2")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>NMTomoReconProduced</text>
+<text class='strong' x='5' y='27'>DensityPhantomIdentifier</text>
+<text class='visible' x='5' y='41'>type: string</text>
+<line class='connection' id='p_1_2_1_1_1_1_1_2' x1='-35' y1='-48' x2='-35' y2='-40'/>
+<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
+</g>
+
+<g id='_1_2_1_1_1_2' class='box' transform='translate(860,13966)'>
+<rect class='shadow' x='3' y='3' width='189' height='46'/>
+<rect class='boxelement' x='0' y='0' width='189' height='46'
+onmouseover='makeVisible("_1_2_1_1_1_2")' onmouseout='makeHidden("_1_2_1_1_1_2")'/>
+<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>CTReconProduced</text>
 <text class='visible' x='5' y='41'>type: DICOMData</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_2_1_7' x1='-35' y1='-1042' x2='-35' y2='-40'/>
+<line class='connection' id='p_1_2_1_1_1_2' x1='-35' y1='-119' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_7' onclick='show("_1_1_1_4_1_3_1_2_1_7")'/>
+<use x='188' y='17' xlink:href='#minus' id='s_1_2_1_1_1_2' onclick='show("_1_2_1_1_1_2")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_7_1' class='box' transform='translate(1784,14889)'>
+<g id='_1_2_1_1_1_2_1' class='box' transform='translate(1094,13966)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -5977,13 +5601,13 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_7")' onmouseout='makeHidden("_1_1_1
 <text class='small' x='30' y='35'>3</text>
 <line x1='42' y1='14' x2='42' y2='32'/>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_7_1' onclick='show("_1_1_1_4_1_3_1_2_1_7_1")'/>
+<use x='59' y='17' xlink:href='#minus' id='s_1_2_1_1_1_2_1' onclick='show("_1_2_1_1_1_2_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_7_1_1' class='box' transform='translate(1889,14889)'>
+<g id='_1_2_1_1_1_2_1_1' class='box' transform='translate(1199,13966)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_7_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_7_1_1")'/>
+onmouseover='makeVisible("_1_2_1_1_1_2_1_1")' onmouseout='makeHidden("_1_2_1_1_1_2_1_1")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
@@ -5992,10 +5616,10 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_7_1_1")' onmouseout='makeHidden("_1
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_7_1_2' class='box' transform='translate(1889,14960)'>
+<g id='_1_2_1_1_1_2_1_2' class='box' transform='translate(1199,14037)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_7_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_7_1_2")'/>
+onmouseover='makeVisible("_1_2_1_1_1_2_1_2")' onmouseout='makeHidden("_1_2_1_1_1_2_1_2")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
@@ -6004,22 +5628,22 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_7_1_2")' onmouseout='makeHidden("_1
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_7_1_3' class='box' transform='translate(1889,15031)'>
+<g id='_1_2_1_1_1_2_1_3' class='box' transform='translate(1199,14108)'>
 <rect class='shadow' x='3' y='3' width='249' height='46'/>
 <rect class='boxelement' x='0' y='0' width='249' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_7_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_7_1_3")'/>
+onmouseover='makeVisible("_1_2_1_1_1_2_1_3")' onmouseout='makeHidden("_1_2_1_1_1_2_1_3")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>TransformationsUsed</text>
 <text class='visible' x='5' y='41'>type: TransformationIdentifierContainer</text>
 <text x='5' y='59'>0..1</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_2_1_7_1_3' x1='-35' y1='-119' x2='-35' y2='-40'/>
+<line class='connection' id='p_1_2_1_1_1_2_1_3' x1='-35' y1='-119' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-<use x='248' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_7_1_3' onclick='show("_1_1_1_4_1_3_1_2_1_7_1_3")'/>
+<use x='248' y='17' xlink:href='#minus' id='s_1_2_1_1_1_2_1_3' onclick='show("_1_2_1_1_1_2_1_3")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_7_1_3_1' class='box' transform='translate(2183,15031)'>
+<g id='_1_2_1_1_1_2_1_3_1' class='box' transform='translate(1493,14108)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -6029,13 +5653,13 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_7_1_3")' onmouseout='makeHidden("_1
 <text class='small' x='30' y='35'>3</text>
 <line x1='42' y1='14' x2='42' y2='32'/>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_2_1_7_1_3_1' onclick='show("_1_1_1_4_1_3_1_2_1_7_1_3_1")'/>
+<use x='59' y='17' xlink:href='#minus' id='s_1_2_1_1_1_2_1_3_1' onclick='show("_1_2_1_1_1_2_1_3_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_2_1_7_1_3_1_1' class='box' transform='translate(2288,15031)'>
+<g id='_1_2_1_1_1_2_1_3_1_1' class='box' transform='translate(1598,14108)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_7_1_3_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_2_1_7_1_3_1_1")'/>
+onmouseover='makeVisible("_1_2_1_1_1_2_1_3_1_1")' onmouseout='makeHidden("_1_2_1_1_1_2_1_3_1_1")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
@@ -6045,20 +5669,21 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_2_1_7_1_3_1_1")' onmouseout='makeHidden
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_3' class='box' transform='translate(1157,15102)'>
-<rect class='shadow' x='3' y='3' width='213' height='46'/>
-<rect class='boxelement' x='0' y='0' width='213' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3")'/>
+<g id='_1_2_1_2' class='box' transform='translate(467,14179)'>
+<rect class='shadow' x='3' y='3' width='273' height='46'/>
+<rect class='boxelement' x='0' y='0' width='273' height='46'
+onmouseover='makeVisible("_1_2_1_2")' onmouseout='makeHidden("_1_2_1_2")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>CTSegmentationInCalibration</text>
-<text class='visible' x='5' y='41'>type: CTSegmentationInCalibration</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='212' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3' onclick='show("_1_1_1_4_1_3_1_3")'/>
+<text class='strong' x='5' y='27'>CalculationOfCTNumberCalibrationCurve</text>
+<text class='visible' x='5' y='41'>type: CalculationOfCTNumberCalibrationCurve</text>
+<line class='connection' id='p_1_2_1_2' x1='-35' y1='-332' x2='-35' y2='-40'/>
+<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
+<use x='272' y='17' xlink:href='#minus' id='s_1_2_1_2' onclick='show("_1_2_1_2")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_3_1' class='box' transform='translate(1415,15102)'>
+<g id='_1_2_1_2_1' class='box' transform='translate(785,14179)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -6068,23 +5693,23 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_3")' onmouseout='makeHidden("_1_1_1_4_1
 <text class='small' x='30' y='35'>3</text>
 <line x1='42' y1='14' x2='42' y2='32'/>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1' onclick='show("_1_1_1_4_1_3_1_3_1")'/>
+<use x='59' y='17' xlink:href='#minus' id='s_1_2_1_2_1' onclick='show("_1_2_1_2_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_3_1_1' class='box' transform='translate(1520,15102)'>
+<g id='_1_2_1_2_1_1' class='box' transform='translate(890,14179)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_1")'/>
+onmouseover='makeVisible("_1_2_1_2_1_1")' onmouseout='makeHidden("_1_2_1_2_1_1")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>ProcessExecutionContext</text>
 <text class='visible' x='5' y='41'>type: ProcessExecutionContext</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_1' onclick='show("_1_1_1_4_1_3_1_3_1_1")'/>
+<use x='188' y='17' xlink:href='#minus' id='s_1_2_1_2_1_1' onclick='show("_1_2_1_2_1_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_3_1_1_1' class='box' transform='translate(1754,15102)'>
+<g id='_1_2_1_2_1_1_1' class='box' transform='translate(1124,14179)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -6094,13 +5719,13 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_1")' onmouseout='makeHidden("_1_1_1
 <text class='small' x='30' y='35'>3</text>
 <line x1='42' y1='14' x2='42' y2='32'/>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_1_1' onclick='show("_1_1_1_4_1_3_1_3_1_1_1")'/>
+<use x='59' y='17' xlink:href='#minus' id='s_1_2_1_2_1_1_1' onclick='show("_1_2_1_2_1_1_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_3_1_1_1_1' class='box' transform='translate(1859,15102)'>
+<g id='_1_2_1_2_1_1_1_1' class='box' transform='translate(1229,14179)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_1_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_1_1_1")'/>
+onmouseover='makeVisible("_1_2_1_2_1_1_1_1")' onmouseout='makeHidden("_1_2_1_2_1_1_1_1")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
@@ -6109,124 +5734,33 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_1_1_1")' onmouseout='makeHidden("_1
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_3_1_1_1_2' class='box' transform='translate(1859,15173)'>
+<g id='_1_2_1_2_1_1_1_2' class='box' transform='translate(1229,14250)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_1_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_1_1_2")'/>
+onmouseover='makeVisible("_1_2_1_2_1_1_1_2")' onmouseout='makeHidden("_1_2_1_2_1_1_1_2")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>PerformingInstitution</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_3_1_1_1_2' x1='-35' y1='-48' x2='-35' y2='-40'/>
+<line class='connection' id='p_1_2_1_2_1_1_1_2' x1='-35' y1='-48' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_3_1_2' class='box' transform='translate(1520,15244)'>
+<g id='_1_2_1_2_1_2' class='box' transform='translate(890,14321)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_2")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>NMTomoReconUsed</text>
-<text class='visible' x='5' y='41'>type: DICOMData</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_2' onclick='show("_1_1_1_4_1_3_1_3_1_2")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_2_1' class='box' transform='translate(1754,15244)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_2_1' onclick='show("_1_1_1_4_1_3_1_3_1_2_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_2_1_1' class='box' transform='translate(1859,15244)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_2_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_2_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMStudyUID</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_2_1_2' class='box' transform='translate(1859,15315)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_2_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_2_1_2")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMSeriesUID</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_2_1_3' class='box' transform='translate(1859,15386)'>
-<rect class='shadow' x='3' y='3' width='249' height='46'/>
-<rect class='boxelement' x='0' y='0' width='249' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_2_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_2_1_3")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>TransformationsUsed</text>
-<text class='visible' x='5' y='41'>type: TransformationIdentifierContainer</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_3_1_2_1_3' x1='-35' y1='-119' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-<use x='248' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_2_1_3' onclick='show("_1_1_1_4_1_3_1_3_1_2_1_3")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_2_1_3_1' class='box' transform='translate(2153,15386)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_2_1_3_1' onclick='show("_1_1_1_4_1_3_1_3_1_2_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_2_1_3_1_1' class='box' transform='translate(2258,15386)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_2_1_3_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_2_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>TransformationIdentifier</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_3' class='box' transform='translate(1520,15457)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_3")'/>
+onmouseover='makeVisible("_1_2_1_2_1_2")' onmouseout='makeHidden("_1_2_1_2_1_2")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>CTReconUsed</text>
 <text class='visible' x='5' y='41'>type: DICOMData</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_3' onclick='show("_1_1_1_4_1_3_1_3_1_3")'/>
+<use x='188' y='17' xlink:href='#minus' id='s_1_2_1_2_1_2' onclick='show("_1_2_1_2_1_2")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_3_1_3_1' class='box' transform='translate(1754,15457)'>
+<g id='_1_2_1_2_1_2_1' class='box' transform='translate(1124,14321)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -6236,13 +5770,13 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_3")' onmouseout='makeHidden("_1_1_1
 <text class='small' x='30' y='35'>3</text>
 <line x1='42' y1='14' x2='42' y2='32'/>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_3_1' onclick='show("_1_1_1_4_1_3_1_3_1_3_1")'/>
+<use x='59' y='17' xlink:href='#minus' id='s_1_2_1_2_1_2_1' onclick='show("_1_2_1_2_1_2_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_3_1_3_1_1' class='box' transform='translate(1859,15457)'>
+<g id='_1_2_1_2_1_2_1_1' class='box' transform='translate(1229,14321)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_3_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_3_1_1")'/>
+onmouseover='makeVisible("_1_2_1_2_1_2_1_1")' onmouseout='makeHidden("_1_2_1_2_1_2_1_1")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
@@ -6251,10 +5785,10 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_3_1_1")' onmouseout='makeHidden("_1
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_3_1_3_1_2' class='box' transform='translate(1859,15528)'>
+<g id='_1_2_1_2_1_2_1_2' class='box' transform='translate(1229,14392)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_3_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_3_1_2")'/>
+onmouseover='makeVisible("_1_2_1_2_1_2_1_2")' onmouseout='makeHidden("_1_2_1_2_1_2_1_2")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
@@ -6263,22 +5797,22 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_3_1_2")' onmouseout='makeHidden("_1
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_3_1_3_1_3' class='box' transform='translate(1859,15599)'>
+<g id='_1_2_1_2_1_2_1_3' class='box' transform='translate(1229,14463)'>
 <rect class='shadow' x='3' y='3' width='249' height='46'/>
 <rect class='boxelement' x='0' y='0' width='249' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_3_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_3_1_3")'/>
+onmouseover='makeVisible("_1_2_1_2_1_2_1_3")' onmouseout='makeHidden("_1_2_1_2_1_2_1_3")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>TransformationsUsed</text>
 <text class='visible' x='5' y='41'>type: TransformationIdentifierContainer</text>
 <text x='5' y='59'>0..1</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_3_1_3_1_3' x1='-35' y1='-119' x2='-35' y2='-40'/>
+<line class='connection' id='p_1_2_1_2_1_2_1_3' x1='-35' y1='-119' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-<use x='248' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_3_1_3' onclick='show("_1_1_1_4_1_3_1_3_1_3_1_3")'/>
+<use x='248' y='17' xlink:href='#minus' id='s_1_2_1_2_1_2_1_3' onclick='show("_1_2_1_2_1_2_1_3")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_3_1_3_1_3_1' class='box' transform='translate(2153,15599)'>
+<g id='_1_2_1_2_1_2_1_3_1' class='box' transform='translate(1523,14463)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -6288,13 +5822,13 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_3_1_3")' onmouseout='makeHidden("_1
 <text class='small' x='30' y='35'>3</text>
 <line x1='42' y1='14' x2='42' y2='32'/>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_3_1_3_1' onclick='show("_1_1_1_4_1_3_1_3_1_3_1_3_1")'/>
+<use x='59' y='17' xlink:href='#minus' id='s_1_2_1_2_1_2_1_3_1' onclick='show("_1_2_1_2_1_2_1_3_1")'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_3_1_3_1_3_1_1' class='box' transform='translate(2258,15599)'>
+<g id='_1_2_1_2_1_2_1_3_1_1' class='box' transform='translate(1628,14463)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_3_1_3_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_3_1_3_1_1")'/>
+onmouseover='makeVisible("_1_2_1_2_1_2_1_3_1_1")' onmouseout='makeHidden("_1_2_1_2_1_2_1_3_1_1")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
@@ -6304,1243 +5838,146 @@ onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_3_1_3_1_1")' onmouseout='makeHidden
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_3_1_4' class='box' transform='translate(1520,15670)'>
+<g id='_1_2_1_2_1_3' class='box' transform='translate(890,14534)'>
+<rect class='shadow' x='3' y='3' width='225' height='46'/>
+<rect class='boxelement' x='0' y='0' width='225' height='46'
+onmouseover='makeVisible("_1_2_1_2_1_3")' onmouseout='makeHidden("_1_2_1_2_1_3")'/>
+<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>CTNumberCalibrationCurveProduced</text>
+<text class='visible' x='5' y='41'>type: CTNumberCalibrationCurve</text>
+<line class='connection' id='p_1_2_1_2_1_3' x1='-35' y1='-332' x2='-35' y2='-40'/>
+<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
+<use x='224' y='17' xlink:href='#minus' id='s_1_2_1_2_1_3' onclick='show("_1_2_1_2_1_3")'/>
+</g>
+
+<g id='_1_2_1_2_1_3_1' class='box' transform='translate(1160,14534)'>
+<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
+<circle cx='42' cy='14' r='2'/>
+<circle cx='42' cy='23' r='2'/>
+<circle cx='42' cy='32' r='2'/>
+<text class='small' x='30' y='17'>1</text>
+<text class='small' x='30' y='26'>2</text>
+<text class='small' x='30' y='35'>3</text>
+<line x1='42' y1='14' x2='42' y2='32'/>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+<use x='59' y='17' xlink:href='#minus' id='s_1_2_1_2_1_3_1' onclick='show("_1_2_1_2_1_3_1")'/>
+</g>
+
+<g id='_1_2_1_2_1_3_1_1' class='box' transform='translate(1265,14534)'>
+<rect class='shadow' x='3' y='3' width='255' height='46'/>
+<rect class='boxelement' x='0' y='0' width='255' height='46'
+onmouseover='makeVisible("_1_2_1_2_1_3_1_1")' onmouseout='makeHidden("_1_2_1_2_1_3_1_1")'/>
+<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>ElementsOfCTNumberCalibrationCurve</text>
+<text class='visible' x='5' y='41'>type: ElementsOfCTNumberCalibrationCurve</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+<use x='254' y='17' xlink:href='#minus' id='s_1_2_1_2_1_3_1_1' onclick='show("_1_2_1_2_1_3_1_1")'/>
+</g>
+
+<g id='_1_2_1_2_1_3_1_1_1' class='box' transform='translate(1565,14534)'>
+<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
+<circle cx='42' cy='14' r='2'/>
+<circle cx='42' cy='23' r='2'/>
+<circle cx='42' cy='32' r='2'/>
+<text class='small' x='30' y='17'>1</text>
+<text class='small' x='30' y='26'>2</text>
+<text class='small' x='30' y='35'>3</text>
+<line x1='42' y1='14' x2='42' y2='32'/>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+<use x='59' y='17' xlink:href='#minus' id='s_1_2_1_2_1_3_1_1_1' onclick='show("_1_2_1_2_1_3_1_1_1")'/>
+</g>
+
+<g id='_1_2_1_2_1_3_1_1_1_1' class='box' transform='translate(1670,14534)'>
+<rect class='shadow' x='3' y='3' width='249' height='46'/>
+<rect class='boxelement' x='0' y='0' width='249' height='46'
+onmouseover='makeVisible("_1_2_1_2_1_3_1_1_1_1")' onmouseout='makeHidden("_1_2_1_2_1_3_1_1_1_1")'/>
+<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>ElementOfCTNumberCalibrationCurve</text>
+<text class='visible' x='5' y='41'>type: ElementOfCTNumberCalibrationCurve</text>
+<text x='5' y='59'>1..∞</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+<use x='248' y='17' xlink:href='#minus' id='s_1_2_1_2_1_3_1_1_1_1' onclick='show("_1_2_1_2_1_3_1_1_1_1")'/>
+</g>
+
+<g id='_1_2_1_2_1_3_1_1_1_1_1' class='box' transform='translate(1964,14534)'>
+<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
+<circle cx='42' cy='14' r='2'/>
+<circle cx='42' cy='23' r='2'/>
+<circle cx='42' cy='32' r='2'/>
+<text class='small' x='30' y='17'>1</text>
+<text class='small' x='30' y='26'>2</text>
+<text class='small' x='30' y='35'>3</text>
+<line x1='42' y1='14' x2='42' y2='32'/>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+<use x='59' y='17' xlink:href='#minus' id='s_1_2_1_2_1_3_1_1_1_1_1' onclick='show("_1_2_1_2_1_3_1_1_1_1_1")'/>
+</g>
+
+<g id='_1_2_1_2_1_3_1_1_1_1_1_1' class='box' transform='translate(2069,14534)'>
+<rect class='shadow' x='3' y='3' width='189' height='46'/>
+<rect class='boxelement' x='0' y='0' width='189' height='46'
+onmouseover='makeVisible("_1_2_1_2_1_3_1_1_1_1_1_1")' onmouseout='makeHidden("_1_2_1_2_1_3_1_1_1_1_1_1")'/>
+<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>HounsfieldMeasuredValue</text>
+<text class='visible' x='5' y='41'>type: integer</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_2_1_2_1_3_1_1_1_1_1_2' class='box' transform='translate(2069,14605)'>
+<rect class='shadow' x='3' y='3' width='189' height='46'/>
+<rect class='boxelement' x='0' y='0' width='189' height='46'
+onmouseover='makeVisible("_1_2_1_2_1_3_1_1_1_1_1_2")' onmouseout='makeHidden("_1_2_1_2_1_3_1_1_1_1_1_2")'/>
+<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>RealDensityOfMaterialValue</text>
+<text class='visible' x='5' y='41'>type: float</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_2_1_2_1_3_1_1_1_1_1_3' class='box' transform='translate(2069,14676)'>
 <rect class='shadow' x='3' y='3' width='201' height='46'/>
 <rect class='boxelement' x='0' y='0' width='201' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_4")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_4")'/>
+onmouseover='makeVisible("_1_2_1_2_1_3_1_1_1_1_1_3")' onmouseout='makeHidden("_1_2_1_2_1_3_1_1_1_1_1_3")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>SegmentationMethodMethodUsed</text>
-<text class='visible' x='5' y='41'>type: string</text>
+<text class='strong' x='5' y='27'>RealDensityOfMaterialUnit</text>
+<text class='visible' x='5' y='41'>type: RealDensityOfMaterialUnit</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_3_1_5' class='box' transform='translate(1520,15741)'>
+<g id='_1_2_1_2_1_3_1_1_1_1_1_4' class='box' transform='translate(2069,14747)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_5")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_5")'/>
+onmouseover='makeVisible("_1_2_1_2_1_3_1_1_1_1_1_4")' onmouseout='makeHidden("_1_2_1_2_1_3_1_1_1_1_1_4")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>VOIInCTProduced</text>
-<text class='visible' x='5' y='41'>type: VOIInCTcontainer</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_5' onclick='show("_1_1_1_4_1_3_1_3_1_5")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_5_1' class='box' transform='translate(1754,15741)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_5_1' onclick='show("_1_1_1_4_1_3_1_3_1_5_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_5_1_1' class='box' transform='translate(1859,15741)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_5_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_5_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>VOIInCT</text>
-<text class='visible' x='5' y='41'>type: VOIInCT</text>
-<text x='5' y='59'>1..∞</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_5_1_1' onclick='show("_1_1_1_4_1_3_1_3_1_5_1_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_5_1_1_1' class='box' transform='translate(2093,15741)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_5_1_1_1' onclick='show("_1_1_1_4_1_3_1_3_1_5_1_1_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_5_1_1_1_1' class='box' transform='translate(2198,15741)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_5_1_1_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_5_1_1_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>VOIIdentifier</text>
-<text class='visible' x='5' y='41'>type: integer</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_5_1_1_1_2' class='box' transform='translate(2198,15812)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_5_1_1_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_5_1_1_1_2")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>VOIVolumeValue</text>
-<text class='visible' x='5' y='41'>type: float</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_5_1_1_1_3' class='box' transform='translate(2198,15883)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_5_1_1_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_5_1_1_1_3")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>VOIVolumeUnit</text>
-<text class='visible' x='5' y='41'>type: VOIVolumeUnit</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_5_1_1_1_4' class='box' transform='translate(2198,15954)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_5_1_1_1_4")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_5_1_1_1_4")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>PhantomPartIdentifier</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_5_1_1_1_5' class='box' transform='translate(2198,16025)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_5_1_1_1_5")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_5_1_1_1_5")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMVOIContainer</text>
-<text class='visible' x='5' y='41'>type: DICOMData</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_5_1_1_1_5' onclick='show("_1_1_1_4_1_3_1_3_1_5_1_1_1_5")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_5_1_1_1_5_1' class='box' transform='translate(2432,16025)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_5_1_1_1_5_1' onclick='show("_1_1_1_4_1_3_1_3_1_5_1_1_1_5_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_5_1_1_1_5_1_1' class='box' transform='translate(2537,16025)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_5_1_1_1_5_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_5_1_1_1_5_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMStudyUID</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_5_1_1_1_5_1_2' class='box' transform='translate(2537,16096)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_5_1_1_1_5_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_5_1_1_1_5_1_2")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMSeriesUID</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_5_1_1_1_5_1_3' class='box' transform='translate(2537,16167)'>
-<rect class='shadow' x='3' y='3' width='249' height='46'/>
-<rect class='boxelement' x='0' y='0' width='249' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_5_1_1_1_5_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_5_1_1_1_5_1_3")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>TransformationsUsed</text>
-<text class='visible' x='5' y='41'>type: TransformationIdentifierContainer</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_3_1_5_1_1_1_5_1_3' x1='-35' y1='-119' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-<use x='248' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_5_1_1_1_5_1_3' onclick='show("_1_1_1_4_1_3_1_3_1_5_1_1_1_5_1_3")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_5_1_1_1_5_1_3_1' class='box' transform='translate(2831,16167)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_5_1_1_1_5_1_3_1' onclick='show("_1_1_1_4_1_3_1_3_1_5_1_1_1_5_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_5_1_1_1_5_1_3_1_1' class='box' transform='translate(2936,16167)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_5_1_1_1_5_1_3_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_5_1_1_1_5_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>TransformationIdentifier</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_5_1_1_1_6' class='box' transform='translate(2198,16238)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_5_1_1_1_6")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_5_1_1_1_6")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>NonDICOMVOIContainer</text>
-<text class='visible' x='5' y='41'>type: NonDICOMData</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_3_1_5_1_1_1_6' x1='-35' y1='-474' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_5_1_1_1_6' onclick='show("_1_1_1_4_1_3_1_3_1_5_1_1_1_6")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1' class='box' transform='translate(2432,16238)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1' onclick='show("_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1_1' class='box' transform='translate(2537,16238)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>NonDICOMDataClass</text>
-<text class='visible' x='5' y='41'>type: NonDICOMDataClass</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1_2' class='box' transform='translate(2537,16309)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1_2")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>NonDICOMDataFormat</text>
-<text class='visible' x='5' y='41'>type: NonDICOMDataFormat</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1_3' class='box' transform='translate(2537,16380)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1_3")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1_4' class='box' transform='translate(2537,16451)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1_4")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1_4")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FHIRIdentifier</text>
+<text class='strong' x='5' y='27'>MaterialIdentifier</text>
 <text class='visible' x='5' y='41'>type: string</text>
 <text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1_5' class='box' transform='translate(2537,16522)'>
-<rect class='shadow' x='3' y='3' width='249' height='46'/>
-<rect class='boxelement' x='0' y='0' width='249' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1_5")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1_5")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>TransformationsUsed</text>
-<text class='visible' x='5' y='41'>type: TransformationIdentifierContainer</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1_5' x1='-35' y1='-261' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-<use x='248' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1_5' onclick='show("_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1_5")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1_5_1' class='box' transform='translate(2831,16522)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1_5_1' onclick='show("_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1_5_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1_5_1_1' class='box' transform='translate(2936,16522)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1_5_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_5_1_1_1_6_1_5_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>TransformationIdentifier</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_6' class='box' transform='translate(1520,16593)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_6")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_6")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>VOIInSPECTProduced</text>
-<text class='visible' x='5' y='41'>type: VOIInSPECTcontainer</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_3_1_6' x1='-35' y1='-1468' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_6' onclick='show("_1_1_1_4_1_3_1_3_1_6")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_6_1' class='box' transform='translate(1754,16593)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_6_1' onclick='show("_1_1_1_4_1_3_1_3_1_6_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_6_1_1' class='box' transform='translate(1859,16593)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_6_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_6_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>VOIInSPECT</text>
-<text class='visible' x='5' y='41'>type: VOIInSPECT</text>
-<text x='5' y='59'>1..∞</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_6_1_1' onclick='show("_1_1_1_4_1_3_1_3_1_6_1_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_6_1_1_1' class='box' transform='translate(2093,16593)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_6_1_1_1' onclick='show("_1_1_1_4_1_3_1_3_1_6_1_1_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_6_1_1_1_1' class='box' transform='translate(2198,16593)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_6_1_1_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_6_1_1_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>VOIIdentifier</text>
-<text class='visible' x='5' y='41'>type: integer</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_6_1_1_1_2' class='box' transform='translate(2198,16664)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_6_1_1_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_6_1_1_1_2")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>CountsInVOIValue</text>
-<text class='visible' x='5' y='41'>type: float</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_6_1_1_1_3' class='box' transform='translate(2198,16735)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_6_1_1_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_6_1_1_1_3")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>CountsInVOIUnit</text>
-<text class='visible' x='5' y='41'>type: CountsInVOIUnit</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_6_1_1_1_4' class='box' transform='translate(2198,16806)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_6_1_1_1_4")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_6_1_1_1_4")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>PhantomPartIdentifier</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_6_1_1_1_5' class='box' transform='translate(2198,16877)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_6_1_1_1_5")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_6_1_1_1_5")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMVOIContainer</text>
-<text class='visible' x='5' y='41'>type: DICOMData</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_6_1_1_1_5' onclick='show("_1_1_1_4_1_3_1_3_1_6_1_1_1_5")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_6_1_1_1_5_1' class='box' transform='translate(2432,16877)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_6_1_1_1_5_1' onclick='show("_1_1_1_4_1_3_1_3_1_6_1_1_1_5_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_6_1_1_1_5_1_1' class='box' transform='translate(2537,16877)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_6_1_1_1_5_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_6_1_1_1_5_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMStudyUID</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_6_1_1_1_5_1_2' class='box' transform='translate(2537,16948)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_6_1_1_1_5_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_6_1_1_1_5_1_2")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DICOMSeriesUID</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_6_1_1_1_5_1_3' class='box' transform='translate(2537,17019)'>
-<rect class='shadow' x='3' y='3' width='249' height='46'/>
-<rect class='boxelement' x='0' y='0' width='249' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_6_1_1_1_5_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_6_1_1_1_5_1_3")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>TransformationsUsed</text>
-<text class='visible' x='5' y='41'>type: TransformationIdentifierContainer</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_3_1_6_1_1_1_5_1_3' x1='-35' y1='-119' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-<use x='248' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_6_1_1_1_5_1_3' onclick='show("_1_1_1_4_1_3_1_3_1_6_1_1_1_5_1_3")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_6_1_1_1_5_1_3_1' class='box' transform='translate(2831,17019)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_6_1_1_1_5_1_3_1' onclick='show("_1_1_1_4_1_3_1_3_1_6_1_1_1_5_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_6_1_1_1_5_1_3_1_1' class='box' transform='translate(2936,17019)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_6_1_1_1_5_1_3_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_6_1_1_1_5_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>TransformationIdentifier</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_6_1_1_1_6' class='box' transform='translate(2198,17090)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_6_1_1_1_6")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_6_1_1_1_6")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>NonDICOMVOIContainer</text>
-<text class='visible' x='5' y='41'>type: NonDICOMData</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_3_1_6_1_1_1_6' x1='-35' y1='-474' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_6_1_1_1_6' onclick='show("_1_1_1_4_1_3_1_3_1_6_1_1_1_6")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1' class='box' transform='translate(2432,17090)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1' onclick='show("_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1_1' class='box' transform='translate(2537,17090)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>NonDICOMDataClass</text>
-<text class='visible' x='5' y='41'>type: NonDICOMDataClass</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1_2' class='box' transform='translate(2537,17161)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1_2")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>NonDICOMDataFormat</text>
-<text class='visible' x='5' y='41'>type: NonDICOMDataFormat</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1_3' class='box' transform='translate(2537,17232)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1_3")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>NonDICOMDataFileName</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1_4' class='box' transform='translate(2537,17303)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1_4")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1_4")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>FHIRIdentifier</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1_5' class='box' transform='translate(2537,17374)'>
-<rect class='shadow' x='3' y='3' width='249' height='46'/>
-<rect class='boxelement' x='0' y='0' width='249' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1_5")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1_5")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>TransformationsUsed</text>
-<text class='visible' x='5' y='41'>type: TransformationIdentifierContainer</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1_5' x1='-35' y1='-261' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-<use x='248' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1_5' onclick='show("_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1_5")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1_5_1' class='box' transform='translate(2831,17374)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1_5_1' onclick='show("_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1_5_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1_5_1_1' class='box' transform='translate(2936,17374)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1_5_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_3_1_6_1_1_1_6_1_5_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>TransformationIdentifier</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>1..∞</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_4' class='box' transform='translate(1157,17445)'>
-<rect class='shadow' x='3' y='3' width='213' height='46'/>
-<rect class='boxelement' x='0' y='0' width='213' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_4")' onmouseout='makeHidden("_1_1_1_4_1_3_1_4")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>SPECTSensitivityCalculation</text>
-<text class='visible' x='5' y='41'>type: SPECTSensitivityCalculation</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='212' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_4' onclick='show("_1_1_1_4_1_3_1_4")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_4_1' class='box' transform='translate(1415,17445)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_4_1' onclick='show("_1_1_1_4_1_3_1_4_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_4_1_1' class='box' transform='translate(1520,17445)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_4_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_4_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>ProcessExecutionContext</text>
-<text class='visible' x='5' y='41'>type: ProcessExecutionContext</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_4_1_1' onclick='show("_1_1_1_4_1_3_1_4_1_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_4_1_1_1' class='box' transform='translate(1754,17445)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_4_1_1_1' onclick='show("_1_1_1_4_1_3_1_4_1_1_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_4_1_1_1_1' class='box' transform='translate(1859,17445)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_4_1_1_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_4_1_1_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DateTimeProcessStarted</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_4_1_1_1_2' class='box' transform='translate(1859,17516)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_4_1_1_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_4_1_1_1_2")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>PerformingInstitution</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_4_1_1_1_2' x1='-35' y1='-48' x2='-35' y2='-40'/>
+<line class='connection' id='p_1_2_1_2_1_3_1_1_1_1_1_4' x1='-35' y1='-190' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
 </g>
 
-<g id='_1_1_1_4_1_3_1_4_1_2' class='box' transform='translate(1520,17587)'>
+<g id='_1_2_1_2_1_3_1_2' class='box' transform='translate(1265,14818)'>
 <rect class='shadow' x='3' y='3' width='189' height='46'/>
 <rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_4_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_4_1_2")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>VOIInCTIdentifierUsed</text>
-<text class='visible' x='5' y='41'>type: VOIIdentifierContainer</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_4_1_2' onclick='show("_1_1_1_4_1_3_1_4_1_2")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_4_1_2_1' class='box' transform='translate(1754,17587)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_4_1_2_1' onclick='show("_1_1_1_4_1_3_1_4_1_2_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_4_1_2_1_1' class='box' transform='translate(1859,17587)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_4_1_2_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_4_1_2_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>VOIIdentifierUsed</text>
-<text class='visible' x='5' y='41'>type: integer</text>
-<text x='5' y='59'>1..∞</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_4_1_3' class='box' transform='translate(1520,17658)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_4_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_4_1_3")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>VOIInSPECTIdentifierUsed</text>
-<text class='visible' x='5' y='41'>type: VOIIdentifierContainer</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_4_1_3' onclick='show("_1_1_1_4_1_3_1_4_1_3")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_4_1_3_1' class='box' transform='translate(1754,17658)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_4_1_3_1' onclick='show("_1_1_1_4_1_3_1_4_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_4_1_3_1_1' class='box' transform='translate(1859,17658)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_4_1_3_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_4_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>VOIIdentifierUsed</text>
-<text class='visible' x='5' y='41'>type: integer</text>
-<text x='5' y='59'>1..∞</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_4_1_4' class='box' transform='translate(1520,17729)'>
-<rect class='shadow' x='3' y='3' width='243' height='46'/>
-<rect class='boxelement' x='0' y='0' width='243' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_4_1_4")' onmouseout='makeHidden("_1_1_1_4_1_3_1_4_1_4")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>SPECTCalibrationCoefficientProduced</text>
-<text class='visible' x='5' y='41'>type: CalibrationCoefficient</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_4_1_4' x1='-35' y1='-261' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-<use x='242' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_4_1_4' onclick='show("_1_1_1_4_1_3_1_4_1_4")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_4_1_4_1' class='box' transform='translate(1808,17729)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_4_1_4_1' onclick='show("_1_1_1_4_1_3_1_4_1_4_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_4_1_4_1_1' class='box' transform='translate(1913,17729)'>
-<rect class='shadow' x='3' y='3' width='195' height='46'/>
-<rect class='boxelement' x='0' y='0' width='195' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_4_1_4_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_4_1_4_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>CalibrationCoefficientValue</text>
-<text class='visible' x='5' y='41'>type: float</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_4_1_4_1_2' class='box' transform='translate(1913,17800)'>
-<rect class='shadow' x='3' y='3' width='207' height='46'/>
-<rect class='boxelement' x='0' y='0' width='207' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_4_1_4_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_4_1_4_1_2")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>CalibrationCoefficientUnit</text>
-<text class='visible' x='5' y='41'>type: CalibrationCoefficientUnit</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_4_1_4_1_3' class='box' transform='translate(1913,17871)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_4_1_4_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_4_1_4_1_3")'/>
+onmouseover='makeVisible("_1_2_1_2_1_3_1_2")' onmouseout='makeHidden("_1_2_1_2_1_3_1_2")'/>
 <text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>ReferenceCalibrationDate</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_4_1_4_1_4' class='box' transform='translate(1913,17942)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_4_1_4_1_4")' onmouseout='makeHidden("_1_1_1_4_1_3_1_4_1_4_1_4")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>Isotope</text>
-<text class='visible' x='5' y='41'>type: Isotope</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_4_1_4_1_4' x1='-35' y1='-190' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5' class='box' transform='translate(1157,18013)'>
-<rect class='shadow' x='3' y='3' width='291' height='46'/>
-<rect class='boxelement' x='0' y='0' width='291' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_5")' onmouseout='makeHidden("_1_1_1_4_1_3_1_5")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>SPECTRecoveryCoefficientCurveCalculation</text>
-<text class='visible' x='5' y='41'>type: SPECTRecoveryCoefficientCurveCalculation</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_5' x1='-35' y1='-5231' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-<use x='290' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_5' onclick='show("_1_1_1_4_1_3_1_5")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1' class='box' transform='translate(1493,18013)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_5_1' onclick='show("_1_1_1_4_1_3_1_5_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_1' class='box' transform='translate(1598,18013)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_5_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_5_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>ProcessExecutionContext</text>
-<text class='visible' x='5' y='41'>type: ProcessExecutionContext</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_5_1_1' onclick='show("_1_1_1_4_1_3_1_5_1_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_1_1' class='box' transform='translate(1832,18013)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_5_1_1_1' onclick='show("_1_1_1_4_1_3_1_5_1_1_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_1_1_1' class='box' transform='translate(1937,18013)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_5_1_1_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_5_1_1_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>DateTimeProcessStarted</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_1_1_2' class='box' transform='translate(1937,18084)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_5_1_1_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_5_1_1_1_2")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>PerformingInstitution</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_5_1_1_1_2' x1='-35' y1='-48' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_2' class='box' transform='translate(1598,18155)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_5_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_5_1_2")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>VOIInCTIdentifierUsed</text>
-<text class='visible' x='5' y='41'>type: VOIIdentifierContainer</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_5_1_2' onclick='show("_1_1_1_4_1_3_1_5_1_2")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_2_1' class='box' transform='translate(1832,18155)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_5_1_2_1' onclick='show("_1_1_1_4_1_3_1_5_1_2_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_2_1_1' class='box' transform='translate(1937,18155)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_5_1_2_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_5_1_2_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>VOIIdentifierUsed</text>
-<text class='visible' x='5' y='41'>type: integer</text>
-<text x='5' y='59'>1..∞</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_3' class='box' transform='translate(1598,18226)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_5_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_5_1_3")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>VOIInSPECTIdentifierUsed</text>
-<text class='visible' x='5' y='41'>type: VOIIdentifierContainer</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='188' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_5_1_3' onclick='show("_1_1_1_4_1_3_1_5_1_3")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_3_1' class='box' transform='translate(1832,18226)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_5_1_3_1' onclick='show("_1_1_1_4_1_3_1_5_1_3_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_3_1_1' class='box' transform='translate(1937,18226)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_5_1_3_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_5_1_3_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>VOIIdentifierUsed</text>
-<text class='visible' x='5' y='41'>type: integer</text>
-<text x='5' y='59'>1..∞</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_4' class='box' transform='translate(1598,18297)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_5_1_4")' onmouseout='makeHidden("_1_1_1_4_1_3_1_5_1_4")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>PhantomIdentifierUsed</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_5' class='box' transform='translate(1598,18368)'>
-<rect class='shadow' x='3' y='3' width='273' height='46'/>
-<rect class='boxelement' x='0' y='0' width='273' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_5_1_5")' onmouseout='makeHidden("_1_1_1_4_1_3_1_5_1_5")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>SPECTCalibrationCoefficientReferenceUsed</text>
-<text class='visible' x='5' y='41'>type: NMRelevantCalibrationReference</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='272' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_5_1_5' onclick='show("_1_1_1_4_1_3_1_5_1_5")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_5_1' class='box' transform='translate(1916,18368)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_5_1_5_1' onclick='show("_1_1_1_4_1_3_1_5_1_5_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_5_1_1' class='box' transform='translate(2021,18368)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_5_1_5_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_5_1_5_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>ReferenceCalibrationDate</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_5_1_2' class='box' transform='translate(2021,18439)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_5_1_5_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_5_1_5_1_2")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>Isotope</text>
-<text class='visible' x='5' y='41'>type: Isotope</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_5_1_5_1_2' x1='-35' y1='-48' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_6' class='box' transform='translate(1598,18510)'>
-<rect class='shadow' x='3' y='3' width='333' height='46'/>
-<rect class='boxelement' x='0' y='0' width='333' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_5_1_6")' onmouseout='makeHidden("_1_1_1_4_1_3_1_5_1_6")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>SPECTRecoveryCoefficientCurveInCalibrationProduced</text>
-<text class='visible' x='5' y='41'>type: SPECTRecoveryCoefficientCurveInCalibration</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_5_1_6' x1='-35' y1='-474' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-<use x='332' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_5_1_6' onclick='show("_1_1_1_4_1_3_1_5_1_6")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_6_1' class='box' transform='translate(1976,18510)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_5_1_6_1' onclick='show("_1_1_1_4_1_3_1_5_1_6_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_6_1_1' class='box' transform='translate(2081,18510)'>
-<rect class='shadow' x='3' y='3' width='333' height='46'/>
-<rect class='boxelement' x='0' y='0' width='333' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_5_1_6_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_5_1_6_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>ElementsOfSPECTRecoveryCoefficientCurve</text>
-<text class='visible' x='5' y='41'>type: ElementOfSPECTRecoveryCoefficientCurveContainer</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='332' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_5_1_6_1_1' onclick='show("_1_1_1_4_1_3_1_5_1_6_1_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_6_1_1_1' class='box' transform='translate(2459,18510)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_5_1_6_1_1_1' onclick='show("_1_1_1_4_1_3_1_5_1_6_1_1_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_6_1_1_1_1' class='box' transform='translate(2564,18510)'>
-<rect class='shadow' x='3' y='3' width='279' height='46'/>
-<rect class='boxelement' x='0' y='0' width='279' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_5_1_6_1_1_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_5_1_6_1_1_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>ElementOfSPECTRecoveryCoefficientCurve</text>
-<text class='visible' x='5' y='41'>type: ElementOfSPECTRecoveryCoefficientCurve</text>
-<text x='5' y='59'>1..∞</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='278' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_5_1_6_1_1_1_1' onclick='show("_1_1_1_4_1_3_1_5_1_6_1_1_1_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_6_1_1_1_1_1' class='box' transform='translate(2888,18510)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_1_1_4_1_3_1_5_1_6_1_1_1_1_1' onclick='show("_1_1_1_4_1_3_1_5_1_6_1_1_1_1_1")'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_6_1_1_1_1_1_1' class='box' transform='translate(2993,18510)'>
-<rect class='shadow' x='3' y='3' width='243' height='46'/>
-<rect class='boxelement' x='0' y='0' width='243' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_5_1_6_1_1_1_1_1_1")' onmouseout='makeHidden("_1_1_1_4_1_3_1_5_1_6_1_1_1_1_1_1")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>RatioMeasuredActivityToTrueActivity</text>
-<text class='visible' x='5' y='41'>type: float</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_6_1_1_1_1_1_2' class='box' transform='translate(2993,18581)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_5_1_6_1_1_1_1_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_5_1_6_1_1_1_1_1_2")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>HotInsertVolumeValue</text>
-<text class='visible' x='5' y='41'>type: float</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_6_1_1_1_1_1_3' class='box' transform='translate(2993,18652)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_5_1_6_1_1_1_1_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_5_1_6_1_1_1_1_1_3")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>HotInsertVolumeUnit</text>
-<text class='visible' x='5' y='41'>type: HotInsertVolumeUnit</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_6_1_1_1_1_1_4' class='box' transform='translate(2993,18723)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_5_1_6_1_1_1_1_1_4")' onmouseout='makeHidden("_1_1_1_4_1_3_1_5_1_6_1_1_1_1_1_4")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>HotInsertIdentifier</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_5_1_6_1_1_1_1_1_4' x1='-35' y1='-190' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_6_1_2' class='box' transform='translate(2081,18794)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_5_1_6_1_2")' onmouseout='makeHidden("_1_1_1_4_1_3_1_5_1_6_1_2")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>ReferenceCalibrationDate</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_1_1_4_1_3_1_5_1_6_1_3' class='box' transform='translate(2081,18865)'>
-<rect class='shadow' x='3' y='3' width='189' height='46'/>
-<rect class='boxelement' x='0' y='0' width='189' height='46'
-onmouseover='makeVisible("_1_1_1_4_1_3_1_5_1_6_1_3")' onmouseout='makeHidden("_1_1_1_4_1_3_1_5_1_6_1_3")'/>
-<text class='visible' x='5' y='13'>https://www.irdbb-medirad.com</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>Isotope</text>
-<text class='visible' x='5' y='41'>type: Isotope</text>
-<line class='connection' id='p_1_1_1_4_1_3_1_5_1_6_1_3' x1='-35' y1='-332' x2='-35' y2='-40'/>
+<line class='connection' id='p_1_2_1_2_1_3_1_2' x1='-35' y1='-261' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
 </g>
 

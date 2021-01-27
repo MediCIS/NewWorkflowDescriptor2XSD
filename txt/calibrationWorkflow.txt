@@ -20,11 +20,8 @@ AcquisitionSettings
 
 CTCalibrationWorkflow
 {
- 1-CTNumberCalibrationWorkfow-CTNumberCalibrationWorkfow
- 1-SPECTReconstructionInCalibration-SPECTReconstructionInCalibration
- 1-CTSegmentationInCalibration-CTSegmentationInCalibration
- 1-SPECTSensitivityCalculation-SPECTSensitivityCalculation
- 0,1-SPECTRecoveryCoefficientCurveCalculation-SPECTRecoveryCoefficientCurveCalculation
+ 1-CTAcqForCTNumberCalibrationCurve-CTAcqForCTNumberCalibrationCurve
+ 1-CalculationOfCTNumberCalibrationCurve-CalculationOfCTNumberCalibrationCurve
 }
 
 SPECTCTCalibrationWorkflow
